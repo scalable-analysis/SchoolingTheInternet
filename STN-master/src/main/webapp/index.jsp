@@ -92,9 +92,15 @@ ${stats.setStats(facultati,serii,grupe,useri)}
                                 <c:if test="${tool.userIsOnline(u.getLastSeen()) == true}">
                                     <c:if test="${cnt != 0}">
                                         ,&nbsp;<a href="/userdetails.jsp?id=${u.getId()}" style="color: ${user.classColor(u.getUserClass())};text-decoration: none">${u.getUserName()}</a>
+                                        <c:if test="${u.getDonor() == 1}">
+                                            <img src="img/star.gif" alt="Donor" style="display: inline; vertical-align: bottom" title="Donor">
+                                        </c:if>
                                     </c:if>
                                     <c:if test="${cnt == 0}">
                                         <a href="/userdetails.jsp?id=${u.getId()}" style="color: ${user.classColor(u.getUserClass())};text-decoration: none">${u.getUserName()}</a>
+                                        <c:if test="${u.getDonor() == 1}">
+                                            <img src="img/star.gif" alt="Donor" style="display: inline; vertical-align: bottom" title="Donor">
+                                        </c:if>
                                     </c:if>
                                     <c:set var="cnt" value='${1}'/>
                                 </c:if>
@@ -128,7 +134,10 @@ ${stats.setStats(facultati,serii,grupe,useri)}
                                 <td class="row" style="text-align: left">
                                     <a href='/userdetails.jsp?id=${stats.getLatestUserId()}' style='text-decoration: none; color: ${user.classColor(stats.getLatestUserUserClass())}'> ${e:forHtml(stats.getLatestUserUsername())}</a>
                                     <c:if test="${stats.getLatestUserUserClass() == 0}">
-                                        <img src="img/disabled_small.png" alt="Disabled" style="display: inline-block; vertical-align: bottom; padding-left: 1pt" title="Disabled">
+                                        <img src="img/disabled_small.png" alt="Disabled" style="display: inline; vertical-align: bottom; margin-left: 1pt" title="Disabled">
+                                    </c:if>
+                                    <c:if test="${stats.getLatestUserDonor() == 1}">
+                                        <img src="img/star.gif" alt="Donor" style="display: inline; vertical-align: bottom" title="Donor">
                                     </c:if>
                                 </td>
                             </tr>
