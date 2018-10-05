@@ -54,6 +54,6 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
 
 <c:remove var="error" scope="session" />
 
-<%@ include file="structure/footer.jsp" %>
+<%@ include file="structure/footer2.jsp" %>
 </body>
 </html>

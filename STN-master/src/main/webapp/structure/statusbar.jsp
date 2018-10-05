@@ -27,7 +27,7 @@
      <td class="menubar"><a class="ui2" href="/index.jsp">Home</a></td>
         <td class="menubar"> <a class="ui3" href="javascript:void(0);">Files</a></td>
         <td class="menubar"><a class="ui3" href="javascript:void(0);">Add</a></td>
-        <td class="menubar"><a class="ui3" href="javascript:void(0);">Forums</a></td>
+        <td class="menubar"><a class="ui2" href="/category.jsp">Forums</a></td>
         <td class="menubar"><a class="ui2" href="/donate.jsp">Donate</a></td>
         <td class="menubar"><a class="ui2" href="/wiki.jsp">Wiki</a></td>
         <c:if test="${userInfo.getUserClass() > 4}">

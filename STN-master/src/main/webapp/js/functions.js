@@ -4,14 +4,14 @@ var grupe = [];
 
 var email = "";
 var idAplicatie = "";
-var fName  = "";
+var fName = "";
 
 function startTime() {
     var today = new Date();
     var h = today.getHours();
     var m = today.getMinutes();
     m = checkTime(m);
-    if(document.getElementById('time') != null) {
+    if (document.getElementById('time') != null) {
         document.getElementById('time').innerHTML =
             h + ":" + m;
         var t = setTimeout(startTime, 500);
@@ -19,7 +19,10 @@ function startTime() {
 }
 
 function checkTime(i) {
-    if (i < 10) {i = "0" + i};
+    if (i < 10) {
+        i = "0" + i
+    }
+    ;
     return i;
 }
 
@@ -27,18 +30,18 @@ function setidAplicatie(id) {
     idAplicatie = id;
 }
 
-function addFacultate(idFacultate,Nume) {
-    var facultate = {idfacultate : idFacultate, nume: Nume};
+function addFacultate(idFacultate, Nume) {
+    var facultate = {idfacultate: idFacultate, nume: Nume};
     facultati.push(facultate);
 }
 
-function addSerie(idSerie,Nume,idFacultate) {
-    var serie = {idserie: idSerie, nume: Nume, idfacultate : idFacultate};
+function addSerie(idSerie, Nume, idFacultate) {
+    var serie = {idserie: idSerie, nume: Nume, idfacultate: idFacultate};
     serii.push(serie);
 }
 
-function addGrupa(idGrupa,Nume,idSerie) {
-    var serie = {idgrupa: idGrupa, nume: Nume, idserie : idSerie};
+function addGrupa(idGrupa, Nume, idSerie) {
+    var serie = {idgrupa: idGrupa, nume: Nume, idserie: idSerie};
     grupe.push(serie);
 }
 
@@ -65,13 +68,13 @@ function addTabelSerie(sel) {
     var row = document.createElement("tr");
 
     for (var j = 0; j < serii.length; j++) {
-        if(i > 3) {
+        if (i > 3) {
             tbl.appendChild(row);
             row = document.createElement("tr");
             i = 0;
         }
 
-        if(sel.options[sel.selectedIndex].value == serii[j].idfacultate) {
+        if (sel.options[sel.selectedIndex].value == serii[j].idfacultate) {
 
             var cell2 = document.createElement("td");
             cell2.innerHTML = serii[j].nume;
@@ -85,16 +88,16 @@ function addTabelSerie(sel) {
 
     }
 
-    if(i > 0) {
+    if (i > 0) {
         tbl.appendChild(row);
     }
 
     node.appendChild(tbl);
 
     var form = document.createElement("form");
-    form.setAttribute('method',"post");
-    form.setAttribute('action',"../SerieProcess");
-    form.setAttribute('id',"addserie");
+    form.setAttribute('method', "post");
+    form.setAttribute('action', "../SerieProcess");
+    form.setAttribute('id', "addserie");
 
     node.appendChild(form);
 
@@ -102,22 +105,22 @@ function addTabelSerie(sel) {
 
     var input = document.createElement("INPUT");
     input.setAttribute("type", "text");
-    input.setAttribute("name","serieadd");
+    input.setAttribute("name", "serieadd");
     input.style.marginTop = "8pt";
 
     node.appendChild(input);
 
     var input = document.createElement("INPUT");
     input.setAttribute("type", "hidden");
-    input.setAttribute("name","idfac");
-    input.setAttribute("value",sel.options[sel.selectedIndex].value)
+    input.setAttribute("name", "idfac");
+    input.setAttribute("value", sel.options[sel.selectedIndex].value)
 
     node.appendChild(input);
 
     var input = document.createElement("INPUT");
     input.setAttribute("type", "submit");
-    input.setAttribute("name","add");
-    input.setAttribute("value","Add");
+    input.setAttribute("name", "add");
+    input.setAttribute("value", "Add");
     input.style.marginLeft = "3pt";
 
     node.appendChild(input);
@@ -154,7 +157,7 @@ function addSelectSerie(sel) {
 
     for (var j = 0; j < serii.length; j++) {
 
-        if(sel.options[sel.selectedIndex].value == serii[j].idfacultate) {
+        if (sel.options[sel.selectedIndex].value == serii[j].idfacultate) {
             var option = document.createElement("option");
             option.setAttribute("value", serii[j].idserie);
             option.innerHTML = serii[j].nume;
@@ -189,13 +192,13 @@ function addTabelGrupa(sel) {
     var row = document.createElement("tr");
 
     for (var j = 0; j < grupe.length; j++) {
-        if(i > 3) {
+        if (i > 3) {
             tbl.appendChild(row);
             row = document.createElement("tr");
             i = 0;
         }
 
-        if(sel.options[sel.selectedIndex].value == grupe[j].idserie) {
+        if (sel.options[sel.selectedIndex].value == grupe[j].idserie) {
 
             var cell2 = document.createElement("td");
             cell2.innerHTML = grupe[j].nume;
@@ -209,16 +212,16 @@ function addTabelGrupa(sel) {
 
     }
 
-    if(i > 0) {
+    if (i > 0) {
         tbl.appendChild(row);
     }
 
     node.appendChild(tbl);
 
     var form = document.createElement("form");
-    form.setAttribute('method',"post");
-    form.setAttribute('action',"../GrupaProcess");
-    form.setAttribute('id',"addgrupa");
+    form.setAttribute('method', "post");
+    form.setAttribute('action', "../GrupaProcess");
+    form.setAttribute('id', "addgrupa");
 
     node.appendChild(form);
 
@@ -226,31 +229,31 @@ function addTabelGrupa(sel) {
 
     var input = document.createElement("INPUT");
     input.setAttribute("type", "text");
-    input.setAttribute("name","grupadd");
+    input.setAttribute("name", "grupadd");
     input.style.marginTop = "8pt";
 
     node.appendChild(input);
 
     var input = document.createElement("INPUT");
     input.setAttribute("type", "hidden");
-    input.setAttribute("name","idserie");
-    input.setAttribute("value",sel.options[sel.selectedIndex].value)
+    input.setAttribute("name", "idserie");
+    input.setAttribute("value", sel.options[sel.selectedIndex].value)
 
     node.appendChild(input);
 
     var input = document.createElement("INPUT");
     input.setAttribute("type", "submit");
-    input.setAttribute("name","add");
-    input.setAttribute("value","Add");
+    input.setAttribute("name", "add");
+    input.setAttribute("value", "Add");
     input.style.marginLeft = "3pt";
 
     node.appendChild(input);
 
 }
 
-function addTempApp(Id,mail,idApp,formName) {
+function addTempApp(Id, mail, idApp, formName) {
     var element = document.getElementById("temp");
-    if(element != null) {
+    if (element != null) {
         element.outerHTML = "";
         delete element;
     }
@@ -258,7 +261,7 @@ function addTempApp(Id,mail,idApp,formName) {
     email = mail;
     idAplicatie = idApp;
 
-    var node = document.getElementById("app"+Id);
+    var node = document.getElementById("app" + Id);
 
     var row = document.createElement("tr");
 
@@ -280,22 +283,22 @@ function addTempApp(Id,mail,idApp,formName) {
 
 }
 
-function addTempAppInfo(Id,Facultate,Serie,Grupa,Email,Act) {
+function addTempAppInfo(Id, Facultate, Serie, Grupa, Email, Act) {
     var element = document.getElementById("temp");
-    if(element != null) {
+    if (element != null) {
         element.outerHTML = "";
         delete element;
     }
 
 
-    var node = document.getElementById("app"+Id);
+    var node = document.getElementById("app" + Id);
 
     var row = document.createElement("tr");
 
     var cell = document.createElement("td");
     cell.style.textAlign = "left";
     cell.setAttribute("colspan", "5");
-    cell.innerHTML = "<b>Facultate : &nbsp;&nbsp;</b>"+ Facultate +"<br/>" + "<b>Serie : &nbsp;&nbsp;</b>"+ Serie +"<br/>" + "<b>Grupa : &nbsp;&nbsp;</b>"+ Grupa +"<br/>" + "<b>Email : &nbsp;&nbsp;</b>"+ Email +"<br/>" + "<b>Act : &nbsp;&nbsp;</b> <a class='ui' href='" + Act + "'>" + Act + "</a><br/>";
+    cell.innerHTML = "<b>Facultate : &nbsp;&nbsp;</b>" + Facultate + "<br/>" + "<b>Serie : &nbsp;&nbsp;</b>" + Serie + "<br/>" + "<b>Grupa : &nbsp;&nbsp;</b>" + Grupa + "<br/>" + "<b>Email : &nbsp;&nbsp;</b>" + Email + "<br/>" + "<b>Act : &nbsp;&nbsp;</b> <a class='ui' href='" + Act + "'>" + Act + "</a><br/>";
     cell.style.backgroundColor = "#1d1d1d";
     cell.style.padding = "3pt";
     cell.style.paddingLeft = "6pt";
@@ -315,9 +318,9 @@ function addTempFacInfo(formName) {
     var node = document.getElementById("temp2");
 
     var form = document.createElement("form");
-    form.setAttribute('method',"post");
-    form.setAttribute('action',formName);
-    form.setAttribute('id',"temp_form");
+    form.setAttribute('method', "post");
+    form.setAttribute('action', formName);
+    form.setAttribute('id', "temp_form");
 
     fName = formName;
 
@@ -354,13 +357,13 @@ function addTempFacInfo(formName) {
 function addTempSerieInfo(sel) {
 
     element = document.getElementById("sgrupa");
-    if(element != null) {
+    if (element != null) {
         element.outerHTML = "";
         delete element;
     }
 
     element = document.getElementById("sserie");
-    if(element != null) {
+    if (element != null) {
         element.outerHTML = "";
         delete element;
     }
@@ -372,7 +375,7 @@ function addTempSerieInfo(sel) {
     var select = document.createElement("SELECT");
     select.setAttribute("id", "sserie");
     select.setAttribute("onchange", "addTempGrupaInfo(this)");
-    select.style.marginLeft= "5pt";
+    select.style.marginLeft = "5pt";
 
     var option = document.createElement("option");
     option.setAttribute("disabled", "");
@@ -384,7 +387,7 @@ function addTempSerieInfo(sel) {
 
     for (var j = 0; j < serii.length; j++) {
 
-        if(sel.options[sel.selectedIndex].value == serii[j].idfacultate) {
+        if (sel.options[sel.selectedIndex].value == serii[j].idfacultate) {
             var option = document.createElement("option");
             option.setAttribute("value", serii[j].idserie);
             option.innerHTML = serii[j].nume;
@@ -400,7 +403,7 @@ function addTempSerieInfo(sel) {
 function addTempGrupaInfo(sel) {
 
     element = document.getElementById("sgrupa");
-    if(element != null) {
+    if (element != null) {
         element.outerHTML = "";
         delete element;
     }
@@ -412,7 +415,7 @@ function addTempGrupaInfo(sel) {
     var select = document.createElement("SELECT");
     select.setAttribute("id", "sgrupa");
     select.setAttribute("onchange", "addTempButton()");
-    select.style.marginLeft  = "5pt";
+    select.style.marginLeft = "5pt";
 
     var option = document.createElement("option");
     option.setAttribute("disabled", "");
@@ -424,7 +427,7 @@ function addTempGrupaInfo(sel) {
 
     for (var j = 0; j < grupe.length; j++) {
 
-        if(sel.options[sel.selectedIndex].value == grupe[j].idserie) {
+        if (sel.options[sel.selectedIndex].value == grupe[j].idserie) {
             var option = document.createElement("option");
             option.setAttribute("value", grupe[j].idgrupa);
             option.innerHTML = grupe[j].nume;
@@ -445,12 +448,12 @@ function addTempButton() {
 
     var inp = document.createElement("INPUT");
     inp.setAttribute("type", "submit");
-    inp.setAttribute("name","add");
-    if(fName.localeCompare("../UpdateFacProcess") == 0)
-        inp.setAttribute("value","Update");
+    inp.setAttribute("name", "add");
+    if (fName.localeCompare("../UpdateFacProcess") == 0)
+        inp.setAttribute("value", "Update");
     else
-        inp.setAttribute("value","Send Invite");
-    inp.setAttribute("id","appadd");
+        inp.setAttribute("value", "Send Invite");
+    inp.setAttribute("id", "appadd");
     inp.style.marginLeft = "5pt";
 
     node.appendChild(inp);
@@ -465,37 +468,37 @@ function addTempButton() {
     var select3 = document.getElementById("sgrupa");
 
     input.setAttribute("type", "hidden");
-    input.setAttribute("name","idfacultate");
-    input.setAttribute("id","idfacultate");
-    input.setAttribute("value",select1.options[select1.selectedIndex].value);
+    input.setAttribute("name", "idfacultate");
+    input.setAttribute("id", "idfacultate");
+    input.setAttribute("value", select1.options[select1.selectedIndex].value);
 
     node.appendChild(input);
 
     input2.setAttribute("type", "hidden");
-    input2.setAttribute("name","idserie");
-    input2.setAttribute("id","idserie");
-    input2.setAttribute("value",select2.options[select2.selectedIndex].value);
+    input2.setAttribute("name", "idserie");
+    input2.setAttribute("id", "idserie");
+    input2.setAttribute("value", select2.options[select2.selectedIndex].value);
 
     node.appendChild(input2);
 
     input3.setAttribute("type", "hidden");
-    input3.setAttribute("name","idgrupa");
-    input3.setAttribute("id","idgrupa");
-    input3.setAttribute("value",select3.options[select3.selectedIndex].value);
+    input3.setAttribute("name", "idgrupa");
+    input3.setAttribute("id", "idgrupa");
+    input3.setAttribute("value", select3.options[select3.selectedIndex].value);
 
     node.appendChild(input3);
 
     input4.setAttribute("type", "hidden");
-    input4.setAttribute("name","email");
-    input4.setAttribute("id","email");
-    input4.setAttribute("value",email);
+    input4.setAttribute("name", "email");
+    input4.setAttribute("id", "email");
+    input4.setAttribute("value", email);
 
     node.appendChild(input4);
 
     input5.setAttribute("type", "hidden");
-    input5.setAttribute("name","idaplicatie");
-    input5.setAttribute("id","idaplicatie");
-    input5.setAttribute("value",idAplicatie);
+    input5.setAttribute("name", "idaplicatie");
+    input5.setAttribute("id", "idaplicatie");
+    input5.setAttribute("value", idAplicatie);
 
     node.appendChild(input5);
 
@@ -504,38 +507,38 @@ function addTempButton() {
 function cleanTemp() {
 
     var element = document.getElementById("appadd");
-    if(element != null) {
+    if (element != null) {
         element.outerHTML = "";
         delete element;
     }
 
     element = document.getElementById("idgrupa");
-    if(element != null) {
+    if (element != null) {
         element.outerHTML = "";
         delete element;
     }
 
 
     element = document.getElementById("idserie");
-    if(element != null) {
+    if (element != null) {
         element.outerHTML = "";
         delete element;
     }
 
     element = document.getElementById("idfacultate");
-    if(element != null) {
+    if (element != null) {
         element.outerHTML = "";
         delete element;
     }
 
     element = document.getElementById("idaplicatie");
-    if(element != null) {
+    if (element != null) {
         element.outerHTML = "";
         delete element;
     }
 
     element = document.getElementById("email");
-    if(element != null) {
+    if (element != null) {
         element.outerHTML = "";
         delete element;
     }
@@ -547,18 +550,18 @@ function addNewsForm(idSerie) {
     var br = document.createElement("br");
 
     element = document.getElementById("newsrow");
-    if(element != null) {
+    if (element != null) {
         element.outerHTML = "";
         delete element;
     } else {
 
         var form = document.createElement("form");
-        form.setAttribute('method',"post");
-        form.setAttribute('action',"/AddNewsProcess");
-        form.setAttribute('id',"temp_form");
+        form.setAttribute('method', "post");
+        form.setAttribute('action', "/AddNewsProcess");
+        form.setAttribute('id', "temp_form");
 
         var trow = document.createElement("tr");
-        trow.setAttribute('id',"newsrow")
+        trow.setAttribute('id', "newsrow")
         var tdata = document.createElement("td");
         tdata.style.backgroundColor = "#2c2c2c";
         tdata.style.padding = "8pt";
@@ -573,7 +576,7 @@ function addNewsForm(idSerie) {
 
         var title = document.createElement("INPUT");
         title.setAttribute("type", "text");
-        title.setAttribute("name","news_title");
+        title.setAttribute("name", "news_title");
         title.size = "60";
 
         divtitle.appendChild(label);
@@ -582,8 +585,8 @@ function addNewsForm(idSerie) {
 
         var inpserie = document.createElement("INPUT");
         inpserie.setAttribute("type", "hidden");
-        inpserie.setAttribute("name","news_serie");
-        inpserie.setAttribute("value",idSerie);
+        inpserie.setAttribute("name", "news_serie");
+        inpserie.setAttribute("value", idSerie);
 
         form.appendChild(inpserie);
 
@@ -591,15 +594,15 @@ function addNewsForm(idSerie) {
         text.rows = "12";
         text.cols = "100";
         text.style.marginTop = "5pt";
-        text.setAttribute("name","news_body");
+        text.setAttribute("name", "news_body");
 
         form.appendChild(text);
         form.appendChild(br);
 
         var inp = document.createElement("INPUT");
         inp.setAttribute("type", "submit");
-        inp.setAttribute("name","add");
-        inp.setAttribute("value","Add News");
+        inp.setAttribute("name", "add");
+        inp.setAttribute("value", "Add News");
         inp.style.marginTop = "5pt";
 
         form.appendChild(inp);
@@ -612,22 +615,22 @@ function addNewsForm(idSerie) {
     }
 }
 
-function editNews(type,id) {
+function editNews(type, id) {
 
     var element = document.getElementById("temp_form_edit");
 
     var form = document.createElement("form");
-    form.setAttribute('method',"post");
-    form.setAttribute('action',"/EditNewsProcess");
-    form.setAttribute('id',"temp_form_edit");
+    form.setAttribute('method', "post");
+    form.setAttribute('action', "/EditNewsProcess");
+    form.setAttribute('id', "temp_form_edit");
 
-    if(type==1) {
+    if (type == 1) {
         form.style.display = "inline";
-        var td = document.getElementById("title_"+id);
-        var td_title = document.getElementById("title_name_"+id);
-        var a_title = document.getElementById("news_edit_"+id);
+        var td = document.getElementById("title_" + id);
+        var td_title = document.getElementById("title_name_" + id);
+        var a_title = document.getElementById("news_edit_" + id);
 
-        if(td_title!= null) {
+        if (td_title != null) {
             var title = td_title.textContent;
 
             td_title.outerHTML = "";
@@ -638,22 +641,22 @@ function editNews(type,id) {
 
             var input = document.createElement("INPUT");
             input.setAttribute("type", "text");
-            input.setAttribute("name","news_title_temp");
-            input.setAttribute("id","news_title_temp");
-            input.setAttribute("value",title);
+            input.setAttribute("name", "news_title_temp");
+            input.setAttribute("id", "news_title_temp");
+            input.setAttribute("value", title);
             input.size = "40";
 
             var inpserie = document.createElement("INPUT");
             inpserie.setAttribute("type", "hidden");
-            inpserie.setAttribute("name","news_id_temp");
-            inpserie.setAttribute("id","news_id_temp");
-            inpserie.setAttribute("value",id);
+            inpserie.setAttribute("name", "news_id_temp");
+            inpserie.setAttribute("id", "news_id_temp");
+            inpserie.setAttribute("value", id);
 
             var inptype = document.createElement("INPUT");
             inptype.setAttribute("type", "hidden");
-            inptype.setAttribute("name","news_type");
-            inptype.setAttribute("id","news_type");
-            inptype.setAttribute("value",1);
+            inptype.setAttribute("name", "news_type");
+            inptype.setAttribute("id", "news_type");
+            inptype.setAttribute("value", 1);
 
             form.appendChild(input);
             form.appendChild(inpserie);
@@ -661,8 +664,8 @@ function editNews(type,id) {
 
             var inp = document.createElement("INPUT");
             inp.setAttribute("type", "submit");
-            inp.setAttribute("name","edit");
-            inp.setAttribute("value","Save");
+            inp.setAttribute("name", "edit");
+            inp.setAttribute("value", "Save");
             inp.style.marginLeft = "5pt";
             inp.style.padding = "0pt";
 
@@ -671,35 +674,35 @@ function editNews(type,id) {
             td.appendChild(form);
 
         }
-    } else if(type == 2) {
-        var td = document.getElementById("body_"+id);
-        var a_body = document.getElementById("news_edit_body_"+id);
-        var text = document.getElementById("news_body_"+id)
+    } else if (type == 2) {
+        var td = document.getElementById("body_" + id);
+        var a_body = document.getElementById("news_edit_body_" + id);
+        var text = document.getElementById("news_body_" + id)
 
-        if(td!= null) {
+        if (td != null) {
             a_body.outerHTML = "";
             delete a_body;
 
             td.innerHTML = "";
 
             var input = document.createElement("textarea");
-            input.setAttribute("name","news_body_temp");
-            input.setAttribute("id","news_body_temp");
+            input.setAttribute("name", "news_body_temp");
+            input.setAttribute("id", "news_body_temp");
             input.innerHTML = text.value;
             input.rows = "15";
             input.cols = "125";
 
             var inpserie = document.createElement("INPUT");
             inpserie.setAttribute("type", "hidden");
-            inpserie.setAttribute("name","news_id_temp");
-            inpserie.setAttribute("id","news_id_temp");
-            inpserie.setAttribute("value",id);
+            inpserie.setAttribute("name", "news_id_temp");
+            inpserie.setAttribute("id", "news_id_temp");
+            inpserie.setAttribute("value", id);
 
             var inptype = document.createElement("INPUT");
             inptype.setAttribute("type", "hidden");
-            inptype.setAttribute("name","news_type");
-            inptype.setAttribute("id","news_type");
-            inptype.setAttribute("value",2);
+            inptype.setAttribute("name", "news_type");
+            inptype.setAttribute("id", "news_type");
+            inptype.setAttribute("value", 2);
 
             form.appendChild(input);
             form.appendChild(inpserie);
@@ -707,8 +710,8 @@ function editNews(type,id) {
 
             var inp = document.createElement("INPUT");
             inp.setAttribute("type", "submit");
-            inp.setAttribute("name","edit");
-            inp.setAttribute("value","Save");
+            inp.setAttribute("name", "edit");
+            inp.setAttribute("value", "Save");
             inp.style.marginTop = "7pt";
 
             var center = document.createElement("div");
@@ -725,11 +728,208 @@ function editNews(type,id) {
 }
 
 function deleteNews(id) {
-    if(confirm("Sunteti sigur ca doriti sa stergeti anuntul?") == true)
-    window.location.href = '/EditNewsProcess?id='+id;
+    if (confirm("Sunteti sigur ca doriti sa stergeti anuntul?") == true)
+        window.location.href = '/EditNewsProcess?id=' + id;
 }
 
 function deleteOra(id) {
-    if(confirm("Sunteti sigur ca doriti sa stergeti ora?") == true)
-        window.location.href = '/DeleteOraProcess?id_ora='+id;
+    if (confirm("Sunteti sigur ca doriti sa stergeti ora?") == true)
+        window.location.href = '/DeleteOraProcess?id_ora=' + id;
+}
+
+function addCommentForm(idPost) {
+    var node = document.getElementById('comments');
+    var br = document.createElement("br");
+
+    element = document.getElementById("postrow");
+    if (element != null) {
+        element.outerHTML = "";
+        delete element;
+    } else {
+
+        var form = document.createElement("form");
+        form.setAttribute('method', "post");
+        form.setAttribute('action', "/AddComment");
+        form.setAttribute('id', "temp_form");
+
+        var trow = document.createElement("tr");
+        trow.setAttribute('id', "commrow")
+        var tdata = document.createElement("td");
+        tdata.style.backgroundColor = "#2c2c2c";
+        tdata.style.padding = "8pt";
+        tdata.style.textAlign = "center";
+
+        var inpserie = document.createElement("INPUT");
+        inpserie.setAttribute("type", "hidden");
+        inpserie.setAttribute("name", "idPost");
+        inpserie.setAttribute("value", idPost);
+
+        form.appendChild(inpserie);
+
+        var text = document.createElement("textarea");
+        text.rows = "12";
+        text.cols = "100";
+        text.style.marginTop = "5pt";
+        text.setAttribute("name", "body");
+
+        form.appendChild(text);
+        form.appendChild(br);
+
+        var inp = document.createElement("INPUT");
+        inp.setAttribute("type", "submit");
+        inp.setAttribute("name", "add");
+        inp.setAttribute("value", "Submit");
+        inp.style.marginTop = "5pt";
+
+        form.appendChild(inp);
+
+        tdata.appendChild(form);
+        trow.appendChild(tdata);
+
+        node.parentNode.insertBefore(trow, node.nextSibling);
+
+    }
+}
+
+function addReplyForm(idPost,idReply) {
+    var node = document.getElementById('comments');
+    var br = document.createElement("br");
+
+    element = document.getElementById("postrow");
+    if (element != null) {
+        element.outerHTML = "";
+        delete element;
+    } else {
+
+        var form = document.createElement("form");
+        form.setAttribute('method', "post");
+        form.setAttribute('action', "/AddComment");
+        form.setAttribute('id', "temp_form");
+
+        var trow = document.createElement("tr");
+        trow.setAttribute('id', "commrow")
+        var tdata = document.createElement("td");
+        tdata.style.backgroundColor = "#2c2c2c";
+        tdata.style.padding = "8pt";
+        tdata.style.textAlign = "center";
+
+        var inpserie = document.createElement("INPUT");
+        inpserie.setAttribute("type", "hidden");
+        inpserie.setAttribute("name", "idPost");
+        inpserie.setAttribute("value", idPost);
+
+        form.appendChild(inpserie);
+
+        var inprep = document.createElement("INPUT");
+        inprep.setAttribute("type", "hidden");
+        inprep.setAttribute("name", "idReply");
+        inprep.setAttribute("value", idReply);
+
+        form.appendChild(inprep);
+
+        var text = document.createElement("textarea");
+        text.rows = "12";
+        text.cols = "100";
+        text.style.marginTop = "5pt";
+        text.setAttribute("name", "body");
+
+        form.appendChild(text);
+        form.appendChild(br);
+
+        var inp = document.createElement("INPUT");
+        inp.setAttribute("type", "submit");
+        inp.setAttribute("name", "add");
+        inp.setAttribute("value", "Submit");
+        inp.style.marginTop = "5pt";
+
+        form.appendChild(inp);
+
+        tdata.appendChild(form);
+        trow.appendChild(tdata);
+
+        node.parentNode.insertBefore(trow, node.nextSibling);
+
+    }
+}
+
+function editComment(id,idPost) {
+
+    var element = document.getElementById("temp_form_edit");
+
+    var form = document.createElement("form");
+    form.setAttribute('method', "post");
+    form.setAttribute('action', "/EditComment");
+    form.setAttribute('id', "temp_form_edit");
+
+    var td = document.getElementById("body_" + id);
+    var a_body = document.getElementById("comm_edit_body_" + id);
+    var text = document.getElementById("comm_body_" + id)
+
+    if (td != null) {
+        a_body.outerHTML = "";
+        delete a_body;
+
+        td.innerHTML = "";
+
+        var input = document.createElement("textarea");
+        input.setAttribute("name", "comm_body_temp");
+        input.setAttribute("id", "comm_body_temp");
+        input.innerHTML = text.value;
+        input.rows = "15";
+        input.cols = "125";
+
+        var inpserie = document.createElement("INPUT");
+        inpserie.setAttribute("type", "hidden");
+        inpserie.setAttribute("name", "comm_id_temp");
+        inpserie.setAttribute("id", "comm_id_temp");
+        inpserie.setAttribute("value", id);
+
+        var inptype = document.createElement("INPUT");
+        inptype.setAttribute("type", "hidden");
+        inptype.setAttribute("name", "comm_id_post_temp");
+        inptype.setAttribute("id", "comm_id_post_temp");
+        inptype.setAttribute("value", idPost);
+
+        form.appendChild(input);
+        form.appendChild(inpserie);
+        form.appendChild(inptype);
+
+        var inp = document.createElement("INPUT");
+        inp.setAttribute("type", "submit");
+        inp.setAttribute("name", "edit");
+        inp.setAttribute("value", "Save");
+        inp.style.marginTop = "7pt";
+
+        var center = document.createElement("div");
+        center.style.textAlign = "center";
+        center.appendChild(inp);
+
+        form.appendChild(center);
+
+        td.appendChild(form);
+
+
+    }
+
+}
+
+function deleteComment(id,idPost) {
+    if (confirm("Sunteti sigur ca doriti sa stergeti comentariul?") == true)
+        window.location.href = '/EditComment?id=' + id+'&idp='+idPost;
+}
+
+function addNote(id,id_student) {
+        window.location.href='/AddNotes?id_ora='+id+'&id_student='+id_student;
+}
+
+function addSystemLoad(load) {
+    var element = document.getElementById("load_bar");
+
+    var div  = document.createElement("div");
+    div.style.width = load+"%";
+    div.style.height = "10pt";
+    div.style.backgroundColor = "#99ccff";
+
+    element.appendChild(div);
+
 }

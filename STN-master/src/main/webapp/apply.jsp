@@ -73,7 +73,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
 <c:remove var="grupa" scope="session" />
 <c:remove var="document" scope="session" />
 
-<%@ include file="structure/footer.jsp" %>
+<%@ include file="structure/footer2.jsp" %>
 
 </body>
 </html>

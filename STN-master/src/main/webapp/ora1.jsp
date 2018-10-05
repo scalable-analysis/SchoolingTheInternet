@@ -16,7 +16,6 @@
 <body>
 
 ${user.verifyAcces(pageContext.request,pageContext.response)}
-
 <c:if test="${note.getId()>0}">
 <form action="/AddNotes" method="post">
     <fieldset>
@@ -74,6 +73,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
     </fieldset>
 </form>
 </c:if>
+<c:remove var="error" scope="session"/>
 <%@ include file="structure/footer.jsp" %>
 </body>
 

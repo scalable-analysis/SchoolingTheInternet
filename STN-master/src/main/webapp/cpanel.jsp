@@ -27,7 +27,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="row"><a class="ui" href="#" style="color: #b3daff; text-decoration: line-through;">[User List]</a> </td>
+                        <td class="row"><a class="ui" href="panel/userlist.jsp" style="color: #b3daff;">[User List]</a> </td>
                         <td class="row">Lista de utilizatori.</td>
                     </tr>
                     </tbody>

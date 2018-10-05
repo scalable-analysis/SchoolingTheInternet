@@ -28,7 +28,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
                     <legend><b>Orar ${userdetails.getGrupa()}</b></legend>
                     <br/>
 
-                    <table style="width: 95%; margin-right: auto ; margin-left: auto ;">
+                    <table id="orar_table">
                         <tbody>
                         <c:if test="${userdetails.getUserClass() == 2||userdetails.getUserClass()==6||userdetails.getUserClass()==7}">
 
@@ -40,8 +40,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
                                     <c:if test="${ore.getZi()=='1.Luni' }">
                                         <td class="${ore.getZi()}"
                                             title="${ore.getDurata()},${ore.getSala()},${ore.getSgr()},${ore.getSapt()}">
-                                            <a href="ora1.jsp?id=${ore.getId()}"
-                                               class="ui"> ${ore.getName()}</a><a href="javascript:void(0);" onclick="return deleteOra(${ore.getId()})" class="buton">Delete!</a></td>
+                                            <a href="javascript:void(0);" onclick="return addNote(${ore.getId()},${sessionScope.userId})" class="ui"> ${ore.getName()}</a><a href="javascript:void(0);" onclick="return deleteOra(${ore.getId()})" class="buton">Delete!</a></td>
 
                                     </c:if>
 
@@ -56,9 +55,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
                                     <c:if test="${ore.getZi()=='2.Marti'}">
                                         <td class="${ore.getZi()}"
                                             title="${ore.getDurata()},${ore.getSala()},${ore.getSgr()},${ore.getSapt()}">
-                                            <a href="ora1.jsp?id=${ore.getId()}
-"
-                                               class="ui">${ore.getName()}</a><a href="javascript:void(0);" onclick="return deleteOra(${ore.getId()})" class="buton">Delete!</a></td>
+                                            <a href="javascript:void(0);" onclick="return addNote(${ore.getId()},${sessionScope.userId})" class="ui">${ore.getName()}</a><a href="javascript:void(0);" onclick="return deleteOra(${ore.getId()})" class="buton">Delete!</a></td>
 
                                     </c:if>
                                 </c:forEach>
@@ -71,8 +68,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
                                     <c:if test="${ore.getZi()=='3.Miercuri'}">
                                         <td class="${ore.getZi()}"
                                             title="${ore.getDurata()},${ore.getSala()},${ore.getSgr()},${ore.getSapt()}">
-                                            <a href="ora1.jsp?id=${ore.getId()}"
-                                                class="ui">${ore.getName()}</a><a href="javascript:void(0);" onclick="return deleteOra(${ore.getId()})" class="buton">Delete!</a></td>
+                                            <a href="javascript:void(0);" onclick="return addNote(${ore.getId()},${sessionScope.userId})" class="ui">${ore.getName()}</a><a href="javascript:void(0);" onclick="return deleteOra(${ore.getId()})" class="buton">Delete!</a></td>
 
                                     </c:if>
                                 </c:forEach>
@@ -85,8 +81,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
                                     <c:if test="${ore.getZi()=='4.Joi'}">
                                         <td class="${ore.getZi()}"
                                             title="${ore.getDurata()},${ore.getSala()},${ore.getSgr()},${ore.getSapt()}">
-                                            <a href="ora1.jsp?id=${ore.getId()}"
-                                               class="ui">${ore.getName()}</a><a href="javascript:void(0);" onclick="return deleteOra(${ore.getId()})" class="buton">Delete!</a></td>
+                                            <a href="javascript:void(0);" onclick="return addNote(${ore.getId()},${sessionScope.userId})" class="ui">${ore.getName()}</a><a href="javascript:void(0);" onclick="return deleteOra(${ore.getId()})" class="buton">Delete!</a></td>
 
                                     </c:if>
                                 </c:forEach>
@@ -99,8 +94,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
                                     <c:if test="${ore.getZi()=='5.Vineri'}">
                                         <td class="${ore.getZi()}"
                                             title="${ore.getDurata()},${ore.getSala()},${ore.getSgr()},${ore.getSapt()}">
-                                            <a href="ora1.jsp?id=${ore.getId()}"
-                                               class="ui">${ore.getName()}</a><a href="javascript:void(0);" onclick="return deleteOra(${ore.getId()})" class="buton">Delete!</a></td>
+                                            <a href="javascript:void(0);" onclick="return addNote(${ore.getId()},${sessionScope.userId})" class="ui">${ore.getName()}</a><a href="javascript:void(0);" onclick="return deleteOra(${ore.getId()})" class="buton">Delete!</a></td>
 
                                     </c:if>
                                 </c:forEach>
@@ -112,8 +106,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
                                     <c:if test="${ore.getZi()=='6.Sambata'}">
                                         <td class="${ore.getZi()}"
                                             title="${ore.getDurata()},${ore.getSala()},${ore.getSgr()},${ore.getSapt()}">
-                                            <a href="ora1.jsp?id=${ore.getId()}"
-                                               class="ui">${ore.getName()}</a><a href="javascript:void(0);" onclick="return deleteOra(${ore.getId()})" class="buton">Delete!</a></td>
+                                            <a href="javascript:void(0);" onclick="return addNote(${ore.getId()},${sessionScope.userId})" class="ui">${ore.getName()}</a><a href="javascript:void(0);" onclick="return deleteOra(${ore.getId()})" class="buton">Delete!</a></td>
 
                                     </c:if>
                                 </c:forEach>
@@ -125,8 +118,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
                                     <c:if test="${ore.getZi()=='7.Duminica'}">
                                         <td class="${ore.getZi()}"
                                             title="${ore.getDurata()},${ore.getSala()},${ore.getSgr()},${ore.getSapt()}">
-                                            <a href="ora1.jsp?id=${ore.getId()}" class="ui"
-                                               class="ui">${ore.getName()}</a><a href="javascript:void(0);" onclick="return deleteOra(${ore.getId()})" class="buton">Delete!</a></td>
+                                            <a href="javascript:void(0);" onclick="return addNote(${ore.getId()},${sessionScope.userId})" class="ui">${ore.getName()}</a><a href="javascript:void(0);" onclick="return deleteOra(${ore.getId()})" class="buton">Delete!</a></td>
 
                                     </c:if>
                                 </c:forEach>
@@ -142,8 +134,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
                                     <c:if test="${ore.getZi()=='1.Luni' }">
                                         <td class="${ore.getZi()}"
                                             title="${ore.getDurata()},${ore.getSala()},${ore.getSgr()},${ore.getSapt()}">
-                                            <a href="ora1.jsp?id=${ore.getId()}"
-                                               class="ui"> ${ore.getName()}</a></td>
+                                            <a href="javascript:void(0);" onclick="return addNote(${ore.getId()},${sessionScope.userId})" class="ui"> ${ore.getName()}</a></td>
 
                                     </c:if>
 
@@ -158,9 +149,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
                                     <c:if test="${ore.getZi()=='2.Marti'}">
                                         <td class="${ore.getZi()}"
                                             title="${ore.getDurata()},${ore.getSala()},${ore.getSgr()},${ore.getSapt()}">
-                                            <a href="ora1.jsp?id=${ore.getId()}
-"
-                                               class="ui">${ore.getName()}</a></td>
+                                            <a href="javascript:void(0);" onclick="return addNote(${ore.getId()},${sessionScope.userId})" class="ui">${ore.getName()}</a></td>
 
                                     </c:if>
                                 </c:forEach>
@@ -173,8 +162,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
                                     <c:if test="${ore.getZi()=='3.Miercuri'}">
                                         <td class="${ore.getZi()}"
                                             title="${ore.getDurata()},${ore.getSala()},${ore.getSgr()},${ore.getSapt()}">
-                                            <a href="ora1.jsp?id=${ore.getId()}">
-                                                class="ui">${ore.getName()}</a></td>
+                                            <a href="javascript:void(0);" onclick="return addNote(${ore.getId()},${sessionScope.userId})" class="ui">${ore.getName()}</a></td>
 
                                     </c:if>
                                 </c:forEach>
@@ -187,8 +175,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
                                     <c:if test="${ore.getZi()=='4.Joi'}">
                                         <td class="${ore.getZi()}"
                                             title="${ore.getDurata()},${ore.getSala()},${ore.getSgr()},${ore.getSapt()}">
-                                            <a href="ora1.jsp?id=${ore.getId()}"
-                                               class="ui">${ore.getName()}</a></td>
+                                            <a href="javascript:void(0);" onclick="return addNote(${ore.getId()},${sessionScope.userId})" class="ui">${ore.getName()}</a></td>
 
                                     </c:if>
                                 </c:forEach>
@@ -201,8 +188,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
                                     <c:if test="${ore.getZi()=='5.Vineri'}">
                                         <td class="${ore.getZi()}"
                                             title="${ore.getDurata()},${ore.getSala()},${ore.getSgr()},${ore.getSapt()}">
-                                            <a href="ora1.jsp?id=${ore.getId()}"
-                                               class="ui">${ore.getName()}</a></td>
+                                            <a href="javascript:void(0);" onclick="return addNote(${ore.getId()},${sessionScope.userId})" class="ui">${ore.getName()}</a></td>
 
                                     </c:if>
                                 </c:forEach>
@@ -214,8 +200,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
                                     <c:if test="${ore.getZi()=='6.Sambata'}">
                                         <td class="${ore.getZi()}"
                                             title="${ore.getDurata()},${ore.getSala()},${ore.getSgr()},${ore.getSapt()}">
-                                            <a href="ora1.jsp?id=${ore.getId()}"
-                                               class="ui">${ore.getName()}</a></td>
+                                            <a href="javascript:void(0);" onclick="return addNote(${ore.getId()},${sessionScope.userId})" class="ui">${ore.getName()}</a></td>
 
                                     </c:if>
                                 </c:forEach>
@@ -227,8 +212,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
                                     <c:if test="${ore.getZi()=='7.Duminica'}">
                                         <td class="${ore.getZi()}"
                                             title="${ore.getDurata()},${ore.getSala()},${ore.getSgr()},${ore.getSapt()}">
-                                            <a href="ora1.jsp?id=${ore.getId()}" class="ui"
-                                               class="ui">${ore.getName()}</a></td>
+                                            <a href="javascript:void(0);" onclick="return addNote(${ore.getId()},${sessionScope.userId})" class="ui">${ore.getName()}</a></td>
 
                                     </c:if>
                                 </c:forEach>

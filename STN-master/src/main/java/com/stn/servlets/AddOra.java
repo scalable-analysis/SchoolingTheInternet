@@ -79,11 +79,9 @@ public class AddOra extends HttpServlet {
             this.setTempFields(request, id_user, nume_m, durata, tip, semig, sala, nume_p,zi,grupa,sapt);
         } else {
             OrarHelper addOraHelper=new OrarHelper();
-            OrarHelper addNotes=new OrarHelper();
             try {
                 id_grupa=addOraHelper.getGrupaOra(id_user);
                 addOraHelper.addOra(id_grupa,nume_m, durata, tip, semig, sala, nume_p,zi,grupa,sapt);
-                addNotes.addNotes(id_grupa,id_user,nume_m, durata, tip, semig, sala, nume_p,zi,grupa,sapt);
             } catch (SQLException | ClassNotFoundException e) {
                 out.println(e);
                 return;

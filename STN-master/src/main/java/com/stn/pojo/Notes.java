@@ -8,6 +8,17 @@ public class Notes {
     String examen="";
     int nota=-1;
 
+    public boolean isEmpty(){
+        if(  id==-1&&
+         id_ora==-1&&
+         id_stud==-1&&
+         tema==""&&
+         examen==""&&
+        nota==-1)
+            return true;
+        return false;
+    }
+
     public int getId_stud() {
         return id_stud;
     }

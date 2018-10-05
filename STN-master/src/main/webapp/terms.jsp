@@ -69,6 +69,6 @@
 </tr>
 </table>
 
-<%@ include file="structure/footer.jsp" %>
+<%@ include file="structure/footer2.jsp" %>
 </body>
 </html>

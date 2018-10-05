@@ -99,7 +99,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
                     </tr>
                     <tr>
                         <td class="row2">Forum</td>
-                        <td class="row" style="color: #ff0026">TBD</td>
+                        <td class="row" style="color: #54bbbb">Beta</td>
                     </tr>
                     <tr>
                         <td class="row2">Profile Settings</td>
@@ -109,6 +109,10 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
                         <td class="row2">News</td>
                         <td class="row" style="color: #54bbbb">Beta</td>
                     </tr>
+                    <tr>
+                        <td class="row2">Files</td>
+                        <td class="row" style="color: #ff0026">TBD</td>
+                    </tr>
                     </tbody>
                     <tfoot>
                     <tr>
@@ -117,7 +121,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
                     </tfoot>
                 </table>
                 <br/>
-                <p>Site version : 0.2.0</p>
+                <p>Site version : 0.2.4</p>
                 <br/>
             </fieldset><br/>
 

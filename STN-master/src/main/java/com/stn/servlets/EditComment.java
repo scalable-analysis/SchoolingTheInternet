@@ -1,6 +1,6 @@
 package com.stn.servlets;
 
-import com.stn.helpers.NewsHelper;
+import com.stn.helpers.CommentsHelper;
 import com.stn.helpers.UserHelper;
 
 import javax.servlet.ServletException;
@@ -12,20 +12,21 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
 
-@WebServlet("/EditNewsProcess")
-public class EditNewsProcess extends HttpServlet {
+@WebServlet("/EditComment")
+public class EditComment extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
 
         String error = "";
-        String url = "/index.jsp";
+        Integer idPost=Integer.parseInt(request.getParameter("idp"));
+        String url = "/topic.jsp?id="+idPost;
         response.setContentType("text/html");
-        NewsHelper newsHelper = new NewsHelper();
+        CommentsHelper commHelper = new CommentsHelper();
 
-        int idNews = Integer.parseInt(request.getParameter("id"));
+        int idComment = Integer.parseInt(request.getParameter("id"));
 
         try {
-            newsHelper.deleteNews(idNews);
+            commHelper.deleteComment(idComment);
         } catch (SQLException | ClassNotFoundException e) {
             out.println(e);
         }
@@ -39,36 +40,27 @@ public class EditNewsProcess extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         String error = "";
-        String url = "/index.jsp";
+        Integer idPost=Integer.parseInt(request.getParameter("comm_id_post_temp"));
+        String url = "/topic.jsp?id="+idPost;
         response.setContentType("text/html");
 
         UserHelper userHelper = new UserHelper();
 
-        String title = "";
         String body = "";
-        int type = Integer.parseInt(request.getParameter("news_type"));
-        if(type == 1) {
-            title = request.getParameter("news_title_temp");
-        } else {
-            body = request.getParameter("news_body_temp");
-        }
 
-        int idNews = Integer.parseInt(request.getParameter("news_id_temp"));
-        NewsHelper newsHelper = new NewsHelper();
 
-        if(type == 1) {
+            body = request.getParameter("comm_body_temp");
+
+
+        int idComment = Integer.parseInt(request.getParameter("comm_id_temp"));
+        CommentsHelper commHelper = new CommentsHelper();
+
             try {
-                newsHelper.updateTitle(idNews,title);
+                commHelper.editComment(idComment,body);
             } catch (SQLException | ClassNotFoundException e) {
                 out.println(e);
             }
-        } else if(type == 2){
-            try {
-                newsHelper.updateBody(idNews,body);
-            } catch (SQLException | ClassNotFoundException e) {
-                out.println(e);
-            }
-        }
+
 
         response.sendRedirect(url);
 

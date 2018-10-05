@@ -37,9 +37,13 @@ public class UserHelper extends DBConnection{
             "bbcode_legend.jsp",
             "orar.jsp",
             "ora1.jsp",
+            "view_forum.jsp",
+            "topic.jsp",
+            "category.jsp",
             ""};
 
     private static final String[] modAcces = {
+            "userlist.jsp",
             "cpanel.jsp"};
 
     private static final String[] adminAcces = {
@@ -423,7 +427,8 @@ public class UserHelper extends DBConnection{
     public List<User> getUsers() throws ClassNotFoundException, SQLException {
         List<User> user = new ArrayList<User>();
 
-        query = "SELECT * FROM users";
+        query = "SELECT Id,Username,Password,Salt,Email,FirstName,LastName,JoinDate,LastSeen,Class,LoginToken,Ip,Avatar,IdGrupa,IdSerie,IdFacultate,Gender,u.CountryId,Anonymity,Donor,Name,Image " +
+                "FROM users u LEFT JOIN countries c ON u.CountryId = c.CountryId";
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -434,12 +439,17 @@ public class UserHelper extends DBConnection{
                 User usert = new User();
                 usert.setId(resultSet.getInt(1));
                 usert.setUserName(resultSet.getString(2));
+                usert.setJoinDate(resultSet.getTimestamp(8));
                 usert.setLastSeen(resultSet.getTimestamp(9));
                 usert.setUserClass(resultSet.getInt(10));
+                usert.setIp(resultSet.getString(12));
                 usert.setIdGrupa(resultSet.getInt(14));
                 usert.setIdSerie(resultSet.getInt(15));
                 usert.setIdFacultate(resultSet.getInt(16));
+                usert.setCountryId(resultSet.getInt(18));
                 usert.setDonor(resultSet.getInt(20));
+                usert.setCountryName(resultSet.getString(21));
+                usert.setCountryImage(resultSet.getString(22));
                 user.add(usert);
             }
         } finally {

@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 13, 2018 at 12:23 PM
--- Server version: 5.7.22-0ubuntu0.16.04.1
--- PHP Version: 7.0.28-0ubuntu0.16.04.1
+-- Generation Time: 07 Iun 2018 la 08:24
+-- Versiune server: 5.7.22-0ubuntu0.16.04.1
+-- PHP Version: 7.0.30-0ubuntu0.16.04.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+03:00";
@@ -23,7 +23,7 @@ SET time_zone = "+03:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `applications`
+-- Structura de tabel pentru tabelul `applications`
 --
 
 CREATE TABLE `applications` (
@@ -42,7 +42,38 @@ CREATE TABLE `applications` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `countries`
+-- Structura de tabel pentru tabelul `categories`
+--
+
+CREATE TABLE `categories` (
+  `IdCat` int(10) NOT NULL,
+  `Pinned` tinyint(1) NOT NULL DEFAULT '0',
+  `Categorie` varchar(20) CHARACTER SET utf8 NOT NULL,
+  `Descriere` varchar(250) CHARACTER SET utf8 NOT NULL,
+  `IdFacultate` int(10) NOT NULL,
+  `IdSerie` int(10) NOT NULL,
+  `IdGrupa` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structura de tabel pentru tabelul `comments`
+--
+
+CREATE TABLE `comments` (
+  `Id` int(11) NOT NULL,
+  `IdPost` int(10) NOT NULL,
+  `IdUser` int(11) NOT NULL,
+  `Continut` text NOT NULL,
+  `Data` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `LastEdit` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structura de tabel pentru tabelul `countries`
 --
 
 CREATE TABLE `countries` (
@@ -54,7 +85,7 @@ CREATE TABLE `countries` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `facultati`
+-- Structura de tabel pentru tabelul `facultati`
 --
 
 CREATE TABLE `facultati` (
@@ -65,7 +96,7 @@ CREATE TABLE `facultati` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `failed_logins`
+-- Structura de tabel pentru tabelul `failed_logins`
 --
 
 CREATE TABLE `failed_logins` (
@@ -78,7 +109,7 @@ CREATE TABLE `failed_logins` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `grupe`
+-- Structura de tabel pentru tabelul `grupe`
 --
 
 CREATE TABLE `grupe` (
@@ -91,7 +122,7 @@ CREATE TABLE `grupe` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `invites`
+-- Structura de tabel pentru tabelul `invites`
 --
 
 CREATE TABLE `invites` (
@@ -108,7 +139,7 @@ CREATE TABLE `invites` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `news_serie`
+-- Structura de tabel pentru tabelul `news_serie`
 --
 
 CREATE TABLE `news_serie` (
@@ -124,7 +155,7 @@ CREATE TABLE `news_serie` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `notes`
+-- Structura de tabel pentru tabelul `notes`
 --
 
 CREATE TABLE `notes` (
@@ -139,7 +170,7 @@ CREATE TABLE `notes` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ore`
+-- Structura de tabel pentru tabelul `ore`
 --
 
 CREATE TABLE `ore` (
@@ -159,7 +190,7 @@ CREATE TABLE `ore` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `password_reset`
+-- Structura de tabel pentru tabelul `password_reset`
 --
 
 CREATE TABLE `password_reset` (
@@ -172,7 +203,7 @@ CREATE TABLE `password_reset` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `serii`
+-- Structura de tabel pentru tabelul `serii`
 --
 
 CREATE TABLE `serii` (
@@ -184,7 +215,20 @@ CREATE TABLE `serii` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Structura de tabel pentru tabelul `topics`
+--
+
+CREATE TABLE `topics` (
+  `TopicId` int(11) NOT NULL,
+  `Name` varchar(150) NOT NULL,
+  `GroupId` int(11) DEFAULT NULL,
+  `Author` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structura de tabel pentru tabelul `users`
 --
 
 CREATE TABLE `users` (
@@ -219,6 +263,24 @@ CREATE TABLE `users` (
 --
 ALTER TABLE `applications`
   ADD PRIMARY KEY (`AppId`);
+
+--
+-- Indexes for table `categories`
+--
+ALTER TABLE `categories`
+  ADD PRIMARY KEY (`IdCat`),
+  ADD KEY `IdFacultate` (`IdFacultate`),
+  ADD KEY `IdSerie` (`IdSerie`),
+  ADD KEY `IdGrupa` (`IdGrupa`);
+
+--
+-- Indexes for table `comments`
+--
+ALTER TABLE `comments`
+  ADD PRIMARY KEY (`Id`),
+  ADD KEY `IdPost` (`IdPost`),
+  ADD KEY `IdUser` (`IdUser`),
+  ADD KEY `Id` (`Id`);
 
 --
 -- Indexes for table `countries`
@@ -292,6 +354,14 @@ ALTER TABLE `serii`
   ADD KEY `IdFacultate` (`IdFacultate`);
 
 --
+-- Indexes for table `topics`
+--
+ALTER TABLE `topics`
+  ADD PRIMARY KEY (`TopicId`),
+  ADD KEY `Author` (`Author`),
+  ADD KEY `GroupId` (`GroupId`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -310,6 +380,16 @@ ALTER TABLE `users`
 --
 ALTER TABLE `applications`
   MODIFY `AppId` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `categories`
+--
+ALTER TABLE `categories`
+  MODIFY `IdCat` int(10) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `comments`
+--
+ALTER TABLE `comments`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `countries`
 --
@@ -361,22 +441,41 @@ ALTER TABLE `password_reset`
 ALTER TABLE `serii`
   MODIFY `IdSerie` int(11) NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT for table `topics`
+--
+ALTER TABLE `topics`
+  MODIFY `TopicId` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT;
 --
--- Constraints for dumped tables
+-- Restrictii pentru tabele sterse
 --
 
 --
--- Constraints for table `grupe`
+-- Restrictii pentru tabele `categories`
+--
+ALTER TABLE `categories`
+  ADD CONSTRAINT `fk_ctg_idf` FOREIGN KEY (`IdFacultate`) REFERENCES `facultati` (`IdFacultate`),
+  ADD CONSTRAINT `fk_ctg_idg` FOREIGN KEY (`IdGrupa`) REFERENCES `grupe` (`IdGrupa`),
+  ADD CONSTRAINT `fk_ctg_ids` FOREIGN KEY (`IdSerie`) REFERENCES `serii` (`IdSerie`);
+
+--
+-- Restrictii pentru tabele `comments`
+--
+ALTER TABLE `comments`
+  ADD CONSTRAINT `comments_ibfk_1` FOREIGN KEY (`IdPost`) REFERENCES `topics` (`TopicId`);
+
+--
+-- Restrictii pentru tabele `grupe`
 --
 ALTER TABLE `grupe`
   ADD CONSTRAINT `grupe_ibfk_1` FOREIGN KEY (`IdSerie`) REFERENCES `serii` (`IdSerie`);
 
 --
--- Constraints for table `invites`
+-- Restrictii pentru tabele `invites`
 --
 ALTER TABLE `invites`
   ADD CONSTRAINT `invites_ibfk_1` FOREIGN KEY (`IdGrupa`) REFERENCES `grupe` (`IdGrupa`),
@@ -384,33 +483,40 @@ ALTER TABLE `invites`
   ADD CONSTRAINT `invites_ibfk_3` FOREIGN KEY (`IdFacultate`) REFERENCES `facultati` (`IdFacultate`);
 
 --
--- Constraints for table `news_serie`
+-- Restrictii pentru tabele `news_serie`
 --
 ALTER TABLE `news_serie`
   ADD CONSTRAINT `news_serie_ibfk_1` FOREIGN KEY (`IdUser`) REFERENCES `users` (`Id`),
   ADD CONSTRAINT `news_serie_ibfk_2` FOREIGN KEY (`IdSerie`) REFERENCES `serii` (`IdSerie`);
 
 --
--- Constraints for table `notes`
+-- Restrictii pentru tabele `notes`
 --
 ALTER TABLE `notes`
   ADD CONSTRAINT `notes_ibfk_1` FOREIGN KEY (`IdOra`) REFERENCES `ore` (`Id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `notes_ibfk_2` FOREIGN KEY (`IdStudent`) REFERENCES `users` (`Id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `ore`
+-- Restrictii pentru tabele `ore`
 --
 ALTER TABLE `ore`
   ADD CONSTRAINT `ore_ibfk_1` FOREIGN KEY (`IdGrupa`) REFERENCES `grupe` (`IdGrupa`);
 
 --
--- Constraints for table `serii`
+-- Restrictii pentru tabele `serii`
 --
 ALTER TABLE `serii`
   ADD CONSTRAINT `serii_ibfk_1` FOREIGN KEY (`IdFacultate`) REFERENCES `facultati` (`IdFacultate`);
 
 --
--- Constraints for table `users`
+-- Restrictii pentru tabele `topics`
+--
+ALTER TABLE `topics`
+  ADD CONSTRAINT `topics_ibfk_1` FOREIGN KEY (`Author`) REFERENCES `users` (`Id`),
+  ADD CONSTRAINT `topics_ibfk_2` FOREIGN KEY (`GroupId`) REFERENCES `categories` (`IdCat`);
+
+--
+-- Restrictii pentru tabele `users`
 --
 ALTER TABLE `users`
   ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`IdGrupa`) REFERENCES `grupe` (`IdGrupa`),

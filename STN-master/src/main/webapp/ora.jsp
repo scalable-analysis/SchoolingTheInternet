@@ -81,7 +81,7 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
             </select>
             <label>Grupa ${grupa.getGrupa()}</label><input type="hidden" name="id_gr" value="${grupa.getGrupa()}"/>
             <input type="hidden" name="id_user" value="${grupa.getId()}" />
-            <input type="submit"  value="Adauga">
+            <input type="submit" style="height:15pt;" value="Adauga">
         </form>
         ${sessionScope.error}
 

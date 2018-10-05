@@ -1,5 +1,8 @@
 package com.stn.utils;
 
+import com.sun.management.OperatingSystemMXBean;
+
+import java.lang.management.ManagementFactory;
 import java.sql.Timestamp;
 import java.util.HashMap;
 import java.util.Map;
@@ -129,8 +132,8 @@ public class Tools {
         bbMap.put("\\[size=(.+?)\\](.+?)\\[/size\\]", "<span style='font-size:$1pt'>$2</span>");
         bbMap.put("\\[img\\](.+?)\\[/img\\]", "<img src='$1' />");
         bbMap.put("\\[email\\](.+?)\\[/email\\]", "<a class='ui' href='mailto:$1' style='color: #66ba5b'>$1</a>");
-        bbMap.put("\\[url\\](.+?)\\[/url\\]", "<a class='ui' href='$1' style='color: #99ccff'>$1</a>");
-        bbMap.put("\\[url=(.+?)\\](.+?)\\[/url\\]", "<a class='ui' href='$1' style='color: #99ccff'>$2</a>");
+        bbMap.put("\\[url\\](.+?)\\[/url\\]", "<a class='ui' href='$1' style='color: #99ccff' target='_blank'>$1</a>");
+        bbMap.put("\\[url=(.+?)\\](.+?)\\[/url\\]", "<a class='ui' href='$1' style='color: #99ccff' target='_blank'>$2</a>");
         bbMap.put("\\[youtube\\](.+?)\\[/youtube\\]", "<object width='640' height='380'><param name='movie' value='http://www.youtube.com/v/$1'></param><embed src='http://www.youtube.com/v/$1' type='application/x-shockwave-flash' width='640' height='380'></embed></object>");
         bbMap.put("\\[video\\](.+?)\\[/video\\]", "<video src='$1' />");
 
@@ -139,6 +142,11 @@ public class Tools {
         }
 
         return html;
+    }
+
+    public double getSystemLoad() {
+        OperatingSystemMXBean osBean = ManagementFactory.getPlatformMXBean(OperatingSystemMXBean.class);
+        return Math.round(osBean.getSystemCpuLoad() *100);
     }
 
 }

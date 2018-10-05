@@ -28,8 +28,8 @@ ${user.verifyAcces(pageContext.request,pageContext.response)}
                         nimic inapoi,insa in mod simbolic veti primi pe site o steluta (<img src="img/star.gif" alt="Donor" style="display: inline; vertical-align: bottom" title="Donor">) care va fi afista langa numele dvs.</p>
                         <p>Daca ati facut o donatie,puteti sa ne trimiteti mail pe adresa <a class='ui' href='mailto:schoolingtheinternet@gmail.com' style='color: #66ba5b'>schoolingtheinternet@gmail.com</a>
                         cu dovada donatiei si contul dvs va fi modificat in cel mai scurt timp.</p>
-                        <p>Save the Children <a class='ui' href='https://www.savethechildren.org/us/what-we-do/global-programs/education' style='color: #99ccff'>https://www.savethechildren.org/us/what-we-do/global-programs/education</a></p>
-                        <p>Young Initiative <a class='ui' href='https://www.younginitiative.org/doneaza' style='color: #99ccff'>https://www.younginitiative.org/doneaza</a></p>
+                        <p>Save the Children <a class='ui' href='https://www.savethechildren.org/us/what-we-do/global-programs/education' style='color: #99ccff' target='_blank'>https://www.savethechildren.org/us/what-we-do/global-programs/education</a></p>
+                        <p>Young Initiative <a class='ui' href='https://www.younginitiative.org/doneaza' style='color: #99ccff' target='_blank'>https://www.younginitiative.org/doneaza</a></p>
                         <p style="font-size: 15pt; color: #99ccff">Va multumim!</p>
                     </td>
                 </tr>
