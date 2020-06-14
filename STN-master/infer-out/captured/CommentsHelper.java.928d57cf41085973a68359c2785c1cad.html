@@ -1,0 +1,1447 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>CommentsHelper.java.928d57cf41085973a68359c2785c1cad</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>File src/main/java/com/stn/helpers/CommentsHelper.java </h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.stn.helpers; </td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import com.stn.pojo.Comments; </td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">import com.stn.utils.DBConnection; </td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import java.sql.DriverManager; </td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import java.sql.SQLException; </td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">import java.util.ArrayList; </td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">import java.util.List; </td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">public class CommentsHelper extends DBConnection { <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.<init>%28%29.dd9075789d478ddc5ef6b661e5968d1f_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.<init>%28%29.dd9075789d478ddc5ef6b661e5968d1f_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.helpers.CommentsHelper* [line 11];
+n$1=_fun_DBConnection.&lt;init&gt;()(n$0:com.stn.helpers.CommentsHelper*) [line 11];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.<init>%28%29.dd9075789d478ddc5ef6b661e5968d1f_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.<init>%28%29.dd9075789d478ddc5ef6b661e5968d1f_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.<init>%28%29.dd9075789d478ddc5ef6b661e5968d1f_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/com.stn.helpers.CommentsHelper.<init>%28%29.dd9075789d478ddc5ef6b661e5968d1f.html">summary for CommentsHelper.&lt;init&gt;()</a></td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line">    public List&lt;Comments&gt; getComments(int idPost) throws ClassNotFoundException, SQLException { <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee.html">summary for List CommentsHelper.getComments(int)</a></td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line">        List&lt;Comments&gt; comm = new ArrayList&lt;Comments&gt;(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 13];
+n$1=_fun_ArrayList.&lt;init&gt;()(n$0:java.util.ArrayList*) [line 13];
+*&amp;comm:java.util.ArrayList*=n$0 [line 13];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line">            query = &quot;SELECT n.Id,Continut,Data,IdPost,n.IdUser,Username,Class,LastEdit FROM comments n &quot; + <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$2=*&amp;this:com.stn.helpers.CommentsHelper* [line 16];
+*n$2.query:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)="SELECT n.Id,Continut,Data,IdPost,n.IdUser,Username,Class,LastEdit FROM comments n JOIN users u ON u.Id = n.IdUser WHERE n.IdPost = ? ORDER BY Data" [line 16];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line">                    &quot;JOIN users u ON u.Id = n.IdUser &quot; + </td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line">                    &quot;WHERE n.IdPost = ? ORDER BY Data&quot;; </td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line">        try { </td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line">            Class.forName(&quot;com.mysql.jdbc.Driver&quot;); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:59 Instructions
+n$3=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 22];
+*&amp;$irvar0:java.lang.Class*=n$3 [line 22];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">            connection = DriverManager.getConnection(this.getHost(), this.getUser(), this.getPassword()); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:59 Instructions
+n$4=*&amp;this:com.stn.helpers.CommentsHelper* [line 23];
+_=*n$4:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 23];
+n$6=_fun_String DBConnection.getHost()(n$4:com.stn.helpers.CommentsHelper*) virtual [line 23];
+*&amp;$irvar1:java.lang.String*=n$6 [line 23];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:59 Instructions
+n$7=*&amp;this:com.stn.helpers.CommentsHelper* [line 23];
+_=*n$7:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 23];
+n$9=_fun_String DBConnection.getUser()(n$7:com.stn.helpers.CommentsHelper*) virtual [line 23];
+*&amp;$irvar2:java.lang.String*=n$9 [line 23];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:59 Instructions
+n$10=*&amp;this:com.stn.helpers.CommentsHelper* [line 23];
+_=*n$10:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 23];
+n$12=_fun_String DBConnection.getPassword()(n$10:com.stn.helpers.CommentsHelper*) virtual [line 23];
+*&amp;$irvar3:java.lang.String*=n$12 [line 23];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:59 Instructions
+n$13=*&amp;$irvar1:java.lang.String* [line 23];
+n$14=*&amp;$irvar2:java.lang.String* [line 23];
+n$15=*&amp;$irvar3:java.lang.String* [line 23];
+n$16=_fun_Connection DriverManager.getConnection(String,String,String)(n$13:java.lang.String*,n$14:java.lang.String*,n$15:java.lang.String*) [line 23];
+*&amp;$irvar4:java.sql.Connection*=n$16 [line 23];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:59 Instructions
+n$17=*&amp;this:com.stn.helpers.CommentsHelper* [line 23];
+n$18=*&amp;$irvar4:java.sql.Connection* [line 23];
+*n$17.connection:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)=n$18 [line 23];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line">            preparedStatement = connection.prepareStatement(query); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:59 Instructions
+n$19=*&amp;this:com.stn.helpers.CommentsHelper* [line 24];
+n$20=*n$19.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 24];
+_=*n$20:java.sql.Connection*(root java.sql.Connection) [line 24];
+n$22=*&amp;this:com.stn.helpers.CommentsHelper* [line 24];
+n$23=*n$22.query:java.lang.String*(root com.stn.helpers.CommentsHelper) [line 24];
+n$24=_fun_PreparedStatement Connection.prepareStatement(String)(n$20:java.sql.Connection*,n$23:java.lang.String*) interface virtual [line 24];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$24 [line 24];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:59 Instructions
+n$25=*&amp;this:com.stn.helpers.CommentsHelper* [line 24];
+n$26=*&amp;$irvar5:java.sql.PreparedStatement* [line 24];
+*n$25.preparedStatement:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)=n$26 [line 24];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line">            preparedStatement.setInt(1,idPost); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:59 Instructions
+n$27=*&amp;this:com.stn.helpers.CommentsHelper* [line 25];
+n$28=*n$27.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 25];
+_=*n$28:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 25];
+n$30=*&amp;idPost:int [line 25];
+n$31=_fun_void PreparedStatement.setInt(int,int)(n$28:java.sql.PreparedStatement*,1:int,n$30:int) interface virtual [line 25];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line">            resultSet = preparedStatement.executeQuery(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:59 Instructions
+n$32=*&amp;this:com.stn.helpers.CommentsHelper* [line 26];
+n$33=*n$32.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 26];
+_=*n$33:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 26];
+n$35=_fun_ResultSet PreparedStatement.executeQuery()(n$33:java.sql.PreparedStatement*) interface virtual [line 26];
+*&amp;$irvar6:java.sql.ResultSet*=n$35 [line 26];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:59 Instructions
+n$36=*&amp;this:com.stn.helpers.CommentsHelper* [line 26];
+n$37=*&amp;$irvar6:java.sql.ResultSet* [line 26];
+*n$36.resultSet:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)=n$37 [line 26];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">            while(resultSet.next()) { <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:42 16 succs:20 exn:59 Instructions
+n$38=*&amp;this:com.stn.helpers.CommentsHelper* [line 27];
+n$39=*n$38.resultSet:java.sql.ResultSet*(root com.stn.helpers.CommentsHelper) [line 27];
+_=*n$39:java.sql.ResultSet*(root java.sql.ResultSet) [line 27];
+n$41=_fun_boolean ResultSet.next()(n$39:java.sql.ResultSet*) interface virtual [line 27];
+*&amp;$irvar7:_Bool=n$41 [line 27];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node20.html"><span class='visited with_tooltip'>J_20<span class='tooltip'>node20 preds:17 succs:18 19 exn: Join
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:20 succs:21 exn:59 Conditional method_body
+n$42=*&amp;$irvar7:_Bool [line 27];
+PRUNE(!(n$42 == 0), true); [line 27];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node19.html"><span class='visited with_tooltip'>C_19<span class='tooltip'>node19 preds:20 succs:43 44 exn:59 Conditional method_body
+n$42=*&amp;$irvar7:_Bool [line 27];
+PRUNE((n$42 == 0), false); [line 27];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">                Comments commtemp = new Comments(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:18 succs:22 exn:59 Instructions
+n$43=_fun___new(sizeof(t=com.stn.pojo.Comments):com.stn.pojo.Comments*) [line 28];
+n$44=_fun_Comments.&lt;init&gt;()(n$43:com.stn.pojo.Comments*) [line 28];
+*&amp;commtemp:com.stn.pojo.Comments*=n$43 [line 28];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">                commtemp.setId(resultSet.getInt(1)); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:59 Instructions
+n$45=*&amp;this:com.stn.helpers.CommentsHelper* [line 29];
+n$46=*n$45.resultSet:java.sql.ResultSet*(root com.stn.helpers.CommentsHelper) [line 29];
+_=*n$46:java.sql.ResultSet*(root java.sql.ResultSet) [line 29];
+n$48=_fun_int ResultSet.getInt(int)(n$46:java.sql.ResultSet*,1:int) interface virtual [line 29];
+*&amp;$irvar8:int=n$48 [line 29];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:59 Instructions
+n$49=*&amp;$irvar8:int [line 29];
+n$50=_fun_Integer Integer.valueOf(int)(n$49:int) [line 29];
+*&amp;$irvar9:java.lang.Integer*=n$50 [line 29];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:59 Instructions
+n$51=*&amp;commtemp:com.stn.pojo.Comments* [line 29];
+_=*n$51:com.stn.pojo.Comments*(root com.stn.pojo.Comments) [line 29];
+n$53=*&amp;$irvar9:java.lang.Integer* [line 29];
+n$54=_fun_void Comments.setId(Integer)(n$51:com.stn.pojo.Comments*,n$53:java.lang.Integer*) virtual [line 29];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">                commtemp.setCont(resultSet.getString(2)); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:59 Instructions
+n$55=*&amp;this:com.stn.helpers.CommentsHelper* [line 30];
+n$56=*n$55.resultSet:java.sql.ResultSet*(root com.stn.helpers.CommentsHelper) [line 30];
+_=*n$56:java.sql.ResultSet*(root java.sql.ResultSet) [line 30];
+n$58=_fun_String ResultSet.getString(int)(n$56:java.sql.ResultSet*,2:int) interface virtual [line 30];
+*&amp;$irvar10:java.lang.String*=n$58 [line 30];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:59 Instructions
+n$59=*&amp;commtemp:com.stn.pojo.Comments* [line 30];
+_=*n$59:com.stn.pojo.Comments*(root com.stn.pojo.Comments) [line 30];
+n$61=*&amp;$irvar10:java.lang.String* [line 30];
+n$62=_fun_void Comments.setCont(String)(n$59:com.stn.pojo.Comments*,n$61:java.lang.String*) virtual [line 30];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line">                commtemp.setDop(resultSet.getTimestamp(3)); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:59 Instructions
+n$63=*&amp;this:com.stn.helpers.CommentsHelper* [line 31];
+n$64=*n$63.resultSet:java.sql.ResultSet*(root com.stn.helpers.CommentsHelper) [line 31];
+_=*n$64:java.sql.ResultSet*(root java.sql.ResultSet) [line 31];
+n$66=_fun_Timestamp ResultSet.getTimestamp(int)(n$64:java.sql.ResultSet*,3:int) interface virtual [line 31];
+*&amp;$irvar11:java.sql.Timestamp*=n$66 [line 31];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:59 Instructions
+n$67=*&amp;commtemp:com.stn.pojo.Comments* [line 31];
+_=*n$67:com.stn.pojo.Comments*(root com.stn.pojo.Comments) [line 31];
+n$69=*&amp;$irvar11:java.sql.Timestamp* [line 31];
+n$70=_fun_void Comments.setDop(Timestamp)(n$67:com.stn.pojo.Comments*,n$69:java.sql.Timestamp*) virtual [line 31];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line">                commtemp.setIdPost(resultSet.getInt(4)); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:30 exn:59 Instructions
+n$71=*&amp;this:com.stn.helpers.CommentsHelper* [line 32];
+n$72=*n$71.resultSet:java.sql.ResultSet*(root com.stn.helpers.CommentsHelper) [line 32];
+_=*n$72:java.sql.ResultSet*(root java.sql.ResultSet) [line 32];
+n$74=_fun_int ResultSet.getInt(int)(n$72:java.sql.ResultSet*,4:int) interface virtual [line 32];
+*&amp;$irvar12:int=n$74 [line 32];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 succs:31 exn:59 Instructions
+n$75=*&amp;$irvar12:int [line 32];
+n$76=_fun_Integer Integer.valueOf(int)(n$75:int) [line 32];
+*&amp;$irvar13:java.lang.Integer*=n$76 [line 32];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:30 succs:32 exn:59 Instructions
+n$77=*&amp;commtemp:com.stn.pojo.Comments* [line 32];
+_=*n$77:com.stn.pojo.Comments*(root com.stn.pojo.Comments) [line 32];
+n$79=*&amp;$irvar13:java.lang.Integer* [line 32];
+n$80=_fun_void Comments.setIdPost(Integer)(n$77:com.stn.pojo.Comments*,n$79:java.lang.Integer*) virtual [line 32];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line">                commtemp.setIdUser(resultSet.getInt(5)); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:31 succs:33 exn:59 Instructions
+n$81=*&amp;this:com.stn.helpers.CommentsHelper* [line 33];
+n$82=*n$81.resultSet:java.sql.ResultSet*(root com.stn.helpers.CommentsHelper) [line 33];
+_=*n$82:java.sql.ResultSet*(root java.sql.ResultSet) [line 33];
+n$84=_fun_int ResultSet.getInt(int)(n$82:java.sql.ResultSet*,5:int) interface virtual [line 33];
+*&amp;$irvar14:int=n$84 [line 33];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:32 succs:34 exn:59 Instructions
+n$85=*&amp;$irvar14:int [line 33];
+n$86=_fun_Integer Integer.valueOf(int)(n$85:int) [line 33];
+*&amp;$irvar15:java.lang.Integer*=n$86 [line 33];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:33 succs:35 exn:59 Instructions
+n$87=*&amp;commtemp:com.stn.pojo.Comments* [line 33];
+_=*n$87:com.stn.pojo.Comments*(root com.stn.pojo.Comments) [line 33];
+n$89=*&amp;$irvar15:java.lang.Integer* [line 33];
+n$90=_fun_void Comments.setIdUser(Integer)(n$87:com.stn.pojo.Comments*,n$89:java.lang.Integer*) virtual [line 33];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line">                commtemp.setUsername(resultSet.getString(6)); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:34 succs:36 exn:59 Instructions
+n$91=*&amp;this:com.stn.helpers.CommentsHelper* [line 34];
+n$92=*n$91.resultSet:java.sql.ResultSet*(root com.stn.helpers.CommentsHelper) [line 34];
+_=*n$92:java.sql.ResultSet*(root java.sql.ResultSet) [line 34];
+n$94=_fun_String ResultSet.getString(int)(n$92:java.sql.ResultSet*,6:int) interface virtual [line 34];
+*&amp;$irvar16:java.lang.String*=n$94 [line 34];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:35 succs:37 exn:59 Instructions
+n$95=*&amp;commtemp:com.stn.pojo.Comments* [line 34];
+_=*n$95:com.stn.pojo.Comments*(root com.stn.pojo.Comments) [line 34];
+n$97=*&amp;$irvar16:java.lang.String* [line 34];
+n$98=_fun_void Comments.setUsername(String)(n$95:com.stn.pojo.Comments*,n$97:java.lang.String*) virtual [line 34];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">                commtemp.setUserClass(resultSet.getInt(7)); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:36 succs:38 exn:59 Instructions
+n$99=*&amp;this:com.stn.helpers.CommentsHelper* [line 35];
+n$100=*n$99.resultSet:java.sql.ResultSet*(root com.stn.helpers.CommentsHelper) [line 35];
+_=*n$100:java.sql.ResultSet*(root java.sql.ResultSet) [line 35];
+n$102=_fun_int ResultSet.getInt(int)(n$100:java.sql.ResultSet*,7:int) interface virtual [line 35];
+*&amp;$irvar17:int=n$102 [line 35];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:37 succs:39 exn:59 Instructions
+n$103=*&amp;$irvar17:int [line 35];
+n$104=_fun_Integer Integer.valueOf(int)(n$103:int) [line 35];
+*&amp;$irvar18:java.lang.Integer*=n$104 [line 35];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:38 succs:40 exn:59 Instructions
+n$105=*&amp;commtemp:com.stn.pojo.Comments* [line 35];
+_=*n$105:com.stn.pojo.Comments*(root com.stn.pojo.Comments) [line 35];
+n$107=*&amp;$irvar18:java.lang.Integer* [line 35];
+n$108=_fun_void Comments.setUserClass(Integer)(n$105:com.stn.pojo.Comments*,n$107:java.lang.Integer*) virtual [line 35];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line">                commtemp.setLastEdit(resultSet.getTimestamp(8)); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:39 succs:41 exn:59 Instructions
+n$109=*&amp;this:com.stn.helpers.CommentsHelper* [line 36];
+n$110=*n$109.resultSet:java.sql.ResultSet*(root com.stn.helpers.CommentsHelper) [line 36];
+_=*n$110:java.sql.ResultSet*(root java.sql.ResultSet) [line 36];
+n$112=_fun_Timestamp ResultSet.getTimestamp(int)(n$110:java.sql.ResultSet*,8:int) interface virtual [line 36];
+*&amp;$irvar19:java.sql.Timestamp*=n$112 [line 36];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:40 succs:42 exn:59 Instructions
+n$113=*&amp;commtemp:com.stn.pojo.Comments* [line 36];
+_=*n$113:com.stn.pojo.Comments*(root com.stn.pojo.Comments) [line 36];
+n$115=*&amp;$irvar19:java.sql.Timestamp* [line 36];
+n$116=_fun_void Comments.setLastEdit(Timestamp)(n$113:com.stn.pojo.Comments*,n$115:java.sql.Timestamp*) virtual [line 36];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">                comm.add(commtemp); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:41 succs:17 exn:59 Instructions
+n$117=*&amp;comm:java.util.ArrayList* [line 37];
+_=*n$117:java.util.ArrayList*(root java.util.ArrayList) [line 37];
+n$119=*&amp;commtemp:com.stn.pojo.Comments* [line 37];
+n$120=_fun_boolean ArrayList.add(Object)(n$117:java.util.ArrayList*,n$119:com.stn.pojo.Comments*) interface virtual [line 37];
+*&amp;$irvar20:_Bool=n$120 [line 37];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line">            } </td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line">        } finally { </td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line">            if (preparedStatement != null) <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node43.html"><span class='visited with_tooltip'>C_43<span class='tooltip'>node43 preds:19 succs:45 exn:3 Conditional method_body
+n$121=*&amp;this:com.stn.helpers.CommentsHelper* [line 40];
+n$122=*n$121.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 40];
+PRUNE(!(n$122 == null), true); [line 40];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node44.html"><span class='visited with_tooltip'>C_44<span class='tooltip'>node44 preds:19 succs:46 47 exn:3 Conditional method_body
+n$121=*&amp;this:com.stn.helpers.CommentsHelper* [line 40];
+n$122=*n$121.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 40];
+PRUNE((n$122 == null), false); [line 40];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node49.html"><span class='visited with_tooltip'>I_49<span class='tooltip'>node49 preds:60 58 succs:50 51 exn:61 Instructions
+n$135=*&amp;CatchVar273:java.lang.Object* [line 40];
+*&amp;$bcvar4:java.lang.Object*=n$135 [line 40];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node50.html"><span class='visited with_tooltip'>C_50<span class='tooltip'>node50 preds:49 succs:52 exn:3 Conditional method_body
+n$136=*&amp;this:com.stn.helpers.CommentsHelper* [line 40];
+n$137=*n$136.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 40];
+PRUNE(!(n$137 == null), true); [line 40];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node51.html"><span class='visited with_tooltip'>C_51<span class='tooltip'>node51 preds:49 succs:53 54 exn:3 Conditional method_body
+n$136=*&amp;this:com.stn.helpers.CommentsHelper* [line 40];
+n$137=*n$136.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 40];
+PRUNE((n$137 == null), false); [line 40];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node58.html"><span class='visited with_tooltip'>I_58<span class='tooltip'>node58 preds:59 succs:49 exn:3 Instructions
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node59.html"><span class='visited with_tooltip'>I_59<span class='tooltip'>node59 preds: succs:58 exn:3 Instructions
+n$152=*&amp;return:java.util.List* [line 40];
+*&amp;return:java.util.List*=null [line 40];
+n$153=_fun___unwrap_exception(n$152:java.util.List*) [line 40];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node60.html"><span class='visited with_tooltip'>I_60<span class='tooltip'>node60 preds:61 succs:49 exn:3 Instructions
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node61.html"><span class='visited with_tooltip'>I_61<span class='tooltip'>node61 preds: succs:60 exn:3 Instructions
+n$152=*&amp;return:java.util.List* [line 40];
+*&amp;return:java.util.List*=null [line 40];
+n$153=_fun___unwrap_exception(n$152:java.util.List*) [line 40];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line">                preparedStatement.close(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node45.html"><span class='visited with_tooltip'>I_45<span class='tooltip'>node45 preds:43 succs:46 47 exn:3 Instructions
+n$123=*&amp;this:com.stn.helpers.CommentsHelper* [line 41];
+n$124=*n$123.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 41];
+n$127=_fun___set_mem_attribute(n$124:java.sql.PreparedStatement*) [line 41];
+_=*n$124:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 41];
+n$126=_fun_void PreparedStatement.close()(n$124:java.sql.PreparedStatement*) interface virtual [line 41];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node52.html"><span class='visited with_tooltip'>I_52<span class='tooltip'>node52 preds:50 succs:53 54 exn:3 Instructions
+n$138=*&amp;this:com.stn.helpers.CommentsHelper* [line 41];
+n$139=*n$138.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 41];
+n$142=_fun___set_mem_attribute(n$139:java.sql.PreparedStatement*) [line 41];
+_=*n$139:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 41];
+n$141=_fun_void PreparedStatement.close()(n$139:java.sql.PreparedStatement*) interface virtual [line 41];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">            if (connection != null) <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node46.html"><span class='visited with_tooltip'>C_46<span class='tooltip'>node46 preds:45 44 succs:48 exn:3 Conditional method_body
+n$128=*&amp;this:com.stn.helpers.CommentsHelper* [line 42];
+n$129=*n$128.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 42];
+PRUNE(!(n$129 == null), true); [line 42];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node47.html"><span class='visited with_tooltip'>C_47<span class='tooltip'>node47 preds:45 44 succs:57 exn:3 Conditional method_body
+n$128=*&amp;this:com.stn.helpers.CommentsHelper* [line 42];
+n$129=*n$128.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 42];
+PRUNE((n$129 == null), false); [line 42];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node53.html"><span class='visited with_tooltip'>C_53<span class='tooltip'>node53 preds:52 51 succs:55 exn:3 Conditional method_body
+n$143=*&amp;this:com.stn.helpers.CommentsHelper* [line 42];
+n$144=*n$143.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 42];
+PRUNE(!(n$144 == null), true); [line 42];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node54.html"><span class='visited with_tooltip'>C_54<span class='tooltip'>node54 preds:52 51 succs:56 exn:3 Conditional method_body
+n$143=*&amp;this:com.stn.helpers.CommentsHelper* [line 42];
+n$144=*n$143.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 42];
+PRUNE((n$144 == null), false); [line 42];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line">                connection.close(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node48.html"><span class='visited with_tooltip'>I_48<span class='tooltip'>node48 preds:46 succs:57 exn:3 Instructions
+n$130=*&amp;this:com.stn.helpers.CommentsHelper* [line 43];
+n$131=*n$130.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 43];
+n$134=_fun___set_mem_attribute(n$131:java.sql.Connection*) [line 43];
+_=*n$131:java.sql.Connection*(root java.sql.Connection) [line 43];
+n$133=_fun_void Connection.close()(n$131:java.sql.Connection*) interface virtual [line 43];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node55.html"><span class='visited with_tooltip'>I_55<span class='tooltip'>node55 preds:53 succs:56 exn:3 Instructions
+n$145=*&amp;this:com.stn.helpers.CommentsHelper* [line 43];
+n$146=*n$145.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 43];
+n$149=_fun___set_mem_attribute(n$146:java.sql.Connection*) [line 43];
+_=*n$146:java.sql.Connection*(root java.sql.Connection) [line 43];
+n$148=_fun_void Connection.close()(n$146:java.sql.Connection*) interface virtual [line 43];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">        } <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node56.html"><span class='visited with_tooltip'>I_56<span class='tooltip'>node56 preds:55 54 succs:2 exn:3 Instructions
+n$150=*&amp;$bcvar4:java.lang.Object* [line 44];
+*&amp;return:java.util.List*=EXN n$150 [line 44];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line">        return comm; <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node57.html"><span class='visited with_tooltip'>I_57<span class='tooltip'>node57 preds:48 47 succs:2 exn:3 Instructions
+n$151=*&amp;comm:java.util.ArrayList* [line 46];
+*&amp;return:java.util.List*=n$151 [line 46];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:57 56 3 succs: exn: Exit
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComments%28int%29%3Ajava.util.List.65c3b696d5424ba3a94d7f341de089ee_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">    } </td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line">    public Comments getComment(Integer idComment)throws ClassNotFoundException, SQLException{ <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83.html">summary for Comments CommentsHelper.getComment(Integer)</a></td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line">        Comments comm=new Comments(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=com.stn.pojo.Comments):com.stn.pojo.Comments*) [line 50];
+n$1=_fun_Comments.&lt;init&gt;()(n$0:com.stn.pojo.Comments*) [line 50];
+*&amp;comm:com.stn.pojo.Comments*=n$0 [line 50];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line">        query=&quot;Select n.Id,Continut,Data,IdPost,IdUser,Username,Class,n.LastEdit from comments n join users u on(n.IdUser=u.Id) where n.Id=?&quot;; <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$2=*&amp;this:com.stn.helpers.CommentsHelper* [line 52];
+*n$2.query:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)="Select n.Id,Continut,Data,IdPost,IdUser,Username,Class,n.LastEdit from comments n join users u on(n.IdUser=u.Id) where n.Id=?" [line 52];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line">        try { </td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line">            Class.forName(&quot;com.mysql.jdbc.Driver&quot;); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:61 Instructions
+n$3=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 54];
+*&amp;$irvar0:java.lang.Class*=n$3 [line 54];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line">            connection = DriverManager.getConnection(this.getHost(), this.getUser(), this.getPassword()); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:61 Instructions
+n$4=*&amp;this:com.stn.helpers.CommentsHelper* [line 55];
+_=*n$4:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 55];
+n$6=_fun_String DBConnection.getHost()(n$4:com.stn.helpers.CommentsHelper*) virtual [line 55];
+*&amp;$irvar1:java.lang.String*=n$6 [line 55];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:61 Instructions
+n$7=*&amp;this:com.stn.helpers.CommentsHelper* [line 55];
+_=*n$7:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 55];
+n$9=_fun_String DBConnection.getUser()(n$7:com.stn.helpers.CommentsHelper*) virtual [line 55];
+*&amp;$irvar2:java.lang.String*=n$9 [line 55];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:61 Instructions
+n$10=*&amp;this:com.stn.helpers.CommentsHelper* [line 55];
+_=*n$10:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 55];
+n$12=_fun_String DBConnection.getPassword()(n$10:com.stn.helpers.CommentsHelper*) virtual [line 55];
+*&amp;$irvar3:java.lang.String*=n$12 [line 55];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:61 Instructions
+n$13=*&amp;$irvar1:java.lang.String* [line 55];
+n$14=*&amp;$irvar2:java.lang.String* [line 55];
+n$15=*&amp;$irvar3:java.lang.String* [line 55];
+n$16=_fun_Connection DriverManager.getConnection(String,String,String)(n$13:java.lang.String*,n$14:java.lang.String*,n$15:java.lang.String*) [line 55];
+*&amp;$irvar4:java.sql.Connection*=n$16 [line 55];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:61 Instructions
+n$17=*&amp;this:com.stn.helpers.CommentsHelper* [line 55];
+n$18=*&amp;$irvar4:java.sql.Connection* [line 55];
+*n$17.connection:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)=n$18 [line 55];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line">            preparedStatement = connection.prepareStatement(query); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:61 Instructions
+n$19=*&amp;this:com.stn.helpers.CommentsHelper* [line 56];
+n$20=*n$19.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 56];
+_=*n$20:java.sql.Connection*(root java.sql.Connection) [line 56];
+n$22=*&amp;this:com.stn.helpers.CommentsHelper* [line 56];
+n$23=*n$22.query:java.lang.String*(root com.stn.helpers.CommentsHelper) [line 56];
+n$24=_fun_PreparedStatement Connection.prepareStatement(String)(n$20:java.sql.Connection*,n$23:java.lang.String*) interface virtual [line 56];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$24 [line 56];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:61 Instructions
+n$25=*&amp;this:com.stn.helpers.CommentsHelper* [line 56];
+n$26=*&amp;$irvar5:java.sql.PreparedStatement* [line 56];
+*n$25.preparedStatement:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)=n$26 [line 56];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line">            preparedStatement.setInt(1,idComment); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:61 Instructions
+n$27=*&amp;this:com.stn.helpers.CommentsHelper* [line 57];
+n$28=*n$27.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 57];
+*&amp;$irvar7:java.sql.PreparedStatement*=n$28 [line 57];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:61 Instructions
+n$29=*&amp;idComment:java.lang.Integer* [line 57];
+_=*n$29:java.lang.Integer*(root java.lang.Integer) [line 57];
+n$31=_fun_int Integer.intValue()(n$29:java.lang.Integer*) virtual [line 57];
+*&amp;$irvar6:int=n$31 [line 57];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:61 Instructions
+n$32=*&amp;$irvar7:java.sql.PreparedStatement* [line 57];
+_=*n$32:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 57];
+n$34=*&amp;$irvar6:int [line 57];
+n$35=_fun_void PreparedStatement.setInt(int,int)(n$32:java.sql.PreparedStatement*,1:int,n$34:int) interface virtual [line 57];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE58">58</td><td class="line">            resultSet = preparedStatement.executeQuery(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:61 Instructions
+n$36=*&amp;this:com.stn.helpers.CommentsHelper* [line 58];
+n$37=*n$36.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 58];
+_=*n$37:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 58];
+n$39=_fun_ResultSet PreparedStatement.executeQuery()(n$37:java.sql.PreparedStatement*) interface virtual [line 58];
+*&amp;$irvar8:java.sql.ResultSet*=n$39 [line 58];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:61 Instructions
+n$40=*&amp;this:com.stn.helpers.CommentsHelper* [line 58];
+n$41=*&amp;$irvar8:java.sql.ResultSet* [line 58];
+*n$40.resultSet:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)=n$41 [line 58];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE59">59</td><td class="line">            while(resultSet.next()) { <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:44 18 succs:22 exn:61 Instructions
+n$42=*&amp;this:com.stn.helpers.CommentsHelper* [line 59];
+n$43=*n$42.resultSet:java.sql.ResultSet*(root com.stn.helpers.CommentsHelper) [line 59];
+_=*n$43:java.sql.ResultSet*(root java.sql.ResultSet) [line 59];
+n$45=_fun_boolean ResultSet.next()(n$43:java.sql.ResultSet*) interface virtual [line 59];
+*&amp;$irvar9:_Bool=n$45 [line 59];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node22.html"><span class='visited with_tooltip'>J_22<span class='tooltip'>node22 preds:19 succs:20 21 exn: Join
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node20.html"><span class='visited with_tooltip'>C_20<span class='tooltip'>node20 preds:22 succs:23 exn:61 Conditional method_body
+n$46=*&amp;$irvar9:_Bool [line 59];
+PRUNE(!(n$46 == 0), true); [line 59];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node21.html"><span class='visited with_tooltip'>C_21<span class='tooltip'>node21 preds:22 succs:45 46 exn:61 Conditional method_body
+n$46=*&amp;$irvar9:_Bool [line 59];
+PRUNE((n$46 == 0), false); [line 59];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE60">60</td><td class="line">                Comments commtemp = new Comments(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:20 succs:24 exn:61 Instructions
+n$47=_fun___new(sizeof(t=com.stn.pojo.Comments):com.stn.pojo.Comments*) [line 60];
+n$48=_fun_Comments.&lt;init&gt;()(n$47:com.stn.pojo.Comments*) [line 60];
+*&amp;commtemp:com.stn.pojo.Comments*=n$47 [line 60];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE61">61</td><td class="line">                commtemp.setId(resultSet.getInt(1)); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:61 Instructions
+n$49=*&amp;this:com.stn.helpers.CommentsHelper* [line 61];
+n$50=*n$49.resultSet:java.sql.ResultSet*(root com.stn.helpers.CommentsHelper) [line 61];
+_=*n$50:java.sql.ResultSet*(root java.sql.ResultSet) [line 61];
+n$52=_fun_int ResultSet.getInt(int)(n$50:java.sql.ResultSet*,1:int) interface virtual [line 61];
+*&amp;$irvar10:int=n$52 [line 61];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:61 Instructions
+n$53=*&amp;$irvar10:int [line 61];
+n$54=_fun_Integer Integer.valueOf(int)(n$53:int) [line 61];
+*&amp;$irvar11:java.lang.Integer*=n$54 [line 61];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:61 Instructions
+n$55=*&amp;commtemp:com.stn.pojo.Comments* [line 61];
+_=*n$55:com.stn.pojo.Comments*(root com.stn.pojo.Comments) [line 61];
+n$57=*&amp;$irvar11:java.lang.Integer* [line 61];
+n$58=_fun_void Comments.setId(Integer)(n$55:com.stn.pojo.Comments*,n$57:java.lang.Integer*) virtual [line 61];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE62">62</td><td class="line">                commtemp.setCont(resultSet.getString(2)); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:61 Instructions
+n$59=*&amp;this:com.stn.helpers.CommentsHelper* [line 62];
+n$60=*n$59.resultSet:java.sql.ResultSet*(root com.stn.helpers.CommentsHelper) [line 62];
+_=*n$60:java.sql.ResultSet*(root java.sql.ResultSet) [line 62];
+n$62=_fun_String ResultSet.getString(int)(n$60:java.sql.ResultSet*,2:int) interface virtual [line 62];
+*&amp;$irvar12:java.lang.String*=n$62 [line 62];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:61 Instructions
+n$63=*&amp;commtemp:com.stn.pojo.Comments* [line 62];
+_=*n$63:com.stn.pojo.Comments*(root com.stn.pojo.Comments) [line 62];
+n$65=*&amp;$irvar12:java.lang.String* [line 62];
+n$66=_fun_void Comments.setCont(String)(n$63:com.stn.pojo.Comments*,n$65:java.lang.String*) virtual [line 62];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE63">63</td><td class="line">                commtemp.setDop(resultSet.getTimestamp(3)); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:30 exn:61 Instructions
+n$67=*&amp;this:com.stn.helpers.CommentsHelper* [line 63];
+n$68=*n$67.resultSet:java.sql.ResultSet*(root com.stn.helpers.CommentsHelper) [line 63];
+_=*n$68:java.sql.ResultSet*(root java.sql.ResultSet) [line 63];
+n$70=_fun_Timestamp ResultSet.getTimestamp(int)(n$68:java.sql.ResultSet*,3:int) interface virtual [line 63];
+*&amp;$irvar13:java.sql.Timestamp*=n$70 [line 63];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 succs:31 exn:61 Instructions
+n$71=*&amp;commtemp:com.stn.pojo.Comments* [line 63];
+_=*n$71:com.stn.pojo.Comments*(root com.stn.pojo.Comments) [line 63];
+n$73=*&amp;$irvar13:java.sql.Timestamp* [line 63];
+n$74=_fun_void Comments.setDop(Timestamp)(n$71:com.stn.pojo.Comments*,n$73:java.sql.Timestamp*) virtual [line 63];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE64">64</td><td class="line">                commtemp.setIdPost(resultSet.getInt(4)); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:30 succs:32 exn:61 Instructions
+n$75=*&amp;this:com.stn.helpers.CommentsHelper* [line 64];
+n$76=*n$75.resultSet:java.sql.ResultSet*(root com.stn.helpers.CommentsHelper) [line 64];
+_=*n$76:java.sql.ResultSet*(root java.sql.ResultSet) [line 64];
+n$78=_fun_int ResultSet.getInt(int)(n$76:java.sql.ResultSet*,4:int) interface virtual [line 64];
+*&amp;$irvar14:int=n$78 [line 64];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:31 succs:33 exn:61 Instructions
+n$79=*&amp;$irvar14:int [line 64];
+n$80=_fun_Integer Integer.valueOf(int)(n$79:int) [line 64];
+*&amp;$irvar15:java.lang.Integer*=n$80 [line 64];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:32 succs:34 exn:61 Instructions
+n$81=*&amp;commtemp:com.stn.pojo.Comments* [line 64];
+_=*n$81:com.stn.pojo.Comments*(root com.stn.pojo.Comments) [line 64];
+n$83=*&amp;$irvar15:java.lang.Integer* [line 64];
+n$84=_fun_void Comments.setIdPost(Integer)(n$81:com.stn.pojo.Comments*,n$83:java.lang.Integer*) virtual [line 64];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE65">65</td><td class="line">                commtemp.setIdUser(resultSet.getInt(5)); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:33 succs:35 exn:61 Instructions
+n$85=*&amp;this:com.stn.helpers.CommentsHelper* [line 65];
+n$86=*n$85.resultSet:java.sql.ResultSet*(root com.stn.helpers.CommentsHelper) [line 65];
+_=*n$86:java.sql.ResultSet*(root java.sql.ResultSet) [line 65];
+n$88=_fun_int ResultSet.getInt(int)(n$86:java.sql.ResultSet*,5:int) interface virtual [line 65];
+*&amp;$irvar16:int=n$88 [line 65];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:34 succs:36 exn:61 Instructions
+n$89=*&amp;$irvar16:int [line 65];
+n$90=_fun_Integer Integer.valueOf(int)(n$89:int) [line 65];
+*&amp;$irvar17:java.lang.Integer*=n$90 [line 65];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:35 succs:37 exn:61 Instructions
+n$91=*&amp;commtemp:com.stn.pojo.Comments* [line 65];
+_=*n$91:com.stn.pojo.Comments*(root com.stn.pojo.Comments) [line 65];
+n$93=*&amp;$irvar17:java.lang.Integer* [line 65];
+n$94=_fun_void Comments.setIdUser(Integer)(n$91:com.stn.pojo.Comments*,n$93:java.lang.Integer*) virtual [line 65];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE66">66</td><td class="line">                commtemp.setUsername(resultSet.getString(6)); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:36 succs:38 exn:61 Instructions
+n$95=*&amp;this:com.stn.helpers.CommentsHelper* [line 66];
+n$96=*n$95.resultSet:java.sql.ResultSet*(root com.stn.helpers.CommentsHelper) [line 66];
+_=*n$96:java.sql.ResultSet*(root java.sql.ResultSet) [line 66];
+n$98=_fun_String ResultSet.getString(int)(n$96:java.sql.ResultSet*,6:int) interface virtual [line 66];
+*&amp;$irvar18:java.lang.String*=n$98 [line 66];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:37 succs:39 exn:61 Instructions
+n$99=*&amp;commtemp:com.stn.pojo.Comments* [line 66];
+_=*n$99:com.stn.pojo.Comments*(root com.stn.pojo.Comments) [line 66];
+n$101=*&amp;$irvar18:java.lang.String* [line 66];
+n$102=_fun_void Comments.setUsername(String)(n$99:com.stn.pojo.Comments*,n$101:java.lang.String*) virtual [line 66];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE67">67</td><td class="line">                commtemp.setUserClass(resultSet.getInt(7)); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:38 succs:40 exn:61 Instructions
+n$103=*&amp;this:com.stn.helpers.CommentsHelper* [line 67];
+n$104=*n$103.resultSet:java.sql.ResultSet*(root com.stn.helpers.CommentsHelper) [line 67];
+_=*n$104:java.sql.ResultSet*(root java.sql.ResultSet) [line 67];
+n$106=_fun_int ResultSet.getInt(int)(n$104:java.sql.ResultSet*,7:int) interface virtual [line 67];
+*&amp;$irvar19:int=n$106 [line 67];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:39 succs:41 exn:61 Instructions
+n$107=*&amp;$irvar19:int [line 67];
+n$108=_fun_Integer Integer.valueOf(int)(n$107:int) [line 67];
+*&amp;$irvar20:java.lang.Integer*=n$108 [line 67];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:40 succs:42 exn:61 Instructions
+n$109=*&amp;commtemp:com.stn.pojo.Comments* [line 67];
+_=*n$109:com.stn.pojo.Comments*(root com.stn.pojo.Comments) [line 67];
+n$111=*&amp;$irvar20:java.lang.Integer* [line 67];
+n$112=_fun_void Comments.setUserClass(Integer)(n$109:com.stn.pojo.Comments*,n$111:java.lang.Integer*) virtual [line 67];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE68">68</td><td class="line">                commtemp.setLastEdit(resultSet.getTimestamp(8)); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:41 succs:43 exn:61 Instructions
+n$113=*&amp;this:com.stn.helpers.CommentsHelper* [line 68];
+n$114=*n$113.resultSet:java.sql.ResultSet*(root com.stn.helpers.CommentsHelper) [line 68];
+_=*n$114:java.sql.ResultSet*(root java.sql.ResultSet) [line 68];
+n$116=_fun_Timestamp ResultSet.getTimestamp(int)(n$114:java.sql.ResultSet*,8:int) interface virtual [line 68];
+*&amp;$irvar21:java.sql.Timestamp*=n$116 [line 68];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:42 succs:44 exn:61 Instructions
+n$117=*&amp;commtemp:com.stn.pojo.Comments* [line 68];
+_=*n$117:com.stn.pojo.Comments*(root com.stn.pojo.Comments) [line 68];
+n$119=*&amp;$irvar21:java.sql.Timestamp* [line 68];
+n$120=_fun_void Comments.setLastEdit(Timestamp)(n$117:com.stn.pojo.Comments*,n$119:java.sql.Timestamp*) virtual [line 68];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE69">69</td><td class="line">                comm=commtemp; <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds:43 succs:19 exn:61 Instructions
+n$121=*&amp;commtemp:com.stn.pojo.Comments* [line 69];
+*&amp;comm:com.stn.pojo.Comments*=n$121 [line 69];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE70">70</td><td class="line">            } </td></tr>
+<tr><td class="num" id="LINE71">71</td><td class="line">        } finally { </td></tr>
+<tr><td class="num" id="LINE72">72</td><td class="line">            if (preparedStatement != null) <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node45.html"><span class='visited with_tooltip'>C_45<span class='tooltip'>node45 preds:21 succs:47 exn:3 Conditional method_body
+n$122=*&amp;this:com.stn.helpers.CommentsHelper* [line 72];
+n$123=*n$122.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 72];
+PRUNE(!(n$123 == null), true); [line 72];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node46.html"><span class='visited with_tooltip'>C_46<span class='tooltip'>node46 preds:21 succs:48 49 exn:3 Conditional method_body
+n$122=*&amp;this:com.stn.helpers.CommentsHelper* [line 72];
+n$123=*n$122.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 72];
+PRUNE((n$123 == null), false); [line 72];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node51.html"><span class='visited with_tooltip'>I_51<span class='tooltip'>node51 preds:62 60 succs:52 53 exn:63 Instructions
+n$136=*&amp;CatchVar270:java.lang.Object* [line 72];
+*&amp;$bcvar4:java.lang.Object*=n$136 [line 72];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node52.html"><span class='visited with_tooltip'>C_52<span class='tooltip'>node52 preds:51 succs:54 exn:3 Conditional method_body
+n$137=*&amp;this:com.stn.helpers.CommentsHelper* [line 72];
+n$138=*n$137.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 72];
+PRUNE(!(n$138 == null), true); [line 72];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node53.html"><span class='visited with_tooltip'>C_53<span class='tooltip'>node53 preds:51 succs:55 56 exn:3 Conditional method_body
+n$137=*&amp;this:com.stn.helpers.CommentsHelper* [line 72];
+n$138=*n$137.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 72];
+PRUNE((n$138 == null), false); [line 72];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node60.html"><span class='visited with_tooltip'>I_60<span class='tooltip'>node60 preds:61 succs:51 exn:3 Instructions
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node61.html"><span class='visited with_tooltip'>I_61<span class='tooltip'>node61 preds: succs:60 exn:3 Instructions
+n$153=*&amp;return:com.stn.pojo.Comments* [line 72];
+*&amp;return:com.stn.pojo.Comments*=null [line 72];
+n$154=_fun___unwrap_exception(n$153:com.stn.pojo.Comments*) [line 72];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node62.html"><span class='visited with_tooltip'>I_62<span class='tooltip'>node62 preds:63 succs:51 exn:3 Instructions
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node63.html"><span class='visited with_tooltip'>I_63<span class='tooltip'>node63 preds: succs:62 exn:3 Instructions
+n$153=*&amp;return:com.stn.pojo.Comments* [line 72];
+*&amp;return:com.stn.pojo.Comments*=null [line 72];
+n$154=_fun___unwrap_exception(n$153:com.stn.pojo.Comments*) [line 72];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE73">73</td><td class="line">                preparedStatement.close(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node47.html"><span class='visited with_tooltip'>I_47<span class='tooltip'>node47 preds:45 succs:48 49 exn:3 Instructions
+n$124=*&amp;this:com.stn.helpers.CommentsHelper* [line 73];
+n$125=*n$124.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 73];
+n$128=_fun___set_mem_attribute(n$125:java.sql.PreparedStatement*) [line 73];
+_=*n$125:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 73];
+n$127=_fun_void PreparedStatement.close()(n$125:java.sql.PreparedStatement*) interface virtual [line 73];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node54.html"><span class='visited with_tooltip'>I_54<span class='tooltip'>node54 preds:52 succs:55 56 exn:3 Instructions
+n$139=*&amp;this:com.stn.helpers.CommentsHelper* [line 73];
+n$140=*n$139.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 73];
+n$143=_fun___set_mem_attribute(n$140:java.sql.PreparedStatement*) [line 73];
+_=*n$140:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 73];
+n$142=_fun_void PreparedStatement.close()(n$140:java.sql.PreparedStatement*) interface virtual [line 73];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE74">74</td><td class="line">            if (connection != null) <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node48.html"><span class='visited with_tooltip'>C_48<span class='tooltip'>node48 preds:47 46 succs:50 exn:3 Conditional method_body
+n$129=*&amp;this:com.stn.helpers.CommentsHelper* [line 74];
+n$130=*n$129.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 74];
+PRUNE(!(n$130 == null), true); [line 74];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node49.html"><span class='visited with_tooltip'>C_49<span class='tooltip'>node49 preds:47 46 succs:59 exn:3 Conditional method_body
+n$129=*&amp;this:com.stn.helpers.CommentsHelper* [line 74];
+n$130=*n$129.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 74];
+PRUNE((n$130 == null), false); [line 74];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node55.html"><span class='visited with_tooltip'>C_55<span class='tooltip'>node55 preds:54 53 succs:57 exn:3 Conditional method_body
+n$144=*&amp;this:com.stn.helpers.CommentsHelper* [line 74];
+n$145=*n$144.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 74];
+PRUNE(!(n$145 == null), true); [line 74];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node56.html"><span class='visited with_tooltip'>C_56<span class='tooltip'>node56 preds:54 53 succs:58 exn:3 Conditional method_body
+n$144=*&amp;this:com.stn.helpers.CommentsHelper* [line 74];
+n$145=*n$144.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 74];
+PRUNE((n$145 == null), false); [line 74];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE75">75</td><td class="line">                connection.close(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node50.html"><span class='visited with_tooltip'>I_50<span class='tooltip'>node50 preds:48 succs:59 exn:3 Instructions
+n$131=*&amp;this:com.stn.helpers.CommentsHelper* [line 75];
+n$132=*n$131.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 75];
+n$135=_fun___set_mem_attribute(n$132:java.sql.Connection*) [line 75];
+_=*n$132:java.sql.Connection*(root java.sql.Connection) [line 75];
+n$134=_fun_void Connection.close()(n$132:java.sql.Connection*) interface virtual [line 75];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node57.html"><span class='visited with_tooltip'>I_57<span class='tooltip'>node57 preds:55 succs:58 exn:3 Instructions
+n$146=*&amp;this:com.stn.helpers.CommentsHelper* [line 75];
+n$147=*n$146.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 75];
+n$150=_fun___set_mem_attribute(n$147:java.sql.Connection*) [line 75];
+_=*n$147:java.sql.Connection*(root java.sql.Connection) [line 75];
+n$149=_fun_void Connection.close()(n$147:java.sql.Connection*) interface virtual [line 75];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE76">76</td><td class="line">        } <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node58.html"><span class='visited with_tooltip'>I_58<span class='tooltip'>node58 preds:57 56 succs:2 exn:3 Instructions
+n$151=*&amp;$bcvar4:java.lang.Object* [line 76];
+*&amp;return:com.stn.pojo.Comments*=EXN n$151 [line 76];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE77">77</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE78">78</td><td class="line">        return comm; <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node59.html"><span class='visited with_tooltip'>I_59<span class='tooltip'>node59 preds:50 49 succs:2 exn:3 Instructions
+n$152=*&amp;comm:com.stn.pojo.Comments* [line 78];
+*&amp;return:com.stn.pojo.Comments*=n$152 [line 78];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:59 58 3 succs: exn: Exit
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.getComment%28java.lang.Integer%29%3Acom.stn.pojo.Comments.8259ac6de405512e6a6bcfc5a230ae83_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE79">79</td><td class="line">    } </td></tr>
+<tr><td class="num" id="LINE80">80</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE81">81</td><td class="line">    public void addComment(Integer idPost, Integer idUser, String body) throws SQLException, ClassNotFoundException { <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7.html">summary for void CommentsHelper.addComment(Integer,Integer,String)</a></td></tr>
+<tr><td class="num" id="LINE82">82</td><td class="line">        java.sql.Timestamp date = new java.sql.Timestamp((new java.util.Date().getTime())); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.Date):java.util.Date*) [line 82];
+n$1=_fun_Date.&lt;init&gt;()(n$0:java.util.Date*) [line 82];
+*&amp;$irvar0:java.util.Date*=n$0 [line 82];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$2=*&amp;$irvar0:java.util.Date* [line 82];
+_=*n$2:java.util.Date*(root java.util.Date) [line 82];
+n$4=_fun_long Date.getTime()(n$2:java.util.Date*) virtual [line 82];
+*&amp;$irvar1:long=n$4 [line 82];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$5=_fun___new(sizeof(t=java.sql.Timestamp):java.sql.Timestamp*) [line 82];
+n$6=*&amp;$irvar1:long [line 82];
+n$7=_fun_Timestamp.&lt;init&gt;(long)(n$5:java.sql.Timestamp*,n$6:long) [line 82];
+*&amp;date:java.sql.Timestamp*=n$5 [line 82];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE83">83</td><td class="line">        query = &quot;Insert into comments(IdPost,IdUser,Continut,Data,LastEdit) values(?,?,?,?,?)&quot;; <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$8=*&amp;this:com.stn.helpers.CommentsHelper* [line 83];
+*n$8.query:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)="Insert into comments(IdPost,IdUser,Continut,Data,LastEdit) values(?,?,?,?,?)" [line 83];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE84">84</td><td class="line">        try { </td></tr>
+<tr><td class="num" id="LINE85">85</td><td class="line">            Class.forName(&quot;com.mysql.jdbc.Driver&quot;); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:42 Instructions
+n$9=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 85];
+*&amp;$irvar2:java.lang.Class*=n$9 [line 85];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE86">86</td><td class="line">            connection = DriverManager.getConnection(this.getHost(), this.getUser(), this.getPassword()); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:42 Instructions
+n$10=*&amp;this:com.stn.helpers.CommentsHelper* [line 86];
+_=*n$10:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 86];
+n$12=_fun_String DBConnection.getHost()(n$10:com.stn.helpers.CommentsHelper*) virtual [line 86];
+*&amp;$irvar3:java.lang.String*=n$12 [line 86];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:42 Instructions
+n$13=*&amp;this:com.stn.helpers.CommentsHelper* [line 86];
+_=*n$13:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 86];
+n$15=_fun_String DBConnection.getUser()(n$13:com.stn.helpers.CommentsHelper*) virtual [line 86];
+*&amp;$irvar4:java.lang.String*=n$15 [line 86];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:42 Instructions
+n$16=*&amp;this:com.stn.helpers.CommentsHelper* [line 86];
+_=*n$16:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 86];
+n$18=_fun_String DBConnection.getPassword()(n$16:com.stn.helpers.CommentsHelper*) virtual [line 86];
+*&amp;$irvar5:java.lang.String*=n$18 [line 86];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:42 Instructions
+n$19=*&amp;$irvar3:java.lang.String* [line 86];
+n$20=*&amp;$irvar4:java.lang.String* [line 86];
+n$21=*&amp;$irvar5:java.lang.String* [line 86];
+n$22=_fun_Connection DriverManager.getConnection(String,String,String)(n$19:java.lang.String*,n$20:java.lang.String*,n$21:java.lang.String*) [line 86];
+*&amp;$irvar6:java.sql.Connection*=n$22 [line 86];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:42 Instructions
+n$23=*&amp;this:com.stn.helpers.CommentsHelper* [line 86];
+n$24=*&amp;$irvar6:java.sql.Connection* [line 86];
+*n$23.connection:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)=n$24 [line 86];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE87">87</td><td class="line">            preparedStatement = connection.prepareStatement(query); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:42 Instructions
+n$25=*&amp;this:com.stn.helpers.CommentsHelper* [line 87];
+n$26=*n$25.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 87];
+_=*n$26:java.sql.Connection*(root java.sql.Connection) [line 87];
+n$28=*&amp;this:com.stn.helpers.CommentsHelper* [line 87];
+n$29=*n$28.query:java.lang.String*(root com.stn.helpers.CommentsHelper) [line 87];
+n$30=_fun_PreparedStatement Connection.prepareStatement(String)(n$26:java.sql.Connection*,n$29:java.lang.String*) interface virtual [line 87];
+*&amp;$irvar7:java.sql.PreparedStatement*=n$30 [line 87];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:42 Instructions
+n$31=*&amp;this:com.stn.helpers.CommentsHelper* [line 87];
+n$32=*&amp;$irvar7:java.sql.PreparedStatement* [line 87];
+*n$31.preparedStatement:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)=n$32 [line 87];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE88">88</td><td class="line">            preparedStatement.setInt(1, idPost); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:42 Instructions
+n$33=*&amp;this:com.stn.helpers.CommentsHelper* [line 88];
+n$34=*n$33.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 88];
+*&amp;$irvar9:java.sql.PreparedStatement*=n$34 [line 88];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:42 Instructions
+n$35=*&amp;idPost:java.lang.Integer* [line 88];
+_=*n$35:java.lang.Integer*(root java.lang.Integer) [line 88];
+n$37=_fun_int Integer.intValue()(n$35:java.lang.Integer*) virtual [line 88];
+*&amp;$irvar8:int=n$37 [line 88];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:42 Instructions
+n$38=*&amp;$irvar9:java.sql.PreparedStatement* [line 88];
+_=*n$38:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 88];
+n$40=*&amp;$irvar8:int [line 88];
+n$41=_fun_void PreparedStatement.setInt(int,int)(n$38:java.sql.PreparedStatement*,1:int,n$40:int) interface virtual [line 88];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE89">89</td><td class="line">            preparedStatement.setInt(2, idUser); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:42 Instructions
+n$42=*&amp;this:com.stn.helpers.CommentsHelper* [line 89];
+n$43=*n$42.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 89];
+*&amp;$irvar11:java.sql.PreparedStatement*=n$43 [line 89];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:42 Instructions
+n$44=*&amp;idUser:java.lang.Integer* [line 89];
+_=*n$44:java.lang.Integer*(root java.lang.Integer) [line 89];
+n$46=_fun_int Integer.intValue()(n$44:java.lang.Integer*) virtual [line 89];
+*&amp;$irvar10:int=n$46 [line 89];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:42 Instructions
+n$47=*&amp;$irvar11:java.sql.PreparedStatement* [line 89];
+_=*n$47:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 89];
+n$49=*&amp;$irvar10:int [line 89];
+n$50=_fun_void PreparedStatement.setInt(int,int)(n$47:java.sql.PreparedStatement*,2:int,n$49:int) interface virtual [line 89];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE90">90</td><td class="line">            preparedStatement.setString(3, body); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:42 Instructions
+n$51=*&amp;this:com.stn.helpers.CommentsHelper* [line 90];
+n$52=*n$51.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 90];
+_=*n$52:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 90];
+n$54=*&amp;body:java.lang.String* [line 90];
+n$55=_fun_void PreparedStatement.setString(int,String)(n$52:java.sql.PreparedStatement*,3:int,n$54:java.lang.String*) interface virtual [line 90];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE91">91</td><td class="line">            preparedStatement.setTimestamp(4, date); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:42 Instructions
+n$56=*&amp;this:com.stn.helpers.CommentsHelper* [line 91];
+n$57=*n$56.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 91];
+_=*n$57:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 91];
+n$59=*&amp;date:java.sql.Timestamp* [line 91];
+n$60=_fun_void PreparedStatement.setTimestamp(int,Timestamp)(n$57:java.sql.PreparedStatement*,4:int,n$59:java.sql.Timestamp*) interface virtual [line 91];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE92">92</td><td class="line">            preparedStatement.setTimestamp(5,date); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:42 Instructions
+n$61=*&amp;this:com.stn.helpers.CommentsHelper* [line 92];
+n$62=*n$61.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 92];
+_=*n$62:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 92];
+n$64=*&amp;date:java.sql.Timestamp* [line 92];
+n$65=_fun_void PreparedStatement.setTimestamp(int,Timestamp)(n$62:java.sql.PreparedStatement*,5:int,n$64:java.sql.Timestamp*) interface virtual [line 92];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE93">93</td><td class="line">            preparedStatement.executeUpdate(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 27 exn:42 Instructions
+n$66=*&amp;this:com.stn.helpers.CommentsHelper* [line 93];
+n$67=*n$66.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 93];
+_=*n$67:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 93];
+n$69=_fun_int PreparedStatement.executeUpdate()(n$67:java.sql.PreparedStatement*) interface virtual [line 93];
+*&amp;$irvar12:int=n$69 [line 93];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE94">94</td><td class="line">        } finally { </td></tr>
+<tr><td class="num" id="LINE95">95</td><td class="line">            if (preparedStatement != null) <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node26.html"><span class='visited with_tooltip'>C_26<span class='tooltip'>node26 preds:25 succs:28 exn:3 Conditional method_body
+n$70=*&amp;this:com.stn.helpers.CommentsHelper* [line 95];
+n$71=*n$70.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 95];
+PRUNE(!(n$71 == null), true); [line 95];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node27.html"><span class='visited with_tooltip'>C_27<span class='tooltip'>node27 preds:25 succs:29 30 exn:3 Conditional method_body
+n$70=*&amp;this:com.stn.helpers.CommentsHelper* [line 95];
+n$71=*n$70.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 95];
+PRUNE((n$71 == null), false); [line 95];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:43 41 succs:33 34 exn:44 Instructions
+n$84=*&amp;CatchVar175:java.lang.Object* [line 95];
+*&amp;$bcvar5:java.lang.Object*=n$84 [line 95];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node33.html"><span class='visited with_tooltip'>C_33<span class='tooltip'>node33 preds:32 succs:35 exn:3 Conditional method_body
+n$85=*&amp;this:com.stn.helpers.CommentsHelper* [line 95];
+n$86=*n$85.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 95];
+PRUNE(!(n$86 == null), true); [line 95];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node34.html"><span class='visited with_tooltip'>C_34<span class='tooltip'>node34 preds:32 succs:36 37 exn:3 Conditional method_body
+n$85=*&amp;this:com.stn.helpers.CommentsHelper* [line 95];
+n$86=*n$85.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 95];
+PRUNE((n$86 == null), false); [line 95];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:42 succs:32 exn:3 Instructions
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds: succs:41 exn:3 Instructions
+n$100=*&amp;return:void [line 95];
+*&amp;return:void=null [line 95];
+n$101=_fun___unwrap_exception(n$100:void) [line 95];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:44 succs:32 exn:3 Instructions
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds: succs:43 exn:3 Instructions
+n$100=*&amp;return:void [line 95];
+*&amp;return:void=null [line 95];
+n$101=_fun___unwrap_exception(n$100:void) [line 95];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE96">96</td><td class="line">                preparedStatement.close(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:26 succs:29 30 exn:3 Instructions
+n$72=*&amp;this:com.stn.helpers.CommentsHelper* [line 96];
+n$73=*n$72.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 96];
+n$76=_fun___set_mem_attribute(n$73:java.sql.PreparedStatement*) [line 96];
+_=*n$73:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 96];
+n$75=_fun_void PreparedStatement.close()(n$73:java.sql.PreparedStatement*) interface virtual [line 96];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:33 succs:36 37 exn:3 Instructions
+n$87=*&amp;this:com.stn.helpers.CommentsHelper* [line 96];
+n$88=*n$87.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 96];
+n$91=_fun___set_mem_attribute(n$88:java.sql.PreparedStatement*) [line 96];
+_=*n$88:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 96];
+n$90=_fun_void PreparedStatement.close()(n$88:java.sql.PreparedStatement*) interface virtual [line 96];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE97">97</td><td class="line">            if (connection != null) <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node29.html"><span class='visited with_tooltip'>C_29<span class='tooltip'>node29 preds:28 27 succs:31 exn:3 Conditional method_body
+n$77=*&amp;this:com.stn.helpers.CommentsHelper* [line 97];
+n$78=*n$77.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 97];
+PRUNE(!(n$78 == null), true); [line 97];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node30.html"><span class='visited with_tooltip'>C_30<span class='tooltip'>node30 preds:28 27 succs:40 exn:3 Conditional method_body
+n$77=*&amp;this:com.stn.helpers.CommentsHelper* [line 97];
+n$78=*n$77.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 97];
+PRUNE((n$78 == null), false); [line 97];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node36.html"><span class='visited with_tooltip'>C_36<span class='tooltip'>node36 preds:35 34 succs:38 exn:3 Conditional method_body
+n$92=*&amp;this:com.stn.helpers.CommentsHelper* [line 97];
+n$93=*n$92.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 97];
+PRUNE(!(n$93 == null), true); [line 97];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node37.html"><span class='visited with_tooltip'>C_37<span class='tooltip'>node37 preds:35 34 succs:39 exn:3 Conditional method_body
+n$92=*&amp;this:com.stn.helpers.CommentsHelper* [line 97];
+n$93=*n$92.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 97];
+PRUNE((n$93 == null), false); [line 97];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE98">98</td><td class="line">                connection.close(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:29 succs:40 exn:3 Instructions
+n$79=*&amp;this:com.stn.helpers.CommentsHelper* [line 98];
+n$80=*n$79.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 98];
+n$83=_fun___set_mem_attribute(n$80:java.sql.Connection*) [line 98];
+_=*n$80:java.sql.Connection*(root java.sql.Connection) [line 98];
+n$82=_fun_void Connection.close()(n$80:java.sql.Connection*) interface virtual [line 98];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:36 succs:39 exn:3 Instructions
+n$94=*&amp;this:com.stn.helpers.CommentsHelper* [line 98];
+n$95=*n$94.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 98];
+n$98=_fun___set_mem_attribute(n$95:java.sql.Connection*) [line 98];
+_=*n$95:java.sql.Connection*(root java.sql.Connection) [line 98];
+n$97=_fun_void Connection.close()(n$95:java.sql.Connection*) interface virtual [line 98];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE99">99</td><td class="line">        } <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:38 37 succs:2 exn:3 Instructions
+n$99=*&amp;$bcvar5:java.lang.Object* [line 99];
+*&amp;return:void=EXN n$99 [line 99];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE100">100</td><td class="line">    } <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:31 30 succs:2 exn:3 Instructions
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:40 39 3 succs: exn: Exit
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE101">101</td><td class="line">	 </td></tr>
+<tr><td class="num" id="LINE102">102</td><td class="line">	public void addReply(Integer idPost, Integer idUser, String body, String replyee) throws SQLException, ClassNotFoundException { <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1.html">summary for void CommentsHelper.addReply(Integer,Integer,String,String)</a></td></tr>
+<tr><td class="num" id="LINE103">103</td><td class="line">        java.sql.Timestamp date = new java.sql.Timestamp((new java.util.Date().getTime())); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.Date):java.util.Date*) [line 103];
+n$1=_fun_Date.&lt;init&gt;()(n$0:java.util.Date*) [line 103];
+*&amp;$irvar0:java.util.Date*=n$0 [line 103];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$2=*&amp;$irvar0:java.util.Date* [line 103];
+_=*n$2:java.util.Date*(root java.util.Date) [line 103];
+n$4=_fun_long Date.getTime()(n$2:java.util.Date*) virtual [line 103];
+*&amp;$irvar1:long=n$4 [line 103];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$5=_fun___new(sizeof(t=java.sql.Timestamp):java.sql.Timestamp*) [line 103];
+n$6=*&amp;$irvar1:long [line 103];
+n$7=_fun_Timestamp.&lt;init&gt;(long)(n$5:java.sql.Timestamp*,n$6:long) [line 103];
+*&amp;date:java.sql.Timestamp*=n$5 [line 103];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE104">104</td><td class="line">        query = &quot;Insert into comments(IdPost,IdUser,Continut,Data) values(?,?,?,?)&quot;; <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$8=*&amp;this:com.stn.helpers.CommentsHelper* [line 104];
+*n$8.query:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)="Insert into comments(IdPost,IdUser,Continut,Data) values(?,?,?,?)" [line 104];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE105">105</td><td class="line">        try { </td></tr>
+<tr><td class="num" id="LINE106">106</td><td class="line">            Class.forName(&quot;com.mysql.jdbc.Driver&quot;); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:48 Instructions
+n$9=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 106];
+*&amp;$irvar2:java.lang.Class*=n$9 [line 106];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE107">107</td><td class="line">            connection = DriverManager.getConnection(this.getHost(), this.getUser(), this.getPassword()); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:48 Instructions
+n$10=*&amp;this:com.stn.helpers.CommentsHelper* [line 107];
+_=*n$10:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 107];
+n$12=_fun_String DBConnection.getHost()(n$10:com.stn.helpers.CommentsHelper*) virtual [line 107];
+*&amp;$irvar3:java.lang.String*=n$12 [line 107];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:48 Instructions
+n$13=*&amp;this:com.stn.helpers.CommentsHelper* [line 107];
+_=*n$13:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 107];
+n$15=_fun_String DBConnection.getUser()(n$13:com.stn.helpers.CommentsHelper*) virtual [line 107];
+*&amp;$irvar4:java.lang.String*=n$15 [line 107];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:48 Instructions
+n$16=*&amp;this:com.stn.helpers.CommentsHelper* [line 107];
+_=*n$16:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 107];
+n$18=_fun_String DBConnection.getPassword()(n$16:com.stn.helpers.CommentsHelper*) virtual [line 107];
+*&amp;$irvar5:java.lang.String*=n$18 [line 107];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:48 Instructions
+n$19=*&amp;$irvar3:java.lang.String* [line 107];
+n$20=*&amp;$irvar4:java.lang.String* [line 107];
+n$21=*&amp;$irvar5:java.lang.String* [line 107];
+n$22=_fun_Connection DriverManager.getConnection(String,String,String)(n$19:java.lang.String*,n$20:java.lang.String*,n$21:java.lang.String*) [line 107];
+*&amp;$irvar6:java.sql.Connection*=n$22 [line 107];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:48 Instructions
+n$23=*&amp;this:com.stn.helpers.CommentsHelper* [line 107];
+n$24=*&amp;$irvar6:java.sql.Connection* [line 107];
+*n$23.connection:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)=n$24 [line 107];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE108">108</td><td class="line">            preparedStatement = connection.prepareStatement(query); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:48 Instructions
+n$25=*&amp;this:com.stn.helpers.CommentsHelper* [line 108];
+n$26=*n$25.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 108];
+_=*n$26:java.sql.Connection*(root java.sql.Connection) [line 108];
+n$28=*&amp;this:com.stn.helpers.CommentsHelper* [line 108];
+n$29=*n$28.query:java.lang.String*(root com.stn.helpers.CommentsHelper) [line 108];
+n$30=_fun_PreparedStatement Connection.prepareStatement(String)(n$26:java.sql.Connection*,n$29:java.lang.String*) interface virtual [line 108];
+*&amp;$irvar7:java.sql.PreparedStatement*=n$30 [line 108];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:48 Instructions
+n$31=*&amp;this:com.stn.helpers.CommentsHelper* [line 108];
+n$32=*&amp;$irvar7:java.sql.PreparedStatement* [line 108];
+*n$31.preparedStatement:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)=n$32 [line 108];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE109">109</td><td class="line">            preparedStatement.setInt(1, idPost); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:48 Instructions
+n$33=*&amp;this:com.stn.helpers.CommentsHelper* [line 109];
+n$34=*n$33.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 109];
+*&amp;$irvar9:java.sql.PreparedStatement*=n$34 [line 109];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:48 Instructions
+n$35=*&amp;idPost:java.lang.Integer* [line 109];
+_=*n$35:java.lang.Integer*(root java.lang.Integer) [line 109];
+n$37=_fun_int Integer.intValue()(n$35:java.lang.Integer*) virtual [line 109];
+*&amp;$irvar8:int=n$37 [line 109];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:48 Instructions
+n$38=*&amp;$irvar9:java.sql.PreparedStatement* [line 109];
+_=*n$38:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 109];
+n$40=*&amp;$irvar8:int [line 109];
+n$41=_fun_void PreparedStatement.setInt(int,int)(n$38:java.sql.PreparedStatement*,1:int,n$40:int) interface virtual [line 109];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE110">110</td><td class="line">            preparedStatement.setInt(2, idUser); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:48 Instructions
+n$42=*&amp;this:com.stn.helpers.CommentsHelper* [line 110];
+n$43=*n$42.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 110];
+*&amp;$irvar11:java.sql.PreparedStatement*=n$43 [line 110];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:48 Instructions
+n$44=*&amp;idUser:java.lang.Integer* [line 110];
+_=*n$44:java.lang.Integer*(root java.lang.Integer) [line 110];
+n$46=_fun_int Integer.intValue()(n$44:java.lang.Integer*) virtual [line 110];
+*&amp;$irvar10:int=n$46 [line 110];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:48 Instructions
+n$47=*&amp;$irvar11:java.sql.PreparedStatement* [line 110];
+_=*n$47:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 110];
+n$49=*&amp;$irvar10:int [line 110];
+n$50=_fun_void PreparedStatement.setInt(int,int)(n$47:java.sql.PreparedStatement*,2:int,n$49:int) interface virtual [line 110];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE111">111</td><td class="line">            preparedStatement.setString(3, &quot;Reply to: [i]&quot;+replyee+&quot;[/i]\n&quot;+body); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:48 Instructions
+n$51=*&amp;this:com.stn.helpers.CommentsHelper* [line 111];
+n$52=*n$51.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 111];
+*&amp;$irvar12:java.sql.PreparedStatement*=n$52 [line 111];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:48 Instructions
+n$53=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 111];
+n$54=_fun_StringBuilder.&lt;init&gt;()(n$53:java.lang.StringBuilder*) [line 111];
+*&amp;$irvar13:java.lang.StringBuilder*=n$53 [line 111];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:48 Instructions
+n$55=*&amp;$irvar13:java.lang.StringBuilder* [line 111];
+_=*n$55:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 111];
+n$57=_fun_StringBuilder StringBuilder.append(String)(n$55:java.lang.StringBuilder*,"Reply to: [i]":java.lang.Object*) virtual [line 111];
+*&amp;$irvar14:java.lang.StringBuilder*=n$57 [line 111];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:48 Instructions
+n$58=*&amp;$irvar14:java.lang.StringBuilder* [line 111];
+_=*n$58:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 111];
+n$60=*&amp;replyee:java.lang.String* [line 111];
+n$61=_fun_StringBuilder StringBuilder.append(String)(n$58:java.lang.StringBuilder*,n$60:java.lang.String*) virtual [line 111];
+*&amp;$irvar15:java.lang.StringBuilder*=n$61 [line 111];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:48 Instructions
+n$62=*&amp;$irvar15:java.lang.StringBuilder* [line 111];
+_=*n$62:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 111];
+n$64=_fun_StringBuilder StringBuilder.append(String)(n$62:java.lang.StringBuilder*,"[/i]\\n":java.lang.Object*) virtual [line 111];
+*&amp;$irvar16:java.lang.StringBuilder*=n$64 [line 111];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:48 Instructions
+n$65=*&amp;$irvar16:java.lang.StringBuilder* [line 111];
+_=*n$65:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 111];
+n$67=*&amp;body:java.lang.String* [line 111];
+n$68=_fun_StringBuilder StringBuilder.append(String)(n$65:java.lang.StringBuilder*,n$67:java.lang.String*) virtual [line 111];
+*&amp;$irvar17:java.lang.StringBuilder*=n$68 [line 111];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:48 Instructions
+n$69=*&amp;$irvar17:java.lang.StringBuilder* [line 111];
+_=*n$69:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 111];
+n$71=_fun_String StringBuilder.toString()(n$69:java.lang.StringBuilder*) virtual [line 111];
+*&amp;$irvar18:java.lang.String*=n$71 [line 111];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:30 exn:48 Instructions
+n$72=*&amp;$irvar12:java.sql.PreparedStatement* [line 111];
+_=*n$72:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 111];
+n$74=*&amp;$irvar18:java.lang.String* [line 111];
+n$75=_fun_void PreparedStatement.setString(int,String)(n$72:java.sql.PreparedStatement*,3:int,n$74:java.lang.String*) interface virtual [line 111];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE112">112</td><td class="line">            preparedStatement.setTimestamp(4, date); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 succs:31 exn:48 Instructions
+n$76=*&amp;this:com.stn.helpers.CommentsHelper* [line 112];
+n$77=*n$76.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 112];
+_=*n$77:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 112];
+n$79=*&amp;date:java.sql.Timestamp* [line 112];
+n$80=_fun_void PreparedStatement.setTimestamp(int,Timestamp)(n$77:java.sql.PreparedStatement*,4:int,n$79:java.sql.Timestamp*) interface virtual [line 112];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE113">113</td><td class="line">            preparedStatement.executeUpdate(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:30 succs:32 33 exn:48 Instructions
+n$81=*&amp;this:com.stn.helpers.CommentsHelper* [line 113];
+n$82=*n$81.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 113];
+_=*n$82:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 113];
+n$84=_fun_int PreparedStatement.executeUpdate()(n$82:java.sql.PreparedStatement*) interface virtual [line 113];
+*&amp;$irvar19:int=n$84 [line 113];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE114">114</td><td class="line">        } finally { </td></tr>
+<tr><td class="num" id="LINE115">115</td><td class="line">            if (preparedStatement != null) <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:31 succs:34 exn:3 Conditional method_body
+n$85=*&amp;this:com.stn.helpers.CommentsHelper* [line 115];
+n$86=*n$85.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 115];
+PRUNE(!(n$86 == null), true); [line 115];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node33.html"><span class='visited with_tooltip'>C_33<span class='tooltip'>node33 preds:31 succs:35 36 exn:3 Conditional method_body
+n$85=*&amp;this:com.stn.helpers.CommentsHelper* [line 115];
+n$86=*n$85.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 115];
+PRUNE((n$86 == null), false); [line 115];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:49 47 succs:39 40 exn:50 Instructions
+n$99=*&amp;CatchVar191:java.lang.Object* [line 115];
+*&amp;$bcvar6:java.lang.Object*=n$99 [line 115];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node39.html"><span class='visited with_tooltip'>C_39<span class='tooltip'>node39 preds:38 succs:41 exn:3 Conditional method_body
+n$100=*&amp;this:com.stn.helpers.CommentsHelper* [line 115];
+n$101=*n$100.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 115];
+PRUNE(!(n$101 == null), true); [line 115];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node40.html"><span class='visited with_tooltip'>C_40<span class='tooltip'>node40 preds:38 succs:42 43 exn:3 Conditional method_body
+n$100=*&amp;this:com.stn.helpers.CommentsHelper* [line 115];
+n$101=*n$100.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 115];
+PRUNE((n$101 == null), false); [line 115];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node47.html"><span class='visited with_tooltip'>I_47<span class='tooltip'>node47 preds:48 succs:38 exn:3 Instructions
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node48.html"><span class='visited with_tooltip'>I_48<span class='tooltip'>node48 preds: succs:47 exn:3 Instructions
+n$115=*&amp;return:void [line 115];
+*&amp;return:void=null [line 115];
+n$116=_fun___unwrap_exception(n$115:void) [line 115];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node49.html"><span class='visited with_tooltip'>I_49<span class='tooltip'>node49 preds:50 succs:38 exn:3 Instructions
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node50.html"><span class='visited with_tooltip'>I_50<span class='tooltip'>node50 preds: succs:49 exn:3 Instructions
+n$115=*&amp;return:void [line 115];
+*&amp;return:void=null [line 115];
+n$116=_fun___unwrap_exception(n$115:void) [line 115];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE116">116</td><td class="line">                preparedStatement.close(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:32 succs:35 36 exn:3 Instructions
+n$87=*&amp;this:com.stn.helpers.CommentsHelper* [line 116];
+n$88=*n$87.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 116];
+n$91=_fun___set_mem_attribute(n$88:java.sql.PreparedStatement*) [line 116];
+_=*n$88:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 116];
+n$90=_fun_void PreparedStatement.close()(n$88:java.sql.PreparedStatement*) interface virtual [line 116];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:39 succs:42 43 exn:3 Instructions
+n$102=*&amp;this:com.stn.helpers.CommentsHelper* [line 116];
+n$103=*n$102.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 116];
+n$106=_fun___set_mem_attribute(n$103:java.sql.PreparedStatement*) [line 116];
+_=*n$103:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 116];
+n$105=_fun_void PreparedStatement.close()(n$103:java.sql.PreparedStatement*) interface virtual [line 116];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE117">117</td><td class="line">            if (connection != null) <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node35.html"><span class='visited with_tooltip'>C_35<span class='tooltip'>node35 preds:34 33 succs:37 exn:3 Conditional method_body
+n$92=*&amp;this:com.stn.helpers.CommentsHelper* [line 117];
+n$93=*n$92.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 117];
+PRUNE(!(n$93 == null), true); [line 117];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node36.html"><span class='visited with_tooltip'>C_36<span class='tooltip'>node36 preds:34 33 succs:46 exn:3 Conditional method_body
+n$92=*&amp;this:com.stn.helpers.CommentsHelper* [line 117];
+n$93=*n$92.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 117];
+PRUNE((n$93 == null), false); [line 117];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node42.html"><span class='visited with_tooltip'>C_42<span class='tooltip'>node42 preds:41 40 succs:44 exn:3 Conditional method_body
+n$107=*&amp;this:com.stn.helpers.CommentsHelper* [line 117];
+n$108=*n$107.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 117];
+PRUNE(!(n$108 == null), true); [line 117];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node43.html"><span class='visited with_tooltip'>C_43<span class='tooltip'>node43 preds:41 40 succs:45 exn:3 Conditional method_body
+n$107=*&amp;this:com.stn.helpers.CommentsHelper* [line 117];
+n$108=*n$107.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 117];
+PRUNE((n$108 == null), false); [line 117];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE118">118</td><td class="line">                connection.close(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:35 succs:46 exn:3 Instructions
+n$94=*&amp;this:com.stn.helpers.CommentsHelper* [line 118];
+n$95=*n$94.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 118];
+n$98=_fun___set_mem_attribute(n$95:java.sql.Connection*) [line 118];
+_=*n$95:java.sql.Connection*(root java.sql.Connection) [line 118];
+n$97=_fun_void Connection.close()(n$95:java.sql.Connection*) interface virtual [line 118];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds:42 succs:45 exn:3 Instructions
+n$109=*&amp;this:com.stn.helpers.CommentsHelper* [line 118];
+n$110=*n$109.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 118];
+n$113=_fun___set_mem_attribute(n$110:java.sql.Connection*) [line 118];
+_=*n$110:java.sql.Connection*(root java.sql.Connection) [line 118];
+n$112=_fun_void Connection.close()(n$110:java.sql.Connection*) interface virtual [line 118];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE119">119</td><td class="line">        } <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node45.html"><span class='visited with_tooltip'>I_45<span class='tooltip'>node45 preds:44 43 succs:2 exn:3 Instructions
+n$114=*&amp;$bcvar6:java.lang.Object* [line 119];
+*&amp;return:void=EXN n$114 [line 119];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE120">120</td><td class="line">    } <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node46.html"><span class='visited with_tooltip'>I_46<span class='tooltip'>node46 preds:37 36 succs:2 exn:3 Instructions
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:46 45 3 succs: exn: Exit
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.addReply%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.la.20ee02a31cfb15e76d578f9421fd1ba1_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE121">121</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE122">122</td><td class="line">    public void deleteComment(Integer id) throws SQLException, ClassNotFoundException { <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15.html">summary for void CommentsHelper.deleteComment(Integer)</a></td></tr>
+<tr><td class="num" id="LINE123">123</td><td class="line">        query = &quot;Delete from comments where Id=?&quot;; <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.helpers.CommentsHelper* [line 123];
+*n$0.query:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)="Delete from comments where Id=?" [line 123];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE124">124</td><td class="line">        try { </td></tr>
+<tr><td class="num" id="LINE125">125</td><td class="line">            Class.forName(&quot;com.mysql.jdbc.Driver&quot;); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:33 Instructions
+n$1=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 125];
+*&amp;$irvar0:java.lang.Class*=n$1 [line 125];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE126">126</td><td class="line">            connection = DriverManager.getConnection(this.getHost(), this.getUser(), this.getPassword()); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:33 Instructions
+n$2=*&amp;this:com.stn.helpers.CommentsHelper* [line 126];
+_=*n$2:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 126];
+n$4=_fun_String DBConnection.getHost()(n$2:com.stn.helpers.CommentsHelper*) virtual [line 126];
+*&amp;$irvar1:java.lang.String*=n$4 [line 126];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:33 Instructions
+n$5=*&amp;this:com.stn.helpers.CommentsHelper* [line 126];
+_=*n$5:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 126];
+n$7=_fun_String DBConnection.getUser()(n$5:com.stn.helpers.CommentsHelper*) virtual [line 126];
+*&amp;$irvar2:java.lang.String*=n$7 [line 126];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:33 Instructions
+n$8=*&amp;this:com.stn.helpers.CommentsHelper* [line 126];
+_=*n$8:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 126];
+n$10=_fun_String DBConnection.getPassword()(n$8:com.stn.helpers.CommentsHelper*) virtual [line 126];
+*&amp;$irvar3:java.lang.String*=n$10 [line 126];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:33 Instructions
+n$11=*&amp;$irvar1:java.lang.String* [line 126];
+n$12=*&amp;$irvar2:java.lang.String* [line 126];
+n$13=*&amp;$irvar3:java.lang.String* [line 126];
+n$14=_fun_Connection DriverManager.getConnection(String,String,String)(n$11:java.lang.String*,n$12:java.lang.String*,n$13:java.lang.String*) [line 126];
+*&amp;$irvar4:java.sql.Connection*=n$14 [line 126];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:33 Instructions
+n$15=*&amp;this:com.stn.helpers.CommentsHelper* [line 126];
+n$16=*&amp;$irvar4:java.sql.Connection* [line 126];
+*n$15.connection:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)=n$16 [line 126];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE127">127</td><td class="line">            preparedStatement = connection.prepareStatement(query); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:33 Instructions
+n$17=*&amp;this:com.stn.helpers.CommentsHelper* [line 127];
+n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 127];
+_=*n$18:java.sql.Connection*(root java.sql.Connection) [line 127];
+n$20=*&amp;this:com.stn.helpers.CommentsHelper* [line 127];
+n$21=*n$20.query:java.lang.String*(root com.stn.helpers.CommentsHelper) [line 127];
+n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 127];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 127];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:33 Instructions
+n$23=*&amp;this:com.stn.helpers.CommentsHelper* [line 127];
+n$24=*&amp;$irvar5:java.sql.PreparedStatement* [line 127];
+*n$23.preparedStatement:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)=n$24 [line 127];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE128">128</td><td class="line">            preparedStatement.setInt(1, id); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:33 Instructions
+n$25=*&amp;this:com.stn.helpers.CommentsHelper* [line 128];
+n$26=*n$25.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 128];
+*&amp;$irvar7:java.sql.PreparedStatement*=n$26 [line 128];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:33 Instructions
+n$27=*&amp;id:java.lang.Integer* [line 128];
+_=*n$27:java.lang.Integer*(root java.lang.Integer) [line 128];
+n$29=_fun_int Integer.intValue()(n$27:java.lang.Integer*) virtual [line 128];
+*&amp;$irvar6:int=n$29 [line 128];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:33 Instructions
+n$30=*&amp;$irvar7:java.sql.PreparedStatement* [line 128];
+_=*n$30:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 128];
+n$32=*&amp;$irvar6:int [line 128];
+n$33=_fun_void PreparedStatement.setInt(int,int)(n$30:java.sql.PreparedStatement*,1:int,n$32:int) interface virtual [line 128];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE129">129</td><td class="line">            preparedStatement.executeUpdate(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 18 exn:33 Instructions
+n$34=*&amp;this:com.stn.helpers.CommentsHelper* [line 129];
+n$35=*n$34.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 129];
+_=*n$35:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 129];
+n$37=_fun_int PreparedStatement.executeUpdate()(n$35:java.sql.PreparedStatement*) interface virtual [line 129];
+*&amp;$irvar8:int=n$37 [line 129];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE130">130</td><td class="line">        } finally { </td></tr>
+<tr><td class="num" id="LINE131">131</td><td class="line">            if (preparedStatement != null) <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node17.html"><span class='visited with_tooltip'>C_17<span class='tooltip'>node17 preds:16 succs:19 exn:3 Conditional method_body
+n$38=*&amp;this:com.stn.helpers.CommentsHelper* [line 131];
+n$39=*n$38.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 131];
+PRUNE(!(n$39 == null), true); [line 131];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:16 succs:20 21 exn:3 Conditional method_body
+n$38=*&amp;this:com.stn.helpers.CommentsHelper* [line 131];
+n$39=*n$38.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 131];
+PRUNE((n$39 == null), false); [line 131];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:32 succs:24 25 exn:3 Instructions
+n$52=*&amp;CatchVar107:java.lang.Object* [line 131];
+*&amp;$bcvar2:java.lang.Object*=n$52 [line 131];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node24.html"><span class='visited with_tooltip'>C_24<span class='tooltip'>node24 preds:23 succs:26 exn:3 Conditional method_body
+n$53=*&amp;this:com.stn.helpers.CommentsHelper* [line 131];
+n$54=*n$53.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 131];
+PRUNE(!(n$54 == null), true); [line 131];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node25.html"><span class='visited with_tooltip'>C_25<span class='tooltip'>node25 preds:23 succs:27 28 exn:3 Conditional method_body
+n$53=*&amp;this:com.stn.helpers.CommentsHelper* [line 131];
+n$54=*n$53.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 131];
+PRUNE((n$54 == null), false); [line 131];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:33 succs:23 exn:3 Instructions
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds: succs:32 exn:3 Instructions
+n$68=*&amp;return:void [line 131];
+*&amp;return:void=null [line 131];
+n$69=_fun___unwrap_exception(n$68:void) [line 131];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE132">132</td><td class="line">                preparedStatement.close(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:17 succs:20 21 exn:3 Instructions
+n$40=*&amp;this:com.stn.helpers.CommentsHelper* [line 132];
+n$41=*n$40.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 132];
+n$44=_fun___set_mem_attribute(n$41:java.sql.PreparedStatement*) [line 132];
+_=*n$41:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 132];
+n$43=_fun_void PreparedStatement.close()(n$41:java.sql.PreparedStatement*) interface virtual [line 132];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:24 succs:27 28 exn:3 Instructions
+n$55=*&amp;this:com.stn.helpers.CommentsHelper* [line 132];
+n$56=*n$55.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 132];
+n$59=_fun___set_mem_attribute(n$56:java.sql.PreparedStatement*) [line 132];
+_=*n$56:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 132];
+n$58=_fun_void PreparedStatement.close()(n$56:java.sql.PreparedStatement*) interface virtual [line 132];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE133">133</td><td class="line">            if (connection != null) <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node20.html"><span class='visited with_tooltip'>C_20<span class='tooltip'>node20 preds:19 18 succs:22 exn:3 Conditional method_body
+n$45=*&amp;this:com.stn.helpers.CommentsHelper* [line 133];
+n$46=*n$45.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 133];
+PRUNE(!(n$46 == null), true); [line 133];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node21.html"><span class='visited with_tooltip'>C_21<span class='tooltip'>node21 preds:19 18 succs:31 exn:3 Conditional method_body
+n$45=*&amp;this:com.stn.helpers.CommentsHelper* [line 133];
+n$46=*n$45.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 133];
+PRUNE((n$46 == null), false); [line 133];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node27.html"><span class='visited with_tooltip'>C_27<span class='tooltip'>node27 preds:26 25 succs:29 exn:3 Conditional method_body
+n$60=*&amp;this:com.stn.helpers.CommentsHelper* [line 133];
+n$61=*n$60.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 133];
+PRUNE(!(n$61 == null), true); [line 133];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node28.html"><span class='visited with_tooltip'>C_28<span class='tooltip'>node28 preds:26 25 succs:30 exn:3 Conditional method_body
+n$60=*&amp;this:com.stn.helpers.CommentsHelper* [line 133];
+n$61=*n$60.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 133];
+PRUNE((n$61 == null), false); [line 133];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE134">134</td><td class="line">                connection.close(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:20 succs:31 exn:3 Instructions
+n$47=*&amp;this:com.stn.helpers.CommentsHelper* [line 134];
+n$48=*n$47.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 134];
+n$51=_fun___set_mem_attribute(n$48:java.sql.Connection*) [line 134];
+_=*n$48:java.sql.Connection*(root java.sql.Connection) [line 134];
+n$50=_fun_void Connection.close()(n$48:java.sql.Connection*) interface virtual [line 134];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:27 succs:30 exn:3 Instructions
+n$62=*&amp;this:com.stn.helpers.CommentsHelper* [line 134];
+n$63=*n$62.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 134];
+n$66=_fun___set_mem_attribute(n$63:java.sql.Connection*) [line 134];
+_=*n$63:java.sql.Connection*(root java.sql.Connection) [line 134];
+n$65=_fun_void Connection.close()(n$63:java.sql.Connection*) interface virtual [line 134];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE135">135</td><td class="line">        } <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 28 succs:2 exn:3 Instructions
+n$67=*&amp;$bcvar2:java.lang.Object* [line 135];
+*&amp;return:void=EXN n$67 [line 135];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE136">136</td><td class="line">    } <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:22 21 succs:2 exn:3 Instructions
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:31 30 3 succs: exn: Exit
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.deleteComment%28java.lang.Integer%29%3Avoid.423a9699dd00a270ac2ba708b6a94c15_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE137">137</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE138">138</td><td class="line">    public void editComment(Integer id, String body) throws SQLException, ClassNotFoundException { <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d.html">summary for void CommentsHelper.editComment(Integer,String)</a></td></tr>
+<tr><td class="num" id="LINE139">139</td><td class="line">        java.sql.Timestamp date = new java.sql.Timestamp((new java.util.Date().getTime())); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.Date):java.util.Date*) [line 139];
+n$1=_fun_Date.&lt;init&gt;()(n$0:java.util.Date*) [line 139];
+*&amp;$irvar0:java.util.Date*=n$0 [line 139];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$2=*&amp;$irvar0:java.util.Date* [line 139];
+_=*n$2:java.util.Date*(root java.util.Date) [line 139];
+n$4=_fun_long Date.getTime()(n$2:java.util.Date*) virtual [line 139];
+*&amp;$irvar1:long=n$4 [line 139];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$5=_fun___new(sizeof(t=java.sql.Timestamp):java.sql.Timestamp*) [line 139];
+n$6=*&amp;$irvar1:long [line 139];
+n$7=_fun_Timestamp.&lt;init&gt;(long)(n$5:java.sql.Timestamp*,n$6:long) [line 139];
+*&amp;date:java.sql.Timestamp*=n$5 [line 139];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE140">140</td><td class="line">        query = &quot;Update comments set Continut=?,LastEdit=? where Id=?&quot;; <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$8=*&amp;this:com.stn.helpers.CommentsHelper* [line 140];
+*n$8.query:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)="Update comments set Continut=?,LastEdit=? where Id=?" [line 140];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE141">141</td><td class="line">        try { </td></tr>
+<tr><td class="num" id="LINE142">142</td><td class="line">            Class.forName(&quot;com.mysql.jdbc.Driver&quot;); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:38 Instructions
+n$9=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 142];
+*&amp;$irvar2:java.lang.Class*=n$9 [line 142];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE143">143</td><td class="line">            connection = DriverManager.getConnection(this.getHost(), this.getUser(), this.getPassword()); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:38 Instructions
+n$10=*&amp;this:com.stn.helpers.CommentsHelper* [line 143];
+_=*n$10:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 143];
+n$12=_fun_String DBConnection.getHost()(n$10:com.stn.helpers.CommentsHelper*) virtual [line 143];
+*&amp;$irvar3:java.lang.String*=n$12 [line 143];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:38 Instructions
+n$13=*&amp;this:com.stn.helpers.CommentsHelper* [line 143];
+_=*n$13:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 143];
+n$15=_fun_String DBConnection.getUser()(n$13:com.stn.helpers.CommentsHelper*) virtual [line 143];
+*&amp;$irvar4:java.lang.String*=n$15 [line 143];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:38 Instructions
+n$16=*&amp;this:com.stn.helpers.CommentsHelper* [line 143];
+_=*n$16:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 143];
+n$18=_fun_String DBConnection.getPassword()(n$16:com.stn.helpers.CommentsHelper*) virtual [line 143];
+*&amp;$irvar5:java.lang.String*=n$18 [line 143];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:38 Instructions
+n$19=*&amp;$irvar3:java.lang.String* [line 143];
+n$20=*&amp;$irvar4:java.lang.String* [line 143];
+n$21=*&amp;$irvar5:java.lang.String* [line 143];
+n$22=_fun_Connection DriverManager.getConnection(String,String,String)(n$19:java.lang.String*,n$20:java.lang.String*,n$21:java.lang.String*) [line 143];
+*&amp;$irvar6:java.sql.Connection*=n$22 [line 143];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:38 Instructions
+n$23=*&amp;this:com.stn.helpers.CommentsHelper* [line 143];
+n$24=*&amp;$irvar6:java.sql.Connection* [line 143];
+*n$23.connection:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)=n$24 [line 143];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE144">144</td><td class="line">            preparedStatement = connection.prepareStatement(query); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:38 Instructions
+n$25=*&amp;this:com.stn.helpers.CommentsHelper* [line 144];
+n$26=*n$25.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 144];
+_=*n$26:java.sql.Connection*(root java.sql.Connection) [line 144];
+n$28=*&amp;this:com.stn.helpers.CommentsHelper* [line 144];
+n$29=*n$28.query:java.lang.String*(root com.stn.helpers.CommentsHelper) [line 144];
+n$30=_fun_PreparedStatement Connection.prepareStatement(String)(n$26:java.sql.Connection*,n$29:java.lang.String*) interface virtual [line 144];
+*&amp;$irvar7:java.sql.PreparedStatement*=n$30 [line 144];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:38 Instructions
+n$31=*&amp;this:com.stn.helpers.CommentsHelper* [line 144];
+n$32=*&amp;$irvar7:java.sql.PreparedStatement* [line 144];
+*n$31.preparedStatement:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)=n$32 [line 144];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE145">145</td><td class="line">            preparedStatement.setString(1, body); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:38 Instructions
+n$33=*&amp;this:com.stn.helpers.CommentsHelper* [line 145];
+n$34=*n$33.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 145];
+_=*n$34:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 145];
+n$36=*&amp;body:java.lang.String* [line 145];
+n$37=_fun_void PreparedStatement.setString(int,String)(n$34:java.sql.PreparedStatement*,1:int,n$36:java.lang.String*) interface virtual [line 145];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE146">146</td><td class="line">            preparedStatement.setTimestamp(2, date); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:38 Instructions
+n$38=*&amp;this:com.stn.helpers.CommentsHelper* [line 146];
+n$39=*n$38.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 146];
+_=*n$39:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 146];
+n$41=*&amp;date:java.sql.Timestamp* [line 146];
+n$42=_fun_void PreparedStatement.setTimestamp(int,Timestamp)(n$39:java.sql.PreparedStatement*,2:int,n$41:java.sql.Timestamp*) interface virtual [line 146];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE147">147</td><td class="line">            preparedStatement.setInt(3, id); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:38 Instructions
+n$43=*&amp;this:com.stn.helpers.CommentsHelper* [line 147];
+n$44=*n$43.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 147];
+*&amp;$irvar9:java.sql.PreparedStatement*=n$44 [line 147];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:38 Instructions
+n$45=*&amp;id:java.lang.Integer* [line 147];
+_=*n$45:java.lang.Integer*(root java.lang.Integer) [line 147];
+n$47=_fun_int Integer.intValue()(n$45:java.lang.Integer*) virtual [line 147];
+*&amp;$irvar8:int=n$47 [line 147];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:38 Instructions
+n$48=*&amp;$irvar9:java.sql.PreparedStatement* [line 147];
+_=*n$48:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 147];
+n$50=*&amp;$irvar8:int [line 147];
+n$51=_fun_void PreparedStatement.setInt(int,int)(n$48:java.sql.PreparedStatement*,3:int,n$50:int) interface virtual [line 147];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE148">148</td><td class="line">            preparedStatement.executeUpdate(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 23 exn:38 Instructions
+n$52=*&amp;this:com.stn.helpers.CommentsHelper* [line 148];
+n$53=*n$52.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 148];
+_=*n$53:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 148];
+n$55=_fun_int PreparedStatement.executeUpdate()(n$53:java.sql.PreparedStatement*) interface virtual [line 148];
+*&amp;$irvar10:int=n$55 [line 148];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE149">149</td><td class="line">        } finally { </td></tr>
+<tr><td class="num" id="LINE150">150</td><td class="line">            if (preparedStatement != null) <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node22.html"><span class='visited with_tooltip'>C_22<span class='tooltip'>node22 preds:21 succs:24 exn:3 Conditional method_body
+n$56=*&amp;this:com.stn.helpers.CommentsHelper* [line 150];
+n$57=*n$56.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 150];
+PRUNE(!(n$57 == null), true); [line 150];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node23.html"><span class='visited with_tooltip'>C_23<span class='tooltip'>node23 preds:21 succs:25 26 exn:3 Conditional method_body
+n$56=*&amp;this:com.stn.helpers.CommentsHelper* [line 150];
+n$57=*n$56.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 150];
+PRUNE((n$57 == null), false); [line 150];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:39 37 succs:29 30 exn:40 Instructions
+n$70=*&amp;CatchVar147:java.lang.Object* [line 150];
+*&amp;$bcvar4:java.lang.Object*=n$70 [line 150];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node29.html"><span class='visited with_tooltip'>C_29<span class='tooltip'>node29 preds:28 succs:31 exn:3 Conditional method_body
+n$71=*&amp;this:com.stn.helpers.CommentsHelper* [line 150];
+n$72=*n$71.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 150];
+PRUNE(!(n$72 == null), true); [line 150];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node30.html"><span class='visited with_tooltip'>C_30<span class='tooltip'>node30 preds:28 succs:32 33 exn:3 Conditional method_body
+n$71=*&amp;this:com.stn.helpers.CommentsHelper* [line 150];
+n$72=*n$71.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 150];
+PRUNE((n$72 == null), false); [line 150];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:38 succs:28 exn:3 Instructions
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds: succs:37 exn:3 Instructions
+n$86=*&amp;return:void [line 150];
+*&amp;return:void=null [line 150];
+n$87=_fun___unwrap_exception(n$86:void) [line 150];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:40 succs:28 exn:3 Instructions
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds: succs:39 exn:3 Instructions
+n$86=*&amp;return:void [line 150];
+*&amp;return:void=null [line 150];
+n$87=_fun___unwrap_exception(n$86:void) [line 150];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE151">151</td><td class="line">                preparedStatement.close(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:22 succs:25 26 exn:3 Instructions
+n$58=*&amp;this:com.stn.helpers.CommentsHelper* [line 151];
+n$59=*n$58.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 151];
+n$62=_fun___set_mem_attribute(n$59:java.sql.PreparedStatement*) [line 151];
+_=*n$59:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 151];
+n$61=_fun_void PreparedStatement.close()(n$59:java.sql.PreparedStatement*) interface virtual [line 151];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:29 succs:32 33 exn:3 Instructions
+n$73=*&amp;this:com.stn.helpers.CommentsHelper* [line 151];
+n$74=*n$73.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 151];
+n$77=_fun___set_mem_attribute(n$74:java.sql.PreparedStatement*) [line 151];
+_=*n$74:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 151];
+n$76=_fun_void PreparedStatement.close()(n$74:java.sql.PreparedStatement*) interface virtual [line 151];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE152">152</td><td class="line">            if (connection != null) <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node25.html"><span class='visited with_tooltip'>C_25<span class='tooltip'>node25 preds:24 23 succs:27 exn:3 Conditional method_body
+n$63=*&amp;this:com.stn.helpers.CommentsHelper* [line 152];
+n$64=*n$63.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 152];
+PRUNE(!(n$64 == null), true); [line 152];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node26.html"><span class='visited with_tooltip'>C_26<span class='tooltip'>node26 preds:24 23 succs:36 exn:3 Conditional method_body
+n$63=*&amp;this:com.stn.helpers.CommentsHelper* [line 152];
+n$64=*n$63.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 152];
+PRUNE((n$64 == null), false); [line 152];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:31 30 succs:34 exn:3 Conditional method_body
+n$78=*&amp;this:com.stn.helpers.CommentsHelper* [line 152];
+n$79=*n$78.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 152];
+PRUNE(!(n$79 == null), true); [line 152];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node33.html"><span class='visited with_tooltip'>C_33<span class='tooltip'>node33 preds:31 30 succs:35 exn:3 Conditional method_body
+n$78=*&amp;this:com.stn.helpers.CommentsHelper* [line 152];
+n$79=*n$78.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 152];
+PRUNE((n$79 == null), false); [line 152];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE153">153</td><td class="line">                connection.close(); <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:25 succs:36 exn:3 Instructions
+n$65=*&amp;this:com.stn.helpers.CommentsHelper* [line 153];
+n$66=*n$65.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 153];
+n$69=_fun___set_mem_attribute(n$66:java.sql.Connection*) [line 153];
+_=*n$66:java.sql.Connection*(root java.sql.Connection) [line 153];
+n$68=_fun_void Connection.close()(n$66:java.sql.Connection*) interface virtual [line 153];
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:32 succs:35 exn:3 Instructions
+n$80=*&amp;this:com.stn.helpers.CommentsHelper* [line 153];
+n$81=*n$80.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 153];
+n$84=_fun___set_mem_attribute(n$81:java.sql.Connection*) [line 153];
+_=*n$81:java.sql.Connection*(root java.sql.Connection) [line 153];
+n$83=_fun_void Connection.close()(n$81:java.sql.Connection*) interface virtual [line 153];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE154">154</td><td class="line">        } <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:34 33 succs:2 exn:3 Instructions
+n$85=*&amp;$bcvar4:java.lang.Object* [line 154];
+*&amp;return:void=EXN n$85 [line 154];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE155">155</td><td class="line">    } <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:27 26 succs:2 exn:3 Instructions
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:36 35 3 succs: exn: Exit
+</span></span></a> <a href="./CommentsHelper.java.928d57cf41085973a68359c2785c1cad/nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE156">156</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE157">157</td><td class="line">} </td></tr>
+</table>
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+</body>
+</html>

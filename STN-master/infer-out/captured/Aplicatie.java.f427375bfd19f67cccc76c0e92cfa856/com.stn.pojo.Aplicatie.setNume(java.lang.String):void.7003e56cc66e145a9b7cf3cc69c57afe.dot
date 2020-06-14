@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Aplicatie.setNume(java.lang.String):void.7003e56cc66e145a9b7cf3cc69c57afe_1" [label="1: Start void Aplicatie.setNume(String)\nFormals:  this:com.stn.pojo.Aplicatie* nume:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Aplicatie.setNume(java.lang.String):void.7003e56cc66e145a9b7cf3cc69c57afe_1" -> "com.stn.pojo.Aplicatie.setNume(java.lang.String):void.7003e56cc66e145a9b7cf3cc69c57afe_4" ;
+"com.stn.pojo.Aplicatie.setNume(java.lang.String):void.7003e56cc66e145a9b7cf3cc69c57afe_2" [label="2: Exit void Aplicatie.setNume(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Aplicatie.setNume(java.lang.String):void.7003e56cc66e145a9b7cf3cc69c57afe_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 37]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.setNume(java.lang.String):void.7003e56cc66e145a9b7cf3cc69c57afe_3" -> "com.stn.pojo.Aplicatie.setNume(java.lang.String):void.7003e56cc66e145a9b7cf3cc69c57afe_2" ;
+"com.stn.pojo.Aplicatie.setNume(java.lang.String):void.7003e56cc66e145a9b7cf3cc69c57afe_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Aplicatie* [line 36]\n  n$1=*&nume:java.lang.String* [line 36]\n  *n$0.nume:com.stn.pojo.Aplicatie(root com.stn.pojo.Aplicatie)=n$1 [line 36]\n  NULLIFY(&nume); [line 36]\n  NULLIFY(&this); [line 36]\n  EXIT_SCOPE(n$0,n$1,nume,this); [line 36]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.setNume(java.lang.String):void.7003e56cc66e145a9b7cf3cc69c57afe_4" -> "com.stn.pojo.Aplicatie.setNume(java.lang.String):void.7003e56cc66e145a9b7cf3cc69c57afe_5" ;
+	 "com.stn.pojo.Aplicatie.setNume(java.lang.String):void.7003e56cc66e145a9b7cf3cc69c57afe_4" -> "com.stn.pojo.Aplicatie.setNume(java.lang.String):void.7003e56cc66e145a9b7cf3cc69c57afe_3" [color="red" ];
+"com.stn.pojo.Aplicatie.setNume(java.lang.String):void.7003e56cc66e145a9b7cf3cc69c57afe_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 37]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.setNume(java.lang.String):void.7003e56cc66e145a9b7cf3cc69c57afe_5" -> "com.stn.pojo.Aplicatie.setNume(java.lang.String):void.7003e56cc66e145a9b7cf3cc69c57afe_2" ;
+	 "com.stn.pojo.Aplicatie.setNume(java.lang.String):void.7003e56cc66e145a9b7cf3cc69c57afe_5" -> "com.stn.pojo.Aplicatie.setNume(java.lang.String):void.7003e56cc66e145a9b7cf3cc69c57afe_3" [color="red" ];
+}

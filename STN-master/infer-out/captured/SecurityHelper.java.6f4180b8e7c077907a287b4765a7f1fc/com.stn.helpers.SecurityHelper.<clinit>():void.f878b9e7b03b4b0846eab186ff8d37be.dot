@@ -1,0 +1,84 @@
+/* @generated */
+digraph cfg {
+"com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_1" [label="1: Start void SecurityHelper.<clinit>()\nFormals: \nLocals:  $irvar0:void \n  " color=yellow style=filled]
+	
+
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_1" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_4" ;
+"com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_2" [label="2: Exit void SecurityHelper.<clinit>() \n  " color=yellow style=filled]
+	
+
+"com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_3" [label="3:  exceptions sink \n   NULLIFY(&$irvar0); [line 17]\n  EXIT_SCOPE($irvar0); [line 17]\n  APPLY_ABSTRACTION; [line 17]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_3" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_2" ;
+"com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_4" [label="4:  method_body \n   n$0=_fun___new_array(sizeof(t=java.lang.String*[_*_];len=[11]):java.lang.String*[_*_](*)) [line 17]\n  *&$irvar0:java.lang.String*[_*_](*)=n$0 [line 17]\n  EXIT_SCOPE(n$0); [line 17]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_4" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_5" ;
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_4" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_5" [label="5:  method_body \n   n$1=*&$irvar0:java.lang.String*[_*_](*) [line 17]\n  *n$1[0]:java.lang.Object*=\"X-Forwarded-For\" [line 17]\n  EXIT_SCOPE(n$1); [line 17]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_5" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_6" ;
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_5" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_6" [label="6:  method_body \n   n$2=*&$irvar0:java.lang.String*[_*_](*) [line 17]\n  *n$2[1]:java.lang.Object*=\"Proxy-Client-IP\" [line 17]\n  EXIT_SCOPE(n$2); [line 17]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_6" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_7" ;
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_6" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_7" [label="7:  method_body \n   n$3=*&$irvar0:java.lang.String*[_*_](*) [line 17]\n  *n$3[2]:java.lang.Object*=\"WL-Proxy-Client-IP\" [line 17]\n  EXIT_SCOPE(n$3); [line 17]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_7" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_8" ;
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_7" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_8" [label="8:  method_body \n   n$4=*&$irvar0:java.lang.String*[_*_](*) [line 17]\n  *n$4[3]:java.lang.Object*=\"HTTP_X_FORWARDED_FOR\" [line 17]\n  EXIT_SCOPE(n$4); [line 17]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_8" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_9" ;
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_8" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_9" [label="9:  method_body \n   n$5=*&$irvar0:java.lang.String*[_*_](*) [line 17]\n  *n$5[4]:java.lang.Object*=\"HTTP_X_FORWARDED\" [line 17]\n  EXIT_SCOPE(n$5); [line 17]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_9" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_10" ;
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_9" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_10" [label="10:  method_body \n   n$6=*&$irvar0:java.lang.String*[_*_](*) [line 17]\n  *n$6[5]:java.lang.Object*=\"HTTP_X_CLUSTER_CLIENT_IP\" [line 17]\n  EXIT_SCOPE(n$6); [line 17]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_10" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_11" ;
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_10" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_11" [label="11:  method_body \n   n$7=*&$irvar0:java.lang.String*[_*_](*) [line 17]\n  *n$7[6]:java.lang.Object*=\"HTTP_CLIENT_IP\" [line 17]\n  EXIT_SCOPE(n$7); [line 17]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_11" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_12" ;
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_11" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_12" [label="12:  method_body \n   n$8=*&$irvar0:java.lang.String*[_*_](*) [line 17]\n  *n$8[7]:java.lang.Object*=\"HTTP_FORWARDED_FOR\" [line 17]\n  EXIT_SCOPE(n$8); [line 17]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_12" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_13" ;
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_12" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_13" [label="13:  method_body \n   n$9=*&$irvar0:java.lang.String*[_*_](*) [line 17]\n  *n$9[8]:java.lang.Object*=\"HTTP_FORWARDED\" [line 17]\n  EXIT_SCOPE(n$9); [line 17]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_13" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_14" ;
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_13" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_14" [label="14:  method_body \n   n$10=*&$irvar0:java.lang.String*[_*_](*) [line 17]\n  *n$10[9]:java.lang.Object*=\"HTTP_VIA\" [line 17]\n  EXIT_SCOPE(n$10); [line 17]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_14" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_15" ;
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_14" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_15" [label="15:  method_body \n   n$11=*&$irvar0:java.lang.String*[_*_](*) [line 17]\n  *n$11[10]:java.lang.Object*=\"REMOTE_ADDR\" [line 17]\n  EXIT_SCOPE(n$11); [line 17]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_15" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_16" ;
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_15" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_16" [label="16:  method_body \n   n$12=*&$irvar0:java.lang.String*[_*_](*) [line 17]\n  *&#GB<>$com.stn.helpers.SecurityHelper.IP_HEADER_CANDIDATES:com.stn.helpers.SecurityHelper(root com.stn.helpers.SecurityHelper)=n$12 [line 17]\n  NULLIFY(&$irvar0); [line 17]\n  EXIT_SCOPE(n$12,$irvar0); [line 17]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_16" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_17" ;
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_16" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_17" [label="17:  method_body \n   APPLY_ABSTRACTION; [line 17]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_17" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_2" ;
+	 "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_17" -> "com.stn.helpers.SecurityHelper.<clinit>():void.f878b9e7b03b4b0846eab186ff8d37be_3" [color="red" ];
+}

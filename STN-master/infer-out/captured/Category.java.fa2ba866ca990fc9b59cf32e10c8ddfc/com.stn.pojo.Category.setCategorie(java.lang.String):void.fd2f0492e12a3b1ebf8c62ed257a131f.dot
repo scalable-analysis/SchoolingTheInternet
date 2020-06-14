@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Category.setCategorie(java.lang.String):void.fd2f0492e12a3b1ebf8c62ed257a131f_1" [label="1: Start void Category.setCategorie(String)\nFormals:  this:com.stn.pojo.Category* categorie:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Category.setCategorie(java.lang.String):void.fd2f0492e12a3b1ebf8c62ed257a131f_1" -> "com.stn.pojo.Category.setCategorie(java.lang.String):void.fd2f0492e12a3b1ebf8c62ed257a131f_4" ;
+"com.stn.pojo.Category.setCategorie(java.lang.String):void.fd2f0492e12a3b1ebf8c62ed257a131f_2" [label="2: Exit void Category.setCategorie(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Category.setCategorie(java.lang.String):void.fd2f0492e12a3b1ebf8c62ed257a131f_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 51]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.setCategorie(java.lang.String):void.fd2f0492e12a3b1ebf8c62ed257a131f_3" -> "com.stn.pojo.Category.setCategorie(java.lang.String):void.fd2f0492e12a3b1ebf8c62ed257a131f_2" ;
+"com.stn.pojo.Category.setCategorie(java.lang.String):void.fd2f0492e12a3b1ebf8c62ed257a131f_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Category* [line 50]\n  n$1=*&categorie:java.lang.String* [line 50]\n  *n$0.categorie:com.stn.pojo.Category(root com.stn.pojo.Category)=n$1 [line 50]\n  NULLIFY(&categorie); [line 50]\n  NULLIFY(&this); [line 50]\n  EXIT_SCOPE(n$0,n$1,categorie,this); [line 50]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.setCategorie(java.lang.String):void.fd2f0492e12a3b1ebf8c62ed257a131f_4" -> "com.stn.pojo.Category.setCategorie(java.lang.String):void.fd2f0492e12a3b1ebf8c62ed257a131f_5" ;
+	 "com.stn.pojo.Category.setCategorie(java.lang.String):void.fd2f0492e12a3b1ebf8c62ed257a131f_4" -> "com.stn.pojo.Category.setCategorie(java.lang.String):void.fd2f0492e12a3b1ebf8c62ed257a131f_3" [color="red" ];
+"com.stn.pojo.Category.setCategorie(java.lang.String):void.fd2f0492e12a3b1ebf8c62ed257a131f_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 51]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.setCategorie(java.lang.String):void.fd2f0492e12a3b1ebf8c62ed257a131f_5" -> "com.stn.pojo.Category.setCategorie(java.lang.String):void.fd2f0492e12a3b1ebf8c62ed257a131f_2" ;
+	 "com.stn.pojo.Category.setCategorie(java.lang.String):void.fd2f0492e12a3b1ebf8c62ed257a131f_5" -> "com.stn.pojo.Category.setCategorie(java.lang.String):void.fd2f0492e12a3b1ebf8c62ed257a131f_3" [color="red" ];
+}

@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Category.getPinned():int.5620b3f49b31498536fd75bfecc4ac32_1" [label="1: Start int Category.getPinned()\nFormals:  this:com.stn.pojo.Category*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Category.getPinned():int.5620b3f49b31498536fd75bfecc4ac32_1" -> "com.stn.pojo.Category.getPinned():int.5620b3f49b31498536fd75bfecc4ac32_4" ;
+"com.stn.pojo.Category.getPinned():int.5620b3f49b31498536fd75bfecc4ac32_2" [label="2: Exit int Category.getPinned() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Category.getPinned():int.5620b3f49b31498536fd75bfecc4ac32_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 38]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.getPinned():int.5620b3f49b31498536fd75bfecc4ac32_3" -> "com.stn.pojo.Category.getPinned():int.5620b3f49b31498536fd75bfecc4ac32_2" ;
+"com.stn.pojo.Category.getPinned():int.5620b3f49b31498536fd75bfecc4ac32_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Category* [line 38]\n  n$1=*n$0.pinned:int(root com.stn.pojo.Category) [line 38]\n  *&return:int=n$1 [line 38]\n  NULLIFY(&this); [line 38]\n  EXIT_SCOPE(n$0,n$1,this); [line 38]\n  APPLY_ABSTRACTION; [line 38]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.getPinned():int.5620b3f49b31498536fd75bfecc4ac32_4" -> "com.stn.pojo.Category.getPinned():int.5620b3f49b31498536fd75bfecc4ac32_2" ;
+	 "com.stn.pojo.Category.getPinned():int.5620b3f49b31498536fd75bfecc4ac32_4" -> "com.stn.pojo.Category.getPinned():int.5620b3f49b31498536fd75bfecc4ac32_3" [color="red" ];
+}

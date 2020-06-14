@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Aplicatie.setSerie(java.lang.String):void.ae973908ab457b84602b2027a189a583_1" [label="1: Start void Aplicatie.setSerie(String)\nFormals:  this:com.stn.pojo.Aplicatie* serie:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Aplicatie.setSerie(java.lang.String):void.ae973908ab457b84602b2027a189a583_1" -> "com.stn.pojo.Aplicatie.setSerie(java.lang.String):void.ae973908ab457b84602b2027a189a583_4" ;
+"com.stn.pojo.Aplicatie.setSerie(java.lang.String):void.ae973908ab457b84602b2027a189a583_2" [label="2: Exit void Aplicatie.setSerie(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Aplicatie.setSerie(java.lang.String):void.ae973908ab457b84602b2027a189a583_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 49]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.setSerie(java.lang.String):void.ae973908ab457b84602b2027a189a583_3" -> "com.stn.pojo.Aplicatie.setSerie(java.lang.String):void.ae973908ab457b84602b2027a189a583_2" ;
+"com.stn.pojo.Aplicatie.setSerie(java.lang.String):void.ae973908ab457b84602b2027a189a583_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Aplicatie* [line 48]\n  n$1=*&serie:java.lang.String* [line 48]\n  *n$0.serie:com.stn.pojo.Aplicatie(root com.stn.pojo.Aplicatie)=n$1 [line 48]\n  NULLIFY(&serie); [line 48]\n  NULLIFY(&this); [line 48]\n  EXIT_SCOPE(n$0,n$1,serie,this); [line 48]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.setSerie(java.lang.String):void.ae973908ab457b84602b2027a189a583_4" -> "com.stn.pojo.Aplicatie.setSerie(java.lang.String):void.ae973908ab457b84602b2027a189a583_5" ;
+	 "com.stn.pojo.Aplicatie.setSerie(java.lang.String):void.ae973908ab457b84602b2027a189a583_4" -> "com.stn.pojo.Aplicatie.setSerie(java.lang.String):void.ae973908ab457b84602b2027a189a583_3" [color="red" ];
+"com.stn.pojo.Aplicatie.setSerie(java.lang.String):void.ae973908ab457b84602b2027a189a583_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 49]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.setSerie(java.lang.String):void.ae973908ab457b84602b2027a189a583_5" -> "com.stn.pojo.Aplicatie.setSerie(java.lang.String):void.ae973908ab457b84602b2027a189a583_2" ;
+	 "com.stn.pojo.Aplicatie.setSerie(java.lang.String):void.ae973908ab457b84602b2027a189a583_5" -> "com.stn.pojo.Aplicatie.setSerie(java.lang.String):void.ae973908ab457b84602b2027a189a583_3" [color="red" ];
+}

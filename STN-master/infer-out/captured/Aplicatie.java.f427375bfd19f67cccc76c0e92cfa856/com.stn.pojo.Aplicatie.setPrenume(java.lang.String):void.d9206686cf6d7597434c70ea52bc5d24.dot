@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Aplicatie.setPrenume(java.lang.String):void.d9206686cf6d7597434c70ea52bc5d24_1" [label="1: Start void Aplicatie.setPrenume(String)\nFormals:  this:com.stn.pojo.Aplicatie* prenume:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Aplicatie.setPrenume(java.lang.String):void.d9206686cf6d7597434c70ea52bc5d24_1" -> "com.stn.pojo.Aplicatie.setPrenume(java.lang.String):void.d9206686cf6d7597434c70ea52bc5d24_4" ;
+"com.stn.pojo.Aplicatie.setPrenume(java.lang.String):void.d9206686cf6d7597434c70ea52bc5d24_2" [label="2: Exit void Aplicatie.setPrenume(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Aplicatie.setPrenume(java.lang.String):void.d9206686cf6d7597434c70ea52bc5d24_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 41]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.setPrenume(java.lang.String):void.d9206686cf6d7597434c70ea52bc5d24_3" -> "com.stn.pojo.Aplicatie.setPrenume(java.lang.String):void.d9206686cf6d7597434c70ea52bc5d24_2" ;
+"com.stn.pojo.Aplicatie.setPrenume(java.lang.String):void.d9206686cf6d7597434c70ea52bc5d24_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Aplicatie* [line 40]\n  n$1=*&prenume:java.lang.String* [line 40]\n  *n$0.prenume:com.stn.pojo.Aplicatie(root com.stn.pojo.Aplicatie)=n$1 [line 40]\n  NULLIFY(&prenume); [line 40]\n  NULLIFY(&this); [line 40]\n  EXIT_SCOPE(n$0,n$1,prenume,this); [line 40]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.setPrenume(java.lang.String):void.d9206686cf6d7597434c70ea52bc5d24_4" -> "com.stn.pojo.Aplicatie.setPrenume(java.lang.String):void.d9206686cf6d7597434c70ea52bc5d24_5" ;
+	 "com.stn.pojo.Aplicatie.setPrenume(java.lang.String):void.d9206686cf6d7597434c70ea52bc5d24_4" -> "com.stn.pojo.Aplicatie.setPrenume(java.lang.String):void.d9206686cf6d7597434c70ea52bc5d24_3" [color="red" ];
+"com.stn.pojo.Aplicatie.setPrenume(java.lang.String):void.d9206686cf6d7597434c70ea52bc5d24_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 41]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.setPrenume(java.lang.String):void.d9206686cf6d7597434c70ea52bc5d24_5" -> "com.stn.pojo.Aplicatie.setPrenume(java.lang.String):void.d9206686cf6d7597434c70ea52bc5d24_2" ;
+	 "com.stn.pojo.Aplicatie.setPrenume(java.lang.String):void.d9206686cf6d7597434c70ea52bc5d24_5" -> "com.stn.pojo.Aplicatie.setPrenume(java.lang.String):void.d9206686cf6d7597434c70ea52bc5d24_3" [color="red" ];
+}

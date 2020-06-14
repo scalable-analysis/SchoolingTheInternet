@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Comments.getUsername():java.lang.String.bec8f13258e9b593b7100efbca7ca567_1" [label="1: Start String Comments.getUsername()\nFormals:  this:com.stn.pojo.Comments*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Comments.getUsername():java.lang.String.bec8f13258e9b593b7100efbca7ca567_1" -> "com.stn.pojo.Comments.getUsername():java.lang.String.bec8f13258e9b593b7100efbca7ca567_4" ;
+"com.stn.pojo.Comments.getUsername():java.lang.String.bec8f13258e9b593b7100efbca7ca567_2" [label="2: Exit String Comments.getUsername() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Comments.getUsername():java.lang.String.bec8f13258e9b593b7100efbca7ca567_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 17]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Comments.getUsername():java.lang.String.bec8f13258e9b593b7100efbca7ca567_3" -> "com.stn.pojo.Comments.getUsername():java.lang.String.bec8f13258e9b593b7100efbca7ca567_2" ;
+"com.stn.pojo.Comments.getUsername():java.lang.String.bec8f13258e9b593b7100efbca7ca567_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Comments* [line 17]\n  n$1=*n$0.username:java.lang.String*(root com.stn.pojo.Comments) [line 17]\n  *&return:java.lang.String*=n$1 [line 17]\n  NULLIFY(&this); [line 17]\n  EXIT_SCOPE(n$0,n$1,this); [line 17]\n  APPLY_ABSTRACTION; [line 17]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Comments.getUsername():java.lang.String.bec8f13258e9b593b7100efbca7ca567_4" -> "com.stn.pojo.Comments.getUsername():java.lang.String.bec8f13258e9b593b7100efbca7ca567_2" ;
+	 "com.stn.pojo.Comments.getUsername():java.lang.String.bec8f13258e9b593b7100efbca7ca567_4" -> "com.stn.pojo.Comments.getUsername():java.lang.String.bec8f13258e9b593b7100efbca7ca567_3" [color="red" ];
+}

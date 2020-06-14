@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Invitatie.getEmail():java.lang.String.084bd0643d457f8d45e408a53412fe4e_1" [label="1: Start String Invitatie.getEmail()\nFormals:  this:com.stn.pojo.Invitatie*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Invitatie.getEmail():java.lang.String.084bd0643d457f8d45e408a53412fe4e_1" -> "com.stn.pojo.Invitatie.getEmail():java.lang.String.084bd0643d457f8d45e408a53412fe4e_4" ;
+"com.stn.pojo.Invitatie.getEmail():java.lang.String.084bd0643d457f8d45e408a53412fe4e_2" [label="2: Exit String Invitatie.getEmail() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Invitatie.getEmail():java.lang.String.084bd0643d457f8d45e408a53412fe4e_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 68]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.getEmail():java.lang.String.084bd0643d457f8d45e408a53412fe4e_3" -> "com.stn.pojo.Invitatie.getEmail():java.lang.String.084bd0643d457f8d45e408a53412fe4e_2" ;
+"com.stn.pojo.Invitatie.getEmail():java.lang.String.084bd0643d457f8d45e408a53412fe4e_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Invitatie* [line 68]\n  n$1=*n$0.email:java.lang.String*(root com.stn.pojo.Invitatie) [line 68]\n  *&return:java.lang.String*=n$1 [line 68]\n  NULLIFY(&this); [line 68]\n  EXIT_SCOPE(n$0,n$1,this); [line 68]\n  APPLY_ABSTRACTION; [line 68]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.getEmail():java.lang.String.084bd0643d457f8d45e408a53412fe4e_4" -> "com.stn.pojo.Invitatie.getEmail():java.lang.String.084bd0643d457f8d45e408a53412fe4e_2" ;
+	 "com.stn.pojo.Invitatie.getEmail():java.lang.String.084bd0643d457f8d45e408a53412fe4e_4" -> "com.stn.pojo.Invitatie.getEmail():java.lang.String.084bd0643d457f8d45e408a53412fe4e_3" [color="red" ];
+}

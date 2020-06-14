@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Facultate.setNume(java.lang.String):void.d2f3dc07f5c5c4f33ba8da93a170fb29_1" [label="1: Start void Facultate.setNume(String)\nFormals:  this:com.stn.pojo.Facultate* nume:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Facultate.setNume(java.lang.String):void.d2f3dc07f5c5c4f33ba8da93a170fb29_1" -> "com.stn.pojo.Facultate.setNume(java.lang.String):void.d2f3dc07f5c5c4f33ba8da93a170fb29_4" ;
+"com.stn.pojo.Facultate.setNume(java.lang.String):void.d2f3dc07f5c5c4f33ba8da93a170fb29_2" [label="2: Exit void Facultate.setNume(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Facultate.setNume(java.lang.String):void.d2f3dc07f5c5c4f33ba8da93a170fb29_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 19]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Facultate.setNume(java.lang.String):void.d2f3dc07f5c5c4f33ba8da93a170fb29_3" -> "com.stn.pojo.Facultate.setNume(java.lang.String):void.d2f3dc07f5c5c4f33ba8da93a170fb29_2" ;
+"com.stn.pojo.Facultate.setNume(java.lang.String):void.d2f3dc07f5c5c4f33ba8da93a170fb29_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Facultate* [line 18]\n  n$1=*&nume:java.lang.String* [line 18]\n  *n$0.nume:com.stn.pojo.Facultate(root com.stn.pojo.Facultate)=n$1 [line 18]\n  NULLIFY(&nume); [line 18]\n  NULLIFY(&this); [line 18]\n  EXIT_SCOPE(n$0,n$1,nume,this); [line 18]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Facultate.setNume(java.lang.String):void.d2f3dc07f5c5c4f33ba8da93a170fb29_4" -> "com.stn.pojo.Facultate.setNume(java.lang.String):void.d2f3dc07f5c5c4f33ba8da93a170fb29_5" ;
+	 "com.stn.pojo.Facultate.setNume(java.lang.String):void.d2f3dc07f5c5c4f33ba8da93a170fb29_4" -> "com.stn.pojo.Facultate.setNume(java.lang.String):void.d2f3dc07f5c5c4f33ba8da93a170fb29_3" [color="red" ];
+"com.stn.pojo.Facultate.setNume(java.lang.String):void.d2f3dc07f5c5c4f33ba8da93a170fb29_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 19]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Facultate.setNume(java.lang.String):void.d2f3dc07f5c5c4f33ba8da93a170fb29_5" -> "com.stn.pojo.Facultate.setNume(java.lang.String):void.d2f3dc07f5c5c4f33ba8da93a170fb29_2" ;
+	 "com.stn.pojo.Facultate.setNume(java.lang.String):void.d2f3dc07f5c5c4f33ba8da93a170fb29_5" -> "com.stn.pojo.Facultate.setNume(java.lang.String):void.d2f3dc07f5c5c4f33ba8da93a170fb29_3" [color="red" ];
+}

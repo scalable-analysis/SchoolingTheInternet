@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Category.setIdFacultate(int):void.635b9fecbcbd0c30a6edc359a91bcd8c_1" [label="1: Start void Category.setIdFacultate(int)\nFormals:  this:com.stn.pojo.Category* idFacultate:int\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Category.setIdFacultate(int):void.635b9fecbcbd0c30a6edc359a91bcd8c_1" -> "com.stn.pojo.Category.setIdFacultate(int):void.635b9fecbcbd0c30a6edc359a91bcd8c_4" ;
+"com.stn.pojo.Category.setIdFacultate(int):void.635b9fecbcbd0c30a6edc359a91bcd8c_2" [label="2: Exit void Category.setIdFacultate(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Category.setIdFacultate(int):void.635b9fecbcbd0c30a6edc359a91bcd8c_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 67]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.setIdFacultate(int):void.635b9fecbcbd0c30a6edc359a91bcd8c_3" -> "com.stn.pojo.Category.setIdFacultate(int):void.635b9fecbcbd0c30a6edc359a91bcd8c_2" ;
+"com.stn.pojo.Category.setIdFacultate(int):void.635b9fecbcbd0c30a6edc359a91bcd8c_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Category* [line 66]\n  n$1=*&idFacultate:int [line 66]\n  *n$0.idFacultate:com.stn.pojo.Category(root com.stn.pojo.Category)=n$1 [line 66]\n  NULLIFY(&idFacultate); [line 66]\n  NULLIFY(&this); [line 66]\n  EXIT_SCOPE(n$0,n$1,idFacultate,this); [line 66]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.setIdFacultate(int):void.635b9fecbcbd0c30a6edc359a91bcd8c_4" -> "com.stn.pojo.Category.setIdFacultate(int):void.635b9fecbcbd0c30a6edc359a91bcd8c_5" ;
+	 "com.stn.pojo.Category.setIdFacultate(int):void.635b9fecbcbd0c30a6edc359a91bcd8c_4" -> "com.stn.pojo.Category.setIdFacultate(int):void.635b9fecbcbd0c30a6edc359a91bcd8c_3" [color="red" ];
+"com.stn.pojo.Category.setIdFacultate(int):void.635b9fecbcbd0c30a6edc359a91bcd8c_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 67]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.setIdFacultate(int):void.635b9fecbcbd0c30a6edc359a91bcd8c_5" -> "com.stn.pojo.Category.setIdFacultate(int):void.635b9fecbcbd0c30a6edc359a91bcd8c_2" ;
+	 "com.stn.pojo.Category.setIdFacultate(int):void.635b9fecbcbd0c30a6edc359a91bcd8c_5" -> "com.stn.pojo.Category.setIdFacultate(int):void.635b9fecbcbd0c30a6edc359a91bcd8c_3" [color="red" ];
+}

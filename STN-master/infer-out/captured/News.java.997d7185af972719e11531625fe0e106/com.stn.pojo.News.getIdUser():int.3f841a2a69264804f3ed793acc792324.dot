@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.News.getIdUser():int.3f841a2a69264804f3ed793acc792324_1" [label="1: Start int News.getIdUser()\nFormals:  this:com.stn.pojo.News*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.News.getIdUser():int.3f841a2a69264804f3ed793acc792324_1" -> "com.stn.pojo.News.getIdUser():int.3f841a2a69264804f3ed793acc792324_4" ;
+"com.stn.pojo.News.getIdUser():int.3f841a2a69264804f3ed793acc792324_2" [label="2: Exit int News.getIdUser() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.News.getIdUser():int.3f841a2a69264804f3ed793acc792324_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 71]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.getIdUser():int.3f841a2a69264804f3ed793acc792324_3" -> "com.stn.pojo.News.getIdUser():int.3f841a2a69264804f3ed793acc792324_2" ;
+"com.stn.pojo.News.getIdUser():int.3f841a2a69264804f3ed793acc792324_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.News* [line 71]\n  n$1=*n$0.idUser:int(root com.stn.pojo.News) [line 71]\n  *&return:int=n$1 [line 71]\n  NULLIFY(&this); [line 71]\n  EXIT_SCOPE(n$0,n$1,this); [line 71]\n  APPLY_ABSTRACTION; [line 71]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.getIdUser():int.3f841a2a69264804f3ed793acc792324_4" -> "com.stn.pojo.News.getIdUser():int.3f841a2a69264804f3ed793acc792324_2" ;
+	 "com.stn.pojo.News.getIdUser():int.3f841a2a69264804f3ed793acc792324_4" -> "com.stn.pojo.News.getIdUser():int.3f841a2a69264804f3ed793acc792324_3" [color="red" ];
+}

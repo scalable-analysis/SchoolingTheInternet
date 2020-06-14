@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.News.getTitle():java.lang.String.f22e582206d0fa076013688c36c7a960_1" [label="1: Start String News.getTitle()\nFormals:  this:com.stn.pojo.News*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.News.getTitle():java.lang.String.f22e582206d0fa076013688c36c7a960_1" -> "com.stn.pojo.News.getTitle():java.lang.String.f22e582206d0fa076013688c36c7a960_4" ;
+"com.stn.pojo.News.getTitle():java.lang.String.f22e582206d0fa076013688c36c7a960_2" [label="2: Exit String News.getTitle() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.News.getTitle():java.lang.String.f22e582206d0fa076013688c36c7a960_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 59]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.getTitle():java.lang.String.f22e582206d0fa076013688c36c7a960_3" -> "com.stn.pojo.News.getTitle():java.lang.String.f22e582206d0fa076013688c36c7a960_2" ;
+"com.stn.pojo.News.getTitle():java.lang.String.f22e582206d0fa076013688c36c7a960_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.News* [line 59]\n  n$1=*n$0.title:java.lang.String*(root com.stn.pojo.News) [line 59]\n  *&return:java.lang.String*=n$1 [line 59]\n  NULLIFY(&this); [line 59]\n  EXIT_SCOPE(n$0,n$1,this); [line 59]\n  APPLY_ABSTRACTION; [line 59]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.getTitle():java.lang.String.f22e582206d0fa076013688c36c7a960_4" -> "com.stn.pojo.News.getTitle():java.lang.String.f22e582206d0fa076013688c36c7a960_2" ;
+	 "com.stn.pojo.News.getTitle():java.lang.String.f22e582206d0fa076013688c36c7a960_4" -> "com.stn.pojo.News.getTitle():java.lang.String.f22e582206d0fa076013688c36c7a960_3" [color="red" ];
+}

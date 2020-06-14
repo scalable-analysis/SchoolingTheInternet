@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Invitatie.getIdFacultate():int.fa850aba38dbd3ae9c875eb07d24b51d_1" [label="1: Start int Invitatie.getIdFacultate()\nFormals:  this:com.stn.pojo.Invitatie*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Invitatie.getIdFacultate():int.fa850aba38dbd3ae9c875eb07d24b51d_1" -> "com.stn.pojo.Invitatie.getIdFacultate():int.fa850aba38dbd3ae9c875eb07d24b51d_4" ;
+"com.stn.pojo.Invitatie.getIdFacultate():int.fa850aba38dbd3ae9c875eb07d24b51d_2" [label="2: Exit int Invitatie.getIdFacultate() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Invitatie.getIdFacultate():int.fa850aba38dbd3ae9c875eb07d24b51d_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 80]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.getIdFacultate():int.fa850aba38dbd3ae9c875eb07d24b51d_3" -> "com.stn.pojo.Invitatie.getIdFacultate():int.fa850aba38dbd3ae9c875eb07d24b51d_2" ;
+"com.stn.pojo.Invitatie.getIdFacultate():int.fa850aba38dbd3ae9c875eb07d24b51d_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Invitatie* [line 80]\n  n$1=*n$0.idFacultate:int(root com.stn.pojo.Invitatie) [line 80]\n  *&return:int=n$1 [line 80]\n  NULLIFY(&this); [line 80]\n  EXIT_SCOPE(n$0,n$1,this); [line 80]\n  APPLY_ABSTRACTION; [line 80]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.getIdFacultate():int.fa850aba38dbd3ae9c875eb07d24b51d_4" -> "com.stn.pojo.Invitatie.getIdFacultate():int.fa850aba38dbd3ae9c875eb07d24b51d_2" ;
+	 "com.stn.pojo.Invitatie.getIdFacultate():int.fa850aba38dbd3ae9c875eb07d24b51d_4" -> "com.stn.pojo.Invitatie.getIdFacultate():int.fa850aba38dbd3ae9c875eb07d24b51d_3" [color="red" ];
+}

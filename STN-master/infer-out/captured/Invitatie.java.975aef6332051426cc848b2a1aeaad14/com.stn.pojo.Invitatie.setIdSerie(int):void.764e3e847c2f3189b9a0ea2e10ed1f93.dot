@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Invitatie.setIdSerie(int):void.764e3e847c2f3189b9a0ea2e10ed1f93_1" [label="1: Start void Invitatie.setIdSerie(int)\nFormals:  this:com.stn.pojo.Invitatie* idSerie:int\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Invitatie.setIdSerie(int):void.764e3e847c2f3189b9a0ea2e10ed1f93_1" -> "com.stn.pojo.Invitatie.setIdSerie(int):void.764e3e847c2f3189b9a0ea2e10ed1f93_4" ;
+"com.stn.pojo.Invitatie.setIdSerie(int):void.764e3e847c2f3189b9a0ea2e10ed1f93_2" [label="2: Exit void Invitatie.setIdSerie(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Invitatie.setIdSerie(int):void.764e3e847c2f3189b9a0ea2e10ed1f93_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 45]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.setIdSerie(int):void.764e3e847c2f3189b9a0ea2e10ed1f93_3" -> "com.stn.pojo.Invitatie.setIdSerie(int):void.764e3e847c2f3189b9a0ea2e10ed1f93_2" ;
+"com.stn.pojo.Invitatie.setIdSerie(int):void.764e3e847c2f3189b9a0ea2e10ed1f93_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Invitatie* [line 44]\n  n$1=*&idSerie:int [line 44]\n  *n$0.idSerie:com.stn.pojo.Invitatie(root com.stn.pojo.Invitatie)=n$1 [line 44]\n  NULLIFY(&idSerie); [line 44]\n  NULLIFY(&this); [line 44]\n  EXIT_SCOPE(n$0,n$1,idSerie,this); [line 44]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.setIdSerie(int):void.764e3e847c2f3189b9a0ea2e10ed1f93_4" -> "com.stn.pojo.Invitatie.setIdSerie(int):void.764e3e847c2f3189b9a0ea2e10ed1f93_5" ;
+	 "com.stn.pojo.Invitatie.setIdSerie(int):void.764e3e847c2f3189b9a0ea2e10ed1f93_4" -> "com.stn.pojo.Invitatie.setIdSerie(int):void.764e3e847c2f3189b9a0ea2e10ed1f93_3" [color="red" ];
+"com.stn.pojo.Invitatie.setIdSerie(int):void.764e3e847c2f3189b9a0ea2e10ed1f93_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 45]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.setIdSerie(int):void.764e3e847c2f3189b9a0ea2e10ed1f93_5" -> "com.stn.pojo.Invitatie.setIdSerie(int):void.764e3e847c2f3189b9a0ea2e10ed1f93_2" ;
+	 "com.stn.pojo.Invitatie.setIdSerie(int):void.764e3e847c2f3189b9a0ea2e10ed1f93_5" -> "com.stn.pojo.Invitatie.setIdSerie(int):void.764e3e847c2f3189b9a0ea2e10ed1f93_3" [color="red" ];
+}

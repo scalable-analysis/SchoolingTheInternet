@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.CountryHelper.getCountries():java.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node25</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../CountryHelper.java.0e20ef9f41ac6875377ddbf8ade57ee1.html#LINE28">25</a></h1></center>PROC: <a href="./../com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4.html">List CountryHelper.getCountries()</a> LINE: <a href="./../../CountryHelper.java.0e20ef9f41ac6875377ddbf8ade57ee1.html#LINE28">28</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node24.html"><span class='dangling with_tooltip'>N_24<span class='tooltip'>node24 preds:23 succs:25 exn:44 
+NOT VISITED</span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node26.html"><span class='visited with_tooltip'>N_26<span class='tooltip'>node26 preds:25 succs:27 exn:44 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node44.html"><span class='visited with_tooltip'>N_44<span class='tooltip'>node44 preds: succs:43 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$56=*&amp;this:com.stn.helpers.CountryHelper* [line 28];
+n$57=*n$56.resultSet:java.sql.ResultSet*(root com.stn.helpers.CountryHelper) [line 28];
+_=*n$57:java.sql.ResultSet*(root java.sql.ResultSet) [line 28];
+n$59=_fun_String ResultSet.getString(int)(n$57:java.sql.ResultSet*,3:int) interface virtual [line 28];
+*&amp;$irvar10:java.lang.String*=n$59 [line 28];
+</LISTING>
+<hr width="100%">
+<a name="session114" href="./../nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node25.html#session114">node25#session114</a>(<a href="./../../CountryHelper.java.0e20ef9f41ac6875377ddbf8ade57ee1.html#LINE28">28</a>) [compute pre] liveness 25
+<LISTING class='color_black'>JOIN
+
+LEFT:   { country, CatchVar177, return, $irvar10, this, countries }
+RIGHT:  { CatchVar177, return, this }
+RESULT: { country, CatchVar177, return, $irvar10, this, countries }
+
+</LISTING>
+<hr width="100%">
+<a name="session115" href="./../nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node25.html#session115">node25#session115</a>(<a href="./../../CountryHelper.java.0e20ef9f41ac6875377ddbf8ade57ee1.html#LINE28">28</a>) [exec] liveness 25
+<LISTING class='color_black'>PRE STATE:
+{ country, CatchVar177, return, $irvar10, this, countries }
+
+INSTR=  *&amp;$irvar10:java.lang.String*=n$59 [line 28]; 
+
+STATE:
+{ n$59, country, CatchVar177, return, this, countries }
+
+INSTR=  n$59=_fun_String ResultSet.getString(int)(n$57:java.sql.ResultSet*,3:int) interface virtual [line 28]; 
+
+STATE:
+{ n$57, country, CatchVar177, return, this, countries }
+
+INSTR=  _=*n$57:java.sql.ResultSet*(root java.sql.ResultSet) [line 28]; 
+
+STATE UNCHANGED
+
+INSTR=  n$57=*n$56.resultSet:java.sql.ResultSet*(root com.stn.helpers.CountryHelper) [line 28]; 
+
+STATE:
+{ n$56, country, CatchVar177, return, this, countries }
+
+INSTR=  n$56=*&amp;this:com.stn.helpers.CountryHelper* [line 28]; 
+
+STATE:
+{ country, CatchVar177, return, this, countries }
+
+</LISTING>
+<hr width="100%">
+<a name="session207" href="./../nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node25.html#session207">node25#session207</a>(<a href="./../../CountryHelper.java.0e20ef9f41ac6875377ddbf8ade57ee1.html#LINE28">28</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session208" href="./../nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node25.html#session208">node25#session208</a>(<a href="./../../CountryHelper.java.0e20ef9f41ac6875377ddbf8ade57ee1.html#LINE28">28</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ country, countries },{ _, n$52, n$54, n$55, $irvar9 })
+
+INSTR=  n$56=*&amp;this:com.stn.helpers.CountryHelper* [line 28]; 
+
+STATE:
+({ n$56, country, countries },{ _, n$52, n$54, n$55, $irvar9 })
+
+INSTR=  n$57=*n$56.resultSet:java.sql.ResultSet*(root com.stn.helpers.CountryHelper) [line 28]; 
+
+STATE:
+({ n$56, n$57, country, countries },{ _, n$52, n$54, n$55, $irvar9 })
+
+INSTR=  _=*n$57:java.sql.ResultSet*(root java.sql.ResultSet) [line 28]; 
+
+STATE:
+({ _, n$56, n$57, country, countries },{ _, n$52, n$54, n$55, $irvar9 })
+
+INSTR=  n$59=_fun_String ResultSet.getString(int)(n$57:java.sql.ResultSet*,3:int) interface virtual [line 28]; 
+
+STATE:
+({ _, n$56, n$57, n$59, country, countries },
+{ _, n$52, n$54, n$55, $irvar9 })
+
+INSTR=  *&amp;$irvar10:java.lang.String*=n$59 [line 28]; 
+
+STATE:
+({ country, $irvar10, countries },{ _, n$56, n$57, n$59 })
+
+</LISTING>
+<hr width="100%">
+<a name="session44" href="./../nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node25.html#session44">node25#session44</a>(<a href="./../../CountryHelper.java.0e20ef9f41ac6875377ddbf8ade57ee1.html#LINE28">28</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session45" href="./../nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node25.html#session45">node25#session45</a>(<a href="./../../CountryHelper.java.0e20ef9f41ac6875377ddbf8ade57ee1.html#LINE28">28</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$6 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$9 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$12 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$16 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$24 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$30 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$51 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  country -&gt; { countryId -&gt; { },
+               countryName -&gt; { Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ? },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { },
+            resultSet -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  countries -&gt; { } }
+
+
+
+
+TAINTED_CALL1: (callee="String ResultSet.getString(int)", caller="List CountryHelper.getCountries()")
+TAINTED_CALL1: (callee="String ResultSet.getString(int)", caller="List CountryHelper.getCountries()")
+INSTR=  n$59 := String ResultSet.getString(int)({ this-&gt;resultSet, 3 }) [line 28]; 
+
+STATE:
+{ n$6 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$9 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$12 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$16 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$24 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$30 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$51 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$59 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  country -&gt; { countryId -&gt; { },
+               countryName -&gt; { Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ? },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { },
+            resultSet -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  countries -&gt; { } }
+
+
+
+</LISTING>
+<hr width="100%">
+<a name="session106" href="./../nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node25.html#session106">node25#session106</a>(<a href="./../../CountryHelper.java.0e20ef9f41ac6875377ddbf8ade57ee1.html#LINE28">28</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session107" href="./../nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node25.html#session107">node25#session107</a>(<a href="./../../CountryHelper.java.0e20ef9f41ac6875377ddbf8ade57ee1.html#LINE28">28</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$6 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$9 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$12 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$16 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$24 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$30 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$51 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$59 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  country -&gt; { countryId -&gt; { },
+               countryName -&gt; { Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ? },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { },
+            resultSet -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  countries -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) }
+
+
+
+
+TAINTED_CALL1: (callee="String ResultSet.getString(int)", caller="List CountryHelper.getCountries()")
+TAINTED_CALL1: (callee="String ResultSet.getString(int)", caller="List CountryHelper.getCountries()")
+INSTR=  n$59 := String ResultSet.getString(int)({ this-&gt;resultSet, 3 }) [line 28]; 
+
+STATE:
+{ n$6 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$9 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$12 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$16 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$24 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$30 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$51 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$59 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  country -&gt; { countryId -&gt; { },
+               countryName -&gt; { Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ? },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { },
+            resultSet -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  countries -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) }
+
+
+
+</LISTING>

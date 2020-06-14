@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Orar.getTip_act():java.lang.String.783e5ba5553d81c78bf8a27a7035280a_1" [label="1: Start String Orar.getTip_act()\nFormals:  this:com.stn.pojo.Orar*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Orar.getTip_act():java.lang.String.783e5ba5553d81c78bf8a27a7035280a_1" -> "com.stn.pojo.Orar.getTip_act():java.lang.String.783e5ba5553d81c78bf8a27a7035280a_4" ;
+"com.stn.pojo.Orar.getTip_act():java.lang.String.783e5ba5553d81c78bf8a27a7035280a_2" [label="2: Exit String Orar.getTip_act() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Orar.getTip_act():java.lang.String.783e5ba5553d81c78bf8a27a7035280a_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 73]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Orar.getTip_act():java.lang.String.783e5ba5553d81c78bf8a27a7035280a_3" -> "com.stn.pojo.Orar.getTip_act():java.lang.String.783e5ba5553d81c78bf8a27a7035280a_2" ;
+"com.stn.pojo.Orar.getTip_act():java.lang.String.783e5ba5553d81c78bf8a27a7035280a_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Orar* [line 73]\n  n$1=*n$0.tip_act:java.lang.String*(root com.stn.pojo.Orar) [line 73]\n  *&return:java.lang.String*=n$1 [line 73]\n  NULLIFY(&this); [line 73]\n  EXIT_SCOPE(n$0,n$1,this); [line 73]\n  APPLY_ABSTRACTION; [line 73]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Orar.getTip_act():java.lang.String.783e5ba5553d81c78bf8a27a7035280a_4" -> "com.stn.pojo.Orar.getTip_act():java.lang.String.783e5ba5553d81c78bf8a27a7035280a_2" ;
+	 "com.stn.pojo.Orar.getTip_act():java.lang.String.783e5ba5553d81c78bf8a27a7035280a_4" -> "com.stn.pojo.Orar.getTip_act():java.lang.String.783e5ba5553d81c78bf8a27a7035280a_3" [color="red" ];
+}

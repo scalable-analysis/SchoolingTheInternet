@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.UserHelper.deleteGrupa(int):void.e302697787f9e789619f9cb3e0187133</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE302">void UserHelper.deleteGrupa(int)</a></h1></center>
+<a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:32 31 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$bcvar2); [line 320];
+EXIT_SCOPE($bcvar2); [line 320];
+APPLY_ABSTRACTION; [line 320];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.helpers.UserHelper* [line 303];
+*n$0.query:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)="UPDATE users SET IdGrupa = ? , IdSerie = ? , IdFacultate = ? WHERE Id = ?" [line 303];
+EXIT_SCOPE(n$0); [line 303];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:34 Instructions
+n$1=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 306];
+*&amp;$irvar0:java.lang.Class*=n$1 [line 306];
+NULLIFY(&amp;$irvar0); [line 306];
+EXIT_SCOPE(n$1,$irvar0); [line 306];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:34 Instructions
+n$2=*&amp;this:com.stn.helpers.UserHelper* [line 307];
+_=*n$2:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 307];
+n$4=_fun_String DBConnection.getHost()(n$2:com.stn.helpers.UserHelper*) virtual [line 307];
+*&amp;$irvar1:java.lang.String*=n$4 [line 307];
+EXIT_SCOPE(_,n$2,n$4); [line 307];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:34 Instructions
+n$5=*&amp;this:com.stn.helpers.UserHelper* [line 307];
+_=*n$5:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 307];
+n$7=_fun_String DBConnection.getUser()(n$5:com.stn.helpers.UserHelper*) virtual [line 307];
+*&amp;$irvar2:java.lang.String*=n$7 [line 307];
+EXIT_SCOPE(_,n$5,n$7); [line 307];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:34 Instructions
+n$8=*&amp;this:com.stn.helpers.UserHelper* [line 307];
+_=*n$8:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 307];
+n$10=_fun_String DBConnection.getPassword()(n$8:com.stn.helpers.UserHelper*) virtual [line 307];
+*&amp;$irvar3:java.lang.String*=n$10 [line 307];
+EXIT_SCOPE(_,n$8,n$10); [line 307];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:34 Instructions
+n$11=*&amp;$irvar1:java.lang.String* [line 307];
+n$12=*&amp;$irvar2:java.lang.String* [line 307];
+n$13=*&amp;$irvar3:java.lang.String* [line 307];
+n$14=_fun_Connection DriverManager.getConnection(String,String,String)(n$11:java.lang.String*,n$12:java.lang.String*,n$13:java.lang.String*) [line 307];
+*&amp;$irvar4:java.sql.Connection*=n$14 [line 307];
+NULLIFY(&amp;$irvar3); [line 307];
+NULLIFY(&amp;$irvar1); [line 307];
+NULLIFY(&amp;$irvar2); [line 307];
+EXIT_SCOPE(n$11,n$12,n$13,n$14,$irvar3,$irvar1,$irvar2); [line 307];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:34 Instructions
+n$15=*&amp;this:com.stn.helpers.UserHelper* [line 307];
+n$16=*&amp;$irvar4:java.sql.Connection* [line 307];
+*n$15.connection:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$16 [line 307];
+NULLIFY(&amp;$irvar4); [line 307];
+EXIT_SCOPE(n$15,n$16,$irvar4); [line 307];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:34 Instructions
+n$17=*&amp;this:com.stn.helpers.UserHelper* [line 308];
+n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 308];
+_=*n$18:java.sql.Connection*(root java.sql.Connection) [line 308];
+n$20=*&amp;this:com.stn.helpers.UserHelper* [line 308];
+n$21=*n$20.query:java.lang.String*(root com.stn.helpers.UserHelper) [line 308];
+n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 308];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 308];
+EXIT_SCOPE(_,n$17,n$18,n$20,n$21,n$22); [line 308];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:34 Instructions
+n$23=*&amp;this:com.stn.helpers.UserHelper* [line 308];
+n$24=*&amp;$irvar5:java.sql.PreparedStatement* [line 308];
+*n$23.preparedStatement:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$24 [line 308];
+NULLIFY(&amp;$irvar5); [line 308];
+EXIT_SCOPE(n$23,n$24,$irvar5); [line 308];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:34 Instructions
+n$25=*&amp;this:com.stn.helpers.UserHelper* [line 309];
+n$26=*n$25.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 309];
+_=*n$26:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 309];
+n$28=_fun_void PreparedStatement.setNull(int,int)(n$26:java.sql.PreparedStatement*,1:int,4:int) interface virtual [line 309];
+EXIT_SCOPE(_,n$25,n$26,n$28); [line 309];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:34 Instructions
+n$29=*&amp;this:com.stn.helpers.UserHelper* [line 310];
+n$30=*n$29.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 310];
+_=*n$30:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 310];
+n$32=_fun_void PreparedStatement.setNull(int,int)(n$30:java.sql.PreparedStatement*,2:int,4:int) interface virtual [line 310];
+EXIT_SCOPE(_,n$29,n$30,n$32); [line 310];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:34 Instructions
+n$33=*&amp;this:com.stn.helpers.UserHelper* [line 311];
+n$34=*n$33.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 311];
+_=*n$34:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 311];
+n$36=_fun_void PreparedStatement.setNull(int,int)(n$34:java.sql.PreparedStatement*,3:int,4:int) interface virtual [line 311];
+EXIT_SCOPE(_,n$33,n$34,n$36); [line 311];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:34 Instructions
+n$37=*&amp;this:com.stn.helpers.UserHelper* [line 312];
+n$38=*n$37.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 312];
+_=*n$38:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 312];
+n$40=*&amp;id:int [line 312];
+n$41=_fun_void PreparedStatement.setInt(int,int)(n$38:java.sql.PreparedStatement*,4:int,n$40:int) interface virtual [line 312];
+NULLIFY(&amp;id); [line 312];
+EXIT_SCOPE(_,n$37,n$38,n$40,n$41,id); [line 312];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 19 exn:34 Instructions
+n$42=*&amp;this:com.stn.helpers.UserHelper* [line 313];
+n$43=*n$42.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 313];
+_=*n$43:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 313];
+n$45=_fun_int PreparedStatement.executeUpdate()(n$43:java.sql.PreparedStatement*) interface virtual [line 313];
+*&amp;$irvar6:int=n$45 [line 313];
+NULLIFY(&amp;$irvar6); [line 313];
+EXIT_SCOPE(_,n$42,n$43,n$45,$irvar6); [line 313];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:17 succs:20 exn:3 Conditional method_body
+n$46=*&amp;this:com.stn.helpers.UserHelper* [line 315];
+n$47=*n$46.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 315];
+PRUNE(!(n$47 == null), true); [line 315];
+EXIT_SCOPE(n$46,n$47); [line 315];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node19.html"><span class='visited with_tooltip'>C_19<span class='tooltip'>node19 preds:17 succs:21 22 exn:3 Conditional method_body
+n$46=*&amp;this:com.stn.helpers.UserHelper* [line 315];
+n$47=*n$46.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 315];
+PRUNE((n$47 == null), false); [line 315];
+EXIT_SCOPE(n$46,n$47); [line 315];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:18 succs:21 22 exn:3 Instructions
+n$48=*&amp;this:com.stn.helpers.UserHelper* [line 316];
+n$49=*n$48.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 316];
+n$52=_fun___set_mem_attribute(n$49:java.sql.PreparedStatement*) [line 316];
+_=*n$49:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 316];
+n$51=_fun_void PreparedStatement.close()(n$49:java.sql.PreparedStatement*) interface virtual [line 316];
+EXIT_SCOPE(_,n$48,n$49,n$51,n$52); [line 316];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node21.html"><span class='visited with_tooltip'>C_21<span class='tooltip'>node21 preds:20 19 succs:23 exn:3 Conditional method_body
+n$53=*&amp;this:com.stn.helpers.UserHelper* [line 317];
+n$54=*n$53.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 317];
+PRUNE(!(n$54 == null), true); [line 317];
+EXIT_SCOPE(n$53,n$54); [line 317];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node22.html"><span class='visited with_tooltip'>C_22<span class='tooltip'>node22 preds:20 19 succs:32 exn:3 Conditional method_body
+n$53=*&amp;this:com.stn.helpers.UserHelper* [line 317];
+n$54=*n$53.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 317];
+PRUNE((n$54 == null), false); [line 317];
+NULLIFY(&amp;this); [line 317];
+EXIT_SCOPE(n$53,n$54,this); [line 317];
+APPLY_ABSTRACTION; [line 317];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:21 succs:32 exn:3 Instructions
+n$55=*&amp;this:com.stn.helpers.UserHelper* [line 318];
+n$56=*n$55.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 318];
+n$59=_fun___set_mem_attribute(n$56:java.sql.Connection*) [line 318];
+_=*n$56:java.sql.Connection*(root java.sql.Connection) [line 318];
+n$58=_fun_void Connection.close()(n$56:java.sql.Connection*) interface virtual [line 318];
+NULLIFY(&amp;this); [line 318];
+EXIT_SCOPE(_,n$55,n$56,n$58,n$59,this); [line 318];
+APPLY_ABSTRACTION; [line 318];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:33 succs:25 26 exn:3 Instructions
+n$60=*&amp;CatchVar137:java.lang.Object* [line 315];
+*&amp;$bcvar2:java.lang.Object*=n$60 [line 315];
+NULLIFY(&amp;CatchVar137); [line 315];
+EXIT_SCOPE(n$60,CatchVar137); [line 315];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node25.html"><span class='visited with_tooltip'>C_25<span class='tooltip'>node25 preds:24 succs:27 exn:3 Conditional method_body
+n$61=*&amp;this:com.stn.helpers.UserHelper* [line 315];
+n$62=*n$61.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 315];
+PRUNE(!(n$62 == null), true); [line 315];
+EXIT_SCOPE(n$61,n$62); [line 315];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node26.html"><span class='visited with_tooltip'>C_26<span class='tooltip'>node26 preds:24 succs:28 29 exn:3 Conditional method_body
+n$61=*&amp;this:com.stn.helpers.UserHelper* [line 315];
+n$62=*n$61.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 315];
+PRUNE((n$62 == null), false); [line 315];
+EXIT_SCOPE(n$61,n$62); [line 315];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:25 succs:28 29 exn:3 Instructions
+n$63=*&amp;this:com.stn.helpers.UserHelper* [line 316];
+n$64=*n$63.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 316];
+n$67=_fun___set_mem_attribute(n$64:java.sql.PreparedStatement*) [line 316];
+_=*n$64:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 316];
+n$66=_fun_void PreparedStatement.close()(n$64:java.sql.PreparedStatement*) interface virtual [line 316];
+EXIT_SCOPE(_,n$63,n$64,n$66,n$67); [line 316];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node28.html"><span class='visited with_tooltip'>C_28<span class='tooltip'>node28 preds:27 26 succs:30 exn:3 Conditional method_body
+n$68=*&amp;this:com.stn.helpers.UserHelper* [line 317];
+n$69=*n$68.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 317];
+PRUNE(!(n$69 == null), true); [line 317];
+EXIT_SCOPE(n$68,n$69); [line 317];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node29.html"><span class='visited with_tooltip'>C_29<span class='tooltip'>node29 preds:27 26 succs:31 exn:3 Conditional method_body
+n$68=*&amp;this:com.stn.helpers.UserHelper* [line 317];
+n$69=*n$68.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 317];
+PRUNE((n$69 == null), false); [line 317];
+NULLIFY(&amp;this); [line 317];
+EXIT_SCOPE(n$68,n$69,this); [line 317];
+APPLY_ABSTRACTION; [line 317];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:28 succs:31 exn:3 Instructions
+n$70=*&amp;this:com.stn.helpers.UserHelper* [line 318];
+n$71=*n$70.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 318];
+n$74=_fun___set_mem_attribute(n$71:java.sql.Connection*) [line 318];
+_=*n$71:java.sql.Connection*(root java.sql.Connection) [line 318];
+n$73=_fun_void Connection.close()(n$71:java.sql.Connection*) interface virtual [line 318];
+NULLIFY(&amp;this); [line 318];
+EXIT_SCOPE(_,n$70,n$71,n$73,n$74,this); [line 318];
+APPLY_ABSTRACTION; [line 318];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:30 29 succs:2 exn:3 Instructions
+n$75=*&amp;$bcvar2:java.lang.Object* [line 319];
+*&amp;return:void=EXN n$75 [line 319];
+NULLIFY(&amp;$bcvar2); [line 319];
+EXIT_SCOPE(n$75,$bcvar2); [line 319];
+APPLY_ABSTRACTION; [line 319];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:23 22 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 320];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:34 succs:24 exn:3 Instructions
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.deleteGrupa%28int%29%3Avoid.e302697787f9e789619f9cb3e0187133_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds: succs:33 exn:3 Instructions
+n$76=*&amp;return:void [line 315];
+*&amp;return:void=null [line 315];
+n$77=_fun___unwrap_exception(n$76:void) [line 315];
+NULLIFY(&amp;$irvar3); [line 315];
+NULLIFY(&amp;$irvar5); [line 315];
+NULLIFY(&amp;$irvar4); [line 315];
+NULLIFY(&amp;$irvar1); [line 315];
+NULLIFY(&amp;$irvar2); [line 315];
+EXIT_SCOPE(n$76,n$77,$irvar3,$irvar5,$irvar4,$irvar1,$irvar2); [line 315];
+</span></span></a><br />@
+
+<span class='color_black'>void void UserHelper.deleteGrupa(int)(com.stn.helpers.UserHelper* this, int id)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { @val$0 -> { connection -> (Footprint({ @val$0.dbUser,
+                                                   @val$0.dbPort*,
+                                                   @val$0.dbPassword,
+                                                   @val$0.dbName*,
+                                                   @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        preparedStatement -> (Footprint({ @val$0.dbUser,
+                                                          @val$0.dbPort*,
+                                                          @val$0.dbPassword,
+                                                          @val$0.dbName*,
+                                                          @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        query -> { } } }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= void UserHelper.deleteGrupa(int)
+; translation_unit= src/main/java/com/stn/helpers/UserHelper.java
+; access= Public
+; exceptions= [java.lang.ClassNotFoundException;  java.sql.SQLException]
+; formals= [(this,com.stn.helpers.UserHelper*);  (id,int)]
+; is_defined= true
+; loc= src/main/java/com/stn/helpers/UserHelper.java:302
+; locals= [{ name= $bcvar2; typ= void; modify_in_block= false }; 
+           { name= CatchVar137; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }]
+; ret_type= void 
+; proc_id= com.stn.helpers.UserHelper.deleteGrupa(int):void }</pre>
+</body>
+</html>

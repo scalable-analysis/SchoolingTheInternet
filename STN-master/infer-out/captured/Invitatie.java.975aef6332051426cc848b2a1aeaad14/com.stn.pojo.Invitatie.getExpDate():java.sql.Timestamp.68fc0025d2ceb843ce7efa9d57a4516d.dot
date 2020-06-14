@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Invitatie.getExpDate():java.sql.Timestamp.68fc0025d2ceb843ce7efa9d57a4516d_1" [label="1: Start Timestamp Invitatie.getExpDate()\nFormals:  this:com.stn.pojo.Invitatie*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Invitatie.getExpDate():java.sql.Timestamp.68fc0025d2ceb843ce7efa9d57a4516d_1" -> "com.stn.pojo.Invitatie.getExpDate():java.sql.Timestamp.68fc0025d2ceb843ce7efa9d57a4516d_4" ;
+"com.stn.pojo.Invitatie.getExpDate():java.sql.Timestamp.68fc0025d2ceb843ce7efa9d57a4516d_2" [label="2: Exit Timestamp Invitatie.getExpDate() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Invitatie.getExpDate():java.sql.Timestamp.68fc0025d2ceb843ce7efa9d57a4516d_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 88]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.getExpDate():java.sql.Timestamp.68fc0025d2ceb843ce7efa9d57a4516d_3" -> "com.stn.pojo.Invitatie.getExpDate():java.sql.Timestamp.68fc0025d2ceb843ce7efa9d57a4516d_2" ;
+"com.stn.pojo.Invitatie.getExpDate():java.sql.Timestamp.68fc0025d2ceb843ce7efa9d57a4516d_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Invitatie* [line 88]\n  n$1=*n$0.expDate:java.sql.Timestamp*(root com.stn.pojo.Invitatie) [line 88]\n  *&return:java.sql.Timestamp*=n$1 [line 88]\n  NULLIFY(&this); [line 88]\n  EXIT_SCOPE(n$0,n$1,this); [line 88]\n  APPLY_ABSTRACTION; [line 88]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.getExpDate():java.sql.Timestamp.68fc0025d2ceb843ce7efa9d57a4516d_4" -> "com.stn.pojo.Invitatie.getExpDate():java.sql.Timestamp.68fc0025d2ceb843ce7efa9d57a4516d_2" ;
+	 "com.stn.pojo.Invitatie.getExpDate():java.sql.Timestamp.68fc0025d2ceb843ce7efa9d57a4516d_4" -> "com.stn.pojo.Invitatie.getExpDate():java.sql.Timestamp.68fc0025d2ceb843ce7efa9d57a4516d_3" [color="red" ];
+}

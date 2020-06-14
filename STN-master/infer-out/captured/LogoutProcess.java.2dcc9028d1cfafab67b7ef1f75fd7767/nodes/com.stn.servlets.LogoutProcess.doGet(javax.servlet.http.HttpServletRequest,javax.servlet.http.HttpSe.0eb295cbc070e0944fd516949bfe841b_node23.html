@@ -1,0 +1,284 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.servlets.LogoutProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node23</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767.html#LINE28">23</a></h1></center>PROC: <a href="./../com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b.html">void LogoutProcess.doGet(HttpServletRequest,HttpServletResponse)</a> LINE: <a href="./../../LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767.html#LINE28">28</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node22.html"><span class='visited with_tooltip'>N_22<span class='tooltip'>node22 preds:21 succs:23 exn:3 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node24.html"><span class='visited with_tooltip'>N_24<span class='tooltip'>node24 preds:23 succs:25 exn:3 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node3.html"><span class='visited with_tooltip'>N_3<span class='tooltip'>node3 preds: succs:2 exn:2 </span></span></a><br>
+<LISTING class='color_green'>n$39=*&amp;userHelper:com.stn.helpers.UserHelper* [line 28];
+_=*n$39:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 28];
+n$41=*&amp;$irvar2:int [line 28];
+n$42=_fun_void UserHelper.deleteToken(int)(n$39:com.stn.helpers.UserHelper*,n$41:int) virtual [line 28];
+</LISTING>
+<hr width="100%">
+<a name="session12" href="./../nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node23.html#session12">node23#session12</a>(<a href="./../../LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767.html#LINE28">28</a>) [compute pre] liveness 23
+<LISTING class='color_black'>JOIN
+
+LEFT:   { url, session, response }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session13" href="./../nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node23.html#session13">node23#session13</a>(<a href="./../../LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767.html#LINE28">28</a>) [exec] liveness 23
+<LISTING class='color_black'>PRE STATE:
+{ url, session, response }
+
+INSTR=  n$42=_fun_void UserHelper.deleteToken(int)(n$39:com.stn.helpers.UserHelper*,n$41:int) virtual [line 28]; 
+
+STATE:
+{ n$39, n$41, url, session, response }
+
+INSTR=  n$41=*&amp;$irvar2:int [line 28]; 
+
+STATE:
+{ n$39, url, $irvar2, session, response }
+
+INSTR=  _=*n$39:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 28]; 
+
+STATE UNCHANGED
+
+INSTR=  n$39=*&amp;userHelper:com.stn.helpers.UserHelper* [line 28]; 
+
+STATE:
+{ url, userHelper, $irvar2, session, response }
+
+</LISTING>
+<hr width="100%">
+<a name="session157" href="./../nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node23.html#session157">node23#session157</a>(<a href="./../../LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767.html#LINE28">28</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session158" href="./../nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node23.html#session158">node23#session158</a>(<a href="./../../LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767.html#LINE28">28</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ url, userHelper, $irvar2, session },{ _, n$35, n$36, n$38, $irvar1 })
+
+INSTR=  n$39=*&amp;userHelper:com.stn.helpers.UserHelper* [line 28]; 
+
+STATE:
+({ n$39, url, userHelper, $irvar2, session },
+{ _, n$35, n$36, n$38, $irvar1 })
+
+INSTR=  _=*n$39:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 28]; 
+
+STATE:
+({ _, n$39, url, userHelper, $irvar2, session },
+{ _, n$35, n$36, n$38, $irvar1 })
+
+INSTR=  n$41=*&amp;$irvar2:int [line 28]; 
+
+STATE:
+({ _, n$39, n$41, url, userHelper, $irvar2, session },
+{ _, n$35, n$36, n$38, $irvar1 })
+
+INSTR=  n$42=_fun_void UserHelper.deleteToken(int)(n$39:com.stn.helpers.UserHelper*,n$41:int) virtual [line 28]; 
+
+STATE:
+({ url, session },{ _, n$39, n$41, n$42, userHelper, $irvar2 })
+
+</LISTING>
+<hr width="100%">
+<a name="session40" href="./../nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node23.html#session40">node23#session40</a>(<a href="./../../LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767.html#LINE28">28</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session41" href="./../nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node23.html#session41">node23#session41</a>(<a href="./../../LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767.html#LINE28">28</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$0 -&gt; { connection -&gt; { },
+           dbHost -&gt; { },
+           dbName -&gt; { },
+           dbPassword -&gt; { },
+           dbPort -&gt; { },
+           dbUser -&gt; { },
+           preparedStatement -&gt; { },
+           query -&gt; { },
+           resultSet -&gt; { } },
+  url -&gt; { },
+  userHelper -&gt; { connection -&gt; { },
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; { },
+                  query -&gt; { },
+                  resultSet -&gt; { } },
+  session -&gt; { },
+  $bcvar8 -&gt; { } }
+
+
+
+
+INSTR=  n$42 := void UserHelper.deleteToken(int)({ userHelper, n$38 }) [line 28]; 
+
+STATE:
+{ n$0 -&gt; { connection -&gt; { },
+           dbHost -&gt; { },
+           dbName -&gt; { },
+           dbPassword -&gt; { },
+           dbPort -&gt; { },
+           dbUser -&gt; { },
+           preparedStatement -&gt; { },
+           query -&gt; { },
+           resultSet -&gt; { } },
+  url -&gt; { },
+  userHelper -&gt; { connection -&gt; *,
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; *,
+                  query -&gt; { },
+                  resultSet -&gt; { } },
+  session -&gt; { },
+  $bcvar8 -&gt; { } }
+
+INSTR=  NULLIFY(&amp;userHelper); [line 28]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar2); [line 28]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(n$42,userHelper); [line 28]; 
+
+STATE:
+{ n$0 -&gt; { connection -&gt; { },
+           dbHost -&gt; { },
+           dbName -&gt; { },
+           dbPassword -&gt; { },
+           dbPort -&gt; { },
+           dbUser -&gt; { },
+           preparedStatement -&gt; { },
+           query -&gt; { },
+           resultSet -&gt; { } },
+  url -&gt; { },
+  userHelper -&gt; { connection -&gt; *,
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; *,
+                  query -&gt; { },
+                  resultSet -&gt; { } },
+  session -&gt; { },
+  $bcvar8 -&gt; { } }
+
+</LISTING>
+<hr width="100%">
+<a name="session66" href="./../nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node23.html#session66">node23#session66</a>(<a href="./../../LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767.html#LINE28">28</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session67" href="./../nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node23.html#session67">node23#session67</a>(<a href="./../../LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767.html#LINE28">28</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$0 -&gt; { connection -&gt; { },
+           dbHost -&gt; { },
+           dbName -&gt; { },
+           dbPassword -&gt; { },
+           dbPort -&gt; { },
+           dbUser -&gt; { },
+           preparedStatement -&gt; { },
+           query -&gt; { },
+           resultSet -&gt; { } },
+  url -&gt; { },
+  cookie -&gt; { },
+  userHelper -&gt; { connection -&gt; { },
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; { },
+                  query -&gt; { },
+                  resultSet -&gt; { } },
+  session -&gt; { },
+  $bcvar8 -&gt; { } }
+
+
+
+
+INSTR=  n$42 := void UserHelper.deleteToken(int)({ userHelper, n$38 }) [line 28]; 
+
+STATE:
+{ n$0 -&gt; { connection -&gt; { },
+           dbHost -&gt; { },
+           dbName -&gt; { },
+           dbPassword -&gt; { },
+           dbPort -&gt; { },
+           dbUser -&gt; { },
+           preparedStatement -&gt; { },
+           query -&gt; { },
+           resultSet -&gt; { } },
+  url -&gt; { },
+  cookie -&gt; { },
+  userHelper -&gt; { connection -&gt; *,
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; *,
+                  query -&gt; { },
+                  resultSet -&gt; { } },
+  session -&gt; { },
+  $bcvar8 -&gt; { } }
+
+INSTR=  NULLIFY(&amp;userHelper); [line 28]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar2); [line 28]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(n$42,userHelper); [line 28]; 
+
+STATE:
+{ n$0 -&gt; { connection -&gt; { },
+           dbHost -&gt; { },
+           dbName -&gt; { },
+           dbPassword -&gt; { },
+           dbPort -&gt; { },
+           dbUser -&gt; { },
+           preparedStatement -&gt; { },
+           query -&gt; { },
+           resultSet -&gt; { } },
+  url -&gt; { },
+  cookie -&gt; { },
+  userHelper -&gt; { connection -&gt; *,
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; *,
+                  query -&gt; { },
+                  resultSet -&gt; { } },
+  session -&gt; { },
+  $bcvar8 -&gt; { } }
+
+</LISTING>

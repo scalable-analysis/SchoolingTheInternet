@@ -1,0 +1,307 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.FacultateHelper.addGrupa(java.lang.String,int):void.98fbdf24668e8afac3dd817f99673947</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../FacultateHelper.java.4c1e6c764e5578869e04cdd005b00cfa.html#LINE50">void FacultateHelper.addGrupa(String,int)</a></h1></center>
+<a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:33 32 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;token); [line 70];
+NULLIFY(&amp;$bcvar5); [line 70];
+NULLIFY(&amp;securityHelper); [line 70];
+EXIT_SCOPE(token,$bcvar5,securityHelper); [line 70];
+APPLY_ABSTRACTION; [line 70];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.helpers.FacultateHelper* [line 51];
+*n$0.query:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)="INSERT INTO grupe (Nume,IdSerie,Token) VALUES (?,?,?)" [line 51];
+EXIT_SCOPE(n$0); [line 51];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$1=_fun___new(sizeof(t=com.stn.helpers.SecurityHelper):com.stn.helpers.SecurityHelper*) [line 53];
+n$2=_fun_SecurityHelper.&lt;init&gt;()(n$1:com.stn.helpers.SecurityHelper*) [line 53];
+*&amp;securityHelper:com.stn.helpers.SecurityHelper*=n$1 [line 53];
+EXIT_SCOPE(n$1,n$2); [line 53];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$3=*&amp;securityHelper:com.stn.helpers.SecurityHelper* [line 54];
+_=*n$3:com.stn.helpers.SecurityHelper*(root com.stn.helpers.SecurityHelper) [line 54];
+n$5=_fun_String SecurityHelper.generateRandomString(int)(n$3:com.stn.helpers.SecurityHelper*,32:int) virtual [line 54];
+*&amp;token:java.lang.String*=n$5 [line 54];
+NULLIFY(&amp;securityHelper); [line 54];
+EXIT_SCOPE(_,n$3,n$5,securityHelper); [line 54];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:35 Instructions
+n$6=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 57];
+*&amp;$irvar0:java.lang.Class*=n$6 [line 57];
+NULLIFY(&amp;$irvar0); [line 57];
+EXIT_SCOPE(n$6,$irvar0); [line 57];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:35 Instructions
+n$7=*&amp;this:com.stn.helpers.FacultateHelper* [line 58];
+_=*n$7:com.stn.helpers.FacultateHelper*(root com.stn.helpers.FacultateHelper) [line 58];
+n$9=_fun_String DBConnection.getHost()(n$7:com.stn.helpers.FacultateHelper*) virtual [line 58];
+*&amp;$irvar1:java.lang.String*=n$9 [line 58];
+EXIT_SCOPE(_,n$7,n$9); [line 58];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:35 Instructions
+n$10=*&amp;this:com.stn.helpers.FacultateHelper* [line 58];
+_=*n$10:com.stn.helpers.FacultateHelper*(root com.stn.helpers.FacultateHelper) [line 58];
+n$12=_fun_String DBConnection.getUser()(n$10:com.stn.helpers.FacultateHelper*) virtual [line 58];
+*&amp;$irvar2:java.lang.String*=n$12 [line 58];
+EXIT_SCOPE(_,n$10,n$12); [line 58];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:35 Instructions
+n$13=*&amp;this:com.stn.helpers.FacultateHelper* [line 58];
+_=*n$13:com.stn.helpers.FacultateHelper*(root com.stn.helpers.FacultateHelper) [line 58];
+n$15=_fun_String DBConnection.getPassword()(n$13:com.stn.helpers.FacultateHelper*) virtual [line 58];
+*&amp;$irvar3:java.lang.String*=n$15 [line 58];
+EXIT_SCOPE(_,n$13,n$15); [line 58];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:35 Instructions
+n$16=*&amp;$irvar1:java.lang.String* [line 58];
+n$17=*&amp;$irvar2:java.lang.String* [line 58];
+n$18=*&amp;$irvar3:java.lang.String* [line 58];
+n$19=_fun_Connection DriverManager.getConnection(String,String,String)(n$16:java.lang.String*,n$17:java.lang.String*,n$18:java.lang.String*) [line 58];
+*&amp;$irvar4:java.sql.Connection*=n$19 [line 58];
+NULLIFY(&amp;$irvar3); [line 58];
+NULLIFY(&amp;$irvar1); [line 58];
+NULLIFY(&amp;$irvar2); [line 58];
+EXIT_SCOPE(n$16,n$17,n$18,n$19,$irvar3,$irvar1,$irvar2); [line 58];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:35 Instructions
+n$20=*&amp;this:com.stn.helpers.FacultateHelper* [line 58];
+n$21=*&amp;$irvar4:java.sql.Connection* [line 58];
+*n$20.connection:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)=n$21 [line 58];
+NULLIFY(&amp;$irvar4); [line 58];
+EXIT_SCOPE(n$20,n$21,$irvar4); [line 58];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:35 Instructions
+n$22=*&amp;this:com.stn.helpers.FacultateHelper* [line 59];
+n$23=*n$22.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 59];
+_=*n$23:java.sql.Connection*(root java.sql.Connection) [line 59];
+n$25=*&amp;this:com.stn.helpers.FacultateHelper* [line 59];
+n$26=*n$25.query:java.lang.String*(root com.stn.helpers.FacultateHelper) [line 59];
+n$27=_fun_PreparedStatement Connection.prepareStatement(String)(n$23:java.sql.Connection*,n$26:java.lang.String*) interface virtual [line 59];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$27 [line 59];
+EXIT_SCOPE(_,n$22,n$23,n$25,n$26,n$27); [line 59];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:35 Instructions
+n$28=*&amp;this:com.stn.helpers.FacultateHelper* [line 59];
+n$29=*&amp;$irvar5:java.sql.PreparedStatement* [line 59];
+*n$28.preparedStatement:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)=n$29 [line 59];
+NULLIFY(&amp;$irvar5); [line 59];
+EXIT_SCOPE(n$28,n$29,$irvar5); [line 59];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:35 Instructions
+n$30=*&amp;this:com.stn.helpers.FacultateHelper* [line 60];
+n$31=*n$30.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 60];
+_=*n$31:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 60];
+n$33=*&amp;name:java.lang.String* [line 60];
+n$34=_fun_void PreparedStatement.setString(int,String)(n$31:java.sql.PreparedStatement*,1:int,n$33:java.lang.String*) interface virtual [line 60];
+NULLIFY(&amp;name); [line 60];
+EXIT_SCOPE(_,n$30,n$31,n$33,n$34,name); [line 60];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:35 Instructions
+n$35=*&amp;this:com.stn.helpers.FacultateHelper* [line 61];
+n$36=*n$35.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 61];
+_=*n$36:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 61];
+n$38=*&amp;idSerie:int [line 61];
+n$39=_fun_void PreparedStatement.setInt(int,int)(n$36:java.sql.PreparedStatement*,2:int,n$38:int) interface virtual [line 61];
+NULLIFY(&amp;idSerie); [line 61];
+EXIT_SCOPE(_,n$35,n$36,n$38,n$39,idSerie); [line 61];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:35 Instructions
+n$40=*&amp;this:com.stn.helpers.FacultateHelper* [line 62];
+n$41=*n$40.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 62];
+_=*n$41:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 62];
+n$43=*&amp;token:java.lang.String* [line 62];
+n$44=_fun_void PreparedStatement.setString(int,String)(n$41:java.sql.PreparedStatement*,3:int,n$43:java.lang.String*) interface virtual [line 62];
+NULLIFY(&amp;token); [line 62];
+EXIT_SCOPE(_,n$40,n$41,n$43,n$44,token); [line 62];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 20 exn:35 Instructions
+n$45=*&amp;this:com.stn.helpers.FacultateHelper* [line 63];
+n$46=*n$45.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 63];
+_=*n$46:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 63];
+n$48=_fun_int PreparedStatement.executeUpdate()(n$46:java.sql.PreparedStatement*) interface virtual [line 63];
+*&amp;$irvar6:int=n$48 [line 63];
+NULLIFY(&amp;$irvar6); [line 63];
+EXIT_SCOPE(_,n$45,n$46,n$48,$irvar6); [line 63];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node19.html"><span class='visited with_tooltip'>C_19<span class='tooltip'>node19 preds:18 succs:21 exn:3 Conditional method_body
+n$49=*&amp;this:com.stn.helpers.FacultateHelper* [line 65];
+n$50=*n$49.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 65];
+PRUNE(!(n$50 == null), true); [line 65];
+EXIT_SCOPE(n$49,n$50); [line 65];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node20.html"><span class='visited with_tooltip'>C_20<span class='tooltip'>node20 preds:18 succs:22 23 exn:3 Conditional method_body
+n$49=*&amp;this:com.stn.helpers.FacultateHelper* [line 65];
+n$50=*n$49.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 65];
+PRUNE((n$50 == null), false); [line 65];
+EXIT_SCOPE(n$49,n$50); [line 65];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:19 succs:22 23 exn:3 Instructions
+n$51=*&amp;this:com.stn.helpers.FacultateHelper* [line 66];
+n$52=*n$51.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 66];
+n$55=_fun___set_mem_attribute(n$52:java.sql.PreparedStatement*) [line 66];
+_=*n$52:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 66];
+n$54=_fun_void PreparedStatement.close()(n$52:java.sql.PreparedStatement*) interface virtual [line 66];
+EXIT_SCOPE(_,n$51,n$52,n$54,n$55); [line 66];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node22.html"><span class='visited with_tooltip'>C_22<span class='tooltip'>node22 preds:21 20 succs:24 exn:3 Conditional method_body
+n$56=*&amp;this:com.stn.helpers.FacultateHelper* [line 67];
+n$57=*n$56.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 67];
+PRUNE(!(n$57 == null), true); [line 67];
+EXIT_SCOPE(n$56,n$57); [line 67];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node23.html"><span class='visited with_tooltip'>C_23<span class='tooltip'>node23 preds:21 20 succs:33 exn:3 Conditional method_body
+n$56=*&amp;this:com.stn.helpers.FacultateHelper* [line 67];
+n$57=*n$56.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 67];
+PRUNE((n$57 == null), false); [line 67];
+NULLIFY(&amp;this); [line 67];
+EXIT_SCOPE(n$56,n$57,this); [line 67];
+APPLY_ABSTRACTION; [line 67];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:22 succs:33 exn:3 Instructions
+n$58=*&amp;this:com.stn.helpers.FacultateHelper* [line 68];
+n$59=*n$58.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 68];
+n$62=_fun___set_mem_attribute(n$59:java.sql.Connection*) [line 68];
+_=*n$59:java.sql.Connection*(root java.sql.Connection) [line 68];
+n$61=_fun_void Connection.close()(n$59:java.sql.Connection*) interface virtual [line 68];
+NULLIFY(&amp;this); [line 68];
+EXIT_SCOPE(_,n$58,n$59,n$61,n$62,this); [line 68];
+APPLY_ABSTRACTION; [line 68];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:36 34 succs:26 27 exn:37 Instructions
+n$63=*&amp;CatchVar143:java.lang.Object* [line 65];
+*&amp;$bcvar5:java.lang.Object*=n$63 [line 65];
+EXIT_SCOPE(n$63); [line 65];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node26.html"><span class='visited with_tooltip'>C_26<span class='tooltip'>node26 preds:25 succs:28 exn:3 Conditional method_body
+n$64=*&amp;this:com.stn.helpers.FacultateHelper* [line 65];
+n$65=*n$64.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 65];
+PRUNE(!(n$65 == null), true); [line 65];
+EXIT_SCOPE(n$64,n$65); [line 65];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node27.html"><span class='visited with_tooltip'>C_27<span class='tooltip'>node27 preds:25 succs:29 30 exn:3 Conditional method_body
+n$64=*&amp;this:com.stn.helpers.FacultateHelper* [line 65];
+n$65=*n$64.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 65];
+PRUNE((n$65 == null), false); [line 65];
+EXIT_SCOPE(n$64,n$65); [line 65];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:26 succs:29 30 exn:3 Instructions
+n$66=*&amp;this:com.stn.helpers.FacultateHelper* [line 66];
+n$67=*n$66.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 66];
+n$70=_fun___set_mem_attribute(n$67:java.sql.PreparedStatement*) [line 66];
+_=*n$67:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 66];
+n$69=_fun_void PreparedStatement.close()(n$67:java.sql.PreparedStatement*) interface virtual [line 66];
+EXIT_SCOPE(_,n$66,n$67,n$69,n$70); [line 66];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node29.html"><span class='visited with_tooltip'>C_29<span class='tooltip'>node29 preds:28 27 succs:31 exn:3 Conditional method_body
+n$71=*&amp;this:com.stn.helpers.FacultateHelper* [line 67];
+n$72=*n$71.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 67];
+PRUNE(!(n$72 == null), true); [line 67];
+EXIT_SCOPE(n$71,n$72); [line 67];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node30.html"><span class='visited with_tooltip'>C_30<span class='tooltip'>node30 preds:28 27 succs:32 exn:3 Conditional method_body
+n$71=*&amp;this:com.stn.helpers.FacultateHelper* [line 67];
+n$72=*n$71.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 67];
+PRUNE((n$72 == null), false); [line 67];
+NULLIFY(&amp;this); [line 67];
+EXIT_SCOPE(n$71,n$72,this); [line 67];
+APPLY_ABSTRACTION; [line 67];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:29 succs:32 exn:3 Instructions
+n$73=*&amp;this:com.stn.helpers.FacultateHelper* [line 68];
+n$74=*n$73.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 68];
+n$77=_fun___set_mem_attribute(n$74:java.sql.Connection*) [line 68];
+_=*n$74:java.sql.Connection*(root java.sql.Connection) [line 68];
+n$76=_fun_void Connection.close()(n$74:java.sql.Connection*) interface virtual [line 68];
+NULLIFY(&amp;this); [line 68];
+EXIT_SCOPE(_,n$73,n$74,n$76,n$77,this); [line 68];
+APPLY_ABSTRACTION; [line 68];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:31 30 succs:2 exn:3 Instructions
+n$78=*&amp;$bcvar5:java.lang.Object* [line 69];
+*&amp;return:void=EXN n$78 [line 69];
+NULLIFY(&amp;$bcvar5); [line 69];
+EXIT_SCOPE(n$78,$bcvar5); [line 69];
+APPLY_ABSTRACTION; [line 69];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:24 23 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 70];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:35 succs:25 exn:3 Instructions
+APPLY_ABSTRACTION; [line 65];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds: succs:34 exn:3 Instructions
+n$79=*&amp;return:void [line 65];
+*&amp;return:void=null [line 65];
+n$80=_fun___unwrap_exception(n$79:void) [line 65];
+NULLIFY(&amp;$irvar3); [line 65];
+NULLIFY(&amp;token); [line 65];
+NULLIFY(&amp;$irvar5); [line 65];
+NULLIFY(&amp;$irvar4); [line 65];
+NULLIFY(&amp;$irvar1); [line 65];
+NULLIFY(&amp;$irvar2); [line 65];
+EXIT_SCOPE(n$79,n$80,$irvar3,token,$irvar5,$irvar4,$irvar1,$irvar2); [line 65];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:37 succs:25 exn:3 Instructions
+APPLY_ABSTRACTION; [line 65];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.addGrupa%28java.lang.String%2Cint%29%3Avoid.98fbdf24668e8afac3dd817f99673947_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds: succs:36 exn:3 Instructions
+n$79=*&amp;return:void [line 65];
+*&amp;return:void=null [line 65];
+n$80=_fun___unwrap_exception(n$79:void) [line 65];
+NULLIFY(&amp;$bcvar5); [line 65];
+EXIT_SCOPE(n$79,n$80,$bcvar5); [line 65];
+</span></span></a><br />@
+
+<span class='color_black'>void void FacultateHelper.addGrupa(String,int)(com.stn.helpers.FacultateHelper* this, java.lang.String* name, int idSerie)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { @val$0 -> { connection -> (Footprint({ @val$0.dbUser,
+                                                   @val$0.dbPort*,
+                                                   @val$0.dbPassword,
+                                                   @val$0.dbName*,
+                                                   @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        preparedStatement -> (Footprint({ @val$1*,
+                                                          @val$0.dbUser,
+                                                          @val$0.dbPort*,
+                                                          @val$0.dbPassword,
+                                                          @val$0.dbName*,
+                                                          @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        query -> { } } }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= void FacultateHelper.addGrupa(String,int)
+; translation_unit= src/main/java/com/stn/helpers/FacultateHelper.java
+; access= Public
+; exceptions= [java.lang.ClassNotFoundException;  java.sql.SQLException]
+; formals= [(this,com.stn.helpers.FacultateHelper*);  (name,
+            java.lang.String*);  (idSerie,int)]
+; is_defined= true
+; loc= src/main/java/com/stn/helpers/FacultateHelper.java:50
+; locals= [{ name= $bcvar5; typ= void; modify_in_block= false }; 
+           { name= CatchVar143; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= token; typ= java.lang.String*; modify_in_block= false }; 
+           { name= securityHelper; typ= com.stn.helpers.SecurityHelper*; modify_in_block= false }]
+; ret_type= void 
+; proc_id= com.stn.helpers.FacultateHelper.addGrupa(java.lang.String,int):void }</pre>
+</body>
+</html>

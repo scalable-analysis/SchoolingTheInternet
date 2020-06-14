@@ -1,0 +1,345 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../FacultateHelper.java.4c1e6c764e5578869e04cdd005b00cfa.html#LINE98">List FacultateHelper.getFacultati()</a></h1></center>
+<a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:38 37 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;facultate); [line 119];
+NULLIFY(&amp;$bcvar2); [line 119];
+EXIT_SCOPE(facultate,$bcvar2); [line 119];
+APPLY_ABSTRACTION; [line 119];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 99];
+n$1=_fun_ArrayList.&lt;init&gt;()(n$0:java.util.ArrayList*) [line 99];
+*&amp;facultate:java.util.ArrayList*=n$0 [line 99];
+EXIT_SCOPE(n$0,n$1); [line 99];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$2=*&amp;this:com.stn.helpers.FacultateHelper* [line 101];
+*n$2.query:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)="SELECT * FROM facultati" [line 101];
+EXIT_SCOPE(n$2); [line 101];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:40 Instructions
+n$3=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 105];
+*&amp;$irvar0:java.lang.Class*=n$3 [line 105];
+NULLIFY(&amp;$irvar0); [line 105];
+EXIT_SCOPE(n$3,$irvar0); [line 105];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:40 Instructions
+n$4=*&amp;this:com.stn.helpers.FacultateHelper* [line 106];
+_=*n$4:com.stn.helpers.FacultateHelper*(root com.stn.helpers.FacultateHelper) [line 106];
+n$6=_fun_String DBConnection.getHost()(n$4:com.stn.helpers.FacultateHelper*) virtual [line 106];
+*&amp;$irvar1:java.lang.String*=n$6 [line 106];
+EXIT_SCOPE(_,n$4,n$6); [line 106];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:40 Instructions
+n$7=*&amp;this:com.stn.helpers.FacultateHelper* [line 106];
+_=*n$7:com.stn.helpers.FacultateHelper*(root com.stn.helpers.FacultateHelper) [line 106];
+n$9=_fun_String DBConnection.getUser()(n$7:com.stn.helpers.FacultateHelper*) virtual [line 106];
+*&amp;$irvar2:java.lang.String*=n$9 [line 106];
+EXIT_SCOPE(_,n$7,n$9); [line 106];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:40 Instructions
+n$10=*&amp;this:com.stn.helpers.FacultateHelper* [line 106];
+_=*n$10:com.stn.helpers.FacultateHelper*(root com.stn.helpers.FacultateHelper) [line 106];
+n$12=_fun_String DBConnection.getPassword()(n$10:com.stn.helpers.FacultateHelper*) virtual [line 106];
+*&amp;$irvar3:java.lang.String*=n$12 [line 106];
+EXIT_SCOPE(_,n$10,n$12); [line 106];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:40 Instructions
+n$13=*&amp;$irvar1:java.lang.String* [line 106];
+n$14=*&amp;$irvar2:java.lang.String* [line 106];
+n$15=*&amp;$irvar3:java.lang.String* [line 106];
+n$16=_fun_Connection DriverManager.getConnection(String,String,String)(n$13:java.lang.String*,n$14:java.lang.String*,n$15:java.lang.String*) [line 106];
+*&amp;$irvar4:java.sql.Connection*=n$16 [line 106];
+NULLIFY(&amp;$irvar3); [line 106];
+NULLIFY(&amp;$irvar1); [line 106];
+NULLIFY(&amp;$irvar2); [line 106];
+EXIT_SCOPE(n$13,n$14,n$15,n$16,$irvar3,$irvar1,$irvar2); [line 106];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:40 Instructions
+n$17=*&amp;this:com.stn.helpers.FacultateHelper* [line 106];
+n$18=*&amp;$irvar4:java.sql.Connection* [line 106];
+*n$17.connection:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)=n$18 [line 106];
+NULLIFY(&amp;$irvar4); [line 106];
+EXIT_SCOPE(n$17,n$18,$irvar4); [line 106];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:40 Instructions
+n$19=*&amp;this:com.stn.helpers.FacultateHelper* [line 107];
+n$20=*n$19.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 107];
+_=*n$20:java.sql.Connection*(root java.sql.Connection) [line 107];
+n$22=*&amp;this:com.stn.helpers.FacultateHelper* [line 107];
+n$23=*n$22.query:java.lang.String*(root com.stn.helpers.FacultateHelper) [line 107];
+n$24=_fun_PreparedStatement Connection.prepareStatement(String)(n$20:java.sql.Connection*,n$23:java.lang.String*) interface virtual [line 107];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$24 [line 107];
+EXIT_SCOPE(_,n$19,n$20,n$22,n$23,n$24); [line 107];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:40 Instructions
+n$25=*&amp;this:com.stn.helpers.FacultateHelper* [line 107];
+n$26=*&amp;$irvar5:java.sql.PreparedStatement* [line 107];
+*n$25.preparedStatement:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)=n$26 [line 107];
+NULLIFY(&amp;$irvar5); [line 107];
+EXIT_SCOPE(n$25,n$26,$irvar5); [line 107];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:40 Instructions
+n$27=*&amp;this:com.stn.helpers.FacultateHelper* [line 108];
+n$28=*n$27.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 108];
+_=*n$28:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 108];
+n$30=_fun_ResultSet PreparedStatement.executeQuery()(n$28:java.sql.PreparedStatement*) interface virtual [line 108];
+*&amp;$irvar6:java.sql.ResultSet*=n$30 [line 108];
+EXIT_SCOPE(_,n$27,n$28,n$30); [line 108];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:40 Instructions
+n$31=*&amp;this:com.stn.helpers.FacultateHelper* [line 108];
+n$32=*&amp;$irvar6:java.sql.ResultSet* [line 108];
+*n$31.resultSet:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)=n$32 [line 108];
+NULLIFY(&amp;$irvar6); [line 108];
+EXIT_SCOPE(n$31,n$32,$irvar6); [line 108];
+APPLY_ABSTRACTION; [line 108];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:23 15 succs:19 exn:40 Instructions
+n$33=*&amp;this:com.stn.helpers.FacultateHelper* [line 109];
+n$34=*n$33.resultSet:java.sql.ResultSet*(root com.stn.helpers.FacultateHelper) [line 109];
+_=*n$34:java.sql.ResultSet*(root java.sql.ResultSet) [line 109];
+n$36=_fun_boolean ResultSet.next()(n$34:java.sql.ResultSet*) interface virtual [line 109];
+*&amp;$irvar7:_Bool=n$36 [line 109];
+EXIT_SCOPE(_,n$33,n$34,n$36); [line 109];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node17.html"><span class='visited with_tooltip'>C_17<span class='tooltip'>node17 preds:19 succs:20 exn:40 Conditional method_body
+n$37=*&amp;$irvar7:_Bool [line 109];
+PRUNE(!(n$37 == 0), true); [line 109];
+NULLIFY(&amp;$irvar7); [line 109];
+EXIT_SCOPE(n$37,$irvar7); [line 109];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:19 succs:24 25 exn:40 Conditional method_body
+n$37=*&amp;$irvar7:_Bool [line 109];
+PRUNE((n$37 == 0), false); [line 109];
+NULLIFY(&amp;$irvar7); [line 109];
+EXIT_SCOPE(n$37,$irvar7); [line 109];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node19.html"><span class='visited with_tooltip'>J_19<span class='tooltip'>node19 preds:16 succs:17 18 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:17 succs:21 exn:40 Instructions
+n$38=*&amp;this:com.stn.helpers.FacultateHelper* [line 110];
+n$39=*n$38.resultSet:java.sql.ResultSet*(root com.stn.helpers.FacultateHelper) [line 110];
+_=*n$39:java.sql.ResultSet*(root java.sql.ResultSet) [line 110];
+n$41=_fun_int ResultSet.getInt(int)(n$39:java.sql.ResultSet*,1:int) interface virtual [line 110];
+*&amp;$irvar8:int=n$41 [line 110];
+EXIT_SCOPE(_,n$38,n$39,n$41); [line 110];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:40 Instructions
+n$42=*&amp;this:com.stn.helpers.FacultateHelper* [line 110];
+n$43=*n$42.resultSet:java.sql.ResultSet*(root com.stn.helpers.FacultateHelper) [line 110];
+_=*n$43:java.sql.ResultSet*(root java.sql.ResultSet) [line 110];
+n$45=_fun_String ResultSet.getString(int)(n$43:java.sql.ResultSet*,2:int) interface virtual [line 110];
+*&amp;$irvar9:java.lang.String*=n$45 [line 110];
+EXIT_SCOPE(_,n$42,n$43,n$45); [line 110];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:40 Instructions
+n$46=_fun___new(sizeof(t=com.stn.pojo.Facultate):com.stn.pojo.Facultate*) [line 110];
+n$47=*&amp;$irvar8:int [line 110];
+n$48=*&amp;$irvar9:java.lang.String* [line 110];
+n$49=_fun_Facultate.&lt;init&gt;(int,String)(n$46:com.stn.pojo.Facultate*,n$47:int,n$48:java.lang.String*) [line 110];
+*&amp;$irvar10:com.stn.pojo.Facultate*=n$46 [line 110];
+NULLIFY(&amp;$irvar9); [line 110];
+NULLIFY(&amp;$irvar8); [line 110];
+EXIT_SCOPE(n$46,n$47,n$48,n$49,$irvar9,$irvar8); [line 110];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:16 exn:40 Instructions
+n$50=*&amp;facultate:java.util.ArrayList* [line 110];
+_=*n$50:java.util.ArrayList*(root java.util.ArrayList) [line 110];
+n$52=*&amp;$irvar10:com.stn.pojo.Facultate* [line 110];
+n$53=_fun_boolean ArrayList.add(Object)(n$50:java.util.ArrayList*,n$52:com.stn.pojo.Facultate*) interface virtual [line 110];
+*&amp;$irvar11:_Bool=n$53 [line 110];
+NULLIFY(&amp;$irvar11); [line 110];
+NULLIFY(&amp;$irvar10); [line 110];
+EXIT_SCOPE(_,n$50,n$52,n$53,$irvar11,$irvar10); [line 110];
+APPLY_ABSTRACTION; [line 110];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node24.html"><span class='visited with_tooltip'>C_24<span class='tooltip'>node24 preds:18 succs:26 exn:3 Conditional method_body
+n$54=*&amp;this:com.stn.helpers.FacultateHelper* [line 113];
+n$55=*n$54.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 113];
+PRUNE(!(n$55 == null), true); [line 113];
+EXIT_SCOPE(n$54,n$55); [line 113];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node25.html"><span class='visited with_tooltip'>C_25<span class='tooltip'>node25 preds:18 succs:27 28 exn:3 Conditional method_body
+n$54=*&amp;this:com.stn.helpers.FacultateHelper* [line 113];
+n$55=*n$54.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 113];
+PRUNE((n$55 == null), false); [line 113];
+EXIT_SCOPE(n$54,n$55); [line 113];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:24 succs:27 28 exn:3 Instructions
+n$56=*&amp;this:com.stn.helpers.FacultateHelper* [line 114];
+n$57=*n$56.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 114];
+n$60=_fun___set_mem_attribute(n$57:java.sql.PreparedStatement*) [line 114];
+_=*n$57:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 114];
+n$59=_fun_void PreparedStatement.close()(n$57:java.sql.PreparedStatement*) interface virtual [line 114];
+EXIT_SCOPE(_,n$56,n$57,n$59,n$60); [line 114];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node27.html"><span class='visited with_tooltip'>C_27<span class='tooltip'>node27 preds:26 25 succs:29 exn:3 Conditional method_body
+n$61=*&amp;this:com.stn.helpers.FacultateHelper* [line 115];
+n$62=*n$61.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 115];
+PRUNE(!(n$62 == null), true); [line 115];
+EXIT_SCOPE(n$61,n$62); [line 115];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node28.html"><span class='visited with_tooltip'>C_28<span class='tooltip'>node28 preds:26 25 succs:38 exn:3 Conditional method_body
+n$61=*&amp;this:com.stn.helpers.FacultateHelper* [line 115];
+n$62=*n$61.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 115];
+PRUNE((n$62 == null), false); [line 115];
+NULLIFY(&amp;this); [line 115];
+EXIT_SCOPE(n$61,n$62,this); [line 115];
+APPLY_ABSTRACTION; [line 115];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:27 succs:38 exn:3 Instructions
+n$63=*&amp;this:com.stn.helpers.FacultateHelper* [line 116];
+n$64=*n$63.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 116];
+n$67=_fun___set_mem_attribute(n$64:java.sql.Connection*) [line 116];
+_=*n$64:java.sql.Connection*(root java.sql.Connection) [line 116];
+n$66=_fun_void Connection.close()(n$64:java.sql.Connection*) interface virtual [line 116];
+NULLIFY(&amp;this); [line 116];
+EXIT_SCOPE(_,n$63,n$64,n$66,n$67,this); [line 116];
+APPLY_ABSTRACTION; [line 116];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:39 succs:31 32 exn:3 Instructions
+n$68=*&amp;CatchVar153:java.lang.Object* [line 113];
+*&amp;$bcvar2:java.lang.Object*=n$68 [line 113];
+NULLIFY(&amp;CatchVar153); [line 113];
+EXIT_SCOPE(n$68,CatchVar153); [line 113];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node31.html"><span class='visited with_tooltip'>C_31<span class='tooltip'>node31 preds:30 succs:33 exn:3 Conditional method_body
+n$69=*&amp;this:com.stn.helpers.FacultateHelper* [line 113];
+n$70=*n$69.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 113];
+PRUNE(!(n$70 == null), true); [line 113];
+EXIT_SCOPE(n$69,n$70); [line 113];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:30 succs:34 35 exn:3 Conditional method_body
+n$69=*&amp;this:com.stn.helpers.FacultateHelper* [line 113];
+n$70=*n$69.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 113];
+PRUNE((n$70 == null), false); [line 113];
+EXIT_SCOPE(n$69,n$70); [line 113];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:31 succs:34 35 exn:3 Instructions
+n$71=*&amp;this:com.stn.helpers.FacultateHelper* [line 114];
+n$72=*n$71.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 114];
+n$75=_fun___set_mem_attribute(n$72:java.sql.PreparedStatement*) [line 114];
+_=*n$72:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 114];
+n$74=_fun_void PreparedStatement.close()(n$72:java.sql.PreparedStatement*) interface virtual [line 114];
+EXIT_SCOPE(_,n$71,n$72,n$74,n$75); [line 114];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node34.html"><span class='visited with_tooltip'>C_34<span class='tooltip'>node34 preds:33 32 succs:36 exn:3 Conditional method_body
+n$76=*&amp;this:com.stn.helpers.FacultateHelper* [line 115];
+n$77=*n$76.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 115];
+PRUNE(!(n$77 == null), true); [line 115];
+EXIT_SCOPE(n$76,n$77); [line 115];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node35.html"><span class='visited with_tooltip'>C_35<span class='tooltip'>node35 preds:33 32 succs:37 exn:3 Conditional method_body
+n$76=*&amp;this:com.stn.helpers.FacultateHelper* [line 115];
+n$77=*n$76.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 115];
+PRUNE((n$77 == null), false); [line 115];
+NULLIFY(&amp;this); [line 115];
+EXIT_SCOPE(n$76,n$77,this); [line 115];
+APPLY_ABSTRACTION; [line 115];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:34 succs:37 exn:3 Instructions
+n$78=*&amp;this:com.stn.helpers.FacultateHelper* [line 116];
+n$79=*n$78.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 116];
+n$82=_fun___set_mem_attribute(n$79:java.sql.Connection*) [line 116];
+_=*n$79:java.sql.Connection*(root java.sql.Connection) [line 116];
+n$81=_fun_void Connection.close()(n$79:java.sql.Connection*) interface virtual [line 116];
+NULLIFY(&amp;this); [line 116];
+EXIT_SCOPE(_,n$78,n$79,n$81,n$82,this); [line 116];
+APPLY_ABSTRACTION; [line 116];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:36 35 succs:2 exn:3 Instructions
+n$83=*&amp;$bcvar2:java.lang.Object* [line 117];
+*&amp;return:java.util.List*=EXN n$83 [line 117];
+NULLIFY(&amp;$bcvar2); [line 117];
+EXIT_SCOPE(n$83,$bcvar2); [line 117];
+APPLY_ABSTRACTION; [line 117];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:29 28 succs:2 exn:3 Instructions
+n$84=*&amp;facultate:java.util.ArrayList* [line 119];
+*&amp;return:java.util.List*=n$84 [line 119];
+NULLIFY(&amp;facultate); [line 119];
+EXIT_SCOPE(n$84,facultate); [line 119];
+APPLY_ABSTRACTION; [line 119];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:40 succs:30 exn:3 Instructions
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getFacultati%28%29%3Ajava.util.List.4bb472b084fa0573bd95fa3c87fb6974_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds: succs:39 exn:3 Instructions
+n$85=*&amp;return:java.util.List* [line 113];
+*&amp;return:java.util.List*=null [line 113];
+n$86=_fun___unwrap_exception(n$85:java.util.List*) [line 113];
+NULLIFY(&amp;$irvar3); [line 113];
+NULLIFY(&amp;$irvar9); [line 113];
+NULLIFY(&amp;facultate); [line 113];
+NULLIFY(&amp;$irvar5); [line 113];
+NULLIFY(&amp;$irvar4); [line 113];
+NULLIFY(&amp;$irvar7); [line 113];
+NULLIFY(&amp;$irvar6); [line 113];
+NULLIFY(&amp;$irvar10); [line 113];
+NULLIFY(&amp;$irvar8); [line 113];
+NULLIFY(&amp;$irvar1); [line 113];
+NULLIFY(&amp;$irvar2); [line 113];
+EXIT_SCOPE(n$85,n$86,$irvar3,$irvar9,facultate,$irvar5,$irvar4,$irvar7,$irvar6,$irvar10,$irvar8,$irvar1,$irvar2); [line 113];
+</span></span></a><br />@
+
+<span class='color_black'>java.util.List* List FacultateHelper.getFacultati()(com.stn.helpers.FacultateHelper* this)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { @val$0 -> { connection -> (Footprint({ @val$0.dbUser,
+                                                   @val$0.dbPort*,
+                                                   @val$0.dbPassword,
+                                                   @val$0.dbName*,
+                                                   @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        preparedStatement -> (Footprint({ @val$0.dbUser,
+                                                          @val$0.dbPort*,
+                                                          @val$0.dbPassword,
+                                                          @val$0.dbName*,
+                                                          @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        query -> { },
+                        resultSet -> ({ Other(ResultSet PreparedStatement.executeQuery() at line 108) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *) },
+            return -> ({ Other(ResultSet PreparedStatement.executeQuery() at line 108) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *) }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= List FacultateHelper.getFacultati()
+; translation_unit= src/main/java/com/stn/helpers/FacultateHelper.java
+; access= Public
+; exceptions= [java.lang.ClassNotFoundException;  java.sql.SQLException]
+; formals= [(this,com.stn.helpers.FacultateHelper*)]
+; is_defined= true
+; loc= src/main/java/com/stn/helpers/FacultateHelper.java:98
+; locals= [{ name= $bcvar2; typ= void; modify_in_block= false }; 
+           { name= CatchVar153; typ= void; modify_in_block= false }; 
+           { name= $irvar11; typ= void; modify_in_block= false }; 
+           { name= $irvar10; typ= void; modify_in_block= false }; 
+           { name= $irvar9; typ= void; modify_in_block= false }; 
+           { name= $irvar8; typ= void; modify_in_block= false }; 
+           { name= $irvar7; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= facultate; typ= java.util.List*; modify_in_block= false }]
+; ret_type= java.util.List* 
+; proc_id= com.stn.helpers.FacultateHelper.getFacultati():java.util.List }</pre>
+</body>
+</html>

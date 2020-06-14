@@ -1,0 +1,456 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.SecurityHelper.getAttempts(javax.servlet.http.HttpServletRequest):int.eef283651f16c05effd16985ae8a646c_node12</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">12</a></h1></center>PROC: <a href="./../com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c.html">int SecurityHelper.getAttempts(HttpServletRequest)</a> LINE: <a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node11.html"><span class='visited with_tooltip'>N_11<span class='tooltip'>node11 preds:10 succs:12 exn:105 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node13.html"><span class='visited with_tooltip'>N_13<span class='tooltip'>node13 preds:12 succs:14 exn:105 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node105.html"><span class='visited with_tooltip'>N_105<span class='tooltip'>node105 preds: succs:103 104 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$19=*&amp;this:com.stn.helpers.SecurityHelper* [line 82];
+n$20=*n$19.connection:java.sql.Connection*(root com.stn.helpers.SecurityHelper) [line 82];
+_=*n$20:java.sql.Connection*(root java.sql.Connection) [line 82];
+n$22=*&amp;this:com.stn.helpers.SecurityHelper* [line 82];
+n$23=*n$22.query:java.lang.String*(root com.stn.helpers.SecurityHelper) [line 82];
+n$24=_fun_PreparedStatement Connection.prepareStatement(String)(n$20:java.sql.Connection*,n$23:java.lang.String*) interface virtual [line 82];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$24 [line 82];
+</LISTING>
+<hr width="100%">
+<a name="session212" href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node12.html#session212">node12#session212</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>) [compute pre] liveness 12
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session213" href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node12.html#session213">node12#session213</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>) [exec] liveness 12
+<LISTING class='color_black'>PRE STATE:
+{ ip, $irvar5, return, this }
+
+INSTR=  *&amp;$irvar5:java.sql.PreparedStatement*=n$24 [line 82]; 
+
+STATE:
+{ n$24, ip, return, this }
+
+INSTR=  n$24=_fun_PreparedStatement Connection.prepareStatement(String)(n$20:java.sql.Connection*,n$23:java.lang.String*) interface virtual [line 82]; 
+
+STATE:
+{ n$20, n$23, ip, return, this }
+
+INSTR=  n$23=*n$22.query:java.lang.String*(root com.stn.helpers.SecurityHelper) [line 82]; 
+
+STATE:
+{ n$20, n$22, ip, return, this }
+
+INSTR=  n$22=*&amp;this:com.stn.helpers.SecurityHelper* [line 82]; 
+
+STATE:
+{ n$20, ip, return, this }
+
+INSTR=  _=*n$20:java.sql.Connection*(root java.sql.Connection) [line 82]; 
+
+STATE UNCHANGED
+
+INSTR=  n$20=*n$19.connection:java.sql.Connection*(root com.stn.helpers.SecurityHelper) [line 82]; 
+
+STATE:
+{ n$19, ip, return, this }
+
+INSTR=  n$19=*&amp;this:com.stn.helpers.SecurityHelper* [line 82]; 
+
+STATE:
+{ ip, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session312" href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node12.html#session312">node12#session312</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>) [compute pre] liveness 12
+<LISTING class='color_black'>JOIN
+
+LEFT:   { ip, $irvar5, return, this }
+RIGHT:  { CatchVar450, return, this }
+RESULT: { ip, $irvar5, CatchVar450, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session313" href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node12.html#session313">node12#session313</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>) [exec] liveness 12
+<LISTING class='color_black'>PRE STATE:
+{ ip, $irvar5, CatchVar450, return, this }
+
+INSTR=  *&amp;$irvar5:java.sql.PreparedStatement*=n$24 [line 82]; 
+
+STATE:
+{ n$24, ip, CatchVar450, return, this }
+
+INSTR=  n$24=_fun_PreparedStatement Connection.prepareStatement(String)(n$20:java.sql.Connection*,n$23:java.lang.String*) interface virtual [line 82]; 
+
+STATE:
+{ n$20, n$23, ip, CatchVar450, return, this }
+
+INSTR=  n$23=*n$22.query:java.lang.String*(root com.stn.helpers.SecurityHelper) [line 82]; 
+
+STATE:
+{ n$20, n$22, ip, CatchVar450, return, this }
+
+INSTR=  n$22=*&amp;this:com.stn.helpers.SecurityHelper* [line 82]; 
+
+STATE:
+{ n$20, ip, CatchVar450, return, this }
+
+INSTR=  _=*n$20:java.sql.Connection*(root java.sql.Connection) [line 82]; 
+
+STATE UNCHANGED
+
+INSTR=  n$20=*n$19.connection:java.sql.Connection*(root com.stn.helpers.SecurityHelper) [line 82]; 
+
+STATE:
+{ n$19, ip, CatchVar450, return, this }
+
+INSTR=  n$19=*&amp;this:com.stn.helpers.SecurityHelper* [line 82]; 
+
+STATE:
+{ ip, CatchVar450, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session318" href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node12.html#session318">node12#session318</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>) [compute pre] liveness 12
+<LISTING class='color_black'>JOIN
+
+LEFT:   { ip, $irvar5, CatchVar450, return, this }
+RIGHT:  { CatchVar450, return, this }
+RESULT: { ip, $irvar5, CatchVar450, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session319" href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node12.html#session319">node12#session319</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>) [exec] liveness 12
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session467" href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node12.html#session467">node12#session467</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session468" href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node12.html#session468">node12#session468</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ ip },{ n$17, n$18, $irvar4 })
+
+INSTR=  n$19=*&amp;this:com.stn.helpers.SecurityHelper* [line 82]; 
+
+STATE:
+({ n$19, ip },{ n$17, n$18, $irvar4 })
+
+INSTR=  n$20=*n$19.connection:java.sql.Connection*(root com.stn.helpers.SecurityHelper) [line 82]; 
+
+STATE:
+({ n$19, n$20, ip },{ n$17, n$18, $irvar4 })
+
+INSTR=  _=*n$20:java.sql.Connection*(root java.sql.Connection) [line 82]; 
+
+STATE:
+({ _, n$19, n$20, ip },{ n$17, n$18, $irvar4 })
+
+INSTR=  n$22=*&amp;this:com.stn.helpers.SecurityHelper* [line 82]; 
+
+STATE:
+({ _, n$19, n$20, n$22, ip },{ n$17, n$18, $irvar4 })
+
+INSTR=  n$23=*n$22.query:java.lang.String*(root com.stn.helpers.SecurityHelper) [line 82]; 
+
+STATE:
+({ _, n$19, n$20, n$22, n$23, ip },{ n$17, n$18, $irvar4 })
+
+INSTR=  n$24=_fun_PreparedStatement Connection.prepareStatement(String)(n$20:java.sql.Connection*,n$23:java.lang.String*) interface virtual [line 82]; 
+
+STATE:
+({ _, n$19, n$20, n$22, n$23, n$24, ip },{ n$17, n$18, $irvar4 })
+
+INSTR=  *&amp;$irvar5:java.sql.PreparedStatement*=n$24 [line 82]; 
+
+STATE:
+({ ip, $irvar5 },{ _, n$19, n$20, n$22, n$23, n$24 })
+
+</LISTING>
+<hr width="100%">
+<a name="session18" href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node12.html#session18">node12#session18</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session19" href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node12.html#session19">node12#session19</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$1 -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  n$6 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$9 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$12 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$16 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  ip -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+
+
+
+
+
+TAINTED_CALL1: (callee="PreparedStatement Connection.prepareStatement(String)", caller="int SecurityHelper.getAttempts(HttpServletRequest)")
+TAINTED_CALL1: (callee="PreparedStatement Connection.prepareStatement(String)", caller="int SecurityHelper.getAttempts(HttpServletRequest)")
+INSTR=  n$24 := PreparedStatement Connection.prepareStatement(String)({ this-&gt;connection,
+                                                                    this-&gt;query }) [line 82]; 
+
+STATE:
+{ n$1 -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  n$6 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$9 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$12 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$16 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$24 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  ip -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+
+
+</LISTING>
+<hr width="100%">
+<a name="session212" href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node12.html#session212">node12#session212</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>) [compute pre] liveness 12
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session213" href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node12.html#session213">node12#session213</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>) [exec] liveness 12
+<LISTING class='color_black'>PRE STATE:
+{ ip, $irvar5, return, this }
+
+INSTR=  *&amp;$irvar5:java.sql.PreparedStatement*=n$24 [line 82]; 
+
+STATE:
+{ n$24, ip, return, this }
+
+INSTR=  n$24=_fun_PreparedStatement Connection.prepareStatement(String)(n$20:java.sql.Connection*,n$23:java.lang.String*) interface virtual [line 82]; 
+
+STATE:
+{ n$20, n$23, ip, return, this }
+
+INSTR=  n$23=*n$22.query:java.lang.String*(root com.stn.helpers.SecurityHelper) [line 82]; 
+
+STATE:
+{ n$20, n$22, ip, return, this }
+
+INSTR=  n$22=*&amp;this:com.stn.helpers.SecurityHelper* [line 82]; 
+
+STATE:
+{ n$20, ip, return, this }
+
+INSTR=  _=*n$20:java.sql.Connection*(root java.sql.Connection) [line 82]; 
+
+STATE UNCHANGED
+
+INSTR=  n$20=*n$19.connection:java.sql.Connection*(root com.stn.helpers.SecurityHelper) [line 82]; 
+
+STATE:
+{ n$19, ip, return, this }
+
+INSTR=  n$19=*&amp;this:com.stn.helpers.SecurityHelper* [line 82]; 
+
+STATE:
+{ ip, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session312" href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node12.html#session312">node12#session312</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>) [compute pre] liveness 12
+<LISTING class='color_black'>JOIN
+
+LEFT:   { ip, $irvar5, return, this }
+RIGHT:  { CatchVar450, return, this }
+RESULT: { ip, $irvar5, CatchVar450, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session313" href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node12.html#session313">node12#session313</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>) [exec] liveness 12
+<LISTING class='color_black'>PRE STATE:
+{ ip, $irvar5, CatchVar450, return, this }
+
+INSTR=  *&amp;$irvar5:java.sql.PreparedStatement*=n$24 [line 82]; 
+
+STATE:
+{ n$24, ip, CatchVar450, return, this }
+
+INSTR=  n$24=_fun_PreparedStatement Connection.prepareStatement(String)(n$20:java.sql.Connection*,n$23:java.lang.String*) interface virtual [line 82]; 
+
+STATE:
+{ n$20, n$23, ip, CatchVar450, return, this }
+
+INSTR=  n$23=*n$22.query:java.lang.String*(root com.stn.helpers.SecurityHelper) [line 82]; 
+
+STATE:
+{ n$20, n$22, ip, CatchVar450, return, this }
+
+INSTR=  n$22=*&amp;this:com.stn.helpers.SecurityHelper* [line 82]; 
+
+STATE:
+{ n$20, ip, CatchVar450, return, this }
+
+INSTR=  _=*n$20:java.sql.Connection*(root java.sql.Connection) [line 82]; 
+
+STATE UNCHANGED
+
+INSTR=  n$20=*n$19.connection:java.sql.Connection*(root com.stn.helpers.SecurityHelper) [line 82]; 
+
+STATE:
+{ n$19, ip, CatchVar450, return, this }
+
+INSTR=  n$19=*&amp;this:com.stn.helpers.SecurityHelper* [line 82]; 
+
+STATE:
+{ ip, CatchVar450, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session318" href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node12.html#session318">node12#session318</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>) [compute pre] liveness 12
+<LISTING class='color_black'>JOIN
+
+LEFT:   { ip, $irvar5, CatchVar450, return, this }
+RIGHT:  { CatchVar450, return, this }
+RESULT: { ip, $irvar5, CatchVar450, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session319" href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node12.html#session319">node12#session319</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>) [exec] liveness 12
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session467" href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node12.html#session467">node12#session467</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session468" href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node12.html#session468">node12#session468</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ ip },{ n$17, n$18, $irvar4 })
+
+INSTR=  n$19=*&amp;this:com.stn.helpers.SecurityHelper* [line 82]; 
+
+STATE:
+({ n$19, ip },{ n$17, n$18, $irvar4 })
+
+INSTR=  n$20=*n$19.connection:java.sql.Connection*(root com.stn.helpers.SecurityHelper) [line 82]; 
+
+STATE:
+({ n$19, n$20, ip },{ n$17, n$18, $irvar4 })
+
+INSTR=  _=*n$20:java.sql.Connection*(root java.sql.Connection) [line 82]; 
+
+STATE:
+({ _, n$19, n$20, ip },{ n$17, n$18, $irvar4 })
+
+INSTR=  n$22=*&amp;this:com.stn.helpers.SecurityHelper* [line 82]; 
+
+STATE:
+({ _, n$19, n$20, n$22, ip },{ n$17, n$18, $irvar4 })
+
+INSTR=  n$23=*n$22.query:java.lang.String*(root com.stn.helpers.SecurityHelper) [line 82]; 
+
+STATE:
+({ _, n$19, n$20, n$22, n$23, ip },{ n$17, n$18, $irvar4 })
+
+INSTR=  n$24=_fun_PreparedStatement Connection.prepareStatement(String)(n$20:java.sql.Connection*,n$23:java.lang.String*) interface virtual [line 82]; 
+
+STATE:
+({ _, n$19, n$20, n$22, n$23, n$24, ip },{ n$17, n$18, $irvar4 })
+
+INSTR=  *&amp;$irvar5:java.sql.PreparedStatement*=n$24 [line 82]; 
+
+STATE:
+({ ip, $irvar5 },{ _, n$19, n$20, n$22, n$23, n$24 })
+
+</LISTING>
+<hr width="100%">
+<a name="session18" href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node12.html#session18">node12#session18</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session19" href="./../nodes/com.stn.helpers.SecurityHelper.getAttempts%28javax.servlet.http.HttpServletRequest%29%3Aint.eef283651f16c05effd16985ae8a646c_node12.html#session19">node12#session19</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE82">82</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$1 -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  n$6 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$9 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$12 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$16 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  ip -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+
+
+
+
+
+TAINTED_CALL1: (callee="PreparedStatement Connection.prepareStatement(String)", caller="int SecurityHelper.getAttempts(HttpServletRequest)")
+TAINTED_CALL1: (callee="PreparedStatement Connection.prepareStatement(String)", caller="int SecurityHelper.getAttempts(HttpServletRequest)")
+INSTR=  n$24 := PreparedStatement Connection.prepareStatement(String)({ this-&gt;connection,
+                                                                    this-&gt;query }) [line 82]; 
+
+STATE:
+{ n$1 -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  n$6 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$9 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$12 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$16 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$24 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  ip -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+
+
+</LISTING>

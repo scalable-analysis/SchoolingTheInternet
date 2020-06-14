@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.utils.DBConnection.getUser():java.lang.String.7d87624911addf7510f569673aa11305_1" [label="1: Start String DBConnection.getUser()\nFormals:  this:com.stn.utils.DBConnection*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.utils.DBConnection.getUser():java.lang.String.7d87624911addf7510f569673aa11305_1" -> "com.stn.utils.DBConnection.getUser():java.lang.String.7d87624911addf7510f569673aa11305_4" ;
+"com.stn.utils.DBConnection.getUser():java.lang.String.7d87624911addf7510f569673aa11305_2" [label="2: Exit String DBConnection.getUser() \n  " color=yellow style=filled]
+	
+
+"com.stn.utils.DBConnection.getUser():java.lang.String.7d87624911addf7510f569673aa11305_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 38]\n " shape="box"]
+	
+
+	 "com.stn.utils.DBConnection.getUser():java.lang.String.7d87624911addf7510f569673aa11305_3" -> "com.stn.utils.DBConnection.getUser():java.lang.String.7d87624911addf7510f569673aa11305_2" ;
+"com.stn.utils.DBConnection.getUser():java.lang.String.7d87624911addf7510f569673aa11305_4" [label="4:  method_body \n   n$0=*&this:com.stn.utils.DBConnection* [line 38]\n  n$1=*n$0.dbUser:java.lang.String*(root com.stn.utils.DBConnection) [line 38]\n  *&return:java.lang.String*=n$1 [line 38]\n  NULLIFY(&this); [line 38]\n  EXIT_SCOPE(n$0,n$1,this); [line 38]\n  APPLY_ABSTRACTION; [line 38]\n " shape="box"]
+	
+
+	 "com.stn.utils.DBConnection.getUser():java.lang.String.7d87624911addf7510f569673aa11305_4" -> "com.stn.utils.DBConnection.getUser():java.lang.String.7d87624911addf7510f569673aa11305_2" ;
+	 "com.stn.utils.DBConnection.getUser():java.lang.String.7d87624911addf7510f569673aa11305_4" -> "com.stn.utils.DBConnection.getUser():java.lang.String.7d87624911addf7510f569673aa11305_3" [color="red" ];
+}

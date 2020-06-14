@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.servlets.ResetProcess.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSe.7d7d1eeeb909e0cce8f395113dba818d_node21</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../ResetProcess.java.fa5f8af9b5412a422e2e70cb50ec757a.html#LINE44">21</a></h1></center>PROC: <a href="./../com.stn.servlets.ResetProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.7d7d1eeeb909e0cce8f395113dba818d.html">void ResetProcess.doPost(HttpServletRequest,HttpServletResponse)</a> LINE: <a href="./../../ResetProcess.java.fa5f8af9b5412a422e2e70cb50ec757a.html#LINE44">44</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.servlets.ResetProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.7d7d1eeeb909e0cce8f395113dba818d_node20.html"><span class='visited with_tooltip'>N_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.servlets.ResetProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.7d7d1eeeb909e0cce8f395113dba818d_node22.html"><span class='visited with_tooltip'>N_22<span class='tooltip'>node22 preds:21 succs:47 exn:3 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.servlets.ResetProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.7d7d1eeeb909e0cce8f395113dba818d_node3.html"><span class='visited with_tooltip'>N_3<span class='tooltip'>node3 preds:51 succs:2 exn:2 </span></span></a><br>
+<LISTING class='color_green'>n$31=*&amp;$irvar3:java.lang.StringBuilder* [line 44];
+_=*n$31:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 44];
+n$33=*&amp;token:java.lang.String* [line 44];
+n$34=_fun_StringBuilder StringBuilder.append(String)(n$31:java.lang.StringBuilder*,n$33:java.lang.String*) virtual [line 44];
+*&amp;$irvar4:java.lang.StringBuilder*=n$34 [line 44];
+</LISTING>
+<hr width="100%">
+<a name="session18" href="./../nodes/com.stn.servlets.ResetProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.7d7d1eeeb909e0cce8f395113dba818d_node21.html#session18">node21#session18</a>(<a href="./../../ResetProcess.java.fa5f8af9b5412a422e2e70cb50ec757a.html#LINE44">44</a>) [compute pre] liveness 21
+<LISTING class='color_black'>JOIN
+
+LEFT:   { error, $irvar4, session, response }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session19" href="./../nodes/com.stn.servlets.ResetProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.7d7d1eeeb909e0cce8f395113dba818d_node21.html#session19">node21#session19</a>(<a href="./../../ResetProcess.java.fa5f8af9b5412a422e2e70cb50ec757a.html#LINE44">44</a>) [exec] liveness 21
+<LISTING class='color_black'>PRE STATE:
+{ error, $irvar4, session, response }
+
+INSTR=  *&amp;$irvar4:java.lang.StringBuilder*=n$34 [line 44]; 
+
+STATE:
+{ n$34, error, session, response }
+
+INSTR=  n$34=_fun_StringBuilder StringBuilder.append(String)(n$31:java.lang.StringBuilder*,n$33:java.lang.String*) virtual [line 44]; 
+
+STATE:
+{ n$31, n$33, error, session, response }
+
+INSTR=  n$33=*&amp;token:java.lang.String* [line 44]; 
+
+STATE:
+{ n$31, error, token, session, response }
+
+INSTR=  _=*n$31:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 44]; 
+
+STATE UNCHANGED
+
+INSTR=  n$31=*&amp;$irvar3:java.lang.StringBuilder* [line 44]; 
+
+STATE:
+{ error, $irvar3, token, session, response }
+
+</LISTING>
+<hr width="100%">
+<a name="session147" href="./../nodes/com.stn.servlets.ResetProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.7d7d1eeeb909e0cce8f395113dba818d_node21.html#session147">node21#session147</a>(<a href="./../../ResetProcess.java.fa5f8af9b5412a422e2e70cb50ec757a.html#LINE44">44</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session148" href="./../nodes/com.stn.servlets.ResetProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.7d7d1eeeb909e0cce8f395113dba818d_node21.html#session148">node21#session148</a>(<a href="./../../ResetProcess.java.fa5f8af9b5412a422e2e70cb50ec757a.html#LINE44">44</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ error, $irvar3, token, session },{ _, n$28, n$30, $irvar2 })
+
+INSTR=  n$31=*&amp;$irvar3:java.lang.StringBuilder* [line 44]; 
+
+STATE:
+({ n$31, error, $irvar3, token, session },{ _, n$28, n$30, $irvar2 })
+
+INSTR=  _=*n$31:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 44]; 
+
+STATE:
+({ _, n$31, error, $irvar3, token, session },{ _, n$28, n$30, $irvar2 })
+
+INSTR=  n$33=*&amp;token:java.lang.String* [line 44]; 
+
+STATE:
+({ _, n$31, n$33, error, $irvar3, token, session },
+{ _, n$28, n$30, $irvar2 })
+
+INSTR=  n$34=_fun_StringBuilder StringBuilder.append(String)(n$31:java.lang.StringBuilder*,n$33:java.lang.String*) virtual [line 44]; 
+
+STATE:
+({ _, n$31, n$33, n$34, error, $irvar3, token, session },
+{ _, n$28, n$30, $irvar2 })
+
+INSTR=  *&amp;$irvar4:java.lang.StringBuilder*=n$34 [line 44]; 
+
+STATE:
+({ error, $irvar4, session },{ _, n$31, n$33, n$34, $irvar3, token })
+
+</LISTING>
+<hr width="100%">
+<a name="session36" href="./../nodes/com.stn.servlets.ResetProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.7d7d1eeeb909e0cce8f395113dba818d_node21.html#session36">node21#session36</a>(<a href="./../../ResetProcess.java.fa5f8af9b5412a422e2e70cb50ec757a.html#LINE44">44</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session37" href="./../nodes/com.stn.servlets.ResetProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.7d7d1eeeb909e0cce8f395113dba818d_node21.html#session37">node21#session37</a>(<a href="./../../ResetProcess.java.fa5f8af9b5412a422e2e70cb50ec757a.html#LINE44">44</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$18 -&gt; { [_] -&gt; { } },
+  n$24 -&gt; { },
+  n$30 -&gt; { },
+  error -&gt; { },
+  url -&gt; { },
+  out -&gt; { },
+  token -&gt; { },
+  password1 -&gt; { },
+  password2 -&gt; { },
+  session -&gt; { } }
+
+
+
+
+TAINTED_CALL2: (callee="StringBuilder StringBuilder.append(String)", caller="void ResetProcess.doPost(HttpServletRequest,HttpServletResponse)")
+INSTR=  n$34 := StringBuilder StringBuilder.append(String)({ n$30, token }) [line 44]; 
+
+STATE:
+{ n$18 -&gt; { [_] -&gt; { } },
+  n$24 -&gt; { },
+  n$30 -&gt; { },
+  n$34 -&gt; { },
+  error -&gt; { },
+  url -&gt; { },
+  out -&gt; { },
+  token -&gt; { },
+  password1 -&gt; { },
+  password2 -&gt; { },
+  session -&gt; { } }
+
+
+INSTR=  NULLIFY(&amp;$irvar3); [line 44]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;token); [line 44]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(token); [line 44]; 
+
+STATE:
+{ n$18 -&gt; { [_] -&gt; { } },
+  n$24 -&gt; { },
+  n$30 -&gt; { },
+  n$34 -&gt; { },
+  error -&gt; { },
+  url -&gt; { },
+  out -&gt; { },
+  token -&gt; { },
+  password1 -&gt; { },
+  password2 -&gt; { },
+  session -&gt; { } }
+
+</LISTING>

@@ -1,0 +1,29 @@
+/* @generated */
+digraph cfg {
+"com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_1" [label="1: Start Timestamp Tools.getDate()\nFormals: \nLocals:  $irvar0:void date:java.sql.Timestamp* \n  " color=yellow style=filled]
+	
+
+	 "com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_1" -> "com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_4" ;
+"com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_2" [label="2: Exit Timestamp Tools.getDate() \n  " color=yellow style=filled]
+	
+
+"com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_3" [label="3:  exceptions sink \n   NULLIFY(&$irvar0); [line 23]\n  NULLIFY(&date); [line 23]\n  EXIT_SCOPE($irvar0,date); [line 23]\n  APPLY_ABSTRACTION; [line 23]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_3" -> "com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_2" ;
+"com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_4" [label="4:  Call long System.currentTimeMillis() \n   n$0=_fun_long System.currentTimeMillis()() [line 22]\n  *&$irvar0:long=n$0 [line 22]\n  EXIT_SCOPE(n$0); [line 22]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_4" -> "com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_5" ;
+	 "com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_4" -> "com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_3" [color="red" ];
+"com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_5" [label="5:  Call Timestamp.<init>(long) \n   n$1=_fun___new(sizeof(t=java.sql.Timestamp):java.sql.Timestamp*) [line 22]\n  n$2=*&$irvar0:long [line 22]\n  n$3=_fun_Timestamp.<init>(long)(n$1:java.sql.Timestamp*,n$2:long) [line 22]\n  *&date:java.sql.Timestamp*=n$1 [line 22]\n  NULLIFY(&$irvar0); [line 22]\n  EXIT_SCOPE(n$1,n$2,n$3,$irvar0); [line 22]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_5" -> "com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_6" ;
+	 "com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_5" -> "com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_3" [color="red" ];
+"com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_6" [label="6:  method_body \n   n$4=*&date:java.sql.Timestamp* [line 23]\n  *&return:java.sql.Timestamp*=n$4 [line 23]\n  NULLIFY(&date); [line 23]\n  EXIT_SCOPE(n$4,date); [line 23]\n  APPLY_ABSTRACTION; [line 23]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_6" -> "com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_2" ;
+	 "com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_6" -> "com.stn.utils.Tools.getDate():java.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_3" [color="red" ];
+}

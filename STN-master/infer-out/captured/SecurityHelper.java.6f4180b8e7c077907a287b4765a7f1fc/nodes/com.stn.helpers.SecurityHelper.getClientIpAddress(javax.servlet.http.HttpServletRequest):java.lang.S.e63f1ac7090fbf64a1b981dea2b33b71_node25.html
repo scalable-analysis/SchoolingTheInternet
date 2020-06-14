@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.SecurityHelper.getClientIpAddress(javax.servlet.http.HttpServletRequest):java.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node25</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE70">25</a></h1></center>PROC: <a href="./../com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71.html">String SecurityHelper.getClientIpAddress(HttpServletRequest)</a> LINE: <a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE70">70</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node8.html"><span class='visited with_tooltip'>N_8<span class='tooltip'>node8 preds:9 succs:25 exn:3 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node26.html"><span class='visited with_tooltip'>N_26<span class='tooltip'>node26 preds:25 succs:2 exn:3 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node3.html"><span class='visited with_tooltip'>N_3<span class='tooltip'>node3 preds: succs:2 exn:2 </span></span></a><br>
+<LISTING class='color_green'>n$24=*&amp;request:javax.servlet.http.HttpServletRequest* [line 70];
+_=*n$24:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 70];
+n$26=_fun_String HttpServletRequest.getRemoteAddr()(n$24:javax.servlet.http.HttpServletRequest*) interface virtual [line 70];
+*&amp;$irvar2:java.lang.String*=n$26 [line 70];
+</LISTING>
+<hr width="100%">
+<a name="session10" href="./../nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node25.html#session10">node25#session10</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE70">70</a>) [compute pre] liveness 25
+<LISTING class='color_black'>JOIN
+
+LEFT:   { $irvar2 }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session11" href="./../nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node25.html#session11">node25#session11</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE70">70</a>) [exec] liveness 25
+<LISTING class='color_black'>PRE STATE:
+{ $irvar2 }
+
+INSTR=  *&amp;$irvar2:java.lang.String*=n$26 [line 70]; 
+
+STATE:
+{ n$26 }
+
+INSTR=  n$26=_fun_String HttpServletRequest.getRemoteAddr()(n$24:javax.servlet.http.HttpServletRequest*) interface virtual [line 70]; 
+
+STATE:
+{ n$24 }
+
+INSTR=  _=*n$24:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 70]; 
+
+STATE UNCHANGED
+
+INSTR=  n$24=*&amp;request:javax.servlet.http.HttpServletRequest* [line 70]; 
+
+STATE:
+{ request }
+
+</LISTING>
+<hr width="100%">
+<a name="session153" href="./../nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node25.html#session153">node25#session153</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE70">70</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session154" href="./../nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node25.html#session154">node25#session154</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE70">70</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ },{ n$4, n$5, $bcvar3, $bcvar2, $bcvar1 })
+
+INSTR=  n$24=*&amp;request:javax.servlet.http.HttpServletRequest* [line 70]; 
+
+STATE:
+({ n$24 },{ n$4, n$5, $bcvar3, $bcvar2, $bcvar1 })
+
+INSTR=  _=*n$24:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 70]; 
+
+STATE:
+({ _, n$24 },{ n$4, n$5, $bcvar3, $bcvar2, $bcvar1 })
+
+INSTR=  n$26=_fun_String HttpServletRequest.getRemoteAddr()(n$24:javax.servlet.http.HttpServletRequest*) interface virtual [line 70]; 
+
+STATE:
+({ _, n$24, n$26 },{ n$4, n$5, $bcvar3, $bcvar2, $bcvar1 })
+
+INSTR=  *&amp;$irvar2:java.lang.String*=n$26 [line 70]; 
+
+STATE:
+({ $irvar2 },{ _, n$24, n$26, request })
+
+</LISTING>
+<hr width="100%">
+<a name="session44" href="./../nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node25.html#session44">node25#session44</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE70">70</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session45" href="./../nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node25.html#session45">node25#session45</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE70">70</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ $bcvar3 -&gt; { } }
+
+
+
+INSTR=  n$26 := String HttpServletRequest.getRemoteAddr()({ request }) [line 70]; 
+
+STATE UNCHANGED
+
+
+INSTR=  NULLIFY(&amp;request); [line 70]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(request); [line 70]; 
+
+STATE:
+{ $bcvar3 -&gt; { } }
+
+</LISTING>
+<hr width="100%">
+<a name="session64" href="./../nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node25.html#session64">node25#session64</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE70">70</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session65" href="./../nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node25.html#session65">node25#session65</a>(<a href="./../../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE70">70</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$13 -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  $bcvar3 -&gt; { },
+  ip -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  request -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  header -&gt; Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ? }
+
+
+
+TAINTED_CALL1: (callee="String HttpServletRequest.getRemoteAddr()", caller="String SecurityHelper.getClientIpAddress(HttpServletRequest)")
+INSTR=  n$26 := String HttpServletRequest.getRemoteAddr()({ request }) [line 70]; 
+
+STATE:
+{ n$13 -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  n$26 -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  $bcvar3 -&gt; { },
+  ip -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  request -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  header -&gt; Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ? }
+
+
+INSTR=  NULLIFY(&amp;request); [line 70]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(request); [line 70]; 
+
+STATE:
+{ n$13 -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  n$26 -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  $bcvar3 -&gt; { },
+  ip -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  request -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  header -&gt; Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ? }
+
+</LISTING>

@@ -1,0 +1,892 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.servlets.DeleteOraProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../DeleteOraProcess.java.6af0716e032c3a63fa617b0db44b596a.html#LINE30">void DeleteOraProcess.doGet(HttpServletRequest,HttpServletResponse)</a></h1></center>
+<a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:92 88 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:105 94 succs:2 exn:2 Instructions
+NULLIFY(&amp;error); [line 74];
+NULLIFY(&amp;CatchVar393); [line 74];
+NULLIFY(&amp;url); [line 74];
+NULLIFY(&amp;out); [line 74];
+NULLIFY(&amp;id_ora); [line 74];
+NULLIFY(&amp;CatchVar415); [line 74];
+NULLIFY(&amp;$irvar0); [line 74];
+NULLIFY(&amp;$bcvar13); [line 74];
+NULLIFY(&amp;deleteOra); [line 74];
+NULLIFY(&amp;session); [line 74];
+NULLIFY(&amp;user); [line 74];
+NULLIFY(&amp;sendSchool); [line 74];
+NULLIFY(&amp;e); [line 74];
+EXIT_SCOPE(n$239,error,CatchVar393,url,out,id_ora,CatchVar415,$irvar0,$bcvar13,deleteOra,session,user,sendSchool,e); [line 74];
+APPLY_ABSTRACTION; [line 74];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;request:javax.servlet.http.HttpServletRequest* [line 31];
+_=*n$0:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 31];
+n$2=_fun_HttpSession HttpServletRequest.getSession()(n$0:javax.servlet.http.HttpServletRequest*) interface virtual [line 31];
+*&amp;session:javax.servlet.http.HttpSession*=n$2 [line 31];
+EXIT_SCOPE(_,n$0,n$2); [line 31];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;error:java.lang.Object*="" [line 33];
+NULLIFY(&amp;error); [line 33];
+EXIT_SCOPE(error); [line 33];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$3=*&amp;response:javax.servlet.http.HttpServletResponse* [line 34];
+_=*n$3:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 34];
+n$5=_fun_void HttpServletResponse.setContentType(String)(n$3:javax.servlet.http.HttpServletResponse*,"text/html":java.lang.Object*) interface virtual [line 34];
+EXIT_SCOPE(_,n$3,n$5); [line 34];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$6=*&amp;response:javax.servlet.http.HttpServletResponse* [line 35];
+_=*n$6:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 35];
+n$8=_fun_PrintWriter HttpServletResponse.getWriter()(n$6:javax.servlet.http.HttpServletResponse*) interface virtual [line 35];
+*&amp;out:java.io.PrintWriter*=n$8 [line 35];
+EXIT_SCOPE(_,n$6,n$8); [line 35];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$9=*&amp;request:javax.servlet.http.HttpServletRequest* [line 36];
+_=*n$9:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 36];
+n$11=_fun_String HttpServletRequest.getParameter(String)(n$9:javax.servlet.http.HttpServletRequest*,"id_ora":java.lang.Object*) interface virtual [line 36];
+*&amp;$irvar0:java.lang.String*=n$11 [line 36];
+NULLIFY(&amp;request); [line 36];
+EXIT_SCOPE(_,n$9,n$11,request); [line 36];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$12=*&amp;$irvar0:java.lang.String* [line 36];
+n$13=_fun_Integer Integer.valueOf(String)(n$12:java.lang.String*) [line 36];
+*&amp;id_ora:java.lang.Integer*=n$13 [line 36];
+NULLIFY(&amp;$irvar0); [line 36];
+EXIT_SCOPE(n$12,n$13,$irvar0); [line 36];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+*&amp;url:java.lang.Object*="orar.jsp" [line 37];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$14=_fun___new(sizeof(t=com.stn.helpers.OrarHelper):com.stn.helpers.OrarHelper*) [line 39];
+n$15=_fun_OrarHelper.&lt;init&gt;()(n$14:com.stn.helpers.OrarHelper*) [line 39];
+*&amp;deleteOra:com.stn.helpers.OrarHelper*=n$14 [line 39];
+EXIT_SCOPE(n$14,n$15); [line 39];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$16=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 40];
+n$17=_fun_ArrayList.&lt;init&gt;()(n$16:java.util.ArrayList*) [line 40];
+*&amp;notification:java.util.ArrayList*=n$16 [line 40];
+NULLIFY(&amp;notification); [line 40];
+EXIT_SCOPE(n$16,n$17,notification); [line 40];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$18=_fun___new(sizeof(t=com.stn.utils.Tools):com.stn.utils.Tools*) [line 41];
+n$19=_fun_Tools.&lt;init&gt;()(n$18:com.stn.utils.Tools*) [line 41];
+*&amp;sendSchool:com.stn.utils.Tools*=n$18 [line 41];
+EXIT_SCOPE(n$18,n$19); [line 41];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$20=_fun___new(sizeof(t=com.stn.helpers.UserHelper):com.stn.helpers.UserHelper*) [line 42];
+n$21=_fun_UserHelper.&lt;init&gt;()(n$20:com.stn.helpers.UserHelper*) [line 42];
+*&amp;user:com.stn.helpers.UserHelper*=n$20 [line 42];
+EXIT_SCOPE(n$20,n$21); [line 42];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:108 Instructions
+n$22=*&amp;deleteOra:com.stn.helpers.OrarHelper* [line 46];
+_=*n$22:com.stn.helpers.OrarHelper*(root com.stn.helpers.OrarHelper) [line 46];
+n$24=*&amp;id_ora:java.lang.Integer* [line 46];
+n$25=_fun_ArrayList OrarHelper.getSchools(Integer)(n$22:com.stn.helpers.OrarHelper*,n$24:java.lang.Integer*) virtual [line 46];
+*&amp;notification:java.util.ArrayList*=n$25 [line 46];
+EXIT_SCOPE(_,n$22,n$24,n$25); [line 46];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:108 Instructions
+n$26=*&amp;notification:java.util.ArrayList* [line 47];
+_=*n$26:java.util.ArrayList*(root java.util.ArrayList) [line 47];
+n$28=_fun_Iterator ArrayList.iterator()(n$26:java.util.ArrayList*) virtual [line 47];
+*&amp;$bcvar13:java.util.Iterator*=n$28 [line 47];
+NULLIFY(&amp;notification); [line 47];
+EXIT_SCOPE(_,n$26,n$28,notification); [line 47];
+APPLY_ABSTRACTION; [line 47];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:84 82 34 16 succs:20 exn:108 Instructions
+n$29=*&amp;$bcvar13:java.util.Iterator* [line 47];
+_=*n$29:java.util.Iterator*(root java.util.Iterator) [line 47];
+n$31=_fun_boolean Iterator.hasNext()(n$29:java.util.Iterator*) interface virtual [line 47];
+*&amp;$irvar1:_Bool=n$31 [line 47];
+EXIT_SCOPE(_,n$29,n$31); [line 47];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:20 succs:21 exn:108 Conditional method_body
+n$32=*&amp;$irvar1:_Bool [line 47];
+PRUNE(!(n$32 == 0), true); [line 47];
+NULLIFY(&amp;$irvar1); [line 47];
+EXIT_SCOPE(n$32,$irvar1); [line 47];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node19.html"><span class='visited with_tooltip'>C_19<span class='tooltip'>node19 preds:20 succs:85 exn:108 Conditional method_body
+n$32=*&amp;$irvar1:_Bool [line 47];
+PRUNE((n$32 == 0), false); [line 47];
+NULLIFY(&amp;$irvar1); [line 47];
+NULLIFY(&amp;$bcvar13); [line 47];
+NULLIFY(&amp;user); [line 47];
+NULLIFY(&amp;sendSchool); [line 47];
+EXIT_SCOPE(n$32,$irvar1,$bcvar13,user,sendSchool); [line 47];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node20.html"><span class='visited with_tooltip'>J_20<span class='tooltip'>node20 preds:17 succs:18 19 exn: Join
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:18 succs:22 exn:108 Instructions
+n$33=*&amp;$bcvar13:java.util.Iterator* [line 47];
+_=*n$33:java.util.Iterator*(root java.util.Iterator) [line 47];
+n$35=_fun_Object Iterator.next()(n$33:java.util.Iterator*) interface virtual [line 47];
+*&amp;$irvar2:java.lang.Object*=n$35 [line 47];
+EXIT_SCOPE(_,n$33,n$35); [line 47];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:108 Instructions
+n$36=*&amp;$irvar2:java.lang.Object* [line 47];
+n$37=_fun___cast(n$36:java.lang.Object*,sizeof(t=com.stn.pojo.Notes;sub_t=( sub )(cast)):void) [line 47];
+*&amp;n:com.stn.pojo.Notes*=n$37 [line 47];
+NULLIFY(&amp;$irvar2); [line 47];
+EXIT_SCOPE(n$36,n$37,$irvar2); [line 47];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:108 Instructions
+n$38=*&amp;n:com.stn.pojo.Notes* [line 49];
+_=*n$38:com.stn.pojo.Notes*(root com.stn.pojo.Notes) [line 49];
+n$40=_fun_int Notes.getId_stud()(n$38:com.stn.pojo.Notes*) virtual [line 49];
+*&amp;$irvar3:int=n$40 [line 49];
+EXIT_SCOPE(_,n$38,n$40); [line 49];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:108 Instructions
+n$41=*&amp;$irvar3:int [line 49];
+n$42=_fun_Integer Integer.valueOf(int)(n$41:int) [line 49];
+*&amp;id_stud:java.lang.Integer*=n$42 [line 49];
+NULLIFY(&amp;$irvar3); [line 49];
+EXIT_SCOPE(n$41,n$42,$irvar3); [line 49];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:108 Instructions
+n$43=*&amp;id_stud:java.lang.Integer* [line 50];
+_=*n$43:java.lang.Integer*(root java.lang.Integer) [line 50];
+n$45=_fun_int Integer.intValue()(n$43:java.lang.Integer*) virtual [line 50];
+*&amp;$irvar4:int=n$45 [line 50];
+NULLIFY(&amp;id_stud); [line 50];
+EXIT_SCOPE(_,n$43,n$45,id_stud); [line 50];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:108 Instructions
+n$46=*&amp;user:com.stn.helpers.UserHelper* [line 50];
+_=*n$46:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 50];
+n$48=*&amp;$irvar4:int [line 50];
+n$49=_fun_User UserHelper.getUserInfo(int)(n$46:com.stn.helpers.UserHelper*,n$48:int) virtual [line 50];
+*&amp;userInfo:com.stn.pojo.User*=n$49 [line 50];
+NULLIFY(&amp;$irvar4); [line 50];
+EXIT_SCOPE(_,n$46,n$48,n$49,$irvar4); [line 50];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:108 Instructions
+n$50=*&amp;userInfo:com.stn.pojo.User* [line 51];
+_=*n$50:com.stn.pojo.User*(root com.stn.pojo.User) [line 51];
+n$52=_fun_int User.getIdGrupa()(n$50:com.stn.pojo.User*) virtual [line 51];
+*&amp;$irvar5:int=n$52 [line 51];
+EXIT_SCOPE(_,n$50,n$52); [line 51];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:108 Instructions
+n$53=*&amp;$irvar5:int [line 51];
+n$54=_fun_Integer Integer.valueOf(int)(n$53:int) [line 51];
+*&amp;$irvar6:java.lang.Integer*=n$54 [line 51];
+NULLIFY(&amp;$irvar5); [line 51];
+EXIT_SCOPE(n$53,n$54,$irvar5); [line 51];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:30 exn:108 Instructions
+n$55=*&amp;deleteOra:com.stn.helpers.OrarHelper* [line 51];
+_=*n$55:com.stn.helpers.OrarHelper*(root com.stn.helpers.OrarHelper) [line 51];
+n$57=*&amp;$irvar6:java.lang.Integer* [line 51];
+n$58=_fun_ArrayList OrarHelper.getOrar(Integer)(n$55:com.stn.helpers.OrarHelper*,n$57:java.lang.Integer*) virtual [line 51];
+*&amp;$irvar7:java.util.ArrayList*=n$58 [line 51];
+NULLIFY(&amp;$irvar6); [line 51];
+EXIT_SCOPE(_,n$55,n$57,n$58,$irvar6); [line 51];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 succs:31 exn:108 Instructions
+n$59=*&amp;deleteOra:com.stn.helpers.OrarHelper* [line 51];
+_=*n$59:com.stn.helpers.OrarHelper*(root com.stn.helpers.OrarHelper) [line 51];
+n$61=*&amp;id_ora:java.lang.Integer* [line 51];
+n$62=*&amp;$irvar7:java.util.ArrayList* [line 51];
+n$63=_fun_Orar OrarHelper.getOra(Integer,ArrayList)(n$59:com.stn.helpers.OrarHelper*,n$61:java.lang.Integer*,n$62:java.util.ArrayList*) virtual [line 51];
+*&amp;ora:com.stn.pojo.Orar*=n$63 [line 51];
+NULLIFY(&amp;$irvar7); [line 51];
+EXIT_SCOPE(_,n$59,n$61,n$62,n$63,$irvar7); [line 51];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:30 succs:32 exn:103 Instructions
+n$64=*&amp;userInfo:com.stn.pojo.User* [line 53];
+_=*n$64:com.stn.pojo.User*(root com.stn.pojo.User) [line 53];
+n$66=_fun_String User.getEmail()(n$64:com.stn.pojo.User*) virtual [line 53];
+*&amp;$irvar8:java.lang.String*=n$66 [line 53];
+EXIT_SCOPE(_,n$64,n$66); [line 53];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:31 succs:35 exn:103 Instructions
+n$67=*&amp;user:com.stn.helpers.UserHelper* [line 53];
+_=*n$67:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 53];
+n$69=*&amp;$irvar8:java.lang.String* [line 53];
+n$70=_fun_boolean UserHelper.checkEmail(String)(n$67:com.stn.helpers.UserHelper*,n$69:java.lang.String*) virtual [line 53];
+*&amp;$irvar9:_Bool=n$70 [line 53];
+NULLIFY(&amp;$irvar8); [line 53];
+EXIT_SCOPE(_,n$67,n$69,n$70,$irvar8); [line 53];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node33.html"><span class='visited with_tooltip'>C_33<span class='tooltip'>node33 preds:35 succs:36 exn:103 Conditional method_body
+n$71=*&amp;$irvar9:_Bool [line 53];
+PRUNE(!(n$71 == 0), true); [line 53];
+NULLIFY(&amp;$irvar9); [line 53];
+EXIT_SCOPE(n$71,$irvar9); [line 53];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node34.html"><span class='visited with_tooltip'>C_34<span class='tooltip'>node34 preds:35 succs:17 exn:103 Conditional method_body
+n$71=*&amp;$irvar9:_Bool [line 53];
+PRUNE((n$71 == 0), false); [line 53];
+NULLIFY(&amp;$irvar9); [line 53];
+NULLIFY(&amp;ora); [line 53];
+NULLIFY(&amp;userInfo); [line 53];
+NULLIFY(&amp;n); [line 53];
+EXIT_SCOPE(n$71,$irvar9,ora,userInfo,n); [line 53];
+APPLY_ABSTRACTION; [line 53];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node35.html"><span class='visited with_tooltip'>J_35<span class='tooltip'>node35 preds:32 succs:33 34 exn: Join
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:33 succs:37 exn:103 Instructions
+n$72=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 54];
+n$73=_fun_StringBuilder.&lt;init&gt;()(n$72:java.lang.StringBuilder*) [line 54];
+*&amp;$irvar10:java.lang.StringBuilder*=n$72 [line 54];
+EXIT_SCOPE(n$72,n$73); [line 54];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:36 succs:38 exn:103 Instructions
+n$74=*&amp;$irvar10:java.lang.StringBuilder* [line 54];
+_=*n$74:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 54];
+n$76=_fun_StringBuilder StringBuilder.append(String)(n$74:java.lang.StringBuilder*,"Ora ":java.lang.Object*) virtual [line 54];
+*&amp;$irvar11:java.lang.StringBuilder*=n$76 [line 54];
+NULLIFY(&amp;$irvar10); [line 54];
+EXIT_SCOPE(_,n$74,n$76,$irvar10); [line 54];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:37 succs:39 exn:103 Instructions
+n$77=*&amp;ora:com.stn.pojo.Orar* [line 54];
+_=*n$77:com.stn.pojo.Orar*(root com.stn.pojo.Orar) [line 54];
+n$79=_fun_String Orar.getName()(n$77:com.stn.pojo.Orar*) virtual [line 54];
+*&amp;$irvar12:java.lang.String*=n$79 [line 54];
+EXIT_SCOPE(_,n$77,n$79); [line 54];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:38 succs:40 exn:103 Instructions
+n$80=*&amp;$irvar11:java.lang.StringBuilder* [line 54];
+_=*n$80:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 54];
+n$82=*&amp;$irvar12:java.lang.String* [line 54];
+n$83=_fun_StringBuilder StringBuilder.append(String)(n$80:java.lang.StringBuilder*,n$82:java.lang.String*) virtual [line 54];
+*&amp;$irvar13:java.lang.StringBuilder*=n$83 [line 54];
+NULLIFY(&amp;$irvar12); [line 54];
+NULLIFY(&amp;$irvar11); [line 54];
+EXIT_SCOPE(_,n$80,n$82,n$83,$irvar12,$irvar11); [line 54];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:39 succs:41 exn:103 Instructions
+n$84=*&amp;$irvar13:java.lang.StringBuilder* [line 54];
+_=*n$84:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 54];
+n$86=_fun_StringBuilder StringBuilder.append(String)(n$84:java.lang.StringBuilder*," cu tipul ":java.lang.Object*) virtual [line 54];
+*&amp;$irvar14:java.lang.StringBuilder*=n$86 [line 54];
+NULLIFY(&amp;$irvar13); [line 54];
+EXIT_SCOPE(_,n$84,n$86,$irvar13); [line 54];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:40 succs:42 exn:103 Instructions
+n$87=*&amp;ora:com.stn.pojo.Orar* [line 54];
+_=*n$87:com.stn.pojo.Orar*(root com.stn.pojo.Orar) [line 54];
+n$89=_fun_String Orar.getTip_act()(n$87:com.stn.pojo.Orar*) virtual [line 54];
+*&amp;$irvar15:java.lang.String*=n$89 [line 54];
+EXIT_SCOPE(_,n$87,n$89); [line 54];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:41 succs:43 exn:103 Instructions
+n$90=*&amp;$irvar14:java.lang.StringBuilder* [line 54];
+_=*n$90:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 54];
+n$92=*&amp;$irvar15:java.lang.String* [line 54];
+n$93=_fun_StringBuilder StringBuilder.append(String)(n$90:java.lang.StringBuilder*,n$92:java.lang.String*) virtual [line 54];
+*&amp;$irvar16:java.lang.StringBuilder*=n$93 [line 54];
+NULLIFY(&amp;$irvar15); [line 54];
+NULLIFY(&amp;$irvar14); [line 54];
+EXIT_SCOPE(_,n$90,n$92,n$93,$irvar15,$irvar14); [line 54];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:42 succs:44 exn:103 Instructions
+n$94=*&amp;$irvar16:java.lang.StringBuilder* [line 54];
+_=*n$94:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 54];
+n$96=_fun_StringBuilder StringBuilder.append(String)(n$94:java.lang.StringBuilder*," din ziua de ":java.lang.Object*) virtual [line 54];
+*&amp;$irvar17:java.lang.StringBuilder*=n$96 [line 54];
+NULLIFY(&amp;$irvar16); [line 54];
+EXIT_SCOPE(_,n$94,n$96,$irvar16); [line 54];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds:43 succs:45 exn:103 Instructions
+n$97=*&amp;ora:com.stn.pojo.Orar* [line 54];
+_=*n$97:com.stn.pojo.Orar*(root com.stn.pojo.Orar) [line 54];
+n$99=_fun_String Orar.getZi()(n$97:com.stn.pojo.Orar*) virtual [line 54];
+*&amp;$irvar18:java.lang.String*=n$99 [line 54];
+EXIT_SCOPE(_,n$97,n$99); [line 54];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node45.html"><span class='visited with_tooltip'>I_45<span class='tooltip'>node45 preds:44 succs:46 exn:103 Instructions
+n$100=*&amp;$irvar17:java.lang.StringBuilder* [line 54];
+_=*n$100:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 54];
+n$102=*&amp;$irvar18:java.lang.String* [line 54];
+n$103=_fun_StringBuilder StringBuilder.append(String)(n$100:java.lang.StringBuilder*,n$102:java.lang.String*) virtual [line 54];
+*&amp;$irvar19:java.lang.StringBuilder*=n$103 [line 54];
+NULLIFY(&amp;$irvar17); [line 54];
+NULLIFY(&amp;$irvar18); [line 54];
+EXIT_SCOPE(_,n$100,n$102,n$103,$irvar17,$irvar18); [line 54];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node46.html"><span class='visited with_tooltip'>I_46<span class='tooltip'>node46 preds:45 succs:47 exn:103 Instructions
+n$104=*&amp;$irvar19:java.lang.StringBuilder* [line 54];
+_=*n$104:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 54];
+n$106=_fun_StringBuilder StringBuilder.append(String)(n$104:java.lang.StringBuilder*," din saptamana ":java.lang.Object*) virtual [line 54];
+*&amp;$irvar20:java.lang.StringBuilder*=n$106 [line 54];
+NULLIFY(&amp;$irvar19); [line 54];
+EXIT_SCOPE(_,n$104,n$106,$irvar19); [line 54];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node47.html"><span class='visited with_tooltip'>I_47<span class='tooltip'>node47 preds:46 succs:48 exn:103 Instructions
+n$107=*&amp;ora:com.stn.pojo.Orar* [line 54];
+_=*n$107:com.stn.pojo.Orar*(root com.stn.pojo.Orar) [line 54];
+n$109=_fun_String Orar.getSapt()(n$107:com.stn.pojo.Orar*) virtual [line 54];
+*&amp;$irvar21:java.lang.String*=n$109 [line 54];
+EXIT_SCOPE(_,n$107,n$109); [line 54];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node48.html"><span class='visited with_tooltip'>I_48<span class='tooltip'>node48 preds:47 succs:49 exn:103 Instructions
+n$110=*&amp;$irvar20:java.lang.StringBuilder* [line 54];
+_=*n$110:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 54];
+n$112=*&amp;$irvar21:java.lang.String* [line 54];
+n$113=_fun_StringBuilder StringBuilder.append(String)(n$110:java.lang.StringBuilder*,n$112:java.lang.String*) virtual [line 54];
+*&amp;$irvar22:java.lang.StringBuilder*=n$113 [line 54];
+NULLIFY(&amp;$irvar21); [line 54];
+NULLIFY(&amp;$irvar20); [line 54];
+EXIT_SCOPE(_,n$110,n$112,n$113,$irvar21,$irvar20); [line 54];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node49.html"><span class='visited with_tooltip'>I_49<span class='tooltip'>node49 preds:48 succs:50 exn:103 Instructions
+n$114=*&amp;$irvar22:java.lang.StringBuilder* [line 54];
+_=*n$114:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 54];
+n$116=_fun_String StringBuilder.toString()(n$114:java.lang.StringBuilder*) virtual [line 54];
+*&amp;body:java.lang.String*=n$116 [line 54];
+NULLIFY(&amp;$irvar22); [line 54];
+EXIT_SCOPE(_,n$114,n$116,$irvar22); [line 54];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node50.html"><span class='visited with_tooltip'>I_50<span class='tooltip'>node50 preds:49 succs:53 exn:103 Instructions
+n$117=*&amp;ora:com.stn.pojo.Orar* [line 55];
+_=*n$117:com.stn.pojo.Orar*(root com.stn.pojo.Orar) [line 55];
+n$119=_fun_int Orar.getSgr()(n$117:com.stn.pojo.Orar*) virtual [line 55];
+*&amp;$irvar23:int=n$119 [line 55];
+EXIT_SCOPE(_,n$117,n$119); [line 55];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node51.html"><span class='visited with_tooltip'>C_51<span class='tooltip'>node51 preds:53 succs:54 exn:103 Conditional method_body
+n$120=*&amp;$irvar23:int [line 55];
+PRUNE(!(n$120 == 0), true); [line 55];
+NULLIFY(&amp;$irvar23); [line 55];
+EXIT_SCOPE(n$120,$irvar23); [line 55];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node52.html"><span class='visited with_tooltip'>C_52<span class='tooltip'>node52 preds:53 succs:60 exn:103 Conditional method_body
+n$120=*&amp;$irvar23:int [line 55];
+PRUNE((n$120 == 0), false); [line 55];
+NULLIFY(&amp;$irvar23); [line 55];
+EXIT_SCOPE(n$120,$irvar23); [line 55];
+APPLY_ABSTRACTION; [line 55];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node53.html"><span class='visited with_tooltip'>J_53<span class='tooltip'>node53 preds:50 succs:51 52 exn: Join
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node54.html"><span class='visited with_tooltip'>I_54<span class='tooltip'>node54 preds:51 succs:55 exn:103 Instructions
+n$121=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 56];
+n$122=_fun_StringBuilder.&lt;init&gt;()(n$121:java.lang.StringBuilder*) [line 56];
+*&amp;$irvar24:java.lang.StringBuilder*=n$121 [line 56];
+EXIT_SCOPE(n$121,n$122); [line 56];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node55.html"><span class='visited with_tooltip'>I_55<span class='tooltip'>node55 preds:54 succs:56 exn:103 Instructions
+n$123=*&amp;$irvar24:java.lang.StringBuilder* [line 56];
+_=*n$123:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 56];
+n$125=*&amp;body:java.lang.String* [line 56];
+n$126=_fun_StringBuilder StringBuilder.append(String)(n$123:java.lang.StringBuilder*,n$125:java.lang.String*) virtual [line 56];
+*&amp;$irvar25:java.lang.StringBuilder*=n$126 [line 56];
+NULLIFY(&amp;body); [line 56];
+NULLIFY(&amp;$irvar24); [line 56];
+EXIT_SCOPE(_,n$123,n$125,n$126,body,$irvar24); [line 56];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node56.html"><span class='visited with_tooltip'>I_56<span class='tooltip'>node56 preds:55 succs:57 exn:103 Instructions
+n$127=*&amp;$irvar25:java.lang.StringBuilder* [line 56];
+_=*n$127:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 56];
+n$129=_fun_StringBuilder StringBuilder.append(String)(n$127:java.lang.StringBuilder*," al semigrupei ":java.lang.Object*) virtual [line 56];
+*&amp;$irvar26:java.lang.StringBuilder*=n$129 [line 56];
+NULLIFY(&amp;$irvar25); [line 56];
+EXIT_SCOPE(_,n$127,n$129,$irvar25); [line 56];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node57.html"><span class='visited with_tooltip'>I_57<span class='tooltip'>node57 preds:56 succs:58 exn:103 Instructions
+n$130=*&amp;ora:com.stn.pojo.Orar* [line 56];
+_=*n$130:com.stn.pojo.Orar*(root com.stn.pojo.Orar) [line 56];
+n$132=_fun_int Orar.getSgr()(n$130:com.stn.pojo.Orar*) virtual [line 56];
+*&amp;$irvar27:int=n$132 [line 56];
+EXIT_SCOPE(_,n$130,n$132); [line 56];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node58.html"><span class='visited with_tooltip'>I_58<span class='tooltip'>node58 preds:57 succs:59 exn:103 Instructions
+n$133=*&amp;$irvar26:java.lang.StringBuilder* [line 56];
+_=*n$133:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 56];
+n$135=*&amp;$irvar27:int [line 56];
+n$136=_fun_StringBuilder StringBuilder.append(int)(n$133:java.lang.StringBuilder*,n$135:int) virtual [line 56];
+*&amp;$irvar28:java.lang.StringBuilder*=n$136 [line 56];
+NULLIFY(&amp;$irvar26); [line 56];
+NULLIFY(&amp;$irvar27); [line 56];
+EXIT_SCOPE(_,n$133,n$135,n$136,$irvar26,$irvar27); [line 56];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node59.html"><span class='visited with_tooltip'>I_59<span class='tooltip'>node59 preds:58 succs:60 exn:103 Instructions
+n$137=*&amp;$irvar28:java.lang.StringBuilder* [line 56];
+_=*n$137:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 56];
+n$139=_fun_String StringBuilder.toString()(n$137:java.lang.StringBuilder*) virtual [line 56];
+*&amp;body:java.lang.String*=n$139 [line 56];
+NULLIFY(&amp;$irvar28); [line 56];
+EXIT_SCOPE(_,n$137,n$139,$irvar28); [line 56];
+APPLY_ABSTRACTION; [line 56];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node60.html"><span class='visited with_tooltip'>I_60<span class='tooltip'>node60 preds:59 52 succs:61 exn:103 Instructions
+n$140=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 57];
+n$141=_fun_StringBuilder.&lt;init&gt;()(n$140:java.lang.StringBuilder*) [line 57];
+*&amp;$irvar29:java.lang.StringBuilder*=n$140 [line 57];
+EXIT_SCOPE(n$140,n$141); [line 57];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node61.html"><span class='visited with_tooltip'>I_61<span class='tooltip'>node61 preds:60 succs:62 exn:103 Instructions
+n$142=*&amp;$irvar29:java.lang.StringBuilder* [line 57];
+_=*n$142:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 57];
+n$144=*&amp;body:java.lang.String* [line 57];
+n$145=_fun_StringBuilder StringBuilder.append(String)(n$142:java.lang.StringBuilder*,n$144:java.lang.String*) virtual [line 57];
+*&amp;$irvar30:java.lang.StringBuilder*=n$145 [line 57];
+NULLIFY(&amp;body); [line 57];
+NULLIFY(&amp;$irvar29); [line 57];
+EXIT_SCOPE(_,n$142,n$144,n$145,body,$irvar29); [line 57];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node62.html"><span class='visited with_tooltip'>I_62<span class='tooltip'>node62 preds:61 succs:63 exn:103 Instructions
+n$146=*&amp;$irvar30:java.lang.StringBuilder* [line 57];
+_=*n$146:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 57];
+n$148=_fun_StringBuilder StringBuilder.append(String)(n$146:java.lang.StringBuilder*," cu durata ":java.lang.Object*) virtual [line 57];
+*&amp;$irvar31:java.lang.StringBuilder*=n$148 [line 57];
+NULLIFY(&amp;$irvar30); [line 57];
+EXIT_SCOPE(_,n$146,n$148,$irvar30); [line 57];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node63.html"><span class='visited with_tooltip'>I_63<span class='tooltip'>node63 preds:62 succs:64 exn:103 Instructions
+n$149=*&amp;ora:com.stn.pojo.Orar* [line 57];
+_=*n$149:com.stn.pojo.Orar*(root com.stn.pojo.Orar) [line 57];
+n$151=_fun_String Orar.getDurata()(n$149:com.stn.pojo.Orar*) virtual [line 57];
+*&amp;$irvar32:java.lang.String*=n$151 [line 57];
+EXIT_SCOPE(_,n$149,n$151); [line 57];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node64.html"><span class='visited with_tooltip'>I_64<span class='tooltip'>node64 preds:63 succs:65 exn:103 Instructions
+n$152=*&amp;$irvar31:java.lang.StringBuilder* [line 57];
+_=*n$152:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 57];
+n$154=*&amp;$irvar32:java.lang.String* [line 57];
+n$155=_fun_StringBuilder StringBuilder.append(String)(n$152:java.lang.StringBuilder*,n$154:java.lang.String*) virtual [line 57];
+*&amp;$irvar33:java.lang.StringBuilder*=n$155 [line 57];
+NULLIFY(&amp;$irvar31); [line 57];
+NULLIFY(&amp;$irvar32); [line 57];
+EXIT_SCOPE(_,n$152,n$154,n$155,$irvar31,$irvar32); [line 57];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node65.html"><span class='visited with_tooltip'>I_65<span class='tooltip'>node65 preds:64 succs:66 exn:103 Instructions
+n$156=*&amp;$irvar33:java.lang.StringBuilder* [line 57];
+_=*n$156:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 57];
+n$158=_fun_StringBuilder StringBuilder.append(String)(n$156:java.lang.StringBuilder*," al grupei tale a fost stearsa de seful grupei, aici sunt informatiile salvate pentru acea materie<br/>Teme<br/>":java.lang.Object*) virtual [line 57];
+*&amp;$irvar34:java.lang.StringBuilder*=n$158 [line 57];
+NULLIFY(&amp;$irvar33); [line 57];
+EXIT_SCOPE(_,n$156,n$158,$irvar33); [line 57];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node66.html"><span class='visited with_tooltip'>I_66<span class='tooltip'>node66 preds:65 succs:67 exn:103 Instructions
+n$159=*&amp;n:com.stn.pojo.Notes* [line 57];
+_=*n$159:com.stn.pojo.Notes*(root com.stn.pojo.Notes) [line 57];
+n$161=_fun_String Notes.getTema()(n$159:com.stn.pojo.Notes*) virtual [line 57];
+*&amp;$irvar35:java.lang.String*=n$161 [line 57];
+EXIT_SCOPE(_,n$159,n$161); [line 57];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node67.html"><span class='visited with_tooltip'>I_67<span class='tooltip'>node67 preds:66 succs:68 exn:103 Instructions
+n$162=*&amp;$irvar34:java.lang.StringBuilder* [line 57];
+_=*n$162:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 57];
+n$164=*&amp;$irvar35:java.lang.String* [line 57];
+n$165=_fun_StringBuilder StringBuilder.append(String)(n$162:java.lang.StringBuilder*,n$164:java.lang.String*) virtual [line 57];
+*&amp;$irvar36:java.lang.StringBuilder*=n$165 [line 57];
+NULLIFY(&amp;$irvar35); [line 57];
+NULLIFY(&amp;$irvar34); [line 57];
+EXIT_SCOPE(_,n$162,n$164,n$165,$irvar35,$irvar34); [line 57];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node68.html"><span class='visited with_tooltip'>I_68<span class='tooltip'>node68 preds:67 succs:69 exn:103 Instructions
+n$166=*&amp;$irvar36:java.lang.StringBuilder* [line 57];
+_=*n$166:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 57];
+n$168=_fun_StringBuilder StringBuilder.append(String)(n$166:java.lang.StringBuilder*,"<br/>Examen<br/>":java.lang.Object*) virtual [line 57];
+*&amp;$irvar37:java.lang.StringBuilder*=n$168 [line 57];
+NULLIFY(&amp;$irvar36); [line 57];
+EXIT_SCOPE(_,n$166,n$168,$irvar36); [line 57];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node69.html"><span class='visited with_tooltip'>I_69<span class='tooltip'>node69 preds:68 succs:70 exn:103 Instructions
+n$169=*&amp;n:com.stn.pojo.Notes* [line 57];
+_=*n$169:com.stn.pojo.Notes*(root com.stn.pojo.Notes) [line 57];
+n$171=_fun_String Notes.getExamen()(n$169:com.stn.pojo.Notes*) virtual [line 57];
+*&amp;$irvar38:java.lang.String*=n$171 [line 57];
+EXIT_SCOPE(_,n$169,n$171); [line 57];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node70.html"><span class='visited with_tooltip'>I_70<span class='tooltip'>node70 preds:69 succs:71 exn:103 Instructions
+n$172=*&amp;$irvar37:java.lang.StringBuilder* [line 57];
+_=*n$172:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 57];
+n$174=*&amp;$irvar38:java.lang.String* [line 57];
+n$175=_fun_StringBuilder StringBuilder.append(String)(n$172:java.lang.StringBuilder*,n$174:java.lang.String*) virtual [line 57];
+*&amp;$irvar39:java.lang.StringBuilder*=n$175 [line 57];
+NULLIFY(&amp;$irvar38); [line 57];
+NULLIFY(&amp;$irvar37); [line 57];
+EXIT_SCOPE(_,n$172,n$174,n$175,$irvar38,$irvar37); [line 57];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node71.html"><span class='visited with_tooltip'>I_71<span class='tooltip'>node71 preds:70 succs:72 exn:103 Instructions
+n$176=*&amp;$irvar39:java.lang.StringBuilder* [line 57];
+_=*n$176:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 57];
+n$178=_fun_StringBuilder StringBuilder.append(String)(n$176:java.lang.StringBuilder*,"<br/>Note:":java.lang.Object*) virtual [line 57];
+*&amp;$irvar40:java.lang.StringBuilder*=n$178 [line 57];
+NULLIFY(&amp;$irvar39); [line 57];
+EXIT_SCOPE(_,n$176,n$178,$irvar39); [line 57];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node72.html"><span class='visited with_tooltip'>I_72<span class='tooltip'>node72 preds:71 succs:73 exn:103 Instructions
+n$179=*&amp;n:com.stn.pojo.Notes* [line 57];
+_=*n$179:com.stn.pojo.Notes*(root com.stn.pojo.Notes) [line 57];
+n$181=_fun_int Notes.getNota()(n$179:com.stn.pojo.Notes*) virtual [line 57];
+*&amp;$irvar41:int=n$181 [line 57];
+NULLIFY(&amp;n); [line 57];
+EXIT_SCOPE(_,n$179,n$181,n); [line 57];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node73.html"><span class='visited with_tooltip'>I_73<span class='tooltip'>node73 preds:72 succs:74 exn:103 Instructions
+n$182=*&amp;$irvar40:java.lang.StringBuilder* [line 57];
+_=*n$182:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 57];
+n$184=*&amp;$irvar41:int [line 57];
+n$185=_fun_StringBuilder StringBuilder.append(int)(n$182:java.lang.StringBuilder*,n$184:int) virtual [line 57];
+*&amp;$irvar42:java.lang.StringBuilder*=n$185 [line 57];
+NULLIFY(&amp;$irvar40); [line 57];
+NULLIFY(&amp;$irvar41); [line 57];
+EXIT_SCOPE(_,n$182,n$184,n$185,$irvar40,$irvar41); [line 57];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node74.html"><span class='visited with_tooltip'>I_74<span class='tooltip'>node74 preds:73 succs:75 exn:103 Instructions
+n$186=*&amp;$irvar42:java.lang.StringBuilder* [line 57];
+_=*n$186:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 57];
+n$188=_fun_StringBuilder StringBuilder.append(String)(n$186:java.lang.StringBuilder*,"<br/><br/>Best of luck,<br/> SchoolingTheInternet Team":java.lang.Object*) virtual [line 57];
+*&amp;$irvar43:java.lang.StringBuilder*=n$188 [line 57];
+NULLIFY(&amp;$irvar42); [line 57];
+EXIT_SCOPE(_,n$186,n$188,$irvar42); [line 57];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node75.html"><span class='visited with_tooltip'>I_75<span class='tooltip'>node75 preds:74 succs:76 exn:103 Instructions
+n$189=*&amp;$irvar43:java.lang.StringBuilder* [line 57];
+_=*n$189:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 57];
+n$191=_fun_String StringBuilder.toString()(n$189:java.lang.StringBuilder*) virtual [line 57];
+*&amp;body:java.lang.String*=n$191 [line 57];
+NULLIFY(&amp;$irvar43); [line 57];
+EXIT_SCOPE(_,n$189,n$191,$irvar43); [line 57];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node76.html"><span class='visited with_tooltip'>I_76<span class='tooltip'>node76 preds:75 succs:77 exn:103 Instructions
+n$192=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 58];
+n$193=_fun_StringBuilder.&lt;init&gt;()(n$192:java.lang.StringBuilder*) [line 58];
+*&amp;$irvar44:java.lang.StringBuilder*=n$192 [line 58];
+EXIT_SCOPE(n$192,n$193); [line 58];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node77.html"><span class='visited with_tooltip'>I_77<span class='tooltip'>node77 preds:76 succs:78 exn:103 Instructions
+n$194=*&amp;$irvar44:java.lang.StringBuilder* [line 58];
+_=*n$194:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 58];
+n$196=_fun_StringBuilder StringBuilder.append(String)(n$194:java.lang.StringBuilder*,"Stergerea orei ":java.lang.Object*) virtual [line 58];
+*&amp;$irvar45:java.lang.StringBuilder*=n$196 [line 58];
+NULLIFY(&amp;$irvar44); [line 58];
+EXIT_SCOPE(_,n$194,n$196,$irvar44); [line 58];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node78.html"><span class='visited with_tooltip'>I_78<span class='tooltip'>node78 preds:77 succs:79 exn:103 Instructions
+n$197=*&amp;ora:com.stn.pojo.Orar* [line 58];
+_=*n$197:com.stn.pojo.Orar*(root com.stn.pojo.Orar) [line 58];
+n$199=_fun_String Orar.getName()(n$197:com.stn.pojo.Orar*) virtual [line 58];
+*&amp;$irvar46:java.lang.String*=n$199 [line 58];
+NULLIFY(&amp;ora); [line 58];
+EXIT_SCOPE(_,n$197,n$199,ora); [line 58];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node79.html"><span class='visited with_tooltip'>I_79<span class='tooltip'>node79 preds:78 succs:80 exn:103 Instructions
+n$200=*&amp;$irvar45:java.lang.StringBuilder* [line 58];
+_=*n$200:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 58];
+n$202=*&amp;$irvar46:java.lang.String* [line 58];
+n$203=_fun_StringBuilder StringBuilder.append(String)(n$200:java.lang.StringBuilder*,n$202:java.lang.String*) virtual [line 58];
+*&amp;$irvar47:java.lang.StringBuilder*=n$203 [line 58];
+NULLIFY(&amp;$irvar46); [line 58];
+NULLIFY(&amp;$irvar45); [line 58];
+EXIT_SCOPE(_,n$200,n$202,n$203,$irvar46,$irvar45); [line 58];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node80.html"><span class='visited with_tooltip'>I_80<span class='tooltip'>node80 preds:79 succs:81 exn:103 Instructions
+n$204=*&amp;$irvar47:java.lang.StringBuilder* [line 58];
+_=*n$204:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 58];
+n$206=_fun_String StringBuilder.toString()(n$204:java.lang.StringBuilder*) virtual [line 58];
+*&amp;subject:java.lang.String*=n$206 [line 58];
+NULLIFY(&amp;$irvar47); [line 58];
+EXIT_SCOPE(_,n$204,n$206,$irvar47); [line 58];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node81.html"><span class='visited with_tooltip'>I_81<span class='tooltip'>node81 preds:80 succs:82 exn:103 Instructions
+n$207=*&amp;userInfo:com.stn.pojo.User* [line 59];
+_=*n$207:com.stn.pojo.User*(root com.stn.pojo.User) [line 59];
+n$209=_fun_String User.getEmail()(n$207:com.stn.pojo.User*) virtual [line 59];
+*&amp;$irvar48:java.lang.String*=n$209 [line 59];
+NULLIFY(&amp;userInfo); [line 59];
+EXIT_SCOPE(_,n$207,n$209,userInfo); [line 59];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node82.html"><span class='visited with_tooltip'>I_82<span class='tooltip'>node82 preds:81 succs:17 exn:103 Instructions
+n$210=*&amp;sendSchool:com.stn.utils.Tools* [line 59];
+_=*n$210:com.stn.utils.Tools*(root com.stn.utils.Tools) [line 59];
+n$212=*&amp;$irvar48:java.lang.String* [line 59];
+n$213=*&amp;subject:java.lang.String* [line 59];
+n$214=*&amp;body:java.lang.String* [line 59];
+n$215=_fun_void Tools.sendEmail(String,String,String)(n$210:com.stn.utils.Tools*,n$212:java.lang.String*,n$213:java.lang.String*,n$214:java.lang.String*) virtual [line 59];
+NULLIFY(&amp;body); [line 59];
+NULLIFY(&amp;$irvar48); [line 59];
+NULLIFY(&amp;subject); [line 59];
+EXIT_SCOPE(_,n$210,n$212,n$213,n$214,n$215,body,$irvar48,subject); [line 59];
+APPLY_ABSTRACTION; [line 59];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node83.html"><span class='visited with_tooltip'>I_83<span class='tooltip'>node83 preds:101 99 97 succs:84 exn:108 Instructions
+n$216=*&amp;CatchVar393:java.lang.Object* [line 61];
+*&amp;e:java.lang.Object*=n$216 [line 61];
+NULLIFY(&amp;CatchVar393); [line 61];
+EXIT_SCOPE(n$216,CatchVar393); [line 61];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node84.html"><span class='visited with_tooltip'>I_84<span class='tooltip'>node84 preds:83 succs:17 exn:108 Instructions
+n$217=*&amp;out:java.io.PrintWriter* [line 62];
+_=*n$217:java.io.PrintWriter*(root java.io.PrintWriter) [line 62];
+n$219=*&amp;e:java.lang.Object* [line 62];
+n$220=_fun_void PrintWriter.println(Object)(n$217:java.io.PrintWriter*,n$219:java.lang.Object*) virtual [line 62];
+NULLIFY(&amp;e); [line 62];
+EXIT_SCOPE(_,n$217,n$219,n$220,e); [line 62];
+APPLY_ABSTRACTION; [line 62];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node85.html"><span class='visited with_tooltip'>I_85<span class='tooltip'>node85 preds:19 succs:89 exn:108 Instructions
+n$221=*&amp;deleteOra:com.stn.helpers.OrarHelper* [line 66];
+_=*n$221:com.stn.helpers.OrarHelper*(root com.stn.helpers.OrarHelper) [line 66];
+n$223=*&amp;id_ora:java.lang.Integer* [line 66];
+n$224=_fun_void OrarHelper.deleteOra(Integer)(n$221:com.stn.helpers.OrarHelper*,n$223:java.lang.Integer*) virtual [line 66];
+NULLIFY(&amp;id_ora); [line 66];
+NULLIFY(&amp;deleteOra); [line 66];
+EXIT_SCOPE(_,n$221,n$223,n$224,id_ora,deleteOra); [line 66];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node86.html"><span class='visited with_tooltip'>I_86<span class='tooltip'>node86 preds:106 104 95 93 succs:87 exn:3 Instructions
+n$225=*&amp;CatchVar415:java.lang.Object* [line 67];
+*&amp;e:java.lang.Object*=n$225 [line 67];
+NULLIFY(&amp;CatchVar415); [line 67];
+EXIT_SCOPE(n$225,CatchVar415); [line 67];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node87.html"><span class='visited with_tooltip'>I_87<span class='tooltip'>node87 preds:86 succs:88 exn:3 Instructions
+n$226=*&amp;out:java.io.PrintWriter* [line 68];
+_=*n$226:java.io.PrintWriter*(root java.io.PrintWriter) [line 68];
+n$228=*&amp;e:java.lang.Object* [line 68];
+n$229=_fun_void PrintWriter.println(Object)(n$226:java.io.PrintWriter*,n$228:java.lang.Object*) virtual [line 68];
+NULLIFY(&amp;out); [line 68];
+NULLIFY(&amp;e); [line 68];
+EXIT_SCOPE(_,n$226,n$228,n$229,out,e); [line 68];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node88.html"><span class='visited with_tooltip'>I_88<span class='tooltip'>node88 preds:87 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 69];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node89.html"><span class='visited with_tooltip'>I_89<span class='tooltip'>node89 preds:85 succs:90 exn:3 Instructions
+*&amp;error:java.lang.Object*="<b style='color=aquamarine'>Mailuri trimise si ora stearsa.</b>" [line 71];
+NULLIFY(&amp;out); [line 71];
+EXIT_SCOPE(out); [line 71];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node90.html"><span class='visited with_tooltip'>I_90<span class='tooltip'>node90 preds:89 succs:91 exn:3 Instructions
+n$230=*&amp;session:javax.servlet.http.HttpSession* [line 72];
+_=*n$230:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 72];
+n$232=*&amp;error:java.lang.Object* [line 72];
+n$233=_fun_void HttpSession.setAttribute(String,Object)(n$230:javax.servlet.http.HttpSession*,"error":java.lang.Object*,n$232:java.lang.Object*) interface virtual [line 72];
+NULLIFY(&amp;error); [line 72];
+NULLIFY(&amp;session); [line 72];
+EXIT_SCOPE(_,n$230,n$232,n$233,error,session); [line 72];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node91.html"><span class='visited with_tooltip'>I_91<span class='tooltip'>node91 preds:90 succs:92 exn:3 Instructions
+n$234=*&amp;response:javax.servlet.http.HttpServletResponse* [line 73];
+_=*n$234:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 73];
+n$236=*&amp;url:java.lang.Object* [line 73];
+n$237=_fun_void HttpServletResponse.sendRedirect(String)(n$234:javax.servlet.http.HttpServletResponse*,n$236:java.lang.Object*) interface virtual [line 73];
+NULLIFY(&amp;url); [line 73];
+NULLIFY(&amp;response); [line 73];
+EXIT_SCOPE(_,n$234,n$236,n$237,url,response); [line 73];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node92.html"><span class='visited with_tooltip'>I_92<span class='tooltip'>node92 preds:91 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 74];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node93.html"><span class='visited with_tooltip'>C_93<span class='tooltip'>node93 preds:96 succs:86 exn:3 Conditional exception handler
+n$240=_fun___instanceof(n$239:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 67];
+PRUNE(n$240, true); [line 67];
+*&amp;CatchVar415:void=n$239 [line 67];
+EXIT_SCOPE(n$239,n$240); [line 67];
+APPLY_ABSTRACTION; [line 67];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node94.html"><span class='visited with_tooltip'>C_94<span class='tooltip'>node94 preds:96 succs:3 exn:3 Conditional exception handler
+n$240=_fun___instanceof(n$239:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 67];
+PRUNE(!n$240, false); [line 67];
+*&amp;return:void=EXN n$239 [line 67];
+NULLIFY(&amp;out); [line 67];
+EXIT_SCOPE(n$239,n$240,out); [line 67];
+APPLY_ABSTRACTION; [line 67];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node95.html"><span class='visited with_tooltip'>C_95<span class='tooltip'>node95 preds:98 succs:86 exn:3 Conditional exception handler
+n$241=_fun___instanceof(n$239:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 67];
+PRUNE(n$241, true); [line 67];
+*&amp;CatchVar415:void=n$239 [line 67];
+EXIT_SCOPE(n$239,n$241); [line 67];
+APPLY_ABSTRACTION; [line 67];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node96.html"><span class='visited with_tooltip'>C_96<span class='tooltip'>node96 preds:98 succs:93 94 exn:3 Conditional exception handler
+n$241=_fun___instanceof(n$239:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 67];
+PRUNE(!n$241, false); [line 67];
+EXIT_SCOPE(n$241); [line 67];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node97.html"><span class='visited with_tooltip'>C_97<span class='tooltip'>node97 preds:100 succs:83 exn:3 Conditional exception handler
+n$242=_fun___instanceof(n$239:javax.mail.MessagingException*,sizeof(t=javax.mail.MessagingException):void) [line 61];
+PRUNE(n$242, true); [line 61];
+*&amp;CatchVar393:void=n$239 [line 61];
+EXIT_SCOPE(n$239,n$242); [line 61];
+APPLY_ABSTRACTION; [line 61];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node98.html"><span class='visited with_tooltip'>C_98<span class='tooltip'>node98 preds:100 succs:95 96 exn:3 Conditional exception handler
+n$242=_fun___instanceof(n$239:javax.mail.MessagingException*,sizeof(t=javax.mail.MessagingException):void) [line 61];
+PRUNE(!n$242, false); [line 61];
+NULLIFY(&amp;url); [line 61];
+NULLIFY(&amp;id_ora); [line 61];
+NULLIFY(&amp;$bcvar13); [line 61];
+NULLIFY(&amp;deleteOra); [line 61];
+NULLIFY(&amp;session); [line 61];
+NULLIFY(&amp;user); [line 61];
+NULLIFY(&amp;sendSchool); [line 61];
+EXIT_SCOPE(n$242,url,id_ora,$bcvar13,deleteOra,session,user,sendSchool); [line 61];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node99.html"><span class='visited with_tooltip'>C_99<span class='tooltip'>node99 preds:102 succs:83 exn:3 Conditional exception handler
+n$243=_fun___instanceof(n$239:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 61];
+PRUNE(n$243, true); [line 61];
+*&amp;CatchVar393:void=n$239 [line 61];
+EXIT_SCOPE(n$239,n$243); [line 61];
+APPLY_ABSTRACTION; [line 61];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node100.html"><span class='visited with_tooltip'>C_100<span class='tooltip'>node100 preds:102 succs:97 98 exn:3 Conditional exception handler
+n$243=_fun___instanceof(n$239:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 61];
+PRUNE(!n$243, false); [line 61];
+EXIT_SCOPE(n$243); [line 61];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node101.html"><span class='visited with_tooltip'>C_101<span class='tooltip'>node101 preds:103 succs:83 exn:3 Conditional exception handler
+n$244=_fun___instanceof(n$239:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 61];
+PRUNE(n$244, true); [line 61];
+*&amp;CatchVar393:void=n$239 [line 61];
+EXIT_SCOPE(n$239,n$244); [line 61];
+APPLY_ABSTRACTION; [line 61];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node102.html"><span class='visited with_tooltip'>C_102<span class='tooltip'>node102 preds:103 succs:99 100 exn:3 Conditional exception handler
+n$244=_fun___instanceof(n$239:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 61];
+PRUNE(!n$244, false); [line 61];
+EXIT_SCOPE(n$244); [line 61];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node103.html"><span class='visited with_tooltip'>I_103<span class='tooltip'>node103 preds: succs:101 102 exn:3 Instructions
+n$238=*&amp;return:void [line 61];
+*&amp;return:void=null [line 61];
+n$239=_fun___unwrap_exception(n$238:void) [line 61];
+NULLIFY(&amp;$irvar31); [line 61];
+NULLIFY(&amp;body); [line 61];
+NULLIFY(&amp;$irvar26); [line 61];
+NULLIFY(&amp;$irvar22); [line 61];
+NULLIFY(&amp;$irvar30); [line 61];
+NULLIFY(&amp;$irvar29); [line 61];
+NULLIFY(&amp;$irvar25); [line 61];
+NULLIFY(&amp;$irvar42); [line 61];
+NULLIFY(&amp;$irvar9); [line 61];
+NULLIFY(&amp;$irvar17); [line 61];
+NULLIFY(&amp;ora); [line 61];
+NULLIFY(&amp;$irvar43); [line 61];
+NULLIFY(&amp;$irvar40); [line 61];
+NULLIFY(&amp;$irvar18); [line 61];
+NULLIFY(&amp;$irvar35); [line 61];
+NULLIFY(&amp;$irvar39); [line 61];
+NULLIFY(&amp;$irvar16); [line 61];
+NULLIFY(&amp;$irvar48); [line 61];
+NULLIFY(&amp;$irvar46); [line 61];
+NULLIFY(&amp;$irvar12); [line 61];
+NULLIFY(&amp;$irvar45); [line 61];
+NULLIFY(&amp;$irvar28); [line 61];
+NULLIFY(&amp;$irvar36); [line 61];
+NULLIFY(&amp;$irvar19); [line 61];
+NULLIFY(&amp;$irvar21); [line 61];
+NULLIFY(&amp;userInfo); [line 61];
+NULLIFY(&amp;$irvar20); [line 61];
+NULLIFY(&amp;$irvar38); [line 61];
+NULLIFY(&amp;$irvar34); [line 61];
+NULLIFY(&amp;$irvar41); [line 61];
+NULLIFY(&amp;$irvar47); [line 61];
+NULLIFY(&amp;$irvar37); [line 61];
+NULLIFY(&amp;$irvar23); [line 61];
+NULLIFY(&amp;$irvar44); [line 61];
+NULLIFY(&amp;$irvar13); [line 61];
+NULLIFY(&amp;$irvar11); [line 61];
+NULLIFY(&amp;subject); [line 61];
+NULLIFY(&amp;$irvar10); [line 61];
+NULLIFY(&amp;$irvar24); [line 61];
+NULLIFY(&amp;$irvar8); [line 61];
+NULLIFY(&amp;$irvar32); [line 61];
+NULLIFY(&amp;$irvar27); [line 61];
+NULLIFY(&amp;$irvar33); [line 61];
+NULLIFY(&amp;$irvar15); [line 61];
+NULLIFY(&amp;$irvar14); [line 61];
+NULLIFY(&amp;n); [line 61];
+EXIT_SCOPE(n$238,$irvar31,body,$irvar26,$irvar22,$irvar30,$irvar29,$irvar25,$irvar42,$irvar9,$irvar17,ora,$irvar43,$irvar40,$irvar18,$irvar35,$irvar39,$irvar16,$irvar48,$irvar46,$irvar12,$irvar45,$irvar28,$irvar36,$irvar19,$irvar21,userInfo,$irvar20,$irvar38,$irvar34,$irvar41,$irvar47,$irvar37,$irvar23,$irvar44,$irvar13,$irvar11,subject,$irvar10,$irvar24,$irvar8,$irvar32,$irvar27,$irvar33,$irvar15,$irvar14,n); [line 61];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node104.html"><span class='visited with_tooltip'>C_104<span class='tooltip'>node104 preds:107 succs:86 exn:3 Conditional exception handler
+n$245=_fun___instanceof(n$239:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 67];
+PRUNE(n$245, true); [line 67];
+*&amp;CatchVar415:void=n$239 [line 67];
+EXIT_SCOPE(n$239,n$245); [line 67];
+APPLY_ABSTRACTION; [line 67];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node105.html"><span class='visited with_tooltip'>C_105<span class='tooltip'>node105 preds:107 succs:3 exn:3 Conditional exception handler
+n$245=_fun___instanceof(n$239:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 67];
+PRUNE(!n$245, false); [line 67];
+*&amp;return:void=EXN n$239 [line 67];
+NULLIFY(&amp;out); [line 67];
+EXIT_SCOPE(n$239,n$245,out); [line 67];
+APPLY_ABSTRACTION; [line 67];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node106.html"><span class='visited with_tooltip'>C_106<span class='tooltip'>node106 preds:108 succs:86 exn:3 Conditional exception handler
+n$246=_fun___instanceof(n$239:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 67];
+PRUNE(n$246, true); [line 67];
+*&amp;CatchVar415:void=n$239 [line 67];
+EXIT_SCOPE(n$239,n$246); [line 67];
+APPLY_ABSTRACTION; [line 67];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node107.html"><span class='visited with_tooltip'>C_107<span class='tooltip'>node107 preds:108 succs:104 105 exn:3 Conditional exception handler
+n$246=_fun___instanceof(n$239:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 67];
+PRUNE(!n$246, false); [line 67];
+EXIT_SCOPE(n$246); [line 67];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.46875caa398978f662b99186a9e7d1f8_node108.html"><span class='visited with_tooltip'>I_108<span class='tooltip'>node108 preds: succs:106 107 exn:3 Instructions
+n$238=*&amp;return:void [line 67];
+*&amp;return:void=null [line 67];
+n$239=_fun___unwrap_exception(n$238:void) [line 67];
+NULLIFY(&amp;$irvar3); [line 67];
+NULLIFY(&amp;ora); [line 67];
+NULLIFY(&amp;url); [line 67];
+NULLIFY(&amp;$irvar5); [line 67];
+NULLIFY(&amp;$irvar4); [line 67];
+NULLIFY(&amp;$irvar7); [line 67];
+NULLIFY(&amp;id_ora); [line 67];
+NULLIFY(&amp;userInfo); [line 67];
+NULLIFY(&amp;$irvar6); [line 67];
+NULLIFY(&amp;id_stud); [line 67];
+NULLIFY(&amp;$irvar1); [line 67];
+NULLIFY(&amp;$irvar2); [line 67];
+NULLIFY(&amp;$bcvar13); [line 67];
+NULLIFY(&amp;notification); [line 67];
+NULLIFY(&amp;deleteOra); [line 67];
+NULLIFY(&amp;session); [line 67];
+NULLIFY(&amp;user); [line 67];
+NULLIFY(&amp;sendSchool); [line 67];
+NULLIFY(&amp;e); [line 67];
+NULLIFY(&amp;n); [line 67];
+EXIT_SCOPE(n$238,$irvar3,ora,url,$irvar5,$irvar4,$irvar7,id_ora,userInfo,$irvar6,id_stud,$irvar1,$irvar2,$bcvar13,notification,deleteOra,session,user,sendSchool,e,n); [line 67];
+</span></span></a><br />@
+
+<span class='color_black'>void void DeleteOraProcess.doGet(HttpServletRequest,HttpServletResponse)(com.stn.servlets.DeleteOraProcess* this, javax.servlet.http.HttpServletRequest* request, javax.servlet.http.HttpServletResponse* response)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= void DeleteOraProcess.doGet(HttpServletRequest,HttpServletResponse)
+; translation_unit= src/main/java/com/stn/servlets/DeleteOraProcess.java
+; access= Protected
+; exceptions= [javax.servlet.ServletException;  java.io.IOException]
+; formals= [(this,com.stn.servlets.DeleteOraProcess*);  (request,
+            javax.servlet.http.HttpServletRequest*);  (response,
+            javax.servlet.http.HttpServletResponse*)]
+; is_defined= true
+; loc= src/main/java/com/stn/servlets/DeleteOraProcess.java:30
+; locals= [{ name= CatchVar415; typ= void; modify_in_block= false }; 
+           { name= CatchVar393; typ= void; modify_in_block= false }; 
+           { name= $irvar48; typ= void; modify_in_block= false }; 
+           { name= $irvar47; typ= void; modify_in_block= false }; 
+           { name= $irvar46; typ= void; modify_in_block= false }; 
+           { name= $irvar45; typ= void; modify_in_block= false }; 
+           { name= $irvar44; typ= void; modify_in_block= false }; 
+           { name= $irvar43; typ= void; modify_in_block= false }; 
+           { name= $irvar42; typ= void; modify_in_block= false }; 
+           { name= $irvar41; typ= void; modify_in_block= false }; 
+           { name= $irvar40; typ= void; modify_in_block= false }; 
+           { name= $irvar39; typ= void; modify_in_block= false }; 
+           { name= $irvar38; typ= void; modify_in_block= false }; 
+           { name= $irvar37; typ= void; modify_in_block= false }; 
+           { name= $irvar36; typ= void; modify_in_block= false }; 
+           { name= $irvar35; typ= void; modify_in_block= false }; 
+           { name= $irvar34; typ= void; modify_in_block= false }; 
+           { name= $irvar33; typ= void; modify_in_block= false }; 
+           { name= $irvar32; typ= void; modify_in_block= false }; 
+           { name= $irvar31; typ= void; modify_in_block= false }; 
+           { name= $irvar30; typ= void; modify_in_block= false }; 
+           { name= $irvar29; typ= void; modify_in_block= false }; 
+           { name= $irvar28; typ= void; modify_in_block= false }; 
+           { name= $irvar27; typ= void; modify_in_block= false }; 
+           { name= $irvar26; typ= void; modify_in_block= false }; 
+           { name= $irvar25; typ= void; modify_in_block= false }; 
+           { name= $irvar24; typ= void; modify_in_block= false }; 
+           { name= $irvar23; typ= void; modify_in_block= false }; 
+           { name= $irvar22; typ= void; modify_in_block= false }; 
+           { name= $irvar21; typ= void; modify_in_block= false }; 
+           { name= $irvar20; typ= void; modify_in_block= false }; 
+           { name= $irvar19; typ= void; modify_in_block= false }; 
+           { name= $irvar18; typ= void; modify_in_block= false }; 
+           { name= $irvar17; typ= void; modify_in_block= false }; 
+           { name= $irvar16; typ= void; modify_in_block= false }; 
+           { name= $irvar15; typ= void; modify_in_block= false }; 
+           { name= $irvar14; typ= void; modify_in_block= false }; 
+           { name= $irvar13; typ= void; modify_in_block= false }; 
+           { name= $irvar12; typ= void; modify_in_block= false }; 
+           { name= $irvar11; typ= void; modify_in_block= false }; 
+           { name= $irvar10; typ= void; modify_in_block= false }; 
+           { name= $irvar9; typ= void; modify_in_block= false }; 
+           { name= $irvar8; typ= void; modify_in_block= false }; 
+           { name= $irvar7; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $bcvar13; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= user; typ= com.stn.helpers.UserHelper*; modify_in_block= false }; 
+           { name= sendSchool; typ= com.stn.utils.Tools*; modify_in_block= false }; 
+           { name= notification; typ= java.util.ArrayList*; modify_in_block= false }; 
+           { name= deleteOra; typ= com.stn.helpers.OrarHelper*; modify_in_block= false }; 
+           { name= url; typ= java.lang.String*; modify_in_block= false }; 
+           { name= id_ora; typ= java.lang.Integer*; modify_in_block= false }; 
+           { name= out; typ= java.io.PrintWriter*; modify_in_block= false }; 
+           { name= error; typ= java.lang.String*; modify_in_block= false }; 
+           { name= session; typ= javax.servlet.http.HttpSession*; modify_in_block= false }; 
+           { name= userInfo; typ= com.stn.pojo.User*; modify_in_block= false }; 
+           { name= n; typ= com.stn.pojo.Notes*; modify_in_block= false }; 
+           { name= ora; typ= com.stn.pojo.Orar*; modify_in_block= false }; 
+           { name= id_stud; typ= java.lang.Integer*; modify_in_block= false }; 
+           { name= e; typ= java.lang.Exception*; modify_in_block= false }; 
+           { name= subject; typ= java.lang.String*; modify_in_block= false }; 
+           { name= body; typ= java.lang.String*; modify_in_block= false }]
+; ret_type= void 
+; proc_id= com.stn.servlets.DeleteOraProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void }</pre>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>News.java.997d7185af972719e11531625fe0e106</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>File src/main/java/com/stn/pojo/News.java </h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.stn.pojo; </td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import java.sql.Time; </td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">import java.sql.Timestamp; </td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">public class News { <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.<init>%28%29.0283f598518ac07ececd1b25e501e0f2_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.<init>%28%29.0283f598518ac07ececd1b25e501e0f2_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.pojo.News* [line 6];
+n$1=_fun_Object.&lt;init&gt;()(n$0:com.stn.pojo.News*) [line 6];
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.<init>%28%29.0283f598518ac07ececd1b25e501e0f2_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.<init>%28%29.0283f598518ac07ececd1b25e501e0f2_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.<init>%28%29.0283f598518ac07ececd1b25e501e0f2_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/com.stn.pojo.News.<init>%28%29.0283f598518ac07ececd1b25e501e0f2.html">summary for News.&lt;init&gt;()</a></td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">    int idNews; </td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">    String title; </td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line">    String body; </td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">    Timestamp date; </td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line">    int idUser; </td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line">    int idSerie; </td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line">    int userClass; </td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line">    String username; </td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line">    Timestamp lastEdit; </td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line">    public void setIdNews(int idNews) { <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setIdNews%28int%29%3Avoid.0b0ba99f3f26a45b45fc4b443a5c1419_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/com.stn.pojo.News.setIdNews%28int%29%3Avoid.0b0ba99f3f26a45b45fc4b443a5c1419.html">summary for void News.setIdNews(int)</a></td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line">        this.idNews = idNews; <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setIdNews%28int%29%3Avoid.0b0ba99f3f26a45b45fc4b443a5c1419_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.pojo.News* [line 19];
+n$1=*&amp;idNews:int [line 19];
+*n$0.idNews:com.stn.pojo.News(root com.stn.pojo.News)=n$1 [line 19];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line">    } <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setIdNews%28int%29%3Avoid.0b0ba99f3f26a45b45fc4b443a5c1419_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setIdNews%28int%29%3Avoid.0b0ba99f3f26a45b45fc4b443a5c1419_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setIdNews%28int%29%3Avoid.0b0ba99f3f26a45b45fc4b443a5c1419_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line">    public void setTitle(String title) { <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setTitle%28java.lang.String%29%3Avoid.07cf891edd08f7aa083916e87d8e3fb3_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/com.stn.pojo.News.setTitle%28java.lang.String%29%3Avoid.07cf891edd08f7aa083916e87d8e3fb3.html">summary for void News.setTitle(String)</a></td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">        this.title = title; <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setTitle%28java.lang.String%29%3Avoid.07cf891edd08f7aa083916e87d8e3fb3_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.pojo.News* [line 23];
+n$1=*&amp;title:java.lang.String* [line 23];
+*n$0.title:com.stn.pojo.News(root com.stn.pojo.News)=n$1 [line 23];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line">    } <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setTitle%28java.lang.String%29%3Avoid.07cf891edd08f7aa083916e87d8e3fb3_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setTitle%28java.lang.String%29%3Avoid.07cf891edd08f7aa083916e87d8e3fb3_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setTitle%28java.lang.String%29%3Avoid.07cf891edd08f7aa083916e87d8e3fb3_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line">    public void setBody(String body) { <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setBody%28java.lang.String%29%3Avoid.17789055a4190d83d509c828ade6e969_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/com.stn.pojo.News.setBody%28java.lang.String%29%3Avoid.17789055a4190d83d509c828ade6e969.html">summary for void News.setBody(String)</a></td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">        this.body = body; <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setBody%28java.lang.String%29%3Avoid.17789055a4190d83d509c828ade6e969_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.pojo.News* [line 27];
+n$1=*&amp;body:java.lang.String* [line 27];
+*n$0.body:com.stn.pojo.News(root com.stn.pojo.News)=n$1 [line 27];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">    } <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setBody%28java.lang.String%29%3Avoid.17789055a4190d83d509c828ade6e969_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setBody%28java.lang.String%29%3Avoid.17789055a4190d83d509c828ade6e969_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setBody%28java.lang.String%29%3Avoid.17789055a4190d83d509c828ade6e969_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">    public void setDate(Timestamp date) { <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setDate%28java.sql.Timestamp%29%3Avoid.8daad153923e64ec9627c7dead3988a1_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/com.stn.pojo.News.setDate%28java.sql.Timestamp%29%3Avoid.8daad153923e64ec9627c7dead3988a1.html">summary for void News.setDate(Timestamp)</a></td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line">        this.date = date; <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setDate%28java.sql.Timestamp%29%3Avoid.8daad153923e64ec9627c7dead3988a1_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.pojo.News* [line 31];
+n$1=*&amp;date:java.sql.Timestamp* [line 31];
+*n$0.date:com.stn.pojo.News(root com.stn.pojo.News)=n$1 [line 31];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line">    } <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setDate%28java.sql.Timestamp%29%3Avoid.8daad153923e64ec9627c7dead3988a1_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setDate%28java.sql.Timestamp%29%3Avoid.8daad153923e64ec9627c7dead3988a1_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setDate%28java.sql.Timestamp%29%3Avoid.8daad153923e64ec9627c7dead3988a1_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line">    public void setIdUser(int idUser) { <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setIdUser%28int%29%3Avoid.698420ffcf03e734c0d1ea680763ab2d_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/com.stn.pojo.News.setIdUser%28int%29%3Avoid.698420ffcf03e734c0d1ea680763ab2d.html">summary for void News.setIdUser(int)</a></td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">        this.idUser = idUser; <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setIdUser%28int%29%3Avoid.698420ffcf03e734c0d1ea680763ab2d_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.pojo.News* [line 35];
+n$1=*&amp;idUser:int [line 35];
+*n$0.idUser:com.stn.pojo.News(root com.stn.pojo.News)=n$1 [line 35];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line">    } <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setIdUser%28int%29%3Avoid.698420ffcf03e734c0d1ea680763ab2d_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setIdUser%28int%29%3Avoid.698420ffcf03e734c0d1ea680763ab2d_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setIdUser%28int%29%3Avoid.698420ffcf03e734c0d1ea680763ab2d_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line">    public void setIdSerie(int idSerie) { <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setIdSerie%28int%29%3Avoid.11337769be961811314eefb7724b0ed0_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/com.stn.pojo.News.setIdSerie%28int%29%3Avoid.11337769be961811314eefb7724b0ed0.html">summary for void News.setIdSerie(int)</a></td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line">        this.idSerie = idSerie; <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setIdSerie%28int%29%3Avoid.11337769be961811314eefb7724b0ed0_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.pojo.News* [line 39];
+n$1=*&amp;idSerie:int [line 39];
+*n$0.idSerie:com.stn.pojo.News(root com.stn.pojo.News)=n$1 [line 39];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line">    } <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setIdSerie%28int%29%3Avoid.11337769be961811314eefb7724b0ed0_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setIdSerie%28int%29%3Avoid.11337769be961811314eefb7724b0ed0_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setIdSerie%28int%29%3Avoid.11337769be961811314eefb7724b0ed0_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">    public void setUserClass(int userClass) { <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setUserClass%28int%29%3Avoid.b827ac48bfef4a024d2a5474a6d67a61_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/com.stn.pojo.News.setUserClass%28int%29%3Avoid.b827ac48bfef4a024d2a5474a6d67a61.html">summary for void News.setUserClass(int)</a></td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line">        this.userClass = userClass; <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setUserClass%28int%29%3Avoid.b827ac48bfef4a024d2a5474a6d67a61_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.pojo.News* [line 43];
+n$1=*&amp;userClass:int [line 43];
+*n$0.userClass:com.stn.pojo.News(root com.stn.pojo.News)=n$1 [line 43];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">    } <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setUserClass%28int%29%3Avoid.b827ac48bfef4a024d2a5474a6d67a61_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setUserClass%28int%29%3Avoid.b827ac48bfef4a024d2a5474a6d67a61_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setUserClass%28int%29%3Avoid.b827ac48bfef4a024d2a5474a6d67a61_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line">    public void setUsername(String username) { <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setUsername%28java.lang.String%29%3Avoid.fdcb434bad5418bdaae1c9912d50b1e1_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/com.stn.pojo.News.setUsername%28java.lang.String%29%3Avoid.fdcb434bad5418bdaae1c9912d50b1e1.html">summary for void News.setUsername(String)</a></td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">        this.username = username; <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setUsername%28java.lang.String%29%3Avoid.fdcb434bad5418bdaae1c9912d50b1e1_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.pojo.News* [line 47];
+n$1=*&amp;username:java.lang.String* [line 47];
+*n$0.username:com.stn.pojo.News(root com.stn.pojo.News)=n$1 [line 47];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line">    } <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setUsername%28java.lang.String%29%3Avoid.fdcb434bad5418bdaae1c9912d50b1e1_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setUsername%28java.lang.String%29%3Avoid.fdcb434bad5418bdaae1c9912d50b1e1_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setUsername%28java.lang.String%29%3Avoid.fdcb434bad5418bdaae1c9912d50b1e1_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line">    public void setLastEdit(Timestamp lastEdit) { <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setLastEdit%28java.sql.Timestamp%29%3Avoid.598e4d2fc0e4639488e83a6c11dd5fa4_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/com.stn.pojo.News.setLastEdit%28java.sql.Timestamp%29%3Avoid.598e4d2fc0e4639488e83a6c11dd5fa4.html">summary for void News.setLastEdit(Timestamp)</a></td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line">        this.lastEdit = lastEdit; <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setLastEdit%28java.sql.Timestamp%29%3Avoid.598e4d2fc0e4639488e83a6c11dd5fa4_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.pojo.News* [line 51];
+n$1=*&amp;lastEdit:java.sql.Timestamp* [line 51];
+*n$0.lastEdit:com.stn.pojo.News(root com.stn.pojo.News)=n$1 [line 51];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line">    } <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setLastEdit%28java.sql.Timestamp%29%3Avoid.598e4d2fc0e4639488e83a6c11dd5fa4_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setLastEdit%28java.sql.Timestamp%29%3Avoid.598e4d2fc0e4639488e83a6c11dd5fa4_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.setLastEdit%28java.sql.Timestamp%29%3Avoid.598e4d2fc0e4639488e83a6c11dd5fa4_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line">    public int getIdNews() { <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getIdNews%28%29%3Aint.cd7912b8a8a95a92cda888b368645c70_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/com.stn.pojo.News.getIdNews%28%29%3Aint.cd7912b8a8a95a92cda888b368645c70.html">summary for int News.getIdNews()</a></td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line">        return idNews; <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getIdNews%28%29%3Aint.cd7912b8a8a95a92cda888b368645c70_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:2 exn:3 Instructions
+n$0=*&amp;this:com.stn.pojo.News* [line 55];
+n$1=*n$0.idNews:int(root com.stn.pojo.News) [line 55];
+*&amp;return:int=n$1 [line 55];
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getIdNews%28%29%3Aint.cd7912b8a8a95a92cda888b368645c70_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:4 3 succs: exn: Exit
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getIdNews%28%29%3Aint.cd7912b8a8a95a92cda888b368645c70_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line">    } </td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE58">58</td><td class="line">    public String getTitle() { <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getTitle%28%29%3Ajava.lang.String.f22e582206d0fa076013688c36c7a960_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/com.stn.pojo.News.getTitle%28%29%3Ajava.lang.String.f22e582206d0fa076013688c36c7a960.html">summary for String News.getTitle()</a></td></tr>
+<tr><td class="num" id="LINE59">59</td><td class="line">        return title; <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getTitle%28%29%3Ajava.lang.String.f22e582206d0fa076013688c36c7a960_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:2 exn:3 Instructions
+n$0=*&amp;this:com.stn.pojo.News* [line 59];
+n$1=*n$0.title:java.lang.String*(root com.stn.pojo.News) [line 59];
+*&amp;return:java.lang.String*=n$1 [line 59];
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getTitle%28%29%3Ajava.lang.String.f22e582206d0fa076013688c36c7a960_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:4 3 succs: exn: Exit
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getTitle%28%29%3Ajava.lang.String.f22e582206d0fa076013688c36c7a960_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE60">60</td><td class="line">    } </td></tr>
+<tr><td class="num" id="LINE61">61</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE62">62</td><td class="line">    public String getBody() { <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getBody%28%29%3Ajava.lang.String.b3bf0da4cf1887b06c908d047b86f5b9_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/com.stn.pojo.News.getBody%28%29%3Ajava.lang.String.b3bf0da4cf1887b06c908d047b86f5b9.html">summary for String News.getBody()</a></td></tr>
+<tr><td class="num" id="LINE63">63</td><td class="line">        return body; <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getBody%28%29%3Ajava.lang.String.b3bf0da4cf1887b06c908d047b86f5b9_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:2 exn:3 Instructions
+n$0=*&amp;this:com.stn.pojo.News* [line 63];
+n$1=*n$0.body:java.lang.String*(root com.stn.pojo.News) [line 63];
+*&amp;return:java.lang.String*=n$1 [line 63];
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getBody%28%29%3Ajava.lang.String.b3bf0da4cf1887b06c908d047b86f5b9_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:4 3 succs: exn: Exit
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getBody%28%29%3Ajava.lang.String.b3bf0da4cf1887b06c908d047b86f5b9_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE64">64</td><td class="line">    } </td></tr>
+<tr><td class="num" id="LINE65">65</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE66">66</td><td class="line">    public Timestamp getDate() { <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getDate%28%29%3Ajava.sql.Timestamp.2300bc3cc0c023e964d44ae988b83ff5_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/com.stn.pojo.News.getDate%28%29%3Ajava.sql.Timestamp.2300bc3cc0c023e964d44ae988b83ff5.html">summary for Timestamp News.getDate()</a></td></tr>
+<tr><td class="num" id="LINE67">67</td><td class="line">        return date; <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getDate%28%29%3Ajava.sql.Timestamp.2300bc3cc0c023e964d44ae988b83ff5_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:2 exn:3 Instructions
+n$0=*&amp;this:com.stn.pojo.News* [line 67];
+n$1=*n$0.date:java.sql.Timestamp*(root com.stn.pojo.News) [line 67];
+*&amp;return:java.sql.Timestamp*=n$1 [line 67];
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getDate%28%29%3Ajava.sql.Timestamp.2300bc3cc0c023e964d44ae988b83ff5_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:4 3 succs: exn: Exit
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getDate%28%29%3Ajava.sql.Timestamp.2300bc3cc0c023e964d44ae988b83ff5_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE68">68</td><td class="line">    } </td></tr>
+<tr><td class="num" id="LINE69">69</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE70">70</td><td class="line">    public int getIdUser() { <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getIdUser%28%29%3Aint.3f841a2a69264804f3ed793acc792324_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/com.stn.pojo.News.getIdUser%28%29%3Aint.3f841a2a69264804f3ed793acc792324.html">summary for int News.getIdUser()</a></td></tr>
+<tr><td class="num" id="LINE71">71</td><td class="line">        return idUser; <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getIdUser%28%29%3Aint.3f841a2a69264804f3ed793acc792324_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:2 exn:3 Instructions
+n$0=*&amp;this:com.stn.pojo.News* [line 71];
+n$1=*n$0.idUser:int(root com.stn.pojo.News) [line 71];
+*&amp;return:int=n$1 [line 71];
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getIdUser%28%29%3Aint.3f841a2a69264804f3ed793acc792324_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:4 3 succs: exn: Exit
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getIdUser%28%29%3Aint.3f841a2a69264804f3ed793acc792324_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE72">72</td><td class="line">    } </td></tr>
+<tr><td class="num" id="LINE73">73</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE74">74</td><td class="line">    public int getIdSerie() { <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getIdSerie%28%29%3Aint.408753867c644201558405695d302bcc_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/com.stn.pojo.News.getIdSerie%28%29%3Aint.408753867c644201558405695d302bcc.html">summary for int News.getIdSerie()</a></td></tr>
+<tr><td class="num" id="LINE75">75</td><td class="line">        return idSerie; <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getIdSerie%28%29%3Aint.408753867c644201558405695d302bcc_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:2 exn:3 Instructions
+n$0=*&amp;this:com.stn.pojo.News* [line 75];
+n$1=*n$0.idSerie:int(root com.stn.pojo.News) [line 75];
+*&amp;return:int=n$1 [line 75];
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getIdSerie%28%29%3Aint.408753867c644201558405695d302bcc_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:4 3 succs: exn: Exit
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getIdSerie%28%29%3Aint.408753867c644201558405695d302bcc_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE76">76</td><td class="line">    } </td></tr>
+<tr><td class="num" id="LINE77">77</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE78">78</td><td class="line">    public int getUserClass() { <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getUserClass%28%29%3Aint.40e069c770f4f9a443300cb57243a987_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/com.stn.pojo.News.getUserClass%28%29%3Aint.40e069c770f4f9a443300cb57243a987.html">summary for int News.getUserClass()</a></td></tr>
+<tr><td class="num" id="LINE79">79</td><td class="line">        return userClass; <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getUserClass%28%29%3Aint.40e069c770f4f9a443300cb57243a987_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:2 exn:3 Instructions
+n$0=*&amp;this:com.stn.pojo.News* [line 79];
+n$1=*n$0.userClass:int(root com.stn.pojo.News) [line 79];
+*&amp;return:int=n$1 [line 79];
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getUserClass%28%29%3Aint.40e069c770f4f9a443300cb57243a987_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:4 3 succs: exn: Exit
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getUserClass%28%29%3Aint.40e069c770f4f9a443300cb57243a987_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE80">80</td><td class="line">    } </td></tr>
+<tr><td class="num" id="LINE81">81</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE82">82</td><td class="line">    public String getUsername() { <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getUsername%28%29%3Ajava.lang.String.0438c6dac5d5e2dd8feabe59bbd07f4b_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/com.stn.pojo.News.getUsername%28%29%3Ajava.lang.String.0438c6dac5d5e2dd8feabe59bbd07f4b.html">summary for String News.getUsername()</a></td></tr>
+<tr><td class="num" id="LINE83">83</td><td class="line">        return username; <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getUsername%28%29%3Ajava.lang.String.0438c6dac5d5e2dd8feabe59bbd07f4b_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:2 exn:3 Instructions
+n$0=*&amp;this:com.stn.pojo.News* [line 83];
+n$1=*n$0.username:java.lang.String*(root com.stn.pojo.News) [line 83];
+*&amp;return:java.lang.String*=n$1 [line 83];
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getUsername%28%29%3Ajava.lang.String.0438c6dac5d5e2dd8feabe59bbd07f4b_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:4 3 succs: exn: Exit
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getUsername%28%29%3Ajava.lang.String.0438c6dac5d5e2dd8feabe59bbd07f4b_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE84">84</td><td class="line">    } </td></tr>
+<tr><td class="num" id="LINE85">85</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE86">86</td><td class="line">    public Timestamp getLastEdit() { <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getLastEdit%28%29%3Ajava.sql.Timestamp.9e93b9ec5a9cf0b7f334728c2b62722e_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/com.stn.pojo.News.getLastEdit%28%29%3Ajava.sql.Timestamp.9e93b9ec5a9cf0b7f334728c2b62722e.html">summary for Timestamp News.getLastEdit()</a></td></tr>
+<tr><td class="num" id="LINE87">87</td><td class="line">        return lastEdit; <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getLastEdit%28%29%3Ajava.sql.Timestamp.9e93b9ec5a9cf0b7f334728c2b62722e_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:2 exn:3 Instructions
+n$0=*&amp;this:com.stn.pojo.News* [line 87];
+n$1=*n$0.lastEdit:java.sql.Timestamp*(root com.stn.pojo.News) [line 87];
+*&amp;return:java.sql.Timestamp*=n$1 [line 87];
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getLastEdit%28%29%3Ajava.sql.Timestamp.9e93b9ec5a9cf0b7f334728c2b62722e_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:4 3 succs: exn: Exit
+</span></span></a> <a href="./News.java.997d7185af972719e11531625fe0e106/nodes/com.stn.pojo.News.getLastEdit%28%29%3Ajava.sql.Timestamp.9e93b9ec5a9cf0b7f334728c2b62722e_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE88">88</td><td class="line">    } </td></tr>
+<tr><td class="num" id="LINE89">89</td><td class="line">} </td></tr>
+</table>
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+</body>
+</html>

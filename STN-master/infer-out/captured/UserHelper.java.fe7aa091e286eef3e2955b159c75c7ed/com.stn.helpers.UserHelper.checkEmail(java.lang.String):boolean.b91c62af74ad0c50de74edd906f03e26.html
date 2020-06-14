@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE154">boolean UserHelper.checkEmail(String)</a></h1></center>
+<a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:42 40 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;found); [line 176];
+NULLIFY(&amp;$bcvar3); [line 176];
+NULLIFY(&amp;$irvar8); [line 176];
+EXIT_SCOPE(found,$bcvar3,$irvar8); [line 176];
+APPLY_ABSTRACTION; [line 176];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun_Boolean Boolean.valueOf(boolean)(0:int) [line 155];
+*&amp;found:java.lang.Boolean*=n$0 [line 155];
+EXIT_SCOPE(n$0); [line 155];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$1=*&amp;this:com.stn.helpers.UserHelper* [line 157];
+*n$1.query:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)="SELECT 1 FROM users WHERE Email = ?" [line 157];
+EXIT_SCOPE(n$1); [line 157];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:44 Instructions
+n$2=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 160];
+*&amp;$irvar0:java.lang.Class*=n$2 [line 160];
+NULLIFY(&amp;$irvar0); [line 160];
+EXIT_SCOPE(n$2,$irvar0); [line 160];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:44 Instructions
+n$3=*&amp;this:com.stn.helpers.UserHelper* [line 161];
+_=*n$3:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 161];
+n$5=_fun_String DBConnection.getHost()(n$3:com.stn.helpers.UserHelper*) virtual [line 161];
+*&amp;$irvar1:java.lang.String*=n$5 [line 161];
+EXIT_SCOPE(_,n$3,n$5); [line 161];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:44 Instructions
+n$6=*&amp;this:com.stn.helpers.UserHelper* [line 161];
+_=*n$6:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 161];
+n$8=_fun_String DBConnection.getUser()(n$6:com.stn.helpers.UserHelper*) virtual [line 161];
+*&amp;$irvar2:java.lang.String*=n$8 [line 161];
+EXIT_SCOPE(_,n$6,n$8); [line 161];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:44 Instructions
+n$9=*&amp;this:com.stn.helpers.UserHelper* [line 161];
+_=*n$9:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 161];
+n$11=_fun_String DBConnection.getPassword()(n$9:com.stn.helpers.UserHelper*) virtual [line 161];
+*&amp;$irvar3:java.lang.String*=n$11 [line 161];
+EXIT_SCOPE(_,n$9,n$11); [line 161];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:44 Instructions
+n$12=*&amp;$irvar1:java.lang.String* [line 161];
+n$13=*&amp;$irvar2:java.lang.String* [line 161];
+n$14=*&amp;$irvar3:java.lang.String* [line 161];
+n$15=_fun_Connection DriverManager.getConnection(String,String,String)(n$12:java.lang.String*,n$13:java.lang.String*,n$14:java.lang.String*) [line 161];
+*&amp;$irvar4:java.sql.Connection*=n$15 [line 161];
+NULLIFY(&amp;$irvar3); [line 161];
+NULLIFY(&amp;$irvar1); [line 161];
+NULLIFY(&amp;$irvar2); [line 161];
+EXIT_SCOPE(n$12,n$13,n$14,n$15,$irvar3,$irvar1,$irvar2); [line 161];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:44 Instructions
+n$16=*&amp;this:com.stn.helpers.UserHelper* [line 161];
+n$17=*&amp;$irvar4:java.sql.Connection* [line 161];
+*n$16.connection:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$17 [line 161];
+NULLIFY(&amp;$irvar4); [line 161];
+EXIT_SCOPE(n$16,n$17,$irvar4); [line 161];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:44 Instructions
+n$18=*&amp;this:com.stn.helpers.UserHelper* [line 162];
+n$19=*n$18.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 162];
+_=*n$19:java.sql.Connection*(root java.sql.Connection) [line 162];
+n$21=*&amp;this:com.stn.helpers.UserHelper* [line 162];
+n$22=*n$21.query:java.lang.String*(root com.stn.helpers.UserHelper) [line 162];
+n$23=_fun_PreparedStatement Connection.prepareStatement(String)(n$19:java.sql.Connection*,n$22:java.lang.String*) interface virtual [line 162];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$23 [line 162];
+EXIT_SCOPE(_,n$18,n$19,n$21,n$22,n$23); [line 162];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:44 Instructions
+n$24=*&amp;this:com.stn.helpers.UserHelper* [line 162];
+n$25=*&amp;$irvar5:java.sql.PreparedStatement* [line 162];
+*n$24.preparedStatement:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$25 [line 162];
+NULLIFY(&amp;$irvar5); [line 162];
+EXIT_SCOPE(n$24,n$25,$irvar5); [line 162];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:44 Instructions
+n$26=*&amp;this:com.stn.helpers.UserHelper* [line 163];
+n$27=*n$26.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 163];
+_=*n$27:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 163];
+n$29=*&amp;email:java.lang.String* [line 163];
+n$30=_fun_void PreparedStatement.setString(int,String)(n$27:java.sql.PreparedStatement*,1:int,n$29:java.lang.String*) interface virtual [line 163];
+NULLIFY(&amp;email); [line 163];
+EXIT_SCOPE(_,n$26,n$27,n$29,n$30,email); [line 163];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:44 Instructions
+n$31=*&amp;this:com.stn.helpers.UserHelper* [line 164];
+n$32=*n$31.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 164];
+_=*n$32:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 164];
+n$34=_fun_ResultSet PreparedStatement.executeQuery()(n$32:java.sql.PreparedStatement*) interface virtual [line 164];
+*&amp;$irvar6:java.sql.ResultSet*=n$34 [line 164];
+EXIT_SCOPE(_,n$31,n$32,n$34); [line 164];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:44 Instructions
+n$35=*&amp;this:com.stn.helpers.UserHelper* [line 164];
+n$36=*&amp;$irvar6:java.sql.ResultSet* [line 164];
+*n$35.resultSet:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$36 [line 164];
+NULLIFY(&amp;$irvar6); [line 164];
+EXIT_SCOPE(n$35,n$36,$irvar6); [line 164];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 19 exn:44 Instructions
+n$37=*&amp;this:com.stn.helpers.UserHelper* [line 165];
+n$38=*n$37.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 165];
+_=*n$38:java.sql.ResultSet*(root java.sql.ResultSet) [line 165];
+n$40=_fun_boolean ResultSet.next()(n$38:java.sql.ResultSet*) interface virtual [line 165];
+*&amp;$irvar7:_Bool=n$40 [line 165];
+EXIT_SCOPE(_,n$37,n$38,n$40); [line 165];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:17 succs:20 exn:44 Conditional method_body
+n$41=*&amp;$irvar7:_Bool [line 165];
+PRUNE(!(n$41 == 0), true); [line 165];
+NULLIFY(&amp;found); [line 165];
+NULLIFY(&amp;$irvar7); [line 165];
+EXIT_SCOPE(n$41,found,$irvar7); [line 165];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node19.html"><span class='visited with_tooltip'>C_19<span class='tooltip'>node19 preds:17 succs:21 22 exn:44 Conditional method_body
+n$41=*&amp;$irvar7:_Bool [line 165];
+PRUNE((n$41 == 0), false); [line 165];
+NULLIFY(&amp;$irvar7); [line 165];
+EXIT_SCOPE(n$41,$irvar7); [line 165];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:18 succs:21 22 exn:44 Instructions
+n$42=_fun_Boolean Boolean.valueOf(boolean)(1:int) [line 166];
+*&amp;found:java.lang.Boolean*=n$42 [line 166];
+EXIT_SCOPE(n$42); [line 166];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node21.html"><span class='visited with_tooltip'>C_21<span class='tooltip'>node21 preds:20 19 succs:23 exn:3 Conditional method_body
+n$43=*&amp;this:com.stn.helpers.UserHelper* [line 169];
+n$44=*n$43.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 169];
+PRUNE(!(n$44 == null), true); [line 169];
+EXIT_SCOPE(n$43,n$44); [line 169];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node22.html"><span class='visited with_tooltip'>C_22<span class='tooltip'>node22 preds:20 19 succs:24 25 exn:3 Conditional method_body
+n$43=*&amp;this:com.stn.helpers.UserHelper* [line 169];
+n$44=*n$43.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 169];
+PRUNE((n$44 == null), false); [line 169];
+EXIT_SCOPE(n$43,n$44); [line 169];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:21 succs:24 25 exn:3 Instructions
+n$45=*&amp;this:com.stn.helpers.UserHelper* [line 170];
+n$46=*n$45.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 170];
+n$49=_fun___set_mem_attribute(n$46:java.sql.PreparedStatement*) [line 170];
+_=*n$46:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 170];
+n$48=_fun_void PreparedStatement.close()(n$46:java.sql.PreparedStatement*) interface virtual [line 170];
+EXIT_SCOPE(_,n$45,n$46,n$48,n$49); [line 170];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node24.html"><span class='visited with_tooltip'>C_24<span class='tooltip'>node24 preds:23 22 succs:26 exn:3 Conditional method_body
+n$50=*&amp;this:com.stn.helpers.UserHelper* [line 171];
+n$51=*n$50.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 171];
+PRUNE(!(n$51 == null), true); [line 171];
+EXIT_SCOPE(n$50,n$51); [line 171];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node25.html"><span class='visited with_tooltip'>C_25<span class='tooltip'>node25 preds:23 22 succs:27 28 exn:3 Conditional method_body
+n$50=*&amp;this:com.stn.helpers.UserHelper* [line 171];
+n$51=*n$50.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 171];
+PRUNE((n$51 == null), false); [line 171];
+EXIT_SCOPE(n$50,n$51); [line 171];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:24 succs:27 28 exn:3 Instructions
+n$52=*&amp;this:com.stn.helpers.UserHelper* [line 172];
+n$53=*n$52.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 172];
+n$56=_fun___set_mem_attribute(n$53:java.sql.Connection*) [line 172];
+_=*n$53:java.sql.Connection*(root java.sql.Connection) [line 172];
+n$55=_fun_void Connection.close()(n$53:java.sql.Connection*) interface virtual [line 172];
+EXIT_SCOPE(_,n$52,n$53,n$55,n$56); [line 172];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node27.html"><span class='visited with_tooltip'>C_27<span class='tooltip'>node27 preds:26 25 succs:29 exn:3 Conditional method_body
+n$57=*&amp;this:com.stn.helpers.UserHelper* [line 173];
+n$58=*n$57.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 173];
+PRUNE(!(n$58 == null), true); [line 173];
+EXIT_SCOPE(n$57,n$58); [line 173];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node28.html"><span class='visited with_tooltip'>C_28<span class='tooltip'>node28 preds:26 25 succs:41 exn:3 Conditional method_body
+n$57=*&amp;this:com.stn.helpers.UserHelper* [line 173];
+n$58=*n$57.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 173];
+PRUNE((n$58 == null), false); [line 173];
+NULLIFY(&amp;this); [line 173];
+EXIT_SCOPE(n$57,n$58,this); [line 173];
+APPLY_ABSTRACTION; [line 173];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:27 succs:41 exn:3 Instructions
+n$59=*&amp;this:com.stn.helpers.UserHelper* [line 174];
+n$60=*n$59.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 174];
+n$63=_fun___set_mem_attribute(n$60:java.sql.ResultSet*) [line 174];
+_=*n$60:java.sql.ResultSet*(root java.sql.ResultSet) [line 174];
+n$62=_fun_void ResultSet.close()(n$60:java.sql.ResultSet*) interface virtual [line 174];
+NULLIFY(&amp;this); [line 174];
+EXIT_SCOPE(_,n$59,n$60,n$62,n$63,this); [line 174];
+APPLY_ABSTRACTION; [line 174];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:43 succs:31 32 exn:3 Instructions
+n$64=*&amp;CatchVar145:java.lang.Object* [line 169];
+*&amp;$bcvar3:java.lang.Object*=n$64 [line 169];
+NULLIFY(&amp;CatchVar145); [line 169];
+EXIT_SCOPE(n$64,CatchVar145); [line 169];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node31.html"><span class='visited with_tooltip'>C_31<span class='tooltip'>node31 preds:30 succs:33 exn:3 Conditional method_body
+n$65=*&amp;this:com.stn.helpers.UserHelper* [line 169];
+n$66=*n$65.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 169];
+PRUNE(!(n$66 == null), true); [line 169];
+EXIT_SCOPE(n$65,n$66); [line 169];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:30 succs:34 35 exn:3 Conditional method_body
+n$65=*&amp;this:com.stn.helpers.UserHelper* [line 169];
+n$66=*n$65.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 169];
+PRUNE((n$66 == null), false); [line 169];
+EXIT_SCOPE(n$65,n$66); [line 169];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:31 succs:34 35 exn:3 Instructions
+n$67=*&amp;this:com.stn.helpers.UserHelper* [line 170];
+n$68=*n$67.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 170];
+n$71=_fun___set_mem_attribute(n$68:java.sql.PreparedStatement*) [line 170];
+_=*n$68:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 170];
+n$70=_fun_void PreparedStatement.close()(n$68:java.sql.PreparedStatement*) interface virtual [line 170];
+EXIT_SCOPE(_,n$67,n$68,n$70,n$71); [line 170];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node34.html"><span class='visited with_tooltip'>C_34<span class='tooltip'>node34 preds:33 32 succs:36 exn:3 Conditional method_body
+n$72=*&amp;this:com.stn.helpers.UserHelper* [line 171];
+n$73=*n$72.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 171];
+PRUNE(!(n$73 == null), true); [line 171];
+EXIT_SCOPE(n$72,n$73); [line 171];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node35.html"><span class='visited with_tooltip'>C_35<span class='tooltip'>node35 preds:33 32 succs:37 38 exn:3 Conditional method_body
+n$72=*&amp;this:com.stn.helpers.UserHelper* [line 171];
+n$73=*n$72.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 171];
+PRUNE((n$73 == null), false); [line 171];
+EXIT_SCOPE(n$72,n$73); [line 171];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:34 succs:37 38 exn:3 Instructions
+n$74=*&amp;this:com.stn.helpers.UserHelper* [line 172];
+n$75=*n$74.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 172];
+n$78=_fun___set_mem_attribute(n$75:java.sql.Connection*) [line 172];
+_=*n$75:java.sql.Connection*(root java.sql.Connection) [line 172];
+n$77=_fun_void Connection.close()(n$75:java.sql.Connection*) interface virtual [line 172];
+EXIT_SCOPE(_,n$74,n$75,n$77,n$78); [line 172];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node37.html"><span class='visited with_tooltip'>C_37<span class='tooltip'>node37 preds:36 35 succs:39 exn:3 Conditional method_body
+n$79=*&amp;this:com.stn.helpers.UserHelper* [line 173];
+n$80=*n$79.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 173];
+PRUNE(!(n$80 == null), true); [line 173];
+EXIT_SCOPE(n$79,n$80); [line 173];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node38.html"><span class='visited with_tooltip'>C_38<span class='tooltip'>node38 preds:36 35 succs:40 exn:3 Conditional method_body
+n$79=*&amp;this:com.stn.helpers.UserHelper* [line 173];
+n$80=*n$79.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 173];
+PRUNE((n$80 == null), false); [line 173];
+NULLIFY(&amp;this); [line 173];
+EXIT_SCOPE(n$79,n$80,this); [line 173];
+APPLY_ABSTRACTION; [line 173];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:37 succs:40 exn:3 Instructions
+n$81=*&amp;this:com.stn.helpers.UserHelper* [line 174];
+n$82=*n$81.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 174];
+n$85=_fun___set_mem_attribute(n$82:java.sql.ResultSet*) [line 174];
+_=*n$82:java.sql.ResultSet*(root java.sql.ResultSet) [line 174];
+n$84=_fun_void ResultSet.close()(n$82:java.sql.ResultSet*) interface virtual [line 174];
+NULLIFY(&amp;this); [line 174];
+EXIT_SCOPE(_,n$81,n$82,n$84,n$85,this); [line 174];
+APPLY_ABSTRACTION; [line 174];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:39 38 succs:2 exn:3 Instructions
+n$86=*&amp;$bcvar3:java.lang.Object* [line 175];
+*&amp;return:_Bool=EXN n$86 [line 175];
+NULLIFY(&amp;$bcvar3); [line 175];
+EXIT_SCOPE(n$86,$bcvar3); [line 175];
+APPLY_ABSTRACTION; [line 175];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:29 28 succs:42 exn:3 Instructions
+n$87=*&amp;found:java.lang.Boolean* [line 176];
+_=*n$87:java.lang.Boolean*(root java.lang.Boolean) [line 176];
+n$89=_fun_boolean Boolean.booleanValue()(n$87:java.lang.Boolean*) virtual [line 176];
+*&amp;$irvar8:_Bool=n$89 [line 176];
+NULLIFY(&amp;found); [line 176];
+EXIT_SCOPE(_,n$87,n$89,found); [line 176];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:41 succs:2 exn:3 Instructions
+n$90=*&amp;$irvar8:_Bool [line 176];
+*&amp;return:_Bool=n$90 [line 176];
+NULLIFY(&amp;$irvar8); [line 176];
+EXIT_SCOPE(n$90,$irvar8); [line 176];
+APPLY_ABSTRACTION; [line 176];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:44 succs:30 exn:3 Instructions
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds: succs:43 exn:3 Instructions
+n$91=*&amp;return:_Bool [line 169];
+*&amp;return:_Bool=null [line 169];
+n$92=_fun___unwrap_exception(n$91:_Bool) [line 169];
+NULLIFY(&amp;found); [line 169];
+NULLIFY(&amp;$irvar3); [line 169];
+NULLIFY(&amp;$irvar5); [line 169];
+NULLIFY(&amp;$irvar4); [line 169];
+NULLIFY(&amp;$irvar7); [line 169];
+NULLIFY(&amp;$irvar6); [line 169];
+NULLIFY(&amp;$irvar1); [line 169];
+NULLIFY(&amp;$irvar2); [line 169];
+EXIT_SCOPE(n$91,n$92,found,$irvar3,$irvar5,$irvar4,$irvar7,$irvar6,$irvar1,$irvar2); [line 169];
+</span></span></a><br />@
+
+<span class='color_black'>_Bool boolean UserHelper.checkEmail(String)(com.stn.helpers.UserHelper* this, java.lang.String* email)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { @val$0 -> { connection -> (Footprint({ @val$0.dbUser,
+                                                   @val$0.dbPort*,
+                                                   @val$0.dbPassword,
+                                                   @val$0.dbName*,
+                                                   @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        preparedStatement -> (Footprint({ @val$1*,
+                                                          @val$0.dbUser,
+                                                          @val$0.dbPort*,
+                                                          @val$0.dbPassword,
+                                                          @val$0.dbName*,
+                                                          @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        query -> { },
+                        resultSet -> ({ Other(ResultSet PreparedStatement.executeQuery() at line 164) } + Footprint({ @val$1*,
+                                                                    @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *) },
+            return -> { } }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= boolean UserHelper.checkEmail(String)
+; translation_unit= src/main/java/com/stn/helpers/UserHelper.java
+; access= Public
+; exceptions= [java.lang.ClassNotFoundException;  java.sql.SQLException]
+; formals= [(this,com.stn.helpers.UserHelper*);  (email,java.lang.String*)]
+; is_defined= true
+; loc= src/main/java/com/stn/helpers/UserHelper.java:154
+; locals= [{ name= $irvar8; typ= void; modify_in_block= false }; 
+           { name= $bcvar3; typ= void; modify_in_block= false }; 
+           { name= CatchVar145; typ= void; modify_in_block= false }; 
+           { name= $irvar7; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= found; typ= java.lang.Boolean*; modify_in_block= false }]
+; ret_type= _Bool 
+; proc_id= com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean }</pre>
+</body>
+</html>

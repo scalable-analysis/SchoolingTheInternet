@@ -1,0 +1,754 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.OrarHelper.addNotes(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.S.d8979efe157a3c37a5192371418bf74e</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE137">void OrarHelper.addNotes(Integer,Integer,String,String,String,Integer,String,String,String,Integer,String)</a></h1></center>
+<a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:93 92 55 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$bcvar14); [line 189];
+NULLIFY(&amp;id_ora); [line 189];
+NULLIFY(&amp;$bcvar13); [line 189];
+EXIT_SCOPE($bcvar14,id_ora,$bcvar13); [line 189];
+APPLY_ABSTRACTION; [line 189];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;id_ora:int=-1 [line 139];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$0=*&amp;this:com.stn.helpers.OrarHelper* [line 140];
+*n$0.query:com.stn.helpers.OrarHelper(root com.stn.helpers.OrarHelper)="select Id from ore where `IdGrupa`=? and `Nume`=? and `Durata`=? and `TipActivitate`=? and `Semigrupa`=? and `Sala`=? and `NumeProfesor`=? and `Zi`=? and `Grupa`=? and Saptamana=?" [line 140];
+EXIT_SCOPE(n$0); [line 140];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:97 Instructions
+n$1=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 143];
+*&amp;$irvar0:java.lang.Class*=n$1 [line 143];
+NULLIFY(&amp;$irvar0); [line 143];
+EXIT_SCOPE(n$1,$irvar0); [line 143];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:97 Instructions
+n$2=*&amp;this:com.stn.helpers.OrarHelper* [line 144];
+_=*n$2:com.stn.helpers.OrarHelper*(root com.stn.helpers.OrarHelper) [line 144];
+n$4=_fun_String DBConnection.getHost()(n$2:com.stn.helpers.OrarHelper*) virtual [line 144];
+*&amp;$irvar1:java.lang.String*=n$4 [line 144];
+EXIT_SCOPE(_,n$2,n$4); [line 144];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:97 Instructions
+n$5=*&amp;this:com.stn.helpers.OrarHelper* [line 144];
+_=*n$5:com.stn.helpers.OrarHelper*(root com.stn.helpers.OrarHelper) [line 144];
+n$7=_fun_String DBConnection.getUser()(n$5:com.stn.helpers.OrarHelper*) virtual [line 144];
+*&amp;$irvar2:java.lang.String*=n$7 [line 144];
+EXIT_SCOPE(_,n$5,n$7); [line 144];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:97 Instructions
+n$8=*&amp;this:com.stn.helpers.OrarHelper* [line 144];
+_=*n$8:com.stn.helpers.OrarHelper*(root com.stn.helpers.OrarHelper) [line 144];
+n$10=_fun_String DBConnection.getPassword()(n$8:com.stn.helpers.OrarHelper*) virtual [line 144];
+*&amp;$irvar3:java.lang.String*=n$10 [line 144];
+EXIT_SCOPE(_,n$8,n$10); [line 144];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:97 Instructions
+n$11=*&amp;$irvar1:java.lang.String* [line 144];
+n$12=*&amp;$irvar2:java.lang.String* [line 144];
+n$13=*&amp;$irvar3:java.lang.String* [line 144];
+n$14=_fun_Connection DriverManager.getConnection(String,String,String)(n$11:java.lang.String*,n$12:java.lang.String*,n$13:java.lang.String*) [line 144];
+*&amp;$irvar4:java.sql.Connection*=n$14 [line 144];
+NULLIFY(&amp;$irvar3); [line 144];
+NULLIFY(&amp;$irvar1); [line 144];
+NULLIFY(&amp;$irvar2); [line 144];
+EXIT_SCOPE(n$11,n$12,n$13,n$14,$irvar3,$irvar1,$irvar2); [line 144];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:97 Instructions
+n$15=*&amp;this:com.stn.helpers.OrarHelper* [line 144];
+n$16=*&amp;$irvar4:java.sql.Connection* [line 144];
+*n$15.connection:com.stn.helpers.OrarHelper(root com.stn.helpers.OrarHelper)=n$16 [line 144];
+NULLIFY(&amp;$irvar4); [line 144];
+EXIT_SCOPE(n$15,n$16,$irvar4); [line 144];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:97 Instructions
+n$17=*&amp;this:com.stn.helpers.OrarHelper* [line 145];
+n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 145];
+_=*n$18:java.sql.Connection*(root java.sql.Connection) [line 145];
+n$20=*&amp;this:com.stn.helpers.OrarHelper* [line 145];
+n$21=*n$20.query:java.lang.String*(root com.stn.helpers.OrarHelper) [line 145];
+n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 145];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 145];
+EXIT_SCOPE(_,n$17,n$18,n$20,n$21,n$22); [line 145];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:97 Instructions
+n$23=*&amp;this:com.stn.helpers.OrarHelper* [line 145];
+n$24=*&amp;$irvar5:java.sql.PreparedStatement* [line 145];
+*n$23.preparedStatement:com.stn.helpers.OrarHelper(root com.stn.helpers.OrarHelper)=n$24 [line 145];
+NULLIFY(&amp;$irvar5); [line 145];
+EXIT_SCOPE(n$23,n$24,$irvar5); [line 145];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:97 Instructions
+n$25=*&amp;this:com.stn.helpers.OrarHelper* [line 146];
+n$26=*n$25.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 146];
+*&amp;$irvar7:java.sql.PreparedStatement*=n$26 [line 146];
+EXIT_SCOPE(n$25,n$26); [line 146];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:97 Instructions
+n$27=*&amp;id_grupa:java.lang.Integer* [line 146];
+_=*n$27:java.lang.Integer*(root java.lang.Integer) [line 146];
+n$29=_fun_int Integer.intValue()(n$27:java.lang.Integer*) virtual [line 146];
+*&amp;$irvar6:int=n$29 [line 146];
+NULLIFY(&amp;id_grupa); [line 146];
+EXIT_SCOPE(_,n$27,n$29,id_grupa); [line 146];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:97 Instructions
+n$30=*&amp;$irvar7:java.sql.PreparedStatement* [line 146];
+_=*n$30:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 146];
+n$32=*&amp;$irvar6:int [line 146];
+n$33=_fun_void PreparedStatement.setInt(int,int)(n$30:java.sql.PreparedStatement*,1:int,n$32:int) interface virtual [line 146];
+NULLIFY(&amp;$irvar7); [line 146];
+NULLIFY(&amp;$irvar6); [line 146];
+EXIT_SCOPE(_,n$30,n$32,n$33,$irvar7,$irvar6); [line 146];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:97 Instructions
+n$34=*&amp;this:com.stn.helpers.OrarHelper* [line 147];
+n$35=*n$34.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 147];
+_=*n$35:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 147];
+n$37=*&amp;nume:java.lang.String* [line 147];
+n$38=_fun_void PreparedStatement.setString(int,String)(n$35:java.sql.PreparedStatement*,2:int,n$37:java.lang.String*) interface virtual [line 147];
+NULLIFY(&amp;nume); [line 147];
+EXIT_SCOPE(_,n$34,n$35,n$37,n$38,nume); [line 147];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:97 Instructions
+n$39=*&amp;this:com.stn.helpers.OrarHelper* [line 148];
+n$40=*n$39.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 148];
+_=*n$40:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 148];
+n$42=*&amp;durata:java.lang.String* [line 148];
+n$43=_fun_void PreparedStatement.setString(int,String)(n$40:java.sql.PreparedStatement*,3:int,n$42:java.lang.String*) interface virtual [line 148];
+NULLIFY(&amp;durata); [line 148];
+EXIT_SCOPE(_,n$39,n$40,n$42,n$43,durata); [line 148];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:97 Instructions
+n$44=*&amp;this:com.stn.helpers.OrarHelper* [line 149];
+n$45=*n$44.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 149];
+_=*n$45:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 149];
+n$47=*&amp;tip_act:java.lang.String* [line 149];
+n$48=_fun_void PreparedStatement.setString(int,String)(n$45:java.sql.PreparedStatement*,4:int,n$47:java.lang.String*) interface virtual [line 149];
+NULLIFY(&amp;tip_act); [line 149];
+EXIT_SCOPE(_,n$44,n$45,n$47,n$48,tip_act); [line 149];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:97 Instructions
+n$49=*&amp;this:com.stn.helpers.OrarHelper* [line 150];
+n$50=*n$49.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 150];
+*&amp;$irvar9:java.sql.PreparedStatement*=n$50 [line 150];
+EXIT_SCOPE(n$49,n$50); [line 150];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:97 Instructions
+n$51=*&amp;sem:java.lang.Integer* [line 150];
+_=*n$51:java.lang.Integer*(root java.lang.Integer) [line 150];
+n$53=_fun_int Integer.intValue()(n$51:java.lang.Integer*) virtual [line 150];
+*&amp;$irvar8:int=n$53 [line 150];
+NULLIFY(&amp;sem); [line 150];
+EXIT_SCOPE(_,n$51,n$53,sem); [line 150];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:97 Instructions
+n$54=*&amp;$irvar9:java.sql.PreparedStatement* [line 150];
+_=*n$54:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 150];
+n$56=*&amp;$irvar8:int [line 150];
+n$57=_fun_void PreparedStatement.setInt(int,int)(n$54:java.sql.PreparedStatement*,5:int,n$56:int) interface virtual [line 150];
+NULLIFY(&amp;$irvar9); [line 150];
+NULLIFY(&amp;$irvar8); [line 150];
+EXIT_SCOPE(_,n$54,n$56,n$57,$irvar9,$irvar8); [line 150];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:97 Instructions
+n$58=*&amp;this:com.stn.helpers.OrarHelper* [line 151];
+n$59=*n$58.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 151];
+_=*n$59:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 151];
+n$61=*&amp;sala:java.lang.String* [line 151];
+n$62=_fun_void PreparedStatement.setString(int,String)(n$59:java.sql.PreparedStatement*,6:int,n$61:java.lang.String*) interface virtual [line 151];
+NULLIFY(&amp;sala); [line 151];
+EXIT_SCOPE(_,n$58,n$59,n$61,n$62,sala); [line 151];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:97 Instructions
+n$63=*&amp;this:com.stn.helpers.OrarHelper* [line 152];
+n$64=*n$63.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 152];
+_=*n$64:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 152];
+n$66=*&amp;numep:java.lang.String* [line 152];
+n$67=_fun_void PreparedStatement.setString(int,String)(n$64:java.sql.PreparedStatement*,7:int,n$66:java.lang.String*) interface virtual [line 152];
+NULLIFY(&amp;numep); [line 152];
+EXIT_SCOPE(_,n$63,n$64,n$66,n$67,numep); [line 152];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:97 Instructions
+n$68=*&amp;this:com.stn.helpers.OrarHelper* [line 153];
+n$69=*n$68.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 153];
+_=*n$69:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 153];
+n$71=*&amp;zi:java.lang.String* [line 153];
+n$72=_fun_void PreparedStatement.setString(int,String)(n$69:java.sql.PreparedStatement*,8:int,n$71:java.lang.String*) interface virtual [line 153];
+NULLIFY(&amp;zi); [line 153];
+EXIT_SCOPE(_,n$68,n$69,n$71,n$72,zi); [line 153];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:97 Instructions
+n$73=*&amp;this:com.stn.helpers.OrarHelper* [line 154];
+n$74=*n$73.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 154];
+*&amp;$irvar11:java.sql.PreparedStatement*=n$74 [line 154];
+EXIT_SCOPE(n$73,n$74); [line 154];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:97 Instructions
+n$75=*&amp;gr:java.lang.Integer* [line 154];
+_=*n$75:java.lang.Integer*(root java.lang.Integer) [line 154];
+n$77=_fun_int Integer.intValue()(n$75:java.lang.Integer*) virtual [line 154];
+*&amp;$irvar10:int=n$77 [line 154];
+NULLIFY(&amp;gr); [line 154];
+EXIT_SCOPE(_,n$75,n$77,gr); [line 154];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:97 Instructions
+n$78=*&amp;$irvar11:java.sql.PreparedStatement* [line 154];
+_=*n$78:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 154];
+n$80=*&amp;$irvar10:int [line 154];
+n$81=_fun_void PreparedStatement.setInt(int,int)(n$78:java.sql.PreparedStatement*,9:int,n$80:int) interface virtual [line 154];
+NULLIFY(&amp;$irvar11); [line 154];
+NULLIFY(&amp;$irvar10); [line 154];
+EXIT_SCOPE(_,n$78,n$80,n$81,$irvar11,$irvar10); [line 154];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:30 exn:97 Instructions
+n$82=*&amp;this:com.stn.helpers.OrarHelper* [line 155];
+n$83=*n$82.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 155];
+_=*n$83:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 155];
+n$85=*&amp;sapt:java.lang.String* [line 155];
+n$86=_fun_void PreparedStatement.setString(int,String)(n$83:java.sql.PreparedStatement*,10:int,n$85:java.lang.String*) interface virtual [line 155];
+NULLIFY(&amp;sapt); [line 155];
+EXIT_SCOPE(_,n$82,n$83,n$85,n$86,sapt); [line 155];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 succs:31 exn:97 Instructions
+n$87=*&amp;this:com.stn.helpers.OrarHelper* [line 156];
+n$88=*n$87.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 156];
+_=*n$88:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 156];
+n$90=_fun_ResultSet PreparedStatement.executeQuery()(n$88:java.sql.PreparedStatement*) interface virtual [line 156];
+*&amp;$irvar12:java.sql.ResultSet*=n$90 [line 156];
+EXIT_SCOPE(_,n$87,n$88,n$90); [line 156];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:30 succs:32 exn:97 Instructions
+n$91=*&amp;this:com.stn.helpers.OrarHelper* [line 156];
+n$92=*&amp;$irvar12:java.sql.ResultSet* [line 156];
+*n$91.resultSet:com.stn.helpers.OrarHelper(root com.stn.helpers.OrarHelper)=n$92 [line 156];
+NULLIFY(&amp;$irvar12); [line 156];
+EXIT_SCOPE(n$91,n$92,$irvar12); [line 156];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:31 succs:33 34 exn:97 Instructions
+n$93=*&amp;this:com.stn.helpers.OrarHelper* [line 157];
+n$94=*n$93.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 157];
+_=*n$94:java.sql.ResultSet*(root java.sql.ResultSet) [line 157];
+n$96=_fun_boolean ResultSet.next()(n$94:java.sql.ResultSet*) interface virtual [line 157];
+*&amp;$irvar13:_Bool=n$96 [line 157];
+EXIT_SCOPE(_,n$93,n$94,n$96); [line 157];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node33.html"><span class='visited with_tooltip'>C_33<span class='tooltip'>node33 preds:32 succs:35 exn:97 Conditional method_body
+n$97=*&amp;$irvar13:_Bool [line 157];
+PRUNE(!(n$97 == 0), true); [line 157];
+NULLIFY(&amp;id_ora); [line 157];
+NULLIFY(&amp;$irvar13); [line 157];
+EXIT_SCOPE(n$97,id_ora,$irvar13); [line 157];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node34.html"><span class='visited with_tooltip'>C_34<span class='tooltip'>node34 preds:32 succs:36 37 exn:97 Conditional method_body
+n$97=*&amp;$irvar13:_Bool [line 157];
+PRUNE((n$97 == 0), false); [line 157];
+NULLIFY(&amp;$irvar13); [line 157];
+EXIT_SCOPE(n$97,$irvar13); [line 157];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:33 succs:36 37 exn:97 Instructions
+n$98=*&amp;this:com.stn.helpers.OrarHelper* [line 158];
+n$99=*n$98.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 158];
+_=*n$99:java.sql.ResultSet*(root java.sql.ResultSet) [line 158];
+n$101=_fun_int ResultSet.getInt(int)(n$99:java.sql.ResultSet*,1:int) interface virtual [line 158];
+*&amp;id_ora:int=n$101 [line 158];
+EXIT_SCOPE(_,n$98,n$99,n$101); [line 158];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node36.html"><span class='visited with_tooltip'>C_36<span class='tooltip'>node36 preds:35 34 succs:38 exn:3 Conditional method_body
+n$102=*&amp;this:com.stn.helpers.OrarHelper* [line 161];
+n$103=*n$102.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 161];
+PRUNE(!(n$103 == null), true); [line 161];
+EXIT_SCOPE(n$102,n$103); [line 161];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node37.html"><span class='visited with_tooltip'>C_37<span class='tooltip'>node37 preds:35 34 succs:39 40 exn:3 Conditional method_body
+n$102=*&amp;this:com.stn.helpers.OrarHelper* [line 161];
+n$103=*n$102.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 161];
+PRUNE((n$103 == null), false); [line 161];
+EXIT_SCOPE(n$102,n$103); [line 161];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:36 succs:39 40 exn:3 Instructions
+n$104=*&amp;this:com.stn.helpers.OrarHelper* [line 162];
+n$105=*n$104.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 162];
+n$108=_fun___set_mem_attribute(n$105:java.sql.PreparedStatement*) [line 162];
+_=*n$105:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 162];
+n$107=_fun_void PreparedStatement.close()(n$105:java.sql.PreparedStatement*) interface virtual [line 162];
+EXIT_SCOPE(_,n$104,n$105,n$107,n$108); [line 162];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node39.html"><span class='visited with_tooltip'>C_39<span class='tooltip'>node39 preds:38 37 succs:41 exn:3 Conditional method_body
+n$109=*&amp;this:com.stn.helpers.OrarHelper* [line 163];
+n$110=*n$109.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 163];
+PRUNE(!(n$110 == null), true); [line 163];
+EXIT_SCOPE(n$109,n$110); [line 163];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node40.html"><span class='visited with_tooltip'>C_40<span class='tooltip'>node40 preds:38 37 succs:42 43 exn:3 Conditional method_body
+n$109=*&amp;this:com.stn.helpers.OrarHelper* [line 163];
+n$110=*n$109.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 163];
+PRUNE((n$110 == null), false); [line 163];
+EXIT_SCOPE(n$109,n$110); [line 163];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:39 succs:42 43 exn:3 Instructions
+n$111=*&amp;this:com.stn.helpers.OrarHelper* [line 164];
+n$112=*n$111.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 164];
+n$115=_fun___set_mem_attribute(n$112:java.sql.Connection*) [line 164];
+_=*n$112:java.sql.Connection*(root java.sql.Connection) [line 164];
+n$114=_fun_void Connection.close()(n$112:java.sql.Connection*) interface virtual [line 164];
+EXIT_SCOPE(_,n$111,n$112,n$114,n$115); [line 164];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node42.html"><span class='visited with_tooltip'>C_42<span class='tooltip'>node42 preds:41 40 succs:44 exn:3 Conditional method_body
+n$116=*&amp;this:com.stn.helpers.OrarHelper* [line 165];
+n$117=*n$116.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 165];
+PRUNE(!(n$117 == null), true); [line 165];
+EXIT_SCOPE(n$116,n$117); [line 165];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node43.html"><span class='visited with_tooltip'>C_43<span class='tooltip'>node43 preds:41 40 succs:56 exn:3 Conditional method_body
+n$116=*&amp;this:com.stn.helpers.OrarHelper* [line 165];
+n$117=*n$116.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 165];
+PRUNE((n$117 == null), false); [line 165];
+EXIT_SCOPE(n$116,n$117); [line 165];
+APPLY_ABSTRACTION; [line 165];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds:42 succs:56 exn:3 Instructions
+n$118=*&amp;this:com.stn.helpers.OrarHelper* [line 166];
+n$119=*n$118.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 166];
+n$122=_fun___set_mem_attribute(n$119:java.sql.ResultSet*) [line 166];
+_=*n$119:java.sql.ResultSet*(root java.sql.ResultSet) [line 166];
+n$121=_fun_void ResultSet.close()(n$119:java.sql.ResultSet*) interface virtual [line 166];
+EXIT_SCOPE(_,n$118,n$119,n$121,n$122); [line 166];
+APPLY_ABSTRACTION; [line 166];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node45.html"><span class='visited with_tooltip'>I_45<span class='tooltip'>node45 preds:98 96 succs:46 47 exn:99 Instructions
+n$123=*&amp;CatchVar271:java.lang.Object* [line 161];
+*&amp;$bcvar13:java.lang.Object*=n$123 [line 161];
+EXIT_SCOPE(n$123); [line 161];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node46.html"><span class='visited with_tooltip'>C_46<span class='tooltip'>node46 preds:45 succs:48 exn:3 Conditional method_body
+n$124=*&amp;this:com.stn.helpers.OrarHelper* [line 161];
+n$125=*n$124.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 161];
+PRUNE(!(n$125 == null), true); [line 161];
+EXIT_SCOPE(n$124,n$125); [line 161];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node47.html"><span class='visited with_tooltip'>C_47<span class='tooltip'>node47 preds:45 succs:49 50 exn:3 Conditional method_body
+n$124=*&amp;this:com.stn.helpers.OrarHelper* [line 161];
+n$125=*n$124.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 161];
+PRUNE((n$125 == null), false); [line 161];
+EXIT_SCOPE(n$124,n$125); [line 161];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node48.html"><span class='visited with_tooltip'>I_48<span class='tooltip'>node48 preds:46 succs:49 50 exn:3 Instructions
+n$126=*&amp;this:com.stn.helpers.OrarHelper* [line 162];
+n$127=*n$126.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 162];
+n$130=_fun___set_mem_attribute(n$127:java.sql.PreparedStatement*) [line 162];
+_=*n$127:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 162];
+n$129=_fun_void PreparedStatement.close()(n$127:java.sql.PreparedStatement*) interface virtual [line 162];
+EXIT_SCOPE(_,n$126,n$127,n$129,n$130); [line 162];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node49.html"><span class='visited with_tooltip'>C_49<span class='tooltip'>node49 preds:48 47 succs:51 exn:3 Conditional method_body
+n$131=*&amp;this:com.stn.helpers.OrarHelper* [line 163];
+n$132=*n$131.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 163];
+PRUNE(!(n$132 == null), true); [line 163];
+EXIT_SCOPE(n$131,n$132); [line 163];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node50.html"><span class='visited with_tooltip'>C_50<span class='tooltip'>node50 preds:48 47 succs:52 53 exn:3 Conditional method_body
+n$131=*&amp;this:com.stn.helpers.OrarHelper* [line 163];
+n$132=*n$131.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 163];
+PRUNE((n$132 == null), false); [line 163];
+EXIT_SCOPE(n$131,n$132); [line 163];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node51.html"><span class='visited with_tooltip'>I_51<span class='tooltip'>node51 preds:49 succs:52 53 exn:3 Instructions
+n$133=*&amp;this:com.stn.helpers.OrarHelper* [line 164];
+n$134=*n$133.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 164];
+n$137=_fun___set_mem_attribute(n$134:java.sql.Connection*) [line 164];
+_=*n$134:java.sql.Connection*(root java.sql.Connection) [line 164];
+n$136=_fun_void Connection.close()(n$134:java.sql.Connection*) interface virtual [line 164];
+EXIT_SCOPE(_,n$133,n$134,n$136,n$137); [line 164];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node52.html"><span class='visited with_tooltip'>C_52<span class='tooltip'>node52 preds:51 50 succs:54 exn:3 Conditional method_body
+n$138=*&amp;this:com.stn.helpers.OrarHelper* [line 165];
+n$139=*n$138.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 165];
+PRUNE(!(n$139 == null), true); [line 165];
+EXIT_SCOPE(n$138,n$139); [line 165];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node53.html"><span class='visited with_tooltip'>C_53<span class='tooltip'>node53 preds:51 50 succs:55 exn:3 Conditional method_body
+n$138=*&amp;this:com.stn.helpers.OrarHelper* [line 165];
+n$139=*n$138.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 165];
+PRUNE((n$139 == null), false); [line 165];
+NULLIFY(&amp;this); [line 165];
+EXIT_SCOPE(n$138,n$139,this); [line 165];
+APPLY_ABSTRACTION; [line 165];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node54.html"><span class='visited with_tooltip'>I_54<span class='tooltip'>node54 preds:52 succs:55 exn:3 Instructions
+n$140=*&amp;this:com.stn.helpers.OrarHelper* [line 166];
+n$141=*n$140.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 166];
+n$144=_fun___set_mem_attribute(n$141:java.sql.ResultSet*) [line 166];
+_=*n$141:java.sql.ResultSet*(root java.sql.ResultSet) [line 166];
+n$143=_fun_void ResultSet.close()(n$141:java.sql.ResultSet*) interface virtual [line 166];
+NULLIFY(&amp;this); [line 166];
+EXIT_SCOPE(_,n$140,n$141,n$143,n$144,this); [line 166];
+APPLY_ABSTRACTION; [line 166];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node55.html"><span class='visited with_tooltip'>I_55<span class='tooltip'>node55 preds:54 53 succs:2 exn:3 Instructions
+n$145=*&amp;$bcvar13:java.lang.Object* [line 167];
+*&amp;return:void=EXN n$145 [line 167];
+NULLIFY(&amp;$bcvar13); [line 167];
+EXIT_SCOPE(n$145,$bcvar13); [line 167];
+APPLY_ABSTRACTION; [line 167];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node56.html"><span class='visited with_tooltip'>I_56<span class='tooltip'>node56 preds:44 43 succs:57 exn:3 Instructions
+n$146=*&amp;this:com.stn.helpers.OrarHelper* [line 169];
+*n$146.query:com.stn.helpers.OrarHelper(root com.stn.helpers.OrarHelper)="insert into notes(IdOra,IdStudent,Teme,Examen,Nota) values (?,?,?,?,?)" [line 169];
+EXIT_SCOPE(n$146); [line 169];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node57.html"><span class='visited with_tooltip'>I_57<span class='tooltip'>node57 preds:56 succs:58 exn:95 Instructions
+n$147=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 172];
+*&amp;$irvar14:java.lang.Class*=n$147 [line 172];
+NULLIFY(&amp;$irvar14); [line 172];
+EXIT_SCOPE(n$147,$irvar14); [line 172];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node58.html"><span class='visited with_tooltip'>I_58<span class='tooltip'>node58 preds:57 succs:59 exn:95 Instructions
+n$148=*&amp;this:com.stn.helpers.OrarHelper* [line 173];
+_=*n$148:com.stn.helpers.OrarHelper*(root com.stn.helpers.OrarHelper) [line 173];
+n$150=_fun_String DBConnection.getHost()(n$148:com.stn.helpers.OrarHelper*) virtual [line 173];
+*&amp;$irvar15:java.lang.String*=n$150 [line 173];
+EXIT_SCOPE(_,n$148,n$150); [line 173];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node59.html"><span class='visited with_tooltip'>I_59<span class='tooltip'>node59 preds:58 succs:60 exn:95 Instructions
+n$151=*&amp;this:com.stn.helpers.OrarHelper* [line 173];
+_=*n$151:com.stn.helpers.OrarHelper*(root com.stn.helpers.OrarHelper) [line 173];
+n$153=_fun_String DBConnection.getUser()(n$151:com.stn.helpers.OrarHelper*) virtual [line 173];
+*&amp;$irvar16:java.lang.String*=n$153 [line 173];
+EXIT_SCOPE(_,n$151,n$153); [line 173];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node60.html"><span class='visited with_tooltip'>I_60<span class='tooltip'>node60 preds:59 succs:61 exn:95 Instructions
+n$154=*&amp;this:com.stn.helpers.OrarHelper* [line 173];
+_=*n$154:com.stn.helpers.OrarHelper*(root com.stn.helpers.OrarHelper) [line 173];
+n$156=_fun_String DBConnection.getPassword()(n$154:com.stn.helpers.OrarHelper*) virtual [line 173];
+*&amp;$irvar17:java.lang.String*=n$156 [line 173];
+EXIT_SCOPE(_,n$154,n$156); [line 173];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node61.html"><span class='visited with_tooltip'>I_61<span class='tooltip'>node61 preds:60 succs:62 exn:95 Instructions
+n$157=*&amp;$irvar15:java.lang.String* [line 173];
+n$158=*&amp;$irvar16:java.lang.String* [line 173];
+n$159=*&amp;$irvar17:java.lang.String* [line 173];
+n$160=_fun_Connection DriverManager.getConnection(String,String,String)(n$157:java.lang.String*,n$158:java.lang.String*,n$159:java.lang.String*) [line 173];
+*&amp;$irvar18:java.sql.Connection*=n$160 [line 173];
+NULLIFY(&amp;$irvar17); [line 173];
+NULLIFY(&amp;$irvar16); [line 173];
+NULLIFY(&amp;$irvar15); [line 173];
+EXIT_SCOPE(n$157,n$158,n$159,n$160,$irvar17,$irvar16,$irvar15); [line 173];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node62.html"><span class='visited with_tooltip'>I_62<span class='tooltip'>node62 preds:61 succs:63 exn:95 Instructions
+n$161=*&amp;this:com.stn.helpers.OrarHelper* [line 173];
+n$162=*&amp;$irvar18:java.sql.Connection* [line 173];
+*n$161.connection:com.stn.helpers.OrarHelper(root com.stn.helpers.OrarHelper)=n$162 [line 173];
+NULLIFY(&amp;$irvar18); [line 173];
+EXIT_SCOPE(n$161,n$162,$irvar18); [line 173];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node63.html"><span class='visited with_tooltip'>I_63<span class='tooltip'>node63 preds:62 succs:64 exn:95 Instructions
+n$163=*&amp;this:com.stn.helpers.OrarHelper* [line 174];
+n$164=*n$163.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 174];
+_=*n$164:java.sql.Connection*(root java.sql.Connection) [line 174];
+n$166=*&amp;this:com.stn.helpers.OrarHelper* [line 174];
+n$167=*n$166.query:java.lang.String*(root com.stn.helpers.OrarHelper) [line 174];
+n$168=_fun_PreparedStatement Connection.prepareStatement(String)(n$164:java.sql.Connection*,n$167:java.lang.String*) interface virtual [line 174];
+*&amp;$irvar19:java.sql.PreparedStatement*=n$168 [line 174];
+EXIT_SCOPE(_,n$163,n$164,n$166,n$167,n$168); [line 174];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node64.html"><span class='visited with_tooltip'>I_64<span class='tooltip'>node64 preds:63 succs:65 exn:95 Instructions
+n$169=*&amp;this:com.stn.helpers.OrarHelper* [line 174];
+n$170=*&amp;$irvar19:java.sql.PreparedStatement* [line 174];
+*n$169.preparedStatement:com.stn.helpers.OrarHelper(root com.stn.helpers.OrarHelper)=n$170 [line 174];
+NULLIFY(&amp;$irvar19); [line 174];
+EXIT_SCOPE(n$169,n$170,$irvar19); [line 174];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node65.html"><span class='visited with_tooltip'>I_65<span class='tooltip'>node65 preds:64 succs:66 exn:95 Instructions
+n$171=*&amp;this:com.stn.helpers.OrarHelper* [line 175];
+n$172=*n$171.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 175];
+_=*n$172:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 175];
+n$174=*&amp;id_ora:int [line 175];
+n$175=_fun_void PreparedStatement.setInt(int,int)(n$172:java.sql.PreparedStatement*,1:int,n$174:int) interface virtual [line 175];
+NULLIFY(&amp;id_ora); [line 175];
+EXIT_SCOPE(_,n$171,n$172,n$174,n$175,id_ora); [line 175];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node66.html"><span class='visited with_tooltip'>I_66<span class='tooltip'>node66 preds:65 succs:67 exn:95 Instructions
+n$176=*&amp;this:com.stn.helpers.OrarHelper* [line 176];
+n$177=*n$176.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 176];
+*&amp;$irvar21:java.sql.PreparedStatement*=n$177 [line 176];
+EXIT_SCOPE(n$176,n$177); [line 176];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node67.html"><span class='visited with_tooltip'>I_67<span class='tooltip'>node67 preds:66 succs:68 exn:95 Instructions
+n$178=*&amp;id_student:java.lang.Integer* [line 176];
+_=*n$178:java.lang.Integer*(root java.lang.Integer) [line 176];
+n$180=_fun_int Integer.intValue()(n$178:java.lang.Integer*) virtual [line 176];
+*&amp;$irvar20:int=n$180 [line 176];
+NULLIFY(&amp;id_student); [line 176];
+EXIT_SCOPE(_,n$178,n$180,id_student); [line 176];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node68.html"><span class='visited with_tooltip'>I_68<span class='tooltip'>node68 preds:67 succs:69 exn:95 Instructions
+n$181=*&amp;$irvar21:java.sql.PreparedStatement* [line 176];
+_=*n$181:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 176];
+n$183=*&amp;$irvar20:int [line 176];
+n$184=_fun_void PreparedStatement.setInt(int,int)(n$181:java.sql.PreparedStatement*,2:int,n$183:int) interface virtual [line 176];
+NULLIFY(&amp;$irvar21); [line 176];
+NULLIFY(&amp;$irvar20); [line 176];
+EXIT_SCOPE(_,n$181,n$183,n$184,$irvar21,$irvar20); [line 176];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node69.html"><span class='visited with_tooltip'>I_69<span class='tooltip'>node69 preds:68 succs:70 exn:95 Instructions
+n$185=*&amp;this:com.stn.helpers.OrarHelper* [line 177];
+n$186=*n$185.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 177];
+_=*n$186:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 177];
+n$188=_fun_void PreparedStatement.setString(int,String)(n$186:java.sql.PreparedStatement*,3:int,"":java.lang.Object*) interface virtual [line 177];
+EXIT_SCOPE(_,n$185,n$186,n$188); [line 177];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node70.html"><span class='visited with_tooltip'>I_70<span class='tooltip'>node70 preds:69 succs:71 exn:95 Instructions
+n$189=*&amp;this:com.stn.helpers.OrarHelper* [line 178];
+n$190=*n$189.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 178];
+_=*n$190:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 178];
+n$192=_fun_void PreparedStatement.setString(int,String)(n$190:java.sql.PreparedStatement*,4:int,"":java.lang.Object*) interface virtual [line 178];
+EXIT_SCOPE(_,n$189,n$190,n$192); [line 178];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node71.html"><span class='visited with_tooltip'>I_71<span class='tooltip'>node71 preds:70 succs:72 exn:95 Instructions
+n$193=*&amp;this:com.stn.helpers.OrarHelper* [line 179];
+n$194=*n$193.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 179];
+_=*n$194:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 179];
+n$196=_fun_void PreparedStatement.setInt(int,int)(n$194:java.sql.PreparedStatement*,5:int,0:int) interface virtual [line 179];
+EXIT_SCOPE(_,n$193,n$194,n$196); [line 179];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node72.html"><span class='visited with_tooltip'>I_72<span class='tooltip'>node72 preds:71 succs:73 74 exn:95 Instructions
+n$197=*&amp;this:com.stn.helpers.OrarHelper* [line 180];
+n$198=*n$197.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 180];
+_=*n$198:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 180];
+n$200=_fun_int PreparedStatement.executeUpdate()(n$198:java.sql.PreparedStatement*) interface virtual [line 180];
+*&amp;$irvar22:int=n$200 [line 180];
+NULLIFY(&amp;$irvar22); [line 180];
+EXIT_SCOPE(_,n$197,n$198,n$200,$irvar22); [line 180];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node73.html"><span class='visited with_tooltip'>C_73<span class='tooltip'>node73 preds:72 succs:75 exn:3 Conditional method_body
+n$201=*&amp;this:com.stn.helpers.OrarHelper* [line 182];
+n$202=*n$201.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 182];
+PRUNE(!(n$202 == null), true); [line 182];
+EXIT_SCOPE(n$201,n$202); [line 182];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node74.html"><span class='visited with_tooltip'>C_74<span class='tooltip'>node74 preds:72 succs:76 77 exn:3 Conditional method_body
+n$201=*&amp;this:com.stn.helpers.OrarHelper* [line 182];
+n$202=*n$201.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 182];
+PRUNE((n$202 == null), false); [line 182];
+EXIT_SCOPE(n$201,n$202); [line 182];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node75.html"><span class='visited with_tooltip'>I_75<span class='tooltip'>node75 preds:73 succs:76 77 exn:3 Instructions
+n$203=*&amp;this:com.stn.helpers.OrarHelper* [line 183];
+n$204=*n$203.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 183];
+n$207=_fun___set_mem_attribute(n$204:java.sql.PreparedStatement*) [line 183];
+_=*n$204:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 183];
+n$206=_fun_void PreparedStatement.close()(n$204:java.sql.PreparedStatement*) interface virtual [line 183];
+EXIT_SCOPE(_,n$203,n$204,n$206,n$207); [line 183];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node76.html"><span class='visited with_tooltip'>C_76<span class='tooltip'>node76 preds:75 74 succs:78 exn:3 Conditional method_body
+n$208=*&amp;this:com.stn.helpers.OrarHelper* [line 184];
+n$209=*n$208.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 184];
+PRUNE(!(n$209 == null), true); [line 184];
+EXIT_SCOPE(n$208,n$209); [line 184];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node77.html"><span class='visited with_tooltip'>C_77<span class='tooltip'>node77 preds:75 74 succs:79 80 exn:3 Conditional method_body
+n$208=*&amp;this:com.stn.helpers.OrarHelper* [line 184];
+n$209=*n$208.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 184];
+PRUNE((n$209 == null), false); [line 184];
+EXIT_SCOPE(n$208,n$209); [line 184];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node78.html"><span class='visited with_tooltip'>I_78<span class='tooltip'>node78 preds:76 succs:79 80 exn:3 Instructions
+n$210=*&amp;this:com.stn.helpers.OrarHelper* [line 185];
+n$211=*n$210.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 185];
+n$214=_fun___set_mem_attribute(n$211:java.sql.Connection*) [line 185];
+_=*n$211:java.sql.Connection*(root java.sql.Connection) [line 185];
+n$213=_fun_void Connection.close()(n$211:java.sql.Connection*) interface virtual [line 185];
+EXIT_SCOPE(_,n$210,n$211,n$213,n$214); [line 185];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node79.html"><span class='visited with_tooltip'>C_79<span class='tooltip'>node79 preds:78 77 succs:81 exn:3 Conditional method_body
+n$215=*&amp;this:com.stn.helpers.OrarHelper* [line 186];
+n$216=*n$215.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 186];
+PRUNE(!(n$216 == null), true); [line 186];
+EXIT_SCOPE(n$215,n$216); [line 186];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node80.html"><span class='visited with_tooltip'>C_80<span class='tooltip'>node80 preds:78 77 succs:93 exn:3 Conditional method_body
+n$215=*&amp;this:com.stn.helpers.OrarHelper* [line 186];
+n$216=*n$215.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 186];
+PRUNE((n$216 == null), false); [line 186];
+NULLIFY(&amp;this); [line 186];
+EXIT_SCOPE(n$215,n$216,this); [line 186];
+APPLY_ABSTRACTION; [line 186];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node81.html"><span class='visited with_tooltip'>I_81<span class='tooltip'>node81 preds:79 succs:93 exn:3 Instructions
+n$217=*&amp;this:com.stn.helpers.OrarHelper* [line 187];
+n$218=*n$217.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 187];
+n$221=_fun___set_mem_attribute(n$218:java.sql.ResultSet*) [line 187];
+_=*n$218:java.sql.ResultSet*(root java.sql.ResultSet) [line 187];
+n$220=_fun_void ResultSet.close()(n$218:java.sql.ResultSet*) interface virtual [line 187];
+NULLIFY(&amp;this); [line 187];
+EXIT_SCOPE(_,n$217,n$218,n$220,n$221,this); [line 187];
+APPLY_ABSTRACTION; [line 187];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node82.html"><span class='visited with_tooltip'>I_82<span class='tooltip'>node82 preds:100 94 succs:83 84 exn:101 Instructions
+n$222=*&amp;CatchVar494:java.lang.Object* [line 182];
+*&amp;$bcvar14:java.lang.Object*=n$222 [line 182];
+EXIT_SCOPE(n$222); [line 182];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node83.html"><span class='visited with_tooltip'>C_83<span class='tooltip'>node83 preds:82 succs:85 exn:3 Conditional method_body
+n$223=*&amp;this:com.stn.helpers.OrarHelper* [line 182];
+n$224=*n$223.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 182];
+PRUNE(!(n$224 == null), true); [line 182];
+EXIT_SCOPE(n$223,n$224); [line 182];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node84.html"><span class='visited with_tooltip'>C_84<span class='tooltip'>node84 preds:82 succs:86 87 exn:3 Conditional method_body
+n$223=*&amp;this:com.stn.helpers.OrarHelper* [line 182];
+n$224=*n$223.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 182];
+PRUNE((n$224 == null), false); [line 182];
+EXIT_SCOPE(n$223,n$224); [line 182];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node85.html"><span class='visited with_tooltip'>I_85<span class='tooltip'>node85 preds:83 succs:86 87 exn:3 Instructions
+n$225=*&amp;this:com.stn.helpers.OrarHelper* [line 183];
+n$226=*n$225.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 183];
+n$229=_fun___set_mem_attribute(n$226:java.sql.PreparedStatement*) [line 183];
+_=*n$226:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 183];
+n$228=_fun_void PreparedStatement.close()(n$226:java.sql.PreparedStatement*) interface virtual [line 183];
+EXIT_SCOPE(_,n$225,n$226,n$228,n$229); [line 183];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node86.html"><span class='visited with_tooltip'>C_86<span class='tooltip'>node86 preds:85 84 succs:88 exn:3 Conditional method_body
+n$230=*&amp;this:com.stn.helpers.OrarHelper* [line 184];
+n$231=*n$230.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 184];
+PRUNE(!(n$231 == null), true); [line 184];
+EXIT_SCOPE(n$230,n$231); [line 184];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node87.html"><span class='visited with_tooltip'>C_87<span class='tooltip'>node87 preds:85 84 succs:89 90 exn:3 Conditional method_body
+n$230=*&amp;this:com.stn.helpers.OrarHelper* [line 184];
+n$231=*n$230.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 184];
+PRUNE((n$231 == null), false); [line 184];
+EXIT_SCOPE(n$230,n$231); [line 184];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node88.html"><span class='visited with_tooltip'>I_88<span class='tooltip'>node88 preds:86 succs:89 90 exn:3 Instructions
+n$232=*&amp;this:com.stn.helpers.OrarHelper* [line 185];
+n$233=*n$232.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 185];
+n$236=_fun___set_mem_attribute(n$233:java.sql.Connection*) [line 185];
+_=*n$233:java.sql.Connection*(root java.sql.Connection) [line 185];
+n$235=_fun_void Connection.close()(n$233:java.sql.Connection*) interface virtual [line 185];
+EXIT_SCOPE(_,n$232,n$233,n$235,n$236); [line 185];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node89.html"><span class='visited with_tooltip'>C_89<span class='tooltip'>node89 preds:88 87 succs:91 exn:3 Conditional method_body
+n$237=*&amp;this:com.stn.helpers.OrarHelper* [line 186];
+n$238=*n$237.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 186];
+PRUNE(!(n$238 == null), true); [line 186];
+EXIT_SCOPE(n$237,n$238); [line 186];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node90.html"><span class='visited with_tooltip'>C_90<span class='tooltip'>node90 preds:88 87 succs:92 exn:3 Conditional method_body
+n$237=*&amp;this:com.stn.helpers.OrarHelper* [line 186];
+n$238=*n$237.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 186];
+PRUNE((n$238 == null), false); [line 186];
+NULLIFY(&amp;this); [line 186];
+EXIT_SCOPE(n$237,n$238,this); [line 186];
+APPLY_ABSTRACTION; [line 186];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node91.html"><span class='visited with_tooltip'>I_91<span class='tooltip'>node91 preds:89 succs:92 exn:3 Instructions
+n$239=*&amp;this:com.stn.helpers.OrarHelper* [line 187];
+n$240=*n$239.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 187];
+n$243=_fun___set_mem_attribute(n$240:java.sql.ResultSet*) [line 187];
+_=*n$240:java.sql.ResultSet*(root java.sql.ResultSet) [line 187];
+n$242=_fun_void ResultSet.close()(n$240:java.sql.ResultSet*) interface virtual [line 187];
+NULLIFY(&amp;this); [line 187];
+EXIT_SCOPE(_,n$239,n$240,n$242,n$243,this); [line 187];
+APPLY_ABSTRACTION; [line 187];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node92.html"><span class='visited with_tooltip'>I_92<span class='tooltip'>node92 preds:91 90 succs:2 exn:3 Instructions
+n$244=*&amp;$bcvar14:java.lang.Object* [line 188];
+*&amp;return:void=EXN n$244 [line 188];
+NULLIFY(&amp;$bcvar14); [line 188];
+EXIT_SCOPE(n$244,$bcvar14); [line 188];
+APPLY_ABSTRACTION; [line 188];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node93.html"><span class='visited with_tooltip'>I_93<span class='tooltip'>node93 preds:81 80 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 189];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node94.html"><span class='visited with_tooltip'>I_94<span class='tooltip'>node94 preds:95 succs:82 exn:3 Instructions
+APPLY_ABSTRACTION; [line 182];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node95.html"><span class='visited with_tooltip'>I_95<span class='tooltip'>node95 preds: succs:94 exn:3 Instructions
+n$245=*&amp;return:void [line 182];
+*&amp;return:void=null [line 182];
+n$246=_fun___unwrap_exception(n$245:void) [line 182];
+NULLIFY(&amp;$irvar17); [line 182];
+NULLIFY(&amp;$irvar18); [line 182];
+NULLIFY(&amp;$irvar16); [line 182];
+NULLIFY(&amp;$irvar19); [line 182];
+NULLIFY(&amp;$irvar21); [line 182];
+NULLIFY(&amp;id_ora); [line 182];
+NULLIFY(&amp;$irvar20); [line 182];
+NULLIFY(&amp;$irvar15); [line 182];
+EXIT_SCOPE(n$245,n$246,$irvar17,$irvar18,$irvar16,$irvar19,$irvar21,id_ora,$irvar20,$irvar15); [line 182];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node96.html"><span class='visited with_tooltip'>I_96<span class='tooltip'>node96 preds:97 succs:45 exn:3 Instructions
+APPLY_ABSTRACTION; [line 161];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node97.html"><span class='visited with_tooltip'>I_97<span class='tooltip'>node97 preds: succs:96 exn:3 Instructions
+n$245=*&amp;return:void [line 161];
+*&amp;return:void=null [line 161];
+n$246=_fun___unwrap_exception(n$245:void) [line 161];
+NULLIFY(&amp;$irvar3); [line 161];
+NULLIFY(&amp;$irvar9); [line 161];
+NULLIFY(&amp;$irvar5); [line 161];
+NULLIFY(&amp;$irvar4); [line 161];
+NULLIFY(&amp;$irvar7); [line 161];
+NULLIFY(&amp;$irvar12); [line 161];
+NULLIFY(&amp;id_ora); [line 161];
+NULLIFY(&amp;$irvar6); [line 161];
+NULLIFY(&amp;$irvar13); [line 161];
+NULLIFY(&amp;$irvar11); [line 161];
+NULLIFY(&amp;$irvar10); [line 161];
+NULLIFY(&amp;$irvar8); [line 161];
+NULLIFY(&amp;$irvar1); [line 161];
+NULLIFY(&amp;$irvar2); [line 161];
+EXIT_SCOPE(n$245,n$246,$irvar3,$irvar9,$irvar5,$irvar4,$irvar7,$irvar12,id_ora,$irvar6,$irvar13,$irvar11,$irvar10,$irvar8,$irvar1,$irvar2); [line 161];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node98.html"><span class='visited with_tooltip'>I_98<span class='tooltip'>node98 preds:99 succs:45 exn:3 Instructions
+APPLY_ABSTRACTION; [line 161];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node99.html"><span class='visited with_tooltip'>I_99<span class='tooltip'>node99 preds: succs:98 exn:3 Instructions
+n$245=*&amp;return:void [line 161];
+*&amp;return:void=null [line 161];
+n$246=_fun___unwrap_exception(n$245:void) [line 161];
+NULLIFY(&amp;$bcvar13); [line 161];
+EXIT_SCOPE(n$245,n$246,$bcvar13); [line 161];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node100.html"><span class='visited with_tooltip'>I_100<span class='tooltip'>node100 preds:101 succs:82 exn:3 Instructions
+APPLY_ABSTRACTION; [line 182];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node101.html"><span class='visited with_tooltip'>I_101<span class='tooltip'>node101 preds: succs:100 exn:3 Instructions
+n$245=*&amp;return:void [line 182];
+*&amp;return:void=null [line 182];
+n$246=_fun___unwrap_exception(n$245:void) [line 182];
+NULLIFY(&amp;$bcvar14); [line 182];
+EXIT_SCOPE(n$245,n$246,$bcvar14); [line 182];
+</span></span></a><br />@
+
+<span class='color_black'>void void OrarHelper.addNotes(Integer,Integer,String,String,String,Integer,String,String,String,Integer,String)(com.stn.helpers.OrarHelper* this, java.lang.Integer* id_grupa, java.lang.Integer* id_student, java.lang.String* nume, java.lang.String* durata, java.lang.String* tip_act, java.lang.Integer* sem, java.lang.String* sala, java.lang.String* numep, java.lang.String* zi, java.lang.Integer* gr, java.lang.String* sapt)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { @val$0 -> { connection -> (Footprint({ @val$0.dbUser,
+                                                   @val$0.dbPort*,
+                                                   @val$0.dbPassword,
+                                                   @val$0.dbName*,
+                                                   @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        preparedStatement -> (Footprint({ @val$11*,
+                                                          @val$9*,
+                                                          @val$8*,
+                                                          @val$7*,
+                                                          @val$5*,
+                                                          @val$4*,
+                                                          @val$3*,
+                                                          @val$0.dbUser,
+                                                          @val$0.dbPort*,
+                                                          @val$0.dbPassword,
+                                                          @val$0.dbName*,
+                                                          @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        query -> { },
+                        resultSet -> ({ Other(ResultSet PreparedStatement.executeQuery() at line 156) } + Footprint({ @val$11*,
+                                                                    @val$9*,
+                                                                    @val$8*,
+                                                                    @val$7*,
+                                                                    @val$5*,
+                                                                    @val$4*,
+                                                                    @val$3*,
+                                                                    @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *) } }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= void OrarHelper.addNotes(Integer,Integer,String,String,String,Integer,String,String,String,Integer,String)
+; translation_unit= src/main/java/com/stn/helpers/OrarHelper.java
+; access= Public
+; exceptions= [java.sql.SQLException;  java.lang.ClassNotFoundException]
+; formals= [(this,com.stn.helpers.OrarHelper*);  (id_grupa,
+            java.lang.Integer*);  (id_student,java.lang.Integer*);  (nume,
+            java.lang.String*);  (durata,java.lang.String*);  (tip_act,
+            java.lang.String*);  (sem,java.lang.Integer*);  (sala,
+            java.lang.String*);  (numep,java.lang.String*);  (zi,
+            java.lang.String*);  (gr,java.lang.Integer*);  (sapt,
+            java.lang.String*)]
+; is_defined= true
+; loc= src/main/java/com/stn/helpers/OrarHelper.java:137
+; locals= [{ name= $bcvar14; typ= void; modify_in_block= false }; 
+           { name= CatchVar494; typ= void; modify_in_block= false }; 
+           { name= $irvar22; typ= void; modify_in_block= false }; 
+           { name= $irvar21; typ= void; modify_in_block= false }; 
+           { name= $irvar20; typ= void; modify_in_block= false }; 
+           { name= $irvar19; typ= void; modify_in_block= false }; 
+           { name= $irvar18; typ= void; modify_in_block= false }; 
+           { name= $irvar17; typ= void; modify_in_block= false }; 
+           { name= $irvar16; typ= void; modify_in_block= false }; 
+           { name= $irvar15; typ= void; modify_in_block= false }; 
+           { name= $irvar14; typ= void; modify_in_block= false }; 
+           { name= $bcvar13; typ= void; modify_in_block= false }; 
+           { name= CatchVar271; typ= void; modify_in_block= false }; 
+           { name= $irvar13; typ= void; modify_in_block= false }; 
+           { name= $irvar12; typ= void; modify_in_block= false }; 
+           { name= $irvar11; typ= void; modify_in_block= false }; 
+           { name= $irvar10; typ= void; modify_in_block= false }; 
+           { name= $irvar9; typ= void; modify_in_block= false }; 
+           { name= $irvar8; typ= void; modify_in_block= false }; 
+           { name= $irvar7; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= id_ora; typ= int; modify_in_block= false }]
+; ret_type= void 
+; proc_id= com.stn.helpers.OrarHelper.addNotes(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.String):void }</pre>
+</body>
+</html>

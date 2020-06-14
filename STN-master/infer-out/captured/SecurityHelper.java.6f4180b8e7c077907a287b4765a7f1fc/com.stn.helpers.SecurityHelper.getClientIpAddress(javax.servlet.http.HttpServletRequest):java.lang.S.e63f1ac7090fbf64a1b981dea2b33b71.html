@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.SecurityHelper.getClientIpAddress(javax.servlet.http.HttpServletRequest):java.lang.S.e63f1ac7090fbf64a1b981dea2b33b71</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE63">String SecurityHelper.getClientIpAddress(HttpServletRequest)</a></h1></center>
+<a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:26 23 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$bcvar3); [line 70];
+NULLIFY(&amp;ip); [line 70];
+NULLIFY(&amp;$bcvar2); [line 70];
+NULLIFY(&amp;$irvar0); [line 70];
+NULLIFY(&amp;$irvar1); [line 70];
+NULLIFY(&amp;$irvar2); [line 70];
+NULLIFY(&amp;$bcvar1); [line 70];
+NULLIFY(&amp;header); [line 70];
+EXIT_SCOPE($bcvar3,ip,$bcvar2,$irvar0,$irvar1,$irvar2,$bcvar1,header); [line 70];
+APPLY_ABSTRACTION; [line 70];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;#GB<>$com.stn.helpers.SecurityHelper.IP_HEADER_CANDIDATES:java.lang.String*[_*_](*)(root com.stn.helpers.SecurityHelper) [line 64];
+*&amp;$bcvar1:java.lang.String*[_*_](*)=n$0 [line 64];
+EXIT_SCOPE(n$0); [line 64];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$1=*&amp;$bcvar1:java.lang.String*[_*_](*) [line 64];
+_=*n$1:int(root java.lang.String*[_*_]) [line 64];
+n$3=_fun___get_array_length(n$1:java.lang.String*[_*_](*)) [line 64];
+*&amp;$bcvar2:int=n$3 [line 64];
+EXIT_SCOPE(_,n$1,n$3); [line 64];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:9 exn:3 Instructions
+*&amp;$bcvar3:int=0 [line 64];
+APPLY_ABSTRACTION; [line 64];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node7.html"><span class='visited with_tooltip'>C_7<span class='tooltip'>node7 preds:9 succs:10 exn:3 Conditional method_body
+n$4=*&amp;$bcvar3:int [line 64];
+n$5=*&amp;$bcvar2:int [line 64];
+PRUNE(!(n$4  &gt;=  n$5), true); [line 64];
+EXIT_SCOPE(n$4,n$5); [line 64];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node8.html"><span class='visited with_tooltip'>C_8<span class='tooltip'>node8 preds:9 succs:25 exn:3 Conditional method_body
+n$4=*&amp;$bcvar3:int [line 64];
+n$5=*&amp;$bcvar2:int [line 64];
+PRUNE((n$4  &gt;=  n$5), false); [line 64];
+NULLIFY(&amp;$bcvar3); [line 64];
+NULLIFY(&amp;$bcvar2); [line 64];
+NULLIFY(&amp;$bcvar1); [line 64];
+EXIT_SCOPE(n$4,n$5,$bcvar3,$bcvar2,$bcvar1); [line 64];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node9.html"><span class='visited with_tooltip'>J_9<span class='tooltip'>node9 preds:24 6 succs:7 8 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:7 succs:11 exn:3 Instructions
+n$6=*&amp;$bcvar1:java.lang.String*[_*_](*) [line 64];
+_=*n$6:java.lang.String*(root java.lang.String*[_*_]) [line 64];
+n$7=*&amp;$bcvar3:int [line 64];
+n$9=*n$6[n$7]:java.lang.String* [line 64];
+*&amp;header:java.lang.String*=n$9 [line 64];
+EXIT_SCOPE(_,n$6,n$7,n$9); [line 64];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:14 exn:3 Instructions
+n$10=*&amp;request:javax.servlet.http.HttpServletRequest* [line 65];
+_=*n$10:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 65];
+n$12=*&amp;header:java.lang.String* [line 65];
+n$13=_fun_String HttpServletRequest.getHeader(String)(n$10:javax.servlet.http.HttpServletRequest*,n$12:java.lang.String*) interface virtual [line 65];
+*&amp;ip:java.lang.String*=n$13 [line 65];
+NULLIFY(&amp;header); [line 65];
+EXIT_SCOPE(_,n$10,n$12,n$13,header); [line 65];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node12.html"><span class='visited with_tooltip'>C_12<span class='tooltip'>node12 preds:14 succs:15 exn:3 Conditional method_body
+n$14=*&amp;ip:java.lang.String* [line 66];
+PRUNE(!(n$14 == null), true); [line 66];
+EXIT_SCOPE(n$14); [line 66];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node13.html"><span class='visited with_tooltip'>C_13<span class='tooltip'>node13 preds:14 succs:24 exn:3 Conditional method_body
+n$14=*&amp;ip:java.lang.String* [line 66];
+PRUNE((n$14 == null), false); [line 66];
+NULLIFY(&amp;ip); [line 66];
+EXIT_SCOPE(n$14,ip); [line 66];
+APPLY_ABSTRACTION; [line 66];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node14.html"><span class='visited with_tooltip'>J_14<span class='tooltip'>node14 preds:11 succs:12 13 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:12 succs:18 exn:3 Instructions
+n$15=*&amp;ip:java.lang.String* [line 66];
+_=*n$15:java.lang.String*(root java.lang.String) [line 66];
+n$17=_fun_int String.length()(n$15:java.lang.String*) virtual [line 66];
+*&amp;$irvar0:int=n$17 [line 66];
+EXIT_SCOPE(_,n$15,n$17); [line 66];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node16.html"><span class='visited with_tooltip'>C_16<span class='tooltip'>node16 preds:18 succs:19 exn:3 Conditional method_body
+n$18=*&amp;$irvar0:int [line 66];
+PRUNE(!(n$18 == 0), true); [line 66];
+NULLIFY(&amp;$irvar0); [line 66];
+EXIT_SCOPE(n$18,$irvar0); [line 66];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node17.html"><span class='visited with_tooltip'>C_17<span class='tooltip'>node17 preds:18 succs:24 exn:3 Conditional method_body
+n$18=*&amp;$irvar0:int [line 66];
+PRUNE((n$18 == 0), false); [line 66];
+NULLIFY(&amp;ip); [line 66];
+NULLIFY(&amp;$irvar0); [line 66];
+EXIT_SCOPE(n$18,ip,$irvar0); [line 66];
+APPLY_ABSTRACTION; [line 66];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node18.html"><span class='visited with_tooltip'>J_18<span class='tooltip'>node18 preds:15 succs:16 17 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:16 succs:22 exn:3 Instructions
+n$19=*&amp;ip:java.lang.String* [line 66];
+n$20=_fun_boolean String.equalsIgnoreCase(String)("unknown":java.lang.Object*,n$19:java.lang.String*) virtual [line 66];
+*&amp;$irvar1:_Bool=n$20 [line 66];
+EXIT_SCOPE(n$19,n$20); [line 66];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node20.html"><span class='visited with_tooltip'>C_20<span class='tooltip'>node20 preds:22 succs:23 exn:3 Conditional method_body
+n$21=*&amp;$irvar1:_Bool [line 66];
+PRUNE(!(n$21 != 0), true); [line 66];
+NULLIFY(&amp;$bcvar3); [line 66];
+NULLIFY(&amp;$bcvar2); [line 66];
+NULLIFY(&amp;$irvar1); [line 66];
+NULLIFY(&amp;$bcvar1); [line 66];
+EXIT_SCOPE(n$21,$bcvar3,$bcvar2,$irvar1,$bcvar1); [line 66];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node21.html"><span class='visited with_tooltip'>C_21<span class='tooltip'>node21 preds:22 succs:24 exn:3 Conditional method_body
+n$21=*&amp;$irvar1:_Bool [line 66];
+PRUNE((n$21 != 0), false); [line 66];
+NULLIFY(&amp;ip); [line 66];
+NULLIFY(&amp;$irvar1); [line 66];
+EXIT_SCOPE(n$21,ip,$irvar1); [line 66];
+APPLY_ABSTRACTION; [line 66];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node22.html"><span class='visited with_tooltip'>J_22<span class='tooltip'>node22 preds:19 succs:20 21 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:20 succs:2 exn:3 Instructions
+n$22=*&amp;ip:java.lang.String* [line 67];
+*&amp;return:java.lang.String*=n$22 [line 67];
+NULLIFY(&amp;ip); [line 67];
+EXIT_SCOPE(n$22,ip); [line 67];
+APPLY_ABSTRACTION; [line 67];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:21 17 13 succs:9 exn:3 Instructions
+n$23=*&amp;$bcvar3:int [line 64];
+*&amp;$bcvar3:int=(n$23 + 1) [line 64];
+EXIT_SCOPE(n$23); [line 64];
+APPLY_ABSTRACTION; [line 64];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:8 succs:26 exn:3 Instructions
+n$24=*&amp;request:javax.servlet.http.HttpServletRequest* [line 70];
+_=*n$24:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 70];
+n$26=_fun_String HttpServletRequest.getRemoteAddr()(n$24:javax.servlet.http.HttpServletRequest*) interface virtual [line 70];
+*&amp;$irvar2:java.lang.String*=n$26 [line 70];
+NULLIFY(&amp;request); [line 70];
+EXIT_SCOPE(_,n$24,n$26,request); [line 70];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getClientIpAddress%28javax.servlet.http.HttpServletRequest%29%3Ajava.lang.S.e63f1ac7090fbf64a1b981dea2b33b71_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:2 exn:3 Instructions
+n$27=*&amp;$irvar2:java.lang.String* [line 70];
+*&amp;return:java.lang.String*=n$27 [line 70];
+NULLIFY(&amp;$irvar2); [line 70];
+EXIT_SCOPE(n$27,$irvar2); [line 70];
+APPLY_ABSTRACTION; [line 70];
+</span></span></a><br />@
+
+<span class='color_black'>java.lang.String* String SecurityHelper.getClientIpAddress(HttpServletRequest)(javax.servlet.http.HttpServletRequest* request)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { return -> (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~> ?, *) }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= String SecurityHelper.getClientIpAddress(HttpServletRequest)
+; translation_unit= src/main/java/com/stn/helpers/SecurityHelper.java
+; access= Public
+; formals= [(request,javax.servlet.http.HttpServletRequest*)]
+; is_defined= true
+; loc= src/main/java/com/stn/helpers/SecurityHelper.java:63
+; locals= [{ name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= $bcvar3; typ= void; modify_in_block= false }; 
+           { name= $bcvar2; typ= void; modify_in_block= false }; 
+           { name= $bcvar1; typ= void; modify_in_block= false }; 
+           { name= header; typ= java.lang.String*; modify_in_block= false }; 
+           { name= ip; typ= java.lang.String*; modify_in_block= false }]
+; ret_type= java.lang.String* 
+; proc_id= com.stn.helpers.SecurityHelper.getClientIpAddress(javax.servlet.http.HttpServletRequest):java.lang.String }</pre>
+</body>
+</html>

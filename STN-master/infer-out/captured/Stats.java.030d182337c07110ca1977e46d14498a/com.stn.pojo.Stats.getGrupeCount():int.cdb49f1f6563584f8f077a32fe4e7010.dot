@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Stats.getGrupeCount():int.cdb49f1f6563584f8f077a32fe4e7010_1" [label="1: Start int Stats.getGrupeCount()\nFormals:  this:com.stn.pojo.Stats*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Stats.getGrupeCount():int.cdb49f1f6563584f8f077a32fe4e7010_1" -> "com.stn.pojo.Stats.getGrupeCount():int.cdb49f1f6563584f8f077a32fe4e7010_4" ;
+"com.stn.pojo.Stats.getGrupeCount():int.cdb49f1f6563584f8f077a32fe4e7010_2" [label="2: Exit int Stats.getGrupeCount() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Stats.getGrupeCount():int.cdb49f1f6563584f8f077a32fe4e7010_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 71]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Stats.getGrupeCount():int.cdb49f1f6563584f8f077a32fe4e7010_3" -> "com.stn.pojo.Stats.getGrupeCount():int.cdb49f1f6563584f8f077a32fe4e7010_2" ;
+"com.stn.pojo.Stats.getGrupeCount():int.cdb49f1f6563584f8f077a32fe4e7010_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Stats* [line 71]\n  n$1=*n$0.grupeCount:int(root com.stn.pojo.Stats) [line 71]\n  *&return:int=n$1 [line 71]\n  NULLIFY(&this); [line 71]\n  EXIT_SCOPE(n$0,n$1,this); [line 71]\n  APPLY_ABSTRACTION; [line 71]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Stats.getGrupeCount():int.cdb49f1f6563584f8f077a32fe4e7010_4" -> "com.stn.pojo.Stats.getGrupeCount():int.cdb49f1f6563584f8f077a32fe4e7010_2" ;
+	 "com.stn.pojo.Stats.getGrupeCount():int.cdb49f1f6563584f8f077a32fe4e7010_4" -> "com.stn.pojo.Stats.getGrupeCount():int.cdb49f1f6563584f8f077a32fe4e7010_3" [color="red" ];
+}

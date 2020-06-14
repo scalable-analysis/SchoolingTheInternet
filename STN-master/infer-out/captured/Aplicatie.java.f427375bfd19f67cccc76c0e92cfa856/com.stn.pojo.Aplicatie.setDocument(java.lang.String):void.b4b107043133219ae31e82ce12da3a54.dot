@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Aplicatie.setDocument(java.lang.String):void.b4b107043133219ae31e82ce12da3a54_1" [label="1: Start void Aplicatie.setDocument(String)\nFormals:  this:com.stn.pojo.Aplicatie* document:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Aplicatie.setDocument(java.lang.String):void.b4b107043133219ae31e82ce12da3a54_1" -> "com.stn.pojo.Aplicatie.setDocument(java.lang.String):void.b4b107043133219ae31e82ce12da3a54_4" ;
+"com.stn.pojo.Aplicatie.setDocument(java.lang.String):void.b4b107043133219ae31e82ce12da3a54_2" [label="2: Exit void Aplicatie.setDocument(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Aplicatie.setDocument(java.lang.String):void.b4b107043133219ae31e82ce12da3a54_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 61]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.setDocument(java.lang.String):void.b4b107043133219ae31e82ce12da3a54_3" -> "com.stn.pojo.Aplicatie.setDocument(java.lang.String):void.b4b107043133219ae31e82ce12da3a54_2" ;
+"com.stn.pojo.Aplicatie.setDocument(java.lang.String):void.b4b107043133219ae31e82ce12da3a54_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Aplicatie* [line 60]\n  n$1=*&document:java.lang.String* [line 60]\n  *n$0.document:com.stn.pojo.Aplicatie(root com.stn.pojo.Aplicatie)=n$1 [line 60]\n  NULLIFY(&document); [line 60]\n  NULLIFY(&this); [line 60]\n  EXIT_SCOPE(n$0,n$1,document,this); [line 60]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.setDocument(java.lang.String):void.b4b107043133219ae31e82ce12da3a54_4" -> "com.stn.pojo.Aplicatie.setDocument(java.lang.String):void.b4b107043133219ae31e82ce12da3a54_5" ;
+	 "com.stn.pojo.Aplicatie.setDocument(java.lang.String):void.b4b107043133219ae31e82ce12da3a54_4" -> "com.stn.pojo.Aplicatie.setDocument(java.lang.String):void.b4b107043133219ae31e82ce12da3a54_3" [color="red" ];
+"com.stn.pojo.Aplicatie.setDocument(java.lang.String):void.b4b107043133219ae31e82ce12da3a54_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 61]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.setDocument(java.lang.String):void.b4b107043133219ae31e82ce12da3a54_5" -> "com.stn.pojo.Aplicatie.setDocument(java.lang.String):void.b4b107043133219ae31e82ce12da3a54_2" ;
+	 "com.stn.pojo.Aplicatie.setDocument(java.lang.String):void.b4b107043133219ae31e82ce12da3a54_5" -> "com.stn.pojo.Aplicatie.setDocument(java.lang.String):void.b4b107043133219ae31e82ce12da3a54_3" [color="red" ];
+}

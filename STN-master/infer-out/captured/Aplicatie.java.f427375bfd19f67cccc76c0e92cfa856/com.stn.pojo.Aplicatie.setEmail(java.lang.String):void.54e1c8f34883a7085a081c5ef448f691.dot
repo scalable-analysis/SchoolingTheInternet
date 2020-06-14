@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Aplicatie.setEmail(java.lang.String):void.54e1c8f34883a7085a081c5ef448f691_1" [label="1: Start void Aplicatie.setEmail(String)\nFormals:  this:com.stn.pojo.Aplicatie* email:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Aplicatie.setEmail(java.lang.String):void.54e1c8f34883a7085a081c5ef448f691_1" -> "com.stn.pojo.Aplicatie.setEmail(java.lang.String):void.54e1c8f34883a7085a081c5ef448f691_4" ;
+"com.stn.pojo.Aplicatie.setEmail(java.lang.String):void.54e1c8f34883a7085a081c5ef448f691_2" [label="2: Exit void Aplicatie.setEmail(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Aplicatie.setEmail(java.lang.String):void.54e1c8f34883a7085a081c5ef448f691_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 57]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.setEmail(java.lang.String):void.54e1c8f34883a7085a081c5ef448f691_3" -> "com.stn.pojo.Aplicatie.setEmail(java.lang.String):void.54e1c8f34883a7085a081c5ef448f691_2" ;
+"com.stn.pojo.Aplicatie.setEmail(java.lang.String):void.54e1c8f34883a7085a081c5ef448f691_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Aplicatie* [line 56]\n  n$1=*&email:java.lang.String* [line 56]\n  *n$0.email:com.stn.pojo.Aplicatie(root com.stn.pojo.Aplicatie)=n$1 [line 56]\n  NULLIFY(&email); [line 56]\n  NULLIFY(&this); [line 56]\n  EXIT_SCOPE(n$0,n$1,email,this); [line 56]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.setEmail(java.lang.String):void.54e1c8f34883a7085a081c5ef448f691_4" -> "com.stn.pojo.Aplicatie.setEmail(java.lang.String):void.54e1c8f34883a7085a081c5ef448f691_5" ;
+	 "com.stn.pojo.Aplicatie.setEmail(java.lang.String):void.54e1c8f34883a7085a081c5ef448f691_4" -> "com.stn.pojo.Aplicatie.setEmail(java.lang.String):void.54e1c8f34883a7085a081c5ef448f691_3" [color="red" ];
+"com.stn.pojo.Aplicatie.setEmail(java.lang.String):void.54e1c8f34883a7085a081c5ef448f691_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 57]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.setEmail(java.lang.String):void.54e1c8f34883a7085a081c5ef448f691_5" -> "com.stn.pojo.Aplicatie.setEmail(java.lang.String):void.54e1c8f34883a7085a081c5ef448f691_2" ;
+	 "com.stn.pojo.Aplicatie.setEmail(java.lang.String):void.54e1c8f34883a7085a081c5ef448f691_5" -> "com.stn.pojo.Aplicatie.setEmail(java.lang.String):void.54e1c8f34883a7085a081c5ef448f691_3" [color="red" ];
+}

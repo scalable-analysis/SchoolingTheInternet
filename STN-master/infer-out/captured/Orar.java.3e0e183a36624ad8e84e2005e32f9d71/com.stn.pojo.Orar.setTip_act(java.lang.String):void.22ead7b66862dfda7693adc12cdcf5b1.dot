@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Orar.setTip_act(java.lang.String):void.22ead7b66862dfda7693adc12cdcf5b1_1" [label="1: Start void Orar.setTip_act(String)\nFormals:  this:com.stn.pojo.Orar* tip_act:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Orar.setTip_act(java.lang.String):void.22ead7b66862dfda7693adc12cdcf5b1_1" -> "com.stn.pojo.Orar.setTip_act(java.lang.String):void.22ead7b66862dfda7693adc12cdcf5b1_4" ;
+"com.stn.pojo.Orar.setTip_act(java.lang.String):void.22ead7b66862dfda7693adc12cdcf5b1_2" [label="2: Exit void Orar.setTip_act(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Orar.setTip_act(java.lang.String):void.22ead7b66862dfda7693adc12cdcf5b1_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 78]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Orar.setTip_act(java.lang.String):void.22ead7b66862dfda7693adc12cdcf5b1_3" -> "com.stn.pojo.Orar.setTip_act(java.lang.String):void.22ead7b66862dfda7693adc12cdcf5b1_2" ;
+"com.stn.pojo.Orar.setTip_act(java.lang.String):void.22ead7b66862dfda7693adc12cdcf5b1_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Orar* [line 77]\n  n$1=*&tip_act:java.lang.String* [line 77]\n  *n$0.tip_act:com.stn.pojo.Orar(root com.stn.pojo.Orar)=n$1 [line 77]\n  NULLIFY(&tip_act); [line 77]\n  NULLIFY(&this); [line 77]\n  EXIT_SCOPE(n$0,n$1,tip_act,this); [line 77]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Orar.setTip_act(java.lang.String):void.22ead7b66862dfda7693adc12cdcf5b1_4" -> "com.stn.pojo.Orar.setTip_act(java.lang.String):void.22ead7b66862dfda7693adc12cdcf5b1_5" ;
+	 "com.stn.pojo.Orar.setTip_act(java.lang.String):void.22ead7b66862dfda7693adc12cdcf5b1_4" -> "com.stn.pojo.Orar.setTip_act(java.lang.String):void.22ead7b66862dfda7693adc12cdcf5b1_3" [color="red" ];
+"com.stn.pojo.Orar.setTip_act(java.lang.String):void.22ead7b66862dfda7693adc12cdcf5b1_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 78]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Orar.setTip_act(java.lang.String):void.22ead7b66862dfda7693adc12cdcf5b1_5" -> "com.stn.pojo.Orar.setTip_act(java.lang.String):void.22ead7b66862dfda7693adc12cdcf5b1_2" ;
+	 "com.stn.pojo.Orar.setTip_act(java.lang.String):void.22ead7b66862dfda7693adc12cdcf5b1_5" -> "com.stn.pojo.Orar.setTip_act(java.lang.String):void.22ead7b66862dfda7693adc12cdcf5b1_3" [color="red" ];
+}

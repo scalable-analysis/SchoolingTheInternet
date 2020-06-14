@@ -1,0 +1,299 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE58">void RecoverHelper.deleteToken(String)</a></h1></center>
+<a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:35 34 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$bcvar2); [line 75];
+EXIT_SCOPE($bcvar2); [line 75];
+APPLY_ABSTRACTION; [line 75];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.helpers.RecoverHelper* [line 59];
+*n$0.query:com.stn.helpers.RecoverHelper(root com.stn.helpers.RecoverHelper)="DELETE FROM password_reset WHERE Token = ?" [line 59];
+EXIT_SCOPE(n$0); [line 59];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:37 Instructions
+n$1=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 62];
+*&amp;$irvar0:java.lang.Class*=n$1 [line 62];
+NULLIFY(&amp;$irvar0); [line 62];
+EXIT_SCOPE(n$1,$irvar0); [line 62];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:37 Instructions
+n$2=*&amp;this:com.stn.helpers.RecoverHelper* [line 63];
+_=*n$2:com.stn.helpers.RecoverHelper*(root com.stn.helpers.RecoverHelper) [line 63];
+n$4=_fun_String DBConnection.getHost()(n$2:com.stn.helpers.RecoverHelper*) virtual [line 63];
+*&amp;$irvar1:java.lang.String*=n$4 [line 63];
+EXIT_SCOPE(_,n$2,n$4); [line 63];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:37 Instructions
+n$5=*&amp;this:com.stn.helpers.RecoverHelper* [line 63];
+_=*n$5:com.stn.helpers.RecoverHelper*(root com.stn.helpers.RecoverHelper) [line 63];
+n$7=_fun_String DBConnection.getUser()(n$5:com.stn.helpers.RecoverHelper*) virtual [line 63];
+*&amp;$irvar2:java.lang.String*=n$7 [line 63];
+EXIT_SCOPE(_,n$5,n$7); [line 63];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:37 Instructions
+n$8=*&amp;this:com.stn.helpers.RecoverHelper* [line 63];
+_=*n$8:com.stn.helpers.RecoverHelper*(root com.stn.helpers.RecoverHelper) [line 63];
+n$10=_fun_String DBConnection.getPassword()(n$8:com.stn.helpers.RecoverHelper*) virtual [line 63];
+*&amp;$irvar3:java.lang.String*=n$10 [line 63];
+EXIT_SCOPE(_,n$8,n$10); [line 63];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:37 Instructions
+n$11=*&amp;$irvar1:java.lang.String* [line 63];
+n$12=*&amp;$irvar2:java.lang.String* [line 63];
+n$13=*&amp;$irvar3:java.lang.String* [line 63];
+n$14=_fun_Connection DriverManager.getConnection(String,String,String)(n$11:java.lang.String*,n$12:java.lang.String*,n$13:java.lang.String*) [line 63];
+*&amp;$irvar4:java.sql.Connection*=n$14 [line 63];
+NULLIFY(&amp;$irvar3); [line 63];
+NULLIFY(&amp;$irvar1); [line 63];
+NULLIFY(&amp;$irvar2); [line 63];
+EXIT_SCOPE(n$11,n$12,n$13,n$14,$irvar3,$irvar1,$irvar2); [line 63];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:37 Instructions
+n$15=*&amp;this:com.stn.helpers.RecoverHelper* [line 63];
+n$16=*&amp;$irvar4:java.sql.Connection* [line 63];
+*n$15.connection:com.stn.helpers.RecoverHelper(root com.stn.helpers.RecoverHelper)=n$16 [line 63];
+NULLIFY(&amp;$irvar4); [line 63];
+EXIT_SCOPE(n$15,n$16,$irvar4); [line 63];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:37 Instructions
+n$17=*&amp;this:com.stn.helpers.RecoverHelper* [line 64];
+n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 64];
+_=*n$18:java.sql.Connection*(root java.sql.Connection) [line 64];
+n$20=*&amp;this:com.stn.helpers.RecoverHelper* [line 64];
+n$21=*n$20.query:java.lang.String*(root com.stn.helpers.RecoverHelper) [line 64];
+n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 64];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 64];
+EXIT_SCOPE(_,n$17,n$18,n$20,n$21,n$22); [line 64];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:37 Instructions
+n$23=*&amp;this:com.stn.helpers.RecoverHelper* [line 64];
+n$24=*&amp;$irvar5:java.sql.PreparedStatement* [line 64];
+*n$23.preparedStatement:com.stn.helpers.RecoverHelper(root com.stn.helpers.RecoverHelper)=n$24 [line 64];
+NULLIFY(&amp;$irvar5); [line 64];
+EXIT_SCOPE(n$23,n$24,$irvar5); [line 64];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:37 Instructions
+n$25=*&amp;this:com.stn.helpers.RecoverHelper* [line 65];
+n$26=*n$25.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 65];
+_=*n$26:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 65];
+n$28=*&amp;token:java.lang.String* [line 65];
+n$29=_fun_void PreparedStatement.setString(int,String)(n$26:java.sql.PreparedStatement*,1:int,n$28:java.lang.String*) interface virtual [line 65];
+NULLIFY(&amp;token); [line 65];
+EXIT_SCOPE(_,n$25,n$26,n$28,n$29,token); [line 65];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 16 exn:37 Instructions
+n$30=*&amp;this:com.stn.helpers.RecoverHelper* [line 66];
+n$31=*n$30.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 66];
+_=*n$31:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 66];
+n$33=_fun_int PreparedStatement.executeUpdate()(n$31:java.sql.PreparedStatement*) interface virtual [line 66];
+*&amp;$irvar6:int=n$33 [line 66];
+NULLIFY(&amp;$irvar6); [line 66];
+EXIT_SCOPE(_,n$30,n$31,n$33,$irvar6); [line 66];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node15.html"><span class='visited with_tooltip'>C_15<span class='tooltip'>node15 preds:14 succs:17 exn:3 Conditional method_body
+n$34=*&amp;this:com.stn.helpers.RecoverHelper* [line 68];
+n$35=*n$34.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 68];
+PRUNE(!(n$35 == null), true); [line 68];
+EXIT_SCOPE(n$34,n$35); [line 68];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node16.html"><span class='visited with_tooltip'>C_16<span class='tooltip'>node16 preds:14 succs:18 19 exn:3 Conditional method_body
+n$34=*&amp;this:com.stn.helpers.RecoverHelper* [line 68];
+n$35=*n$34.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 68];
+PRUNE((n$35 == null), false); [line 68];
+EXIT_SCOPE(n$34,n$35); [line 68];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:15 succs:18 19 exn:3 Instructions
+n$36=*&amp;this:com.stn.helpers.RecoverHelper* [line 69];
+n$37=*n$36.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 69];
+n$40=_fun___set_mem_attribute(n$37:java.sql.PreparedStatement*) [line 69];
+_=*n$37:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 69];
+n$39=_fun_void PreparedStatement.close()(n$37:java.sql.PreparedStatement*) interface virtual [line 69];
+EXIT_SCOPE(_,n$36,n$37,n$39,n$40); [line 69];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:17 16 succs:20 exn:3 Conditional method_body
+n$41=*&amp;this:com.stn.helpers.RecoverHelper* [line 70];
+n$42=*n$41.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 70];
+PRUNE(!(n$42 == null), true); [line 70];
+EXIT_SCOPE(n$41,n$42); [line 70];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node19.html"><span class='visited with_tooltip'>C_19<span class='tooltip'>node19 preds:17 16 succs:21 22 exn:3 Conditional method_body
+n$41=*&amp;this:com.stn.helpers.RecoverHelper* [line 70];
+n$42=*n$41.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 70];
+PRUNE((n$42 == null), false); [line 70];
+EXIT_SCOPE(n$41,n$42); [line 70];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:18 succs:21 22 exn:3 Instructions
+n$43=*&amp;this:com.stn.helpers.RecoverHelper* [line 71];
+n$44=*n$43.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 71];
+n$47=_fun___set_mem_attribute(n$44:java.sql.Connection*) [line 71];
+_=*n$44:java.sql.Connection*(root java.sql.Connection) [line 71];
+n$46=_fun_void Connection.close()(n$44:java.sql.Connection*) interface virtual [line 71];
+EXIT_SCOPE(_,n$43,n$44,n$46,n$47); [line 71];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node21.html"><span class='visited with_tooltip'>C_21<span class='tooltip'>node21 preds:20 19 succs:23 exn:3 Conditional method_body
+n$48=*&amp;this:com.stn.helpers.RecoverHelper* [line 72];
+n$49=*n$48.resultSet:java.sql.ResultSet*(root com.stn.helpers.RecoverHelper) [line 72];
+PRUNE(!(n$49 == null), true); [line 72];
+EXIT_SCOPE(n$48,n$49); [line 72];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node22.html"><span class='visited with_tooltip'>C_22<span class='tooltip'>node22 preds:20 19 succs:35 exn:3 Conditional method_body
+n$48=*&amp;this:com.stn.helpers.RecoverHelper* [line 72];
+n$49=*n$48.resultSet:java.sql.ResultSet*(root com.stn.helpers.RecoverHelper) [line 72];
+PRUNE((n$49 == null), false); [line 72];
+NULLIFY(&amp;this); [line 72];
+EXIT_SCOPE(n$48,n$49,this); [line 72];
+APPLY_ABSTRACTION; [line 72];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:21 succs:35 exn:3 Instructions
+n$50=*&amp;this:com.stn.helpers.RecoverHelper* [line 73];
+n$51=*n$50.resultSet:java.sql.ResultSet*(root com.stn.helpers.RecoverHelper) [line 73];
+n$54=_fun___set_mem_attribute(n$51:java.sql.ResultSet*) [line 73];
+_=*n$51:java.sql.ResultSet*(root java.sql.ResultSet) [line 73];
+n$53=_fun_void ResultSet.close()(n$51:java.sql.ResultSet*) interface virtual [line 73];
+NULLIFY(&amp;this); [line 73];
+EXIT_SCOPE(_,n$50,n$51,n$53,n$54,this); [line 73];
+APPLY_ABSTRACTION; [line 73];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:36 succs:25 26 exn:3 Instructions
+n$55=*&amp;CatchVar120:java.lang.Object* [line 68];
+*&amp;$bcvar2:java.lang.Object*=n$55 [line 68];
+NULLIFY(&amp;CatchVar120); [line 68];
+EXIT_SCOPE(n$55,CatchVar120); [line 68];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node25.html"><span class='visited with_tooltip'>C_25<span class='tooltip'>node25 preds:24 succs:27 exn:3 Conditional method_body
+n$56=*&amp;this:com.stn.helpers.RecoverHelper* [line 68];
+n$57=*n$56.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 68];
+PRUNE(!(n$57 == null), true); [line 68];
+EXIT_SCOPE(n$56,n$57); [line 68];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node26.html"><span class='visited with_tooltip'>C_26<span class='tooltip'>node26 preds:24 succs:28 29 exn:3 Conditional method_body
+n$56=*&amp;this:com.stn.helpers.RecoverHelper* [line 68];
+n$57=*n$56.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 68];
+PRUNE((n$57 == null), false); [line 68];
+EXIT_SCOPE(n$56,n$57); [line 68];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:25 succs:28 29 exn:3 Instructions
+n$58=*&amp;this:com.stn.helpers.RecoverHelper* [line 69];
+n$59=*n$58.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 69];
+n$62=_fun___set_mem_attribute(n$59:java.sql.PreparedStatement*) [line 69];
+_=*n$59:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 69];
+n$61=_fun_void PreparedStatement.close()(n$59:java.sql.PreparedStatement*) interface virtual [line 69];
+EXIT_SCOPE(_,n$58,n$59,n$61,n$62); [line 69];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node28.html"><span class='visited with_tooltip'>C_28<span class='tooltip'>node28 preds:27 26 succs:30 exn:3 Conditional method_body
+n$63=*&amp;this:com.stn.helpers.RecoverHelper* [line 70];
+n$64=*n$63.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 70];
+PRUNE(!(n$64 == null), true); [line 70];
+EXIT_SCOPE(n$63,n$64); [line 70];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node29.html"><span class='visited with_tooltip'>C_29<span class='tooltip'>node29 preds:27 26 succs:31 32 exn:3 Conditional method_body
+n$63=*&amp;this:com.stn.helpers.RecoverHelper* [line 70];
+n$64=*n$63.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 70];
+PRUNE((n$64 == null), false); [line 70];
+EXIT_SCOPE(n$63,n$64); [line 70];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:28 succs:31 32 exn:3 Instructions
+n$65=*&amp;this:com.stn.helpers.RecoverHelper* [line 71];
+n$66=*n$65.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 71];
+n$69=_fun___set_mem_attribute(n$66:java.sql.Connection*) [line 71];
+_=*n$66:java.sql.Connection*(root java.sql.Connection) [line 71];
+n$68=_fun_void Connection.close()(n$66:java.sql.Connection*) interface virtual [line 71];
+EXIT_SCOPE(_,n$65,n$66,n$68,n$69); [line 71];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node31.html"><span class='visited with_tooltip'>C_31<span class='tooltip'>node31 preds:30 29 succs:33 exn:3 Conditional method_body
+n$70=*&amp;this:com.stn.helpers.RecoverHelper* [line 72];
+n$71=*n$70.resultSet:java.sql.ResultSet*(root com.stn.helpers.RecoverHelper) [line 72];
+PRUNE(!(n$71 == null), true); [line 72];
+EXIT_SCOPE(n$70,n$71); [line 72];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:30 29 succs:34 exn:3 Conditional method_body
+n$70=*&amp;this:com.stn.helpers.RecoverHelper* [line 72];
+n$71=*n$70.resultSet:java.sql.ResultSet*(root com.stn.helpers.RecoverHelper) [line 72];
+PRUNE((n$71 == null), false); [line 72];
+NULLIFY(&amp;this); [line 72];
+EXIT_SCOPE(n$70,n$71,this); [line 72];
+APPLY_ABSTRACTION; [line 72];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:31 succs:34 exn:3 Instructions
+n$72=*&amp;this:com.stn.helpers.RecoverHelper* [line 73];
+n$73=*n$72.resultSet:java.sql.ResultSet*(root com.stn.helpers.RecoverHelper) [line 73];
+n$76=_fun___set_mem_attribute(n$73:java.sql.ResultSet*) [line 73];
+_=*n$73:java.sql.ResultSet*(root java.sql.ResultSet) [line 73];
+n$75=_fun_void ResultSet.close()(n$73:java.sql.ResultSet*) interface virtual [line 73];
+NULLIFY(&amp;this); [line 73];
+EXIT_SCOPE(_,n$72,n$73,n$75,n$76,this); [line 73];
+APPLY_ABSTRACTION; [line 73];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:33 32 succs:2 exn:3 Instructions
+n$77=*&amp;$bcvar2:java.lang.Object* [line 74];
+*&amp;return:void=EXN n$77 [line 74];
+NULLIFY(&amp;$bcvar2); [line 74];
+EXIT_SCOPE(n$77,$bcvar2); [line 74];
+APPLY_ABSTRACTION; [line 74];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:23 22 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 75];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:37 succs:24 exn:3 Instructions
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds: succs:36 exn:3 Instructions
+n$78=*&amp;return:void [line 68];
+*&amp;return:void=null [line 68];
+n$79=_fun___unwrap_exception(n$78:void) [line 68];
+NULLIFY(&amp;$irvar3); [line 68];
+NULLIFY(&amp;$irvar5); [line 68];
+NULLIFY(&amp;$irvar4); [line 68];
+NULLIFY(&amp;$irvar1); [line 68];
+NULLIFY(&amp;$irvar2); [line 68];
+EXIT_SCOPE(n$78,n$79,$irvar3,$irvar5,$irvar4,$irvar1,$irvar2); [line 68];
+</span></span></a><br />@
+
+<span class='color_black'>void void RecoverHelper.deleteToken(String)(com.stn.helpers.RecoverHelper* this, java.lang.String* token)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { @val$0 -> { connection -> (Footprint({ @val$0.dbUser,
+                                                   @val$0.dbPort*,
+                                                   @val$0.dbPassword,
+                                                   @val$0.dbName*,
+                                                   @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        preparedStatement -> (Footprint({ @val$1*,
+                                                          @val$0.dbUser,
+                                                          @val$0.dbPort*,
+                                                          @val$0.dbPassword,
+                                                          @val$0.dbName*,
+                                                          @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        query -> { } } }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= void RecoverHelper.deleteToken(String)
+; translation_unit= src/main/java/com/stn/helpers/RecoverHelper.java
+; access= Public
+; exceptions= [java.lang.ClassNotFoundException;  java.sql.SQLException]
+; formals= [(this,com.stn.helpers.RecoverHelper*);  (token,java.lang.String*)]
+; is_defined= true
+; loc= src/main/java/com/stn/helpers/RecoverHelper.java:58
+; locals= [{ name= $bcvar2; typ= void; modify_in_block= false }; 
+           { name= CatchVar120; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }]
+; ret_type= void 
+; proc_id= com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void }</pre>
+</body>
+</html>

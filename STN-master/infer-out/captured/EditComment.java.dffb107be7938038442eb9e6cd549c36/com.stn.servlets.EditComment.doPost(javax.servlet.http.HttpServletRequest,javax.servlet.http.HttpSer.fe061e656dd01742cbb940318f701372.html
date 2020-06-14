@@ -1,0 +1,271 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.servlets.EditComment.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../EditComment.java.dffb107be7938038442eb9e6cd549c36.html#LINE38">void EditComment.doPost(HttpServletRequest,HttpServletResponse)</a></h1></center>
+<a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:25 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:27 succs:2 exn:2 Instructions
+NULLIFY(&amp;body); [line 67];
+NULLIFY(&amp;idComment); [line 67];
+NULLIFY(&amp;$irvar3); [line 67];
+NULLIFY(&amp;url); [line 67];
+NULLIFY(&amp;CatchVar117); [line 67];
+NULLIFY(&amp;idPost); [line 67];
+NULLIFY(&amp;out); [line 67];
+NULLIFY(&amp;$irvar5); [line 67];
+NULLIFY(&amp;$irvar4); [line 67];
+NULLIFY(&amp;$irvar0); [line 67];
+NULLIFY(&amp;$irvar1); [line 67];
+NULLIFY(&amp;$irvar2); [line 67];
+NULLIFY(&amp;commHelper); [line 67];
+NULLIFY(&amp;e); [line 67];
+EXIT_SCOPE(n$54,body,idComment,$irvar3,url,CatchVar117,idPost,out,$irvar5,$irvar4,$irvar0,$irvar1,$irvar2,commHelper,e); [line 67];
+APPLY_ABSTRACTION; [line 67];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;response:javax.servlet.http.HttpServletResponse* [line 40];
+_=*n$0:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 40];
+n$2=_fun_PrintWriter HttpServletResponse.getWriter()(n$0:javax.servlet.http.HttpServletResponse*) interface virtual [line 40];
+*&amp;out:java.io.PrintWriter*=n$2 [line 40];
+EXIT_SCOPE(_,n$0,n$2); [line 40];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;error:java.lang.Object*="" [line 42];
+NULLIFY(&amp;error); [line 42];
+EXIT_SCOPE(error); [line 42];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$3=*&amp;request:javax.servlet.http.HttpServletRequest* [line 43];
+_=*n$3:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 43];
+n$5=_fun_String HttpServletRequest.getParameter(String)(n$3:javax.servlet.http.HttpServletRequest*,"comm_id_post_temp":java.lang.Object*) interface virtual [line 43];
+*&amp;$irvar0:java.lang.String*=n$5 [line 43];
+EXIT_SCOPE(_,n$3,n$5); [line 43];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$6=*&amp;$irvar0:java.lang.String* [line 43];
+n$7=_fun_int Integer.parseInt(String)(n$6:java.lang.String*) [line 43];
+*&amp;$irvar1:int=n$7 [line 43];
+NULLIFY(&amp;$irvar0); [line 43];
+EXIT_SCOPE(n$6,n$7,$irvar0); [line 43];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$8=*&amp;$irvar1:int [line 43];
+n$9=_fun_Integer Integer.valueOf(int)(n$8:int) [line 43];
+*&amp;idPost:java.lang.Integer*=n$9 [line 43];
+NULLIFY(&amp;$irvar1); [line 43];
+EXIT_SCOPE(n$8,n$9,$irvar1); [line 43];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$10=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 44];
+n$11=_fun_StringBuilder.&lt;init&gt;()(n$10:java.lang.StringBuilder*) [line 44];
+*&amp;$irvar2:java.lang.StringBuilder*=n$10 [line 44];
+EXIT_SCOPE(n$10,n$11); [line 44];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$12=*&amp;$irvar2:java.lang.StringBuilder* [line 44];
+_=*n$12:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 44];
+n$14=_fun_StringBuilder StringBuilder.append(String)(n$12:java.lang.StringBuilder*,"/topic.jsp?id=":java.lang.Object*) virtual [line 44];
+*&amp;$irvar3:java.lang.StringBuilder*=n$14 [line 44];
+NULLIFY(&amp;$irvar2); [line 44];
+EXIT_SCOPE(_,n$12,n$14,$irvar2); [line 44];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$15=*&amp;$irvar3:java.lang.StringBuilder* [line 44];
+_=*n$15:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 44];
+n$17=*&amp;idPost:java.lang.Integer* [line 44];
+n$18=_fun_StringBuilder StringBuilder.append(Object)(n$15:java.lang.StringBuilder*,n$17:java.lang.Integer*) virtual [line 44];
+*&amp;$irvar4:java.lang.StringBuilder*=n$18 [line 44];
+NULLIFY(&amp;$irvar3); [line 44];
+NULLIFY(&amp;idPost); [line 44];
+EXIT_SCOPE(_,n$15,n$17,n$18,$irvar3,idPost); [line 44];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$19=*&amp;$irvar4:java.lang.StringBuilder* [line 44];
+_=*n$19:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 44];
+n$21=_fun_String StringBuilder.toString()(n$19:java.lang.StringBuilder*) virtual [line 44];
+*&amp;url:java.lang.String*=n$21 [line 44];
+NULLIFY(&amp;$irvar4); [line 44];
+EXIT_SCOPE(_,n$19,n$21,$irvar4); [line 44];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$22=*&amp;response:javax.servlet.http.HttpServletResponse* [line 45];
+_=*n$22:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 45];
+n$24=_fun_void HttpServletResponse.setContentType(String)(n$22:javax.servlet.http.HttpServletResponse*,"text/html":java.lang.Object*) interface virtual [line 45];
+EXIT_SCOPE(_,n$22,n$24); [line 45];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$25=_fun___new(sizeof(t=com.stn.helpers.UserHelper):com.stn.helpers.UserHelper*) [line 47];
+n$26=_fun_UserHelper.&lt;init&gt;()(n$25:com.stn.helpers.UserHelper*) [line 47];
+*&amp;userHelper:com.stn.helpers.UserHelper*=n$25 [line 47];
+NULLIFY(&amp;userHelper); [line 47];
+EXIT_SCOPE(n$25,n$26,userHelper); [line 47];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:3 Instructions
+*&amp;body:java.lang.Object*="" [line 49];
+NULLIFY(&amp;body); [line 49];
+EXIT_SCOPE(body); [line 49];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$27=*&amp;request:javax.servlet.http.HttpServletRequest* [line 52];
+_=*n$27:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 52];
+n$29=_fun_String HttpServletRequest.getParameter(String)(n$27:javax.servlet.http.HttpServletRequest*,"comm_body_temp":java.lang.Object*) interface virtual [line 52];
+*&amp;body:java.lang.String*=n$29 [line 52];
+EXIT_SCOPE(_,n$27,n$29); [line 52];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:3 Instructions
+n$30=*&amp;request:javax.servlet.http.HttpServletRequest* [line 55];
+_=*n$30:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 55];
+n$32=_fun_String HttpServletRequest.getParameter(String)(n$30:javax.servlet.http.HttpServletRequest*,"comm_id_temp":java.lang.Object*) interface virtual [line 55];
+*&amp;$irvar5:java.lang.String*=n$32 [line 55];
+NULLIFY(&amp;request); [line 55];
+EXIT_SCOPE(_,n$30,n$32,request); [line 55];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:3 Instructions
+n$33=*&amp;$irvar5:java.lang.String* [line 55];
+n$34=_fun_int Integer.parseInt(String)(n$33:java.lang.String*) [line 55];
+*&amp;idComment:int=n$34 [line 55];
+NULLIFY(&amp;$irvar5); [line 55];
+EXIT_SCOPE(n$33,n$34,$irvar5); [line 55];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:3 Instructions
+n$35=_fun___new(sizeof(t=com.stn.helpers.CommentsHelper):com.stn.helpers.CommentsHelper*) [line 56];
+n$36=_fun_CommentsHelper.&lt;init&gt;()(n$35:com.stn.helpers.CommentsHelper*) [line 56];
+*&amp;commHelper:com.stn.helpers.CommentsHelper*=n$35 [line 56];
+EXIT_SCOPE(n$35,n$36); [line 56];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:30 Instructions
+n$37=*&amp;idComment:int [line 59];
+n$38=_fun_Integer Integer.valueOf(int)(n$37:int) [line 59];
+*&amp;$irvar6:java.lang.Integer*=n$38 [line 59];
+NULLIFY(&amp;idComment); [line 59];
+EXIT_SCOPE(n$37,n$38,idComment); [line 59];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:24 exn:30 Instructions
+n$39=*&amp;commHelper:com.stn.helpers.CommentsHelper* [line 59];
+_=*n$39:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 59];
+n$41=*&amp;$irvar6:java.lang.Integer* [line 59];
+n$42=*&amp;body:java.lang.String* [line 59];
+n$43=_fun_void CommentsHelper.editComment(Integer,String)(n$39:com.stn.helpers.CommentsHelper*,n$41:java.lang.Integer*,n$42:java.lang.String*) virtual [line 59];
+NULLIFY(&amp;body); [line 59];
+NULLIFY(&amp;$irvar6); [line 59];
+NULLIFY(&amp;commHelper); [line 59];
+EXIT_SCOPE(_,n$39,n$41,n$42,n$43,body,$irvar6,commHelper); [line 59];
+APPLY_ABSTRACTION; [line 59];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:28 26 succs:23 exn:3 Instructions
+n$44=*&amp;CatchVar117:java.lang.Object* [line 60];
+*&amp;e:java.lang.Object*=n$44 [line 60];
+NULLIFY(&amp;CatchVar117); [line 60];
+EXIT_SCOPE(n$44,CatchVar117); [line 60];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:3 Instructions
+n$45=*&amp;out:java.io.PrintWriter* [line 61];
+_=*n$45:java.io.PrintWriter*(root java.io.PrintWriter) [line 61];
+n$47=*&amp;e:java.lang.Object* [line 61];
+n$48=_fun_void PrintWriter.println(Object)(n$45:java.io.PrintWriter*,n$47:java.lang.Object*) virtual [line 61];
+NULLIFY(&amp;out); [line 61];
+NULLIFY(&amp;e); [line 61];
+EXIT_SCOPE(_,n$45,n$47,n$48,out,e); [line 61];
+APPLY_ABSTRACTION; [line 61];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 21 succs:25 exn:3 Instructions
+n$49=*&amp;response:javax.servlet.http.HttpServletResponse* [line 65];
+_=*n$49:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 65];
+n$51=*&amp;url:java.lang.String* [line 65];
+n$52=_fun_void HttpServletResponse.sendRedirect(String)(n$49:javax.servlet.http.HttpServletResponse*,n$51:java.lang.String*) interface virtual [line 65];
+NULLIFY(&amp;url); [line 65];
+NULLIFY(&amp;out); [line 65];
+NULLIFY(&amp;response); [line 65];
+EXIT_SCOPE(_,n$49,n$51,n$52,url,out,response); [line 65];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 67];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node26.html"><span class='visited with_tooltip'>C_26<span class='tooltip'>node26 preds:29 succs:22 exn:3 Conditional exception handler
+n$55=_fun___instanceof(n$54:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 60];
+PRUNE(n$55, true); [line 60];
+*&amp;CatchVar117:void=n$54 [line 60];
+EXIT_SCOPE(n$54,n$55); [line 60];
+APPLY_ABSTRACTION; [line 60];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node27.html"><span class='visited with_tooltip'>C_27<span class='tooltip'>node27 preds:29 succs:3 exn:3 Conditional exception handler
+n$55=_fun___instanceof(n$54:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 60];
+PRUNE(!n$55, false); [line 60];
+*&amp;return:void=EXN n$54 [line 60];
+NULLIFY(&amp;url); [line 60];
+NULLIFY(&amp;out); [line 60];
+EXIT_SCOPE(n$54,n$55,url,out); [line 60];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node28.html"><span class='visited with_tooltip'>C_28<span class='tooltip'>node28 preds:30 succs:22 exn:3 Conditional exception handler
+n$56=_fun___instanceof(n$54:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 60];
+PRUNE(n$56, true); [line 60];
+*&amp;CatchVar117:void=n$54 [line 60];
+EXIT_SCOPE(n$54,n$56); [line 60];
+APPLY_ABSTRACTION; [line 60];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node29.html"><span class='visited with_tooltip'>C_29<span class='tooltip'>node29 preds:30 succs:26 27 exn:3 Conditional exception handler
+n$56=_fun___instanceof(n$54:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 60];
+PRUNE(!n$56, false); [line 60];
+EXIT_SCOPE(n$56); [line 60];
+</span></span></a> <a href="./nodes/com.stn.servlets.EditComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSer.fe061e656dd01742cbb940318f701372_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds: succs:28 29 exn:3 Instructions
+n$53=*&amp;return:void [line 60];
+*&amp;return:void=null [line 60];
+n$54=_fun___unwrap_exception(n$53:void) [line 60];
+NULLIFY(&amp;body); [line 60];
+NULLIFY(&amp;$irvar6); [line 60];
+NULLIFY(&amp;commHelper); [line 60];
+EXIT_SCOPE(n$53,body,$irvar6,commHelper); [line 60];
+</span></span></a><br />@
+
+<span class='color_black'>void void EditComment.doPost(HttpServletRequest,HttpServletResponse)(com.stn.servlets.EditComment* this, javax.servlet.http.HttpServletRequest* request, javax.servlet.http.HttpServletResponse* response)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= void EditComment.doPost(HttpServletRequest,HttpServletResponse)
+; translation_unit= src/main/java/com/stn/servlets/EditComment.java
+; access= Protected
+; exceptions= [javax.servlet.ServletException;  java.io.IOException]
+; formals= [(this,com.stn.servlets.EditComment*);  (request,
+            javax.servlet.http.HttpServletRequest*);  (response,
+            javax.servlet.http.HttpServletResponse*)]
+; is_defined= true
+; loc= src/main/java/com/stn/servlets/EditComment.java:38
+; locals= [{ name= CatchVar117; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= commHelper; typ= com.stn.helpers.CommentsHelper*; modify_in_block= false }; 
+           { name= idComment; typ= int; modify_in_block= false }; 
+           { name= body; typ= java.lang.String*; modify_in_block= false }; 
+           { name= userHelper; typ= com.stn.helpers.UserHelper*; modify_in_block= false }; 
+           { name= url; typ= java.lang.String*; modify_in_block= false }; 
+           { name= idPost; typ= java.lang.Integer*; modify_in_block= false }; 
+           { name= error; typ= java.lang.String*; modify_in_block= false }; 
+           { name= out; typ= java.io.PrintWriter*; modify_in_block= false }; 
+           { name= e; typ= java.lang.Exception*; modify_in_block= false }]
+; ret_type= void 
+; proc_id= com.stn.servlets.EditComment.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void }</pre>
+</body>
+</html>

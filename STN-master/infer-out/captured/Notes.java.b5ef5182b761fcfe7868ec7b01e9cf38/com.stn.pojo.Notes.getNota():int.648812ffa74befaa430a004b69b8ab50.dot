@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Notes.getNota():int.648812ffa74befaa430a004b69b8ab50_1" [label="1: Start int Notes.getNota()\nFormals:  this:com.stn.pojo.Notes*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Notes.getNota():int.648812ffa74befaa430a004b69b8ab50_1" -> "com.stn.pojo.Notes.getNota():int.648812ffa74befaa430a004b69b8ab50_4" ;
+"com.stn.pojo.Notes.getNota():int.648812ffa74befaa430a004b69b8ab50_2" [label="2: Exit int Notes.getNota() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Notes.getNota():int.648812ffa74befaa430a004b69b8ab50_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 63]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Notes.getNota():int.648812ffa74befaa430a004b69b8ab50_3" -> "com.stn.pojo.Notes.getNota():int.648812ffa74befaa430a004b69b8ab50_2" ;
+"com.stn.pojo.Notes.getNota():int.648812ffa74befaa430a004b69b8ab50_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Notes* [line 63]\n  n$1=*n$0.nota:int(root com.stn.pojo.Notes) [line 63]\n  *&return:int=n$1 [line 63]\n  NULLIFY(&this); [line 63]\n  EXIT_SCOPE(n$0,n$1,this); [line 63]\n  APPLY_ABSTRACTION; [line 63]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Notes.getNota():int.648812ffa74befaa430a004b69b8ab50_4" -> "com.stn.pojo.Notes.getNota():int.648812ffa74befaa430a004b69b8ab50_2" ;
+	 "com.stn.pojo.Notes.getNota():int.648812ffa74befaa430a004b69b8ab50_4" -> "com.stn.pojo.Notes.getNota():int.648812ffa74befaa430a004b69b8ab50_3" [color="red" ];
+}

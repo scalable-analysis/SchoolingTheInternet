@@ -1,0 +1,34 @@
+/* @generated */
+digraph cfg {
+"com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_1" [label="1: Start void DeleteOraProcess.setTempFields(HttpServletRequest,Integer,Integer)\nFormals:  this:com.stn.servlets.DeleteOraProcess* request:javax.servlet.http.HttpServletRequest* id_ora:java.lang.Integer* id_student:java.lang.Integer*\nLocals:  session:javax.servlet.http.HttpSession* \n  " color=yellow style=filled]
+	
+
+	 "com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_1" -> "com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_4" ;
+"com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_2" [label="2: Exit void DeleteOraProcess.setTempFields(HttpServletRequest,Integer,Integer) \n  " color=yellow style=filled]
+	
+
+"com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_3" [label="3:  exceptions sink \n   NULLIFY(&session); [line 28]\n  EXIT_SCOPE(session); [line 28]\n  APPLY_ABSTRACTION; [line 28]\n " shape="box"]
+	
+
+	 "com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_3" -> "com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_2" ;
+"com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_4" [label="4:  Call HttpSession HttpServletRequest.getSession() \n   n$0=*&request:javax.servlet.http.HttpServletRequest* [line 25]\n  _=*n$0:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 25]\n  n$2=_fun_HttpSession HttpServletRequest.getSession()(n$0:javax.servlet.http.HttpServletRequest*) interface virtual [line 25]\n  *&session:javax.servlet.http.HttpSession*=n$2 [line 25]\n  NULLIFY(&request); [line 25]\n  EXIT_SCOPE(_,n$0,n$2,request); [line 25]\n " shape="box"]
+	
+
+	 "com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_4" -> "com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_5" ;
+	 "com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_4" -> "com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_3" [color="red" ];
+"com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_5" [label="5:  Call void HttpSession.setAttribute(String,Object) \n   n$3=*&session:javax.servlet.http.HttpSession* [line 26]\n  _=*n$3:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 26]\n  n$5=*&id_ora:java.lang.Integer* [line 26]\n  n$6=_fun_void HttpSession.setAttribute(String,Object)(n$3:javax.servlet.http.HttpSession*,\"id_ora\":java.lang.Object*,n$5:java.lang.Integer*) interface virtual [line 26]\n  NULLIFY(&id_ora); [line 26]\n  EXIT_SCOPE(_,n$3,n$5,n$6,id_ora); [line 26]\n " shape="box"]
+	
+
+	 "com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_5" -> "com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_6" ;
+	 "com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_5" -> "com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_3" [color="red" ];
+"com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_6" [label="6:  Call void HttpSession.setAttribute(String,Object) \n   n$7=*&session:javax.servlet.http.HttpSession* [line 27]\n  _=*n$7:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 27]\n  n$9=*&id_student:java.lang.Integer* [line 27]\n  n$10=_fun_void HttpSession.setAttribute(String,Object)(n$7:javax.servlet.http.HttpSession*,\"id_student\":java.lang.Object*,n$9:java.lang.Integer*) interface virtual [line 27]\n  NULLIFY(&id_student); [line 27]\n  NULLIFY(&session); [line 27]\n  EXIT_SCOPE(_,n$7,n$9,n$10,id_student,session); [line 27]\n " shape="box"]
+	
+
+	 "com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_6" -> "com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_7" ;
+	 "com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_6" -> "com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_3" [color="red" ];
+"com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_7" [label="7:  method_body \n   APPLY_ABSTRACTION; [line 28]\n " shape="box"]
+	
+
+	 "com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_7" -> "com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_2" ;
+	 "com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_7" -> "com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_3" [color="red" ];
+}

@@ -1,0 +1,710 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>File src/main/java/com/stn/servlets/ApplicationProcess.java </h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.stn.servlets; </td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import com.stn.helpers.ApplicationHelper; </td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">import com.stn.utils.Validator; </td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import javax.servlet.ServletException; </td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import javax.servlet.annotation.WebServlet; </td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">import javax.servlet.http.HttpServlet; </td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">import javax.servlet.http.HttpServletRequest; </td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line">import javax.servlet.http.HttpServletResponse; </td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">import javax.servlet.http.HttpSession; </td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line">import java.io.IOException; </td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line">import java.io.PrintWriter; </td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line">import java.sql.SQLException; </td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line">@WebServlet(&quot;/ApplicationProcess&quot;) </td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line">public class ApplicationProcess extends HttpServlet { <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.<init>%28%29.a75fd7a6251e259f7a57964d2a30ac76_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.<init>%28%29.a75fd7a6251e259f7a57964d2a30ac76_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.servlets.ApplicationProcess* [line 17];
+n$1=_fun_HttpServlet.&lt;init&gt;()(n$0:com.stn.servlets.ApplicationProcess*) [line 17];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.<init>%28%29.a75fd7a6251e259f7a57964d2a30ac76_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.<init>%28%29.a75fd7a6251e259f7a57964d2a30ac76_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.<init>%28%29.a75fd7a6251e259f7a57964d2a30ac76_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/com.stn.servlets.ApplicationProcess.<init>%28%29.a75fd7a6251e259f7a57964d2a30ac76.html">summary for ApplicationProcess.&lt;init&gt;()</a></td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line">    private void setTempFields(HttpServletRequest request, String firstName, String lastName, String email, String facultate, String serie, String grupa, String document) { <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07.html">summary for void ApplicationProcess.setTempFields(HttpServletRequest,String,String,String,String,String,String,String)</a></td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line">        HttpSession session= request.getSession(); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;request:javax.servlet.http.HttpServletRequest* [line 20];
+_=*n$0:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 20];
+n$2=_fun_HttpSession HttpServletRequest.getSession()(n$0:javax.servlet.http.HttpServletRequest*) interface virtual [line 20];
+*&amp;session:javax.servlet.http.HttpSession*=n$2 [line 20];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line">        session.setAttribute(&quot;firstname&quot;, firstName); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$3=*&amp;session:javax.servlet.http.HttpSession* [line 21];
+_=*n$3:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 21];
+n$5=*&amp;firstName:java.lang.String* [line 21];
+n$6=_fun_void HttpSession.setAttribute(String,Object)(n$3:javax.servlet.http.HttpSession*,"firstname":java.lang.Object*,n$5:java.lang.String*) interface virtual [line 21];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line">        session.setAttribute(&quot;lastname&quot;, lastName); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$7=*&amp;session:javax.servlet.http.HttpSession* [line 22];
+_=*n$7:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 22];
+n$9=*&amp;lastName:java.lang.String* [line 22];
+n$10=_fun_void HttpSession.setAttribute(String,Object)(n$7:javax.servlet.http.HttpSession*,"lastname":java.lang.Object*,n$9:java.lang.String*) interface virtual [line 22];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">        session.setAttribute(&quot;email&quot;, email); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$11=*&amp;session:javax.servlet.http.HttpSession* [line 23];
+_=*n$11:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 23];
+n$13=*&amp;email:java.lang.String* [line 23];
+n$14=_fun_void HttpSession.setAttribute(String,Object)(n$11:javax.servlet.http.HttpSession*,"email":java.lang.Object*,n$13:java.lang.String*) interface virtual [line 23];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line">        session.setAttribute(&quot;faculty&quot;,facultate); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$15=*&amp;session:javax.servlet.http.HttpSession* [line 24];
+_=*n$15:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 24];
+n$17=*&amp;facultate:java.lang.String* [line 24];
+n$18=_fun_void HttpSession.setAttribute(String,Object)(n$15:javax.servlet.http.HttpSession*,"faculty":java.lang.Object*,n$17:java.lang.String*) interface virtual [line 24];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line">        session.setAttribute(&quot;serie&quot;,serie); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$19=*&amp;session:javax.servlet.http.HttpSession* [line 25];
+_=*n$19:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 25];
+n$21=*&amp;serie:java.lang.String* [line 25];
+n$22=_fun_void HttpSession.setAttribute(String,Object)(n$19:javax.servlet.http.HttpSession*,"serie":java.lang.Object*,n$21:java.lang.String*) interface virtual [line 25];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line">        session.setAttribute(&quot;grupa&quot;,grupa); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$23=*&amp;session:javax.servlet.http.HttpSession* [line 26];
+_=*n$23:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 26];
+n$25=*&amp;grupa:java.lang.String* [line 26];
+n$26=_fun_void HttpSession.setAttribute(String,Object)(n$23:javax.servlet.http.HttpSession*,"grupa":java.lang.Object*,n$25:java.lang.String*) interface virtual [line 26];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">        session.setAttribute(&quot;document&quot;,document); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$27=*&amp;session:javax.servlet.http.HttpSession* [line 27];
+_=*n$27:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 27];
+n$29=*&amp;document:java.lang.String* [line 27];
+n$30=_fun_void HttpSession.setAttribute(String,Object)(n$27:javax.servlet.http.HttpSession*,"document":java.lang.Object*,n$29:java.lang.String*) interface virtual [line 27];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">    } <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:2 exn:3 Instructions
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:12 3 succs: exn: Exit
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.5b62b4d3bfac286f7b1ba596bd2e319f_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/com.stn.servlets.ApplicationProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.5b62b4d3bfac286f7b1ba596bd2e319f.html">summary for void ApplicationProcess.doGet(HttpServletRequest,HttpServletResponse)</a></td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line">        response.sendRedirect(&quot;login.jsp&quot;); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.5b62b4d3bfac286f7b1ba596bd2e319f_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;response:javax.servlet.http.HttpServletResponse* [line 31];
+_=*n$0:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 31];
+n$2=_fun_void HttpServletResponse.sendRedirect(String)(n$0:javax.servlet.http.HttpServletResponse*,"login.jsp":java.lang.Object*) interface virtual [line 31];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line">    } <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.5b62b4d3bfac286f7b1ba596bd2e319f_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.5b62b4d3bfac286f7b1ba596bd2e319f_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.5b62b4d3bfac286f7b1ba596bd2e319f_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line">    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b.html">summary for void ApplicationProcess.doPost(HttpServletRequest,HttpServletResponse)</a></td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line">        HttpSession session = request.getSession(); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;request:javax.servlet.http.HttpServletRequest* [line 36];
+_=*n$0:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 36];
+n$2=_fun_HttpSession HttpServletRequest.getSession()(n$0:javax.servlet.http.HttpServletRequest*) interface virtual [line 36];
+*&amp;session:javax.servlet.http.HttpSession*=n$2 [line 36];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line">        String error =&quot;&quot;; <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;error:java.lang.Object*="" [line 38];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line">        String url = &quot;apply.jsp&quot;; <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+*&amp;url:java.lang.Object*="apply.jsp" [line 39];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line">        response.setContentType(&quot;text/html&quot;); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$3=*&amp;response:javax.servlet.http.HttpServletResponse* [line 40];
+_=*n$3:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 40];
+n$5=_fun_void HttpServletResponse.setContentType(String)(n$3:javax.servlet.http.HttpServletResponse*,"text/html":java.lang.Object*) interface virtual [line 40];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line">        PrintWriter out = response.getWriter(); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$6=*&amp;response:javax.servlet.http.HttpServletResponse* [line 41];
+_=*n$6:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 41];
+n$8=_fun_PrintWriter HttpServletResponse.getWriter()(n$6:javax.servlet.http.HttpServletResponse*) interface virtual [line 41];
+*&amp;out:java.io.PrintWriter*=n$8 [line 41];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">        //Setam toti parametrii pe care ii primim din form </td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line">        String email = request.getParameter(&quot;email&quot;); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$9=*&amp;request:javax.servlet.http.HttpServletRequest* [line 43];
+_=*n$9:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 43];
+n$11=_fun_String HttpServletRequest.getParameter(String)(n$9:javax.servlet.http.HttpServletRequest*,"email":java.lang.Object*) interface virtual [line 43];
+*&amp;email:java.lang.String*=n$11 [line 43];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">        String firstName = request.getParameter(&quot;firstname&quot;); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$12=*&amp;request:javax.servlet.http.HttpServletRequest* [line 44];
+_=*n$12:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 44];
+n$14=_fun_String HttpServletRequest.getParameter(String)(n$12:javax.servlet.http.HttpServletRequest*,"firstname":java.lang.Object*) interface virtual [line 44];
+*&amp;firstName:java.lang.String*=n$14 [line 44];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line">        String lastName = request.getParameter(&quot;lastname&quot;); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$15=*&amp;request:javax.servlet.http.HttpServletRequest* [line 45];
+_=*n$15:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 45];
+n$17=_fun_String HttpServletRequest.getParameter(String)(n$15:javax.servlet.http.HttpServletRequest*,"lastname":java.lang.Object*) interface virtual [line 45];
+*&amp;lastName:java.lang.String*=n$17 [line 45];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line">        String facultate = request.getParameter(&quot;facultate&quot;); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$18=*&amp;request:javax.servlet.http.HttpServletRequest* [line 46];
+_=*n$18:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 46];
+n$20=_fun_String HttpServletRequest.getParameter(String)(n$18:javax.servlet.http.HttpServletRequest*,"facultate":java.lang.Object*) interface virtual [line 46];
+*&amp;facultate:java.lang.String*=n$20 [line 46];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">        String serie = request.getParameter(&quot;serie&quot;); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$21=*&amp;request:javax.servlet.http.HttpServletRequest* [line 47];
+_=*n$21:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 47];
+n$23=_fun_String HttpServletRequest.getParameter(String)(n$21:javax.servlet.http.HttpServletRequest*,"serie":java.lang.Object*) interface virtual [line 47];
+*&amp;serie:java.lang.String*=n$23 [line 47];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line">        String grupa = request.getParameter(&quot;grupa&quot;); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$24=*&amp;request:javax.servlet.http.HttpServletRequest* [line 48];
+_=*n$24:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 48];
+n$26=_fun_String HttpServletRequest.getParameter(String)(n$24:javax.servlet.http.HttpServletRequest*,"grupa":java.lang.Object*) interface virtual [line 48];
+*&amp;grupa:java.lang.String*=n$26 [line 48];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line">        String document = request.getParameter(&quot;document&quot;); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:3 Instructions
+n$27=*&amp;request:javax.servlet.http.HttpServletRequest* [line 49];
+_=*n$27:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 49];
+n$29=_fun_String HttpServletRequest.getParameter(String)(n$27:javax.servlet.http.HttpServletRequest*,"document":java.lang.Object*) interface virtual [line 49];
+*&amp;document:java.lang.String*=n$29 [line 49];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line">        if(Validator.isEmpty(email, firstName, lastName, facultate, serie, grupa, document)) { <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$30=_fun___new_array(sizeof(t=java.lang.String*[_*_];len=[7]):java.lang.String*[_*_](*)) [line 51];
+*&amp;$irvar0:java.lang.String*[_*_](*)=n$30 [line 51];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:3 Instructions
+n$31=*&amp;$irvar0:java.lang.String*[_*_](*) [line 51];
+n$32=*&amp;email:java.lang.String* [line 51];
+*n$31[0]:java.lang.String*=n$32 [line 51];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:3 Instructions
+n$33=*&amp;$irvar0:java.lang.String*[_*_](*) [line 51];
+n$34=*&amp;firstName:java.lang.String* [line 51];
+*n$33[1]:java.lang.String*=n$34 [line 51];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:3 Instructions
+n$35=*&amp;$irvar0:java.lang.String*[_*_](*) [line 51];
+n$36=*&amp;lastName:java.lang.String* [line 51];
+*n$35[2]:java.lang.String*=n$36 [line 51];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$37=*&amp;$irvar0:java.lang.String*[_*_](*) [line 51];
+n$38=*&amp;facultate:java.lang.String* [line 51];
+*n$37[3]:java.lang.String*=n$38 [line 51];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:3 Instructions
+n$39=*&amp;$irvar0:java.lang.String*[_*_](*) [line 51];
+n$40=*&amp;serie:java.lang.String* [line 51];
+*n$39[4]:java.lang.String*=n$40 [line 51];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:3 Instructions
+n$41=*&amp;$irvar0:java.lang.String*[_*_](*) [line 51];
+n$42=*&amp;grupa:java.lang.String* [line 51];
+*n$41[5]:java.lang.String*=n$42 [line 51];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:3 Instructions
+n$43=*&amp;$irvar0:java.lang.String*[_*_](*) [line 51];
+n$44=*&amp;document:java.lang.String* [line 51];
+*n$43[6]:java.lang.String*=n$44 [line 51];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 26 exn:3 Instructions
+n$45=*&amp;$irvar0:java.lang.String*[_*_](*) [line 51];
+n$46=_fun_boolean Validator.isEmpty(String[])(n$45:java.lang.String*[_*_](*)) [line 51];
+*&amp;$irvar1:_Bool=n$46 [line 51];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node25.html"><span class='visited with_tooltip'>C_25<span class='tooltip'>node25 preds:24 succs:27 exn:3 Conditional method_body
+n$47=*&amp;$irvar1:_Bool [line 51];
+PRUNE(!(n$47 == 0), true); [line 51];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node26.html"><span class='visited with_tooltip'>C_26<span class='tooltip'>node26 preds:24 succs:29 exn:3 Conditional method_body
+n$47=*&amp;$irvar1:_Bool [line 51];
+PRUNE((n$47 == 0), false); [line 51];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line">            error = &quot;You must fill all the requiered fields!&quot;; <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:25 succs:28 exn:3 Instructions
+*&amp;error:java.lang.Object*="You must fill all the requiered fields!" [line 52];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line">            this.setTempFields(request,firstName,lastName,email,facultate,serie,grupa,document); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:90 exn:3 Instructions
+n$48=*&amp;this:com.stn.servlets.ApplicationProcess* [line 53];
+n$49=*&amp;request:javax.servlet.http.HttpServletRequest* [line 53];
+n$50=*&amp;firstName:java.lang.String* [line 53];
+n$51=*&amp;lastName:java.lang.String* [line 53];
+n$52=*&amp;email:java.lang.String* [line 53];
+n$53=*&amp;facultate:java.lang.String* [line 53];
+n$54=*&amp;serie:java.lang.String* [line 53];
+n$55=*&amp;grupa:java.lang.String* [line 53];
+n$56=*&amp;document:java.lang.String* [line 53];
+n$57=_fun_void ApplicationProcess.setTempFields(HttpServletRequest,String,String,String,String,String,String,String)(n$48:com.stn.servlets.ApplicationProcess*,n$49:javax.servlet.http.HttpServletRequest*,n$50:java.lang.String*,n$51:java.lang.String*,n$52:java.lang.String*,n$53:java.lang.String*,n$54:java.lang.String*,n$55:java.lang.String*,n$56:java.lang.String*) [line 53];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line">        else if(!Validator.between(firstName,2,30)) { <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:26 succs:30 31 exn:3 Instructions
+n$58=*&amp;firstName:java.lang.String* [line 55];
+n$59=_fun_boolean Validator.between(String,int,int)(n$58:java.lang.String*,2:int,30:int) [line 55];
+*&amp;$irvar2:_Bool=n$59 [line 55];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node30.html"><span class='visited with_tooltip'>C_30<span class='tooltip'>node30 preds:29 succs:32 exn:3 Conditional method_body
+n$60=*&amp;$irvar2:_Bool [line 55];
+PRUNE(!(n$60 != 0), true); [line 55];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node31.html"><span class='visited with_tooltip'>C_31<span class='tooltip'>node31 preds:29 succs:34 exn:3 Conditional method_body
+n$60=*&amp;$irvar2:_Bool [line 55];
+PRUNE((n$60 != 0), false); [line 55];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line">            error = &quot;Firstname be between 2 and 30 characters!&quot;; <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:30 succs:33 exn:3 Instructions
+*&amp;error:java.lang.Object*="Firstname be between 2 and 30 characters!" [line 56];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line">            this.setTempFields(request,firstName,lastName,email,facultate,serie,grupa,document); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:32 succs:90 exn:3 Instructions
+n$61=*&amp;this:com.stn.servlets.ApplicationProcess* [line 57];
+n$62=*&amp;request:javax.servlet.http.HttpServletRequest* [line 57];
+n$63=*&amp;firstName:java.lang.String* [line 57];
+n$64=*&amp;lastName:java.lang.String* [line 57];
+n$65=*&amp;email:java.lang.String* [line 57];
+n$66=*&amp;facultate:java.lang.String* [line 57];
+n$67=*&amp;serie:java.lang.String* [line 57];
+n$68=*&amp;grupa:java.lang.String* [line 57];
+n$69=*&amp;document:java.lang.String* [line 57];
+n$70=_fun_void ApplicationProcess.setTempFields(HttpServletRequest,String,String,String,String,String,String,String)(n$61:com.stn.servlets.ApplicationProcess*,n$62:javax.servlet.http.HttpServletRequest*,n$63:java.lang.String*,n$64:java.lang.String*,n$65:java.lang.String*,n$66:java.lang.String*,n$67:java.lang.String*,n$68:java.lang.String*,n$69:java.lang.String*) [line 57];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE58">58</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE59">59</td><td class="line">        else if(!Validator.isName(firstName)) { <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:31 succs:35 36 exn:3 Instructions
+n$71=*&amp;firstName:java.lang.String* [line 59];
+n$72=_fun_boolean Validator.isName(String)(n$71:java.lang.String*) [line 59];
+*&amp;$irvar3:_Bool=n$72 [line 59];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node35.html"><span class='visited with_tooltip'>C_35<span class='tooltip'>node35 preds:34 succs:37 exn:3 Conditional method_body
+n$73=*&amp;$irvar3:_Bool [line 59];
+PRUNE(!(n$73 != 0), true); [line 59];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node36.html"><span class='visited with_tooltip'>C_36<span class='tooltip'>node36 preds:34 succs:39 exn:3 Conditional method_body
+n$73=*&amp;$irvar3:_Bool [line 59];
+PRUNE((n$73 != 0), false); [line 59];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE60">60</td><td class="line">            error = &quot;Invalid Firstname!&quot;; <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:35 succs:38 exn:3 Instructions
+*&amp;error:java.lang.Object*="Invalid Firstname!" [line 60];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE61">61</td><td class="line">            this.setTempFields(request,firstName,lastName,email,facultate,serie,grupa,document); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:37 succs:90 exn:3 Instructions
+n$74=*&amp;this:com.stn.servlets.ApplicationProcess* [line 61];
+n$75=*&amp;request:javax.servlet.http.HttpServletRequest* [line 61];
+n$76=*&amp;firstName:java.lang.String* [line 61];
+n$77=*&amp;lastName:java.lang.String* [line 61];
+n$78=*&amp;email:java.lang.String* [line 61];
+n$79=*&amp;facultate:java.lang.String* [line 61];
+n$80=*&amp;serie:java.lang.String* [line 61];
+n$81=*&amp;grupa:java.lang.String* [line 61];
+n$82=*&amp;document:java.lang.String* [line 61];
+n$83=_fun_void ApplicationProcess.setTempFields(HttpServletRequest,String,String,String,String,String,String,String)(n$74:com.stn.servlets.ApplicationProcess*,n$75:javax.servlet.http.HttpServletRequest*,n$76:java.lang.String*,n$77:java.lang.String*,n$78:java.lang.String*,n$79:java.lang.String*,n$80:java.lang.String*,n$81:java.lang.String*,n$82:java.lang.String*) [line 61];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE62">62</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE63">63</td><td class="line">        else if(!Validator.between(lastName,2,30)) { <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:36 succs:40 41 exn:3 Instructions
+n$84=*&amp;lastName:java.lang.String* [line 63];
+n$85=_fun_boolean Validator.between(String,int,int)(n$84:java.lang.String*,2:int,30:int) [line 63];
+*&amp;$irvar4:_Bool=n$85 [line 63];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node40.html"><span class='visited with_tooltip'>C_40<span class='tooltip'>node40 preds:39 succs:42 exn:3 Conditional method_body
+n$86=*&amp;$irvar4:_Bool [line 63];
+PRUNE(!(n$86 != 0), true); [line 63];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node41.html"><span class='visited with_tooltip'>C_41<span class='tooltip'>node41 preds:39 succs:44 exn:3 Conditional method_body
+n$86=*&amp;$irvar4:_Bool [line 63];
+PRUNE((n$86 != 0), false); [line 63];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE64">64</td><td class="line">            error = &quot;Lastname be between 2 and 30 characters!&quot;; <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:40 succs:43 exn:3 Instructions
+*&amp;error:java.lang.Object*="Lastname be between 2 and 30 characters!" [line 64];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE65">65</td><td class="line">            this.setTempFields(request,firstName,lastName,email,facultate,serie,grupa,document); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:42 succs:90 exn:3 Instructions
+n$87=*&amp;this:com.stn.servlets.ApplicationProcess* [line 65];
+n$88=*&amp;request:javax.servlet.http.HttpServletRequest* [line 65];
+n$89=*&amp;firstName:java.lang.String* [line 65];
+n$90=*&amp;lastName:java.lang.String* [line 65];
+n$91=*&amp;email:java.lang.String* [line 65];
+n$92=*&amp;facultate:java.lang.String* [line 65];
+n$93=*&amp;serie:java.lang.String* [line 65];
+n$94=*&amp;grupa:java.lang.String* [line 65];
+n$95=*&amp;document:java.lang.String* [line 65];
+n$96=_fun_void ApplicationProcess.setTempFields(HttpServletRequest,String,String,String,String,String,String,String)(n$87:com.stn.servlets.ApplicationProcess*,n$88:javax.servlet.http.HttpServletRequest*,n$89:java.lang.String*,n$90:java.lang.String*,n$91:java.lang.String*,n$92:java.lang.String*,n$93:java.lang.String*,n$94:java.lang.String*,n$95:java.lang.String*) [line 65];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE66">66</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE67">67</td><td class="line">        else if(!Validator.isName(lastName)) { <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds:41 succs:45 46 exn:3 Instructions
+n$97=*&amp;lastName:java.lang.String* [line 67];
+n$98=_fun_boolean Validator.isName(String)(n$97:java.lang.String*) [line 67];
+*&amp;$irvar5:_Bool=n$98 [line 67];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node45.html"><span class='visited with_tooltip'>C_45<span class='tooltip'>node45 preds:44 succs:47 exn:3 Conditional method_body
+n$99=*&amp;$irvar5:_Bool [line 67];
+PRUNE(!(n$99 != 0), true); [line 67];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node46.html"><span class='visited with_tooltip'>C_46<span class='tooltip'>node46 preds:44 succs:49 exn:3 Conditional method_body
+n$99=*&amp;$irvar5:_Bool [line 67];
+PRUNE((n$99 != 0), false); [line 67];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE68">68</td><td class="line">            error = &quot;Invalid Lastname!&quot;; <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node47.html"><span class='visited with_tooltip'>I_47<span class='tooltip'>node47 preds:45 succs:48 exn:3 Instructions
+*&amp;error:java.lang.Object*="Invalid Lastname!" [line 68];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE69">69</td><td class="line">            this.setTempFields(request,firstName,lastName,email,facultate,serie,grupa,document); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node48.html"><span class='visited with_tooltip'>I_48<span class='tooltip'>node48 preds:47 succs:90 exn:3 Instructions
+n$100=*&amp;this:com.stn.servlets.ApplicationProcess* [line 69];
+n$101=*&amp;request:javax.servlet.http.HttpServletRequest* [line 69];
+n$102=*&amp;firstName:java.lang.String* [line 69];
+n$103=*&amp;lastName:java.lang.String* [line 69];
+n$104=*&amp;email:java.lang.String* [line 69];
+n$105=*&amp;facultate:java.lang.String* [line 69];
+n$106=*&amp;serie:java.lang.String* [line 69];
+n$107=*&amp;grupa:java.lang.String* [line 69];
+n$108=*&amp;document:java.lang.String* [line 69];
+n$109=_fun_void ApplicationProcess.setTempFields(HttpServletRequest,String,String,String,String,String,String,String)(n$100:com.stn.servlets.ApplicationProcess*,n$101:javax.servlet.http.HttpServletRequest*,n$102:java.lang.String*,n$103:java.lang.String*,n$104:java.lang.String*,n$105:java.lang.String*,n$106:java.lang.String*,n$107:java.lang.String*,n$108:java.lang.String*) [line 69];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE70">70</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE71">71</td><td class="line">        else if(!Validator.between(facultate, 3, 120)) { <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node49.html"><span class='visited with_tooltip'>I_49<span class='tooltip'>node49 preds:46 succs:50 51 exn:3 Instructions
+n$110=*&amp;facultate:java.lang.String* [line 71];
+n$111=_fun_boolean Validator.between(String,int,int)(n$110:java.lang.String*,3:int,120:int) [line 71];
+*&amp;$irvar6:_Bool=n$111 [line 71];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node50.html"><span class='visited with_tooltip'>C_50<span class='tooltip'>node50 preds:49 succs:52 exn:3 Conditional method_body
+n$112=*&amp;$irvar6:_Bool [line 71];
+PRUNE(!(n$112 != 0), true); [line 71];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node51.html"><span class='visited with_tooltip'>C_51<span class='tooltip'>node51 preds:49 succs:54 exn:3 Conditional method_body
+n$112=*&amp;$irvar6:_Bool [line 71];
+PRUNE((n$112 != 0), false); [line 71];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE72">72</td><td class="line">            error = &quot;Facultatea trebuie sa contina intre 3 si 120 de caractere!&quot;; <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node52.html"><span class='visited with_tooltip'>I_52<span class='tooltip'>node52 preds:50 succs:53 exn:3 Instructions
+*&amp;error:java.lang.Object*="Facultatea trebuie sa contina intre 3 si 120 de caractere!" [line 72];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE73">73</td><td class="line">            this.setTempFields(request,firstName,lastName,email,facultate,serie,grupa,document); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node53.html"><span class='visited with_tooltip'>I_53<span class='tooltip'>node53 preds:52 succs:90 exn:3 Instructions
+n$113=*&amp;this:com.stn.servlets.ApplicationProcess* [line 73];
+n$114=*&amp;request:javax.servlet.http.HttpServletRequest* [line 73];
+n$115=*&amp;firstName:java.lang.String* [line 73];
+n$116=*&amp;lastName:java.lang.String* [line 73];
+n$117=*&amp;email:java.lang.String* [line 73];
+n$118=*&amp;facultate:java.lang.String* [line 73];
+n$119=*&amp;serie:java.lang.String* [line 73];
+n$120=*&amp;grupa:java.lang.String* [line 73];
+n$121=*&amp;document:java.lang.String* [line 73];
+n$122=_fun_void ApplicationProcess.setTempFields(HttpServletRequest,String,String,String,String,String,String,String)(n$113:com.stn.servlets.ApplicationProcess*,n$114:javax.servlet.http.HttpServletRequest*,n$115:java.lang.String*,n$116:java.lang.String*,n$117:java.lang.String*,n$118:java.lang.String*,n$119:java.lang.String*,n$120:java.lang.String*,n$121:java.lang.String*) [line 73];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE74">74</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE75">75</td><td class="line">        else if(!Validator.between(serie, 1, 20)) { <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node54.html"><span class='visited with_tooltip'>I_54<span class='tooltip'>node54 preds:51 succs:55 56 exn:3 Instructions
+n$123=*&amp;serie:java.lang.String* [line 75];
+n$124=_fun_boolean Validator.between(String,int,int)(n$123:java.lang.String*,1:int,20:int) [line 75];
+*&amp;$irvar7:_Bool=n$124 [line 75];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node55.html"><span class='visited with_tooltip'>C_55<span class='tooltip'>node55 preds:54 succs:57 exn:3 Conditional method_body
+n$125=*&amp;$irvar7:_Bool [line 75];
+PRUNE(!(n$125 != 0), true); [line 75];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node56.html"><span class='visited with_tooltip'>C_56<span class='tooltip'>node56 preds:54 succs:59 exn:3 Conditional method_body
+n$125=*&amp;$irvar7:_Bool [line 75];
+PRUNE((n$125 != 0), false); [line 75];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE76">76</td><td class="line">            error = &quot;Seria trebuie sa contina intre 1 si 20 de caractere!&quot;; <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node57.html"><span class='visited with_tooltip'>I_57<span class='tooltip'>node57 preds:55 succs:58 exn:3 Instructions
+*&amp;error:java.lang.Object*="Seria trebuie sa contina intre 1 si 20 de caractere!" [line 76];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE77">77</td><td class="line">            this.setTempFields(request,firstName,lastName,email,facultate,serie,grupa,document); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node58.html"><span class='visited with_tooltip'>I_58<span class='tooltip'>node58 preds:57 succs:90 exn:3 Instructions
+n$126=*&amp;this:com.stn.servlets.ApplicationProcess* [line 77];
+n$127=*&amp;request:javax.servlet.http.HttpServletRequest* [line 77];
+n$128=*&amp;firstName:java.lang.String* [line 77];
+n$129=*&amp;lastName:java.lang.String* [line 77];
+n$130=*&amp;email:java.lang.String* [line 77];
+n$131=*&amp;facultate:java.lang.String* [line 77];
+n$132=*&amp;serie:java.lang.String* [line 77];
+n$133=*&amp;grupa:java.lang.String* [line 77];
+n$134=*&amp;document:java.lang.String* [line 77];
+n$135=_fun_void ApplicationProcess.setTempFields(HttpServletRequest,String,String,String,String,String,String,String)(n$126:com.stn.servlets.ApplicationProcess*,n$127:javax.servlet.http.HttpServletRequest*,n$128:java.lang.String*,n$129:java.lang.String*,n$130:java.lang.String*,n$131:java.lang.String*,n$132:java.lang.String*,n$133:java.lang.String*,n$134:java.lang.String*) [line 77];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE78">78</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE79">79</td><td class="line">        else if(!Validator.between(grupa, 1, 20)) { <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node59.html"><span class='visited with_tooltip'>I_59<span class='tooltip'>node59 preds:56 succs:60 61 exn:3 Instructions
+n$136=*&amp;grupa:java.lang.String* [line 79];
+n$137=_fun_boolean Validator.between(String,int,int)(n$136:java.lang.String*,1:int,20:int) [line 79];
+*&amp;$irvar8:_Bool=n$137 [line 79];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node60.html"><span class='visited with_tooltip'>C_60<span class='tooltip'>node60 preds:59 succs:62 exn:3 Conditional method_body
+n$138=*&amp;$irvar8:_Bool [line 79];
+PRUNE(!(n$138 != 0), true); [line 79];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node61.html"><span class='visited with_tooltip'>C_61<span class='tooltip'>node61 preds:59 succs:64 exn:3 Conditional method_body
+n$138=*&amp;$irvar8:_Bool [line 79];
+PRUNE((n$138 != 0), false); [line 79];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE80">80</td><td class="line">            error = &quot;Grupa trebuie sa contina intre 1 si 20 de caractere!&quot;; <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node62.html"><span class='visited with_tooltip'>I_62<span class='tooltip'>node62 preds:60 succs:63 exn:3 Instructions
+*&amp;error:java.lang.Object*="Grupa trebuie sa contina intre 1 si 20 de caractere!" [line 80];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE81">81</td><td class="line">            this.setTempFields(request,firstName,lastName,email,facultate,serie,grupa,document); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node63.html"><span class='visited with_tooltip'>I_63<span class='tooltip'>node63 preds:62 succs:90 exn:3 Instructions
+n$139=*&amp;this:com.stn.servlets.ApplicationProcess* [line 81];
+n$140=*&amp;request:javax.servlet.http.HttpServletRequest* [line 81];
+n$141=*&amp;firstName:java.lang.String* [line 81];
+n$142=*&amp;lastName:java.lang.String* [line 81];
+n$143=*&amp;email:java.lang.String* [line 81];
+n$144=*&amp;facultate:java.lang.String* [line 81];
+n$145=*&amp;serie:java.lang.String* [line 81];
+n$146=*&amp;grupa:java.lang.String* [line 81];
+n$147=*&amp;document:java.lang.String* [line 81];
+n$148=_fun_void ApplicationProcess.setTempFields(HttpServletRequest,String,String,String,String,String,String,String)(n$139:com.stn.servlets.ApplicationProcess*,n$140:javax.servlet.http.HttpServletRequest*,n$141:java.lang.String*,n$142:java.lang.String*,n$143:java.lang.String*,n$144:java.lang.String*,n$145:java.lang.String*,n$146:java.lang.String*,n$147:java.lang.String*) [line 81];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE82">82</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE83">83</td><td class="line">        else if(!Validator.between(document,6,120)) { <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node64.html"><span class='visited with_tooltip'>I_64<span class='tooltip'>node64 preds:61 succs:65 66 exn:3 Instructions
+n$149=*&amp;document:java.lang.String* [line 83];
+n$150=_fun_boolean Validator.between(String,int,int)(n$149:java.lang.String*,6:int,120:int) [line 83];
+*&amp;$irvar9:_Bool=n$150 [line 83];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node65.html"><span class='visited with_tooltip'>C_65<span class='tooltip'>node65 preds:64 succs:67 exn:3 Conditional method_body
+n$151=*&amp;$irvar9:_Bool [line 83];
+PRUNE(!(n$151 != 0), true); [line 83];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node66.html"><span class='visited with_tooltip'>C_66<span class='tooltip'>node66 preds:64 succs:69 exn:3 Conditional method_body
+n$151=*&amp;$irvar9:_Bool [line 83];
+PRUNE((n$151 != 0), false); [line 83];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE84">84</td><td class="line">            error = &quot;Documentul trebuie sa contina intre 6 si 120 de caractere!&quot;; <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node67.html"><span class='visited with_tooltip'>I_67<span class='tooltip'>node67 preds:65 succs:68 exn:3 Instructions
+*&amp;error:java.lang.Object*="Documentul trebuie sa contina intre 6 si 120 de caractere!" [line 84];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE85">85</td><td class="line">            this.setTempFields(request,firstName,lastName,email,facultate,serie,grupa,document); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node68.html"><span class='visited with_tooltip'>I_68<span class='tooltip'>node68 preds:67 succs:90 exn:3 Instructions
+n$152=*&amp;this:com.stn.servlets.ApplicationProcess* [line 85];
+n$153=*&amp;request:javax.servlet.http.HttpServletRequest* [line 85];
+n$154=*&amp;firstName:java.lang.String* [line 85];
+n$155=*&amp;lastName:java.lang.String* [line 85];
+n$156=*&amp;email:java.lang.String* [line 85];
+n$157=*&amp;facultate:java.lang.String* [line 85];
+n$158=*&amp;serie:java.lang.String* [line 85];
+n$159=*&amp;grupa:java.lang.String* [line 85];
+n$160=*&amp;document:java.lang.String* [line 85];
+n$161=_fun_void ApplicationProcess.setTempFields(HttpServletRequest,String,String,String,String,String,String,String)(n$152:com.stn.servlets.ApplicationProcess*,n$153:javax.servlet.http.HttpServletRequest*,n$154:java.lang.String*,n$155:java.lang.String*,n$156:java.lang.String*,n$157:java.lang.String*,n$158:java.lang.String*,n$159:java.lang.String*,n$160:java.lang.String*) [line 85];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE86">86</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE87">87</td><td class="line">        else if(!Validator.isURL(document)) { <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node69.html"><span class='visited with_tooltip'>I_69<span class='tooltip'>node69 preds:66 succs:70 71 exn:3 Instructions
+n$162=*&amp;document:java.lang.String* [line 87];
+n$163=_fun_boolean Validator.isURL(String)(n$162:java.lang.String*) [line 87];
+*&amp;$irvar10:_Bool=n$163 [line 87];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node70.html"><span class='visited with_tooltip'>C_70<span class='tooltip'>node70 preds:69 succs:72 exn:3 Conditional method_body
+n$164=*&amp;$irvar10:_Bool [line 87];
+PRUNE(!(n$164 != 0), true); [line 87];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node71.html"><span class='visited with_tooltip'>C_71<span class='tooltip'>node71 preds:69 succs:74 exn:3 Conditional method_body
+n$164=*&amp;$irvar10:_Bool [line 87];
+PRUNE((n$164 != 0), false); [line 87];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE88">88</td><td class="line">            error = &quot;Invalid document url!&quot;; <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node72.html"><span class='visited with_tooltip'>I_72<span class='tooltip'>node72 preds:70 succs:73 exn:3 Instructions
+*&amp;error:java.lang.Object*="Invalid document url!" [line 88];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE89">89</td><td class="line">            this.setTempFields(request,firstName,lastName,email,facultate,serie,grupa,document); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node73.html"><span class='visited with_tooltip'>I_73<span class='tooltip'>node73 preds:72 succs:90 exn:3 Instructions
+n$165=*&amp;this:com.stn.servlets.ApplicationProcess* [line 89];
+n$166=*&amp;request:javax.servlet.http.HttpServletRequest* [line 89];
+n$167=*&amp;firstName:java.lang.String* [line 89];
+n$168=*&amp;lastName:java.lang.String* [line 89];
+n$169=*&amp;email:java.lang.String* [line 89];
+n$170=*&amp;facultate:java.lang.String* [line 89];
+n$171=*&amp;serie:java.lang.String* [line 89];
+n$172=*&amp;grupa:java.lang.String* [line 89];
+n$173=*&amp;document:java.lang.String* [line 89];
+n$174=_fun_void ApplicationProcess.setTempFields(HttpServletRequest,String,String,String,String,String,String,String)(n$165:com.stn.servlets.ApplicationProcess*,n$166:javax.servlet.http.HttpServletRequest*,n$167:java.lang.String*,n$168:java.lang.String*,n$169:java.lang.String*,n$170:java.lang.String*,n$171:java.lang.String*,n$172:java.lang.String*,n$173:java.lang.String*) [line 89];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE90">90</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE91">91</td><td class="line">        else if(!Validator.between(email,6,30)) { <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node74.html"><span class='visited with_tooltip'>I_74<span class='tooltip'>node74 preds:71 succs:75 76 exn:3 Instructions
+n$175=*&amp;email:java.lang.String* [line 91];
+n$176=_fun_boolean Validator.between(String,int,int)(n$175:java.lang.String*,6:int,30:int) [line 91];
+*&amp;$irvar11:_Bool=n$176 [line 91];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node75.html"><span class='visited with_tooltip'>C_75<span class='tooltip'>node75 preds:74 succs:77 exn:3 Conditional method_body
+n$177=*&amp;$irvar11:_Bool [line 91];
+PRUNE(!(n$177 != 0), true); [line 91];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node76.html"><span class='visited with_tooltip'>C_76<span class='tooltip'>node76 preds:74 succs:79 exn:3 Conditional method_body
+n$177=*&amp;$irvar11:_Bool [line 91];
+PRUNE((n$177 != 0), false); [line 91];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE92">92</td><td class="line">            error = &quot;Email be between 6 and 30 characters!&quot;; <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node77.html"><span class='visited with_tooltip'>I_77<span class='tooltip'>node77 preds:75 succs:78 exn:3 Instructions
+*&amp;error:java.lang.Object*="Email be between 6 and 30 characters!" [line 92];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE93">93</td><td class="line">            this.setTempFields(request,firstName,lastName,email,facultate,serie,grupa,document); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node78.html"><span class='visited with_tooltip'>I_78<span class='tooltip'>node78 preds:77 succs:90 exn:3 Instructions
+n$178=*&amp;this:com.stn.servlets.ApplicationProcess* [line 93];
+n$179=*&amp;request:javax.servlet.http.HttpServletRequest* [line 93];
+n$180=*&amp;firstName:java.lang.String* [line 93];
+n$181=*&amp;lastName:java.lang.String* [line 93];
+n$182=*&amp;email:java.lang.String* [line 93];
+n$183=*&amp;facultate:java.lang.String* [line 93];
+n$184=*&amp;serie:java.lang.String* [line 93];
+n$185=*&amp;grupa:java.lang.String* [line 93];
+n$186=*&amp;document:java.lang.String* [line 93];
+n$187=_fun_void ApplicationProcess.setTempFields(HttpServletRequest,String,String,String,String,String,String,String)(n$178:com.stn.servlets.ApplicationProcess*,n$179:javax.servlet.http.HttpServletRequest*,n$180:java.lang.String*,n$181:java.lang.String*,n$182:java.lang.String*,n$183:java.lang.String*,n$184:java.lang.String*,n$185:java.lang.String*,n$186:java.lang.String*) [line 93];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE94">94</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE95">95</td><td class="line">        else if(!Validator.isEmail(email)) { //verificare email daca este valid <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node79.html"><span class='visited with_tooltip'>I_79<span class='tooltip'>node79 preds:76 succs:80 81 exn:3 Instructions
+n$188=*&amp;email:java.lang.String* [line 95];
+n$189=_fun_boolean Validator.isEmail(String)(n$188:java.lang.String*) [line 95];
+*&amp;$irvar12:_Bool=n$189 [line 95];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node80.html"><span class='visited with_tooltip'>C_80<span class='tooltip'>node80 preds:79 succs:82 exn:3 Conditional method_body
+n$190=*&amp;$irvar12:_Bool [line 95];
+PRUNE(!(n$190 != 0), true); [line 95];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node81.html"><span class='visited with_tooltip'>C_81<span class='tooltip'>node81 preds:79 succs:84 exn:3 Conditional method_body
+n$190=*&amp;$irvar12:_Bool [line 95];
+PRUNE((n$190 != 0), false); [line 95];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE96">96</td><td class="line">            error = &quot;Invalid email addres!&quot;; <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node82.html"><span class='visited with_tooltip'>I_82<span class='tooltip'>node82 preds:80 succs:83 exn:3 Instructions
+*&amp;error:java.lang.Object*="Invalid email addres!" [line 96];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE97">97</td><td class="line">            this.setTempFields(request,firstName,lastName,email,facultate,serie,grupa,document); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node83.html"><span class='visited with_tooltip'>I_83<span class='tooltip'>node83 preds:82 succs:90 exn:3 Instructions
+n$191=*&amp;this:com.stn.servlets.ApplicationProcess* [line 97];
+n$192=*&amp;request:javax.servlet.http.HttpServletRequest* [line 97];
+n$193=*&amp;firstName:java.lang.String* [line 97];
+n$194=*&amp;lastName:java.lang.String* [line 97];
+n$195=*&amp;email:java.lang.String* [line 97];
+n$196=*&amp;facultate:java.lang.String* [line 97];
+n$197=*&amp;serie:java.lang.String* [line 97];
+n$198=*&amp;grupa:java.lang.String* [line 97];
+n$199=*&amp;document:java.lang.String* [line 97];
+n$200=_fun_void ApplicationProcess.setTempFields(HttpServletRequest,String,String,String,String,String,String,String)(n$191:com.stn.servlets.ApplicationProcess*,n$192:javax.servlet.http.HttpServletRequest*,n$193:java.lang.String*,n$194:java.lang.String*,n$195:java.lang.String*,n$196:java.lang.String*,n$197:java.lang.String*,n$198:java.lang.String*,n$199:java.lang.String*) [line 97];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE98">98</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE99">99</td><td class="line">        else { </td></tr>
+<tr><td class="num" id="LINE100">100</td><td class="line">            ApplicationHelper applicationHelper = new ApplicationHelper(); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node84.html"><span class='visited with_tooltip'>I_84<span class='tooltip'>node84 preds:81 succs:85 exn:3 Instructions
+n$201=_fun___new(sizeof(t=com.stn.helpers.ApplicationHelper):com.stn.helpers.ApplicationHelper*) [line 100];
+n$202=_fun_ApplicationHelper.&lt;init&gt;()(n$201:com.stn.helpers.ApplicationHelper*) [line 100];
+*&amp;applicationHelper:com.stn.helpers.ApplicationHelper*=n$201 [line 100];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE101">101</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE102">102</td><td class="line">            try { </td></tr>
+<tr><td class="num" id="LINE103">103</td><td class="line">                applicationHelper.addApplication(email,firstName,lastName,facultate,serie,grupa,document); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node85.html"><span class='visited with_tooltip'>I_85<span class='tooltip'>node85 preds:84 succs:89 exn:110 Instructions
+n$203=*&amp;applicationHelper:com.stn.helpers.ApplicationHelper* [line 103];
+_=*n$203:com.stn.helpers.ApplicationHelper*(root com.stn.helpers.ApplicationHelper) [line 103];
+n$205=*&amp;email:java.lang.String* [line 103];
+n$206=*&amp;firstName:java.lang.String* [line 103];
+n$207=*&amp;lastName:java.lang.String* [line 103];
+n$208=*&amp;facultate:java.lang.String* [line 103];
+n$209=*&amp;serie:java.lang.String* [line 103];
+n$210=*&amp;grupa:java.lang.String* [line 103];
+n$211=*&amp;document:java.lang.String* [line 103];
+n$212=_fun_void ApplicationHelper.addApplication(String,String,String,String,String,String,String)(n$203:com.stn.helpers.ApplicationHelper*,n$205:java.lang.String*,n$206:java.lang.String*,n$207:java.lang.String*,n$208:java.lang.String*,n$209:java.lang.String*,n$210:java.lang.String*,n$211:java.lang.String*) virtual [line 103];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE104">104</td><td class="line">            } catch (SQLException | ClassNotFoundException e) { <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node86.html"><span class='visited with_tooltip'>I_86<span class='tooltip'>node86 preds:108 106 succs:87 exn:3 Instructions
+n$213=*&amp;CatchVar602:java.lang.Object* [line 104];
+*&amp;e:java.lang.Object*=n$213 [line 104];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node106.html"><span class='visited with_tooltip'>C_106<span class='tooltip'>node106 preds:109 succs:86 exn:3 Conditional exception handler
+n$262=_fun___instanceof(n$261:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 104];
+PRUNE(n$262, true); [line 104];
+*&amp;CatchVar602:void=n$261 [line 104];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node107.html"><span class='visited with_tooltip'>C_107<span class='tooltip'>node107 preds:109 succs:3 exn:3 Conditional exception handler
+n$262=_fun___instanceof(n$261:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 104];
+PRUNE(!n$262, false); [line 104];
+*&amp;return:void=EXN n$261 [line 104];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node108.html"><span class='visited with_tooltip'>C_108<span class='tooltip'>node108 preds:110 succs:86 exn:3 Conditional exception handler
+n$263=_fun___instanceof(n$261:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 104];
+PRUNE(n$263, true); [line 104];
+*&amp;CatchVar602:void=n$261 [line 104];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node109.html"><span class='visited with_tooltip'>C_109<span class='tooltip'>node109 preds:110 succs:106 107 exn:3 Conditional exception handler
+n$263=_fun___instanceof(n$261:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 104];
+PRUNE(!n$263, false); [line 104];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node110.html"><span class='visited with_tooltip'>I_110<span class='tooltip'>node110 preds: succs:108 109 exn:3 Instructions
+n$260=*&amp;return:void [line 104];
+*&amp;return:void=null [line 104];
+n$261=_fun___unwrap_exception(n$260:void) [line 104];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE105">105</td><td class="line">                out.println(e); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node87.html"><span class='visited with_tooltip'>I_87<span class='tooltip'>node87 preds:86 succs:88 exn:3 Instructions
+n$214=*&amp;out:java.io.PrintWriter* [line 105];
+_=*n$214:java.io.PrintWriter*(root java.io.PrintWriter) [line 105];
+n$216=*&amp;e:java.lang.Object* [line 105];
+n$217=_fun_void PrintWriter.println(Object)(n$214:java.io.PrintWriter*,n$216:java.lang.Object*) virtual [line 105];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE106">106</td><td class="line">                return; <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node88.html"><span class='visited with_tooltip'>I_88<span class='tooltip'>node88 preds:87 succs:2 exn:3 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE107">107</td><td class="line">            } </td></tr>
+<tr><td class="num" id="LINE108">108</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE109">109</td><td class="line">            error = &quot;Application sent!&quot;; <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node89.html"><span class='visited with_tooltip'>I_89<span class='tooltip'>node89 preds:85 succs:90 exn:3 Instructions
+*&amp;error:java.lang.Object*="Application sent!" [line 109];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE110">110</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE111">111</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE112">112</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE113">113</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE114">114</td><td class="line">        if(error.equals(&quot;Application sent!&quot;)) <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node90.html"><span class='visited with_tooltip'>I_90<span class='tooltip'>node90 preds:89 83 78 73 68 63 58 53 48 43 38 33 28 succs:91 92 exn:3 Instructions
+n$218=*&amp;error:java.lang.Object* [line 114];
+_=*n$218:java.lang.Object*(root java.lang.Object) [line 114];
+n$220=_fun_boolean String.equals(Object)(n$218:java.lang.Object*,"Application sent!":java.lang.Object*) virtual [line 114];
+*&amp;$irvar13:_Bool=n$220 [line 114];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node91.html"><span class='visited with_tooltip'>C_91<span class='tooltip'>node91 preds:90 succs:93 exn:3 Conditional method_body
+n$221=*&amp;$irvar13:_Bool [line 114];
+PRUNE(!(n$221 == 0), true); [line 114];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node92.html"><span class='visited with_tooltip'>C_92<span class='tooltip'>node92 preds:90 succs:98 exn:3 Conditional method_body
+n$221=*&amp;$irvar13:_Bool [line 114];
+PRUNE((n$221 == 0), false); [line 114];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE115">115</td><td class="line">        { </td></tr>
+<tr><td class="num" id="LINE116">116</td><td class="line">            error = &quot;&lt;b style='color: green; display: inline'&gt;&quot; + error + &quot;&lt;/b&gt;&quot;; <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node93.html"><span class='visited with_tooltip'>I_93<span class='tooltip'>node93 preds:91 succs:94 exn:3 Instructions
+n$222=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 116];
+n$223=_fun_StringBuilder.&lt;init&gt;()(n$222:java.lang.StringBuilder*) [line 116];
+*&amp;$irvar14:java.lang.StringBuilder*=n$222 [line 116];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node94.html"><span class='visited with_tooltip'>I_94<span class='tooltip'>node94 preds:93 succs:95 exn:3 Instructions
+n$224=*&amp;$irvar14:java.lang.StringBuilder* [line 116];
+_=*n$224:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 116];
+n$226=_fun_StringBuilder StringBuilder.append(String)(n$224:java.lang.StringBuilder*,"<b style='color: green; display: inline'>":java.lang.Object*) virtual [line 116];
+*&amp;$irvar15:java.lang.StringBuilder*=n$226 [line 116];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node95.html"><span class='visited with_tooltip'>I_95<span class='tooltip'>node95 preds:94 succs:96 exn:3 Instructions
+n$227=*&amp;$irvar15:java.lang.StringBuilder* [line 116];
+_=*n$227:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 116];
+n$229=*&amp;error:java.lang.Object* [line 116];
+n$230=_fun_StringBuilder StringBuilder.append(String)(n$227:java.lang.StringBuilder*,n$229:java.lang.Object*) virtual [line 116];
+*&amp;$irvar16:java.lang.StringBuilder*=n$230 [line 116];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node96.html"><span class='visited with_tooltip'>I_96<span class='tooltip'>node96 preds:95 succs:97 exn:3 Instructions
+n$231=*&amp;$irvar16:java.lang.StringBuilder* [line 116];
+_=*n$231:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 116];
+n$233=_fun_StringBuilder StringBuilder.append(String)(n$231:java.lang.StringBuilder*,"</b>":java.lang.Object*) virtual [line 116];
+*&amp;$irvar17:java.lang.StringBuilder*=n$233 [line 116];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node97.html"><span class='visited with_tooltip'>I_97<span class='tooltip'>node97 preds:96 succs:103 exn:3 Instructions
+n$234=*&amp;$irvar17:java.lang.StringBuilder* [line 116];
+_=*n$234:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 116];
+n$236=_fun_String StringBuilder.toString()(n$234:java.lang.StringBuilder*) virtual [line 116];
+*&amp;error:java.lang.String*=n$236 [line 116];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE117">117</td><td class="line">        } else { </td></tr>
+<tr><td class="num" id="LINE118">118</td><td class="line">            error = &quot;&lt;b style='color: red; display: inline'&gt;&quot; + error + &quot;&lt;/b&gt;&quot;; <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node98.html"><span class='visited with_tooltip'>I_98<span class='tooltip'>node98 preds:92 succs:99 exn:3 Instructions
+n$237=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 118];
+n$238=_fun_StringBuilder.&lt;init&gt;()(n$237:java.lang.StringBuilder*) [line 118];
+*&amp;$irvar18:java.lang.StringBuilder*=n$237 [line 118];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node99.html"><span class='visited with_tooltip'>I_99<span class='tooltip'>node99 preds:98 succs:100 exn:3 Instructions
+n$239=*&amp;$irvar18:java.lang.StringBuilder* [line 118];
+_=*n$239:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 118];
+n$241=_fun_StringBuilder StringBuilder.append(String)(n$239:java.lang.StringBuilder*,"<b style='color: red; display: inline'>":java.lang.Object*) virtual [line 118];
+*&amp;$irvar19:java.lang.StringBuilder*=n$241 [line 118];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node100.html"><span class='visited with_tooltip'>I_100<span class='tooltip'>node100 preds:99 succs:101 exn:3 Instructions
+n$242=*&amp;$irvar19:java.lang.StringBuilder* [line 118];
+_=*n$242:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 118];
+n$244=*&amp;error:java.lang.String* [line 118];
+n$245=_fun_StringBuilder StringBuilder.append(String)(n$242:java.lang.StringBuilder*,n$244:java.lang.String*) virtual [line 118];
+*&amp;$irvar20:java.lang.StringBuilder*=n$245 [line 118];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node101.html"><span class='visited with_tooltip'>I_101<span class='tooltip'>node101 preds:100 succs:102 exn:3 Instructions
+n$246=*&amp;$irvar20:java.lang.StringBuilder* [line 118];
+_=*n$246:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 118];
+n$248=_fun_StringBuilder StringBuilder.append(String)(n$246:java.lang.StringBuilder*,"</b>":java.lang.Object*) virtual [line 118];
+*&amp;$irvar21:java.lang.StringBuilder*=n$248 [line 118];
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node102.html"><span class='visited with_tooltip'>I_102<span class='tooltip'>node102 preds:101 succs:103 exn:3 Instructions
+n$249=*&amp;$irvar21:java.lang.StringBuilder* [line 118];
+_=*n$249:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 118];
+n$251=_fun_String StringBuilder.toString()(n$249:java.lang.StringBuilder*) virtual [line 118];
+*&amp;error:java.lang.String*=n$251 [line 118];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE119">119</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE120">120</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE121">121</td><td class="line">        //Redirectionare catre o anumita pagina (este data de string-ul url) </td></tr>
+<tr><td class="num" id="LINE122">122</td><td class="line">        session.setAttribute(&quot;error&quot;, error); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node103.html"><span class='visited with_tooltip'>I_103<span class='tooltip'>node103 preds:102 97 succs:104 exn:3 Instructions
+n$252=*&amp;session:javax.servlet.http.HttpSession* [line 122];
+_=*n$252:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 122];
+n$254=*&amp;error:java.lang.String* [line 122];
+n$255=_fun_void HttpSession.setAttribute(String,Object)(n$252:javax.servlet.http.HttpSession*,"error":java.lang.Object*,n$254:java.lang.String*) interface virtual [line 122];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE123">123</td><td class="line">        response.sendRedirect(url); <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node104.html"><span class='visited with_tooltip'>I_104<span class='tooltip'>node104 preds:103 succs:105 exn:3 Instructions
+n$256=*&amp;response:javax.servlet.http.HttpServletResponse* [line 123];
+_=*n$256:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 123];
+n$258=*&amp;url:java.lang.Object* [line 123];
+n$259=_fun_void HttpServletResponse.sendRedirect(String)(n$256:javax.servlet.http.HttpServletResponse*,n$258:java.lang.Object*) interface virtual [line 123];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE124">124</td><td class="line">    } <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node105.html"><span class='visited with_tooltip'>I_105<span class='tooltip'>node105 preds:104 succs:2 exn:3 Instructions
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:105 88 3 succs: exn: Exit
+</span></span></a> <a href="./ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839/nodes/com.stn.servlets.ApplicationProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http..f50ab2e6ed6a181508aeb43bb999c63b_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:107 succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE125">125</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE126">126</td><td class="line">} </td></tr>
+</table>
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+</body>
+</html>

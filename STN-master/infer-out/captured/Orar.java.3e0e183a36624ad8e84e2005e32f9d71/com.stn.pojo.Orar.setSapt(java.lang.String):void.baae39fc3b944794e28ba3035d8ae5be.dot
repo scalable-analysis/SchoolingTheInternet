@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Orar.setSapt(java.lang.String):void.baae39fc3b944794e28ba3035d8ae5be_1" [label="1: Start void Orar.setSapt(String)\nFormals:  this:com.stn.pojo.Orar* sapt:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Orar.setSapt(java.lang.String):void.baae39fc3b944794e28ba3035d8ae5be_1" -> "com.stn.pojo.Orar.setSapt(java.lang.String):void.baae39fc3b944794e28ba3035d8ae5be_4" ;
+"com.stn.pojo.Orar.setSapt(java.lang.String):void.baae39fc3b944794e28ba3035d8ae5be_2" [label="2: Exit void Orar.setSapt(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Orar.setSapt(java.lang.String):void.baae39fc3b944794e28ba3035d8ae5be_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 22]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Orar.setSapt(java.lang.String):void.baae39fc3b944794e28ba3035d8ae5be_3" -> "com.stn.pojo.Orar.setSapt(java.lang.String):void.baae39fc3b944794e28ba3035d8ae5be_2" ;
+"com.stn.pojo.Orar.setSapt(java.lang.String):void.baae39fc3b944794e28ba3035d8ae5be_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Orar* [line 21]\n  n$1=*&sapt:java.lang.String* [line 21]\n  *n$0.sapt:com.stn.pojo.Orar(root com.stn.pojo.Orar)=n$1 [line 21]\n  NULLIFY(&sapt); [line 21]\n  NULLIFY(&this); [line 21]\n  EXIT_SCOPE(n$0,n$1,sapt,this); [line 21]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Orar.setSapt(java.lang.String):void.baae39fc3b944794e28ba3035d8ae5be_4" -> "com.stn.pojo.Orar.setSapt(java.lang.String):void.baae39fc3b944794e28ba3035d8ae5be_5" ;
+	 "com.stn.pojo.Orar.setSapt(java.lang.String):void.baae39fc3b944794e28ba3035d8ae5be_4" -> "com.stn.pojo.Orar.setSapt(java.lang.String):void.baae39fc3b944794e28ba3035d8ae5be_3" [color="red" ];
+"com.stn.pojo.Orar.setSapt(java.lang.String):void.baae39fc3b944794e28ba3035d8ae5be_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 22]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Orar.setSapt(java.lang.String):void.baae39fc3b944794e28ba3035d8ae5be_5" -> "com.stn.pojo.Orar.setSapt(java.lang.String):void.baae39fc3b944794e28ba3035d8ae5be_2" ;
+	 "com.stn.pojo.Orar.setSapt(java.lang.String):void.baae39fc3b944794e28ba3035d8ae5be_5" -> "com.stn.pojo.Orar.setSapt(java.lang.String):void.baae39fc3b944794e28ba3035d8ae5be_3" [color="red" ];
+}

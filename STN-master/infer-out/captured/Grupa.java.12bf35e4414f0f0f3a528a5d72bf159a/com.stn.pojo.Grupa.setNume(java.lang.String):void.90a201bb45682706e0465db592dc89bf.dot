@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Grupa.setNume(java.lang.String):void.90a201bb45682706e0465db592dc89bf_1" [label="1: Start void Grupa.setNume(String)\nFormals:  this:com.stn.pojo.Grupa* nume:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Grupa.setNume(java.lang.String):void.90a201bb45682706e0465db592dc89bf_1" -> "com.stn.pojo.Grupa.setNume(java.lang.String):void.90a201bb45682706e0465db592dc89bf_4" ;
+"com.stn.pojo.Grupa.setNume(java.lang.String):void.90a201bb45682706e0465db592dc89bf_2" [label="2: Exit void Grupa.setNume(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Grupa.setNume(java.lang.String):void.90a201bb45682706e0465db592dc89bf_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 21]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Grupa.setNume(java.lang.String):void.90a201bb45682706e0465db592dc89bf_3" -> "com.stn.pojo.Grupa.setNume(java.lang.String):void.90a201bb45682706e0465db592dc89bf_2" ;
+"com.stn.pojo.Grupa.setNume(java.lang.String):void.90a201bb45682706e0465db592dc89bf_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Grupa* [line 20]\n  n$1=*&nume:java.lang.String* [line 20]\n  *n$0.nume:com.stn.pojo.Grupa(root com.stn.pojo.Grupa)=n$1 [line 20]\n  NULLIFY(&nume); [line 20]\n  NULLIFY(&this); [line 20]\n  EXIT_SCOPE(n$0,n$1,nume,this); [line 20]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Grupa.setNume(java.lang.String):void.90a201bb45682706e0465db592dc89bf_4" -> "com.stn.pojo.Grupa.setNume(java.lang.String):void.90a201bb45682706e0465db592dc89bf_5" ;
+	 "com.stn.pojo.Grupa.setNume(java.lang.String):void.90a201bb45682706e0465db592dc89bf_4" -> "com.stn.pojo.Grupa.setNume(java.lang.String):void.90a201bb45682706e0465db592dc89bf_3" [color="red" ];
+"com.stn.pojo.Grupa.setNume(java.lang.String):void.90a201bb45682706e0465db592dc89bf_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 21]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Grupa.setNume(java.lang.String):void.90a201bb45682706e0465db592dc89bf_5" -> "com.stn.pojo.Grupa.setNume(java.lang.String):void.90a201bb45682706e0465db592dc89bf_2" ;
+	 "com.stn.pojo.Grupa.setNume(java.lang.String):void.90a201bb45682706e0465db592dc89bf_5" -> "com.stn.pojo.Grupa.setNume(java.lang.String):void.90a201bb45682706e0465db592dc89bf_3" [color="red" ];
+}

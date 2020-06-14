@@ -1,0 +1,815 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Tools.java.5ab60bbcd04a639debf9e0445b6c8166</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>File src/main/java/com/stn/utils/Tools.java </h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.stn.utils; </td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import com.sun.management.OperatingSystemMXBean; </td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line">import java.lang.management.ManagementFactory; </td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import java.sql.Timestamp; </td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import java.util.HashMap; </td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">import java.util.Map; </td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">import java.util.Properties; </td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line">import javax.mail.Message; </td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">import javax.mail.MessagingException; </td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line">import javax.mail.PasswordAuthentication; </td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line">import javax.mail.Session; </td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line">import javax.mail.Transport; </td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line">import javax.mail.internet.InternetAddress; </td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line">import javax.mail.internet.MimeMessage; </td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line">import java.text.SimpleDateFormat; </td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line">public class Tools { <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.<init>%28%29.4d4e2806108414d0d981dff14137971a_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.<init>%28%29.4d4e2806108414d0d981dff14137971a_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.utils.Tools* [line 19];
+n$1=_fun_Object.&lt;init&gt;()(n$0:com.stn.utils.Tools*) [line 19];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.<init>%28%29.4d4e2806108414d0d981dff14137971a_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.<init>%28%29.4d4e2806108414d0d981dff14137971a_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.<init>%28%29.4d4e2806108414d0d981dff14137971a_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/com.stn.utils.Tools.<init>%28%29.4d4e2806108414d0d981dff14137971a.html">summary for Tools.&lt;init&gt;()</a></td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line">    public static Timestamp getDate() { <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.getDate%28%29%3Ajava.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/com.stn.utils.Tools.getDate%28%29%3Ajava.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c.html">summary for Timestamp Tools.getDate()</a></td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line">        Timestamp date = new Timestamp(System.currentTimeMillis()); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.getDate%28%29%3Ajava.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun_long System.currentTimeMillis()() [line 22];
+*&amp;$irvar0:long=n$0 [line 22];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.getDate%28%29%3Ajava.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$1=_fun___new(sizeof(t=java.sql.Timestamp):java.sql.Timestamp*) [line 22];
+n$2=*&amp;$irvar0:long [line 22];
+n$3=_fun_Timestamp.&lt;init&gt;(long)(n$1:java.sql.Timestamp*,n$2:long) [line 22];
+*&amp;date:java.sql.Timestamp*=n$1 [line 22];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">        return date; <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.getDate%28%29%3Ajava.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:2 exn:3 Instructions
+n$4=*&amp;date:java.sql.Timestamp* [line 23];
+*&amp;return:java.sql.Timestamp*=n$4 [line 23];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.getDate%28%29%3Ajava.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:6 3 succs: exn: Exit
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.getDate%28%29%3Ajava.sql.Timestamp.6a14f13e9f3565ec92e0d880f71a701c_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line">    } </td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line">    public static String formatDate(Timestamp date,int type) { <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d.html">summary for String Tools.formatDate(Timestamp,int)</a></td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">        String s = &quot;&quot;; <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 6 exn:3 Instructions
+*&amp;s:java.lang.Object*="" [line 27];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">        if(type == 1) <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node5.html"><span class='visited with_tooltip'>C_5<span class='tooltip'>node5 preds:4 succs:7 exn:3 Conditional method_body
+n$0=*&amp;type:int [line 28];
+PRUNE(!(n$0 != 1), true); [line 28];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node6.html"><span class='visited with_tooltip'>C_6<span class='tooltip'>node6 preds:4 succs:9 10 exn:3 Conditional method_body
+n$0=*&amp;type:int [line 28];
+PRUNE((n$0 != 1), false); [line 28];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">            s = new SimpleDateFormat(&quot;HH:mm&quot;).format(date); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:5 succs:8 exn:3 Instructions
+n$1=_fun___new(sizeof(t=java.text.SimpleDateFormat):java.text.SimpleDateFormat*) [line 29];
+n$2=_fun_SimpleDateFormat.&lt;init&gt;(String)(n$1:java.text.SimpleDateFormat*,"HH:mm":java.lang.Object*) [line 29];
+*&amp;$irvar0:java.text.SimpleDateFormat*=n$1 [line 29];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:21 exn:3 Instructions
+n$3=*&amp;$irvar0:java.text.SimpleDateFormat* [line 29];
+_=*n$3:java.text.SimpleDateFormat*(root java.text.SimpleDateFormat) [line 29];
+n$5=*&amp;date:java.sql.Timestamp* [line 29];
+n$6=_fun_String DateFormat.format(Date)(n$3:java.text.SimpleDateFormat*,n$5:java.sql.Timestamp*) virtual [line 29];
+*&amp;s:java.lang.String*=n$6 [line 29];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">        else if(type == 2) <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node9.html"><span class='visited with_tooltip'>C_9<span class='tooltip'>node9 preds:6 succs:11 exn:3 Conditional method_body
+n$7=*&amp;type:int [line 30];
+PRUNE(!(n$7 != 2), true); [line 30];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node10.html"><span class='visited with_tooltip'>C_10<span class='tooltip'>node10 preds:6 succs:13 14 exn:3 Conditional method_body
+n$7=*&amp;type:int [line 30];
+PRUNE((n$7 != 2), false); [line 30];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line">            s = new SimpleDateFormat(&quot;dd-MM-yyyy HH:mm:ss&quot;).format(date); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:9 succs:12 exn:3 Instructions
+n$8=_fun___new(sizeof(t=java.text.SimpleDateFormat):java.text.SimpleDateFormat*) [line 31];
+n$9=_fun_SimpleDateFormat.&lt;init&gt;(String)(n$8:java.text.SimpleDateFormat*,"dd-MM-yyyy HH:mm:ss":java.lang.Object*) [line 31];
+*&amp;$irvar1:java.text.SimpleDateFormat*=n$8 [line 31];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:21 exn:3 Instructions
+n$10=*&amp;$irvar1:java.text.SimpleDateFormat* [line 31];
+_=*n$10:java.text.SimpleDateFormat*(root java.text.SimpleDateFormat) [line 31];
+n$12=*&amp;date:java.sql.Timestamp* [line 31];
+n$13=_fun_String DateFormat.format(Date)(n$10:java.text.SimpleDateFormat*,n$12:java.sql.Timestamp*) virtual [line 31];
+*&amp;s:java.lang.String*=n$13 [line 31];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line">        else if(type == 3) <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node13.html"><span class='visited with_tooltip'>C_13<span class='tooltip'>node13 preds:10 succs:15 exn:3 Conditional method_body
+n$14=*&amp;type:int [line 32];
+PRUNE(!(n$14 != 3), true); [line 32];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node14.html"><span class='visited with_tooltip'>C_14<span class='tooltip'>node14 preds:10 succs:17 18 exn:3 Conditional method_body
+n$14=*&amp;type:int [line 32];
+PRUNE((n$14 != 3), false); [line 32];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line">            s = new SimpleDateFormat(&quot;dd-MM-yyyy HH:mm&quot;).format(date); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:13 succs:16 exn:3 Instructions
+n$15=_fun___new(sizeof(t=java.text.SimpleDateFormat):java.text.SimpleDateFormat*) [line 33];
+n$16=_fun_SimpleDateFormat.&lt;init&gt;(String)(n$15:java.text.SimpleDateFormat*,"dd-MM-yyyy HH:mm":java.lang.Object*) [line 33];
+*&amp;$irvar2:java.text.SimpleDateFormat*=n$15 [line 33];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:21 exn:3 Instructions
+n$17=*&amp;$irvar2:java.text.SimpleDateFormat* [line 33];
+_=*n$17:java.text.SimpleDateFormat*(root java.text.SimpleDateFormat) [line 33];
+n$19=*&amp;date:java.sql.Timestamp* [line 33];
+n$20=_fun_String DateFormat.format(Date)(n$17:java.text.SimpleDateFormat*,n$19:java.sql.Timestamp*) virtual [line 33];
+*&amp;s:java.lang.String*=n$20 [line 33];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line">        else if(type == 4) <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node17.html"><span class='visited with_tooltip'>C_17<span class='tooltip'>node17 preds:14 succs:19 exn:3 Conditional method_body
+n$21=*&amp;type:int [line 34];
+PRUNE(!(n$21 != 4), true); [line 34];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:14 succs:21 exn:3 Conditional method_body
+n$21=*&amp;type:int [line 34];
+PRUNE((n$21 != 4), false); [line 34];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">            s = new SimpleDateFormat(&quot;dd-MM-yyyy&quot;).format(date); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:17 succs:20 exn:3 Instructions
+n$22=_fun___new(sizeof(t=java.text.SimpleDateFormat):java.text.SimpleDateFormat*) [line 35];
+n$23=_fun_SimpleDateFormat.&lt;init&gt;(String)(n$22:java.text.SimpleDateFormat*,"dd-MM-yyyy":java.lang.Object*) [line 35];
+*&amp;$irvar3:java.text.SimpleDateFormat*=n$22 [line 35];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$24=*&amp;$irvar3:java.text.SimpleDateFormat* [line 35];
+_=*n$24:java.text.SimpleDateFormat*(root java.text.SimpleDateFormat) [line 35];
+n$26=*&amp;date:java.sql.Timestamp* [line 35];
+n$27=_fun_String DateFormat.format(Date)(n$24:java.text.SimpleDateFormat*,n$26:java.sql.Timestamp*) virtual [line 35];
+*&amp;s:java.lang.String*=n$27 [line 35];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line">        return s; <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 18 16 12 8 succs:2 exn:3 Instructions
+n$28=*&amp;s:java.lang.String* [line 36];
+*&amp;return:java.lang.String*=n$28 [line 36];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:21 3 succs: exn: Exit
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">    } </td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line">    public Boolean userIsOnline(Timestamp lastSeen) { <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.userIsOnline%28java.sql.Timestamp%29%3Ajava.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/com.stn.utils.Tools.userIsOnline%28java.sql.Timestamp%29%3Ajava.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab.html">summary for Boolean Tools.userIsOnline(Timestamp)</a></td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line">        long timeout = 5 * 60 * 1000; <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.userIsOnline%28java.sql.Timestamp%29%3Ajava.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;timeout:long=300000 [line 41];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">        java.sql.Timestamp current = new java.sql.Timestamp(new java.util.Date().getTime() - timeout ); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.userIsOnline%28java.sql.Timestamp%29%3Ajava.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.Date):java.util.Date*) [line 42];
+n$1=_fun_Date.&lt;init&gt;()(n$0:java.util.Date*) [line 42];
+*&amp;$irvar0:java.util.Date*=n$0 [line 42];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.userIsOnline%28java.sql.Timestamp%29%3Ajava.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$2=*&amp;$irvar0:java.util.Date* [line 42];
+_=*n$2:java.util.Date*(root java.util.Date) [line 42];
+n$4=_fun_long Date.getTime()(n$2:java.util.Date*) virtual [line 42];
+*&amp;$irvar1:long=n$4 [line 42];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.userIsOnline%28java.sql.Timestamp%29%3Ajava.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$5=_fun___new(sizeof(t=java.sql.Timestamp):java.sql.Timestamp*) [line 42];
+n$6=*&amp;$irvar1:long [line 42];
+n$7=*&amp;timeout:long [line 42];
+n$8=_fun_Timestamp.&lt;init&gt;(long)(n$5:java.sql.Timestamp*,(n$6 - n$7):long) [line 42];
+*&amp;current:java.sql.Timestamp*=n$5 [line 42];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">        if(lastSeen.after(current)) <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.userIsOnline%28java.sql.Timestamp%29%3Ajava.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 10 exn:3 Instructions
+n$9=*&amp;lastSeen:java.sql.Timestamp* [line 44];
+_=*n$9:java.sql.Timestamp*(root java.sql.Timestamp) [line 44];
+n$11=*&amp;current:java.sql.Timestamp* [line 44];
+n$12=_fun_boolean Timestamp.after(Timestamp)(n$9:java.sql.Timestamp*,n$11:java.sql.Timestamp*) virtual [line 44];
+*&amp;$irvar2:_Bool=n$12 [line 44];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.userIsOnline%28java.sql.Timestamp%29%3Ajava.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_node9.html"><span class='visited with_tooltip'>C_9<span class='tooltip'>node9 preds:8 succs:11 exn:3 Conditional method_body
+n$13=*&amp;$irvar2:_Bool [line 44];
+PRUNE(!(n$13 == 0), true); [line 44];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.userIsOnline%28java.sql.Timestamp%29%3Ajava.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_node10.html"><span class='visited with_tooltip'>C_10<span class='tooltip'>node10 preds:8 succs:13 exn:3 Conditional method_body
+n$13=*&amp;$irvar2:_Bool [line 44];
+PRUNE((n$13 == 0), false); [line 44];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line">            return true; <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.userIsOnline%28java.sql.Timestamp%29%3Ajava.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:9 succs:12 exn:3 Instructions
+n$14=_fun_Boolean Boolean.valueOf(boolean)(1:int) [line 45];
+*&amp;$irvar3:java.lang.Boolean*=n$14 [line 45];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.userIsOnline%28java.sql.Timestamp%29%3Ajava.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:2 exn:3 Instructions
+n$15=*&amp;$irvar3:java.lang.Boolean* [line 45];
+*&amp;return:java.lang.Boolean*=n$15 [line 45];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line">        else </td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">            return false; <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.userIsOnline%28java.sql.Timestamp%29%3Ajava.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:10 succs:14 exn:3 Instructions
+n$16=_fun_Boolean Boolean.valueOf(boolean)(0:int) [line 47];
+*&amp;$irvar4:java.lang.Boolean*=n$16 [line 47];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.userIsOnline%28java.sql.Timestamp%29%3Ajava.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:2 exn:3 Instructions
+n$17=*&amp;$irvar4:java.lang.Boolean* [line 47];
+*&amp;return:java.lang.Boolean*=n$17 [line 47];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.userIsOnline%28java.sql.Timestamp%29%3Ajava.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:14 12 3 succs: exn: Exit
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.userIsOnline%28java.sql.Timestamp%29%3Ajava.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line">    } </td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line">    public void sendEmail(String to, String subject, String body) throws MessagingException { <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd.html">summary for void Tools.sendEmail(String,String,String)</a></td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line">        Properties props = new Properties(); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.Properties):java.util.Properties*) [line 51];
+n$1=_fun_Properties.&lt;init&gt;()(n$0:java.util.Properties*) [line 51];
+*&amp;props:java.util.Properties*=n$0 [line 51];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line">        props.put(&quot;mail.smtp.host&quot;, &quot;smtp.gmail.com&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$2=*&amp;props:java.util.Properties* [line 52];
+_=*n$2:java.util.Properties*(root java.util.Properties) [line 52];
+n$4=_fun_Object Hashtable.put(Object,Object)(n$2:java.util.Properties*,"mail.smtp.host":java.lang.Object*,"smtp.gmail.com":java.lang.Object*) virtual [line 52];
+*&amp;$irvar0:java.lang.Object*=n$4 [line 52];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line">        props.put(&quot;mail.smtp.socketFactory.port&quot;, &quot;465&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$5=*&amp;props:java.util.Properties* [line 53];
+_=*n$5:java.util.Properties*(root java.util.Properties) [line 53];
+n$7=_fun_Object Hashtable.put(Object,Object)(n$5:java.util.Properties*,"mail.smtp.socketFactory.port":java.lang.Object*,"465":java.lang.Object*) virtual [line 53];
+*&amp;$irvar1:java.lang.Object*=n$7 [line 53];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line">        props.put(&quot;mail.smtp.socketFactory.class&quot;, &quot;javax.net.ssl.SSLSocketFactory&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$8=*&amp;props:java.util.Properties* [line 54];
+_=*n$8:java.util.Properties*(root java.util.Properties) [line 54];
+n$10=_fun_Object Hashtable.put(Object,Object)(n$8:java.util.Properties*,"mail.smtp.socketFactory.class":java.lang.Object*,"javax.net.ssl.SSLSocketFactory":java.lang.Object*) virtual [line 54];
+*&amp;$irvar2:java.lang.Object*=n$10 [line 54];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line">        props.put(&quot;mail.smtp.auth&quot;, &quot;true&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$11=*&amp;props:java.util.Properties* [line 55];
+_=*n$11:java.util.Properties*(root java.util.Properties) [line 55];
+n$13=_fun_Object Hashtable.put(Object,Object)(n$11:java.util.Properties*,"mail.smtp.auth":java.lang.Object*,"true":java.lang.Object*) virtual [line 55];
+*&amp;$irvar3:java.lang.Object*=n$13 [line 55];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line">        props.put(&quot;mail.smtp.port&quot;, &quot;465&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$14=*&amp;props:java.util.Properties* [line 56];
+_=*n$14:java.util.Properties*(root java.util.Properties) [line 56];
+n$16=_fun_Object Hashtable.put(Object,Object)(n$14:java.util.Properties*,"mail.smtp.port":java.lang.Object*,"465":java.lang.Object*) virtual [line 56];
+*&amp;$irvar4:java.lang.Object*=n$16 [line 56];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE58">58</td><td class="line">        Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() { <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools%241.<init>%28com.stn.utils.Tools%29.4bf8901abb4c89fcfb70dfc94eebd298_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools%241.<init>%28com.stn.utils.Tools%29.4bf8901abb4c89fcfb70dfc94eebd298_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.utils.Tools$1* [line 58];
+n$1=*&amp;this$0:com.stn.utils.Tools* [line 58];
+*n$0.this$0:com.stn.utils.Tools$1(root com.stn.utils.Tools$1)=n$1 [line 58];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools%241.<init>%28com.stn.utils.Tools%29.4bf8901abb4c89fcfb70dfc94eebd298_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$2=*&amp;this:com.stn.utils.Tools$1* [line 58];
+n$3=_fun_Authenticator.&lt;init&gt;()(n$2:com.stn.utils.Tools$1*) [line 58];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools%241.<init>%28com.stn.utils.Tools%29.4bf8901abb4c89fcfb70dfc94eebd298_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:2 exn:3 Instructions
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools%241.<init>%28com.stn.utils.Tools%29.4bf8901abb4c89fcfb70dfc94eebd298_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:6 3 succs: exn: Exit
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$17=_fun___new(sizeof(t=com.stn.utils.Tools$1):com.stn.utils.Tools$1*) [line 58];
+n$18=*&amp;this:com.stn.utils.Tools* [line 58];
+n$19=_fun_Tools$1.&lt;init&gt;(Tools)(n$17:com.stn.utils.Tools$1*,n$18:com.stn.utils.Tools*) [line 58];
+*&amp;$irvar5:com.stn.utils.Tools$1*=n$17 [line 58];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$20=*&amp;props:java.util.Properties* [line 58];
+n$21=*&amp;$irvar5:com.stn.utils.Tools$1* [line 58];
+n$22=_fun_Session Session.getDefaultInstance(Properties,Authenticator)(n$20:java.util.Properties*,n$21:com.stn.utils.Tools$1*) [line 58];
+*&amp;session:javax.mail.Session*=n$22 [line 58];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools%241.<init>%28com.stn.utils.Tools%29.4bf8901abb4c89fcfb70dfc94eebd298_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/com.stn.utils.Tools%241.<init>%28com.stn.utils.Tools%29.4bf8901abb4c89fcfb70dfc94eebd298.html">summary for Tools$1.&lt;init&gt;(Tools)</a></td></tr>
+<tr><td class="num" id="LINE59">59</td><td class="line">            protected PasswordAuthentication getPasswordAuthentication() { <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools%241.getPasswordAuthentication%28%29%3Ajavax.mail.PasswordAuthentication.eda826ce426a384df9480c11f9e2ce99_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/com.stn.utils.Tools%241.getPasswordAuthentication%28%29%3Ajavax.mail.PasswordAuthentication.eda826ce426a384df9480c11f9e2ce99.html">summary for PasswordAuthentication Tools$1.getPasswordAuthentication()</a></td></tr>
+<tr><td class="num" id="LINE60">60</td><td class="line">                return new PasswordAuthentication(&quot;schoolingthenet&quot;,&quot;as5235$#&#37;RETR&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools%241.getPasswordAuthentication%28%29%3Ajavax.mail.PasswordAuthentication.eda826ce426a384df9480c11f9e2ce99_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=javax.mail.PasswordAuthentication):javax.mail.PasswordAuthentication*) [line 60];
+n$1=_fun_PasswordAuthentication.&lt;init&gt;(String,String)(n$0:javax.mail.PasswordAuthentication*,"schoolingthenet":java.lang.Object*,"as5235$#%RETR":java.lang.Object*) [line 60];
+*&amp;$irvar0:javax.mail.PasswordAuthentication*=n$0 [line 60];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools%241.getPasswordAuthentication%28%29%3Ajavax.mail.PasswordAuthentication.eda826ce426a384df9480c11f9e2ce99_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+n$2=*&amp;$irvar0:javax.mail.PasswordAuthentication* [line 60];
+*&amp;return:javax.mail.PasswordAuthentication*=n$2 [line 60];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools%241.getPasswordAuthentication%28%29%3Ajavax.mail.PasswordAuthentication.eda826ce426a384df9480c11f9e2ce99_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools%241.getPasswordAuthentication%28%29%3Ajavax.mail.PasswordAuthentication.eda826ce426a384df9480c11f9e2ce99_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE61">61</td><td class="line">            } </td></tr>
+<tr><td class="num" id="LINE62">62</td><td class="line">        }); </td></tr>
+<tr><td class="num" id="LINE63">63</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE64">64</td><td class="line">        Message message = new MimeMessage(session); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$23=_fun___new(sizeof(t=javax.mail.internet.MimeMessage):javax.mail.internet.MimeMessage*) [line 64];
+n$24=*&amp;session:javax.mail.Session* [line 64];
+n$25=_fun_MimeMessage.&lt;init&gt;(Session)(n$23:javax.mail.internet.MimeMessage*,n$24:javax.mail.Session*) [line 64];
+*&amp;message:javax.mail.internet.MimeMessage*=n$23 [line 64];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE65">65</td><td class="line">        message.setFrom(new InternetAddress(&quot;no-reply@schoolingtheinter.net&quot;)); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$26=_fun___new(sizeof(t=javax.mail.internet.InternetAddress):javax.mail.internet.InternetAddress*) [line 65];
+n$27=_fun_InternetAddress.&lt;init&gt;(String)(n$26:javax.mail.internet.InternetAddress*,"no-reply@schoolingtheinter.net":java.lang.Object*) [line 65];
+*&amp;$irvar6:javax.mail.internet.InternetAddress*=n$26 [line 65];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$28=*&amp;message:javax.mail.internet.MimeMessage* [line 65];
+_=*n$28:javax.mail.internet.MimeMessage*(root javax.mail.internet.MimeMessage) [line 65];
+n$30=*&amp;$irvar6:javax.mail.internet.InternetAddress* [line 65];
+n$31=_fun_void MimeMessage.setFrom(Address)(n$28:javax.mail.internet.MimeMessage*,n$30:javax.mail.internet.InternetAddress*) virtual [line 65];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE66">66</td><td class="line">        message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to)); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:3 Instructions
+n$32=*&amp;#GB<>$javax.mail.Message$RecipientType.TO:javax.mail.Message$RecipientType*(root javax.mail.Message$RecipientType) [line 66];
+*&amp;$irvar7:javax.mail.Message$RecipientType*=n$32 [line 66];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$33=*&amp;to:java.lang.String* [line 66];
+n$34=_fun_InternetAddress[] InternetAddress.parse(String)(n$33:java.lang.String*) [line 66];
+*&amp;$irvar8:javax.mail.internet.InternetAddress*[_*_](*)=n$34 [line 66];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:3 Instructions
+n$35=*&amp;message:javax.mail.internet.MimeMessage* [line 66];
+_=*n$35:javax.mail.internet.MimeMessage*(root javax.mail.internet.MimeMessage) [line 66];
+n$37=*&amp;$irvar7:javax.mail.Message$RecipientType* [line 66];
+n$38=*&amp;$irvar8:javax.mail.internet.InternetAddress*[_*_](*) [line 66];
+n$39=_fun_void MimeMessage.setRecipients(Message$RecipientType,Address[])(n$35:javax.mail.internet.MimeMessage*,n$37:javax.mail.Message$RecipientType*,n$38:javax.mail.internet.InternetAddress*[_*_](*)) virtual [line 66];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE67">67</td><td class="line">        message.setSubject(subject); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:3 Instructions
+n$40=*&amp;message:javax.mail.internet.MimeMessage* [line 67];
+_=*n$40:javax.mail.internet.MimeMessage*(root javax.mail.internet.MimeMessage) [line 67];
+n$42=*&amp;subject:java.lang.String* [line 67];
+n$43=_fun_void MimeMessage.setSubject(String)(n$40:javax.mail.internet.MimeMessage*,n$42:java.lang.String*) virtual [line 67];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE68">68</td><td class="line">        message.setContent(body, &quot;text/html; charset=utf-8&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:3 Instructions
+n$44=*&amp;message:javax.mail.internet.MimeMessage* [line 68];
+_=*n$44:javax.mail.internet.MimeMessage*(root javax.mail.internet.MimeMessage) [line 68];
+n$46=*&amp;body:java.lang.String* [line 68];
+n$47=_fun_void MimeMessage.setContent(Object,String)(n$44:javax.mail.internet.MimeMessage*,n$46:java.lang.String*,"text/html; charset=utf-8":java.lang.Object*) virtual [line 68];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE69">69</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE70">70</td><td class="line">        Transport.send(message); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$48=*&amp;message:javax.mail.internet.MimeMessage* [line 70];
+n$49=_fun_void Transport.send(Message)(n$48:javax.mail.internet.MimeMessage*) [line 70];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE71">71</td><td class="line">    } <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:2 exn:3 Instructions
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:21 3 succs: exn: Exit
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE72">72</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE73">73</td><td class="line">    public static String formatText(String text) { <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef.html">summary for String Tools.formatText(String)</a></td></tr>
+<tr><td class="num" id="LINE74">74</td><td class="line">        String html = text; <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;text:java.lang.String* [line 74];
+*&amp;html:java.lang.String*=n$0 [line 74];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE75">75</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE76">76</td><td class="line">        Map&lt;String,String&gt; bbMap = new HashMap&lt;String , String&gt;(); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$1=_fun___new(sizeof(t=java.util.HashMap):java.util.HashMap*) [line 76];
+n$2=_fun_HashMap.&lt;init&gt;()(n$1:java.util.HashMap*) [line 76];
+*&amp;bbMap:java.util.HashMap*=n$1 [line 76];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE77">77</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE78">78</td><td class="line">        //Smilies </td></tr>
+<tr><td class="num" id="LINE79">79</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE80">80</td><td class="line">        bbMap.put(&quot;:\\)&quot;, &quot;&lt;img src='/img/smilies/smile1.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$3=*&amp;bbMap:java.util.HashMap* [line 80];
+_=*n$3:java.util.HashMap*(root java.util.HashMap) [line 80];
+n$5=_fun_Object HashMap.put(Object,Object)(n$3:java.util.HashMap*,":\\\\)":java.lang.Object*,"<img src='/img/smilies/smile1.gif' class='smile'>":java.lang.Object*) interface virtual [line 80];
+*&amp;$irvar0:java.lang.Object*=n$5 [line 80];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE81">81</td><td class="line">        bbMap.put(&quot;:D&quot;, &quot;&lt;img src='/img/smilies/grin.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$6=*&amp;bbMap:java.util.HashMap* [line 81];
+_=*n$6:java.util.HashMap*(root java.util.HashMap) [line 81];
+n$8=_fun_Object HashMap.put(Object,Object)(n$6:java.util.HashMap*,":D":java.lang.Object*,"<img src='/img/smilies/grin.gif' class='smile'>":java.lang.Object*) interface virtual [line 81];
+*&amp;$irvar1:java.lang.Object*=n$8 [line 81];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE82">82</td><td class="line">        bbMap.put(&quot;:\\|&quot;, &quot;&lt;img src='/img/smilies/noexpression.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$9=*&amp;bbMap:java.util.HashMap* [line 82];
+_=*n$9:java.util.HashMap*(root java.util.HashMap) [line 82];
+n$11=_fun_Object HashMap.put(Object,Object)(n$9:java.util.HashMap*,":\\\\|":java.lang.Object*,"<img src='/img/smilies/noexpression.gif' class='smile'>":java.lang.Object*) interface virtual [line 82];
+*&amp;$irvar2:java.lang.Object*=n$11 [line 82];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE83">83</td><td class="line">        bbMap.put(&quot;:O&quot;, &quot;&lt;img src='/img/smilies/ohmy.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$12=*&amp;bbMap:java.util.HashMap* [line 83];
+_=*n$12:java.util.HashMap*(root java.util.HashMap) [line 83];
+n$14=_fun_Object HashMap.put(Object,Object)(n$12:java.util.HashMap*,":O":java.lang.Object*,"<img src='/img/smilies/ohmy.gif' class='smile'>":java.lang.Object*) interface virtual [line 83];
+*&amp;$irvar3:java.lang.Object*=n$14 [line 83];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE84">84</td><td class="line">        bbMap.put(&quot;:\\(&quot;, &quot;&lt;img src='/img/smilies/sad.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$15=*&amp;bbMap:java.util.HashMap* [line 84];
+_=*n$15:java.util.HashMap*(root java.util.HashMap) [line 84];
+n$17=_fun_Object HashMap.put(Object,Object)(n$15:java.util.HashMap*,":\\\\(":java.lang.Object*,"<img src='/img/smilies/sad.gif' class='smile'>":java.lang.Object*) interface virtual [line 84];
+*&amp;$irvar4:java.lang.Object*=n$17 [line 84];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE85">85</td><td class="line">        bbMap.put(&quot;:o\\)&quot;, &quot;&lt;img src='/img/smilies/clown.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$18=*&amp;bbMap:java.util.HashMap* [line 85];
+_=*n$18:java.util.HashMap*(root java.util.HashMap) [line 85];
+n$20=_fun_Object HashMap.put(Object,Object)(n$18:java.util.HashMap*,":o\\\\)":java.lang.Object*,"<img src='/img/smilies/clown.gif' class='smile'>":java.lang.Object*) interface virtual [line 85];
+*&amp;$irvar5:java.lang.Object*=n$20 [line 85];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE86">86</td><td class="line">        bbMap.put(&quot;:-\\/&quot;, &quot;&lt;img src='/img/smilies/confused.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$21=*&amp;bbMap:java.util.HashMap* [line 86];
+_=*n$21:java.util.HashMap*(root java.util.HashMap) [line 86];
+n$23=_fun_Object HashMap.put(Object,Object)(n$21:java.util.HashMap*,":-\\\\/":java.lang.Object*,"<img src='/img/smilies/confused.gif' class='smile'>":java.lang.Object*) interface virtual [line 86];
+*&amp;$irvar6:java.lang.Object*=n$23 [line 86];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE87">87</td><td class="line">        bbMap.put(&quot;;\\)&quot;, &quot;&lt;img src='/img/smilies/wink.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$24=*&amp;bbMap:java.util.HashMap* [line 87];
+_=*n$24:java.util.HashMap*(root java.util.HashMap) [line 87];
+n$26=_fun_Object HashMap.put(Object,Object)(n$24:java.util.HashMap*,";\\\\)":java.lang.Object*,"<img src='/img/smilies/wink.gif' class='smile'>":java.lang.Object*) interface virtual [line 87];
+*&amp;$irvar7:java.lang.Object*=n$26 [line 87];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE88">88</td><td class="line">        bbMap.put(&quot;:p&quot;, &quot;&lt;img src='/img/smilies/tongue.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$27=*&amp;bbMap:java.util.HashMap* [line 88];
+_=*n$27:java.util.HashMap*(root java.util.HashMap) [line 88];
+n$29=_fun_Object HashMap.put(Object,Object)(n$27:java.util.HashMap*,":p":java.lang.Object*,"<img src='/img/smilies/tongue.gif' class='smile'>":java.lang.Object*) interface virtual [line 88];
+*&amp;$irvar8:java.lang.Object*=n$29 [line 88];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE89">89</td><td class="line">        bbMap.put(&quot;'\\(&quot;, &quot;&lt;img src='/img/smilies/cry.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:3 Instructions
+n$30=*&amp;bbMap:java.util.HashMap* [line 89];
+_=*n$30:java.util.HashMap*(root java.util.HashMap) [line 89];
+n$32=_fun_Object HashMap.put(Object,Object)(n$30:java.util.HashMap*,"'\\\\(":java.lang.Object*,"<img src='/img/smilies/cry.gif' class='smile'>":java.lang.Object*) interface virtual [line 89];
+*&amp;$irvar9:java.lang.Object*=n$32 [line 89];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE90">90</td><td class="line">        bbMap.put(&quot;:-\\(&quot;, &quot;&lt;img src='/img/smilies/weep.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$33=*&amp;bbMap:java.util.HashMap* [line 90];
+_=*n$33:java.util.HashMap*(root java.util.HashMap) [line 90];
+n$35=_fun_Object HashMap.put(Object,Object)(n$33:java.util.HashMap*,":-\\\\(":java.lang.Object*,"<img src='/img/smilies/weep.gif' class='smile'>":java.lang.Object*) interface virtual [line 90];
+*&amp;$irvar10:java.lang.Object*=n$35 [line 90];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE91">91</td><td class="line">        bbMap.put(&quot;8\\)&quot;, &quot;&lt;img src='/img/smilies/cool1.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:3 Instructions
+n$36=*&amp;bbMap:java.util.HashMap* [line 91];
+_=*n$36:java.util.HashMap*(root java.util.HashMap) [line 91];
+n$38=_fun_Object HashMap.put(Object,Object)(n$36:java.util.HashMap*,"8\\\\)":java.lang.Object*,"<img src='/img/smilies/cool1.gif' class='smile'>":java.lang.Object*) interface virtual [line 91];
+*&amp;$irvar11:java.lang.Object*=n$38 [line 91];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE92">92</td><td class="line">        bbMap.put(&quot;:king:&quot;, &quot;&lt;img src='/img/smilies/king.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:3 Instructions
+n$39=*&amp;bbMap:java.util.HashMap* [line 92];
+_=*n$39:java.util.HashMap*(root java.util.HashMap) [line 92];
+n$41=_fun_Object HashMap.put(Object,Object)(n$39:java.util.HashMap*,":king:":java.lang.Object*,"<img src='/img/smilies/king.gif' class='smile'>":java.lang.Object*) interface virtual [line 92];
+*&amp;$irvar12:java.lang.Object*=n$41 [line 92];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE93">93</td><td class="line">        bbMap.put(&quot;:hbd:&quot;, &quot;&lt;img src='/img/smilies/hbd.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:3 Instructions
+n$42=*&amp;bbMap:java.util.HashMap* [line 93];
+_=*n$42:java.util.HashMap*(root java.util.HashMap) [line 93];
+n$44=_fun_Object HashMap.put(Object,Object)(n$42:java.util.HashMap*,":hbd:":java.lang.Object*,"<img src='/img/smilies/hbd.gif' class='smile'>":java.lang.Object*) interface virtual [line 93];
+*&amp;$irvar13:java.lang.Object*=n$44 [line 93];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE94">94</td><td class="line">        bbMap.put(&quot;:book:&quot;, &quot;&lt;img src='/img/smilies/book.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$45=*&amp;bbMap:java.util.HashMap* [line 94];
+_=*n$45:java.util.HashMap*(root java.util.HashMap) [line 94];
+n$47=_fun_Object HashMap.put(Object,Object)(n$45:java.util.HashMap*,":book:":java.lang.Object*,"<img src='/img/smilies/book.gif' class='smile'>":java.lang.Object*) interface virtual [line 94];
+*&amp;$irvar14:java.lang.Object*=n$47 [line 94];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE95">95</td><td class="line">        bbMap.put(&quot;:chef:&quot;, &quot;&lt;img src='/img/smilies/chef.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:3 Instructions
+n$48=*&amp;bbMap:java.util.HashMap* [line 95];
+_=*n$48:java.util.HashMap*(root java.util.HashMap) [line 95];
+n$50=_fun_Object HashMap.put(Object,Object)(n$48:java.util.HashMap*,":chef:":java.lang.Object*,"<img src='/img/smilies/chef.gif' class='smile'>":java.lang.Object*) interface virtual [line 95];
+*&amp;$irvar15:java.lang.Object*=n$50 [line 95];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE96">96</td><td class="line">        bbMap.put(&quot;:hi:&quot;, &quot;&lt;img src='/img/smilies/hi.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:3 Instructions
+n$51=*&amp;bbMap:java.util.HashMap* [line 96];
+_=*n$51:java.util.HashMap*(root java.util.HashMap) [line 96];
+n$53=_fun_Object HashMap.put(Object,Object)(n$51:java.util.HashMap*,":hi:":java.lang.Object*,"<img src='/img/smilies/hi.gif' class='smile'>":java.lang.Object*) interface virtual [line 96];
+*&amp;$irvar16:java.lang.Object*=n$53 [line 96];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE97">97</td><td class="line">        bbMap.put(&quot;:horse:&quot;, &quot;&lt;img src='/img/smilies/horse.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:3 Instructions
+n$54=*&amp;bbMap:java.util.HashMap* [line 97];
+_=*n$54:java.util.HashMap*(root java.util.HashMap) [line 97];
+n$56=_fun_Object HashMap.put(Object,Object)(n$54:java.util.HashMap*,":horse:":java.lang.Object*,"<img src='/img/smilies/horse.gif' class='smile'>":java.lang.Object*) interface virtual [line 97];
+*&amp;$irvar17:java.lang.Object*=n$56 [line 97];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE98">98</td><td class="line">        bbMap.put(&quot;:beer:&quot;, &quot;&lt;img src='/img/smilies/beer.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:3 Instructions
+n$57=*&amp;bbMap:java.util.HashMap* [line 98];
+_=*n$57:java.util.HashMap*(root java.util.HashMap) [line 98];
+n$59=_fun_Object HashMap.put(Object,Object)(n$57:java.util.HashMap*,":beer:":java.lang.Object*,"<img src='/img/smilies/beer.gif' class='smile'>":java.lang.Object*) interface virtual [line 98];
+*&amp;$irvar18:java.lang.Object*=n$59 [line 98];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE99">99</td><td class="line">        bbMap.put(&quot;:happy2:&quot;, &quot;&lt;img src='/img/smilies/happy2.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:3 Instructions
+n$60=*&amp;bbMap:java.util.HashMap* [line 99];
+_=*n$60:java.util.HashMap*(root java.util.HashMap) [line 99];
+n$62=_fun_Object HashMap.put(Object,Object)(n$60:java.util.HashMap*,":happy2:":java.lang.Object*,"<img src='/img/smilies/happy2.gif' class='smile'>":java.lang.Object*) interface virtual [line 99];
+*&amp;$irvar19:java.lang.Object*=n$62 [line 99];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE100">100</td><td class="line">        bbMap.put(&quot;:gathering:&quot;, &quot;&lt;img src='/img/smilies/gathering.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:3 Instructions
+n$63=*&amp;bbMap:java.util.HashMap* [line 100];
+_=*n$63:java.util.HashMap*(root java.util.HashMap) [line 100];
+n$65=_fun_Object HashMap.put(Object,Object)(n$63:java.util.HashMap*,":gathering:":java.lang.Object*,"<img src='/img/smilies/gathering.gif' class='smile'>":java.lang.Object*) interface virtual [line 100];
+*&amp;$irvar20:java.lang.Object*=n$65 [line 100];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE101">101</td><td class="line">        bbMap.put(&quot;:flowers:&quot;, &quot;&lt;img src='/img/smilies/flowers.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:3 Instructions
+n$66=*&amp;bbMap:java.util.HashMap* [line 101];
+_=*n$66:java.util.HashMap*(root java.util.HashMap) [line 101];
+n$68=_fun_Object HashMap.put(Object,Object)(n$66:java.util.HashMap*,":flowers:":java.lang.Object*,"<img src='/img/smilies/flowers.gif' class='smile'>":java.lang.Object*) interface virtual [line 101];
+*&amp;$irvar21:java.lang.Object*=n$68 [line 101];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE102">102</td><td class="line">        bbMap.put(&quot;:console:&quot;, &quot;&lt;img src='/img/smilies/console.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:3 Instructions
+n$69=*&amp;bbMap:java.util.HashMap* [line 102];
+_=*n$69:java.util.HashMap*(root java.util.HashMap) [line 102];
+n$71=_fun_Object HashMap.put(Object,Object)(n$69:java.util.HashMap*,":console:":java.lang.Object*,"<img src='/img/smilies/console.gif' class='smile'>":java.lang.Object*) interface virtual [line 102];
+*&amp;$irvar22:java.lang.Object*=n$71 [line 102];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE103">103</td><td class="line">        bbMap.put(&quot;:cake:&quot;, &quot;&lt;img src='/img/smilies/cake.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:30 exn:3 Instructions
+n$72=*&amp;bbMap:java.util.HashMap* [line 103];
+_=*n$72:java.util.HashMap*(root java.util.HashMap) [line 103];
+n$74=_fun_Object HashMap.put(Object,Object)(n$72:java.util.HashMap*,":cake:":java.lang.Object*,"<img src='/img/smilies/cake.gif' class='smile'>":java.lang.Object*) interface virtual [line 103];
+*&amp;$irvar23:java.lang.Object*=n$74 [line 103];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE104">104</td><td class="line">        bbMap.put(&quot;:beer2:&quot;, &quot;&lt;img src='/img/smilies/beer2.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 succs:31 exn:3 Instructions
+n$75=*&amp;bbMap:java.util.HashMap* [line 104];
+_=*n$75:java.util.HashMap*(root java.util.HashMap) [line 104];
+n$77=_fun_Object HashMap.put(Object,Object)(n$75:java.util.HashMap*,":beer2:":java.lang.Object*,"<img src='/img/smilies/beer2.gif' class='smile'>":java.lang.Object*) interface virtual [line 104];
+*&amp;$irvar24:java.lang.Object*=n$77 [line 104];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE105">105</td><td class="line">        bbMap.put(&quot;:cap:&quot;, &quot;&lt;img src='/img/smilies/cap.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:30 succs:32 exn:3 Instructions
+n$78=*&amp;bbMap:java.util.HashMap* [line 105];
+_=*n$78:java.util.HashMap*(root java.util.HashMap) [line 105];
+n$80=_fun_Object HashMap.put(Object,Object)(n$78:java.util.HashMap*,":cap:":java.lang.Object*,"<img src='/img/smilies/cap.gif' class='smile'>":java.lang.Object*) interface virtual [line 105];
+*&amp;$irvar25:java.lang.Object*=n$80 [line 105];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE106">106</td><td class="line">        bbMap.put(&quot;:chair:&quot;, &quot;&lt;img src='/img/smilies/chair.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:31 succs:33 exn:3 Instructions
+n$81=*&amp;bbMap:java.util.HashMap* [line 106];
+_=*n$81:java.util.HashMap*(root java.util.HashMap) [line 106];
+n$83=_fun_Object HashMap.put(Object,Object)(n$81:java.util.HashMap*,":chair:":java.lang.Object*,"<img src='/img/smilies/chair.gif' class='smile'>":java.lang.Object*) interface virtual [line 106];
+*&amp;$irvar26:java.lang.Object*=n$83 [line 106];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE107">107</td><td class="line">        bbMap.put(&quot;:clap:&quot;, &quot;&lt;img src='/img/smilies/clap.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:32 succs:34 exn:3 Instructions
+n$84=*&amp;bbMap:java.util.HashMap* [line 107];
+_=*n$84:java.util.HashMap*(root java.util.HashMap) [line 107];
+n$86=_fun_Object HashMap.put(Object,Object)(n$84:java.util.HashMap*,":clap:":java.lang.Object*,"<img src='/img/smilies/clap.gif' class='smile'>":java.lang.Object*) interface virtual [line 107];
+*&amp;$irvar27:java.lang.Object*=n$86 [line 107];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE108">108</td><td class="line">        bbMap.put(&quot;:clap2:&quot;, &quot;&lt;img src='/img/smilies/clap2.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:33 succs:35 exn:3 Instructions
+n$87=*&amp;bbMap:java.util.HashMap* [line 108];
+_=*n$87:java.util.HashMap*(root java.util.HashMap) [line 108];
+n$89=_fun_Object HashMap.put(Object,Object)(n$87:java.util.HashMap*,":clap2:":java.lang.Object*,"<img src='/img/smilies/clap2.gif' class='smile'>":java.lang.Object*) interface virtual [line 108];
+*&amp;$irvar28:java.lang.Object*=n$89 [line 108];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE109">109</td><td class="line">        bbMap.put(&quot;:drunk:&quot;, &quot;&lt;img src='/img/smilies/drunk.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:34 succs:36 exn:3 Instructions
+n$90=*&amp;bbMap:java.util.HashMap* [line 109];
+_=*n$90:java.util.HashMap*(root java.util.HashMap) [line 109];
+n$92=_fun_Object HashMap.put(Object,Object)(n$90:java.util.HashMap*,":drunk:":java.lang.Object*,"<img src='/img/smilies/drunk.gif' class='smile'>":java.lang.Object*) interface virtual [line 109];
+*&amp;$irvar29:java.lang.Object*=n$92 [line 109];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE110">110</td><td class="line">        bbMap.put(&quot;:fishing:&quot;, &quot;&lt;img src='/img/smilies/fishing.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:35 succs:37 exn:3 Instructions
+n$93=*&amp;bbMap:java.util.HashMap* [line 110];
+_=*n$93:java.util.HashMap*(root java.util.HashMap) [line 110];
+n$95=_fun_Object HashMap.put(Object,Object)(n$93:java.util.HashMap*,":fishing:":java.lang.Object*,"<img src='/img/smilies/fishing.gif' class='smile'>":java.lang.Object*) interface virtual [line 110];
+*&amp;$irvar30:java.lang.Object*=n$95 [line 110];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE111">111</td><td class="line">        bbMap.put(&quot;:hang:&quot;, &quot;&lt;img src='/img/smilies/hang.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:36 succs:38 exn:3 Instructions
+n$96=*&amp;bbMap:java.util.HashMap* [line 111];
+_=*n$96:java.util.HashMap*(root java.util.HashMap) [line 111];
+n$98=_fun_Object HashMap.put(Object,Object)(n$96:java.util.HashMap*,":hang:":java.lang.Object*,"<img src='/img/smilies/hang.gif' class='smile'>":java.lang.Object*) interface virtual [line 111];
+*&amp;$irvar31:java.lang.Object*=n$98 [line 111];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE112">112</td><td class="line">        bbMap.put(&quot;:mml:&quot;, &quot;&lt;img src='/img/smilies/mml.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:37 succs:39 exn:3 Instructions
+n$99=*&amp;bbMap:java.util.HashMap* [line 112];
+_=*n$99:java.util.HashMap*(root java.util.HashMap) [line 112];
+n$101=_fun_Object HashMap.put(Object,Object)(n$99:java.util.HashMap*,":mml:":java.lang.Object*,"<img src='/img/smilies/mml.gif' class='smile'>":java.lang.Object*) interface virtual [line 112];
+*&amp;$irvar32:java.lang.Object*=n$101 [line 112];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE113">113</td><td class="line">        bbMap.put(&quot;:pepsi:&quot;, &quot;&lt;img src='/img/smilies/pepsi.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:38 succs:40 exn:3 Instructions
+n$102=*&amp;bbMap:java.util.HashMap* [line 113];
+_=*n$102:java.util.HashMap*(root java.util.HashMap) [line 113];
+n$104=_fun_Object HashMap.put(Object,Object)(n$102:java.util.HashMap*,":pepsi:":java.lang.Object*,"<img src='/img/smilies/pepsi.gif' class='smile'>":java.lang.Object*) interface virtual [line 113];
+*&amp;$irvar33:java.lang.Object*=n$104 [line 113];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE114">114</td><td class="line">        bbMap.put(&quot;:rant:&quot;, &quot;&lt;img src='/img/smilies/rant.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:39 succs:41 exn:3 Instructions
+n$105=*&amp;bbMap:java.util.HashMap* [line 114];
+_=*n$105:java.util.HashMap*(root java.util.HashMap) [line 114];
+n$107=_fun_Object HashMap.put(Object,Object)(n$105:java.util.HashMap*,":rant:":java.lang.Object*,"<img src='/img/smilies/rant.gif' class='smile'>":java.lang.Object*) interface virtual [line 114];
+*&amp;$irvar34:java.lang.Object*=n$107 [line 114];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE115">115</td><td class="line">        bbMap.put(&quot;:rb:&quot;, &quot;&lt;img src='/img/smilies/rb.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:40 succs:42 exn:3 Instructions
+n$108=*&amp;bbMap:java.util.HashMap* [line 115];
+_=*n$108:java.util.HashMap*(root java.util.HashMap) [line 115];
+n$110=_fun_Object HashMap.put(Object,Object)(n$108:java.util.HashMap*,":rb:":java.lang.Object*,"<img src='/img/smilies/rb.gif' class='smile'>":java.lang.Object*) interface virtual [line 115];
+*&amp;$irvar35:java.lang.Object*=n$110 [line 115];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE116">116</td><td class="line">        bbMap.put(&quot;:rip:&quot;, &quot;&lt;img src='/img/smilies/rip.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:41 succs:43 exn:3 Instructions
+n$111=*&amp;bbMap:java.util.HashMap* [line 116];
+_=*n$111:java.util.HashMap*(root java.util.HashMap) [line 116];
+n$113=_fun_Object HashMap.put(Object,Object)(n$111:java.util.HashMap*,":rip:":java.lang.Object*,"<img src='/img/smilies/rip.gif' class='smile'>":java.lang.Object*) interface virtual [line 116];
+*&amp;$irvar36:java.lang.Object*=n$113 [line 116];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE117">117</td><td class="line">        bbMap.put(&quot;:rofl:&quot;, &quot;&lt;img src='/img/smilies/rofl.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:42 succs:44 exn:3 Instructions
+n$114=*&amp;bbMap:java.util.HashMap* [line 117];
+_=*n$114:java.util.HashMap*(root java.util.HashMap) [line 117];
+n$116=_fun_Object HashMap.put(Object,Object)(n$114:java.util.HashMap*,":rofl:":java.lang.Object*,"<img src='/img/smilies/rofl.gif' class='smile'>":java.lang.Object*) interface virtual [line 117];
+*&amp;$irvar37:java.lang.Object*=n$116 [line 117];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE118">118</td><td class="line">        bbMap.put(&quot;:shoot2:&quot;, &quot;&lt;img src='/img/smilies/shoot2.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds:43 succs:45 exn:3 Instructions
+n$117=*&amp;bbMap:java.util.HashMap* [line 118];
+_=*n$117:java.util.HashMap*(root java.util.HashMap) [line 118];
+n$119=_fun_Object HashMap.put(Object,Object)(n$117:java.util.HashMap*,":shoot2:":java.lang.Object*,"<img src='/img/smilies/shoot2.gif' class='smile'>":java.lang.Object*) interface virtual [line 118];
+*&amp;$irvar38:java.lang.Object*=n$119 [line 118];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE119">119</td><td class="line">        bbMap.put(&quot;:kissing:&quot;, &quot;&lt;img src='/img/smilies/kissing.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node45.html"><span class='visited with_tooltip'>I_45<span class='tooltip'>node45 preds:44 succs:46 exn:3 Instructions
+n$120=*&amp;bbMap:java.util.HashMap* [line 119];
+_=*n$120:java.util.HashMap*(root java.util.HashMap) [line 119];
+n$122=_fun_Object HashMap.put(Object,Object)(n$120:java.util.HashMap*,":kissing:":java.lang.Object*,"<img src='/img/smilies/kissing.gif' class='smile'>":java.lang.Object*) interface virtual [line 119];
+*&amp;$irvar39:java.lang.Object*=n$122 [line 119];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE120">120</td><td class="line">        bbMap.put(&quot;:pope:&quot;, &quot;&lt;img src='/img/smilies/pope.gif' class='smile'&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node46.html"><span class='visited with_tooltip'>I_46<span class='tooltip'>node46 preds:45 succs:47 exn:3 Instructions
+n$123=*&amp;bbMap:java.util.HashMap* [line 120];
+_=*n$123:java.util.HashMap*(root java.util.HashMap) [line 120];
+n$125=_fun_Object HashMap.put(Object,Object)(n$123:java.util.HashMap*,":pope:":java.lang.Object*,"<img src='/img/smilies/pope.gif' class='smile'>":java.lang.Object*) interface virtual [line 120];
+*&amp;$irvar40:java.lang.Object*=n$125 [line 120];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE121">121</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE122">122</td><td class="line">        //Text </td></tr>
+<tr><td class="num" id="LINE123">123</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE124">124</td><td class="line">        bbMap.put(&quot;(\r\n|\r|\n|\n\r)&quot;, &quot;&lt;br/&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node47.html"><span class='visited with_tooltip'>I_47<span class='tooltip'>node47 preds:46 succs:48 exn:3 Instructions
+n$126=*&amp;bbMap:java.util.HashMap* [line 124];
+_=*n$126:java.util.HashMap*(root java.util.HashMap) [line 124];
+n$128=_fun_Object HashMap.put(Object,Object)(n$126:java.util.HashMap*,"(\\r\\n|\\r|\\n|\\n\\r)":java.lang.Object*,"<br/>":java.lang.Object*) interface virtual [line 124];
+*&amp;$irvar41:java.lang.Object*=n$128 [line 124];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE125">125</td><td class="line">        bbMap.put(&quot;\\[b\\](.+?)\\[/b\\]&quot;, &quot;&lt;strong&gt;$1&lt;/strong&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node48.html"><span class='visited with_tooltip'>I_48<span class='tooltip'>node48 preds:47 succs:49 exn:3 Instructions
+n$129=*&amp;bbMap:java.util.HashMap* [line 125];
+_=*n$129:java.util.HashMap*(root java.util.HashMap) [line 125];
+n$131=_fun_Object HashMap.put(Object,Object)(n$129:java.util.HashMap*,"\\\\[b\\\\](.+?)\\\\[/b\\\\]":java.lang.Object*,"<strong>$1</strong>":java.lang.Object*) interface virtual [line 125];
+*&amp;$irvar42:java.lang.Object*=n$131 [line 125];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE126">126</td><td class="line">        bbMap.put(&quot;\\[i\\](.+?)\\[/i\\]&quot;, &quot;&lt;i&gt;$1&lt;/i&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node49.html"><span class='visited with_tooltip'>I_49<span class='tooltip'>node49 preds:48 succs:50 exn:3 Instructions
+n$132=*&amp;bbMap:java.util.HashMap* [line 126];
+_=*n$132:java.util.HashMap*(root java.util.HashMap) [line 126];
+n$134=_fun_Object HashMap.put(Object,Object)(n$132:java.util.HashMap*,"\\\\[i\\\\](.+?)\\\\[/i\\\\]":java.lang.Object*,"<i>$1</i>":java.lang.Object*) interface virtual [line 126];
+*&amp;$irvar43:java.lang.Object*=n$134 [line 126];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE127">127</td><td class="line">        bbMap.put(&quot;\\[u\\](.+?)\\[/u\\]&quot;, &quot;&lt;span style='text-decoration:underline;'&gt;$1&lt;/span&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node50.html"><span class='visited with_tooltip'>I_50<span class='tooltip'>node50 preds:49 succs:51 exn:3 Instructions
+n$135=*&amp;bbMap:java.util.HashMap* [line 127];
+_=*n$135:java.util.HashMap*(root java.util.HashMap) [line 127];
+n$137=_fun_Object HashMap.put(Object,Object)(n$135:java.util.HashMap*,"\\\\[u\\\\](.+?)\\\\[/u\\\\]":java.lang.Object*,"<span style='text-decoration:underline;'>$1</span>":java.lang.Object*) interface virtual [line 127];
+*&amp;$irvar44:java.lang.Object*=n$137 [line 127];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE128">128</td><td class="line">        bbMap.put(&quot;\\[quote\\](.+?)\\[/quote\\]&quot;, &quot;&lt;blockquote&gt;$1&lt;/blockquote&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node51.html"><span class='visited with_tooltip'>I_51<span class='tooltip'>node51 preds:50 succs:52 exn:3 Instructions
+n$138=*&amp;bbMap:java.util.HashMap* [line 128];
+_=*n$138:java.util.HashMap*(root java.util.HashMap) [line 128];
+n$140=_fun_Object HashMap.put(Object,Object)(n$138:java.util.HashMap*,"\\\\[quote\\\\](.+?)\\\\[/quote\\\\]":java.lang.Object*,"<blockquote>$1</blockquote>":java.lang.Object*) interface virtual [line 128];
+*&amp;$irvar45:java.lang.Object*=n$140 [line 128];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE129">129</td><td class="line">        bbMap.put(&quot;\\[center\\](.+?)\\[/center\\]&quot;, &quot;&lt;div align='center'&gt;$1&lt;/div&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node52.html"><span class='visited with_tooltip'>I_52<span class='tooltip'>node52 preds:51 succs:53 exn:3 Instructions
+n$141=*&amp;bbMap:java.util.HashMap* [line 129];
+_=*n$141:java.util.HashMap*(root java.util.HashMap) [line 129];
+n$143=_fun_Object HashMap.put(Object,Object)(n$141:java.util.HashMap*,"\\\\[center\\\\](.+?)\\\\[/center\\\\]":java.lang.Object*,"<div align='center'>$1</div>":java.lang.Object*) interface virtual [line 129];
+*&amp;$irvar46:java.lang.Object*=n$143 [line 129];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE130">130</td><td class="line">        bbMap.put(&quot;\\[align=(.+?)\\](.+?)\\[/align\\]&quot;, &quot;&lt;div style='text-align:$1'&gt;$2&lt;/div&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node53.html"><span class='visited with_tooltip'>I_53<span class='tooltip'>node53 preds:52 succs:54 exn:3 Instructions
+n$144=*&amp;bbMap:java.util.HashMap* [line 130];
+_=*n$144:java.util.HashMap*(root java.util.HashMap) [line 130];
+n$146=_fun_Object HashMap.put(Object,Object)(n$144:java.util.HashMap*,"\\\\[align=(.+?)\\\\](.+?)\\\\[/align\\\\]":java.lang.Object*,"<div style='text-align:$1'>$2</div>":java.lang.Object*) interface virtual [line 130];
+*&amp;$irvar47:java.lang.Object*=n$146 [line 130];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE131">131</td><td class="line">        bbMap.put(&quot;\\[color=(.+?)\\](.+?)\\[/color\\]&quot;, &quot;&lt;font color='$1'&gt;$2&lt;/font&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node54.html"><span class='visited with_tooltip'>I_54<span class='tooltip'>node54 preds:53 succs:55 exn:3 Instructions
+n$147=*&amp;bbMap:java.util.HashMap* [line 131];
+_=*n$147:java.util.HashMap*(root java.util.HashMap) [line 131];
+n$149=_fun_Object HashMap.put(Object,Object)(n$147:java.util.HashMap*,"\\\\[color=(.+?)\\\\](.+?)\\\\[/color\\\\]":java.lang.Object*,"<font color='$1'>$2</font>":java.lang.Object*) interface virtual [line 131];
+*&amp;$irvar48:java.lang.Object*=n$149 [line 131];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE132">132</td><td class="line">        bbMap.put(&quot;\\[size=(.+?)\\](.+?)\\[/size\\]&quot;, &quot;&lt;span style='font-size:$1pt'&gt;$2&lt;/span&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node55.html"><span class='visited with_tooltip'>I_55<span class='tooltip'>node55 preds:54 succs:56 exn:3 Instructions
+n$150=*&amp;bbMap:java.util.HashMap* [line 132];
+_=*n$150:java.util.HashMap*(root java.util.HashMap) [line 132];
+n$152=_fun_Object HashMap.put(Object,Object)(n$150:java.util.HashMap*,"\\\\[size=(.+?)\\\\](.+?)\\\\[/size\\\\]":java.lang.Object*,"<span style='font-size:$1pt'>$2</span>":java.lang.Object*) interface virtual [line 132];
+*&amp;$irvar49:java.lang.Object*=n$152 [line 132];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE133">133</td><td class="line">        bbMap.put(&quot;\\[img\\](.+?)\\[/img\\]&quot;, &quot;&lt;img src='$1' /&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node56.html"><span class='visited with_tooltip'>I_56<span class='tooltip'>node56 preds:55 succs:57 exn:3 Instructions
+n$153=*&amp;bbMap:java.util.HashMap* [line 133];
+_=*n$153:java.util.HashMap*(root java.util.HashMap) [line 133];
+n$155=_fun_Object HashMap.put(Object,Object)(n$153:java.util.HashMap*,"\\\\[img\\\\](.+?)\\\\[/img\\\\]":java.lang.Object*,"<img src='$1' />":java.lang.Object*) interface virtual [line 133];
+*&amp;$irvar50:java.lang.Object*=n$155 [line 133];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE134">134</td><td class="line">        bbMap.put(&quot;\\[email\\](.+?)\\[/email\\]&quot;, &quot;&lt;a class='ui' href='mailto:$1' style='color: #66ba5b'&gt;$1&lt;/a&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node57.html"><span class='visited with_tooltip'>I_57<span class='tooltip'>node57 preds:56 succs:58 exn:3 Instructions
+n$156=*&amp;bbMap:java.util.HashMap* [line 134];
+_=*n$156:java.util.HashMap*(root java.util.HashMap) [line 134];
+n$158=_fun_Object HashMap.put(Object,Object)(n$156:java.util.HashMap*,"\\\\[email\\\\](.+?)\\\\[/email\\\\]":java.lang.Object*,"<a class='ui' href='mailto:$1' style='color: #66ba5b'>$1</a>":java.lang.Object*) interface virtual [line 134];
+*&amp;$irvar51:java.lang.Object*=n$158 [line 134];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE135">135</td><td class="line">        bbMap.put(&quot;\\[url\\](.+?)\\[/url\\]&quot;, &quot;&lt;a class='ui' href='$1' style='color: #99ccff' target='_blank'&gt;$1&lt;/a&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node58.html"><span class='visited with_tooltip'>I_58<span class='tooltip'>node58 preds:57 succs:59 exn:3 Instructions
+n$159=*&amp;bbMap:java.util.HashMap* [line 135];
+_=*n$159:java.util.HashMap*(root java.util.HashMap) [line 135];
+n$161=_fun_Object HashMap.put(Object,Object)(n$159:java.util.HashMap*,"\\\\[url\\\\](.+?)\\\\[/url\\\\]":java.lang.Object*,"<a class='ui' href='$1' style='color: #99ccff' target='_blank'>$1</a>":java.lang.Object*) interface virtual [line 135];
+*&amp;$irvar52:java.lang.Object*=n$161 [line 135];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE136">136</td><td class="line">        bbMap.put(&quot;\\[url=(.+?)\\](.+?)\\[/url\\]&quot;, &quot;&lt;a class='ui' href='$1' style='color: #99ccff' target='_blank'&gt;$2&lt;/a&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node59.html"><span class='visited with_tooltip'>I_59<span class='tooltip'>node59 preds:58 succs:60 exn:3 Instructions
+n$162=*&amp;bbMap:java.util.HashMap* [line 136];
+_=*n$162:java.util.HashMap*(root java.util.HashMap) [line 136];
+n$164=_fun_Object HashMap.put(Object,Object)(n$162:java.util.HashMap*,"\\\\[url=(.+?)\\\\](.+?)\\\\[/url\\\\]":java.lang.Object*,"<a class='ui' href='$1' style='color: #99ccff' target='_blank'>$2</a>":java.lang.Object*) interface virtual [line 136];
+*&amp;$irvar53:java.lang.Object*=n$164 [line 136];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE137">137</td><td class="line">        bbMap.put(&quot;\\[youtube\\](.+?)\\[/youtube\\]&quot;, &quot;&lt;object width='640' height='380'&gt;&lt;param name='movie' value='http://www.youtube.com/v/$1'&gt;&lt;/param&gt;&lt;embed src='http://www.youtube.com/v/$1' type='application/x-shockwave-flash' width='640' height='380'&gt;&lt;/embed&gt;&lt;/object&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node60.html"><span class='visited with_tooltip'>I_60<span class='tooltip'>node60 preds:59 succs:61 exn:3 Instructions
+n$165=*&amp;bbMap:java.util.HashMap* [line 137];
+_=*n$165:java.util.HashMap*(root java.util.HashMap) [line 137];
+n$167=_fun_Object HashMap.put(Object,Object)(n$165:java.util.HashMap*,"\\\\[youtube\\\\](.+?)\\\\[/youtube\\\\]":java.lang.Object*,"<object width='640' height='380'><param name='movie' value='http://www.youtube.com/v/$1'></param><embed src='http://www.youtube.com/v/$1' type='application/x-shockwave-flash' width='640' height='380'></embed></object>":java.lang.Object*) interface virtual [line 137];
+*&amp;$irvar54:java.lang.Object*=n$167 [line 137];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE138">138</td><td class="line">        bbMap.put(&quot;\\[video\\](.+?)\\[/video\\]&quot;, &quot;&lt;video src='$1' /&gt;&quot;); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node61.html"><span class='visited with_tooltip'>I_61<span class='tooltip'>node61 preds:60 succs:62 exn:3 Instructions
+n$168=*&amp;bbMap:java.util.HashMap* [line 138];
+_=*n$168:java.util.HashMap*(root java.util.HashMap) [line 138];
+n$170=_fun_Object HashMap.put(Object,Object)(n$168:java.util.HashMap*,"\\\\[video\\\\](.+?)\\\\[/video\\\\]":java.lang.Object*,"<video src='$1' />":java.lang.Object*) interface virtual [line 138];
+*&amp;$irvar55:java.lang.Object*=n$170 [line 138];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE139">139</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE140">140</td><td class="line">        for (Map.Entry entry: bbMap.entrySet()) { <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node62.html"><span class='visited with_tooltip'>I_62<span class='tooltip'>node62 preds:61 succs:63 exn:3 Instructions
+n$171=*&amp;bbMap:java.util.HashMap* [line 140];
+_=*n$171:java.util.HashMap*(root java.util.HashMap) [line 140];
+n$173=_fun_Set HashMap.entrySet()(n$171:java.util.HashMap*) interface virtual [line 140];
+*&amp;$irvar56:java.util.Set*=n$173 [line 140];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node63.html"><span class='visited with_tooltip'>I_63<span class='tooltip'>node63 preds:62 succs:64 exn:3 Instructions
+n$174=*&amp;$irvar56:java.util.Set* [line 140];
+_=*n$174:java.util.Set*(root java.util.Set) [line 140];
+n$176=_fun_Iterator Set.iterator()(n$174:java.util.Set*) interface virtual [line 140];
+*&amp;$bcvar3:java.util.Iterator*=n$176 [line 140];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node64.html"><span class='visited with_tooltip'>I_64<span class='tooltip'>node64 preds:75 63 succs:67 exn:3 Instructions
+n$177=*&amp;$bcvar3:java.util.Iterator* [line 140];
+_=*n$177:java.util.Iterator*(root java.util.Iterator) [line 140];
+n$179=_fun_boolean Iterator.hasNext()(n$177:java.util.Iterator*) interface virtual [line 140];
+*&amp;$irvar57:_Bool=n$179 [line 140];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node67.html"><span class='visited with_tooltip'>J_67<span class='tooltip'>node67 preds:64 succs:65 66 exn: Join
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node65.html"><span class='visited with_tooltip'>C_65<span class='tooltip'>node65 preds:67 succs:68 exn:3 Conditional method_body
+n$180=*&amp;$irvar57:_Bool [line 140];
+PRUNE(!(n$180 == 0), true); [line 140];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node68.html"><span class='visited with_tooltip'>I_68<span class='tooltip'>node68 preds:65 succs:69 exn:3 Instructions
+n$181=*&amp;$bcvar3:java.util.Iterator* [line 140];
+_=*n$181:java.util.Iterator*(root java.util.Iterator) [line 140];
+n$183=_fun_Object Iterator.next()(n$181:java.util.Iterator*) interface virtual [line 140];
+*&amp;$irvar58:java.lang.Object*=n$183 [line 140];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node69.html"><span class='visited with_tooltip'>I_69<span class='tooltip'>node69 preds:68 succs:70 exn:3 Instructions
+n$184=*&amp;$irvar58:java.lang.Object* [line 140];
+n$185=_fun___cast(n$184:java.lang.Object*,sizeof(t=java.util.Map$Entry;sub_t=( sub )(cast)):void) [line 140];
+*&amp;entry:java.util.Map$Entry*=n$185 [line 140];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node66.html"><span class='visited with_tooltip'>C_66<span class='tooltip'>node66 preds:67 succs:76 exn:3 Conditional method_body
+n$180=*&amp;$irvar57:_Bool [line 140];
+PRUNE((n$180 == 0), false); [line 140];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE141">141</td><td class="line">            html = html.replaceAll(entry.getKey().toString(), entry.getValue().toString()); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node70.html"><span class='visited with_tooltip'>I_70<span class='tooltip'>node70 preds:69 succs:71 exn:3 Instructions
+n$186=*&amp;entry:java.util.Map$Entry* [line 141];
+_=*n$186:java.util.Map$Entry*(root java.util.Map$Entry) [line 141];
+n$188=_fun_Object Map$Entry.getKey()(n$186:java.util.Map$Entry*) interface virtual [line 141];
+*&amp;$irvar59:java.lang.Object*=n$188 [line 141];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node71.html"><span class='visited with_tooltip'>I_71<span class='tooltip'>node71 preds:70 succs:72 exn:3 Instructions
+n$189=*&amp;$irvar59:java.lang.Object* [line 141];
+_=*n$189:java.lang.Object*(root java.lang.Object) [line 141];
+n$191=_fun_String Object.toString()(n$189:java.lang.Object*) virtual [line 141];
+*&amp;$irvar60:java.lang.String*=n$191 [line 141];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node72.html"><span class='visited with_tooltip'>I_72<span class='tooltip'>node72 preds:71 succs:73 exn:3 Instructions
+n$192=*&amp;entry:java.util.Map$Entry* [line 141];
+_=*n$192:java.util.Map$Entry*(root java.util.Map$Entry) [line 141];
+n$194=_fun_Object Map$Entry.getValue()(n$192:java.util.Map$Entry*) interface virtual [line 141];
+*&amp;$irvar61:java.lang.Object*=n$194 [line 141];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node73.html"><span class='visited with_tooltip'>I_73<span class='tooltip'>node73 preds:72 succs:74 exn:3 Instructions
+n$195=*&amp;$irvar61:java.lang.Object* [line 141];
+_=*n$195:java.lang.Object*(root java.lang.Object) [line 141];
+n$197=_fun_String Object.toString()(n$195:java.lang.Object*) virtual [line 141];
+*&amp;$irvar62:java.lang.String*=n$197 [line 141];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node74.html"><span class='visited with_tooltip'>I_74<span class='tooltip'>node74 preds:73 succs:75 exn:3 Instructions
+n$198=*&amp;html:java.lang.String* [line 141];
+_=*n$198:java.lang.String*(root java.lang.String) [line 141];
+n$200=*&amp;$irvar60:java.lang.String* [line 141];
+n$201=*&amp;$irvar62:java.lang.String* [line 141];
+n$202=_fun_String String.replaceAll(String,String)(n$198:java.lang.String*,n$200:java.lang.String*,n$201:java.lang.String*) virtual [line 141];
+*&amp;$irvar63:java.lang.String*=n$202 [line 141];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node75.html"><span class='visited with_tooltip'>I_75<span class='tooltip'>node75 preds:74 succs:64 exn:3 Instructions
+n$203=*&amp;$irvar63:java.lang.String* [line 141];
+*&amp;html:java.lang.String*=n$203 [line 141];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE142">142</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE143">143</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE144">144</td><td class="line">        return html; <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node76.html"><span class='visited with_tooltip'>I_76<span class='tooltip'>node76 preds:66 succs:2 exn:3 Instructions
+n$204=*&amp;html:java.lang.String* [line 144];
+*&amp;return:java.lang.String*=n$204 [line 144];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:76 3 succs: exn: Exit
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.formatText%28java.lang.String%29%3Ajava.lang.String.910603d07b5be0a5c1aab5435fc9fbef_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE145">145</td><td class="line">    } </td></tr>
+<tr><td class="num" id="LINE146">146</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE147">147</td><td class="line">    public double getSystemLoad() { <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.getSystemLoad%28%29%3Adouble.e559e50333afc0949348cebed3838e01_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/com.stn.utils.Tools.getSystemLoad%28%29%3Adouble.e559e50333afc0949348cebed3838e01.html">summary for double Tools.getSystemLoad()</a></td></tr>
+<tr><td class="num" id="LINE148">148</td><td class="line">        OperatingSystemMXBean osBean = ManagementFactory.getPlatformMXBean(OperatingSystemMXBean.class); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.getSystemLoad%28%29%3Adouble.e559e50333afc0949348cebed3838e01_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun_PlatformManagedObject ManagementFactory.getPlatformMXBean(Class)(com.sun.management.OperatingSystemMXBean:java.lang.Object*) [line 148];
+*&amp;$irvar0:java.lang.management.PlatformManagedObject*=n$0 [line 148];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.getSystemLoad%28%29%3Adouble.e559e50333afc0949348cebed3838e01_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$1=*&amp;$irvar0:java.lang.management.PlatformManagedObject* [line 148];
+n$2=_fun___cast(n$1:java.lang.management.PlatformManagedObject*,sizeof(t=com.sun.management.OperatingSystemMXBean;sub_t=( sub )(cast)):void) [line 148];
+*&amp;osBean:com.sun.management.OperatingSystemMXBean*=n$2 [line 148];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE149">149</td><td class="line">        return Math.round(osBean.getSystemCpuLoad() *100); <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.getSystemLoad%28%29%3Adouble.e559e50333afc0949348cebed3838e01_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$3=*&amp;osBean:com.sun.management.OperatingSystemMXBean* [line 149];
+_=*n$3:com.sun.management.OperatingSystemMXBean*(root com.sun.management.OperatingSystemMXBean) [line 149];
+n$5=_fun_double OperatingSystemMXBean.getSystemCpuLoad()(n$3:com.sun.management.OperatingSystemMXBean*) interface virtual [line 149];
+*&amp;$irvar1:double=n$5 [line 149];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.getSystemLoad%28%29%3Adouble.e559e50333afc0949348cebed3838e01_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$6=*&amp;$irvar1:double [line 149];
+n$7=_fun_long Math.round(double)((n$6 * 100.):double) [line 149];
+*&amp;$irvar2:long=n$7 [line 149];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.getSystemLoad%28%29%3Adouble.e559e50333afc0949348cebed3838e01_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:2 exn:3 Instructions
+n$8=*&amp;$irvar2:long [line 149];
+*&amp;return:double=(double)n$8 [line 149];
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.getSystemLoad%28%29%3Adouble.e559e50333afc0949348cebed3838e01_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:8 3 succs: exn: Exit
+</span></span></a> <a href="./Tools.java.5ab60bbcd04a639debf9e0445b6c8166/nodes/com.stn.utils.Tools.getSystemLoad%28%29%3Adouble.e559e50333afc0949348cebed3838e01_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE150">150</td><td class="line">    } </td></tr>
+<tr><td class="num" id="LINE151">151</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE152">152</td><td class="line">} </td></tr>
+<tr><td class="num" id="LINE153">153</td><td class="line"> </td></tr>
+</table>
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+</body>
+</html>

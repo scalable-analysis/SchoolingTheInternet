@@ -1,0 +1,687 @@
+/* @generated */
+digraph cfg {
+"com.stn.helpers.TopicHelper.<init>().873ad70ef3800172cf8fcdb2ec80d5db_1" [label="1: Start TopicHelper.<init>()\nFormals:  this:com.stn.helpers.TopicHelper*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.helpers.TopicHelper.<init>().873ad70ef3800172cf8fcdb2ec80d5db_1" -> "com.stn.helpers.TopicHelper.<init>().873ad70ef3800172cf8fcdb2ec80d5db_4" ;
+"com.stn.helpers.TopicHelper.<init>().873ad70ef3800172cf8fcdb2ec80d5db_2" [label="2: Exit TopicHelper.<init>() \n  " color=yellow style=filled]
+	
+
+"com.stn.helpers.TopicHelper.<init>().873ad70ef3800172cf8fcdb2ec80d5db_3" [label="3:  exceptions sink \n  " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.<init>().873ad70ef3800172cf8fcdb2ec80d5db_3" -> "com.stn.helpers.TopicHelper.<init>().873ad70ef3800172cf8fcdb2ec80d5db_2" ;
+"com.stn.helpers.TopicHelper.<init>().873ad70ef3800172cf8fcdb2ec80d5db_4" [label="4:  Call DBConnection.<init>() \n   n$0=*&this:com.stn.helpers.TopicHelper* [line 12]\n  n$1=_fun_DBConnection.<init>()(n$0:com.stn.helpers.TopicHelper*) [line 12]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.<init>().873ad70ef3800172cf8fcdb2ec80d5db_4" -> "com.stn.helpers.TopicHelper.<init>().873ad70ef3800172cf8fcdb2ec80d5db_5" ;
+	 "com.stn.helpers.TopicHelper.<init>().873ad70ef3800172cf8fcdb2ec80d5db_4" -> "com.stn.helpers.TopicHelper.<init>().873ad70ef3800172cf8fcdb2ec80d5db_3" [color="red" ];
+"com.stn.helpers.TopicHelper.<init>().873ad70ef3800172cf8fcdb2ec80d5db_5" [label="5:  method_body \n  " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.<init>().873ad70ef3800172cf8fcdb2ec80d5db_5" -> "com.stn.helpers.TopicHelper.<init>().873ad70ef3800172cf8fcdb2ec80d5db_2" ;
+	 "com.stn.helpers.TopicHelper.<init>().873ad70ef3800172cf8fcdb2ec80d5db_5" -> "com.stn.helpers.TopicHelper.<init>().873ad70ef3800172cf8fcdb2ec80d5db_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_1" [label="1: Start void TopicHelper.addTopic(String,String,int,int)\nFormals:  this:com.stn.helpers.TopicHelper* title:java.lang.String* body:java.lang.String* idUser:int idGroup:int\nLocals:  $bcvar7:void CatchVar337:void $irvar15:void $irvar14:void $irvar13:void $irvar12:void $irvar11:void $irvar10:void $irvar9:void $bcvar6:void CatchVar168:void $irvar8:void $irvar7:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void last_inserted_id:int \n  " color=yellow style=filled]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_1" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_4" ;
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_2" [label="2: Exit void TopicHelper.addTopic(String,String,int,int) \n  " color=yellow style=filled]
+	
+
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [label="3:  exceptions sink \n  " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_2" ;
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_4" [label="4:  method_body \n   *&last_inserted_id:int=0 [line 15]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_4" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_5" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_4" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_5" [label="5:  method_body \n   n$0=*&this:com.stn.helpers.TopicHelper* [line 16]\n  *n$0.query:com.stn.helpers.TopicHelper(root com.stn.helpers.TopicHelper)=\"INSERT INTO topics(Name,Author,GroupId) VALUES (?,?,?)\" [line 16]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_5" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_6" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_5" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_6" [label="6:  Call Class Class.forName(String) \n   n$1=_fun_Class Class.forName(String)(\"com.mysql.jdbc.Driver\":java.lang.Object*) [line 19]\n  *&$irvar0:java.lang.Class*=n$1 [line 19]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_6" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_7" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_6" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_7" [label="7:  Call String DBConnection.getHost() \n   n$2=*&this:com.stn.helpers.TopicHelper* [line 20]\n  _=*n$2:com.stn.helpers.TopicHelper*(root com.stn.helpers.TopicHelper) [line 20]\n  n$4=_fun_String DBConnection.getHost()(n$2:com.stn.helpers.TopicHelper*) virtual [line 20]\n  *&$irvar1:java.lang.String*=n$4 [line 20]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_7" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_8" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_7" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_8" [label="8:  Call String DBConnection.getUser() \n   n$5=*&this:com.stn.helpers.TopicHelper* [line 20]\n  _=*n$5:com.stn.helpers.TopicHelper*(root com.stn.helpers.TopicHelper) [line 20]\n  n$7=_fun_String DBConnection.getUser()(n$5:com.stn.helpers.TopicHelper*) virtual [line 20]\n  *&$irvar2:java.lang.String*=n$7 [line 20]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_8" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_9" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_8" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_9" [label="9:  Call String DBConnection.getPassword() \n   n$8=*&this:com.stn.helpers.TopicHelper* [line 20]\n  _=*n$8:com.stn.helpers.TopicHelper*(root com.stn.helpers.TopicHelper) [line 20]\n  n$10=_fun_String DBConnection.getPassword()(n$8:com.stn.helpers.TopicHelper*) virtual [line 20]\n  *&$irvar3:java.lang.String*=n$10 [line 20]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_9" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_10" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_9" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_10" [label="10:  Call Connection DriverManager.getConnection(String,String,String) \n   n$11=*&$irvar1:java.lang.String* [line 20]\n  n$12=*&$irvar2:java.lang.String* [line 20]\n  n$13=*&$irvar3:java.lang.String* [line 20]\n  n$14=_fun_Connection DriverManager.getConnection(String,String,String)(n$11:java.lang.String*,n$12:java.lang.String*,n$13:java.lang.String*) [line 20]\n  *&$irvar4:java.sql.Connection*=n$14 [line 20]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_10" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_11" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_10" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_11" [label="11:  method_body \n   n$15=*&this:com.stn.helpers.TopicHelper* [line 20]\n  n$16=*&$irvar4:java.sql.Connection* [line 20]\n  *n$15.connection:com.stn.helpers.TopicHelper(root com.stn.helpers.TopicHelper)=n$16 [line 20]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_11" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_12" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_11" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_12" [label="12:  Call PreparedStatement Connection.prepareStatement(String,int) \n   n$17=*&this:com.stn.helpers.TopicHelper* [line 21]\n  n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 21]\n  _=*n$18:java.sql.Connection*(root java.sql.Connection) [line 21]\n  n$20=*&this:com.stn.helpers.TopicHelper* [line 21]\n  n$21=*n$20.query:java.lang.String*(root com.stn.helpers.TopicHelper) [line 21]\n  n$22=_fun_PreparedStatement Connection.prepareStatement(String,int)(n$18:java.sql.Connection*,n$21:java.lang.String*,1:int) interface virtual [line 21]\n  *&$irvar5:java.sql.PreparedStatement*=n$22 [line 21]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_12" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_13" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_12" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_13" [label="13:  method_body \n   n$23=*&this:com.stn.helpers.TopicHelper* [line 21]\n  n$24=*&$irvar5:java.sql.PreparedStatement* [line 21]\n  *n$23.preparedStatement:com.stn.helpers.TopicHelper(root com.stn.helpers.TopicHelper)=n$24 [line 21]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_13" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_14" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_13" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_14" [label="14:  Call void PreparedStatement.setString(int,String) \n   n$25=*&this:com.stn.helpers.TopicHelper* [line 22]\n  n$26=*n$25.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 22]\n  _=*n$26:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 22]\n  n$28=*&title:java.lang.String* [line 22]\n  n$29=_fun_void PreparedStatement.setString(int,String)(n$26:java.sql.PreparedStatement*,1:int,n$28:java.lang.String*) interface virtual [line 22]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_14" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_15" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_14" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_15" [label="15:  Call void PreparedStatement.setInt(int,int) \n   n$30=*&this:com.stn.helpers.TopicHelper* [line 23]\n  n$31=*n$30.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 23]\n  _=*n$31:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 23]\n  n$33=*&idUser:int [line 23]\n  n$34=_fun_void PreparedStatement.setInt(int,int)(n$31:java.sql.PreparedStatement*,2:int,n$33:int) interface virtual [line 23]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_15" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_16" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_15" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_16" [label="16:  Call void PreparedStatement.setInt(int,int) \n   n$35=*&this:com.stn.helpers.TopicHelper* [line 24]\n  n$36=*n$35.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 24]\n  _=*n$36:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 24]\n  n$38=*&idGroup:int [line 24]\n  n$39=_fun_void PreparedStatement.setInt(int,int)(n$36:java.sql.PreparedStatement*,3:int,n$38:int) interface virtual [line 24]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_16" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_17" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_16" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_17" [label="17:  Call int PreparedStatement.executeUpdate() \n   n$40=*&this:com.stn.helpers.TopicHelper* [line 25]\n  n$41=*n$40.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 25]\n  _=*n$41:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 25]\n  n$43=_fun_int PreparedStatement.executeUpdate()(n$41:java.sql.PreparedStatement*) interface virtual [line 25]\n  *&$irvar6:int=n$43 [line 25]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_17" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_18" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_17" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_18" [label="18:  Call ResultSet PreparedStatement.getGeneratedKeys() \n   n$44=*&this:com.stn.helpers.TopicHelper* [line 26]\n  n$45=*n$44.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 26]\n  _=*n$45:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 26]\n  n$47=_fun_ResultSet PreparedStatement.getGeneratedKeys()(n$45:java.sql.PreparedStatement*) interface virtual [line 26]\n  *&$irvar7:java.sql.ResultSet*=n$47 [line 26]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_18" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_19" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_18" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_19" [label="19:  method_body \n   n$48=*&this:com.stn.helpers.TopicHelper* [line 26]\n  n$49=*&$irvar7:java.sql.ResultSet* [line 26]\n  *n$48.resultSet:com.stn.helpers.TopicHelper(root com.stn.helpers.TopicHelper)=n$49 [line 26]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_19" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_20" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_19" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_20" [label="20:  Call boolean ResultSet.next() \n   n$50=*&this:com.stn.helpers.TopicHelper* [line 27]\n  n$51=*n$50.resultSet:java.sql.ResultSet*(root com.stn.helpers.TopicHelper) [line 27]\n  _=*n$51:java.sql.ResultSet*(root java.sql.ResultSet) [line 27]\n  n$53=_fun_boolean ResultSet.next()(n$51:java.sql.ResultSet*) interface virtual [line 27]\n  *&$irvar8:_Bool=n$53 [line 27]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_20" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_21" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_20" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_22" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_20" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_21" [label="21: Prune (true branch, if) \n   n$54=*&$irvar8:_Bool [line 27]\n  PRUNE(!(n$54 == 0), true); [line 27]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_21" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_23" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_21" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_22" [label="22: Prune (false branch, if) \n   n$54=*&$irvar8:_Bool [line 27]\n  PRUNE((n$54 == 0), false); [line 27]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_22" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_24" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_22" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_25" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_22" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_23" [label="23:  Call int ResultSet.getInt(int) \n   n$55=*&this:com.stn.helpers.TopicHelper* [line 28]\n  n$56=*n$55.resultSet:java.sql.ResultSet*(root com.stn.helpers.TopicHelper) [line 28]\n  _=*n$56:java.sql.ResultSet*(root java.sql.ResultSet) [line 28]\n  n$58=_fun_int ResultSet.getInt(int)(n$56:java.sql.ResultSet*,1:int) interface virtual [line 28]\n  *&last_inserted_id:int=n$58 [line 28]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_23" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_24" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_23" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_25" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_23" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_24" [label="24: Prune (true branch, if) \n   n$59=*&this:com.stn.helpers.TopicHelper* [line 31]\n  n$60=*n$59.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 31]\n  PRUNE(!(n$60 == null), true); [line 31]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_24" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_26" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_24" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_25" [label="25: Prune (false branch, if) \n   n$59=*&this:com.stn.helpers.TopicHelper* [line 31]\n  n$60=*n$59.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 31]\n  PRUNE((n$60 == null), false); [line 31]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_25" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_27" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_25" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_28" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_25" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_26" [label="26:  Call void PreparedStatement.close() \n   n$61=*&this:com.stn.helpers.TopicHelper* [line 32]\n  n$62=*n$61.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 32]\n  n$65=_fun___set_mem_attribute(n$62:java.sql.PreparedStatement*) [line 32]\n  _=*n$62:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 32]\n  n$64=_fun_void PreparedStatement.close()(n$62:java.sql.PreparedStatement*) interface virtual [line 32]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_26" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_27" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_26" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_28" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_26" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_27" [label="27: Prune (true branch, if) \n   n$66=*&this:com.stn.helpers.TopicHelper* [line 33]\n  n$67=*n$66.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 33]\n  PRUNE(!(n$67 == null), true); [line 33]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_27" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_29" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_27" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_28" [label="28: Prune (false branch, if) \n   n$66=*&this:com.stn.helpers.TopicHelper* [line 33]\n  n$67=*n$66.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 33]\n  PRUNE((n$67 == null), false); [line 33]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_28" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_38" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_28" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_29" [label="29:  Call void Connection.close() \n   n$68=*&this:com.stn.helpers.TopicHelper* [line 34]\n  n$69=*n$68.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 34]\n  n$72=_fun___set_mem_attribute(n$69:java.sql.Connection*) [line 34]\n  _=*n$69:java.sql.Connection*(root java.sql.Connection) [line 34]\n  n$71=_fun_void Connection.close()(n$69:java.sql.Connection*) interface virtual [line 34]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_29" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_38" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_29" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_30" [label="30:  method_body \n   n$73=*&CatchVar168:java.lang.Object* [line 31]\n  *&$bcvar6:java.lang.Object*=n$73 [line 31]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_30" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_31" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_30" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_32" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_30" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_75" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_31" [label="31: Prune (true branch, if) \n   n$74=*&this:com.stn.helpers.TopicHelper* [line 31]\n  n$75=*n$74.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 31]\n  PRUNE(!(n$75 == null), true); [line 31]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_31" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_33" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_31" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_32" [label="32: Prune (false branch, if) \n   n$74=*&this:com.stn.helpers.TopicHelper* [line 31]\n  n$75=*n$74.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 31]\n  PRUNE((n$75 == null), false); [line 31]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_32" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_34" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_32" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_35" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_32" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_33" [label="33:  Call void PreparedStatement.close() \n   n$76=*&this:com.stn.helpers.TopicHelper* [line 32]\n  n$77=*n$76.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 32]\n  n$80=_fun___set_mem_attribute(n$77:java.sql.PreparedStatement*) [line 32]\n  _=*n$77:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 32]\n  n$79=_fun_void PreparedStatement.close()(n$77:java.sql.PreparedStatement*) interface virtual [line 32]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_33" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_34" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_33" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_35" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_33" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_34" [label="34: Prune (true branch, if) \n   n$81=*&this:com.stn.helpers.TopicHelper* [line 33]\n  n$82=*n$81.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 33]\n  PRUNE(!(n$82 == null), true); [line 33]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_34" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_36" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_34" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_35" [label="35: Prune (false branch, if) \n   n$81=*&this:com.stn.helpers.TopicHelper* [line 33]\n  n$82=*n$81.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 33]\n  PRUNE((n$82 == null), false); [line 33]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_35" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_37" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_35" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_36" [label="36:  Call void Connection.close() \n   n$83=*&this:com.stn.helpers.TopicHelper* [line 34]\n  n$84=*n$83.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 34]\n  n$87=_fun___set_mem_attribute(n$84:java.sql.Connection*) [line 34]\n  _=*n$84:java.sql.Connection*(root java.sql.Connection) [line 34]\n  n$86=_fun_void Connection.close()(n$84:java.sql.Connection*) interface virtual [line 34]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_36" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_37" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_36" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_37" [label="37:  throw \n   n$88=*&$bcvar6:java.lang.Object* [line 35]\n  *&return:void=EXN n$88 [line 35]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_37" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_2" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_37" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_38" [label="38:  method_body \n   n$89=*&this:com.stn.helpers.TopicHelper* [line 37]\n  *n$89.query:com.stn.helpers.TopicHelper(root com.stn.helpers.TopicHelper)=\"INSERT INTO comments(IdPost,IdUser,Continut) VALUES (?,?,?)\" [line 37]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_38" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_39" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_38" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_40" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_38" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_39" [label="39: Prune (true branch, if) \n   n$90=*&last_inserted_id:int [line 39]\n  PRUNE(!(n$90 == 0), true); [line 39]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_39" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_41" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_39" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_40" [label="40: Prune (false branch, if) \n   n$90=*&last_inserted_id:int [line 39]\n  PRUNE((n$90 == 0), false); [line 39]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_40" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_67" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_40" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_41" [label="41:  Call Class Class.forName(String) \n   n$91=_fun_Class Class.forName(String)(\"com.mysql.jdbc.Driver\":java.lang.Object*) [line 41]\n  *&$irvar9:java.lang.Class*=n$91 [line 41]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_41" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_42" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_41" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_71" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_42" [label="42:  Call String DBConnection.getHost() \n   n$92=*&this:com.stn.helpers.TopicHelper* [line 42]\n  _=*n$92:com.stn.helpers.TopicHelper*(root com.stn.helpers.TopicHelper) [line 42]\n  n$94=_fun_String DBConnection.getHost()(n$92:com.stn.helpers.TopicHelper*) virtual [line 42]\n  *&$irvar10:java.lang.String*=n$94 [line 42]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_42" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_43" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_42" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_71" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_43" [label="43:  Call String DBConnection.getUser() \n   n$95=*&this:com.stn.helpers.TopicHelper* [line 42]\n  _=*n$95:com.stn.helpers.TopicHelper*(root com.stn.helpers.TopicHelper) [line 42]\n  n$97=_fun_String DBConnection.getUser()(n$95:com.stn.helpers.TopicHelper*) virtual [line 42]\n  *&$irvar11:java.lang.String*=n$97 [line 42]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_43" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_44" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_43" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_71" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_44" [label="44:  Call String DBConnection.getPassword() \n   n$98=*&this:com.stn.helpers.TopicHelper* [line 42]\n  _=*n$98:com.stn.helpers.TopicHelper*(root com.stn.helpers.TopicHelper) [line 42]\n  n$100=_fun_String DBConnection.getPassword()(n$98:com.stn.helpers.TopicHelper*) virtual [line 42]\n  *&$irvar12:java.lang.String*=n$100 [line 42]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_44" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_45" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_44" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_71" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_45" [label="45:  Call Connection DriverManager.getConnection(String,String,String) \n   n$101=*&$irvar10:java.lang.String* [line 42]\n  n$102=*&$irvar11:java.lang.String* [line 42]\n  n$103=*&$irvar12:java.lang.String* [line 42]\n  n$104=_fun_Connection DriverManager.getConnection(String,String,String)(n$101:java.lang.String*,n$102:java.lang.String*,n$103:java.lang.String*) [line 42]\n  *&$irvar13:java.sql.Connection*=n$104 [line 42]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_45" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_46" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_45" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_71" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_46" [label="46:  method_body \n   n$105=*&this:com.stn.helpers.TopicHelper* [line 42]\n  n$106=*&$irvar13:java.sql.Connection* [line 42]\n  *n$105.connection:com.stn.helpers.TopicHelper(root com.stn.helpers.TopicHelper)=n$106 [line 42]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_46" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_47" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_46" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_71" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_47" [label="47:  Call PreparedStatement Connection.prepareStatement(String) \n   n$107=*&this:com.stn.helpers.TopicHelper* [line 43]\n  n$108=*n$107.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 43]\n  _=*n$108:java.sql.Connection*(root java.sql.Connection) [line 43]\n  n$110=*&this:com.stn.helpers.TopicHelper* [line 43]\n  n$111=*n$110.query:java.lang.String*(root com.stn.helpers.TopicHelper) [line 43]\n  n$112=_fun_PreparedStatement Connection.prepareStatement(String)(n$108:java.sql.Connection*,n$111:java.lang.String*) interface virtual [line 43]\n  *&$irvar14:java.sql.PreparedStatement*=n$112 [line 43]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_47" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_48" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_47" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_71" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_48" [label="48:  method_body \n   n$113=*&this:com.stn.helpers.TopicHelper* [line 43]\n  n$114=*&$irvar14:java.sql.PreparedStatement* [line 43]\n  *n$113.preparedStatement:com.stn.helpers.TopicHelper(root com.stn.helpers.TopicHelper)=n$114 [line 43]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_48" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_49" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_48" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_71" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_49" [label="49:  Call void PreparedStatement.setInt(int,int) \n   n$115=*&this:com.stn.helpers.TopicHelper* [line 44]\n  n$116=*n$115.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 44]\n  _=*n$116:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 44]\n  n$118=*&last_inserted_id:int [line 44]\n  n$119=_fun_void PreparedStatement.setInt(int,int)(n$116:java.sql.PreparedStatement*,1:int,n$118:int) interface virtual [line 44]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_49" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_50" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_49" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_71" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_50" [label="50:  Call void PreparedStatement.setInt(int,int) \n   n$120=*&this:com.stn.helpers.TopicHelper* [line 45]\n  n$121=*n$120.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 45]\n  _=*n$121:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 45]\n  n$123=*&idUser:int [line 45]\n  n$124=_fun_void PreparedStatement.setInt(int,int)(n$121:java.sql.PreparedStatement*,2:int,n$123:int) interface virtual [line 45]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_50" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_51" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_50" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_71" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_51" [label="51:  Call void PreparedStatement.setString(int,String) \n   n$125=*&this:com.stn.helpers.TopicHelper* [line 46]\n  n$126=*n$125.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 46]\n  _=*n$126:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 46]\n  n$128=*&body:java.lang.String* [line 46]\n  n$129=_fun_void PreparedStatement.setString(int,String)(n$126:java.sql.PreparedStatement*,3:int,n$128:java.lang.String*) interface virtual [line 46]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_51" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_52" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_51" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_71" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_52" [label="52:  Call int PreparedStatement.executeUpdate() \n   n$130=*&this:com.stn.helpers.TopicHelper* [line 47]\n  n$131=*n$130.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 47]\n  _=*n$131:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 47]\n  n$133=_fun_int PreparedStatement.executeUpdate()(n$131:java.sql.PreparedStatement*) interface virtual [line 47]\n  *&$irvar15:int=n$133 [line 47]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_52" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_53" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_52" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_54" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_52" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_71" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_53" [label="53: Prune (true branch, if) \n   n$134=*&this:com.stn.helpers.TopicHelper* [line 49]\n  n$135=*n$134.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 49]\n  PRUNE(!(n$135 == null), true); [line 49]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_53" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_55" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_53" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_54" [label="54: Prune (false branch, if) \n   n$134=*&this:com.stn.helpers.TopicHelper* [line 49]\n  n$135=*n$134.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 49]\n  PRUNE((n$135 == null), false); [line 49]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_54" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_56" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_54" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_57" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_54" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_55" [label="55:  Call void PreparedStatement.close() \n   n$136=*&this:com.stn.helpers.TopicHelper* [line 50]\n  n$137=*n$136.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 50]\n  n$140=_fun___set_mem_attribute(n$137:java.sql.PreparedStatement*) [line 50]\n  _=*n$137:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 50]\n  n$139=_fun_void PreparedStatement.close()(n$137:java.sql.PreparedStatement*) interface virtual [line 50]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_55" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_56" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_55" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_57" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_55" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_56" [label="56: Prune (true branch, if) \n   n$141=*&this:com.stn.helpers.TopicHelper* [line 51]\n  n$142=*n$141.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 51]\n  PRUNE(!(n$142 == null), true); [line 51]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_56" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_58" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_56" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_57" [label="57: Prune (false branch, if) \n   n$141=*&this:com.stn.helpers.TopicHelper* [line 51]\n  n$142=*n$141.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 51]\n  PRUNE((n$142 == null), false); [line 51]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_57" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_67" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_57" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_58" [label="58:  Call void Connection.close() \n   n$143=*&this:com.stn.helpers.TopicHelper* [line 52]\n  n$144=*n$143.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 52]\n  n$147=_fun___set_mem_attribute(n$144:java.sql.Connection*) [line 52]\n  _=*n$144:java.sql.Connection*(root java.sql.Connection) [line 52]\n  n$146=_fun_void Connection.close()(n$144:java.sql.Connection*) interface virtual [line 52]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_58" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_67" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_58" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_59" [label="59:  method_body \n   n$148=*&CatchVar337:java.lang.Object* [line 49]\n  *&$bcvar7:java.lang.Object*=n$148 [line 49]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_59" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_60" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_59" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_61" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_59" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_73" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_60" [label="60: Prune (true branch, if) \n   n$149=*&this:com.stn.helpers.TopicHelper* [line 49]\n  n$150=*n$149.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 49]\n  PRUNE(!(n$150 == null), true); [line 49]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_60" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_62" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_60" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_61" [label="61: Prune (false branch, if) \n   n$149=*&this:com.stn.helpers.TopicHelper* [line 49]\n  n$150=*n$149.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 49]\n  PRUNE((n$150 == null), false); [line 49]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_61" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_63" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_61" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_64" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_61" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_62" [label="62:  Call void PreparedStatement.close() \n   n$151=*&this:com.stn.helpers.TopicHelper* [line 50]\n  n$152=*n$151.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 50]\n  n$155=_fun___set_mem_attribute(n$152:java.sql.PreparedStatement*) [line 50]\n  _=*n$152:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 50]\n  n$154=_fun_void PreparedStatement.close()(n$152:java.sql.PreparedStatement*) interface virtual [line 50]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_62" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_63" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_62" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_64" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_62" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_63" [label="63: Prune (true branch, if) \n   n$156=*&this:com.stn.helpers.TopicHelper* [line 51]\n  n$157=*n$156.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 51]\n  PRUNE(!(n$157 == null), true); [line 51]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_63" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_65" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_63" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_64" [label="64: Prune (false branch, if) \n   n$156=*&this:com.stn.helpers.TopicHelper* [line 51]\n  n$157=*n$156.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 51]\n  PRUNE((n$157 == null), false); [line 51]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_64" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_66" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_64" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_65" [label="65:  Call void Connection.close() \n   n$158=*&this:com.stn.helpers.TopicHelper* [line 52]\n  n$159=*n$158.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 52]\n  n$162=_fun___set_mem_attribute(n$159:java.sql.Connection*) [line 52]\n  _=*n$159:java.sql.Connection*(root java.sql.Connection) [line 52]\n  n$161=_fun_void Connection.close()(n$159:java.sql.Connection*) interface virtual [line 52]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_65" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_66" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_65" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_66" [label="66:  throw \n   n$163=*&$bcvar7:java.lang.Object* [line 53]\n  *&return:void=EXN n$163 [line 53]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_66" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_2" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_66" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_67" [label="67:  method_body \n  " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_67" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_2" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_67" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_68" [label="68:  Finally branch \n  " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_68" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_30" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_68" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" [label="69:  exception handler \n   n$164=*&return:void [line 31]\n  *&return:void=null [line 31]\n  n$165=_fun___unwrap_exception(n$164:void) [line 31]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_68" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_69" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_70" [label="70:  Finally branch \n  " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_70" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_59" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_70" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_71" [label="71:  exception handler \n   n$164=*&return:void [line 49]\n  *&return:void=null [line 49]\n  n$165=_fun___unwrap_exception(n$164:void) [line 49]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_71" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_70" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_71" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_72" [label="72:  Finally branch \n  " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_72" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_59" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_72" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_73" [label="73:  exception handler \n   n$164=*&return:void [line 49]\n  *&return:void=null [line 49]\n  n$165=_fun___unwrap_exception(n$164:void) [line 49]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_73" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_72" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_73" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_74" [label="74:  Finally branch \n  " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_74" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_30" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_74" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_75" [label="75:  exception handler \n   n$164=*&return:void [line 31]\n  *&return:void=null [line 31]\n  n$165=_fun___unwrap_exception(n$164:void) [line 31]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_75" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_74" ;
+	 "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_75" -> "com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_3" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_1" [label="1: Start List TopicHelper.getTopics(int)\nFormals:  this:com.stn.helpers.TopicHelper* catId:int\nLocals:  $bcvar4:void CatchVar246:void $irvar15:void $irvar14:void $irvar13:void $irvar12:void $irvar11:void $irvar10:void $irvar9:void $irvar8:void $irvar7:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void topic:java.util.List* t:com.stn.pojo.Topic* \n  " color=yellow style=filled]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_1" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_4" ;
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_2" [label="2: Exit List TopicHelper.getTopics(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [label="3:  exceptions sink \n  " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_2" ;
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_4" [label="4:  Call ArrayList.<init>() \n   n$0=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 59]\n  n$1=_fun_ArrayList.<init>()(n$0:java.util.ArrayList*) [line 59]\n  *&topic:java.util.ArrayList*=n$0 [line 59]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_4" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_5" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_4" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_5" [label="5:  method_body \n   n$2=*&this:com.stn.helpers.TopicHelper* [line 61]\n  *n$2.query:com.stn.helpers.TopicHelper(root com.stn.helpers.TopicHelper)=\"SELECT TopicId,Name,GroupId,t.Author,u.Username,u.Class, (SELECT COUNT(*) FROM comments WHERE IdPost = TopicId) FROM topics t JOIN users u ON t.Author = u.Id  WHERE GroupId = ?\" [line 61]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_5" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_6" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_5" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_6" [label="6:  Call Class Class.forName(String) \n   n$3=_fun_Class Class.forName(String)(\"com.mysql.jdbc.Driver\":java.lang.Object*) [line 66]\n  *&$irvar0:java.lang.Class*=n$3 [line 66]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_6" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_7" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_6" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_7" [label="7:  Call String DBConnection.getHost() \n   n$4=*&this:com.stn.helpers.TopicHelper* [line 67]\n  _=*n$4:com.stn.helpers.TopicHelper*(root com.stn.helpers.TopicHelper) [line 67]\n  n$6=_fun_String DBConnection.getHost()(n$4:com.stn.helpers.TopicHelper*) virtual [line 67]\n  *&$irvar1:java.lang.String*=n$6 [line 67]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_7" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_8" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_7" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_8" [label="8:  Call String DBConnection.getUser() \n   n$7=*&this:com.stn.helpers.TopicHelper* [line 67]\n  _=*n$7:com.stn.helpers.TopicHelper*(root com.stn.helpers.TopicHelper) [line 67]\n  n$9=_fun_String DBConnection.getUser()(n$7:com.stn.helpers.TopicHelper*) virtual [line 67]\n  *&$irvar2:java.lang.String*=n$9 [line 67]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_8" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_9" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_8" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_9" [label="9:  Call String DBConnection.getPassword() \n   n$10=*&this:com.stn.helpers.TopicHelper* [line 67]\n  _=*n$10:com.stn.helpers.TopicHelper*(root com.stn.helpers.TopicHelper) [line 67]\n  n$12=_fun_String DBConnection.getPassword()(n$10:com.stn.helpers.TopicHelper*) virtual [line 67]\n  *&$irvar3:java.lang.String*=n$12 [line 67]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_9" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_10" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_9" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_10" [label="10:  Call Connection DriverManager.getConnection(String,String,String) \n   n$13=*&$irvar1:java.lang.String* [line 67]\n  n$14=*&$irvar2:java.lang.String* [line 67]\n  n$15=*&$irvar3:java.lang.String* [line 67]\n  n$16=_fun_Connection DriverManager.getConnection(String,String,String)(n$13:java.lang.String*,n$14:java.lang.String*,n$15:java.lang.String*) [line 67]\n  *&$irvar4:java.sql.Connection*=n$16 [line 67]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_10" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_11" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_10" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_11" [label="11:  method_body \n   n$17=*&this:com.stn.helpers.TopicHelper* [line 67]\n  n$18=*&$irvar4:java.sql.Connection* [line 67]\n  *n$17.connection:com.stn.helpers.TopicHelper(root com.stn.helpers.TopicHelper)=n$18 [line 67]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_11" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_12" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_11" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_12" [label="12:  Call PreparedStatement Connection.prepareStatement(String) \n   n$19=*&this:com.stn.helpers.TopicHelper* [line 68]\n  n$20=*n$19.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 68]\n  _=*n$20:java.sql.Connection*(root java.sql.Connection) [line 68]\n  n$22=*&this:com.stn.helpers.TopicHelper* [line 68]\n  n$23=*n$22.query:java.lang.String*(root com.stn.helpers.TopicHelper) [line 68]\n  n$24=_fun_PreparedStatement Connection.prepareStatement(String)(n$20:java.sql.Connection*,n$23:java.lang.String*) interface virtual [line 68]\n  *&$irvar5:java.sql.PreparedStatement*=n$24 [line 68]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_12" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_13" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_12" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_13" [label="13:  method_body \n   n$25=*&this:com.stn.helpers.TopicHelper* [line 68]\n  n$26=*&$irvar5:java.sql.PreparedStatement* [line 68]\n  *n$25.preparedStatement:com.stn.helpers.TopicHelper(root com.stn.helpers.TopicHelper)=n$26 [line 68]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_13" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_14" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_13" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_14" [label="14:  Call void PreparedStatement.setInt(int,int) \n   n$27=*&this:com.stn.helpers.TopicHelper* [line 69]\n  n$28=*n$27.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 69]\n  _=*n$28:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 69]\n  n$30=*&catId:int [line 69]\n  n$31=_fun_void PreparedStatement.setInt(int,int)(n$28:java.sql.PreparedStatement*,1:int,n$30:int) interface virtual [line 69]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_14" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_15" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_14" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_15" [label="15:  Call ResultSet PreparedStatement.executeQuery() \n   n$32=*&this:com.stn.helpers.TopicHelper* [line 70]\n  n$33=*n$32.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 70]\n  _=*n$33:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 70]\n  n$35=_fun_ResultSet PreparedStatement.executeQuery()(n$33:java.sql.PreparedStatement*) interface virtual [line 70]\n  *&$irvar6:java.sql.ResultSet*=n$35 [line 70]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_15" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_16" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_15" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_16" [label="16:  method_body \n   n$36=*&this:com.stn.helpers.TopicHelper* [line 70]\n  n$37=*&$irvar6:java.sql.ResultSet* [line 70]\n  *n$36.resultSet:com.stn.helpers.TopicHelper(root com.stn.helpers.TopicHelper)=n$37 [line 70]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_16" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_17" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_16" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_17" [label="17:  Call boolean ResultSet.next() \n   n$38=*&this:com.stn.helpers.TopicHelper* [line 71]\n  n$39=*n$38.resultSet:java.sql.ResultSet*(root com.stn.helpers.TopicHelper) [line 71]\n  _=*n$39:java.sql.ResultSet*(root java.sql.ResultSet) [line 71]\n  n$41=_fun_boolean ResultSet.next()(n$39:java.sql.ResultSet*) interface virtual [line 71]\n  *&$irvar7:_Bool=n$41 [line 71]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_17" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_20" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_17" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_18" [label="18: Prune (true branch, if) \n   n$42=*&$irvar7:_Bool [line 71]\n  PRUNE(!(n$42 == 0), true); [line 71]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_18" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_21" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_18" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_19" [label="19: Prune (false branch, if) \n   n$42=*&$irvar7:_Bool [line 71]\n  PRUNE((n$42 == 0), false); [line 71]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_19" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_37" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_19" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_38" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_19" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_20" [label="20: + \n  " ]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_20" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_18" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_20" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_19" ;
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_21" [label="21:  Call Topic.<init>() \n   n$43=_fun___new(sizeof(t=com.stn.pojo.Topic):com.stn.pojo.Topic*) [line 72]\n  n$44=_fun_Topic.<init>()(n$43:com.stn.pojo.Topic*) [line 72]\n  *&t:com.stn.pojo.Topic*=n$43 [line 72]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_21" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_22" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_21" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_22" [label="22:  Call int ResultSet.getInt(int) \n   n$45=*&this:com.stn.helpers.TopicHelper* [line 73]\n  n$46=*n$45.resultSet:java.sql.ResultSet*(root com.stn.helpers.TopicHelper) [line 73]\n  _=*n$46:java.sql.ResultSet*(root java.sql.ResultSet) [line 73]\n  n$48=_fun_int ResultSet.getInt(int)(n$46:java.sql.ResultSet*,1:int) interface virtual [line 73]\n  *&$irvar8:int=n$48 [line 73]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_22" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_23" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_22" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_23" [label="23:  Call void Topic.setTopicId(int) \n   n$49=*&t:com.stn.pojo.Topic* [line 73]\n  _=*n$49:com.stn.pojo.Topic*(root com.stn.pojo.Topic) [line 73]\n  n$51=*&$irvar8:int [line 73]\n  n$52=_fun_void Topic.setTopicId(int)(n$49:com.stn.pojo.Topic*,n$51:int) virtual [line 73]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_23" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_24" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_23" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_24" [label="24:  Call String ResultSet.getString(int) \n   n$53=*&this:com.stn.helpers.TopicHelper* [line 74]\n  n$54=*n$53.resultSet:java.sql.ResultSet*(root com.stn.helpers.TopicHelper) [line 74]\n  _=*n$54:java.sql.ResultSet*(root java.sql.ResultSet) [line 74]\n  n$56=_fun_String ResultSet.getString(int)(n$54:java.sql.ResultSet*,2:int) interface virtual [line 74]\n  *&$irvar9:java.lang.String*=n$56 [line 74]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_24" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_25" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_24" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_25" [label="25:  Call void Topic.setName(String) \n   n$57=*&t:com.stn.pojo.Topic* [line 74]\n  _=*n$57:com.stn.pojo.Topic*(root com.stn.pojo.Topic) [line 74]\n  n$59=*&$irvar9:java.lang.String* [line 74]\n  n$60=_fun_void Topic.setName(String)(n$57:com.stn.pojo.Topic*,n$59:java.lang.String*) virtual [line 74]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_25" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_26" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_25" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_26" [label="26:  Call int ResultSet.getInt(int) \n   n$61=*&this:com.stn.helpers.TopicHelper* [line 75]\n  n$62=*n$61.resultSet:java.sql.ResultSet*(root com.stn.helpers.TopicHelper) [line 75]\n  _=*n$62:java.sql.ResultSet*(root java.sql.ResultSet) [line 75]\n  n$64=_fun_int ResultSet.getInt(int)(n$62:java.sql.ResultSet*,3:int) interface virtual [line 75]\n  *&$irvar10:int=n$64 [line 75]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_26" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_27" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_26" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_27" [label="27:  Call void Topic.setGroupId(int) \n   n$65=*&t:com.stn.pojo.Topic* [line 75]\n  _=*n$65:com.stn.pojo.Topic*(root com.stn.pojo.Topic) [line 75]\n  n$67=*&$irvar10:int [line 75]\n  n$68=_fun_void Topic.setGroupId(int)(n$65:com.stn.pojo.Topic*,n$67:int) virtual [line 75]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_27" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_28" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_27" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_28" [label="28:  Call int ResultSet.getInt(int) \n   n$69=*&this:com.stn.helpers.TopicHelper* [line 76]\n  n$70=*n$69.resultSet:java.sql.ResultSet*(root com.stn.helpers.TopicHelper) [line 76]\n  _=*n$70:java.sql.ResultSet*(root java.sql.ResultSet) [line 76]\n  n$72=_fun_int ResultSet.getInt(int)(n$70:java.sql.ResultSet*,4:int) interface virtual [line 76]\n  *&$irvar11:int=n$72 [line 76]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_28" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_29" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_28" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_29" [label="29:  Call void Topic.setAuthorId(int) \n   n$73=*&t:com.stn.pojo.Topic* [line 76]\n  _=*n$73:com.stn.pojo.Topic*(root com.stn.pojo.Topic) [line 76]\n  n$75=*&$irvar11:int [line 76]\n  n$76=_fun_void Topic.setAuthorId(int)(n$73:com.stn.pojo.Topic*,n$75:int) virtual [line 76]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_29" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_30" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_29" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_30" [label="30:  Call String ResultSet.getString(int) \n   n$77=*&this:com.stn.helpers.TopicHelper* [line 77]\n  n$78=*n$77.resultSet:java.sql.ResultSet*(root com.stn.helpers.TopicHelper) [line 77]\n  _=*n$78:java.sql.ResultSet*(root java.sql.ResultSet) [line 77]\n  n$80=_fun_String ResultSet.getString(int)(n$78:java.sql.ResultSet*,5:int) interface virtual [line 77]\n  *&$irvar12:java.lang.String*=n$80 [line 77]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_30" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_31" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_30" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_31" [label="31:  Call void Topic.setAuthorName(String) \n   n$81=*&t:com.stn.pojo.Topic* [line 77]\n  _=*n$81:com.stn.pojo.Topic*(root com.stn.pojo.Topic) [line 77]\n  n$83=*&$irvar12:java.lang.String* [line 77]\n  n$84=_fun_void Topic.setAuthorName(String)(n$81:com.stn.pojo.Topic*,n$83:java.lang.String*) virtual [line 77]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_31" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_32" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_31" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_32" [label="32:  Call int ResultSet.getInt(int) \n   n$85=*&this:com.stn.helpers.TopicHelper* [line 78]\n  n$86=*n$85.resultSet:java.sql.ResultSet*(root com.stn.helpers.TopicHelper) [line 78]\n  _=*n$86:java.sql.ResultSet*(root java.sql.ResultSet) [line 78]\n  n$88=_fun_int ResultSet.getInt(int)(n$86:java.sql.ResultSet*,6:int) interface virtual [line 78]\n  *&$irvar13:int=n$88 [line 78]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_32" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_33" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_32" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_33" [label="33:  Call void Topic.setAuthorClass(int) \n   n$89=*&t:com.stn.pojo.Topic* [line 78]\n  _=*n$89:com.stn.pojo.Topic*(root com.stn.pojo.Topic) [line 78]\n  n$91=*&$irvar13:int [line 78]\n  n$92=_fun_void Topic.setAuthorClass(int)(n$89:com.stn.pojo.Topic*,n$91:int) virtual [line 78]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_33" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_34" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_33" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_34" [label="34:  Call int ResultSet.getInt(int) \n   n$93=*&this:com.stn.helpers.TopicHelper* [line 79]\n  n$94=*n$93.resultSet:java.sql.ResultSet*(root com.stn.helpers.TopicHelper) [line 79]\n  _=*n$94:java.sql.ResultSet*(root java.sql.ResultSet) [line 79]\n  n$96=_fun_int ResultSet.getInt(int)(n$94:java.sql.ResultSet*,7:int) interface virtual [line 79]\n  *&$irvar14:int=n$96 [line 79]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_34" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_35" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_34" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_35" [label="35:  Call void Topic.setTotalposts(int) \n   n$97=*&t:com.stn.pojo.Topic* [line 79]\n  _=*n$97:com.stn.pojo.Topic*(root com.stn.pojo.Topic) [line 79]\n  n$99=*&$irvar14:int [line 79]\n  n$100=_fun_void Topic.setTotalposts(int)(n$97:com.stn.pojo.Topic*,n$99:int) virtual [line 79]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_35" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_36" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_35" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_36" [label="36:  Call boolean ArrayList.add(Object) \n   n$101=*&topic:java.util.ArrayList* [line 80]\n  _=*n$101:java.util.ArrayList*(root java.util.ArrayList) [line 80]\n  n$103=*&t:com.stn.pojo.Topic* [line 80]\n  n$104=_fun_boolean ArrayList.add(Object)(n$101:java.util.ArrayList*,n$103:com.stn.pojo.Topic*) interface virtual [line 80]\n  *&$irvar15:_Bool=n$104 [line 80]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_36" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_17" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_36" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_37" [label="37: Prune (true branch, if) \n   n$105=*&this:com.stn.helpers.TopicHelper* [line 83]\n  n$106=*n$105.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 83]\n  PRUNE(!(n$106 == null), true); [line 83]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_37" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_39" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_37" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_38" [label="38: Prune (false branch, if) \n   n$105=*&this:com.stn.helpers.TopicHelper* [line 83]\n  n$106=*n$105.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 83]\n  PRUNE((n$106 == null), false); [line 83]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_38" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_40" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_38" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_41" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_38" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_39" [label="39:  Call void PreparedStatement.close() \n   n$107=*&this:com.stn.helpers.TopicHelper* [line 84]\n  n$108=*n$107.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 84]\n  n$111=_fun___set_mem_attribute(n$108:java.sql.PreparedStatement*) [line 84]\n  _=*n$108:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 84]\n  n$110=_fun_void PreparedStatement.close()(n$108:java.sql.PreparedStatement*) interface virtual [line 84]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_39" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_40" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_39" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_41" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_39" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_40" [label="40: Prune (true branch, if) \n   n$112=*&this:com.stn.helpers.TopicHelper* [line 85]\n  n$113=*n$112.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 85]\n  PRUNE(!(n$113 == null), true); [line 85]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_40" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_42" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_40" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_41" [label="41: Prune (false branch, if) \n   n$112=*&this:com.stn.helpers.TopicHelper* [line 85]\n  n$113=*n$112.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 85]\n  PRUNE((n$113 == null), false); [line 85]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_41" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_51" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_41" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_42" [label="42:  Call void Connection.close() \n   n$114=*&this:com.stn.helpers.TopicHelper* [line 86]\n  n$115=*n$114.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 86]\n  n$118=_fun___set_mem_attribute(n$115:java.sql.Connection*) [line 86]\n  _=*n$115:java.sql.Connection*(root java.sql.Connection) [line 86]\n  n$117=_fun_void Connection.close()(n$115:java.sql.Connection*) interface virtual [line 86]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_42" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_51" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_42" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_43" [label="43:  method_body \n   n$119=*&CatchVar246:java.lang.Object* [line 83]\n  *&$bcvar4:java.lang.Object*=n$119 [line 83]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_43" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_44" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_43" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_45" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_43" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_55" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_44" [label="44: Prune (true branch, if) \n   n$120=*&this:com.stn.helpers.TopicHelper* [line 83]\n  n$121=*n$120.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 83]\n  PRUNE(!(n$121 == null), true); [line 83]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_44" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_46" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_44" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_45" [label="45: Prune (false branch, if) \n   n$120=*&this:com.stn.helpers.TopicHelper* [line 83]\n  n$121=*n$120.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 83]\n  PRUNE((n$121 == null), false); [line 83]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_45" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_47" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_45" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_48" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_45" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_46" [label="46:  Call void PreparedStatement.close() \n   n$122=*&this:com.stn.helpers.TopicHelper* [line 84]\n  n$123=*n$122.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 84]\n  n$126=_fun___set_mem_attribute(n$123:java.sql.PreparedStatement*) [line 84]\n  _=*n$123:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 84]\n  n$125=_fun_void PreparedStatement.close()(n$123:java.sql.PreparedStatement*) interface virtual [line 84]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_46" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_47" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_46" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_48" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_46" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_47" [label="47: Prune (true branch, if) \n   n$127=*&this:com.stn.helpers.TopicHelper* [line 85]\n  n$128=*n$127.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 85]\n  PRUNE(!(n$128 == null), true); [line 85]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_47" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_49" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_47" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_48" [label="48: Prune (false branch, if) \n   n$127=*&this:com.stn.helpers.TopicHelper* [line 85]\n  n$128=*n$127.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 85]\n  PRUNE((n$128 == null), false); [line 85]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_48" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_50" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_48" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_49" [label="49:  Call void Connection.close() \n   n$129=*&this:com.stn.helpers.TopicHelper* [line 86]\n  n$130=*n$129.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 86]\n  n$133=_fun___set_mem_attribute(n$130:java.sql.Connection*) [line 86]\n  _=*n$130:java.sql.Connection*(root java.sql.Connection) [line 86]\n  n$132=_fun_void Connection.close()(n$130:java.sql.Connection*) interface virtual [line 86]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_49" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_50" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_49" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_50" [label="50:  throw \n   n$134=*&$bcvar4:java.lang.Object* [line 87]\n  *&return:java.util.List*=EXN n$134 [line 87]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_50" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_2" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_50" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_51" [label="51:  method_body \n   n$135=*&topic:java.util.ArrayList* [line 89]\n  *&return:java.util.List*=n$135 [line 89]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_51" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_2" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_51" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_52" [label="52:  Finally branch \n  " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_52" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_43" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_52" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" [label="53:  exception handler \n   n$136=*&return:java.util.List* [line 83]\n  *&return:java.util.List*=null [line 83]\n  n$137=_fun___unwrap_exception(n$136:java.util.List*) [line 83]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_52" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_53" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_54" [label="54:  Finally branch \n  " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_54" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_43" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_54" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [color="red" ];
+"com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_55" [label="55:  exception handler \n   n$136=*&return:java.util.List* [line 83]\n  *&return:java.util.List*=null [line 83]\n  n$137=_fun___unwrap_exception(n$136:java.util.List*) [line 83]\n " shape="box"]
+	
+
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_55" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_54" ;
+	 "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_55" -> "com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f_3" [color="red" ];
+}

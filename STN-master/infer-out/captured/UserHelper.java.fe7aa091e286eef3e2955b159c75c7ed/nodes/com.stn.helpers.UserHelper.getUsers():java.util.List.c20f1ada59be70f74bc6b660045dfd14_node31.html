@@ -1,0 +1,574 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.UserHelper.getUsers():java.util.List.c20f1ada59be70f74bc6b660045dfd14_node31</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE445">31</a></h1></center>PROC: <a href="./../com.stn.helpers.UserHelper.getUsers%28%29%3Ajava.util.List.c20f1ada59be70f74bc6b660045dfd14.html">List UserHelper.getUsers()</a> LINE: <a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE445">445</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.helpers.UserHelper.getUsers%28%29%3Ajava.util.List.c20f1ada59be70f74bc6b660045dfd14_node30.html"><span class='visited with_tooltip'>N_30<span class='tooltip'>node30 preds:29 succs:31 exn:64 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.helpers.UserHelper.getUsers%28%29%3Ajava.util.List.c20f1ada59be70f74bc6b660045dfd14_node32.html"><span class='visited with_tooltip'>N_32<span class='tooltip'>node32 preds:31 succs:33 exn:64 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.helpers.UserHelper.getUsers%28%29%3Ajava.util.List.c20f1ada59be70f74bc6b660045dfd14_node64.html"><span class='visited with_tooltip'>N_64<span class='tooltip'>node64 preds: succs:63 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$80=*&amp;this:com.stn.helpers.UserHelper* [line 445];
+n$81=*n$80.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 445];
+_=*n$81:java.sql.ResultSet*(root java.sql.ResultSet) [line 445];
+n$83=_fun_String ResultSet.getString(int)(n$81:java.sql.ResultSet*,12:int) interface virtual [line 445];
+*&amp;$irvar13:java.lang.String*=n$83 [line 445];
+</LISTING>
+<hr width="100%">
+<a name="session142" href="./../nodes/com.stn.helpers.UserHelper.getUsers%28%29%3Ajava.util.List.c20f1ada59be70f74bc6b660045dfd14_node31.html#session142">node31#session142</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE445">445</a>) [compute pre] liveness 31
+<LISTING class='color_black'>JOIN
+
+LEFT:   { usert, $irvar13, return, CatchVar328, this, user }
+RIGHT:  { return, CatchVar328, this }
+RESULT: { usert, $irvar13, return, CatchVar328, this, user }
+
+</LISTING>
+<hr width="100%">
+<a name="session143" href="./../nodes/com.stn.helpers.UserHelper.getUsers%28%29%3Ajava.util.List.c20f1ada59be70f74bc6b660045dfd14_node31.html#session143">node31#session143</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE445">445</a>) [exec] liveness 31
+<LISTING class='color_black'>PRE STATE:
+{ usert, $irvar13, return, CatchVar328, this, user }
+
+INSTR=  *&amp;$irvar13:java.lang.String*=n$83 [line 445]; 
+
+STATE:
+{ n$83, usert, return, CatchVar328, this, user }
+
+INSTR=  n$83=_fun_String ResultSet.getString(int)(n$81:java.sql.ResultSet*,12:int) interface virtual [line 445]; 
+
+STATE:
+{ n$81, usert, return, CatchVar328, this, user }
+
+INSTR=  _=*n$81:java.sql.ResultSet*(root java.sql.ResultSet) [line 445]; 
+
+STATE UNCHANGED
+
+INSTR=  n$81=*n$80.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 445]; 
+
+STATE:
+{ n$80, usert, return, CatchVar328, this, user }
+
+INSTR=  n$80=*&amp;this:com.stn.helpers.UserHelper* [line 445]; 
+
+STATE:
+{ usert, return, CatchVar328, this, user }
+
+</LISTING>
+<hr width="100%">
+<a name="session259" href="./../nodes/com.stn.helpers.UserHelper.getUsers%28%29%3Ajava.util.List.c20f1ada59be70f74bc6b660045dfd14_node31.html#session259">node31#session259</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE445">445</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session260" href="./../nodes/com.stn.helpers.UserHelper.getUsers%28%29%3Ajava.util.List.c20f1ada59be70f74bc6b660045dfd14_node31.html#session260">node31#session260</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE445">445</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ usert, user },{ _, n$76, n$78, n$79, $irvar12 })
+
+INSTR=  n$80=*&amp;this:com.stn.helpers.UserHelper* [line 445]; 
+
+STATE:
+({ n$80, usert, user },{ _, n$76, n$78, n$79, $irvar12 })
+
+INSTR=  n$81=*n$80.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 445]; 
+
+STATE:
+({ n$80, n$81, usert, user },{ _, n$76, n$78, n$79, $irvar12 })
+
+INSTR=  _=*n$81:java.sql.ResultSet*(root java.sql.ResultSet) [line 445]; 
+
+STATE:
+({ _, n$80, n$81, usert, user },{ _, n$76, n$78, n$79, $irvar12 })
+
+INSTR=  n$83=_fun_String ResultSet.getString(int)(n$81:java.sql.ResultSet*,12:int) interface virtual [line 445]; 
+
+STATE:
+({ _, n$80, n$81, n$83, usert, user },{ _, n$76, n$78, n$79, $irvar12 })
+
+INSTR=  *&amp;$irvar13:java.lang.String*=n$83 [line 445]; 
+
+STATE:
+({ usert, $irvar13, user },{ _, n$80, n$81, n$83 })
+
+</LISTING>
+<hr width="100%">
+<a name="session56" href="./../nodes/com.stn.helpers.UserHelper.getUsers%28%29%3Ajava.util.List.c20f1ada59be70f74bc6b660045dfd14_node31.html#session56">node31#session56</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE445">445</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session57" href="./../nodes/com.stn.helpers.UserHelper.getUsers%28%29%3Ajava.util.List.c20f1ada59be70f74bc6b660045dfd14_node31.html#session57">node31#session57</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE445">445</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$6 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$9 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$12 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$16 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$24 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$30 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$38 -&gt; { avatar -&gt; { },
+            email -&gt; { },
+            facultate -&gt; { },
+            firstName -&gt; { },
+            gender -&gt; { },
+            grupa -&gt; { },
+            id -&gt; { },
+            idFacultate -&gt; { },
+            idGrupa -&gt; { },
+            idSerie -&gt; { },
+            ip -&gt; { },
+            joinDate -&gt; { },
+            lastName -&gt; { },
+            lastSeen -&gt; { },
+            serie -&gt; { },
+            userClass -&gt; { },
+            userName -&gt; { } },
+  n$51 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$59 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$67 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  usert -&gt; { avatar -&gt; { },
+             email -&gt; { },
+             facultate -&gt; { },
+             firstName -&gt; { },
+             gender -&gt; { },
+             grupa -&gt; { },
+             id -&gt; { },
+             idFacultate -&gt; { },
+             idGrupa -&gt; { },
+             idSerie -&gt; { },
+             ip -&gt; { },
+             joinDate -&gt; { Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+             lastName -&gt; { },
+             lastSeen -&gt; { Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+             serie -&gt; { },
+             userClass -&gt; { },
+             userName -&gt; { Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ? },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { },
+            resultSet -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  user -&gt; { } }
+
+
+
+
+TAINTED_CALL1: (callee="String ResultSet.getString(int)", caller="List UserHelper.getUsers()")
+TAINTED_CALL1: (callee="String ResultSet.getString(int)", caller="List UserHelper.getUsers()")
+INSTR=  n$83 := String ResultSet.getString(int)({ this-&gt;resultSet, 12 }) [line 445]; 
+
+STATE:
+{ n$6 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$9 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$12 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$16 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$24 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$30 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$38 -&gt; { avatar -&gt; { },
+            email -&gt; { },
+            facultate -&gt; { },
+            firstName -&gt; { },
+            gender -&gt; { },
+            grupa -&gt; { },
+            id -&gt; { },
+            idFacultate -&gt; { },
+            idGrupa -&gt; { },
+            idSerie -&gt; { },
+            ip -&gt; { },
+            joinDate -&gt; { },
+            lastName -&gt; { },
+            lastSeen -&gt; { },
+            serie -&gt; { },
+            userClass -&gt; { },
+            userName -&gt; { } },
+  n$51 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$59 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$67 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$83 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  usert -&gt; { avatar -&gt; { },
+             email -&gt; { },
+             facultate -&gt; { },
+             firstName -&gt; { },
+             gender -&gt; { },
+             grupa -&gt; { },
+             id -&gt; { },
+             idFacultate -&gt; { },
+             idGrupa -&gt; { },
+             idSerie -&gt; { },
+             ip -&gt; { },
+             joinDate -&gt; { Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+             lastName -&gt; { },
+             lastSeen -&gt; { Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+             serie -&gt; { },
+             userClass -&gt; { },
+             userName -&gt; { Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ? },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { },
+            resultSet -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  user -&gt; { } }
+
+
+
+</LISTING>
+<hr width="100%">
+<a name="session158" href="./../nodes/com.stn.helpers.UserHelper.getUsers%28%29%3Ajava.util.List.c20f1ada59be70f74bc6b660045dfd14_node31.html#session158">node31#session158</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE445">445</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session159" href="./../nodes/com.stn.helpers.UserHelper.getUsers%28%29%3Ajava.util.List.c20f1ada59be70f74bc6b660045dfd14_node31.html#session159">node31#session159</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE445">445</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$6 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$9 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$12 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$16 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$24 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$30 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$38 -&gt; { avatar -&gt; { },
+            email -&gt; { },
+            facultate -&gt; { },
+            firstName -&gt; { },
+            gender -&gt; { },
+            grupa -&gt; { },
+            id -&gt; { },
+            idFacultate -&gt; { },
+            idGrupa -&gt; { },
+            idSerie -&gt; { },
+            ip -&gt; { },
+            joinDate -&gt; { },
+            lastName -&gt; { },
+            lastSeen -&gt; { },
+            serie -&gt; { },
+            userClass -&gt; { },
+            userName -&gt; { } },
+  n$51 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$59 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$67 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$83 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$131 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$139 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  usert -&gt; { avatar -&gt; { },
+             email -&gt; { },
+             facultate -&gt; { },
+             firstName -&gt; { },
+             gender -&gt; { },
+             grupa -&gt; { },
+             id -&gt; { },
+             idFacultate -&gt; { },
+             idGrupa -&gt; { },
+             idSerie -&gt; { },
+             ip -&gt; { },
+             joinDate -&gt; { Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+             lastName -&gt; { },
+             lastSeen -&gt; { Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+             serie -&gt; { },
+             userClass -&gt; { },
+             userName -&gt; { Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ? },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { },
+            resultSet -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  user -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) }
+
+
+
+
+TAINTED_CALL1: (callee="String ResultSet.getString(int)", caller="List UserHelper.getUsers()")
+TAINTED_CALL1: (callee="String ResultSet.getString(int)", caller="List UserHelper.getUsers()")
+INSTR=  n$83 := String ResultSet.getString(int)({ this-&gt;resultSet, 12 }) [line 445]; 
+
+STATE:
+{ n$6 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$9 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$12 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$16 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$24 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$30 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$38 -&gt; { avatar -&gt; { },
+            email -&gt; { },
+            facultate -&gt; { },
+            firstName -&gt; { },
+            gender -&gt; { },
+            grupa -&gt; { },
+            id -&gt; { },
+            idFacultate -&gt; { },
+            idGrupa -&gt; { },
+            idSerie -&gt; { },
+            ip -&gt; { },
+            joinDate -&gt; { },
+            lastName -&gt; { },
+            lastSeen -&gt; { },
+            serie -&gt; { },
+            userClass -&gt; { },
+            userName -&gt; { } },
+  n$51 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$59 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$67 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$83 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$131 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$139 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  usert -&gt; { avatar -&gt; { },
+             email -&gt; { },
+             facultate -&gt; { },
+             firstName -&gt; { },
+             gender -&gt; { },
+             grupa -&gt; { },
+             id -&gt; { },
+             idFacultate -&gt; { },
+             idGrupa -&gt; { },
+             idSerie -&gt; { },
+             ip -&gt; { },
+             joinDate -&gt; { Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+             lastName -&gt; { },
+             lastSeen -&gt; { Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+             serie -&gt; { },
+             userClass -&gt; { },
+             userName -&gt; { Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ? },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { },
+            resultSet -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  user -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 437) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) }
+
+
+
+</LISTING>

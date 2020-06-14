@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.servlets.JoinGrupaProcess.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.Ht.42912bddbc72dedc688ad4ce12a45d74_node7</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../JoinGrupaProcess.java.bf0fae33a647abb23512a51879125518.html#LINE27">7</a></h1></center>PROC: <a href="./../com.stn.servlets.JoinGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.42912bddbc72dedc688ad4ce12a45d74.html">void JoinGrupaProcess.doPost(HttpServletRequest,HttpServletResponse)</a> LINE: <a href="./../../JoinGrupaProcess.java.bf0fae33a647abb23512a51879125518.html#LINE27">27</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.servlets.JoinGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.42912bddbc72dedc688ad4ce12a45d74_node6.html"><span class='visited with_tooltip'>N_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.servlets.JoinGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.42912bddbc72dedc688ad4ce12a45d74_node8.html"><span class='visited with_tooltip'>N_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.servlets.JoinGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.42912bddbc72dedc688ad4ce12a45d74_node3.html"><span class='visited with_tooltip'>N_3<span class='tooltip'>node3 preds:38 succs:2 exn:2 </span></span></a><br>
+<LISTING class='color_green'>n$3=*&amp;request:javax.servlet.http.HttpServletRequest* [line 27];
+_=*n$3:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 27];
+n$5=_fun_String HttpServletRequest.getParameter(String)(n$3:javax.servlet.http.HttpServletRequest*,"gtoken":java.lang.Object*) interface virtual [line 27];
+*&amp;token:java.lang.String*=n$5 [line 27];
+</LISTING>
+<hr width="100%">
+<a name="session72" href="./../nodes/com.stn.servlets.JoinGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.42912bddbc72dedc688ad4ce12a45d74_node7.html#session72">node7#session72</a>(<a href="./../../JoinGrupaProcess.java.bf0fae33a647abb23512a51879125518.html#LINE27">27</a>) [compute pre] liveness 7
+<LISTING class='color_black'>JOIN
+
+LEFT:   { result, url, token, return, session, response }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session73" href="./../nodes/com.stn.servlets.JoinGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.42912bddbc72dedc688ad4ce12a45d74_node7.html#session73">node7#session73</a>(<a href="./../../JoinGrupaProcess.java.bf0fae33a647abb23512a51879125518.html#LINE27">27</a>) [exec] liveness 7
+<LISTING class='color_black'>PRE STATE:
+{ result, url, token, return, session, response }
+
+INSTR=  *&amp;token:java.lang.String*=n$5 [line 27]; 
+
+STATE:
+{ n$5, result, url, return, session, response }
+
+INSTR=  n$5=_fun_String HttpServletRequest.getParameter(String)(n$3:javax.servlet.http.HttpServletRequest*,&quot;gtoken&quot;:java.lang.Object*) interface virtual [line 27]; 
+
+STATE:
+{ n$3, result, url, return, session, response }
+
+INSTR=  _=*n$3:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 27]; 
+
+STATE UNCHANGED
+
+INSTR=  n$3=*&amp;request:javax.servlet.http.HttpServletRequest* [line 27]; 
+
+STATE:
+{ result, url, request, return, session, response }
+
+</LISTING>
+<hr width="100%">
+<a name="session89" href="./../nodes/com.stn.servlets.JoinGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.42912bddbc72dedc688ad4ce12a45d74_node7.html#session89">node7#session89</a>(<a href="./../../JoinGrupaProcess.java.bf0fae33a647abb23512a51879125518.html#LINE27">27</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session90" href="./../nodes/com.stn.servlets.JoinGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.42912bddbc72dedc688ad4ce12a45d74_node7.html#session90">node7#session90</a>(<a href="./../../JoinGrupaProcess.java.bf0fae33a647abb23512a51879125518.html#LINE27">27</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ result, url, session },{ })
+
+INSTR=  n$3=*&amp;request:javax.servlet.http.HttpServletRequest* [line 27]; 
+
+STATE:
+({ n$3, result, url, session },{ })
+
+INSTR=  _=*n$3:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 27]; 
+
+STATE:
+({ _, n$3, result, url, session },{ })
+
+INSTR=  n$5=_fun_String HttpServletRequest.getParameter(String)(n$3:javax.servlet.http.HttpServletRequest*,&quot;gtoken&quot;:java.lang.Object*) interface virtual [line 27]; 
+
+STATE:
+({ _, n$3, n$5, result, url, session },{ })
+
+INSTR=  *&amp;token:java.lang.String*=n$5 [line 27]; 
+
+STATE:
+({ result, url, token, session },{ _, n$3, n$5, request })
+
+</LISTING>
+<hr width="100%">
+<a name="session8" href="./../nodes/com.stn.servlets.JoinGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.42912bddbc72dedc688ad4ce12a45d74_node7.html#session8">node7#session8</a>(<a href="./../../JoinGrupaProcess.java.bf0fae33a647abb23512a51879125518.html#LINE27">27</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session9" href="./../nodes/com.stn.servlets.JoinGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.42912bddbc72dedc688ad4ce12a45d74_node7.html#session9">node7#session9</a>(<a href="./../../JoinGrupaProcess.java.bf0fae33a647abb23512a51879125518.html#LINE27">27</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ result -&gt; { }, url -&gt; { }, session -&gt; { } }
+
+
+
+INSTR=  n$5 := String HttpServletRequest.getParameter(String)({ request,
+                                                                &quot;gtoken&quot; }) [line 27]; 
+
+STATE UNCHANGED
+
+INSTR=  token := n$5 [line 27]; 
+
+STATE:
+{ result -&gt; { }, url -&gt; { }, token -&gt; { }, session -&gt; { } }
+
+INSTR=  NULLIFY(&amp;request); [line 27]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(n$5,request); [line 27]; 
+
+STATE:
+{ result -&gt; { }, url -&gt; { }, token -&gt; { }, session -&gt; { } }
+
+</LISTING>

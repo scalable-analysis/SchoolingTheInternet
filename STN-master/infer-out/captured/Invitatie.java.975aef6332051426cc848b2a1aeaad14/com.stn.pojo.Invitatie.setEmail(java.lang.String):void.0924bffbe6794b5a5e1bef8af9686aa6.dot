@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Invitatie.setEmail(java.lang.String):void.0924bffbe6794b5a5e1bef8af9686aa6_1" [label="1: Start void Invitatie.setEmail(String)\nFormals:  this:com.stn.pojo.Invitatie* email:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Invitatie.setEmail(java.lang.String):void.0924bffbe6794b5a5e1bef8af9686aa6_1" -> "com.stn.pojo.Invitatie.setEmail(java.lang.String):void.0924bffbe6794b5a5e1bef8af9686aa6_4" ;
+"com.stn.pojo.Invitatie.setEmail(java.lang.String):void.0924bffbe6794b5a5e1bef8af9686aa6_2" [label="2: Exit void Invitatie.setEmail(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Invitatie.setEmail(java.lang.String):void.0924bffbe6794b5a5e1bef8af9686aa6_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 37]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.setEmail(java.lang.String):void.0924bffbe6794b5a5e1bef8af9686aa6_3" -> "com.stn.pojo.Invitatie.setEmail(java.lang.String):void.0924bffbe6794b5a5e1bef8af9686aa6_2" ;
+"com.stn.pojo.Invitatie.setEmail(java.lang.String):void.0924bffbe6794b5a5e1bef8af9686aa6_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Invitatie* [line 36]\n  n$1=*&email:java.lang.String* [line 36]\n  *n$0.email:com.stn.pojo.Invitatie(root com.stn.pojo.Invitatie)=n$1 [line 36]\n  NULLIFY(&email); [line 36]\n  NULLIFY(&this); [line 36]\n  EXIT_SCOPE(n$0,n$1,email,this); [line 36]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.setEmail(java.lang.String):void.0924bffbe6794b5a5e1bef8af9686aa6_4" -> "com.stn.pojo.Invitatie.setEmail(java.lang.String):void.0924bffbe6794b5a5e1bef8af9686aa6_5" ;
+	 "com.stn.pojo.Invitatie.setEmail(java.lang.String):void.0924bffbe6794b5a5e1bef8af9686aa6_4" -> "com.stn.pojo.Invitatie.setEmail(java.lang.String):void.0924bffbe6794b5a5e1bef8af9686aa6_3" [color="red" ];
+"com.stn.pojo.Invitatie.setEmail(java.lang.String):void.0924bffbe6794b5a5e1bef8af9686aa6_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 37]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.setEmail(java.lang.String):void.0924bffbe6794b5a5e1bef8af9686aa6_5" -> "com.stn.pojo.Invitatie.setEmail(java.lang.String):void.0924bffbe6794b5a5e1bef8af9686aa6_2" ;
+	 "com.stn.pojo.Invitatie.setEmail(java.lang.String):void.0924bffbe6794b5a5e1bef8af9686aa6_5" -> "com.stn.pojo.Invitatie.setEmail(java.lang.String):void.0924bffbe6794b5a5e1bef8af9686aa6_3" [color="red" ];
+}

@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.News.setIdUser(int):void.698420ffcf03e734c0d1ea680763ab2d_1" [label="1: Start void News.setIdUser(int)\nFormals:  this:com.stn.pojo.News* idUser:int\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.News.setIdUser(int):void.698420ffcf03e734c0d1ea680763ab2d_1" -> "com.stn.pojo.News.setIdUser(int):void.698420ffcf03e734c0d1ea680763ab2d_4" ;
+"com.stn.pojo.News.setIdUser(int):void.698420ffcf03e734c0d1ea680763ab2d_2" [label="2: Exit void News.setIdUser(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.News.setIdUser(int):void.698420ffcf03e734c0d1ea680763ab2d_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 36]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setIdUser(int):void.698420ffcf03e734c0d1ea680763ab2d_3" -> "com.stn.pojo.News.setIdUser(int):void.698420ffcf03e734c0d1ea680763ab2d_2" ;
+"com.stn.pojo.News.setIdUser(int):void.698420ffcf03e734c0d1ea680763ab2d_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.News* [line 35]\n  n$1=*&idUser:int [line 35]\n  *n$0.idUser:com.stn.pojo.News(root com.stn.pojo.News)=n$1 [line 35]\n  NULLIFY(&idUser); [line 35]\n  NULLIFY(&this); [line 35]\n  EXIT_SCOPE(n$0,n$1,idUser,this); [line 35]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setIdUser(int):void.698420ffcf03e734c0d1ea680763ab2d_4" -> "com.stn.pojo.News.setIdUser(int):void.698420ffcf03e734c0d1ea680763ab2d_5" ;
+	 "com.stn.pojo.News.setIdUser(int):void.698420ffcf03e734c0d1ea680763ab2d_4" -> "com.stn.pojo.News.setIdUser(int):void.698420ffcf03e734c0d1ea680763ab2d_3" [color="red" ];
+"com.stn.pojo.News.setIdUser(int):void.698420ffcf03e734c0d1ea680763ab2d_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 36]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setIdUser(int):void.698420ffcf03e734c0d1ea680763ab2d_5" -> "com.stn.pojo.News.setIdUser(int):void.698420ffcf03e734c0d1ea680763ab2d_2" ;
+	 "com.stn.pojo.News.setIdUser(int):void.698420ffcf03e734c0d1ea680763ab2d_5" -> "com.stn.pojo.News.setIdUser(int):void.698420ffcf03e734c0d1ea680763ab2d_3" [color="red" ];
+}

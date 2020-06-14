@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Invitatie.setUserClass(int):void.e830d0f9810be279f53ecaa100bd95a2_1" [label="1: Start void Invitatie.setUserClass(int)\nFormals:  this:com.stn.pojo.Invitatie* userClass:int\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Invitatie.setUserClass(int):void.e830d0f9810be279f53ecaa100bd95a2_1" -> "com.stn.pojo.Invitatie.setUserClass(int):void.e830d0f9810be279f53ecaa100bd95a2_4" ;
+"com.stn.pojo.Invitatie.setUserClass(int):void.e830d0f9810be279f53ecaa100bd95a2_2" [label="2: Exit void Invitatie.setUserClass(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Invitatie.setUserClass(int):void.e830d0f9810be279f53ecaa100bd95a2_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 53]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.setUserClass(int):void.e830d0f9810be279f53ecaa100bd95a2_3" -> "com.stn.pojo.Invitatie.setUserClass(int):void.e830d0f9810be279f53ecaa100bd95a2_2" ;
+"com.stn.pojo.Invitatie.setUserClass(int):void.e830d0f9810be279f53ecaa100bd95a2_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Invitatie* [line 52]\n  n$1=*&userClass:int [line 52]\n  *n$0.userClass:com.stn.pojo.Invitatie(root com.stn.pojo.Invitatie)=n$1 [line 52]\n  NULLIFY(&userClass); [line 52]\n  NULLIFY(&this); [line 52]\n  EXIT_SCOPE(n$0,n$1,userClass,this); [line 52]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.setUserClass(int):void.e830d0f9810be279f53ecaa100bd95a2_4" -> "com.stn.pojo.Invitatie.setUserClass(int):void.e830d0f9810be279f53ecaa100bd95a2_5" ;
+	 "com.stn.pojo.Invitatie.setUserClass(int):void.e830d0f9810be279f53ecaa100bd95a2_4" -> "com.stn.pojo.Invitatie.setUserClass(int):void.e830d0f9810be279f53ecaa100bd95a2_3" [color="red" ];
+"com.stn.pojo.Invitatie.setUserClass(int):void.e830d0f9810be279f53ecaa100bd95a2_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 53]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.setUserClass(int):void.e830d0f9810be279f53ecaa100bd95a2_5" -> "com.stn.pojo.Invitatie.setUserClass(int):void.e830d0f9810be279f53ecaa100bd95a2_2" ;
+	 "com.stn.pojo.Invitatie.setUserClass(int):void.e830d0f9810be279f53ecaa100bd95a2_5" -> "com.stn.pojo.Invitatie.setUserClass(int):void.e830d0f9810be279f53ecaa100bd95a2_3" [color="red" ];
+}

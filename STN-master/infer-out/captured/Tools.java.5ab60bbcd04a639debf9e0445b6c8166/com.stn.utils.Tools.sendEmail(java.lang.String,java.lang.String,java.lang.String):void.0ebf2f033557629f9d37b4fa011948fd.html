@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.utils.Tools.sendEmail(java.lang.String,java.lang.String,java.lang.String):void.0ebf2f033557629f9d37b4fa011948fd</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../Tools.java.5ab60bbcd04a639debf9e0445b6c8166.html#LINE50">void Tools.sendEmail(String,String,String)</a></h1></center>
+<a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:21 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$irvar5); [line 71];
+NULLIFY(&amp;$irvar7); [line 71];
+NULLIFY(&amp;message); [line 71];
+NULLIFY(&amp;$irvar6); [line 71];
+NULLIFY(&amp;$irvar8); [line 71];
+NULLIFY(&amp;props); [line 71];
+NULLIFY(&amp;session); [line 71];
+EXIT_SCOPE($irvar5,$irvar7,message,$irvar6,$irvar8,props,session); [line 71];
+APPLY_ABSTRACTION; [line 71];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.Properties):java.util.Properties*) [line 51];
+n$1=_fun_Properties.&lt;init&gt;()(n$0:java.util.Properties*) [line 51];
+*&amp;props:java.util.Properties*=n$0 [line 51];
+EXIT_SCOPE(n$0,n$1); [line 51];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$2=*&amp;props:java.util.Properties* [line 52];
+_=*n$2:java.util.Properties*(root java.util.Properties) [line 52];
+n$4=_fun_Object Hashtable.put(Object,Object)(n$2:java.util.Properties*,"mail.smtp.host":java.lang.Object*,"smtp.gmail.com":java.lang.Object*) virtual [line 52];
+*&amp;$irvar0:java.lang.Object*=n$4 [line 52];
+NULLIFY(&amp;$irvar0); [line 52];
+EXIT_SCOPE(_,n$2,n$4,$irvar0); [line 52];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$5=*&amp;props:java.util.Properties* [line 53];
+_=*n$5:java.util.Properties*(root java.util.Properties) [line 53];
+n$7=_fun_Object Hashtable.put(Object,Object)(n$5:java.util.Properties*,"mail.smtp.socketFactory.port":java.lang.Object*,"465":java.lang.Object*) virtual [line 53];
+*&amp;$irvar1:java.lang.Object*=n$7 [line 53];
+NULLIFY(&amp;$irvar1); [line 53];
+EXIT_SCOPE(_,n$5,n$7,$irvar1); [line 53];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$8=*&amp;props:java.util.Properties* [line 54];
+_=*n$8:java.util.Properties*(root java.util.Properties) [line 54];
+n$10=_fun_Object Hashtable.put(Object,Object)(n$8:java.util.Properties*,"mail.smtp.socketFactory.class":java.lang.Object*,"javax.net.ssl.SSLSocketFactory":java.lang.Object*) virtual [line 54];
+*&amp;$irvar2:java.lang.Object*=n$10 [line 54];
+NULLIFY(&amp;$irvar2); [line 54];
+EXIT_SCOPE(_,n$8,n$10,$irvar2); [line 54];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$11=*&amp;props:java.util.Properties* [line 55];
+_=*n$11:java.util.Properties*(root java.util.Properties) [line 55];
+n$13=_fun_Object Hashtable.put(Object,Object)(n$11:java.util.Properties*,"mail.smtp.auth":java.lang.Object*,"true":java.lang.Object*) virtual [line 55];
+*&amp;$irvar3:java.lang.Object*=n$13 [line 55];
+NULLIFY(&amp;$irvar3); [line 55];
+EXIT_SCOPE(_,n$11,n$13,$irvar3); [line 55];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$14=*&amp;props:java.util.Properties* [line 56];
+_=*n$14:java.util.Properties*(root java.util.Properties) [line 56];
+n$16=_fun_Object Hashtable.put(Object,Object)(n$14:java.util.Properties*,"mail.smtp.port":java.lang.Object*,"465":java.lang.Object*) virtual [line 56];
+*&amp;$irvar4:java.lang.Object*=n$16 [line 56];
+NULLIFY(&amp;$irvar4); [line 56];
+EXIT_SCOPE(_,n$14,n$16,$irvar4); [line 56];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$17=_fun___new(sizeof(t=com.stn.utils.Tools$1):com.stn.utils.Tools$1*) [line 58];
+n$18=*&amp;this:com.stn.utils.Tools* [line 58];
+n$19=_fun_Tools$1.&lt;init&gt;(Tools)(n$17:com.stn.utils.Tools$1*,n$18:com.stn.utils.Tools*) [line 58];
+*&amp;$irvar5:com.stn.utils.Tools$1*=n$17 [line 58];
+NULLIFY(&amp;this); [line 58];
+EXIT_SCOPE(n$17,n$18,n$19,this); [line 58];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$20=*&amp;props:java.util.Properties* [line 58];
+n$21=*&amp;$irvar5:com.stn.utils.Tools$1* [line 58];
+n$22=_fun_Session Session.getDefaultInstance(Properties,Authenticator)(n$20:java.util.Properties*,n$21:com.stn.utils.Tools$1*) [line 58];
+*&amp;session:javax.mail.Session*=n$22 [line 58];
+NULLIFY(&amp;$irvar5); [line 58];
+NULLIFY(&amp;props); [line 58];
+EXIT_SCOPE(n$20,n$21,n$22,$irvar5,props); [line 58];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$23=_fun___new(sizeof(t=javax.mail.internet.MimeMessage):javax.mail.internet.MimeMessage*) [line 64];
+n$24=*&amp;session:javax.mail.Session* [line 64];
+n$25=_fun_MimeMessage.&lt;init&gt;(Session)(n$23:javax.mail.internet.MimeMessage*,n$24:javax.mail.Session*) [line 64];
+*&amp;message:javax.mail.internet.MimeMessage*=n$23 [line 64];
+NULLIFY(&amp;session); [line 64];
+EXIT_SCOPE(n$23,n$24,n$25,session); [line 64];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$26=_fun___new(sizeof(t=javax.mail.internet.InternetAddress):javax.mail.internet.InternetAddress*) [line 65];
+n$27=_fun_InternetAddress.&lt;init&gt;(String)(n$26:javax.mail.internet.InternetAddress*,"no-reply@schoolingtheinter.net":java.lang.Object*) [line 65];
+*&amp;$irvar6:javax.mail.internet.InternetAddress*=n$26 [line 65];
+EXIT_SCOPE(n$26,n$27); [line 65];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$28=*&amp;message:javax.mail.internet.MimeMessage* [line 65];
+_=*n$28:javax.mail.internet.MimeMessage*(root javax.mail.internet.MimeMessage) [line 65];
+n$30=*&amp;$irvar6:javax.mail.internet.InternetAddress* [line 65];
+n$31=_fun_void MimeMessage.setFrom(Address)(n$28:javax.mail.internet.MimeMessage*,n$30:javax.mail.internet.InternetAddress*) virtual [line 65];
+NULLIFY(&amp;$irvar6); [line 65];
+EXIT_SCOPE(_,n$28,n$30,n$31,$irvar6); [line 65];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:3 Instructions
+n$32=*&amp;#GB<>$javax.mail.Message$RecipientType.TO:javax.mail.Message$RecipientType*(root javax.mail.Message$RecipientType) [line 66];
+*&amp;$irvar7:javax.mail.Message$RecipientType*=n$32 [line 66];
+EXIT_SCOPE(n$32); [line 66];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$33=*&amp;to:java.lang.String* [line 66];
+n$34=_fun_InternetAddress[] InternetAddress.parse(String)(n$33:java.lang.String*) [line 66];
+*&amp;$irvar8:javax.mail.internet.InternetAddress*[_*_](*)=n$34 [line 66];
+NULLIFY(&amp;to); [line 66];
+EXIT_SCOPE(n$33,n$34,to); [line 66];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:3 Instructions
+n$35=*&amp;message:javax.mail.internet.MimeMessage* [line 66];
+_=*n$35:javax.mail.internet.MimeMessage*(root javax.mail.internet.MimeMessage) [line 66];
+n$37=*&amp;$irvar7:javax.mail.Message$RecipientType* [line 66];
+n$38=*&amp;$irvar8:javax.mail.internet.InternetAddress*[_*_](*) [line 66];
+n$39=_fun_void MimeMessage.setRecipients(Message$RecipientType,Address[])(n$35:javax.mail.internet.MimeMessage*,n$37:javax.mail.Message$RecipientType*,n$38:javax.mail.internet.InternetAddress*[_*_](*)) virtual [line 66];
+NULLIFY(&amp;$irvar7); [line 66];
+NULLIFY(&amp;$irvar8); [line 66];
+EXIT_SCOPE(_,n$35,n$37,n$38,n$39,$irvar7,$irvar8); [line 66];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:3 Instructions
+n$40=*&amp;message:javax.mail.internet.MimeMessage* [line 67];
+_=*n$40:javax.mail.internet.MimeMessage*(root javax.mail.internet.MimeMessage) [line 67];
+n$42=*&amp;subject:java.lang.String* [line 67];
+n$43=_fun_void MimeMessage.setSubject(String)(n$40:javax.mail.internet.MimeMessage*,n$42:java.lang.String*) virtual [line 67];
+NULLIFY(&amp;subject); [line 67];
+EXIT_SCOPE(_,n$40,n$42,n$43,subject); [line 67];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:3 Instructions
+n$44=*&amp;message:javax.mail.internet.MimeMessage* [line 68];
+_=*n$44:javax.mail.internet.MimeMessage*(root javax.mail.internet.MimeMessage) [line 68];
+n$46=*&amp;body:java.lang.String* [line 68];
+n$47=_fun_void MimeMessage.setContent(Object,String)(n$44:javax.mail.internet.MimeMessage*,n$46:java.lang.String*,"text/html; charset=utf-8":java.lang.Object*) virtual [line 68];
+NULLIFY(&amp;body); [line 68];
+EXIT_SCOPE(_,n$44,n$46,n$47,body); [line 68];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$48=*&amp;message:javax.mail.internet.MimeMessage* [line 70];
+n$49=_fun_void Transport.send(Message)(n$48:javax.mail.internet.MimeMessage*) [line 70];
+NULLIFY(&amp;message); [line 70];
+EXIT_SCOPE(n$48,n$49,message); [line 70];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 71];
+</span></span></a><br />@
+
+<span class='color_black'>void void Tools.sendEmail(String,String,String)(com.stn.utils.Tools* this, java.lang.String* to, java.lang.String* subject, java.lang.String* body)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= void Tools.sendEmail(String,String,String)
+; translation_unit= src/main/java/com/stn/utils/Tools.java
+; access= Public
+; exceptions= [javax.mail.MessagingException]
+; formals= [(this,com.stn.utils.Tools*);  (to,java.lang.String*);  (subject,
+            java.lang.String*);  (body,java.lang.String*)]
+; is_defined= true
+; loc= src/main/java/com/stn/utils/Tools.java:50
+; locals= [{ name= $irvar8; typ= void; modify_in_block= false }; 
+           { name= $irvar7; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= message; typ= javax.mail.Message*; modify_in_block= false }; 
+           { name= session; typ= javax.mail.Session*; modify_in_block= false }; 
+           { name= props; typ= java.util.Properties*; modify_in_block= false }]
+; ret_type= void 
+; proc_id= com.stn.utils.Tools.sendEmail(java.lang.String,java.lang.String,java.lang.String):void }</pre>
+</body>
+</html>

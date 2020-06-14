@@ -1,0 +1,341 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>File src/main/java/com/stn/servlets/EditNewsProcess.java </h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.stn.servlets; </td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import com.stn.helpers.NewsHelper; </td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">import com.stn.helpers.UserHelper; </td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import javax.servlet.ServletException; </td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import javax.servlet.annotation.WebServlet; </td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">import javax.servlet.http.HttpServlet; </td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">import javax.servlet.http.HttpServletRequest; </td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line">import javax.servlet.http.HttpServletResponse; </td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">import java.io.IOException; </td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line">import java.io.PrintWriter; </td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line">import java.sql.SQLException; </td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line">@WebServlet(&quot;/EditNewsProcess&quot;) </td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line">public class EditNewsProcess extends HttpServlet { <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.<init>%28%29.93f0ab38570f40b2ac44e6b109285064_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.<init>%28%29.93f0ab38570f40b2ac44e6b109285064_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.servlets.EditNewsProcess* [line 16];
+n$1=_fun_HttpServlet.&lt;init&gt;()(n$0:com.stn.servlets.EditNewsProcess*) [line 16];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.<init>%28%29.93f0ab38570f40b2ac44e6b109285064_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.<init>%28%29.93f0ab38570f40b2ac44e6b109285064_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.<init>%28%29.93f0ab38570f40b2ac44e6b109285064_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/com.stn.servlets.EditNewsProcess.<init>%28%29.93f0ab38570f40b2ac44e6b109285064.html">summary for EditNewsProcess.&lt;init&gt;()</a></td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line">    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc.html">summary for void EditNewsProcess.doGet(HttpServletRequest,HttpServletResponse)</a></td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line">        PrintWriter out = response.getWriter(); <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;response:javax.servlet.http.HttpServletResponse* [line 18];
+_=*n$0:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 18];
+n$2=_fun_PrintWriter HttpServletResponse.getWriter()(n$0:javax.servlet.http.HttpServletResponse*) interface virtual [line 18];
+*&amp;out:java.io.PrintWriter*=n$2 [line 18];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line">        String error = &quot;&quot;; <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;error:java.lang.Object*="" [line 20];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line">        String url = &quot;/index.jsp&quot;; <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+*&amp;url:java.lang.Object*="/index.jsp" [line 21];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line">        response.setContentType(&quot;text/html&quot;); <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$3=*&amp;response:javax.servlet.http.HttpServletResponse* [line 22];
+_=*n$3:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 22];
+n$5=_fun_void HttpServletResponse.setContentType(String)(n$3:javax.servlet.http.HttpServletResponse*,"text/html":java.lang.Object*) interface virtual [line 22];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">        NewsHelper newsHelper = new NewsHelper(); <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$6=_fun___new(sizeof(t=com.stn.helpers.NewsHelper):com.stn.helpers.NewsHelper*) [line 23];
+n$7=_fun_NewsHelper.&lt;init&gt;()(n$6:com.stn.helpers.NewsHelper*) [line 23];
+*&amp;newsHelper:com.stn.helpers.NewsHelper*=n$6 [line 23];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line">        int idNews = Integer.parseInt(request.getParameter(&quot;id&quot;)); <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$8=*&amp;request:javax.servlet.http.HttpServletRequest* [line 25];
+_=*n$8:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 25];
+n$10=_fun_String HttpServletRequest.getParameter(String)(n$8:javax.servlet.http.HttpServletRequest*,"id":java.lang.Object*) interface virtual [line 25];
+*&amp;$irvar0:java.lang.String*=n$10 [line 25];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$11=*&amp;$irvar0:java.lang.String* [line 25];
+n$12=_fun_int Integer.parseInt(String)(n$11:java.lang.String*) [line 25];
+*&amp;idNews:int=n$12 [line 25];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">        try { </td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">            newsHelper.deleteNews(idNews); <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:14 exn:20 Instructions
+n$13=*&amp;newsHelper:com.stn.helpers.NewsHelper* [line 28];
+_=*n$13:com.stn.helpers.NewsHelper*(root com.stn.helpers.NewsHelper) [line 28];
+n$15=*&amp;idNews:int [line 28];
+n$16=_fun_void NewsHelper.deleteNews(int)(n$13:com.stn.helpers.NewsHelper*,n$15:int) virtual [line 28];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">        } catch (SQLException | ClassNotFoundException e) { <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:18 16 succs:13 exn:3 Instructions
+n$17=*&amp;CatchVar55:java.lang.Object* [line 29];
+*&amp;e:java.lang.Object*=n$17 [line 29];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc_node16.html"><span class='visited with_tooltip'>C_16<span class='tooltip'>node16 preds:19 succs:12 exn:3 Conditional exception handler
+n$28=_fun___instanceof(n$27:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 29];
+PRUNE(n$28, true); [line 29];
+*&amp;CatchVar55:void=n$27 [line 29];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc_node17.html"><span class='visited with_tooltip'>C_17<span class='tooltip'>node17 preds:19 succs:3 exn:3 Conditional exception handler
+n$28=_fun___instanceof(n$27:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 29];
+PRUNE(!n$28, false); [line 29];
+*&amp;return:void=EXN n$27 [line 29];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:20 succs:12 exn:3 Conditional exception handler
+n$29=_fun___instanceof(n$27:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 29];
+PRUNE(n$29, true); [line 29];
+*&amp;CatchVar55:void=n$27 [line 29];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc_node19.html"><span class='visited with_tooltip'>C_19<span class='tooltip'>node19 preds:20 succs:16 17 exn:3 Conditional exception handler
+n$29=_fun___instanceof(n$27:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 29];
+PRUNE(!n$29, false); [line 29];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds: succs:18 19 exn:3 Instructions
+n$26=*&amp;return:void [line 29];
+*&amp;return:void=null [line 29];
+n$27=_fun___unwrap_exception(n$26:void) [line 29];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">            out.println(e); <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$18=*&amp;out:java.io.PrintWriter* [line 30];
+_=*n$18:java.io.PrintWriter*(root java.io.PrintWriter) [line 30];
+n$20=*&amp;e:java.lang.Object* [line 30];
+n$21=_fun_void PrintWriter.println(Object)(n$18:java.io.PrintWriter*,n$20:java.lang.Object*) virtual [line 30];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line">        response.sendRedirect(url); <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 11 succs:15 exn:3 Instructions
+n$22=*&amp;response:javax.servlet.http.HttpServletResponse* [line 33];
+_=*n$22:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 33];
+n$24=*&amp;url:java.lang.Object* [line 33];
+n$25=_fun_void HttpServletResponse.sendRedirect(String)(n$22:javax.servlet.http.HttpServletResponse*,n$24:java.lang.Object*) interface virtual [line 33];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">    } <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:2 exn:3 Instructions
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:15 3 succs: exn: Exit
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.cdaa098e0e82823c255a20ac9115cdbc_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:17 succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0.html">summary for void EditNewsProcess.doPost(HttpServletRequest,HttpServletResponse)</a></td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line">        PrintWriter out = response.getWriter(); <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;response:javax.servlet.http.HttpServletResponse* [line 39];
+_=*n$0:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 39];
+n$2=_fun_PrintWriter HttpServletResponse.getWriter()(n$0:javax.servlet.http.HttpServletResponse*) interface virtual [line 39];
+*&amp;out:java.io.PrintWriter*=n$2 [line 39];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line">        String error = &quot;&quot;; <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;error:java.lang.Object*="" [line 41];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">        String url = &quot;/index.jsp&quot;; <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+*&amp;url:java.lang.Object*="/index.jsp" [line 42];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line">        response.setContentType(&quot;text/html&quot;); <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$3=*&amp;response:javax.servlet.http.HttpServletResponse* [line 43];
+_=*n$3:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 43];
+n$5=_fun_void HttpServletResponse.setContentType(String)(n$3:javax.servlet.http.HttpServletResponse*,"text/html":java.lang.Object*) interface virtual [line 43];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line">        UserHelper userHelper = new UserHelper(); <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$6=_fun___new(sizeof(t=com.stn.helpers.UserHelper):com.stn.helpers.UserHelper*) [line 45];
+n$7=_fun_UserHelper.&lt;init&gt;()(n$6:com.stn.helpers.UserHelper*) [line 45];
+*&amp;userHelper:com.stn.helpers.UserHelper*=n$6 [line 45];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">        String title = &quot;&quot;; <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+*&amp;title:java.lang.Object*="" [line 47];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line">        String body = &quot;&quot;; <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+*&amp;body:java.lang.Object*="" [line 48];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line">        int type = Integer.parseInt(request.getParameter(&quot;news_type&quot;)); <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$8=*&amp;request:javax.servlet.http.HttpServletRequest* [line 49];
+_=*n$8:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 49];
+n$10=_fun_String HttpServletRequest.getParameter(String)(n$8:javax.servlet.http.HttpServletRequest*,"news_type":java.lang.Object*) interface virtual [line 49];
+*&amp;$irvar0:java.lang.String*=n$10 [line 49];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 14 exn:3 Instructions
+n$11=*&amp;$irvar0:java.lang.String* [line 49];
+n$12=_fun_int Integer.parseInt(String)(n$11:java.lang.String*) [line 49];
+*&amp;type:int=n$12 [line 49];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line">        if(type == 1) { <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node13.html"><span class='visited with_tooltip'>C_13<span class='tooltip'>node13 preds:12 succs:15 exn:3 Conditional method_body
+n$13=*&amp;type:int [line 50];
+PRUNE(!(n$13 != 1), true); [line 50];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node14.html"><span class='visited with_tooltip'>C_14<span class='tooltip'>node14 preds:12 succs:16 exn:3 Conditional method_body
+n$13=*&amp;type:int [line 50];
+PRUNE((n$13 != 1), false); [line 50];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line">            title = request.getParameter(&quot;news_title_temp&quot;); <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:13 succs:17 exn:3 Instructions
+n$14=*&amp;request:javax.servlet.http.HttpServletRequest* [line 51];
+_=*n$14:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 51];
+n$16=_fun_String HttpServletRequest.getParameter(String)(n$14:javax.servlet.http.HttpServletRequest*,"news_title_temp":java.lang.Object*) interface virtual [line 51];
+*&amp;title:java.lang.String*=n$16 [line 51];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line">        } else { </td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line">            body = request.getParameter(&quot;news_body_temp&quot;); <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:14 succs:17 exn:3 Instructions
+n$17=*&amp;request:javax.servlet.http.HttpServletRequest* [line 53];
+_=*n$17:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 53];
+n$19=_fun_String HttpServletRequest.getParameter(String)(n$17:javax.servlet.http.HttpServletRequest*,"news_body_temp":java.lang.Object*) interface virtual [line 53];
+*&amp;body:java.lang.String*=n$19 [line 53];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line">        int idNews = Integer.parseInt(request.getParameter(&quot;news_id_temp&quot;)); <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 15 succs:18 exn:3 Instructions
+n$20=*&amp;request:javax.servlet.http.HttpServletRequest* [line 56];
+_=*n$20:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 56];
+n$22=_fun_String HttpServletRequest.getParameter(String)(n$20:javax.servlet.http.HttpServletRequest*,"news_id_temp":java.lang.Object*) interface virtual [line 56];
+*&amp;$irvar1:java.lang.String*=n$22 [line 56];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:3 Instructions
+n$23=*&amp;$irvar1:java.lang.String* [line 56];
+n$24=_fun_int Integer.parseInt(String)(n$23:java.lang.String*) [line 56];
+*&amp;idNews:int=n$24 [line 56];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line">        NewsHelper newsHelper = new NewsHelper(); <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 21 exn:3 Instructions
+n$25=_fun___new(sizeof(t=com.stn.helpers.NewsHelper):com.stn.helpers.NewsHelper*) [line 57];
+n$26=_fun_NewsHelper.&lt;init&gt;()(n$25:com.stn.helpers.NewsHelper*) [line 57];
+*&amp;newsHelper:com.stn.helpers.NewsHelper*=n$25 [line 57];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE58">58</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE59">59</td><td class="line">        if(type == 1) { <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node20.html"><span class='visited with_tooltip'>C_20<span class='tooltip'>node20 preds:19 succs:22 exn:3 Conditional method_body
+n$27=*&amp;type:int [line 59];
+PRUNE(!(n$27 != 1), true); [line 59];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node21.html"><span class='visited with_tooltip'>C_21<span class='tooltip'>node21 preds:19 succs:25 26 exn:3 Conditional method_body
+n$27=*&amp;type:int [line 59];
+PRUNE((n$27 != 1), false); [line 59];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE60">60</td><td class="line">            try { </td></tr>
+<tr><td class="num" id="LINE61">61</td><td class="line">                newsHelper.updateTitle(idNews,title); <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:20 succs:30 exn:41 Instructions
+n$28=*&amp;newsHelper:com.stn.helpers.NewsHelper* [line 61];
+_=*n$28:com.stn.helpers.NewsHelper*(root com.stn.helpers.NewsHelper) [line 61];
+n$30=*&amp;idNews:int [line 61];
+n$31=*&amp;title:java.lang.String* [line 61];
+n$32=_fun_void NewsHelper.updateTitle(int,String)(n$28:com.stn.helpers.NewsHelper*,n$30:int,n$31:java.lang.String*) virtual [line 61];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE62">62</td><td class="line">            } catch (SQLException | ClassNotFoundException e) { <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:39 37 succs:24 exn:3 Instructions
+n$33=*&amp;CatchVar122:java.lang.Object* [line 62];
+*&amp;e:java.lang.Object*=n$33 [line 62];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node37.html"><span class='visited with_tooltip'>C_37<span class='tooltip'>node37 preds:40 succs:23 exn:3 Conditional exception handler
+n$57=_fun___instanceof(n$54:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 62];
+PRUNE(n$57, true); [line 62];
+*&amp;CatchVar122:void=n$54 [line 62];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node38.html"><span class='visited with_tooltip'>C_38<span class='tooltip'>node38 preds:40 succs:3 exn:3 Conditional exception handler
+n$57=_fun___instanceof(n$54:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 62];
+PRUNE(!n$57, false); [line 62];
+*&amp;return:void=EXN n$54 [line 62];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node39.html"><span class='visited with_tooltip'>C_39<span class='tooltip'>node39 preds:41 succs:23 exn:3 Conditional exception handler
+n$58=_fun___instanceof(n$54:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 62];
+PRUNE(n$58, true); [line 62];
+*&amp;CatchVar122:void=n$54 [line 62];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node40.html"><span class='visited with_tooltip'>C_40<span class='tooltip'>node40 preds:41 succs:37 38 exn:3 Conditional exception handler
+n$58=_fun___instanceof(n$54:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 62];
+PRUNE(!n$58, false); [line 62];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds: succs:39 40 exn:3 Instructions
+n$53=*&amp;return:void [line 62];
+*&amp;return:void=null [line 62];
+n$54=_fun___unwrap_exception(n$53:void) [line 62];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE63">63</td><td class="line">                out.println(e); <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:30 exn:3 Instructions
+n$34=*&amp;out:java.io.PrintWriter* [line 63];
+_=*n$34:java.io.PrintWriter*(root java.io.PrintWriter) [line 63];
+n$36=*&amp;e:java.lang.Object* [line 63];
+n$37=_fun_void PrintWriter.println(Object)(n$34:java.io.PrintWriter*,n$36:java.lang.Object*) virtual [line 63];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE64">64</td><td class="line">            } </td></tr>
+<tr><td class="num" id="LINE65">65</td><td class="line">        } else if(type == 2){ <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node25.html"><span class='visited with_tooltip'>C_25<span class='tooltip'>node25 preds:21 succs:27 exn:3 Conditional method_body
+n$38=*&amp;type:int [line 65];
+PRUNE(!(n$38 != 2), true); [line 65];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node26.html"><span class='visited with_tooltip'>C_26<span class='tooltip'>node26 preds:21 succs:30 exn:3 Conditional method_body
+n$38=*&amp;type:int [line 65];
+PRUNE((n$38 != 2), false); [line 65];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE66">66</td><td class="line">            try { </td></tr>
+<tr><td class="num" id="LINE67">67</td><td class="line">                newsHelper.updateBody(idNews,body); <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:25 succs:30 exn:36 Instructions
+n$39=*&amp;newsHelper:com.stn.helpers.NewsHelper* [line 67];
+_=*n$39:com.stn.helpers.NewsHelper*(root com.stn.helpers.NewsHelper) [line 67];
+n$41=*&amp;idNews:int [line 67];
+n$42=*&amp;body:java.lang.String* [line 67];
+n$43=_fun_void NewsHelper.updateBody(int,String)(n$39:com.stn.helpers.NewsHelper*,n$41:int,n$42:java.lang.String*) virtual [line 67];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE68">68</td><td class="line">            } catch (SQLException | ClassNotFoundException e) { <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:34 32 succs:29 exn:3 Instructions
+n$44=*&amp;CatchVar151:java.lang.Object* [line 68];
+*&amp;e:java.lang.Object*=n$44 [line 68];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:35 succs:28 exn:3 Conditional exception handler
+n$55=_fun___instanceof(n$54:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 68];
+PRUNE(n$55, true); [line 68];
+*&amp;CatchVar151:void=n$54 [line 68];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node33.html"><span class='visited with_tooltip'>C_33<span class='tooltip'>node33 preds:35 succs:3 exn:3 Conditional exception handler
+n$55=_fun___instanceof(n$54:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 68];
+PRUNE(!n$55, false); [line 68];
+*&amp;return:void=EXN n$54 [line 68];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node34.html"><span class='visited with_tooltip'>C_34<span class='tooltip'>node34 preds:36 succs:28 exn:3 Conditional exception handler
+n$56=_fun___instanceof(n$54:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 68];
+PRUNE(n$56, true); [line 68];
+*&amp;CatchVar151:void=n$54 [line 68];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node35.html"><span class='visited with_tooltip'>C_35<span class='tooltip'>node35 preds:36 succs:32 33 exn:3 Conditional exception handler
+n$56=_fun___instanceof(n$54:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 68];
+PRUNE(!n$56, false); [line 68];
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds: succs:34 35 exn:3 Instructions
+n$53=*&amp;return:void [line 68];
+*&amp;return:void=null [line 68];
+n$54=_fun___unwrap_exception(n$53:void) [line 68];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE69">69</td><td class="line">                out.println(e); <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:30 exn:3 Instructions
+n$45=*&amp;out:java.io.PrintWriter* [line 69];
+_=*n$45:java.io.PrintWriter*(root java.io.PrintWriter) [line 69];
+n$47=*&amp;e:java.lang.Object* [line 69];
+n$48=_fun_void PrintWriter.println(Object)(n$45:java.io.PrintWriter*,n$47:java.lang.Object*) virtual [line 69];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE70">70</td><td class="line">            } </td></tr>
+<tr><td class="num" id="LINE71">71</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE72">72</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE73">73</td><td class="line">        response.sendRedirect(url); <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 27 26 24 22 succs:31 exn:3 Instructions
+n$49=*&amp;response:javax.servlet.http.HttpServletResponse* [line 73];
+_=*n$49:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 73];
+n$51=*&amp;url:java.lang.Object* [line 73];
+n$52=_fun_void HttpServletResponse.sendRedirect(String)(n$49:javax.servlet.http.HttpServletResponse*,n$51:java.lang.Object*) interface virtual [line 73];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE74">74</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE75">75</td><td class="line">    } <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:30 succs:2 exn:3 Instructions
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:31 3 succs: exn: Exit
+</span></span></a> <a href="./EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0/nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:38 33 succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE76">76</td><td class="line">} </td></tr>
+</table>
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+</body>
+</html>

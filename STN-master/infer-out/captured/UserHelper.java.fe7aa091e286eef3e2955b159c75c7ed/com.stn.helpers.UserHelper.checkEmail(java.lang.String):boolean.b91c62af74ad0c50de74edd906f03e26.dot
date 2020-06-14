@@ -1,0 +1,231 @@
+/* @generated */
+digraph cfg {
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_1" [label="1: Start boolean UserHelper.checkEmail(String)\nFormals:  this:com.stn.helpers.UserHelper* email:java.lang.String*\nLocals:  $irvar8:void $bcvar3:void CatchVar145:void $irvar7:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void found:java.lang.Boolean* \n  " color=yellow style=filled]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_1" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_4" ;
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_2" [label="2: Exit boolean UserHelper.checkEmail(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [label="3:  exceptions sink \n   NULLIFY(&found); [line 176]\n  NULLIFY(&$bcvar3); [line 176]\n  NULLIFY(&$irvar8); [line 176]\n  EXIT_SCOPE(found,$bcvar3,$irvar8); [line 176]\n  APPLY_ABSTRACTION; [line 176]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_2" ;
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_4" [label="4:  Call Boolean Boolean.valueOf(boolean) \n   n$0=_fun_Boolean Boolean.valueOf(boolean)(0:int) [line 155]\n  *&found:java.lang.Boolean*=n$0 [line 155]\n  EXIT_SCOPE(n$0); [line 155]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_4" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_5" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_4" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_5" [label="5:  method_body \n   n$1=*&this:com.stn.helpers.UserHelper* [line 157]\n  *n$1.query:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=\"SELECT 1 FROM users WHERE Email = ?\" [line 157]\n  EXIT_SCOPE(n$1); [line 157]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_5" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_6" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_5" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_6" [label="6:  Call Class Class.forName(String) \n   n$2=_fun_Class Class.forName(String)(\"com.mysql.jdbc.Driver\":java.lang.Object*) [line 160]\n  *&$irvar0:java.lang.Class*=n$2 [line 160]\n  NULLIFY(&$irvar0); [line 160]\n  EXIT_SCOPE(n$2,$irvar0); [line 160]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_6" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_7" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_6" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_7" [label="7:  Call String DBConnection.getHost() \n   n$3=*&this:com.stn.helpers.UserHelper* [line 161]\n  _=*n$3:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 161]\n  n$5=_fun_String DBConnection.getHost()(n$3:com.stn.helpers.UserHelper*) virtual [line 161]\n  *&$irvar1:java.lang.String*=n$5 [line 161]\n  EXIT_SCOPE(_,n$3,n$5); [line 161]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_7" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_8" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_7" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_8" [label="8:  Call String DBConnection.getUser() \n   n$6=*&this:com.stn.helpers.UserHelper* [line 161]\n  _=*n$6:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 161]\n  n$8=_fun_String DBConnection.getUser()(n$6:com.stn.helpers.UserHelper*) virtual [line 161]\n  *&$irvar2:java.lang.String*=n$8 [line 161]\n  EXIT_SCOPE(_,n$6,n$8); [line 161]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_8" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_9" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_8" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_9" [label="9:  Call String DBConnection.getPassword() \n   n$9=*&this:com.stn.helpers.UserHelper* [line 161]\n  _=*n$9:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 161]\n  n$11=_fun_String DBConnection.getPassword()(n$9:com.stn.helpers.UserHelper*) virtual [line 161]\n  *&$irvar3:java.lang.String*=n$11 [line 161]\n  EXIT_SCOPE(_,n$9,n$11); [line 161]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_9" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_10" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_9" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_10" [label="10:  Call Connection DriverManager.getConnection(String,String,String) \n   n$12=*&$irvar1:java.lang.String* [line 161]\n  n$13=*&$irvar2:java.lang.String* [line 161]\n  n$14=*&$irvar3:java.lang.String* [line 161]\n  n$15=_fun_Connection DriverManager.getConnection(String,String,String)(n$12:java.lang.String*,n$13:java.lang.String*,n$14:java.lang.String*) [line 161]\n  *&$irvar4:java.sql.Connection*=n$15 [line 161]\n  NULLIFY(&$irvar3); [line 161]\n  NULLIFY(&$irvar1); [line 161]\n  NULLIFY(&$irvar2); [line 161]\n  EXIT_SCOPE(n$12,n$13,n$14,n$15,$irvar3,$irvar1,$irvar2); [line 161]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_10" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_11" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_10" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_11" [label="11:  method_body \n   n$16=*&this:com.stn.helpers.UserHelper* [line 161]\n  n$17=*&$irvar4:java.sql.Connection* [line 161]\n  *n$16.connection:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$17 [line 161]\n  NULLIFY(&$irvar4); [line 161]\n  EXIT_SCOPE(n$16,n$17,$irvar4); [line 161]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_11" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_12" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_11" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_12" [label="12:  Call PreparedStatement Connection.prepareStatement(String) \n   n$18=*&this:com.stn.helpers.UserHelper* [line 162]\n  n$19=*n$18.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 162]\n  _=*n$19:java.sql.Connection*(root java.sql.Connection) [line 162]\n  n$21=*&this:com.stn.helpers.UserHelper* [line 162]\n  n$22=*n$21.query:java.lang.String*(root com.stn.helpers.UserHelper) [line 162]\n  n$23=_fun_PreparedStatement Connection.prepareStatement(String)(n$19:java.sql.Connection*,n$22:java.lang.String*) interface virtual [line 162]\n  *&$irvar5:java.sql.PreparedStatement*=n$23 [line 162]\n  EXIT_SCOPE(_,n$18,n$19,n$21,n$22,n$23); [line 162]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_12" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_13" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_12" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_13" [label="13:  method_body \n   n$24=*&this:com.stn.helpers.UserHelper* [line 162]\n  n$25=*&$irvar5:java.sql.PreparedStatement* [line 162]\n  *n$24.preparedStatement:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$25 [line 162]\n  NULLIFY(&$irvar5); [line 162]\n  EXIT_SCOPE(n$24,n$25,$irvar5); [line 162]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_13" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_14" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_13" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_14" [label="14:  Call void PreparedStatement.setString(int,String) \n   n$26=*&this:com.stn.helpers.UserHelper* [line 163]\n  n$27=*n$26.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 163]\n  _=*n$27:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 163]\n  n$29=*&email:java.lang.String* [line 163]\n  n$30=_fun_void PreparedStatement.setString(int,String)(n$27:java.sql.PreparedStatement*,1:int,n$29:java.lang.String*) interface virtual [line 163]\n  NULLIFY(&email); [line 163]\n  EXIT_SCOPE(_,n$26,n$27,n$29,n$30,email); [line 163]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_14" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_15" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_14" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_15" [label="15:  Call ResultSet PreparedStatement.executeQuery() \n   n$31=*&this:com.stn.helpers.UserHelper* [line 164]\n  n$32=*n$31.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 164]\n  _=*n$32:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 164]\n  n$34=_fun_ResultSet PreparedStatement.executeQuery()(n$32:java.sql.PreparedStatement*) interface virtual [line 164]\n  *&$irvar6:java.sql.ResultSet*=n$34 [line 164]\n  EXIT_SCOPE(_,n$31,n$32,n$34); [line 164]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_15" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_16" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_15" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_16" [label="16:  method_body \n   n$35=*&this:com.stn.helpers.UserHelper* [line 164]\n  n$36=*&$irvar6:java.sql.ResultSet* [line 164]\n  *n$35.resultSet:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$36 [line 164]\n  NULLIFY(&$irvar6); [line 164]\n  EXIT_SCOPE(n$35,n$36,$irvar6); [line 164]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_16" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_17" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_16" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_17" [label="17:  Call boolean ResultSet.next() \n   n$37=*&this:com.stn.helpers.UserHelper* [line 165]\n  n$38=*n$37.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 165]\n  _=*n$38:java.sql.ResultSet*(root java.sql.ResultSet) [line 165]\n  n$40=_fun_boolean ResultSet.next()(n$38:java.sql.ResultSet*) interface virtual [line 165]\n  *&$irvar7:_Bool=n$40 [line 165]\n  EXIT_SCOPE(_,n$37,n$38,n$40); [line 165]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_17" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_18" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_17" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_19" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_17" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_18" [label="18: Prune (true branch, if) \n   n$41=*&$irvar7:_Bool [line 165]\n  PRUNE(!(n$41 == 0), true); [line 165]\n  NULLIFY(&found); [line 165]\n  NULLIFY(&$irvar7); [line 165]\n  EXIT_SCOPE(n$41,found,$irvar7); [line 165]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_18" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_20" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_18" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_19" [label="19: Prune (false branch, if) \n   n$41=*&$irvar7:_Bool [line 165]\n  PRUNE((n$41 == 0), false); [line 165]\n  NULLIFY(&$irvar7); [line 165]\n  EXIT_SCOPE(n$41,$irvar7); [line 165]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_19" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_21" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_19" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_22" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_19" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_20" [label="20:  Call Boolean Boolean.valueOf(boolean) \n   n$42=_fun_Boolean Boolean.valueOf(boolean)(1:int) [line 166]\n  *&found:java.lang.Boolean*=n$42 [line 166]\n  EXIT_SCOPE(n$42); [line 166]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_20" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_21" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_20" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_22" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_20" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_21" [label="21: Prune (true branch, if) \n   n$43=*&this:com.stn.helpers.UserHelper* [line 169]\n  n$44=*n$43.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 169]\n  PRUNE(!(n$44 == null), true); [line 169]\n  EXIT_SCOPE(n$43,n$44); [line 169]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_21" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_23" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_21" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_22" [label="22: Prune (false branch, if) \n   n$43=*&this:com.stn.helpers.UserHelper* [line 169]\n  n$44=*n$43.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 169]\n  PRUNE((n$44 == null), false); [line 169]\n  EXIT_SCOPE(n$43,n$44); [line 169]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_22" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_24" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_22" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_25" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_22" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_23" [label="23:  Call void PreparedStatement.close() \n   n$45=*&this:com.stn.helpers.UserHelper* [line 170]\n  n$46=*n$45.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 170]\n  n$49=_fun___set_mem_attribute(n$46:java.sql.PreparedStatement*) [line 170]\n  _=*n$46:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 170]\n  n$48=_fun_void PreparedStatement.close()(n$46:java.sql.PreparedStatement*) interface virtual [line 170]\n  EXIT_SCOPE(_,n$45,n$46,n$48,n$49); [line 170]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_23" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_24" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_23" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_25" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_23" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_24" [label="24: Prune (true branch, if) \n   n$50=*&this:com.stn.helpers.UserHelper* [line 171]\n  n$51=*n$50.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 171]\n  PRUNE(!(n$51 == null), true); [line 171]\n  EXIT_SCOPE(n$50,n$51); [line 171]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_24" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_26" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_24" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_25" [label="25: Prune (false branch, if) \n   n$50=*&this:com.stn.helpers.UserHelper* [line 171]\n  n$51=*n$50.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 171]\n  PRUNE((n$51 == null), false); [line 171]\n  EXIT_SCOPE(n$50,n$51); [line 171]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_25" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_27" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_25" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_28" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_25" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_26" [label="26:  Call void Connection.close() \n   n$52=*&this:com.stn.helpers.UserHelper* [line 172]\n  n$53=*n$52.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 172]\n  n$56=_fun___set_mem_attribute(n$53:java.sql.Connection*) [line 172]\n  _=*n$53:java.sql.Connection*(root java.sql.Connection) [line 172]\n  n$55=_fun_void Connection.close()(n$53:java.sql.Connection*) interface virtual [line 172]\n  EXIT_SCOPE(_,n$52,n$53,n$55,n$56); [line 172]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_26" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_27" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_26" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_28" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_26" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_27" [label="27: Prune (true branch, if) \n   n$57=*&this:com.stn.helpers.UserHelper* [line 173]\n  n$58=*n$57.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 173]\n  PRUNE(!(n$58 == null), true); [line 173]\n  EXIT_SCOPE(n$57,n$58); [line 173]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_27" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_29" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_27" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_28" [label="28: Prune (false branch, if) \n   n$57=*&this:com.stn.helpers.UserHelper* [line 173]\n  n$58=*n$57.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 173]\n  PRUNE((n$58 == null), false); [line 173]\n  NULLIFY(&this); [line 173]\n  EXIT_SCOPE(n$57,n$58,this); [line 173]\n  APPLY_ABSTRACTION; [line 173]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_28" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_41" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_28" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_29" [label="29:  Call void ResultSet.close() \n   n$59=*&this:com.stn.helpers.UserHelper* [line 174]\n  n$60=*n$59.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 174]\n  n$63=_fun___set_mem_attribute(n$60:java.sql.ResultSet*) [line 174]\n  _=*n$60:java.sql.ResultSet*(root java.sql.ResultSet) [line 174]\n  n$62=_fun_void ResultSet.close()(n$60:java.sql.ResultSet*) interface virtual [line 174]\n  NULLIFY(&this); [line 174]\n  EXIT_SCOPE(_,n$59,n$60,n$62,n$63,this); [line 174]\n  APPLY_ABSTRACTION; [line 174]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_29" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_41" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_29" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_30" [label="30:  method_body \n   n$64=*&CatchVar145:java.lang.Object* [line 169]\n  *&$bcvar3:java.lang.Object*=n$64 [line 169]\n  NULLIFY(&CatchVar145); [line 169]\n  EXIT_SCOPE(n$64,CatchVar145); [line 169]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_30" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_31" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_30" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_32" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_30" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_31" [label="31: Prune (true branch, if) \n   n$65=*&this:com.stn.helpers.UserHelper* [line 169]\n  n$66=*n$65.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 169]\n  PRUNE(!(n$66 == null), true); [line 169]\n  EXIT_SCOPE(n$65,n$66); [line 169]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_31" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_33" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_31" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_32" [label="32: Prune (false branch, if) \n   n$65=*&this:com.stn.helpers.UserHelper* [line 169]\n  n$66=*n$65.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 169]\n  PRUNE((n$66 == null), false); [line 169]\n  EXIT_SCOPE(n$65,n$66); [line 169]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_32" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_34" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_32" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_35" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_32" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_33" [label="33:  Call void PreparedStatement.close() \n   n$67=*&this:com.stn.helpers.UserHelper* [line 170]\n  n$68=*n$67.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 170]\n  n$71=_fun___set_mem_attribute(n$68:java.sql.PreparedStatement*) [line 170]\n  _=*n$68:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 170]\n  n$70=_fun_void PreparedStatement.close()(n$68:java.sql.PreparedStatement*) interface virtual [line 170]\n  EXIT_SCOPE(_,n$67,n$68,n$70,n$71); [line 170]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_33" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_34" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_33" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_35" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_33" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_34" [label="34: Prune (true branch, if) \n   n$72=*&this:com.stn.helpers.UserHelper* [line 171]\n  n$73=*n$72.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 171]\n  PRUNE(!(n$73 == null), true); [line 171]\n  EXIT_SCOPE(n$72,n$73); [line 171]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_34" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_36" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_34" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_35" [label="35: Prune (false branch, if) \n   n$72=*&this:com.stn.helpers.UserHelper* [line 171]\n  n$73=*n$72.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 171]\n  PRUNE((n$73 == null), false); [line 171]\n  EXIT_SCOPE(n$72,n$73); [line 171]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_35" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_37" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_35" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_38" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_35" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_36" [label="36:  Call void Connection.close() \n   n$74=*&this:com.stn.helpers.UserHelper* [line 172]\n  n$75=*n$74.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 172]\n  n$78=_fun___set_mem_attribute(n$75:java.sql.Connection*) [line 172]\n  _=*n$75:java.sql.Connection*(root java.sql.Connection) [line 172]\n  n$77=_fun_void Connection.close()(n$75:java.sql.Connection*) interface virtual [line 172]\n  EXIT_SCOPE(_,n$74,n$75,n$77,n$78); [line 172]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_36" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_37" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_36" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_38" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_36" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_37" [label="37: Prune (true branch, if) \n   n$79=*&this:com.stn.helpers.UserHelper* [line 173]\n  n$80=*n$79.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 173]\n  PRUNE(!(n$80 == null), true); [line 173]\n  EXIT_SCOPE(n$79,n$80); [line 173]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_37" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_39" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_37" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_38" [label="38: Prune (false branch, if) \n   n$79=*&this:com.stn.helpers.UserHelper* [line 173]\n  n$80=*n$79.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 173]\n  PRUNE((n$80 == null), false); [line 173]\n  NULLIFY(&this); [line 173]\n  EXIT_SCOPE(n$79,n$80,this); [line 173]\n  APPLY_ABSTRACTION; [line 173]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_38" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_40" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_38" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_39" [label="39:  Call void ResultSet.close() \n   n$81=*&this:com.stn.helpers.UserHelper* [line 174]\n  n$82=*n$81.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 174]\n  n$85=_fun___set_mem_attribute(n$82:java.sql.ResultSet*) [line 174]\n  _=*n$82:java.sql.ResultSet*(root java.sql.ResultSet) [line 174]\n  n$84=_fun_void ResultSet.close()(n$82:java.sql.ResultSet*) interface virtual [line 174]\n  NULLIFY(&this); [line 174]\n  EXIT_SCOPE(_,n$81,n$82,n$84,n$85,this); [line 174]\n  APPLY_ABSTRACTION; [line 174]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_39" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_40" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_39" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_40" [label="40:  throw \n   n$86=*&$bcvar3:java.lang.Object* [line 175]\n  *&return:_Bool=EXN n$86 [line 175]\n  NULLIFY(&$bcvar3); [line 175]\n  EXIT_SCOPE(n$86,$bcvar3); [line 175]\n  APPLY_ABSTRACTION; [line 175]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_40" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_2" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_40" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_41" [label="41:  Call boolean Boolean.booleanValue() \n   n$87=*&found:java.lang.Boolean* [line 176]\n  _=*n$87:java.lang.Boolean*(root java.lang.Boolean) [line 176]\n  n$89=_fun_boolean Boolean.booleanValue()(n$87:java.lang.Boolean*) virtual [line 176]\n  *&$irvar8:_Bool=n$89 [line 176]\n  NULLIFY(&found); [line 176]\n  EXIT_SCOPE(_,n$87,n$89,found); [line 176]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_41" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_42" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_41" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_42" [label="42:  method_body \n   n$90=*&$irvar8:_Bool [line 176]\n  *&return:_Bool=n$90 [line 176]\n  NULLIFY(&$irvar8); [line 176]\n  EXIT_SCOPE(n$90,$irvar8); [line 176]\n  APPLY_ABSTRACTION; [line 176]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_42" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_2" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_42" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_43" [label="43:  Finally branch \n  " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_43" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_30" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_43" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_44" [label="44:  exception handler \n   n$91=*&return:_Bool [line 169]\n  *&return:_Bool=null [line 169]\n  n$92=_fun___unwrap_exception(n$91:_Bool) [line 169]\n  NULLIFY(&found); [line 169]\n  NULLIFY(&$irvar3); [line 169]\n  NULLIFY(&$irvar5); [line 169]\n  NULLIFY(&$irvar4); [line 169]\n  NULLIFY(&$irvar7); [line 169]\n  NULLIFY(&$irvar6); [line 169]\n  NULLIFY(&$irvar1); [line 169]\n  NULLIFY(&$irvar2); [line 169]\n  EXIT_SCOPE(n$91,n$92,found,$irvar3,$irvar5,$irvar4,$irvar7,$irvar6,$irvar1,$irvar2); [line 169]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_44" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_43" ;
+	 "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_44" -> "com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_3" [color="red" ];
+}

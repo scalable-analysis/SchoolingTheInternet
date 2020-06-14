@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_node11</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE64">11</a></h1></center>PROC: <a href="./../com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149.html">void RecoverHelper.deleteToken(String)</a> LINE: <a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE64">64</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node10.html"><span class='visited with_tooltip'>N_10<span class='tooltip'>node10 preds:9 succs:11 exn:37 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node12.html"><span class='visited with_tooltip'>N_12<span class='tooltip'>node12 preds:11 succs:13 exn:37 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node37.html"><span class='visited with_tooltip'>N_37<span class='tooltip'>node37 preds: succs:36 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$17=*&amp;this:com.stn.helpers.RecoverHelper* [line 64];
+n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 64];
+_=*n$18:java.sql.Connection*(root java.sql.Connection) [line 64];
+n$20=*&amp;this:com.stn.helpers.RecoverHelper* [line 64];
+n$21=*n$20.query:java.lang.String*(root com.stn.helpers.RecoverHelper) [line 64];
+n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 64];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 64];
+</LISTING>
+<hr width="100%">
+<a name="session56" href="./../nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node11.html#session56">node11#session56</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE64">64</a>) [compute pre] liveness 11
+<LISTING class='color_black'>JOIN
+
+LEFT:   { token, $irvar5, CatchVar120, return, this }
+RIGHT:  { CatchVar120, return, this }
+RESULT: { token, $irvar5, CatchVar120, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session57" href="./../nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node11.html#session57">node11#session57</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE64">64</a>) [exec] liveness 11
+<LISTING class='color_black'>PRE STATE:
+{ token, $irvar5, CatchVar120, return, this }
+
+INSTR=  *&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 64]; 
+
+STATE:
+{ n$22, token, CatchVar120, return, this }
+
+INSTR=  n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 64]; 
+
+STATE:
+{ n$18, n$21, token, CatchVar120, return, this }
+
+INSTR=  n$21=*n$20.query:java.lang.String*(root com.stn.helpers.RecoverHelper) [line 64]; 
+
+STATE:
+{ n$18, n$20, token, CatchVar120, return, this }
+
+INSTR=  n$20=*&amp;this:com.stn.helpers.RecoverHelper* [line 64]; 
+
+STATE:
+{ n$18, token, CatchVar120, return, this }
+
+INSTR=  _=*n$18:java.sql.Connection*(root java.sql.Connection) [line 64]; 
+
+STATE UNCHANGED
+
+INSTR=  n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 64]; 
+
+STATE:
+{ n$17, token, CatchVar120, return, this }
+
+INSTR=  n$17=*&amp;this:com.stn.helpers.RecoverHelper* [line 64]; 
+
+STATE:
+{ token, CatchVar120, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session89" href="./../nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node11.html#session89">node11#session89</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE64">64</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session90" href="./../nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node11.html#session90">node11#session90</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE64">64</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ },{ n$15, n$16, $irvar4 })
+
+INSTR=  n$17=*&amp;this:com.stn.helpers.RecoverHelper* [line 64]; 
+
+STATE:
+({ n$17 },{ n$15, n$16, $irvar4 })
+
+INSTR=  n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 64]; 
+
+STATE:
+({ n$17, n$18 },{ n$15, n$16, $irvar4 })
+
+INSTR=  _=*n$18:java.sql.Connection*(root java.sql.Connection) [line 64]; 
+
+STATE:
+({ _, n$17, n$18 },{ n$15, n$16, $irvar4 })
+
+INSTR=  n$20=*&amp;this:com.stn.helpers.RecoverHelper* [line 64]; 
+
+STATE:
+({ _, n$17, n$18, n$20 },{ n$15, n$16, $irvar4 })
+
+INSTR=  n$21=*n$20.query:java.lang.String*(root com.stn.helpers.RecoverHelper) [line 64]; 
+
+STATE:
+({ _, n$17, n$18, n$20, n$21 },{ n$15, n$16, $irvar4 })
+
+INSTR=  n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 64]; 
+
+STATE:
+({ _, n$17, n$18, n$20, n$21, n$22 },{ n$15, n$16, $irvar4 })
+
+INSTR=  *&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 64]; 
+
+STATE:
+({ $irvar5 },{ _, n$17, n$18, n$20, n$21, n$22 })
+
+</LISTING>
+<hr width="100%">
+<a name="session16" href="./../nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node11.html#session16">node11#session16</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE64">64</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session17" href="./../nodes/com.stn.helpers.RecoverHelper.deleteToken%28java.lang.String%29%3Avoid.46bd5c88f09ac66ada79ea10bca58149_node11.html#session17">node11#session17</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE64">64</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+
+
+
+
+
+TAINTED_CALL1: (callee="PreparedStatement Connection.prepareStatement(String)", caller="void RecoverHelper.deleteToken(String)")
+TAINTED_CALL1: (callee="PreparedStatement Connection.prepareStatement(String)", caller="void RecoverHelper.deleteToken(String)")
+INSTR=  n$22 := PreparedStatement Connection.prepareStatement(String)({ this-&gt;connection,
+                                                                    this-&gt;query }) [line 64]; 
+
+STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+
+
+</LISTING>

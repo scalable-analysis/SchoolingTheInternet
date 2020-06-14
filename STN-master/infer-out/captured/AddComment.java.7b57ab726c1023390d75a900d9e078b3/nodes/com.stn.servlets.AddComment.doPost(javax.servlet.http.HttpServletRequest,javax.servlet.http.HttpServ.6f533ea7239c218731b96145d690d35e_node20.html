@@ -1,0 +1,325 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.servlets.AddComment.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e_node20</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../AddComment.java.7b57ab726c1023390d75a900d9e078b3.html#LINE33">20</a></h1></center>PROC: <a href="./../com.stn.servlets.AddComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e.html">void AddComment.doPost(HttpServletRequest,HttpServletResponse)</a> LINE: <a href="./../../AddComment.java.7b57ab726c1023390d75a900d9e078b3.html#LINE33">33</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.servlets.AddComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e_node19.html"><span class='visited with_tooltip'>N_19<span class='tooltip'>node19 preds:18 succs:20 exn:72 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.servlets.AddComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e_node21.html"><span class='visited with_tooltip'>N_21<span class='tooltip'>node21 preds:20 succs:22 exn:72 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.servlets.AddComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e_node72.html"><span class='visited with_tooltip'>N_72<span class='tooltip'>node72 preds: succs:70 71 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$31=*&amp;commHelp:com.stn.helpers.CommentsHelper* [line 33];
+_=*n$31:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 33];
+n$33=*&amp;$irvar4:java.lang.Integer* [line 33];
+n$34=_fun_Comments CommentsHelper.getComment(Integer)(n$31:com.stn.helpers.CommentsHelper*,n$33:java.lang.Integer*) virtual [line 33];
+*&amp;$irvar5:com.stn.pojo.Comments*=n$34 [line 33];
+</LISTING>
+<hr width="100%">
+<a name="session126" href="./../nodes/com.stn.servlets.AddComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e_node20.html#session126">node20#session126</a>(<a href="./../../AddComment.java.7b57ab726c1023390d75a900d9e078b3.html#LINE33">33</a>) [compute pre] liveness 20
+<LISTING class='color_black'>JOIN
+
+LEFT:   { $irvar3,
+          commHelp,
+          reply_temp,
+          idPost,
+          out,
+          $irvar5,
+          request,
+          return,
+          idUser,
+          session,
+          response }
+RIGHT:  { idPost, out, request, return, idUser, session, response }
+RESULT: { $irvar3,
+          commHelp,
+          reply_temp,
+          idPost,
+          out,
+          $irvar5,
+          request,
+          return,
+          idUser,
+          session,
+          response }
+
+</LISTING>
+<hr width="100%">
+<a name="session127" href="./../nodes/com.stn.servlets.AddComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e_node20.html#session127">node20#session127</a>(<a href="./../../AddComment.java.7b57ab726c1023390d75a900d9e078b3.html#LINE33">33</a>) [exec] liveness 20
+<LISTING class='color_black'>PRE STATE:
+{ $irvar3,
+  commHelp,
+  reply_temp,
+  idPost,
+  out,
+  $irvar5,
+  request,
+  return,
+  idUser,
+  session,
+  response }
+
+INSTR=  *&amp;$irvar5:com.stn.pojo.Comments*=n$34 [line 33]; 
+
+STATE:
+{ n$34,
+  $irvar3,
+  commHelp,
+  reply_temp,
+  idPost,
+  out,
+  request,
+  return,
+  idUser,
+  session,
+  response }
+
+INSTR=  n$34=_fun_Comments CommentsHelper.getComment(Integer)(n$31:com.stn.helpers.CommentsHelper*,n$33:java.lang.Integer*) virtual [line 33]; 
+
+STATE:
+{ n$31,
+  n$33,
+  $irvar3,
+  commHelp,
+  reply_temp,
+  idPost,
+  out,
+  request,
+  return,
+  idUser,
+  session,
+  response }
+
+INSTR=  n$33=*&amp;$irvar4:java.lang.Integer* [line 33]; 
+
+STATE:
+{ n$31,
+  $irvar3,
+  commHelp,
+  reply_temp,
+  idPost,
+  out,
+  request,
+  $irvar4,
+  return,
+  idUser,
+  session,
+  response }
+
+INSTR=  _=*n$31:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 33]; 
+
+STATE UNCHANGED
+
+INSTR=  n$31=*&amp;commHelp:com.stn.helpers.CommentsHelper* [line 33]; 
+
+STATE:
+{ $irvar3,
+  commHelp,
+  reply_temp,
+  idPost,
+  out,
+  request,
+  $irvar4,
+  return,
+  idUser,
+  session,
+  response }
+
+</LISTING>
+<hr width="100%">
+<a name="session201" href="./../nodes/com.stn.servlets.AddComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e_node20.html#session201">node20#session201</a>(<a href="./../../AddComment.java.7b57ab726c1023390d75a900d9e078b3.html#LINE33">33</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session202" href="./../nodes/com.stn.servlets.AddComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e_node20.html#session202">node20#session202</a>(<a href="./../../AddComment.java.7b57ab726c1023390d75a900d9e078b3.html#LINE33">33</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ $irvar3,
+   commHelp,
+   reply_temp,
+   idPost,
+   out,
+   $irvar4,
+   return,
+   idUser,
+   session },
+{ n$29, n$30 })
+
+INSTR=  n$31=*&amp;commHelp:com.stn.helpers.CommentsHelper* [line 33]; 
+
+STATE:
+({ n$31,
+   $irvar3,
+   commHelp,
+   reply_temp,
+   idPost,
+   out,
+   $irvar4,
+   return,
+   idUser,
+   session },
+{ n$29, n$30 })
+
+INSTR=  _=*n$31:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 33]; 
+
+STATE:
+({ _,
+   n$31,
+   $irvar3,
+   commHelp,
+   reply_temp,
+   idPost,
+   out,
+   $irvar4,
+   return,
+   idUser,
+   session },
+{ n$29, n$30 })
+
+INSTR=  n$33=*&amp;$irvar4:java.lang.Integer* [line 33]; 
+
+STATE:
+({ _,
+   n$31,
+   n$33,
+   $irvar3,
+   commHelp,
+   reply_temp,
+   idPost,
+   out,
+   $irvar4,
+   return,
+   idUser,
+   session },
+{ n$29, n$30 })
+
+INSTR=  n$34=_fun_Comments CommentsHelper.getComment(Integer)(n$31:com.stn.helpers.CommentsHelper*,n$33:java.lang.Integer*) virtual [line 33]; 
+
+STATE:
+({ _,
+   n$31,
+   n$33,
+   n$34,
+   $irvar3,
+   commHelp,
+   reply_temp,
+   idPost,
+   out,
+   $irvar4,
+   return,
+   idUser,
+   session },
+{ n$29, n$30 })
+
+INSTR=  *&amp;$irvar5:com.stn.pojo.Comments*=n$34 [line 33]; 
+
+STATE:
+({ $irvar3,
+   commHelp,
+   reply_temp,
+   idPost,
+   out,
+   $irvar5,
+   return,
+   idUser,
+   session },
+{ _, n$31, n$33, n$34, $irvar4 })
+
+</LISTING>
+<hr width="100%">
+<a name="session38" href="./../nodes/com.stn.servlets.AddComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e_node20.html#session38">node20#session38</a>(<a href="./../../AddComment.java.7b57ab726c1023390d75a900d9e078b3.html#LINE33">33</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session39" href="./../nodes/com.stn.servlets.AddComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e_node20.html#session39">node20#session39</a>(<a href="./../../AddComment.java.7b57ab726c1023390d75a900d9e078b3.html#LINE33">33</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$18 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  replyee -&gt; { },
+  commHelp -&gt; { connection -&gt; { },
+                dbHost -&gt; { },
+                dbName -&gt; { },
+                dbPassword -&gt; { },
+                dbPort -&gt; { },
+                dbUser -&gt; { },
+                preparedStatement -&gt; { },
+                query -&gt; { },
+                resultSet -&gt; { } },
+  reply_temp -&gt; { },
+  idPost -&gt; { },
+  out -&gt; { },
+  idUser -&gt; { },
+  session -&gt; { },
+  e -&gt; { } }
+
+
+
+
+INSTR=  n$34 := Comments CommentsHelper.getComment(Integer)({ commHelp,
+                                                              n$30 }) [line 33]; 
+
+STATE:
+{ n$18 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  n$34 -&gt; { cont -&gt; { Other(Comments CommentsHelper.getComment(Integer) at line 33) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+            dop -&gt; { Other(Comments CommentsHelper.getComment(Integer) at line 33) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+            id -&gt; { },
+            idPost -&gt; { },
+            idUser -&gt; { },
+            lastEdit -&gt; { Other(Comments CommentsHelper.getComment(Integer) at line 33) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+            userClass -&gt; { },
+            username -&gt; { Other(Comments CommentsHelper.getComment(Integer) at line 33) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ? },
+  replyee -&gt; { },
+  commHelp -&gt; { connection -&gt; *,
+                dbHost -&gt; { },
+                dbName -&gt; { },
+                dbPassword -&gt; { },
+                dbPort -&gt; { },
+                dbUser -&gt; { },
+                preparedStatement -&gt; *,
+                query -&gt; { },
+                resultSet -&gt; ({ Other(Comments CommentsHelper.getComment(Integer) at line 33) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  reply_temp -&gt; { },
+  idPost -&gt; { },
+  out -&gt; { },
+  idUser -&gt; { },
+  session -&gt; { },
+  e -&gt; { } }
+
+
+INSTR=  NULLIFY(&amp;$irvar4); [line 33]; 
+
+STATE UNCHANGED
+
+
+</LISTING>

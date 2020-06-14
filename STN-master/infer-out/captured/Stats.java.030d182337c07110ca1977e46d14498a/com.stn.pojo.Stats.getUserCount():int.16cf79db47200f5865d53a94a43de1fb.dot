@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Stats.getUserCount():int.16cf79db47200f5865d53a94a43de1fb_1" [label="1: Start int Stats.getUserCount()\nFormals:  this:com.stn.pojo.Stats*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Stats.getUserCount():int.16cf79db47200f5865d53a94a43de1fb_1" -> "com.stn.pojo.Stats.getUserCount():int.16cf79db47200f5865d53a94a43de1fb_4" ;
+"com.stn.pojo.Stats.getUserCount():int.16cf79db47200f5865d53a94a43de1fb_2" [label="2: Exit int Stats.getUserCount() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Stats.getUserCount():int.16cf79db47200f5865d53a94a43de1fb_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 59]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Stats.getUserCount():int.16cf79db47200f5865d53a94a43de1fb_3" -> "com.stn.pojo.Stats.getUserCount():int.16cf79db47200f5865d53a94a43de1fb_2" ;
+"com.stn.pojo.Stats.getUserCount():int.16cf79db47200f5865d53a94a43de1fb_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Stats* [line 59]\n  n$1=*n$0.userCount:int(root com.stn.pojo.Stats) [line 59]\n  *&return:int=n$1 [line 59]\n  NULLIFY(&this); [line 59]\n  EXIT_SCOPE(n$0,n$1,this); [line 59]\n  APPLY_ABSTRACTION; [line 59]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Stats.getUserCount():int.16cf79db47200f5865d53a94a43de1fb_4" -> "com.stn.pojo.Stats.getUserCount():int.16cf79db47200f5865d53a94a43de1fb_2" ;
+	 "com.stn.pojo.Stats.getUserCount():int.16cf79db47200f5865d53a94a43de1fb_4" -> "com.stn.pojo.Stats.getUserCount():int.16cf79db47200f5865d53a94a43de1fb_3" [color="red" ];
+}

@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Grupa.setIdGrupa(int):void.f79fd7f242b91c928039e0ce3fb59b08_1" [label="1: Start void Grupa.setIdGrupa(int)\nFormals:  this:com.stn.pojo.Grupa* idGrupa:int\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Grupa.setIdGrupa(int):void.f79fd7f242b91c928039e0ce3fb59b08_1" -> "com.stn.pojo.Grupa.setIdGrupa(int):void.f79fd7f242b91c928039e0ce3fb59b08_4" ;
+"com.stn.pojo.Grupa.setIdGrupa(int):void.f79fd7f242b91c928039e0ce3fb59b08_2" [label="2: Exit void Grupa.setIdGrupa(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Grupa.setIdGrupa(int):void.f79fd7f242b91c928039e0ce3fb59b08_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 17]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Grupa.setIdGrupa(int):void.f79fd7f242b91c928039e0ce3fb59b08_3" -> "com.stn.pojo.Grupa.setIdGrupa(int):void.f79fd7f242b91c928039e0ce3fb59b08_2" ;
+"com.stn.pojo.Grupa.setIdGrupa(int):void.f79fd7f242b91c928039e0ce3fb59b08_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Grupa* [line 16]\n  n$1=*&idGrupa:int [line 16]\n  *n$0.idGrupa:com.stn.pojo.Grupa(root com.stn.pojo.Grupa)=n$1 [line 16]\n  NULLIFY(&idGrupa); [line 16]\n  NULLIFY(&this); [line 16]\n  EXIT_SCOPE(n$0,n$1,idGrupa,this); [line 16]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Grupa.setIdGrupa(int):void.f79fd7f242b91c928039e0ce3fb59b08_4" -> "com.stn.pojo.Grupa.setIdGrupa(int):void.f79fd7f242b91c928039e0ce3fb59b08_5" ;
+	 "com.stn.pojo.Grupa.setIdGrupa(int):void.f79fd7f242b91c928039e0ce3fb59b08_4" -> "com.stn.pojo.Grupa.setIdGrupa(int):void.f79fd7f242b91c928039e0ce3fb59b08_3" [color="red" ];
+"com.stn.pojo.Grupa.setIdGrupa(int):void.f79fd7f242b91c928039e0ce3fb59b08_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 17]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Grupa.setIdGrupa(int):void.f79fd7f242b91c928039e0ce3fb59b08_5" -> "com.stn.pojo.Grupa.setIdGrupa(int):void.f79fd7f242b91c928039e0ce3fb59b08_2" ;
+	 "com.stn.pojo.Grupa.setIdGrupa(int):void.f79fd7f242b91c928039e0ce3fb59b08_5" -> "com.stn.pojo.Grupa.setIdGrupa(int):void.f79fd7f242b91c928039e0ce3fb59b08_3" [color="red" ];
+}

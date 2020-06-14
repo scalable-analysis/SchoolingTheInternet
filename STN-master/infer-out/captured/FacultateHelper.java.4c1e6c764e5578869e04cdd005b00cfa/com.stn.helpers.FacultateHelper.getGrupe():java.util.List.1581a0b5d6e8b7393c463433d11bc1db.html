@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.FacultateHelper.getGrupe():java.util.List.1581a0b5d6e8b7393c463433d11bc1db</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../FacultateHelper.java.4c1e6c764e5578869e04cdd005b00cfa.html#LINE146">List FacultateHelper.getGrupe()</a></h1></center>
+<a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:39 38 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$bcvar2); [line 167];
+NULLIFY(&amp;grupa); [line 167];
+EXIT_SCOPE($bcvar2,grupa); [line 167];
+APPLY_ABSTRACTION; [line 167];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 147];
+n$1=_fun_ArrayList.&lt;init&gt;()(n$0:java.util.ArrayList*) [line 147];
+*&amp;grupa:java.util.ArrayList*=n$0 [line 147];
+EXIT_SCOPE(n$0,n$1); [line 147];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$2=*&amp;this:com.stn.helpers.FacultateHelper* [line 149];
+*n$2.query:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)="SELECT * FROM grupe" [line 149];
+EXIT_SCOPE(n$2); [line 149];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:41 Instructions
+n$3=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 153];
+*&amp;$irvar0:java.lang.Class*=n$3 [line 153];
+NULLIFY(&amp;$irvar0); [line 153];
+EXIT_SCOPE(n$3,$irvar0); [line 153];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:41 Instructions
+n$4=*&amp;this:com.stn.helpers.FacultateHelper* [line 154];
+_=*n$4:com.stn.helpers.FacultateHelper*(root com.stn.helpers.FacultateHelper) [line 154];
+n$6=_fun_String DBConnection.getHost()(n$4:com.stn.helpers.FacultateHelper*) virtual [line 154];
+*&amp;$irvar1:java.lang.String*=n$6 [line 154];
+EXIT_SCOPE(_,n$4,n$6); [line 154];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:41 Instructions
+n$7=*&amp;this:com.stn.helpers.FacultateHelper* [line 154];
+_=*n$7:com.stn.helpers.FacultateHelper*(root com.stn.helpers.FacultateHelper) [line 154];
+n$9=_fun_String DBConnection.getUser()(n$7:com.stn.helpers.FacultateHelper*) virtual [line 154];
+*&amp;$irvar2:java.lang.String*=n$9 [line 154];
+EXIT_SCOPE(_,n$7,n$9); [line 154];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:41 Instructions
+n$10=*&amp;this:com.stn.helpers.FacultateHelper* [line 154];
+_=*n$10:com.stn.helpers.FacultateHelper*(root com.stn.helpers.FacultateHelper) [line 154];
+n$12=_fun_String DBConnection.getPassword()(n$10:com.stn.helpers.FacultateHelper*) virtual [line 154];
+*&amp;$irvar3:java.lang.String*=n$12 [line 154];
+EXIT_SCOPE(_,n$10,n$12); [line 154];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:41 Instructions
+n$13=*&amp;$irvar1:java.lang.String* [line 154];
+n$14=*&amp;$irvar2:java.lang.String* [line 154];
+n$15=*&amp;$irvar3:java.lang.String* [line 154];
+n$16=_fun_Connection DriverManager.getConnection(String,String,String)(n$13:java.lang.String*,n$14:java.lang.String*,n$15:java.lang.String*) [line 154];
+*&amp;$irvar4:java.sql.Connection*=n$16 [line 154];
+NULLIFY(&amp;$irvar3); [line 154];
+NULLIFY(&amp;$irvar1); [line 154];
+NULLIFY(&amp;$irvar2); [line 154];
+EXIT_SCOPE(n$13,n$14,n$15,n$16,$irvar3,$irvar1,$irvar2); [line 154];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:41 Instructions
+n$17=*&amp;this:com.stn.helpers.FacultateHelper* [line 154];
+n$18=*&amp;$irvar4:java.sql.Connection* [line 154];
+*n$17.connection:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)=n$18 [line 154];
+NULLIFY(&amp;$irvar4); [line 154];
+EXIT_SCOPE(n$17,n$18,$irvar4); [line 154];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:41 Instructions
+n$19=*&amp;this:com.stn.helpers.FacultateHelper* [line 155];
+n$20=*n$19.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 155];
+_=*n$20:java.sql.Connection*(root java.sql.Connection) [line 155];
+n$22=*&amp;this:com.stn.helpers.FacultateHelper* [line 155];
+n$23=*n$22.query:java.lang.String*(root com.stn.helpers.FacultateHelper) [line 155];
+n$24=_fun_PreparedStatement Connection.prepareStatement(String)(n$20:java.sql.Connection*,n$23:java.lang.String*) interface virtual [line 155];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$24 [line 155];
+EXIT_SCOPE(_,n$19,n$20,n$22,n$23,n$24); [line 155];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:41 Instructions
+n$25=*&amp;this:com.stn.helpers.FacultateHelper* [line 155];
+n$26=*&amp;$irvar5:java.sql.PreparedStatement* [line 155];
+*n$25.preparedStatement:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)=n$26 [line 155];
+NULLIFY(&amp;$irvar5); [line 155];
+EXIT_SCOPE(n$25,n$26,$irvar5); [line 155];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:41 Instructions
+n$27=*&amp;this:com.stn.helpers.FacultateHelper* [line 156];
+n$28=*n$27.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 156];
+_=*n$28:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 156];
+n$30=_fun_ResultSet PreparedStatement.executeQuery()(n$28:java.sql.PreparedStatement*) interface virtual [line 156];
+*&amp;$irvar6:java.sql.ResultSet*=n$30 [line 156];
+EXIT_SCOPE(_,n$27,n$28,n$30); [line 156];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:41 Instructions
+n$31=*&amp;this:com.stn.helpers.FacultateHelper* [line 156];
+n$32=*&amp;$irvar6:java.sql.ResultSet* [line 156];
+*n$31.resultSet:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)=n$32 [line 156];
+NULLIFY(&amp;$irvar6); [line 156];
+EXIT_SCOPE(n$31,n$32,$irvar6); [line 156];
+APPLY_ABSTRACTION; [line 156];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:24 15 succs:19 exn:41 Instructions
+n$33=*&amp;this:com.stn.helpers.FacultateHelper* [line 157];
+n$34=*n$33.resultSet:java.sql.ResultSet*(root com.stn.helpers.FacultateHelper) [line 157];
+_=*n$34:java.sql.ResultSet*(root java.sql.ResultSet) [line 157];
+n$36=_fun_boolean ResultSet.next()(n$34:java.sql.ResultSet*) interface virtual [line 157];
+*&amp;$irvar7:_Bool=n$36 [line 157];
+EXIT_SCOPE(_,n$33,n$34,n$36); [line 157];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node17.html"><span class='visited with_tooltip'>C_17<span class='tooltip'>node17 preds:19 succs:20 exn:41 Conditional method_body
+n$37=*&amp;$irvar7:_Bool [line 157];
+PRUNE(!(n$37 == 0), true); [line 157];
+NULLIFY(&amp;$irvar7); [line 157];
+EXIT_SCOPE(n$37,$irvar7); [line 157];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:19 succs:25 26 exn:41 Conditional method_body
+n$37=*&amp;$irvar7:_Bool [line 157];
+PRUNE((n$37 == 0), false); [line 157];
+NULLIFY(&amp;$irvar7); [line 157];
+EXIT_SCOPE(n$37,$irvar7); [line 157];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node19.html"><span class='visited with_tooltip'>J_19<span class='tooltip'>node19 preds:16 succs:17 18 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:17 succs:21 exn:41 Instructions
+n$38=*&amp;this:com.stn.helpers.FacultateHelper* [line 158];
+n$39=*n$38.resultSet:java.sql.ResultSet*(root com.stn.helpers.FacultateHelper) [line 158];
+_=*n$39:java.sql.ResultSet*(root java.sql.ResultSet) [line 158];
+n$41=_fun_int ResultSet.getInt(int)(n$39:java.sql.ResultSet*,1:int) interface virtual [line 158];
+*&amp;$irvar8:int=n$41 [line 158];
+EXIT_SCOPE(_,n$38,n$39,n$41); [line 158];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:41 Instructions
+n$42=*&amp;this:com.stn.helpers.FacultateHelper* [line 158];
+n$43=*n$42.resultSet:java.sql.ResultSet*(root com.stn.helpers.FacultateHelper) [line 158];
+_=*n$43:java.sql.ResultSet*(root java.sql.ResultSet) [line 158];
+n$45=_fun_String ResultSet.getString(int)(n$43:java.sql.ResultSet*,2:int) interface virtual [line 158];
+*&amp;$irvar9:java.lang.String*=n$45 [line 158];
+EXIT_SCOPE(_,n$42,n$43,n$45); [line 158];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:41 Instructions
+n$46=*&amp;this:com.stn.helpers.FacultateHelper* [line 158];
+n$47=*n$46.resultSet:java.sql.ResultSet*(root com.stn.helpers.FacultateHelper) [line 158];
+_=*n$47:java.sql.ResultSet*(root java.sql.ResultSet) [line 158];
+n$49=_fun_int ResultSet.getInt(int)(n$47:java.sql.ResultSet*,3:int) interface virtual [line 158];
+*&amp;$irvar10:int=n$49 [line 158];
+EXIT_SCOPE(_,n$46,n$47,n$49); [line 158];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:41 Instructions
+n$50=_fun___new(sizeof(t=com.stn.pojo.Grupa):com.stn.pojo.Grupa*) [line 158];
+n$51=*&amp;$irvar8:int [line 158];
+n$52=*&amp;$irvar9:java.lang.String* [line 158];
+n$53=*&amp;$irvar10:int [line 158];
+n$54=_fun_Grupa.&lt;init&gt;(int,String,int)(n$50:com.stn.pojo.Grupa*,n$51:int,n$52:java.lang.String*,n$53:int) [line 158];
+*&amp;$irvar11:com.stn.pojo.Grupa*=n$50 [line 158];
+NULLIFY(&amp;$irvar9); [line 158];
+NULLIFY(&amp;$irvar10); [line 158];
+NULLIFY(&amp;$irvar8); [line 158];
+EXIT_SCOPE(n$50,n$51,n$52,n$53,n$54,$irvar9,$irvar10,$irvar8); [line 158];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:16 exn:41 Instructions
+n$55=*&amp;grupa:java.util.ArrayList* [line 158];
+_=*n$55:java.util.ArrayList*(root java.util.ArrayList) [line 158];
+n$57=*&amp;$irvar11:com.stn.pojo.Grupa* [line 158];
+n$58=_fun_boolean ArrayList.add(Object)(n$55:java.util.ArrayList*,n$57:com.stn.pojo.Grupa*) interface virtual [line 158];
+*&amp;$irvar12:_Bool=n$58 [line 158];
+NULLIFY(&amp;$irvar12); [line 158];
+NULLIFY(&amp;$irvar11); [line 158];
+EXIT_SCOPE(_,n$55,n$57,n$58,$irvar12,$irvar11); [line 158];
+APPLY_ABSTRACTION; [line 158];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node25.html"><span class='visited with_tooltip'>C_25<span class='tooltip'>node25 preds:18 succs:27 exn:3 Conditional method_body
+n$59=*&amp;this:com.stn.helpers.FacultateHelper* [line 161];
+n$60=*n$59.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 161];
+PRUNE(!(n$60 == null), true); [line 161];
+EXIT_SCOPE(n$59,n$60); [line 161];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node26.html"><span class='visited with_tooltip'>C_26<span class='tooltip'>node26 preds:18 succs:28 29 exn:3 Conditional method_body
+n$59=*&amp;this:com.stn.helpers.FacultateHelper* [line 161];
+n$60=*n$59.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 161];
+PRUNE((n$60 == null), false); [line 161];
+EXIT_SCOPE(n$59,n$60); [line 161];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:25 succs:28 29 exn:3 Instructions
+n$61=*&amp;this:com.stn.helpers.FacultateHelper* [line 162];
+n$62=*n$61.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 162];
+n$65=_fun___set_mem_attribute(n$62:java.sql.PreparedStatement*) [line 162];
+_=*n$62:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 162];
+n$64=_fun_void PreparedStatement.close()(n$62:java.sql.PreparedStatement*) interface virtual [line 162];
+EXIT_SCOPE(_,n$61,n$62,n$64,n$65); [line 162];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node28.html"><span class='visited with_tooltip'>C_28<span class='tooltip'>node28 preds:27 26 succs:30 exn:3 Conditional method_body
+n$66=*&amp;this:com.stn.helpers.FacultateHelper* [line 163];
+n$67=*n$66.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 163];
+PRUNE(!(n$67 == null), true); [line 163];
+EXIT_SCOPE(n$66,n$67); [line 163];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node29.html"><span class='visited with_tooltip'>C_29<span class='tooltip'>node29 preds:27 26 succs:39 exn:3 Conditional method_body
+n$66=*&amp;this:com.stn.helpers.FacultateHelper* [line 163];
+n$67=*n$66.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 163];
+PRUNE((n$67 == null), false); [line 163];
+NULLIFY(&amp;this); [line 163];
+EXIT_SCOPE(n$66,n$67,this); [line 163];
+APPLY_ABSTRACTION; [line 163];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:28 succs:39 exn:3 Instructions
+n$68=*&amp;this:com.stn.helpers.FacultateHelper* [line 164];
+n$69=*n$68.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 164];
+n$72=_fun___set_mem_attribute(n$69:java.sql.Connection*) [line 164];
+_=*n$69:java.sql.Connection*(root java.sql.Connection) [line 164];
+n$71=_fun_void Connection.close()(n$69:java.sql.Connection*) interface virtual [line 164];
+NULLIFY(&amp;this); [line 164];
+EXIT_SCOPE(_,n$68,n$69,n$71,n$72,this); [line 164];
+APPLY_ABSTRACTION; [line 164];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:40 succs:32 33 exn:3 Instructions
+n$73=*&amp;CatchVar163:java.lang.Object* [line 161];
+*&amp;$bcvar2:java.lang.Object*=n$73 [line 161];
+NULLIFY(&amp;CatchVar163); [line 161];
+EXIT_SCOPE(n$73,CatchVar163); [line 161];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:31 succs:34 exn:3 Conditional method_body
+n$74=*&amp;this:com.stn.helpers.FacultateHelper* [line 161];
+n$75=*n$74.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 161];
+PRUNE(!(n$75 == null), true); [line 161];
+EXIT_SCOPE(n$74,n$75); [line 161];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node33.html"><span class='visited with_tooltip'>C_33<span class='tooltip'>node33 preds:31 succs:35 36 exn:3 Conditional method_body
+n$74=*&amp;this:com.stn.helpers.FacultateHelper* [line 161];
+n$75=*n$74.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 161];
+PRUNE((n$75 == null), false); [line 161];
+EXIT_SCOPE(n$74,n$75); [line 161];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:32 succs:35 36 exn:3 Instructions
+n$76=*&amp;this:com.stn.helpers.FacultateHelper* [line 162];
+n$77=*n$76.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 162];
+n$80=_fun___set_mem_attribute(n$77:java.sql.PreparedStatement*) [line 162];
+_=*n$77:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 162];
+n$79=_fun_void PreparedStatement.close()(n$77:java.sql.PreparedStatement*) interface virtual [line 162];
+EXIT_SCOPE(_,n$76,n$77,n$79,n$80); [line 162];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node35.html"><span class='visited with_tooltip'>C_35<span class='tooltip'>node35 preds:34 33 succs:37 exn:3 Conditional method_body
+n$81=*&amp;this:com.stn.helpers.FacultateHelper* [line 163];
+n$82=*n$81.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 163];
+PRUNE(!(n$82 == null), true); [line 163];
+EXIT_SCOPE(n$81,n$82); [line 163];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node36.html"><span class='visited with_tooltip'>C_36<span class='tooltip'>node36 preds:34 33 succs:38 exn:3 Conditional method_body
+n$81=*&amp;this:com.stn.helpers.FacultateHelper* [line 163];
+n$82=*n$81.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 163];
+PRUNE((n$82 == null), false); [line 163];
+NULLIFY(&amp;this); [line 163];
+EXIT_SCOPE(n$81,n$82,this); [line 163];
+APPLY_ABSTRACTION; [line 163];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:35 succs:38 exn:3 Instructions
+n$83=*&amp;this:com.stn.helpers.FacultateHelper* [line 164];
+n$84=*n$83.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 164];
+n$87=_fun___set_mem_attribute(n$84:java.sql.Connection*) [line 164];
+_=*n$84:java.sql.Connection*(root java.sql.Connection) [line 164];
+n$86=_fun_void Connection.close()(n$84:java.sql.Connection*) interface virtual [line 164];
+NULLIFY(&amp;this); [line 164];
+EXIT_SCOPE(_,n$83,n$84,n$86,n$87,this); [line 164];
+APPLY_ABSTRACTION; [line 164];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:37 36 succs:2 exn:3 Instructions
+n$88=*&amp;$bcvar2:java.lang.Object* [line 165];
+*&amp;return:java.util.List*=EXN n$88 [line 165];
+NULLIFY(&amp;$bcvar2); [line 165];
+EXIT_SCOPE(n$88,$bcvar2); [line 165];
+APPLY_ABSTRACTION; [line 165];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:30 29 succs:2 exn:3 Instructions
+n$89=*&amp;grupa:java.util.ArrayList* [line 167];
+*&amp;return:java.util.List*=n$89 [line 167];
+NULLIFY(&amp;grupa); [line 167];
+EXIT_SCOPE(n$89,grupa); [line 167];
+APPLY_ABSTRACTION; [line 167];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:41 succs:31 exn:3 Instructions
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.getGrupe%28%29%3Ajava.util.List.1581a0b5d6e8b7393c463433d11bc1db_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds: succs:40 exn:3 Instructions
+n$90=*&amp;return:java.util.List* [line 161];
+*&amp;return:java.util.List*=null [line 161];
+n$91=_fun___unwrap_exception(n$90:java.util.List*) [line 161];
+NULLIFY(&amp;$irvar3); [line 161];
+NULLIFY(&amp;$irvar9); [line 161];
+NULLIFY(&amp;$irvar5); [line 161];
+NULLIFY(&amp;grupa); [line 161];
+NULLIFY(&amp;$irvar4); [line 161];
+NULLIFY(&amp;$irvar7); [line 161];
+NULLIFY(&amp;$irvar6); [line 161];
+NULLIFY(&amp;$irvar11); [line 161];
+NULLIFY(&amp;$irvar10); [line 161];
+NULLIFY(&amp;$irvar8); [line 161];
+NULLIFY(&amp;$irvar1); [line 161];
+NULLIFY(&amp;$irvar2); [line 161];
+EXIT_SCOPE(n$90,n$91,$irvar3,$irvar9,$irvar5,grupa,$irvar4,$irvar7,$irvar6,$irvar11,$irvar10,$irvar8,$irvar1,$irvar2); [line 161];
+</span></span></a><br />@
+
+<span class='color_black'>java.util.List* List FacultateHelper.getGrupe()(com.stn.helpers.FacultateHelper* this)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { @val$0 -> { connection -> (Footprint({ @val$0.dbUser,
+                                                   @val$0.dbPort*,
+                                                   @val$0.dbPassword,
+                                                   @val$0.dbName*,
+                                                   @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        preparedStatement -> (Footprint({ @val$0.dbUser,
+                                                          @val$0.dbPort*,
+                                                          @val$0.dbPassword,
+                                                          @val$0.dbName*,
+                                                          @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        query -> { },
+                        resultSet -> ({ Other(ResultSet PreparedStatement.executeQuery() at line 156) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *) },
+            return -> ({ Other(ResultSet PreparedStatement.executeQuery() at line 156) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *) }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= List FacultateHelper.getGrupe()
+; translation_unit= src/main/java/com/stn/helpers/FacultateHelper.java
+; access= Public
+; exceptions= [java.lang.ClassNotFoundException;  java.sql.SQLException]
+; formals= [(this,com.stn.helpers.FacultateHelper*)]
+; is_defined= true
+; loc= src/main/java/com/stn/helpers/FacultateHelper.java:146
+; locals= [{ name= $bcvar2; typ= void; modify_in_block= false }; 
+           { name= CatchVar163; typ= void; modify_in_block= false }; 
+           { name= $irvar12; typ= void; modify_in_block= false }; 
+           { name= $irvar11; typ= void; modify_in_block= false }; 
+           { name= $irvar10; typ= void; modify_in_block= false }; 
+           { name= $irvar9; typ= void; modify_in_block= false }; 
+           { name= $irvar8; typ= void; modify_in_block= false }; 
+           { name= $irvar7; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= grupa; typ= java.util.List*; modify_in_block= false }]
+; ret_type= java.util.List* 
+; proc_id= com.stn.helpers.FacultateHelper.getGrupe():java.util.List }</pre>
+</body>
+</html>

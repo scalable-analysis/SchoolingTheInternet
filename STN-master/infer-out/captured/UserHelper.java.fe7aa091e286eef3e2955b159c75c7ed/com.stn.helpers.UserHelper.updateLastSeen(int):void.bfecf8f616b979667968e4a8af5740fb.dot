@@ -1,0 +1,343 @@
+/* @generated */
+digraph cfg {
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_1" [label="1: Start void UserHelper.updateLastSeen(int)\nFormals:  this:com.stn.helpers.UserHelper* id:int\nLocals:  CatchVar226:void $bcvar4:void CatchVar189:void CatchVar181:void CatchVar141:void CatchVar133:void $irvar8:void $irvar7:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void date:java.sql.Timestamp* e:java.sql.SQLException* \n  " color=yellow style=filled]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_1" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_4" ;
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_2" [label="2: Exit void UserHelper.updateLastSeen(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [label="3:  exceptions sink \n   NULLIFY(&CatchVar141); [line 510]\n  NULLIFY(&CatchVar226); [line 510]\n  NULLIFY(&CatchVar181); [line 510]\n  NULLIFY(&$bcvar4); [line 510]\n  NULLIFY(&$irvar0); [line 510]\n  NULLIFY(&$irvar1); [line 510]\n  NULLIFY(&CatchVar133); [line 510]\n  NULLIFY(&date); [line 510]\n  NULLIFY(&e); [line 510]\n  EXIT_SCOPE(n$108,CatchVar141,CatchVar226,CatchVar181,$bcvar4,$irvar0,$irvar1,CatchVar133,date,e); [line 510]\n  APPLY_ABSTRACTION; [line 510]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_2" ;
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_4" [label="4:  Call Date.<init>() \n   n$0=_fun___new(sizeof(t=java.util.Date):java.util.Date*) [line 487]\n  n$1=_fun_Date.<init>()(n$0:java.util.Date*) [line 487]\n  *&$irvar0:java.util.Date*=n$0 [line 487]\n  EXIT_SCOPE(n$0,n$1); [line 487]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_4" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_5" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_4" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_5" [label="5:  Call long Date.getTime() \n   n$2=*&$irvar0:java.util.Date* [line 487]\n  _=*n$2:java.util.Date*(root java.util.Date) [line 487]\n  n$4=_fun_long Date.getTime()(n$2:java.util.Date*) virtual [line 487]\n  *&$irvar1:long=n$4 [line 487]\n  NULLIFY(&$irvar0); [line 487]\n  EXIT_SCOPE(_,n$2,n$4,$irvar0); [line 487]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_5" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_6" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_5" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_6" [label="6:  Call Timestamp.<init>(long) \n   n$5=_fun___new(sizeof(t=java.sql.Timestamp):java.sql.Timestamp*) [line 487]\n  n$6=*&$irvar1:long [line 487]\n  n$7=_fun_Timestamp.<init>(long)(n$5:java.sql.Timestamp*,n$6:long) [line 487]\n  *&date:java.sql.Timestamp*=n$5 [line 487]\n  NULLIFY(&$irvar1); [line 487]\n  EXIT_SCOPE(n$5,n$6,n$7,$irvar1); [line 487]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_6" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_7" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_6" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_7" [label="7:  method_body \n   n$8=*&this:com.stn.helpers.UserHelper* [line 489]\n  *n$8.query:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=\"UPDATE users SET LastSeen = ? WHERE Id = ?\" [line 489]\n  EXIT_SCOPE(n$8); [line 489]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_7" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_8" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_7" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_8" [label="8:  Call Class Class.forName(String) \n   n$9=_fun_Class Class.forName(String)(\"com.mysql.jdbc.Driver\":java.lang.Object*) [line 492]\n  *&$irvar2:java.lang.Class*=n$9 [line 492]\n  NULLIFY(&$irvar2); [line 492]\n  EXIT_SCOPE(n$9,$irvar2); [line 492]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_8" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_9" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_8" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_56" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_9" [label="9:  Call String DBConnection.getHost() \n   n$10=*&this:com.stn.helpers.UserHelper* [line 493]\n  _=*n$10:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 493]\n  n$12=_fun_String DBConnection.getHost()(n$10:com.stn.helpers.UserHelper*) virtual [line 493]\n  *&$irvar3:java.lang.String*=n$12 [line 493]\n  EXIT_SCOPE(_,n$10,n$12); [line 493]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_9" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_10" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_9" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_56" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_10" [label="10:  Call String DBConnection.getUser() \n   n$13=*&this:com.stn.helpers.UserHelper* [line 493]\n  _=*n$13:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 493]\n  n$15=_fun_String DBConnection.getUser()(n$13:com.stn.helpers.UserHelper*) virtual [line 493]\n  *&$irvar4:java.lang.String*=n$15 [line 493]\n  EXIT_SCOPE(_,n$13,n$15); [line 493]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_10" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_11" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_10" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_56" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_11" [label="11:  Call String DBConnection.getPassword() \n   n$16=*&this:com.stn.helpers.UserHelper* [line 493]\n  _=*n$16:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 493]\n  n$18=_fun_String DBConnection.getPassword()(n$16:com.stn.helpers.UserHelper*) virtual [line 493]\n  *&$irvar5:java.lang.String*=n$18 [line 493]\n  EXIT_SCOPE(_,n$16,n$18); [line 493]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_11" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_12" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_11" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_56" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_12" [label="12:  Call Connection DriverManager.getConnection(String,String,String) \n   n$19=*&$irvar3:java.lang.String* [line 493]\n  n$20=*&$irvar4:java.lang.String* [line 493]\n  n$21=*&$irvar5:java.lang.String* [line 493]\n  n$22=_fun_Connection DriverManager.getConnection(String,String,String)(n$19:java.lang.String*,n$20:java.lang.String*,n$21:java.lang.String*) [line 493]\n  *&$irvar6:java.sql.Connection*=n$22 [line 493]\n  NULLIFY(&$irvar3); [line 493]\n  NULLIFY(&$irvar5); [line 493]\n  NULLIFY(&$irvar4); [line 493]\n  EXIT_SCOPE(n$19,n$20,n$21,n$22,$irvar3,$irvar5,$irvar4); [line 493]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_12" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_13" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_12" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_56" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_13" [label="13:  method_body \n   n$23=*&this:com.stn.helpers.UserHelper* [line 493]\n  n$24=*&$irvar6:java.sql.Connection* [line 493]\n  *n$23.connection:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$24 [line 493]\n  NULLIFY(&$irvar6); [line 493]\n  EXIT_SCOPE(n$23,n$24,$irvar6); [line 493]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_13" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_14" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_13" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_56" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_14" [label="14:  Call PreparedStatement Connection.prepareStatement(String) \n   n$25=*&this:com.stn.helpers.UserHelper* [line 494]\n  n$26=*n$25.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 494]\n  _=*n$26:java.sql.Connection*(root java.sql.Connection) [line 494]\n  n$28=*&this:com.stn.helpers.UserHelper* [line 494]\n  n$29=*n$28.query:java.lang.String*(root com.stn.helpers.UserHelper) [line 494]\n  n$30=_fun_PreparedStatement Connection.prepareStatement(String)(n$26:java.sql.Connection*,n$29:java.lang.String*) interface virtual [line 494]\n  *&$irvar7:java.sql.PreparedStatement*=n$30 [line 494]\n  EXIT_SCOPE(_,n$25,n$26,n$28,n$29,n$30); [line 494]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_14" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_15" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_14" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_56" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_15" [label="15:  method_body \n   n$31=*&this:com.stn.helpers.UserHelper* [line 494]\n  n$32=*&$irvar7:java.sql.PreparedStatement* [line 494]\n  *n$31.preparedStatement:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$32 [line 494]\n  NULLIFY(&$irvar7); [line 494]\n  EXIT_SCOPE(n$31,n$32,$irvar7); [line 494]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_15" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_16" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_15" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_56" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_16" [label="16:  Call void PreparedStatement.setTimestamp(int,Timestamp) \n   n$33=*&this:com.stn.helpers.UserHelper* [line 495]\n  n$34=*n$33.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 495]\n  _=*n$34:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 495]\n  n$36=*&date:java.sql.Timestamp* [line 495]\n  n$37=_fun_void PreparedStatement.setTimestamp(int,Timestamp)(n$34:java.sql.PreparedStatement*,1:int,n$36:java.sql.Timestamp*) interface virtual [line 495]\n  NULLIFY(&date); [line 495]\n  EXIT_SCOPE(_,n$33,n$34,n$36,n$37,date); [line 495]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_16" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_17" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_16" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_56" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_17" [label="17:  Call void PreparedStatement.setInt(int,int) \n   n$38=*&this:com.stn.helpers.UserHelper* [line 496]\n  n$39=*n$38.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 496]\n  _=*n$39:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 496]\n  n$41=*&id:int [line 496]\n  n$42=_fun_void PreparedStatement.setInt(int,int)(n$39:java.sql.PreparedStatement*,2:int,n$41:int) interface virtual [line 496]\n  NULLIFY(&id); [line 496]\n  EXIT_SCOPE(_,n$38,n$39,n$41,n$42,id); [line 496]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_17" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_18" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_17" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_56" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_18" [label="18:  Call int PreparedStatement.executeUpdate() \n   n$43=*&this:com.stn.helpers.UserHelper* [line 497]\n  n$44=*n$43.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 497]\n  _=*n$44:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 497]\n  n$46=_fun_int PreparedStatement.executeUpdate()(n$44:java.sql.PreparedStatement*) interface virtual [line 497]\n  *&$irvar8:int=n$46 [line 497]\n  NULLIFY(&$irvar8); [line 497]\n  EXIT_SCOPE(_,n$43,n$44,n$46,$irvar8); [line 497]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_18" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_19" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_18" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_20" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_18" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_56" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_19" [label="19: Prune (true branch, if) \n   n$47=*&this:com.stn.helpers.UserHelper* [line 502]\n  n$48=*n$47.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 502]\n  PRUNE(!(n$48 == null), true); [line 502]\n  EXIT_SCOPE(n$47,n$48); [line 502]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_19" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_21" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_19" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_59" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_20" [label="20: Prune (false branch, if) \n   n$47=*&this:com.stn.helpers.UserHelper* [line 502]\n  n$48=*n$47.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 502]\n  PRUNE((n$48 == null), false); [line 502]\n  EXIT_SCOPE(n$47,n$48); [line 502]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_20" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_22" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_20" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_23" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_20" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_59" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_21" [label="21:  Call void PreparedStatement.close() \n   n$49=*&this:com.stn.helpers.UserHelper* [line 503]\n  n$50=*n$49.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 503]\n  n$53=_fun___set_mem_attribute(n$50:java.sql.PreparedStatement*) [line 503]\n  _=*n$50:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 503]\n  n$52=_fun_void PreparedStatement.close()(n$50:java.sql.PreparedStatement*) interface virtual [line 503]\n  EXIT_SCOPE(_,n$49,n$50,n$52,n$53); [line 503]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_21" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_22" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_21" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_23" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_21" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_59" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_22" [label="22: Prune (true branch, if) \n   n$54=*&this:com.stn.helpers.UserHelper* [line 504]\n  n$55=*n$54.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 504]\n  PRUNE(!(n$55 == null), true); [line 504]\n  EXIT_SCOPE(n$54,n$55); [line 504]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_22" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_24" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_22" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_59" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_23" [label="23: Prune (false branch, if) \n   n$54=*&this:com.stn.helpers.UserHelper* [line 504]\n  n$55=*n$54.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 504]\n  PRUNE((n$55 == null), false); [line 504]\n  NULLIFY(&this); [line 504]\n  EXIT_SCOPE(n$54,n$55,this); [line 504]\n  APPLY_ABSTRACTION; [line 504]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_23" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_47" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_23" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_59" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_24" [label="24:  Call void Connection.close() \n   n$56=*&this:com.stn.helpers.UserHelper* [line 505]\n  n$57=*n$56.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 505]\n  n$60=_fun___set_mem_attribute(n$57:java.sql.Connection*) [line 505]\n  _=*n$57:java.sql.Connection*(root java.sql.Connection) [line 505]\n  n$59=_fun_void Connection.close()(n$57:java.sql.Connection*) interface virtual [line 505]\n  NULLIFY(&this); [line 505]\n  EXIT_SCOPE(_,n$56,n$57,n$59,n$60,this); [line 505]\n  APPLY_ABSTRACTION; [line 505]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_24" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_47" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_24" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_59" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_25" [label="25:  method_body \n   n$61=*&CatchVar133:java.lang.Object* [line 506]\n  *&e:java.lang.Object*=n$61 [line 506]\n  NULLIFY(&CatchVar133); [line 506]\n  EXIT_SCOPE(n$61,CatchVar133); [line 506]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_25" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_26" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_25" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_26" [label="26:  Call void Throwable.printStackTrace() \n   n$62=*&e:java.lang.Object* [line 507]\n  _=*n$62:java.lang.Object*(root java.lang.Object) [line 507]\n  n$64=_fun_void Throwable.printStackTrace()(n$62:java.lang.Object*) virtual [line 507]\n  NULLIFY(&e); [line 507]\n  EXIT_SCOPE(_,n$62,n$64,e); [line 507]\n  APPLY_ABSTRACTION; [line 507]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_26" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_47" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_26" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_27" [label="27:  method_body \n   n$65=*&CatchVar141:java.lang.Object* [line 498]\n  *&e:java.lang.Object*=n$65 [line 498]\n  NULLIFY(&CatchVar141); [line 498]\n  EXIT_SCOPE(n$65,CatchVar141); [line 498]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_27" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_28" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_27" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_61" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_28" [label="28:  Call void Throwable.printStackTrace() \n   n$66=*&e:java.lang.Object* [line 499]\n  _=*n$66:java.lang.Object*(root java.lang.Object) [line 499]\n  n$68=_fun_void Throwable.printStackTrace()(n$66:java.lang.Object*) virtual [line 499]\n  NULLIFY(&e); [line 499]\n  EXIT_SCOPE(_,n$66,n$68,e); [line 499]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_28" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_29" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_28" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_30" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_28" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_61" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_29" [label="29: Prune (true branch, if) \n   n$69=*&this:com.stn.helpers.UserHelper* [line 502]\n  n$70=*n$69.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 502]\n  PRUNE(!(n$70 == null), true); [line 502]\n  EXIT_SCOPE(n$69,n$70); [line 502]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_29" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_31" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_29" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_66" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_30" [label="30: Prune (false branch, if) \n   n$69=*&this:com.stn.helpers.UserHelper* [line 502]\n  n$70=*n$69.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 502]\n  PRUNE((n$70 == null), false); [line 502]\n  EXIT_SCOPE(n$69,n$70); [line 502]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_30" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_32" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_30" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_33" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_30" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_66" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_31" [label="31:  Call void PreparedStatement.close() \n   n$71=*&this:com.stn.helpers.UserHelper* [line 503]\n  n$72=*n$71.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 503]\n  n$75=_fun___set_mem_attribute(n$72:java.sql.PreparedStatement*) [line 503]\n  _=*n$72:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 503]\n  n$74=_fun_void PreparedStatement.close()(n$72:java.sql.PreparedStatement*) interface virtual [line 503]\n  EXIT_SCOPE(_,n$71,n$72,n$74,n$75); [line 503]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_31" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_32" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_31" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_33" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_31" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_66" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_32" [label="32: Prune (true branch, if) \n   n$76=*&this:com.stn.helpers.UserHelper* [line 504]\n  n$77=*n$76.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 504]\n  PRUNE(!(n$77 == null), true); [line 504]\n  EXIT_SCOPE(n$76,n$77); [line 504]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_32" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_34" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_32" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_66" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_33" [label="33: Prune (false branch, if) \n   n$76=*&this:com.stn.helpers.UserHelper* [line 504]\n  n$77=*n$76.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 504]\n  PRUNE((n$77 == null), false); [line 504]\n  NULLIFY(&this); [line 504]\n  EXIT_SCOPE(n$76,n$77,this); [line 504]\n  APPLY_ABSTRACTION; [line 504]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_33" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_47" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_33" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_66" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_34" [label="34:  Call void Connection.close() \n   n$78=*&this:com.stn.helpers.UserHelper* [line 505]\n  n$79=*n$78.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 505]\n  n$82=_fun___set_mem_attribute(n$79:java.sql.Connection*) [line 505]\n  _=*n$79:java.sql.Connection*(root java.sql.Connection) [line 505]\n  n$81=_fun_void Connection.close()(n$79:java.sql.Connection*) interface virtual [line 505]\n  NULLIFY(&this); [line 505]\n  EXIT_SCOPE(_,n$78,n$79,n$81,n$82,this); [line 505]\n  APPLY_ABSTRACTION; [line 505]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_34" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_47" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_34" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_66" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_35" [label="35:  method_body \n   n$83=*&CatchVar181:java.lang.Object* [line 506]\n  *&e:java.lang.Object*=n$83 [line 506]\n  NULLIFY(&CatchVar181); [line 506]\n  EXIT_SCOPE(n$83,CatchVar181); [line 506]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_35" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_36" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_35" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_36" [label="36:  Call void Throwable.printStackTrace() \n   n$84=*&e:java.lang.Object* [line 507]\n  _=*n$84:java.lang.Object*(root java.lang.Object) [line 507]\n  n$86=_fun_void Throwable.printStackTrace()(n$84:java.lang.Object*) virtual [line 507]\n  NULLIFY(&e); [line 507]\n  EXIT_SCOPE(_,n$84,n$86,e); [line 507]\n  APPLY_ABSTRACTION; [line 507]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_36" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_47" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_36" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_37" [label="37:  method_body \n   n$87=*&CatchVar189:java.lang.Object* [line 501]\n  *&$bcvar4:java.lang.Object*=n$87 [line 501]\n  EXIT_SCOPE(n$87); [line 501]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_37" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_38" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_37" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_39" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_37" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_63" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_38" [label="38: Prune (true branch, if) \n   n$88=*&this:com.stn.helpers.UserHelper* [line 502]\n  n$89=*n$88.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 502]\n  PRUNE(!(n$89 == null), true); [line 502]\n  EXIT_SCOPE(n$88,n$89); [line 502]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_38" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_40" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_38" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_50" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_39" [label="39: Prune (false branch, if) \n   n$88=*&this:com.stn.helpers.UserHelper* [line 502]\n  n$89=*n$88.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 502]\n  PRUNE((n$89 == null), false); [line 502]\n  EXIT_SCOPE(n$88,n$89); [line 502]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_39" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_41" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_39" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_42" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_39" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_50" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_40" [label="40:  Call void PreparedStatement.close() \n   n$90=*&this:com.stn.helpers.UserHelper* [line 503]\n  n$91=*n$90.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 503]\n  n$94=_fun___set_mem_attribute(n$91:java.sql.PreparedStatement*) [line 503]\n  _=*n$91:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 503]\n  n$93=_fun_void PreparedStatement.close()(n$91:java.sql.PreparedStatement*) interface virtual [line 503]\n  EXIT_SCOPE(_,n$90,n$91,n$93,n$94); [line 503]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_40" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_41" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_40" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_42" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_40" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_50" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_41" [label="41: Prune (true branch, if) \n   n$95=*&this:com.stn.helpers.UserHelper* [line 504]\n  n$96=*n$95.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 504]\n  PRUNE(!(n$96 == null), true); [line 504]\n  EXIT_SCOPE(n$95,n$96); [line 504]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_41" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_43" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_41" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_50" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_42" [label="42: Prune (false branch, if) \n   n$95=*&this:com.stn.helpers.UserHelper* [line 504]\n  n$96=*n$95.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 504]\n  PRUNE((n$96 == null), false); [line 504]\n  NULLIFY(&this); [line 504]\n  EXIT_SCOPE(n$95,n$96,this); [line 504]\n  APPLY_ABSTRACTION; [line 504]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_42" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_46" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_42" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_50" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_43" [label="43:  Call void Connection.close() \n   n$97=*&this:com.stn.helpers.UserHelper* [line 505]\n  n$98=*n$97.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 505]\n  n$101=_fun___set_mem_attribute(n$98:java.sql.Connection*) [line 505]\n  _=*n$98:java.sql.Connection*(root java.sql.Connection) [line 505]\n  n$100=_fun_void Connection.close()(n$98:java.sql.Connection*) interface virtual [line 505]\n  NULLIFY(&this); [line 505]\n  EXIT_SCOPE(_,n$97,n$98,n$100,n$101,this); [line 505]\n  APPLY_ABSTRACTION; [line 505]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_43" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_46" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_43" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_50" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_44" [label="44:  method_body \n   n$102=*&CatchVar226:java.lang.Object* [line 506]\n  *&e:java.lang.Object*=n$102 [line 506]\n  NULLIFY(&CatchVar226); [line 506]\n  EXIT_SCOPE(n$102,CatchVar226); [line 506]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_44" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_45" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_44" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_45" [label="45:  Call void Throwable.printStackTrace() \n   n$103=*&e:java.lang.Object* [line 507]\n  _=*n$103:java.lang.Object*(root java.lang.Object) [line 507]\n  n$105=_fun_void Throwable.printStackTrace()(n$103:java.lang.Object*) virtual [line 507]\n  NULLIFY(&e); [line 507]\n  EXIT_SCOPE(_,n$103,n$105,e); [line 507]\n  APPLY_ABSTRACTION; [line 507]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_45" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_46" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_45" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_46" [label="46:  throw \n   n$106=*&$bcvar4:java.lang.Object* [line 509]\n  *&return:void=EXN n$106 [line 509]\n  NULLIFY(&$bcvar4); [line 509]\n  EXIT_SCOPE(n$106,$bcvar4); [line 509]\n  APPLY_ABSTRACTION; [line 509]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_46" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_2" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_46" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_47" [label="47:  method_body \n   APPLY_ABSTRACTION; [line 510]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_47" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_2" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_47" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_48" [label="48: Prune (true branch, switch) \n   n$109=_fun___instanceof(n$108:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 506]\n  PRUNE(n$109, true); [line 506]\n  *&CatchVar226:void=n$108 [line 506]\n  EXIT_SCOPE(n$108,n$109); [line 506]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_48" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_44" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_48" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_49" [label="49: Prune (false branch, switch) \n   n$109=_fun___instanceof(n$108:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 506]\n  PRUNE(!n$109, false); [line 506]\n  *&return:void=EXN n$108 [line 506]\n  NULLIFY(&$bcvar4); [line 506]\n  EXIT_SCOPE(n$108,n$109,$bcvar4); [line 506]\n  APPLY_ABSTRACTION; [line 506]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_49" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_49" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_50" [label="50:  exception handler \n   n$107=*&return:void [line 506]\n  *&return:void=null [line 506]\n  n$108=_fun___unwrap_exception(n$107:void) [line 506]\n  EXIT_SCOPE(n$107); [line 506]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_50" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_48" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_50" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_49" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_50" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_51" [label="51:  Finally branch \n   APPLY_ABSTRACTION; [line 501]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_51" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_37" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_51" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_52" [label="52: Prune (true branch, switch) \n   n$110=_fun___instanceof(n$108:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 498]\n  PRUNE(n$110, true); [line 498]\n  *&CatchVar141:void=n$108 [line 498]\n  EXIT_SCOPE(n$108,n$110); [line 498]\n  APPLY_ABSTRACTION; [line 498]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_52" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_27" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_52" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_53" [label="53: Prune (false branch, switch) \n   n$110=_fun___instanceof(n$108:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 498]\n  PRUNE(!n$110, false); [line 498]\n  EXIT_SCOPE(n$108,n$110); [line 498]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_53" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_51" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_53" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_54" [label="54: Prune (true branch, switch) \n   n$111=_fun___instanceof(n$108:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 498]\n  PRUNE(n$111, true); [line 498]\n  *&CatchVar141:void=n$108 [line 498]\n  EXIT_SCOPE(n$108,n$111); [line 498]\n  APPLY_ABSTRACTION; [line 498]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_54" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_27" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_54" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_55" [label="55: Prune (false branch, switch) \n   n$111=_fun___instanceof(n$108:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 498]\n  PRUNE(!n$111, false); [line 498]\n  EXIT_SCOPE(n$111); [line 498]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_55" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_52" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_55" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_53" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_55" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_56" [label="56:  exception handler \n   n$107=*&return:void [line 498]\n  *&return:void=null [line 498]\n  n$108=_fun___unwrap_exception(n$107:void) [line 498]\n  NULLIFY(&$irvar3); [line 498]\n  NULLIFY(&$irvar5); [line 498]\n  NULLIFY(&$irvar4); [line 498]\n  NULLIFY(&$irvar7); [line 498]\n  NULLIFY(&$irvar6); [line 498]\n  NULLIFY(&date); [line 498]\n  EXIT_SCOPE(n$107,$irvar3,$irvar5,$irvar4,$irvar7,$irvar6,date); [line 498]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_56" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_54" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_56" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_55" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_56" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_57" [label="57: Prune (true branch, switch) \n   n$112=_fun___instanceof(n$108:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 506]\n  PRUNE(n$112, true); [line 506]\n  *&CatchVar133:void=n$108 [line 506]\n  EXIT_SCOPE(n$108,n$112); [line 506]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_57" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_25" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_57" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_58" [label="58: Prune (false branch, switch) \n   n$112=_fun___instanceof(n$108:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 506]\n  PRUNE(!n$112, false); [line 506]\n  *&return:void=EXN n$108 [line 506]\n  EXIT_SCOPE(n$108,n$112); [line 506]\n  APPLY_ABSTRACTION; [line 506]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_58" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_58" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_59" [label="59:  exception handler \n   n$107=*&return:void [line 506]\n  *&return:void=null [line 506]\n  n$108=_fun___unwrap_exception(n$107:void) [line 506]\n  EXIT_SCOPE(n$107); [line 506]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_59" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_57" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_59" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_58" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_59" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_60" [label="60:  Finally branch \n   APPLY_ABSTRACTION; [line 501]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_60" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_37" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_60" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_61" [label="61:  exception handler \n   n$107=*&return:void [line 501]\n  *&return:void=null [line 501]\n  n$108=_fun___unwrap_exception(n$107:void) [line 501]\n  NULLIFY(&e); [line 501]\n  EXIT_SCOPE(n$107,n$108,e); [line 501]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_61" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_60" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_61" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_62" [label="62:  Finally branch \n   APPLY_ABSTRACTION; [line 501]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_62" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_37" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_62" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_63" [label="63:  exception handler \n   n$107=*&return:void [line 501]\n  *&return:void=null [line 501]\n  n$108=_fun___unwrap_exception(n$107:void) [line 501]\n  NULLIFY(&$bcvar4); [line 501]\n  EXIT_SCOPE(n$107,n$108,$bcvar4); [line 501]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_63" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_62" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_63" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_64" [label="64: Prune (true branch, switch) \n   n$113=_fun___instanceof(n$108:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 506]\n  PRUNE(n$113, true); [line 506]\n  *&CatchVar181:void=n$108 [line 506]\n  EXIT_SCOPE(n$108,n$113); [line 506]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_64" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_35" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_64" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_65" [label="65: Prune (false branch, switch) \n   n$113=_fun___instanceof(n$108:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 506]\n  PRUNE(!n$113, false); [line 506]\n  *&return:void=EXN n$108 [line 506]\n  EXIT_SCOPE(n$108,n$113); [line 506]\n  APPLY_ABSTRACTION; [line 506]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_65" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_65" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+"com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_66" [label="66:  exception handler \n   n$107=*&return:void [line 506]\n  *&return:void=null [line 506]\n  n$108=_fun___unwrap_exception(n$107:void) [line 506]\n  EXIT_SCOPE(n$107); [line 506]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_66" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_64" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_66" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_65" ;
+	 "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_66" -> "com.stn.helpers.UserHelper.updateLastSeen(int):void.bfecf8f616b979667968e4a8af5740fb_3" [color="red" ];
+}

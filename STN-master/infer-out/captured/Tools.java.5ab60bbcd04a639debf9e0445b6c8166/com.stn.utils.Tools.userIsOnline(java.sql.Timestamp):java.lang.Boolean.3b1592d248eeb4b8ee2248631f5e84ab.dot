@@ -1,0 +1,70 @@
+/* @generated */
+digraph cfg {
+"com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_1" [label="1: Start Boolean Tools.userIsOnline(Timestamp)\nFormals:  this:com.stn.utils.Tools* lastSeen:java.sql.Timestamp*\nLocals:  $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void current:java.sql.Timestamp* timeout:long \n  " color=yellow style=filled]
+	
+
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_1" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_4" ;
+"com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_2" [label="2: Exit Boolean Tools.userIsOnline(Timestamp) \n  " color=yellow style=filled]
+	
+
+"com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_3" [label="3:  exceptions sink \n   NULLIFY(&current); [line 47]\n  NULLIFY(&$irvar3); [line 47]\n  NULLIFY(&$irvar4); [line 47]\n  NULLIFY(&timeout); [line 47]\n  NULLIFY(&$irvar0); [line 47]\n  NULLIFY(&$irvar1); [line 47]\n  NULLIFY(&$irvar2); [line 47]\n  EXIT_SCOPE(current,$irvar3,$irvar4,timeout,$irvar0,$irvar1,$irvar2); [line 47]\n  APPLY_ABSTRACTION; [line 47]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_3" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_2" ;
+"com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_4" [label="4:  method_body \n   *&timeout:long=300000 [line 41]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_4" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_5" ;
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_4" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_3" [color="red" ];
+"com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_5" [label="5:  Call Date.<init>() \n   n$0=_fun___new(sizeof(t=java.util.Date):java.util.Date*) [line 42]\n  n$1=_fun_Date.<init>()(n$0:java.util.Date*) [line 42]\n  *&$irvar0:java.util.Date*=n$0 [line 42]\n  EXIT_SCOPE(n$0,n$1); [line 42]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_5" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_6" ;
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_5" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_3" [color="red" ];
+"com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_6" [label="6:  Call long Date.getTime() \n   n$2=*&$irvar0:java.util.Date* [line 42]\n  _=*n$2:java.util.Date*(root java.util.Date) [line 42]\n  n$4=_fun_long Date.getTime()(n$2:java.util.Date*) virtual [line 42]\n  *&$irvar1:long=n$4 [line 42]\n  NULLIFY(&$irvar0); [line 42]\n  EXIT_SCOPE(_,n$2,n$4,$irvar0); [line 42]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_6" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_7" ;
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_6" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_3" [color="red" ];
+"com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_7" [label="7:  Call Timestamp.<init>(long) \n   n$5=_fun___new(sizeof(t=java.sql.Timestamp):java.sql.Timestamp*) [line 42]\n  n$6=*&$irvar1:long [line 42]\n  n$7=*&timeout:long [line 42]\n  n$8=_fun_Timestamp.<init>(long)(n$5:java.sql.Timestamp*,(n$6 - n$7):long) [line 42]\n  *&current:java.sql.Timestamp*=n$5 [line 42]\n  NULLIFY(&timeout); [line 42]\n  NULLIFY(&$irvar1); [line 42]\n  EXIT_SCOPE(n$5,n$6,n$7,n$8,timeout,$irvar1); [line 42]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_7" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_8" ;
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_7" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_3" [color="red" ];
+"com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_8" [label="8:  Call boolean Timestamp.after(Timestamp) \n   n$9=*&lastSeen:java.sql.Timestamp* [line 44]\n  _=*n$9:java.sql.Timestamp*(root java.sql.Timestamp) [line 44]\n  n$11=*&current:java.sql.Timestamp* [line 44]\n  n$12=_fun_boolean Timestamp.after(Timestamp)(n$9:java.sql.Timestamp*,n$11:java.sql.Timestamp*) virtual [line 44]\n  *&$irvar2:_Bool=n$12 [line 44]\n  NULLIFY(&current); [line 44]\n  NULLIFY(&lastSeen); [line 44]\n  EXIT_SCOPE(_,n$9,n$11,n$12,current,lastSeen); [line 44]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_8" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_9" ;
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_8" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_10" ;
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_8" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_3" [color="red" ];
+"com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_9" [label="9: Prune (true branch, if) \n   n$13=*&$irvar2:_Bool [line 44]\n  PRUNE(!(n$13 == 0), true); [line 44]\n  NULLIFY(&$irvar2); [line 44]\n  EXIT_SCOPE(n$13,$irvar2); [line 44]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_9" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_11" ;
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_9" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_3" [color="red" ];
+"com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_10" [label="10: Prune (false branch, if) \n   n$13=*&$irvar2:_Bool [line 44]\n  PRUNE((n$13 == 0), false); [line 44]\n  NULLIFY(&$irvar2); [line 44]\n  EXIT_SCOPE(n$13,$irvar2); [line 44]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_10" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_13" ;
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_10" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_3" [color="red" ];
+"com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_11" [label="11:  Call Boolean Boolean.valueOf(boolean) \n   n$14=_fun_Boolean Boolean.valueOf(boolean)(1:int) [line 45]\n  *&$irvar3:java.lang.Boolean*=n$14 [line 45]\n  EXIT_SCOPE(n$14); [line 45]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_11" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_12" ;
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_11" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_3" [color="red" ];
+"com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_12" [label="12:  method_body \n   n$15=*&$irvar3:java.lang.Boolean* [line 45]\n  *&return:java.lang.Boolean*=n$15 [line 45]\n  NULLIFY(&$irvar3); [line 45]\n  EXIT_SCOPE(n$15,$irvar3); [line 45]\n  APPLY_ABSTRACTION; [line 45]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_12" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_2" ;
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_12" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_3" [color="red" ];
+"com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_13" [label="13:  Call Boolean Boolean.valueOf(boolean) \n   n$16=_fun_Boolean Boolean.valueOf(boolean)(0:int) [line 47]\n  *&$irvar4:java.lang.Boolean*=n$16 [line 47]\n  EXIT_SCOPE(n$16); [line 47]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_13" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_14" ;
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_13" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_3" [color="red" ];
+"com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_14" [label="14:  method_body \n   n$17=*&$irvar4:java.lang.Boolean* [line 47]\n  *&return:java.lang.Boolean*=n$17 [line 47]\n  NULLIFY(&$irvar4); [line 47]\n  EXIT_SCOPE(n$17,$irvar4); [line 47]\n  APPLY_ABSTRACTION; [line 47]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_14" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_2" ;
+	 "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_14" -> "com.stn.utils.Tools.userIsOnline(java.sql.Timestamp):java.lang.Boolean.3b1592d248eeb4b8ee2248631f5e84ab_3" [color="red" ];
+}

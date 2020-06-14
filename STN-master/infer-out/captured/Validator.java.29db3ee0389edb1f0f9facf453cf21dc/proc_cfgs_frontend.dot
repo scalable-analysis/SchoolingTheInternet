@@ -1,0 +1,342 @@
+/* @generated */
+digraph cfg {
+"com.stn.utils.Validator.<init>().27e854e078119e9faf9849443d98a945_1" [label="1: Start Validator.<init>()\nFormals:  this:com.stn.utils.Validator*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.utils.Validator.<init>().27e854e078119e9faf9849443d98a945_1" -> "com.stn.utils.Validator.<init>().27e854e078119e9faf9849443d98a945_4" ;
+"com.stn.utils.Validator.<init>().27e854e078119e9faf9849443d98a945_2" [label="2: Exit Validator.<init>() \n  " color=yellow style=filled]
+	
+
+"com.stn.utils.Validator.<init>().27e854e078119e9faf9849443d98a945_3" [label="3:  exceptions sink \n  " shape="box"]
+	
+
+	 "com.stn.utils.Validator.<init>().27e854e078119e9faf9849443d98a945_3" -> "com.stn.utils.Validator.<init>().27e854e078119e9faf9849443d98a945_2" ;
+"com.stn.utils.Validator.<init>().27e854e078119e9faf9849443d98a945_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.stn.utils.Validator* [line 9]\n  n$1=_fun_Object.<init>()(n$0:com.stn.utils.Validator*) [line 9]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.<init>().27e854e078119e9faf9849443d98a945_4" -> "com.stn.utils.Validator.<init>().27e854e078119e9faf9849443d98a945_5" ;
+	 "com.stn.utils.Validator.<init>().27e854e078119e9faf9849443d98a945_4" -> "com.stn.utils.Validator.<init>().27e854e078119e9faf9849443d98a945_3" [color="red" ];
+"com.stn.utils.Validator.<init>().27e854e078119e9faf9849443d98a945_5" [label="5:  method_body \n  " shape="box"]
+	
+
+	 "com.stn.utils.Validator.<init>().27e854e078119e9faf9849443d98a945_5" -> "com.stn.utils.Validator.<init>().27e854e078119e9faf9849443d98a945_2" ;
+	 "com.stn.utils.Validator.<init>().27e854e078119e9faf9849443d98a945_5" -> "com.stn.utils.Validator.<init>().27e854e078119e9faf9849443d98a945_3" [color="red" ];
+"com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_1" [label="1: Start boolean Validator.between(String,int,int)\nFormals:  word:java.lang.String* min:int max:int\nLocals:  $irvar1:void $irvar0:void \n  " color=yellow style=filled]
+	
+
+	 "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_1" -> "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_4" ;
+"com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_2" [label="2: Exit boolean Validator.between(String,int,int) \n  " color=yellow style=filled]
+	
+
+"com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_3" [label="3:  exceptions sink \n  " shape="box"]
+	
+
+	 "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_3" -> "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_2" ;
+"com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_4" [label="4:  Call int String.length() \n   n$0=*&word:java.lang.String* [line 46]\n  _=*n$0:java.lang.String*(root java.lang.String) [line 46]\n  n$2=_fun_int String.length()(n$0:java.lang.String*) virtual [line 46]\n  *&$irvar0:int=n$2 [line 46]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_4" -> "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_5" ;
+	 "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_4" -> "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_6" ;
+	 "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_4" -> "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_3" [color="red" ];
+"com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_5" [label="5: Prune (true branch, if) \n   n$3=*&$irvar0:int [line 46]\n  n$4=*&min:int [line 46]\n  PRUNE(!(n$3 < n$4), true); [line 46]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_5" -> "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_7" ;
+	 "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_5" -> "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_3" [color="red" ];
+"com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_6" [label="6: Prune (false branch, if) \n   n$3=*&$irvar0:int [line 46]\n  n$4=*&min:int [line 46]\n  PRUNE((n$3 < n$4), false); [line 46]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_6" -> "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_10" ;
+	 "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_6" -> "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_3" [color="red" ];
+"com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_7" [label="7:  Call int String.length() \n   n$5=*&word:java.lang.String* [line 46]\n  _=*n$5:java.lang.String*(root java.lang.String) [line 46]\n  n$7=_fun_int String.length()(n$5:java.lang.String*) virtual [line 46]\n  *&$irvar1:int=n$7 [line 46]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_7" -> "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_8" ;
+	 "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_7" -> "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_9" ;
+	 "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_7" -> "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_3" [color="red" ];
+"com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_8" [label="8: Prune (true branch, if) \n   n$8=*&$irvar1:int [line 46]\n  n$9=*&max:int [line 46]\n  PRUNE(!(n$8 <= n$9), true); [line 46]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_8" -> "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_10" ;
+	 "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_8" -> "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_3" [color="red" ];
+"com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_9" [label="9: Prune (false branch, if) \n   n$8=*&$irvar1:int [line 46]\n  n$9=*&max:int [line 46]\n  PRUNE((n$8 <= n$9), false); [line 46]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_9" -> "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_11" ;
+	 "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_9" -> "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_3" [color="red" ];
+"com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_10" [label="10:  method_body \n   *&return:_Bool=0 [line 47]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_10" -> "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_2" ;
+	 "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_10" -> "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_3" [color="red" ];
+"com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_11" [label="11:  method_body \n   *&return:_Bool=1 [line 49]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_11" -> "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_2" ;
+	 "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_11" -> "com.stn.utils.Validator.between(java.lang.String,int,int):boolean.bc200c801f07bac495c115a3672bd9c1_3" [color="red" ];
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_1" [label="1: Start boolean Validator.isEmail(String)\nFormals:  email:java.lang.String*\nLocals:  CatchVar16:void ex:java.lang.Exception* emailAddr:javax.mail.internet.InternetAddress* \n  " color=yellow style=filled]
+	
+
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_1" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_4" ;
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_2" [label="2: Exit boolean Validator.isEmail(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_3" [label="3:  exceptions sink \n  " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_3" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_2" ;
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_4" [label="4:  Call InternetAddress.<init>(String) \n   n$0=_fun___new(sizeof(t=javax.mail.internet.InternetAddress):javax.mail.internet.InternetAddress*) [line 13]\n  n$1=*&email:java.lang.String* [line 13]\n  n$2=_fun_InternetAddress.<init>(String)(n$0:javax.mail.internet.InternetAddress*,n$1:java.lang.String*) [line 13]\n  *&emailAddr:javax.mail.internet.InternetAddress*=n$0 [line 13]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_4" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_5" ;
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_4" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_11" [color="red" ];
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_5" [label="5:  Call void InternetAddress.validate() \n   n$3=*&emailAddr:javax.mail.internet.InternetAddress* [line 14]\n  _=*n$3:javax.mail.internet.InternetAddress*(root javax.mail.internet.InternetAddress) [line 14]\n  n$5=_fun_void InternetAddress.validate()(n$3:javax.mail.internet.InternetAddress*) virtual [line 14]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_5" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_8" ;
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_5" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_11" [color="red" ];
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_6" [label="6:  method_body \n   n$6=*&CatchVar16:java.lang.Object* [line 15]\n  *&ex:java.lang.Object*=n$6 [line 15]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_6" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_7" ;
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_6" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_3" [color="red" ];
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_7" [label="7:  method_body \n   *&return:_Bool=0 [line 16]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_7" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_2" ;
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_7" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_3" [color="red" ];
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_8" [label="8:  method_body \n   *&return:_Bool=1 [line 18]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_8" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_2" ;
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_8" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_3" [color="red" ];
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_9" [label="9: Prune (true branch, switch) \n   n$9=_fun___instanceof(n$8:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 15]\n  PRUNE(n$9, true); [line 15]\n  *&CatchVar16:_Bool=n$8 [line 15]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_9" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_6" ;
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_9" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_3" [color="red" ];
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_10" [label="10: Prune (false branch, switch) \n   n$9=_fun___instanceof(n$8:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 15]\n  PRUNE(!n$9, false); [line 15]\n  *&return:_Bool=EXN n$8 [line 15]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_10" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_3" ;
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_10" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_3" [color="red" ];
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_11" [label="11:  exception handler \n   n$7=*&return:_Bool [line 15]\n  *&return:_Bool=null [line 15]\n  n$8=_fun___unwrap_exception(n$7:_Bool) [line 15]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_11" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_9" ;
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_11" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_10" ;
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_11" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_3" [color="red" ];
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_1" [label="1: Start boolean Validator.isEmpty(String[])\nFormals:  args:java.lang.String*[_*_](*)\nLocals:  $irvar2:void $irvar1:void $irvar0:void $bcvar3:void $bcvar2:void $bcvar1:void arg:java.lang.String* \n  " color=yellow style=filled]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_1" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_4" ;
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_2" [label="2: Exit boolean Validator.isEmpty(String[]) \n  " color=yellow style=filled]
+	
+
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_3" [label="3:  exceptions sink \n  " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_3" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_2" ;
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_4" [label="4:  method_body \n   n$0=*&args:java.lang.String*[_*_](*) [line 22]\n  *&$bcvar1:java.lang.String*[_*_](*)=n$0 [line 22]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_4" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_5" ;
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_4" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_3" [color="red" ];
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_5" [label="5:  method_body \n   n$1=*&$bcvar1:java.lang.String*[_*_](*) [line 22]\n  _=*n$1:int(root java.lang.String*[_*_]) [line 22]\n  n$3=_fun___get_array_length(n$1:java.lang.String*[_*_](*)) [line 22]\n  *&$bcvar2:int=n$3 [line 22]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_5" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_6" ;
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_5" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_3" [color="red" ];
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_6" [label="6:  method_body \n   *&$bcvar3:int=0 [line 22]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_6" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_9" ;
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_6" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_3" [color="red" ];
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_7" [label="7: Prune (true branch, if) \n   n$4=*&$bcvar3:int [line 22]\n  n$5=*&$bcvar2:int [line 22]\n  PRUNE(!(n$4 >= n$5), true); [line 22]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_7" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_10" ;
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_7" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_3" [color="red" ];
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_8" [label="8: Prune (false branch, if) \n   n$4=*&$bcvar3:int [line 22]\n  n$5=*&$bcvar2:int [line 22]\n  PRUNE((n$4 >= n$5), false); [line 22]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_8" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_22" ;
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_8" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_3" [color="red" ];
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_9" [label="9: + \n  " ]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_9" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_7" ;
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_9" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_8" ;
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_10" [label="10:  method_body \n   n$6=*&$bcvar1:java.lang.String*[_*_](*) [line 22]\n  _=*n$6:java.lang.String*(root java.lang.String*[_*_]) [line 22]\n  n$7=*&$bcvar3:int [line 22]\n  n$9=*n$6[n$7]:java.lang.String* [line 22]\n  *&arg:java.lang.String*=n$9 [line 22]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_10" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_11" ;
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_10" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_3" [color="red" ];
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_11" [label="11:  Call boolean String.isEmpty() \n   n$10=*&arg:java.lang.String* [line 23]\n  _=*n$10:java.lang.String*(root java.lang.String) [line 23]\n  n$12=_fun_boolean String.isEmpty()(n$10:java.lang.String*) virtual [line 23]\n  *&$irvar0:_Bool=n$12 [line 23]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_11" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_14" ;
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_11" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_3" [color="red" ];
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_12" [label="12: Prune (true branch, if) \n   n$13=*&$irvar0:_Bool [line 23]\n  PRUNE(!(n$13 != 0), true); [line 23]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_12" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_15" ;
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_12" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_3" [color="red" ];
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_13" [label="13: Prune (false branch, if) \n   n$13=*&$irvar0:_Bool [line 23]\n  PRUNE((n$13 != 0), false); [line 23]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_13" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_20" ;
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_13" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_3" [color="red" ];
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_14" [label="14: + \n  " ]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_14" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_12" ;
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_14" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_13" ;
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_15" [label="15:  Call String String.trim() \n   n$14=*&arg:java.lang.String* [line 23]\n  _=*n$14:java.lang.String*(root java.lang.String) [line 23]\n  n$16=_fun_String String.trim()(n$14:java.lang.String*) virtual [line 23]\n  *&$irvar1:java.lang.String*=n$16 [line 23]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_15" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_16" ;
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_15" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_3" [color="red" ];
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_16" [label="16:  Call int String.length() \n   n$17=*&$irvar1:java.lang.String* [line 23]\n  _=*n$17:java.lang.String*(root java.lang.String) [line 23]\n  n$19=_fun_int String.length()(n$17:java.lang.String*) virtual [line 23]\n  *&$irvar2:int=n$19 [line 23]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_16" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_19" ;
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_16" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_3" [color="red" ];
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_17" [label="17: Prune (true branch, if) \n   n$20=*&$irvar2:int [line 23]\n  PRUNE(!(n$20 != 0), true); [line 23]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_17" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_20" ;
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_17" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_3" [color="red" ];
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_18" [label="18: Prune (false branch, if) \n   n$20=*&$irvar2:int [line 23]\n  PRUNE((n$20 != 0), false); [line 23]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_18" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_21" ;
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_18" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_3" [color="red" ];
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_19" [label="19: + \n  " ]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_19" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_17" ;
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_19" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_18" ;
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_20" [label="20:  method_body \n   *&return:_Bool=1 [line 24]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_20" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_2" ;
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_20" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_3" [color="red" ];
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_21" [label="21:  method_body \n   n$21=*&$bcvar3:int [line 22]\n  *&$bcvar3:int=(n$21 + 1) [line 22]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_21" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_9" ;
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_21" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_3" [color="red" ];
+"com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_22" [label="22:  method_body \n   *&return:_Bool=0 [line 26]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_22" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_2" ;
+	 "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_22" -> "com.stn.utils.Validator.isEmpty(java.lang.String[]):boolean.a28d2968b4cb7c1f440223df98a913c8_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_1" [label="1: Start boolean Validator.isName(String)\nFormals:  name:java.lang.String*\nLocals:  $irvar0:void $bcvar4:void $bcvar3:void $bcvar2:void chars:unsigned short[_*_](*) c:unsigned short \n  " color=yellow style=filled]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_1" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_4" ;
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_2" [label="2: Exit boolean Validator.isName(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [label="3:  exceptions sink \n  " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_2" ;
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_4" [label="4:  Call char[] String.toCharArray() \n   n$0=*&name:java.lang.String* [line 30]\n  _=*n$0:java.lang.String*(root java.lang.String) [line 30]\n  n$2=_fun_char[] String.toCharArray()(n$0:java.lang.String*) virtual [line 30]\n  *&chars:unsigned short[_*_](*)=n$2 [line 30]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_4" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_5" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_4" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_5" [label="5:  method_body \n   n$3=*&chars:unsigned short[_*_](*) [line 32]\n  *&$bcvar2:unsigned short[_*_](*)=n$3 [line 32]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_5" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_6" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_5" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_6" [label="6:  method_body \n   n$4=*&$bcvar2:unsigned short[_*_](*) [line 32]\n  _=*n$4:int(root unsigned short[_*_]) [line 32]\n  n$6=_fun___get_array_length(n$4:unsigned short[_*_](*)) [line 32]\n  *&$bcvar3:int=n$6 [line 32]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_6" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_7" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_6" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_7" [label="7:  method_body \n   *&$bcvar4:int=0 [line 32]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_7" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_10" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_7" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_8" [label="8: Prune (true branch, if) \n   n$7=*&$bcvar4:int [line 32]\n  n$8=*&$bcvar3:int [line 32]\n  PRUNE(!(n$7 >= n$8), true); [line 32]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_8" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_11" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_8" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_9" [label="9: Prune (false branch, if) \n   n$7=*&$bcvar4:int [line 32]\n  n$8=*&$bcvar3:int [line 32]\n  PRUNE((n$7 >= n$8), false); [line 32]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_9" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_18" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_9" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_10" [label="10: + \n  " ]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_10" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_8" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_10" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_9" ;
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_11" [label="11:  method_body \n   n$9=*&$bcvar2:unsigned short[_*_](*) [line 32]\n  _=*n$9:unsigned short(root unsigned short[_*_]) [line 32]\n  n$10=*&$bcvar4:int [line 32]\n  n$12=*n$9[n$10]:unsigned short [line 32]\n  *&c:unsigned short=n$12 [line 32]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_11" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_12" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_11" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_12" [label="12:  Call boolean Character.isLetter(char) \n   n$13=*&c:unsigned short [line 33]\n  n$14=_fun_boolean Character.isLetter(char)(n$13:unsigned short) [line 33]\n  *&$irvar0:_Bool=n$14 [line 33]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_12" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_15" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_12" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_13" [label="13: Prune (true branch, if) \n   n$15=*&$irvar0:_Bool [line 33]\n  PRUNE(!(n$15 != 0), true); [line 33]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_13" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_16" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_13" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_14" [label="14: Prune (false branch, if) \n   n$15=*&$irvar0:_Bool [line 33]\n  PRUNE((n$15 != 0), false); [line 33]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_14" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_17" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_14" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_15" [label="15: + \n  " ]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_15" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_13" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_15" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_14" ;
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_16" [label="16:  method_body \n   *&return:_Bool=0 [line 34]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_16" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_2" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_16" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_17" [label="17:  method_body \n   n$16=*&$bcvar4:int [line 32]\n  *&$bcvar4:int=(n$16 + 1) [line 32]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_17" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_10" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_17" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_18" [label="18:  method_body \n   *&return:_Bool=1 [line 37]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_18" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_2" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_18" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isURL(java.lang.String):boolean.710650eccaca66c134b339f210e00780_1" [label="1: Start boolean Validator.isURL(String)\nFormals:  url:java.lang.String*\nLocals:  $irvar0:void \n  " color=yellow style=filled]
+	
+
+	 "com.stn.utils.Validator.isURL(java.lang.String):boolean.710650eccaca66c134b339f210e00780_1" -> "com.stn.utils.Validator.isURL(java.lang.String):boolean.710650eccaca66c134b339f210e00780_4" ;
+"com.stn.utils.Validator.isURL(java.lang.String):boolean.710650eccaca66c134b339f210e00780_2" [label="2: Exit boolean Validator.isURL(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.utils.Validator.isURL(java.lang.String):boolean.710650eccaca66c134b339f210e00780_3" [label="3:  exceptions sink \n  " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isURL(java.lang.String):boolean.710650eccaca66c134b339f210e00780_3" -> "com.stn.utils.Validator.isURL(java.lang.String):boolean.710650eccaca66c134b339f210e00780_2" ;
+"com.stn.utils.Validator.isURL(java.lang.String):boolean.710650eccaca66c134b339f210e00780_4" [label="4:  Call boolean String.matches(String) \n   n$0=*&url:java.lang.String* [line 42]\n  _=*n$0:java.lang.String*(root java.lang.String) [line 42]\n  n$2=_fun_boolean String.matches(String)(n$0:java.lang.String*,\"^(https?:\\\\\\\\/\\\\\\\\/)?(www\\\\\\\\.)?([\\\\\\\\w]+\\\\\\\\.)+[\\\\226\\\\128\\\\140\\\\226\\\\128\\\\139\\\\\\\\w]*.{2,128}\\\\\\\\/?$\":java.lang.Object*) virtual [line 42]\n  *&$irvar0:_Bool=n$2 [line 42]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isURL(java.lang.String):boolean.710650eccaca66c134b339f210e00780_4" -> "com.stn.utils.Validator.isURL(java.lang.String):boolean.710650eccaca66c134b339f210e00780_5" ;
+	 "com.stn.utils.Validator.isURL(java.lang.String):boolean.710650eccaca66c134b339f210e00780_4" -> "com.stn.utils.Validator.isURL(java.lang.String):boolean.710650eccaca66c134b339f210e00780_3" [color="red" ];
+"com.stn.utils.Validator.isURL(java.lang.String):boolean.710650eccaca66c134b339f210e00780_5" [label="5:  method_body \n   n$3=*&$irvar0:_Bool [line 42]\n  *&return:_Bool=n$3 [line 42]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isURL(java.lang.String):boolean.710650eccaca66c134b339f210e00780_5" -> "com.stn.utils.Validator.isURL(java.lang.String):boolean.710650eccaca66c134b339f210e00780_2" ;
+	 "com.stn.utils.Validator.isURL(java.lang.String):boolean.710650eccaca66c134b339f210e00780_5" -> "com.stn.utils.Validator.isURL(java.lang.String):boolean.710650eccaca66c134b339f210e00780_3" [color="red" ];
+}

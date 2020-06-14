@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.News.setTitle(java.lang.String):void.07cf891edd08f7aa083916e87d8e3fb3_1" [label="1: Start void News.setTitle(String)\nFormals:  this:com.stn.pojo.News* title:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.News.setTitle(java.lang.String):void.07cf891edd08f7aa083916e87d8e3fb3_1" -> "com.stn.pojo.News.setTitle(java.lang.String):void.07cf891edd08f7aa083916e87d8e3fb3_4" ;
+"com.stn.pojo.News.setTitle(java.lang.String):void.07cf891edd08f7aa083916e87d8e3fb3_2" [label="2: Exit void News.setTitle(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.News.setTitle(java.lang.String):void.07cf891edd08f7aa083916e87d8e3fb3_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 24]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setTitle(java.lang.String):void.07cf891edd08f7aa083916e87d8e3fb3_3" -> "com.stn.pojo.News.setTitle(java.lang.String):void.07cf891edd08f7aa083916e87d8e3fb3_2" ;
+"com.stn.pojo.News.setTitle(java.lang.String):void.07cf891edd08f7aa083916e87d8e3fb3_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.News* [line 23]\n  n$1=*&title:java.lang.String* [line 23]\n  *n$0.title:com.stn.pojo.News(root com.stn.pojo.News)=n$1 [line 23]\n  NULLIFY(&title); [line 23]\n  NULLIFY(&this); [line 23]\n  EXIT_SCOPE(n$0,n$1,title,this); [line 23]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setTitle(java.lang.String):void.07cf891edd08f7aa083916e87d8e3fb3_4" -> "com.stn.pojo.News.setTitle(java.lang.String):void.07cf891edd08f7aa083916e87d8e3fb3_5" ;
+	 "com.stn.pojo.News.setTitle(java.lang.String):void.07cf891edd08f7aa083916e87d8e3fb3_4" -> "com.stn.pojo.News.setTitle(java.lang.String):void.07cf891edd08f7aa083916e87d8e3fb3_3" [color="red" ];
+"com.stn.pojo.News.setTitle(java.lang.String):void.07cf891edd08f7aa083916e87d8e3fb3_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 24]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setTitle(java.lang.String):void.07cf891edd08f7aa083916e87d8e3fb3_5" -> "com.stn.pojo.News.setTitle(java.lang.String):void.07cf891edd08f7aa083916e87d8e3fb3_2" ;
+	 "com.stn.pojo.News.setTitle(java.lang.String):void.07cf891edd08f7aa083916e87d8e3fb3_5" -> "com.stn.pojo.News.setTitle(java.lang.String):void.07cf891edd08f7aa083916e87d8e3fb3_3" [color="red" ];
+}

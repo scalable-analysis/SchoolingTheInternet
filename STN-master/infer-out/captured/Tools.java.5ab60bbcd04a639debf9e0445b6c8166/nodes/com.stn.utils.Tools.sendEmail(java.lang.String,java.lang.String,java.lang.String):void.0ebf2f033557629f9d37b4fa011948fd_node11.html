@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.utils.Tools.sendEmail(java.lang.String,java.lang.String,java.lang.String):void.0ebf2f033557629f9d37b4fa011948fd_node11</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../Tools.java.5ab60bbcd04a639debf9e0445b6c8166.html#LINE58">11</a></h1></center>PROC: <a href="./../com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd.html">void Tools.sendEmail(String,String,String)</a> LINE: <a href="./../../Tools.java.5ab60bbcd04a639debf9e0445b6c8166.html#LINE58">58</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node10.html"><span class='visited with_tooltip'>N_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node12.html"><span class='visited with_tooltip'>N_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node3.html"><span class='visited with_tooltip'>N_3<span class='tooltip'>node3 preds: succs:2 exn:2 </span></span></a><br>
+<LISTING class='color_green'>n$20=*&amp;props:java.util.Properties* [line 58];
+n$21=*&amp;$irvar5:com.stn.utils.Tools$1* [line 58];
+n$22=_fun_Session Session.getDefaultInstance(Properties,Authenticator)(n$20:java.util.Properties*,n$21:com.stn.utils.Tools$1*) [line 58];
+*&amp;session:javax.mail.Session*=n$22 [line 58];
+</LISTING>
+<hr width="100%">
+<a name="session24" href="./../nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node11.html#session24">node11#session24</a>(<a href="./../../Tools.java.5ab60bbcd04a639debf9e0445b6c8166.html#LINE58">58</a>) [compute pre] liveness 11
+<LISTING class='color_black'>JOIN
+
+LEFT:   { body, to, subject, mail.Message$RecipientType, session }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session25" href="./../nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node11.html#session25">node11#session25</a>(<a href="./../../Tools.java.5ab60bbcd04a639debf9e0445b6c8166.html#LINE58">58</a>) [exec] liveness 11
+<LISTING class='color_black'>PRE STATE:
+{ body, to, subject, mail.Message$RecipientType, session }
+
+INSTR=  *&amp;session:javax.mail.Session*=n$22 [line 58]; 
+
+STATE:
+{ n$22, body, to, subject, mail.Message$RecipientType }
+
+INSTR=  n$22=_fun_Session Session.getDefaultInstance(Properties,Authenticator)(n$20:java.util.Properties*,n$21:com.stn.utils.Tools$1*) [line 58]; 
+
+STATE:
+{ n$20, n$21, body, to, subject, mail.Message$RecipientType }
+
+INSTR=  n$21=*&amp;$irvar5:com.stn.utils.Tools$1* [line 58]; 
+
+STATE:
+{ n$20, body, to, $irvar5, subject, mail.Message$RecipientType }
+
+INSTR=  n$20=*&amp;props:java.util.Properties* [line 58]; 
+
+STATE:
+{ body, to, $irvar5, subject, props, mail.Message$RecipientType }
+
+</LISTING>
+<hr width="100%">
+<a name="session57" href="./../nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node11.html#session57">node11#session57</a>(<a href="./../../Tools.java.5ab60bbcd04a639debf9e0445b6c8166.html#LINE58">58</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session58" href="./../nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node11.html#session58">node11#session58</a>(<a href="./../../Tools.java.5ab60bbcd04a639debf9e0445b6c8166.html#LINE58">58</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ $irvar5, props },{ n$17, n$18, n$19, this })
+
+INSTR=  n$20=*&amp;props:java.util.Properties* [line 58]; 
+
+STATE:
+({ n$20, $irvar5, props },{ n$17, n$18, n$19, this })
+
+INSTR=  n$21=*&amp;$irvar5:com.stn.utils.Tools$1* [line 58]; 
+
+STATE:
+({ n$20, n$21, $irvar5, props },{ n$17, n$18, n$19, this })
+
+INSTR=  n$22=_fun_Session Session.getDefaultInstance(Properties,Authenticator)(n$20:java.util.Properties*,n$21:com.stn.utils.Tools$1*) [line 58]; 
+
+STATE:
+({ n$20, n$21, n$22, $irvar5, props },{ n$17, n$18, n$19, this })
+
+INSTR=  *&amp;session:javax.mail.Session*=n$22 [line 58]; 
+
+STATE:
+({ session },{ n$20, n$21, n$22, $irvar5, props })
+
+</LISTING>
+<hr width="100%">
+<a name="session16" href="./../nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node11.html#session16">node11#session16</a>(<a href="./../../Tools.java.5ab60bbcd04a639debf9e0445b6c8166.html#LINE58">58</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session17" href="./../nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node11.html#session17">node11#session17</a>(<a href="./../../Tools.java.5ab60bbcd04a639debf9e0445b6c8166.html#LINE58">58</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$17 -&gt; { this$0 -&gt; Footprint({ @val$0 }) ~&gt; ? }, props -&gt; { } }
+
+
+
+INSTR=  n$22 := Session Session.getDefaultInstance(Properties,Authenticator)({ props,
+                                                                    n$17 }) [line 58]; 
+
+STATE UNCHANGED
+
+INSTR=  session := n$22 [line 58]; 
+
+STATE:
+{ n$17 -&gt; { this$0 -&gt; Footprint({ @val$0 }) ~&gt; ? },
+  props -&gt; { },
+  session -&gt; { } }
+
+INSTR=  NULLIFY(&amp;$irvar5); [line 58]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;props); [line 58]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(n$22,props); [line 58]; 
+
+STATE:
+{ n$17 -&gt; { this$0 -&gt; Footprint({ @val$0 }) ~&gt; ? },
+  props -&gt; { },
+  session -&gt; { } }
+
+</LISTING>

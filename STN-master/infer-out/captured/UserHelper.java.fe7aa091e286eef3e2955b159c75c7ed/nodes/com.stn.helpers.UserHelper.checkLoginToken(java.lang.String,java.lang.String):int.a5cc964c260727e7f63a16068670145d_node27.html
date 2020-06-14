@@ -1,0 +1,219 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_node27</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE198">27</a></h1></center>PROC: <a href="./../com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d.html">int UserHelper.checkLoginToken(String,String)</a> LINE: <a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE198">198</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node25.html"><span class='visited with_tooltip'>N_25<span class='tooltip'>node25 preds:24 23 succs:27 exn:3 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node28.html"><span class='visited with_tooltip'>N_28<span class='tooltip'>node28 preds:27 26 succs:30 exn:3 </span></span></a> <a href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node29.html"><span class='visited with_tooltip'>N_29<span class='tooltip'>node29 preds:27 26 succs:42 exn:3 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node3.html"><span class='visited with_tooltip'>N_3<span class='tooltip'>node3 preds: succs:2 exn:2 </span></span></a><br>
+<LISTING class='color_green'>n$59=*&amp;this:com.stn.helpers.UserHelper* [line 198];
+n$60=*n$59.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 198];
+n$63=_fun___set_mem_attribute(n$60:java.sql.Connection*) [line 198];
+_=*n$60:java.sql.Connection*(root java.sql.Connection) [line 198];
+n$62=_fun_void Connection.close()(n$60:java.sql.Connection*) interface virtual [line 198];
+</LISTING>
+<hr width="100%">
+<a name="session34" href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node27.html#session34">node27#session34</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE198">198</a>) [compute pre] liveness 27
+<LISTING class='color_black'>JOIN
+
+LEFT:   { this, id }
+RIGHT:  { this, id }
+RESULT: { this, id }
+
+JOIN
+
+LEFT:   { this, id }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session35" href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node27.html#session35">node27#session35</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE198">198</a>) [exec] liveness 27
+<LISTING class='color_black'>PRE STATE:
+{ this, id }
+
+INSTR=  n$62=_fun_void Connection.close()(n$60:java.sql.Connection*) interface virtual [line 198]; 
+
+STATE:
+{ n$60, this, id }
+
+INSTR=  _=*n$60:java.sql.Connection*(root java.sql.Connection) [line 198]; 
+
+STATE UNCHANGED
+
+INSTR=  n$63=_fun___set_mem_attribute(n$60:java.sql.Connection*) [line 198]; 
+
+STATE UNCHANGED
+
+INSTR=  n$60=*n$59.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 198]; 
+
+STATE:
+{ n$59, this, id }
+
+INSTR=  n$59=*&amp;this:com.stn.helpers.UserHelper* [line 198]; 
+
+STATE:
+{ this, id }
+
+</LISTING>
+<hr width="100%">
+<a name="session261" href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node27.html#session261">node27#session261</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE198">198</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session262" href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node27.html#session262">node27#session262</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE198">198</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ id },{ n$57, n$58 })
+
+INSTR=  n$59=*&amp;this:com.stn.helpers.UserHelper* [line 198]; 
+
+STATE:
+({ n$59, id },{ n$57, n$58 })
+
+INSTR=  n$60=*n$59.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 198]; 
+
+STATE:
+({ n$59, n$60, id },{ n$57, n$58 })
+
+INSTR=  n$63=_fun___set_mem_attribute(n$60:java.sql.Connection*) [line 198]; 
+
+STATE:
+({ n$59, n$60, n$63, id },{ n$57, n$58 })
+
+INSTR=  _=*n$60:java.sql.Connection*(root java.sql.Connection) [line 198]; 
+
+STATE:
+({ _, n$59, n$60, n$63, id },{ n$57, n$58 })
+
+INSTR=  n$62=_fun_void Connection.close()(n$60:java.sql.Connection*) interface virtual [line 198]; 
+
+STATE:
+({ id },{ _, n$59, n$60, n$62, n$63 })
+
+</LISTING>
+<hr width="100%">
+<a name="session48" href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node27.html#session48">node27#session48</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE198">198</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session49" href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node27.html#session49">node27#session49</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE198">198</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$38 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 190) } + Footprint({ @val$2*,
+                                                                    @val$1*,
+                                                                    @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$2*,
+                                              @val$1*,
+                                              @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { },
+            resultSet -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 190) } + Footprint({ @val$2*,
+                                                                    @val$1*,
+                                                                    @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  id -&gt; { } }
+
+
+
+INSTR=  n$63 := __set_mem_attribute({ this-&gt;connection }) [line 198]; 
+
+STATE UNCHANGED
+
+
+INSTR=  n$62 := void Connection.close()({ this-&gt;connection }) [line 198]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(n$62,n$63); [line 198]; 
+
+STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$38 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 190) } + Footprint({ @val$2*,
+                                                                    @val$1*,
+                                                                    @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$2*,
+                                              @val$1*,
+                                              @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { },
+            resultSet -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 190) } + Footprint({ @val$2*,
+                                                                    @val$1*,
+                                                                    @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  id -&gt; { } }
+
+</LISTING>

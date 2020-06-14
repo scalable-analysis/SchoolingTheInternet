@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.helpers.CommentsHelper.<init>().dd9075789d478ddc5ef6b661e5968d1f_1" [label="1: Start CommentsHelper.<init>()\nFormals:  this:com.stn.helpers.CommentsHelper*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.helpers.CommentsHelper.<init>().dd9075789d478ddc5ef6b661e5968d1f_1" -> "com.stn.helpers.CommentsHelper.<init>().dd9075789d478ddc5ef6b661e5968d1f_4" ;
+"com.stn.helpers.CommentsHelper.<init>().dd9075789d478ddc5ef6b661e5968d1f_2" [label="2: Exit CommentsHelper.<init>() \n  " color=yellow style=filled]
+	
+
+"com.stn.helpers.CommentsHelper.<init>().dd9075789d478ddc5ef6b661e5968d1f_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 11]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CommentsHelper.<init>().dd9075789d478ddc5ef6b661e5968d1f_3" -> "com.stn.helpers.CommentsHelper.<init>().dd9075789d478ddc5ef6b661e5968d1f_2" ;
+"com.stn.helpers.CommentsHelper.<init>().dd9075789d478ddc5ef6b661e5968d1f_4" [label="4:  Call DBConnection.<init>() \n   n$0=*&this:com.stn.helpers.CommentsHelper* [line 11]\n  n$1=_fun_DBConnection.<init>()(n$0:com.stn.helpers.CommentsHelper*) [line 11]\n  NULLIFY(&this); [line 11]\n  EXIT_SCOPE(n$0,n$1,this); [line 11]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CommentsHelper.<init>().dd9075789d478ddc5ef6b661e5968d1f_4" -> "com.stn.helpers.CommentsHelper.<init>().dd9075789d478ddc5ef6b661e5968d1f_5" ;
+	 "com.stn.helpers.CommentsHelper.<init>().dd9075789d478ddc5ef6b661e5968d1f_4" -> "com.stn.helpers.CommentsHelper.<init>().dd9075789d478ddc5ef6b661e5968d1f_3" [color="red" ];
+"com.stn.helpers.CommentsHelper.<init>().dd9075789d478ddc5ef6b661e5968d1f_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 11]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CommentsHelper.<init>().dd9075789d478ddc5ef6b661e5968d1f_5" -> "com.stn.helpers.CommentsHelper.<init>().dd9075789d478ddc5ef6b661e5968d1f_2" ;
+	 "com.stn.helpers.CommentsHelper.<init>().dd9075789d478ddc5ef6b661e5968d1f_5" -> "com.stn.helpers.CommentsHelper.<init>().dd9075789d478ddc5ef6b661e5968d1f_3" [color="red" ];
+}

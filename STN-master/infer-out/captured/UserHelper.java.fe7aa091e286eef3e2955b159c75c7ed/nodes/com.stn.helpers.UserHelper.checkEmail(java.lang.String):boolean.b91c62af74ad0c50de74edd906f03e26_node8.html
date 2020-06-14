@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.UserHelper.checkEmail(java.lang.String):boolean.b91c62af74ad0c50de74edd906f03e26_node8</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE161">8</a></h1></center>PROC: <a href="./../com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26.html">boolean UserHelper.checkEmail(String)</a> LINE: <a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE161">161</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node7.html"><span class='visited with_tooltip'>N_7<span class='tooltip'>node7 preds:6 succs:8 exn:44 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node9.html"><span class='visited with_tooltip'>N_9<span class='tooltip'>node9 preds:8 succs:10 exn:44 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node44.html"><span class='visited with_tooltip'>N_44<span class='tooltip'>node44 preds: succs:43 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$6=*&amp;this:com.stn.helpers.UserHelper* [line 161];
+_=*n$6:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 161];
+n$8=_fun_String DBConnection.getUser()(n$6:com.stn.helpers.UserHelper*) virtual [line 161];
+*&amp;$irvar2:java.lang.String*=n$8 [line 161];
+</LISTING>
+<hr width="100%">
+<a name="session76" href="./../nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node8.html#session76">node8#session76</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE161">161</a>) [compute pre] liveness 8
+<LISTING class='color_black'>JOIN
+
+LEFT:   { found, CatchVar145, email, return, $irvar1, $irvar2, this }
+RIGHT:  { CatchVar145, return, this }
+RESULT: { found, CatchVar145, email, return, $irvar1, $irvar2, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session77" href="./../nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node8.html#session77">node8#session77</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE161">161</a>) [exec] liveness 8
+<LISTING class='color_black'>PRE STATE:
+{ found, CatchVar145, email, return, $irvar1, $irvar2, this }
+
+INSTR=  *&amp;$irvar2:java.lang.String*=n$8 [line 161]; 
+
+STATE:
+{ n$8, found, CatchVar145, email, return, $irvar1, this }
+
+INSTR=  n$8=_fun_String DBConnection.getUser()(n$6:com.stn.helpers.UserHelper*) virtual [line 161]; 
+
+STATE:
+{ n$6, found, CatchVar145, email, return, $irvar1, this }
+
+INSTR=  _=*n$6:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 161]; 
+
+STATE UNCHANGED
+
+INSTR=  n$6=*&amp;this:com.stn.helpers.UserHelper* [line 161]; 
+
+STATE:
+{ found, CatchVar145, email, return, $irvar1, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session97" href="./../nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node8.html#session97">node8#session97</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE161">161</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session98" href="./../nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node8.html#session98">node8#session98</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE161">161</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ found, $irvar1 },{ _, n$3, n$5 })
+
+INSTR=  n$6=*&amp;this:com.stn.helpers.UserHelper* [line 161]; 
+
+STATE:
+({ n$6, found, $irvar1 },{ _, n$3, n$5 })
+
+INSTR=  _=*n$6:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 161]; 
+
+STATE:
+({ _, n$6, found, $irvar1 },{ _, n$3, n$5 })
+
+INSTR=  n$8=_fun_String DBConnection.getUser()(n$6:com.stn.helpers.UserHelper*) virtual [line 161]; 
+
+STATE:
+({ _, n$6, n$8, found, $irvar1 },{ _, n$3, n$5 })
+
+INSTR=  *&amp;$irvar2:java.lang.String*=n$8 [line 161]; 
+
+STATE:
+({ found, $irvar1, $irvar2 },{ _, n$6, n$8 })
+
+</LISTING>
+<hr width="100%">
+<a name="session10" href="./../nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node8.html#session10">node8#session10</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE161">161</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session11" href="./../nodes/com.stn.helpers.UserHelper.checkEmail%28java.lang.String%29%3Aboolean.b91c62af74ad0c50de74edd906f03e26_node8.html#session11">node8#session11</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE161">161</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$5 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  found -&gt; { },
+  this -&gt; { query -&gt; { } } }
+
+
+
+INSTR=  n$8 := String DBConnection.getUser()({ this }) [line 161]; 
+
+STATE:
+{ n$5 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$8 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  found -&gt; { },
+  this -&gt; { query -&gt; { } } }
+
+
+
+</LISTING>

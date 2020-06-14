@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Aplicatie.getType():int.15320b61768fcaf54d2375f1fbd6f40e_1" [label="1: Start int Aplicatie.getType()\nFormals:  this:com.stn.pojo.Aplicatie*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Aplicatie.getType():int.15320b61768fcaf54d2375f1fbd6f40e_1" -> "com.stn.pojo.Aplicatie.getType():int.15320b61768fcaf54d2375f1fbd6f40e_4" ;
+"com.stn.pojo.Aplicatie.getType():int.15320b61768fcaf54d2375f1fbd6f40e_2" [label="2: Exit int Aplicatie.getType() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Aplicatie.getType():int.15320b61768fcaf54d2375f1fbd6f40e_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 108]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.getType():int.15320b61768fcaf54d2375f1fbd6f40e_3" -> "com.stn.pojo.Aplicatie.getType():int.15320b61768fcaf54d2375f1fbd6f40e_2" ;
+"com.stn.pojo.Aplicatie.getType():int.15320b61768fcaf54d2375f1fbd6f40e_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Aplicatie* [line 108]\n  n$1=*n$0.type:int(root com.stn.pojo.Aplicatie) [line 108]\n  *&return:int=n$1 [line 108]\n  NULLIFY(&this); [line 108]\n  EXIT_SCOPE(n$0,n$1,this); [line 108]\n  APPLY_ABSTRACTION; [line 108]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.getType():int.15320b61768fcaf54d2375f1fbd6f40e_4" -> "com.stn.pojo.Aplicatie.getType():int.15320b61768fcaf54d2375f1fbd6f40e_2" ;
+	 "com.stn.pojo.Aplicatie.getType():int.15320b61768fcaf54d2375f1fbd6f40e_4" -> "com.stn.pojo.Aplicatie.getType():int.15320b61768fcaf54d2375f1fbd6f40e_3" [color="red" ];
+}

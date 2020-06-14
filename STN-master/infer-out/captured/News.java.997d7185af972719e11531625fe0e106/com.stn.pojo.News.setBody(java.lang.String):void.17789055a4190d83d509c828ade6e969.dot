@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.News.setBody(java.lang.String):void.17789055a4190d83d509c828ade6e969_1" [label="1: Start void News.setBody(String)\nFormals:  this:com.stn.pojo.News* body:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.News.setBody(java.lang.String):void.17789055a4190d83d509c828ade6e969_1" -> "com.stn.pojo.News.setBody(java.lang.String):void.17789055a4190d83d509c828ade6e969_4" ;
+"com.stn.pojo.News.setBody(java.lang.String):void.17789055a4190d83d509c828ade6e969_2" [label="2: Exit void News.setBody(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.News.setBody(java.lang.String):void.17789055a4190d83d509c828ade6e969_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 28]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setBody(java.lang.String):void.17789055a4190d83d509c828ade6e969_3" -> "com.stn.pojo.News.setBody(java.lang.String):void.17789055a4190d83d509c828ade6e969_2" ;
+"com.stn.pojo.News.setBody(java.lang.String):void.17789055a4190d83d509c828ade6e969_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.News* [line 27]\n  n$1=*&body:java.lang.String* [line 27]\n  *n$0.body:com.stn.pojo.News(root com.stn.pojo.News)=n$1 [line 27]\n  NULLIFY(&body); [line 27]\n  NULLIFY(&this); [line 27]\n  EXIT_SCOPE(n$0,n$1,body,this); [line 27]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setBody(java.lang.String):void.17789055a4190d83d509c828ade6e969_4" -> "com.stn.pojo.News.setBody(java.lang.String):void.17789055a4190d83d509c828ade6e969_5" ;
+	 "com.stn.pojo.News.setBody(java.lang.String):void.17789055a4190d83d509c828ade6e969_4" -> "com.stn.pojo.News.setBody(java.lang.String):void.17789055a4190d83d509c828ade6e969_3" [color="red" ];
+"com.stn.pojo.News.setBody(java.lang.String):void.17789055a4190d83d509c828ade6e969_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 28]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setBody(java.lang.String):void.17789055a4190d83d509c828ade6e969_5" -> "com.stn.pojo.News.setBody(java.lang.String):void.17789055a4190d83d509c828ade6e969_2" ;
+	 "com.stn.pojo.News.setBody(java.lang.String):void.17789055a4190d83d509c828ade6e969_5" -> "com.stn.pojo.News.setBody(java.lang.String):void.17789055a4190d83d509c828ade6e969_3" [color="red" ];
+}

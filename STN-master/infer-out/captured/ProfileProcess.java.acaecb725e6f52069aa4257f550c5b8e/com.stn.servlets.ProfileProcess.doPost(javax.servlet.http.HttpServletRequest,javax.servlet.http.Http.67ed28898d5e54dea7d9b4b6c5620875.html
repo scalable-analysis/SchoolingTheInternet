@@ -1,0 +1,310 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.servlets.ProfileProcess.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../ProfileProcess.java.acaecb725e6f52069aa4257f550c5b8e.html#LINE22">void ProfileProcess.doPost(HttpServletRequest,HttpServletResponse)</a></h1></center>
+<a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:33 25 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:35 succs:2 exn:2 Instructions
+NULLIFY(&amp;CatchVar118); [line 61];
+NULLIFY(&amp;error); [line 61];
+NULLIFY(&amp;$irvar3); [line 61];
+NULLIFY(&amp;userClass); [line 61];
+NULLIFY(&amp;url); [line 61];
+NULLIFY(&amp;donor); [line 61];
+NULLIFY(&amp;out); [line 61];
+NULLIFY(&amp;$irvar5); [line 61];
+NULLIFY(&amp;$irvar4); [line 61];
+NULLIFY(&amp;$irvar6); [line 61];
+NULLIFY(&amp;$irvar0); [line 61];
+NULLIFY(&amp;$irvar1); [line 61];
+NULLIFY(&amp;userHelper); [line 61];
+NULLIFY(&amp;$irvar2); [line 61];
+NULLIFY(&amp;session); [line 61];
+NULLIFY(&amp;userId); [line 61];
+NULLIFY(&amp;e); [line 61];
+EXIT_SCOPE(n$63,CatchVar118,error,$irvar3,userClass,url,donor,out,$irvar5,$irvar4,$irvar6,$irvar0,$irvar1,userHelper,$irvar2,session,userId,e); [line 61];
+APPLY_ABSTRACTION; [line 61];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;request:javax.servlet.http.HttpServletRequest* [line 24];
+_=*n$0:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 24];
+n$2=_fun_HttpSession HttpServletRequest.getSession()(n$0:javax.servlet.http.HttpServletRequest*) interface virtual [line 24];
+*&amp;session:javax.servlet.http.HttpSession*=n$2 [line 24];
+EXIT_SCOPE(_,n$0,n$2); [line 24];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;error:java.lang.Object*="" [line 26];
+NULLIFY(&amp;error); [line 26];
+EXIT_SCOPE(error); [line 26];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$3=*&amp;response:javax.servlet.http.HttpServletResponse* [line 27];
+_=*n$3:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 27];
+n$5=_fun_void HttpServletResponse.setContentType(String)(n$3:javax.servlet.http.HttpServletResponse*,"text/html":java.lang.Object*) interface virtual [line 27];
+EXIT_SCOPE(_,n$3,n$5); [line 27];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$6=*&amp;response:javax.servlet.http.HttpServletResponse* [line 28];
+_=*n$6:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 28];
+n$8=_fun_PrintWriter HttpServletResponse.getWriter()(n$6:javax.servlet.http.HttpServletResponse*) interface virtual [line 28];
+*&amp;out:java.io.PrintWriter*=n$8 [line 28];
+EXIT_SCOPE(_,n$6,n$8); [line 28];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$9=*&amp;request:javax.servlet.http.HttpServletRequest* [line 30];
+_=*n$9:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 30];
+n$11=_fun_String HttpServletRequest.getParameter(String)(n$9:javax.servlet.http.HttpServletRequest*,"userid":java.lang.Object*) interface virtual [line 30];
+*&amp;$irvar0:java.lang.String*=n$11 [line 30];
+EXIT_SCOPE(_,n$9,n$11); [line 30];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$12=*&amp;$irvar0:java.lang.String* [line 30];
+n$13=_fun_int Integer.parseInt(String)(n$12:java.lang.String*) [line 30];
+*&amp;userId:int=n$13 [line 30];
+NULLIFY(&amp;$irvar0); [line 30];
+EXIT_SCOPE(n$12,n$13,$irvar0); [line 30];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 12 exn:3 Instructions
+n$14=*&amp;request:javax.servlet.http.HttpServletRequest* [line 32];
+_=*n$14:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 32];
+n$16=_fun_String HttpServletRequest.getParameter(String)(n$14:javax.servlet.http.HttpServletRequest*,"userclass":java.lang.Object*) interface virtual [line 32];
+*&amp;$irvar1:java.lang.String*=n$16 [line 32];
+EXIT_SCOPE(_,n$14,n$16); [line 32];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node11.html"><span class='visited with_tooltip'>C_11<span class='tooltip'>node11 preds:10 succs:13 exn:3 Conditional method_body
+n$17=*&amp;$irvar1:java.lang.String* [line 32];
+PRUNE(!(n$17 == null), true); [line 32];
+NULLIFY(&amp;$irvar1); [line 32];
+EXIT_SCOPE(n$17,$irvar1); [line 32];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node12.html"><span class='visited with_tooltip'>C_12<span class='tooltip'>node12 preds:10 succs:15 exn:3 Conditional method_body
+n$17=*&amp;$irvar1:java.lang.String* [line 32];
+PRUNE((n$17 == null), false); [line 32];
+NULLIFY(&amp;$irvar1); [line 32];
+EXIT_SCOPE(n$17,$irvar1); [line 32];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:11 succs:14 exn:3 Instructions
+n$18=*&amp;request:javax.servlet.http.HttpServletRequest* [line 33];
+_=*n$18:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 33];
+n$20=_fun_String HttpServletRequest.getParameter(String)(n$18:javax.servlet.http.HttpServletRequest*,"userclass":java.lang.Object*) interface virtual [line 33];
+*&amp;$irvar2:java.lang.String*=n$20 [line 33];
+EXIT_SCOPE(_,n$18,n$20); [line 33];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:16 exn:3 Instructions
+n$21=*&amp;$irvar2:java.lang.String* [line 33];
+n$22=_fun_int Integer.parseInt(String)(n$21:java.lang.String*) [line 33];
+*&amp;userClass:int=n$22 [line 33];
+NULLIFY(&amp;$irvar2); [line 33];
+EXIT_SCOPE(n$21,n$22,$irvar2); [line 33];
+APPLY_ABSTRACTION; [line 33];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:12 succs:16 exn:3 Instructions
+*&amp;userClass:int=-1 [line 35];
+APPLY_ABSTRACTION; [line 35];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 14 succs:17 exn:3 Instructions
+n$23=*&amp;request:javax.servlet.http.HttpServletRequest* [line 38];
+_=*n$23:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 38];
+n$25=_fun_String HttpServletRequest.getParameter(String)(n$23:javax.servlet.http.HttpServletRequest*,"donor":java.lang.Object*) interface virtual [line 38];
+*&amp;$irvar3:java.lang.String*=n$25 [line 38];
+NULLIFY(&amp;request); [line 38];
+EXIT_SCOPE(_,n$23,n$25,request); [line 38];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:3 Instructions
+n$26=*&amp;$irvar3:java.lang.String* [line 38];
+n$27=_fun_int Integer.parseInt(String)(n$26:java.lang.String*) [line 38];
+*&amp;donor:int=n$27 [line 38];
+NULLIFY(&amp;$irvar3); [line 38];
+EXIT_SCOPE(n$26,n$27,$irvar3); [line 38];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 20 exn:3 Instructions
+n$28=_fun___new(sizeof(t=com.stn.helpers.UserHelper):com.stn.helpers.UserHelper*) [line 40];
+n$29=_fun_UserHelper.&lt;init&gt;()(n$28:com.stn.helpers.UserHelper*) [line 40];
+*&amp;userHelper:com.stn.helpers.UserHelper*=n$28 [line 40];
+EXIT_SCOPE(n$28,n$29); [line 40];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node19.html"><span class='visited with_tooltip'>C_19<span class='tooltip'>node19 preds:18 succs:21 exn:3 Conditional method_body
+n$30=*&amp;userClass:int [line 42];
+PRUNE(!(n$30  &gt;=  0), true); [line 42];
+NULLIFY(&amp;userClass); [line 42];
+NULLIFY(&amp;donor); [line 42];
+NULLIFY(&amp;out); [line 42];
+NULLIFY(&amp;userHelper); [line 42];
+EXIT_SCOPE(n$30,userClass,donor,out,userHelper); [line 42];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node20.html"><span class='visited with_tooltip'>C_20<span class='tooltip'>node20 preds:18 succs:22 exn:3 Conditional method_body
+n$30=*&amp;userClass:int [line 42];
+PRUNE((n$30  &gt;=  0), false); [line 42];
+EXIT_SCOPE(n$30); [line 42];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:19 succs:27 exn:3 Instructions
+*&amp;error:java.lang.Object*="<b style='color: red; display: inline'>No userclass selected!</b>" [line 43];
+APPLY_ABSTRACTION; [line 43];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:20 succs:26 exn:38 Instructions
+n$31=*&amp;userHelper:com.stn.helpers.UserHelper* [line 47];
+_=*n$31:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 47];
+n$33=*&amp;userId:int [line 47];
+n$34=*&amp;userClass:int [line 47];
+n$35=*&amp;donor:int [line 47];
+n$36=_fun_void UserHelper.updateProfile(int,int,int)(n$31:com.stn.helpers.UserHelper*,n$33:int,n$34:int,n$35:int) virtual [line 47];
+NULLIFY(&amp;userClass); [line 47];
+NULLIFY(&amp;donor); [line 47];
+NULLIFY(&amp;userHelper); [line 47];
+EXIT_SCOPE(_,n$31,n$33,n$34,n$35,n$36,userClass,donor,userHelper); [line 47];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:36 34 succs:24 exn:3 Instructions
+n$37=*&amp;CatchVar118:java.lang.Object* [line 48];
+*&amp;e:java.lang.Object*=n$37 [line 48];
+NULLIFY(&amp;CatchVar118); [line 48];
+EXIT_SCOPE(n$37,CatchVar118); [line 48];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:3 Instructions
+n$38=*&amp;out:java.io.PrintWriter* [line 49];
+_=*n$38:java.io.PrintWriter*(root java.io.PrintWriter) [line 49];
+n$40=*&amp;e:java.lang.Object* [line 49];
+n$41=_fun_void PrintWriter.println(Object)(n$38:java.io.PrintWriter*,n$40:java.lang.Object*) virtual [line 49];
+NULLIFY(&amp;out); [line 49];
+NULLIFY(&amp;e); [line 49];
+EXIT_SCOPE(_,n$38,n$40,n$41,out,e); [line 49];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 50];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:22 succs:27 exn:3 Instructions
+*&amp;error:java.lang.Object*="<b style='color: green; display: inline'>Profile updated!</b>" [line 53];
+NULLIFY(&amp;out); [line 53];
+EXIT_SCOPE(out); [line 53];
+APPLY_ABSTRACTION; [line 53];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 21 succs:28 exn:3 Instructions
+n$42=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 58];
+n$43=_fun_StringBuilder.&lt;init&gt;()(n$42:java.lang.StringBuilder*) [line 58];
+*&amp;$irvar4:java.lang.StringBuilder*=n$42 [line 58];
+EXIT_SCOPE(n$42,n$43); [line 58];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:3 Instructions
+n$44=*&amp;$irvar4:java.lang.StringBuilder* [line 58];
+_=*n$44:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 58];
+n$46=_fun_StringBuilder StringBuilder.append(String)(n$44:java.lang.StringBuilder*,"userdetails.jsp?id=":java.lang.Object*) virtual [line 58];
+*&amp;$irvar5:java.lang.StringBuilder*=n$46 [line 58];
+NULLIFY(&amp;$irvar4); [line 58];
+EXIT_SCOPE(_,n$44,n$46,$irvar4); [line 58];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:30 exn:3 Instructions
+n$47=*&amp;$irvar5:java.lang.StringBuilder* [line 58];
+_=*n$47:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 58];
+n$49=*&amp;userId:int [line 58];
+n$50=_fun_StringBuilder StringBuilder.append(int)(n$47:java.lang.StringBuilder*,n$49:int) virtual [line 58];
+*&amp;$irvar6:java.lang.StringBuilder*=n$50 [line 58];
+NULLIFY(&amp;$irvar5); [line 58];
+NULLIFY(&amp;userId); [line 58];
+EXIT_SCOPE(_,n$47,n$49,n$50,$irvar5,userId); [line 58];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 succs:31 exn:3 Instructions
+n$51=*&amp;$irvar6:java.lang.StringBuilder* [line 58];
+_=*n$51:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 58];
+n$53=_fun_String StringBuilder.toString()(n$51:java.lang.StringBuilder*) virtual [line 58];
+*&amp;url:java.lang.String*=n$53 [line 58];
+NULLIFY(&amp;$irvar6); [line 58];
+EXIT_SCOPE(_,n$51,n$53,$irvar6); [line 58];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:30 succs:32 exn:3 Instructions
+n$54=*&amp;session:javax.servlet.http.HttpSession* [line 59];
+_=*n$54:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 59];
+n$56=*&amp;error:java.lang.Object* [line 59];
+n$57=_fun_void HttpSession.setAttribute(String,Object)(n$54:javax.servlet.http.HttpSession*,"error2":java.lang.Object*,n$56:java.lang.Object*) interface virtual [line 59];
+NULLIFY(&amp;error); [line 59];
+NULLIFY(&amp;session); [line 59];
+EXIT_SCOPE(_,n$54,n$56,n$57,error,session); [line 59];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:31 succs:33 exn:3 Instructions
+n$58=*&amp;response:javax.servlet.http.HttpServletResponse* [line 60];
+_=*n$58:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 60];
+n$60=*&amp;url:java.lang.String* [line 60];
+n$61=_fun_void HttpServletResponse.sendRedirect(String)(n$58:javax.servlet.http.HttpServletResponse*,n$60:java.lang.String*) interface virtual [line 60];
+NULLIFY(&amp;url); [line 60];
+NULLIFY(&amp;response); [line 60];
+EXIT_SCOPE(_,n$58,n$60,n$61,url,response); [line 60];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:32 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 61];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node34.html"><span class='visited with_tooltip'>C_34<span class='tooltip'>node34 preds:37 succs:23 exn:3 Conditional exception handler
+n$64=_fun___instanceof(n$63:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 48];
+PRUNE(n$64, true); [line 48];
+*&amp;CatchVar118:void=n$63 [line 48];
+EXIT_SCOPE(n$63,n$64); [line 48];
+APPLY_ABSTRACTION; [line 48];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node35.html"><span class='visited with_tooltip'>C_35<span class='tooltip'>node35 preds:37 succs:3 exn:3 Conditional exception handler
+n$64=_fun___instanceof(n$63:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 48];
+PRUNE(!n$64, false); [line 48];
+*&amp;return:void=EXN n$63 [line 48];
+NULLIFY(&amp;out); [line 48];
+EXIT_SCOPE(n$63,n$64,out); [line 48];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node36.html"><span class='visited with_tooltip'>C_36<span class='tooltip'>node36 preds:38 succs:23 exn:3 Conditional exception handler
+n$65=_fun___instanceof(n$63:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 48];
+PRUNE(n$65, true); [line 48];
+*&amp;CatchVar118:void=n$63 [line 48];
+EXIT_SCOPE(n$63,n$65); [line 48];
+APPLY_ABSTRACTION; [line 48];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node37.html"><span class='visited with_tooltip'>C_37<span class='tooltip'>node37 preds:38 succs:34 35 exn:3 Conditional exception handler
+n$65=_fun___instanceof(n$63:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 48];
+PRUNE(!n$65, false); [line 48];
+EXIT_SCOPE(n$65); [line 48];
+</span></span></a> <a href="./nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds: succs:36 37 exn:3 Instructions
+n$62=*&amp;return:void [line 48];
+*&amp;return:void=null [line 48];
+n$63=_fun___unwrap_exception(n$62:void) [line 48];
+NULLIFY(&amp;session); [line 48];
+NULLIFY(&amp;userId); [line 48];
+EXIT_SCOPE(n$62,session,userId); [line 48];
+</span></span></a><br />@
+
+<span class='color_black'>void void ProfileProcess.doPost(HttpServletRequest,HttpServletResponse)(com.stn.servlets.ProfileProcess* this, javax.servlet.http.HttpServletRequest* request, javax.servlet.http.HttpServletResponse* response)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= void ProfileProcess.doPost(HttpServletRequest,HttpServletResponse)
+; translation_unit= src/main/java/com/stn/servlets/ProfileProcess.java
+; access= Protected
+; exceptions= [javax.servlet.ServletException;  java.io.IOException]
+; formals= [(this,com.stn.servlets.ProfileProcess*);  (request,
+            javax.servlet.http.HttpServletRequest*);  (response,
+            javax.servlet.http.HttpServletResponse*)]
+; is_defined= true
+; loc= src/main/java/com/stn/servlets/ProfileProcess.java:22
+; locals= [{ name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= CatchVar118; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= url; typ= java.lang.String*; modify_in_block= false }; 
+           { name= userHelper; typ= com.stn.helpers.UserHelper*; modify_in_block= false }; 
+           { name= donor; typ= int; modify_in_block= false }; 
+           { name= userId; typ= int; modify_in_block= false }; 
+           { name= out; typ= java.io.PrintWriter*; modify_in_block= false }; 
+           { name= error; typ= java.lang.String*; modify_in_block= false }; 
+           { name= session; typ= javax.servlet.http.HttpSession*; modify_in_block= false }; 
+           { name= e; typ= java.lang.Exception*; modify_in_block= false }; 
+           { name= userClass; typ= int; modify_in_block= false }]
+; ret_type= void 
+; proc_id= com.stn.servlets.ProfileProcess.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void }</pre>
+</body>
+</html>

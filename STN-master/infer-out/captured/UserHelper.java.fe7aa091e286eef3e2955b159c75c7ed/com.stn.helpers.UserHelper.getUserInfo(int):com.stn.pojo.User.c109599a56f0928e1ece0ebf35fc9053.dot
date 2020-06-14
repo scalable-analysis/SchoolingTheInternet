@@ -1,0 +1,711 @@
+/* @generated */
+digraph cfg {
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_1" [label="1: Start User UserHelper.getUserInfo(int)\nFormals:  this:com.stn.helpers.UserHelper* id:int\nLocals:  CatchVar689:void $bcvar8:void CatchVar636:void CatchVar626:void CatchVar568:void CatchVar558:void $irvar25:void $irvar24:void $irvar23:void $irvar22:void $irvar21:void $irvar20:void $irvar19:void $irvar18:void $irvar17:void $irvar16:void $irvar15:void $irvar14:void $irvar13:void $irvar12:void $irvar11:void $irvar10:void $irvar9:void $irvar8:void $irvar7:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void user:com.stn.pojo.User* e:java.lang.Exception* ex:java.sql.SQLException* facultate:java.lang.String* serie:java.lang.String* grupa:java.lang.String* avatarURL:java.lang.String* countryId:int \n  " color=yellow style=filled]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_1" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_4" ;
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_2" [label="2: Exit User UserHelper.getUserInfo(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [label="3:  exceptions sink \n   NULLIFY(&CatchVar568); [line 400]\n  NULLIFY(&CatchVar689); [line 400]\n  NULLIFY(&ex); [line 400]\n  NULLIFY(&CatchVar626); [line 400]\n  NULLIFY(&user); [line 400]\n  NULLIFY(&$bcvar8); [line 400]\n  NULLIFY(&CatchVar558); [line 400]\n  EXIT_SCOPE(n$328,CatchVar568,CatchVar689,ex,CatchVar626,user,$bcvar8,CatchVar558); [line 400]\n  APPLY_ABSTRACTION; [line 400]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_2" ;
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_4" [label="4:  Call User.<init>() \n   n$0=_fun___new(sizeof(t=com.stn.pojo.User):com.stn.pojo.User*) [line 323]\n  n$1=_fun_User.<init>()(n$0:com.stn.pojo.User*) [line 323]\n  *&user:com.stn.pojo.User*=n$0 [line 323]\n  EXIT_SCOPE(n$0,n$1); [line 323]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_4" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_5" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_4" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_5" [label="5:  method_body \n   n$2=*&this:com.stn.helpers.UserHelper* [line 329]\n  *n$2.query:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=\"SELECT Username, Email, FirstName, LastName, JoinDate, LastSeen, Class, Avatar, Ip , g.Nume, s.Nume, f.Nume, u.IdGrupa, u.IdSerie, u.IdFacultate, Gender, c.CountryId , c.Name, c.Image, Anonymity, Donor FROM users u LEFT JOIN grupe g ON u.IdGrupa = g.IdGrupa LEFT JOIN serii s ON u.IdSerie = s.IdSerie LEFT JOIN facultati f ON u.IdFacultate = f.IdFacultate LEFT JOIN countries c ON u.CountryId = c.CountryId WHERE Id = ?\" [line 329]\n  EXIT_SCOPE(n$2); [line 329]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_5" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_6" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_5" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_6" [label="6:  Call Class Class.forName(String) \n   n$3=_fun_Class Class.forName(String)(\"com.mysql.jdbc.Driver\":java.lang.Object*) [line 336]\n  *&$irvar0:java.lang.Class*=n$3 [line 336]\n  NULLIFY(&$irvar0); [line 336]\n  EXIT_SCOPE(n$3,$irvar0); [line 336]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_6" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_7" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_6" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_7" [label="7:  Call String DBConnection.getHost() \n   n$4=*&this:com.stn.helpers.UserHelper* [line 337]\n  _=*n$4:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 337]\n  n$6=_fun_String DBConnection.getHost()(n$4:com.stn.helpers.UserHelper*) virtual [line 337]\n  *&$irvar1:java.lang.String*=n$6 [line 337]\n  EXIT_SCOPE(_,n$4,n$6); [line 337]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_7" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_8" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_7" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_8" [label="8:  Call String DBConnection.getUser() \n   n$7=*&this:com.stn.helpers.UserHelper* [line 337]\n  _=*n$7:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 337]\n  n$9=_fun_String DBConnection.getUser()(n$7:com.stn.helpers.UserHelper*) virtual [line 337]\n  *&$irvar2:java.lang.String*=n$9 [line 337]\n  EXIT_SCOPE(_,n$7,n$9); [line 337]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_8" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_9" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_8" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_9" [label="9:  Call String DBConnection.getPassword() \n   n$10=*&this:com.stn.helpers.UserHelper* [line 337]\n  _=*n$10:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 337]\n  n$12=_fun_String DBConnection.getPassword()(n$10:com.stn.helpers.UserHelper*) virtual [line 337]\n  *&$irvar3:java.lang.String*=n$12 [line 337]\n  EXIT_SCOPE(_,n$10,n$12); [line 337]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_9" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_10" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_9" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_10" [label="10:  Call Connection DriverManager.getConnection(String,String,String) \n   n$13=*&$irvar1:java.lang.String* [line 337]\n  n$14=*&$irvar2:java.lang.String* [line 337]\n  n$15=*&$irvar3:java.lang.String* [line 337]\n  n$16=_fun_Connection DriverManager.getConnection(String,String,String)(n$13:java.lang.String*,n$14:java.lang.String*,n$15:java.lang.String*) [line 337]\n  *&$irvar4:java.sql.Connection*=n$16 [line 337]\n  NULLIFY(&$irvar3); [line 337]\n  NULLIFY(&$irvar1); [line 337]\n  NULLIFY(&$irvar2); [line 337]\n  EXIT_SCOPE(n$13,n$14,n$15,n$16,$irvar3,$irvar1,$irvar2); [line 337]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_10" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_11" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_10" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_11" [label="11:  method_body \n   n$17=*&this:com.stn.helpers.UserHelper* [line 337]\n  n$18=*&$irvar4:java.sql.Connection* [line 337]\n  *n$17.connection:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$18 [line 337]\n  NULLIFY(&$irvar4); [line 337]\n  EXIT_SCOPE(n$17,n$18,$irvar4); [line 337]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_11" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_12" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_11" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_12" [label="12:  Call PreparedStatement Connection.prepareStatement(String) \n   n$19=*&this:com.stn.helpers.UserHelper* [line 338]\n  n$20=*n$19.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 338]\n  _=*n$20:java.sql.Connection*(root java.sql.Connection) [line 338]\n  n$22=*&this:com.stn.helpers.UserHelper* [line 338]\n  n$23=*n$22.query:java.lang.String*(root com.stn.helpers.UserHelper) [line 338]\n  n$24=_fun_PreparedStatement Connection.prepareStatement(String)(n$20:java.sql.Connection*,n$23:java.lang.String*) interface virtual [line 338]\n  *&$irvar5:java.sql.PreparedStatement*=n$24 [line 338]\n  EXIT_SCOPE(_,n$19,n$20,n$22,n$23,n$24); [line 338]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_12" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_13" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_12" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_13" [label="13:  method_body \n   n$25=*&this:com.stn.helpers.UserHelper* [line 338]\n  n$26=*&$irvar5:java.sql.PreparedStatement* [line 338]\n  *n$25.preparedStatement:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$26 [line 338]\n  NULLIFY(&$irvar5); [line 338]\n  EXIT_SCOPE(n$25,n$26,$irvar5); [line 338]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_13" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_14" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_13" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_14" [label="14:  Call void PreparedStatement.setInt(int,int) \n   n$27=*&this:com.stn.helpers.UserHelper* [line 339]\n  n$28=*n$27.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 339]\n  _=*n$28:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 339]\n  n$30=*&id:int [line 339]\n  n$31=_fun_void PreparedStatement.setInt(int,int)(n$28:java.sql.PreparedStatement*,1:int,n$30:int) interface virtual [line 339]\n  EXIT_SCOPE(_,n$27,n$28,n$30,n$31); [line 339]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_14" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_15" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_14" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_15" [label="15:  Call ResultSet PreparedStatement.executeQuery() \n   n$32=*&this:com.stn.helpers.UserHelper* [line 340]\n  n$33=*n$32.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 340]\n  _=*n$33:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 340]\n  n$35=_fun_ResultSet PreparedStatement.executeQuery()(n$33:java.sql.PreparedStatement*) interface virtual [line 340]\n  *&$irvar6:java.sql.ResultSet*=n$35 [line 340]\n  EXIT_SCOPE(_,n$32,n$33,n$35); [line 340]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_15" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_16" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_15" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_16" [label="16:  method_body \n   n$36=*&this:com.stn.helpers.UserHelper* [line 340]\n  n$37=*&$irvar6:java.sql.ResultSet* [line 340]\n  *n$36.resultSet:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$37 [line 340]\n  NULLIFY(&$irvar6); [line 340]\n  EXIT_SCOPE(n$36,n$37,$irvar6); [line 340]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_16" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_17" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_16" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_17" [label="17:  Call boolean ResultSet.next() \n   n$38=*&this:com.stn.helpers.UserHelper* [line 341]\n  n$39=*n$38.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 341]\n  _=*n$39:java.sql.ResultSet*(root java.sql.ResultSet) [line 341]\n  n$41=_fun_boolean ResultSet.next()(n$39:java.sql.ResultSet*) interface virtual [line 341]\n  *&$irvar7:_Bool=n$41 [line 341]\n  EXIT_SCOPE(_,n$38,n$39,n$41); [line 341]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_17" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_18" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_17" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_19" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_17" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_18" [label="18: Prune (true branch, if) \n   n$42=*&$irvar7:_Bool [line 341]\n  PRUNE(!(n$42 == 0), true); [line 341]\n  NULLIFY(&$irvar7); [line 341]\n  EXIT_SCOPE(n$42,$irvar7); [line 341]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_18" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_20" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_18" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_19" [label="19: Prune (false branch, if) \n   n$42=*&$irvar7:_Bool [line 341]\n  PRUNE((n$42 == 0), false); [line 341]\n  NULLIFY(&$irvar7); [line 341]\n  EXIT_SCOPE(n$42,$irvar7); [line 341]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_19" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_81" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_19" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_82" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_19" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_20" [label="20:  Call void User.setId(int) \n   n$43=*&user:com.stn.pojo.User* [line 342]\n  _=*n$43:com.stn.pojo.User*(root com.stn.pojo.User) [line 342]\n  n$45=*&id:int [line 342]\n  n$46=_fun_void User.setId(int)(n$43:com.stn.pojo.User*,n$45:int) virtual [line 342]\n  NULLIFY(&id); [line 342]\n  EXIT_SCOPE(_,n$43,n$45,n$46,id); [line 342]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_20" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_21" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_20" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_21" [label="21:  Call String ResultSet.getString(int) \n   n$47=*&this:com.stn.helpers.UserHelper* [line 343]\n  n$48=*n$47.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 343]\n  _=*n$48:java.sql.ResultSet*(root java.sql.ResultSet) [line 343]\n  n$50=_fun_String ResultSet.getString(int)(n$48:java.sql.ResultSet*,1:int) interface virtual [line 343]\n  *&$irvar8:java.lang.String*=n$50 [line 343]\n  EXIT_SCOPE(_,n$47,n$48,n$50); [line 343]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_21" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_22" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_21" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_22" [label="22:  Call void User.setUserName(String) \n   n$51=*&user:com.stn.pojo.User* [line 343]\n  _=*n$51:com.stn.pojo.User*(root com.stn.pojo.User) [line 343]\n  n$53=*&$irvar8:java.lang.String* [line 343]\n  n$54=_fun_void User.setUserName(String)(n$51:com.stn.pojo.User*,n$53:java.lang.String*) virtual [line 343]\n  NULLIFY(&$irvar8); [line 343]\n  EXIT_SCOPE(_,n$51,n$53,n$54,$irvar8); [line 343]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_22" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_23" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_22" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_23" [label="23:  Call String ResultSet.getString(int) \n   n$55=*&this:com.stn.helpers.UserHelper* [line 344]\n  n$56=*n$55.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 344]\n  _=*n$56:java.sql.ResultSet*(root java.sql.ResultSet) [line 344]\n  n$58=_fun_String ResultSet.getString(int)(n$56:java.sql.ResultSet*,2:int) interface virtual [line 344]\n  *&$irvar9:java.lang.String*=n$58 [line 344]\n  EXIT_SCOPE(_,n$55,n$56,n$58); [line 344]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_23" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_24" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_23" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_24" [label="24:  Call void User.setEmail(String) \n   n$59=*&user:com.stn.pojo.User* [line 344]\n  _=*n$59:com.stn.pojo.User*(root com.stn.pojo.User) [line 344]\n  n$61=*&$irvar9:java.lang.String* [line 344]\n  n$62=_fun_void User.setEmail(String)(n$59:com.stn.pojo.User*,n$61:java.lang.String*) virtual [line 344]\n  NULLIFY(&$irvar9); [line 344]\n  EXIT_SCOPE(_,n$59,n$61,n$62,$irvar9); [line 344]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_24" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_25" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_24" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_25" [label="25:  Call String ResultSet.getString(int) \n   n$63=*&this:com.stn.helpers.UserHelper* [line 345]\n  n$64=*n$63.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 345]\n  _=*n$64:java.sql.ResultSet*(root java.sql.ResultSet) [line 345]\n  n$66=_fun_String ResultSet.getString(int)(n$64:java.sql.ResultSet*,3:int) interface virtual [line 345]\n  *&$irvar10:java.lang.String*=n$66 [line 345]\n  EXIT_SCOPE(_,n$63,n$64,n$66); [line 345]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_25" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_26" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_25" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_26" [label="26:  Call void User.setFirstName(String) \n   n$67=*&user:com.stn.pojo.User* [line 345]\n  _=*n$67:com.stn.pojo.User*(root com.stn.pojo.User) [line 345]\n  n$69=*&$irvar10:java.lang.String* [line 345]\n  n$70=_fun_void User.setFirstName(String)(n$67:com.stn.pojo.User*,n$69:java.lang.String*) virtual [line 345]\n  NULLIFY(&$irvar10); [line 345]\n  EXIT_SCOPE(_,n$67,n$69,n$70,$irvar10); [line 345]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_26" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_27" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_26" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_27" [label="27:  Call String ResultSet.getString(int) \n   n$71=*&this:com.stn.helpers.UserHelper* [line 346]\n  n$72=*n$71.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 346]\n  _=*n$72:java.sql.ResultSet*(root java.sql.ResultSet) [line 346]\n  n$74=_fun_String ResultSet.getString(int)(n$72:java.sql.ResultSet*,4:int) interface virtual [line 346]\n  *&$irvar11:java.lang.String*=n$74 [line 346]\n  EXIT_SCOPE(_,n$71,n$72,n$74); [line 346]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_27" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_28" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_27" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_28" [label="28:  Call void User.setLastName(String) \n   n$75=*&user:com.stn.pojo.User* [line 346]\n  _=*n$75:com.stn.pojo.User*(root com.stn.pojo.User) [line 346]\n  n$77=*&$irvar11:java.lang.String* [line 346]\n  n$78=_fun_void User.setLastName(String)(n$75:com.stn.pojo.User*,n$77:java.lang.String*) virtual [line 346]\n  NULLIFY(&$irvar11); [line 346]\n  EXIT_SCOPE(_,n$75,n$77,n$78,$irvar11); [line 346]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_28" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_29" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_28" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_29" [label="29:  Call Timestamp ResultSet.getTimestamp(int) \n   n$79=*&this:com.stn.helpers.UserHelper* [line 347]\n  n$80=*n$79.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 347]\n  _=*n$80:java.sql.ResultSet*(root java.sql.ResultSet) [line 347]\n  n$82=_fun_Timestamp ResultSet.getTimestamp(int)(n$80:java.sql.ResultSet*,5:int) interface virtual [line 347]\n  *&$irvar12:java.sql.Timestamp*=n$82 [line 347]\n  EXIT_SCOPE(_,n$79,n$80,n$82); [line 347]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_29" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_30" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_29" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_30" [label="30:  Call void User.setJoinDate(Timestamp) \n   n$83=*&user:com.stn.pojo.User* [line 347]\n  _=*n$83:com.stn.pojo.User*(root com.stn.pojo.User) [line 347]\n  n$85=*&$irvar12:java.sql.Timestamp* [line 347]\n  n$86=_fun_void User.setJoinDate(Timestamp)(n$83:com.stn.pojo.User*,n$85:java.sql.Timestamp*) virtual [line 347]\n  NULLIFY(&$irvar12); [line 347]\n  EXIT_SCOPE(_,n$83,n$85,n$86,$irvar12); [line 347]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_30" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_31" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_30" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_31" [label="31:  Call Timestamp ResultSet.getTimestamp(int) \n   n$87=*&this:com.stn.helpers.UserHelper* [line 348]\n  n$88=*n$87.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 348]\n  _=*n$88:java.sql.ResultSet*(root java.sql.ResultSet) [line 348]\n  n$90=_fun_Timestamp ResultSet.getTimestamp(int)(n$88:java.sql.ResultSet*,6:int) interface virtual [line 348]\n  *&$irvar13:java.sql.Timestamp*=n$90 [line 348]\n  EXIT_SCOPE(_,n$87,n$88,n$90); [line 348]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_31" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_32" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_31" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_32" [label="32:  Call void User.setLastSeen(Timestamp) \n   n$91=*&user:com.stn.pojo.User* [line 348]\n  _=*n$91:com.stn.pojo.User*(root com.stn.pojo.User) [line 348]\n  n$93=*&$irvar13:java.sql.Timestamp* [line 348]\n  n$94=_fun_void User.setLastSeen(Timestamp)(n$91:com.stn.pojo.User*,n$93:java.sql.Timestamp*) virtual [line 348]\n  NULLIFY(&$irvar13); [line 348]\n  EXIT_SCOPE(_,n$91,n$93,n$94,$irvar13); [line 348]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_32" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_33" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_32" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_33" [label="33:  Call int ResultSet.getInt(int) \n   n$95=*&this:com.stn.helpers.UserHelper* [line 349]\n  n$96=*n$95.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 349]\n  _=*n$96:java.sql.ResultSet*(root java.sql.ResultSet) [line 349]\n  n$98=_fun_int ResultSet.getInt(int)(n$96:java.sql.ResultSet*,7:int) interface virtual [line 349]\n  *&$irvar14:int=n$98 [line 349]\n  EXIT_SCOPE(_,n$95,n$96,n$98); [line 349]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_33" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_34" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_33" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_34" [label="34:  Call void User.setUserClass(int) \n   n$99=*&user:com.stn.pojo.User* [line 349]\n  _=*n$99:com.stn.pojo.User*(root com.stn.pojo.User) [line 349]\n  n$101=*&$irvar14:int [line 349]\n  n$102=_fun_void User.setUserClass(int)(n$99:com.stn.pojo.User*,n$101:int) virtual [line 349]\n  NULLIFY(&$irvar14); [line 349]\n  EXIT_SCOPE(_,n$99,n$101,n$102,$irvar14); [line 349]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_34" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_35" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_34" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_35" [label="35:  Call String ResultSet.getString(int) \n   n$103=*&this:com.stn.helpers.UserHelper* [line 350]\n  n$104=*n$103.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 350]\n  _=*n$104:java.sql.ResultSet*(root java.sql.ResultSet) [line 350]\n  n$106=_fun_String ResultSet.getString(int)(n$104:java.sql.ResultSet*,8:int) interface virtual [line 350]\n  *&avatarURL:java.lang.String*=n$106 [line 350]\n  EXIT_SCOPE(_,n$103,n$104,n$106); [line 350]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_35" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_36" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_35" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_36" [label="36:  Call boolean String.equals(Object) \n   n$107=*&avatarURL:java.lang.String* [line 351]\n  _=*n$107:java.lang.String*(root java.lang.String) [line 351]\n  n$109=_fun_boolean String.equals(Object)(n$107:java.lang.String*,\"\":java.lang.Object*) virtual [line 351]\n  *&$irvar15:_Bool=n$109 [line 351]\n  EXIT_SCOPE(_,n$107,n$109); [line 351]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_36" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_37" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_36" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_38" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_36" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_37" [label="37: Prune (true branch, if) \n   n$110=*&$irvar15:_Bool [line 351]\n  PRUNE(!(n$110 == 0), true); [line 351]\n  NULLIFY(&avatarURL); [line 351]\n  NULLIFY(&$irvar15); [line 351]\n  EXIT_SCOPE(n$110,avatarURL,$irvar15); [line 351]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_37" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_39" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_37" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_38" [label="38: Prune (false branch, if) \n   n$110=*&$irvar15:_Bool [line 351]\n  PRUNE((n$110 == 0), false); [line 351]\n  NULLIFY(&$irvar15); [line 351]\n  EXIT_SCOPE(n$110,$irvar15); [line 351]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_38" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_40" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_38" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_39" [label="39:  Call void User.setAvatar(String) \n   n$111=*&user:com.stn.pojo.User* [line 352]\n  _=*n$111:com.stn.pojo.User*(root com.stn.pojo.User) [line 352]\n  n$113=_fun_void User.setAvatar(String)(n$111:com.stn.pojo.User*,\"img/profile.png\":java.lang.Object*) virtual [line 352]\n  EXIT_SCOPE(_,n$111,n$113); [line 352]\n  APPLY_ABSTRACTION; [line 352]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_39" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_41" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_39" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_40" [label="40:  Call void User.setAvatar(String) \n   n$114=*&user:com.stn.pojo.User* [line 354]\n  _=*n$114:com.stn.pojo.User*(root com.stn.pojo.User) [line 354]\n  n$116=*&avatarURL:java.lang.String* [line 354]\n  n$117=_fun_void User.setAvatar(String)(n$114:com.stn.pojo.User*,n$116:java.lang.String*) virtual [line 354]\n  NULLIFY(&avatarURL); [line 354]\n  EXIT_SCOPE(_,n$114,n$116,n$117,avatarURL); [line 354]\n  APPLY_ABSTRACTION; [line 354]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_40" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_41" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_40" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_41" [label="41:  Call String ResultSet.getString(int) \n   n$118=*&this:com.stn.helpers.UserHelper* [line 356]\n  n$119=*n$118.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 356]\n  _=*n$119:java.sql.ResultSet*(root java.sql.ResultSet) [line 356]\n  n$121=_fun_String ResultSet.getString(int)(n$119:java.sql.ResultSet*,9:int) interface virtual [line 356]\n  *&$irvar16:java.lang.String*=n$121 [line 356]\n  EXIT_SCOPE(_,n$118,n$119,n$121); [line 356]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_41" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_42" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_41" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_42" [label="42:  Call void User.setIp(String) \n   n$122=*&user:com.stn.pojo.User* [line 356]\n  _=*n$122:com.stn.pojo.User*(root com.stn.pojo.User) [line 356]\n  n$124=*&$irvar16:java.lang.String* [line 356]\n  n$125=_fun_void User.setIp(String)(n$122:com.stn.pojo.User*,n$124:java.lang.String*) virtual [line 356]\n  NULLIFY(&$irvar16); [line 356]\n  EXIT_SCOPE(_,n$122,n$124,n$125,$irvar16); [line 356]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_42" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_43" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_42" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_43" [label="43:  Call String ResultSet.getString(int) \n   n$126=*&this:com.stn.helpers.UserHelper* [line 357]\n  n$127=*n$126.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 357]\n  _=*n$127:java.sql.ResultSet*(root java.sql.ResultSet) [line 357]\n  n$129=_fun_String ResultSet.getString(int)(n$127:java.sql.ResultSet*,10:int) interface virtual [line 357]\n  *&grupa:java.lang.String*=n$129 [line 357]\n  EXIT_SCOPE(_,n$126,n$127,n$129); [line 357]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_43" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_44" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_43" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_44" [label="44:  Call String ResultSet.getString(int) \n   n$130=*&this:com.stn.helpers.UserHelper* [line 358]\n  n$131=*n$130.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 358]\n  _=*n$131:java.sql.ResultSet*(root java.sql.ResultSet) [line 358]\n  n$133=_fun_String ResultSet.getString(int)(n$131:java.sql.ResultSet*,11:int) interface virtual [line 358]\n  *&serie:java.lang.String*=n$133 [line 358]\n  EXIT_SCOPE(_,n$130,n$131,n$133); [line 358]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_44" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_45" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_44" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_45" [label="45:  Call String ResultSet.getString(int) \n   n$134=*&this:com.stn.helpers.UserHelper* [line 359]\n  n$135=*n$134.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 359]\n  _=*n$135:java.sql.ResultSet*(root java.sql.ResultSet) [line 359]\n  n$137=_fun_String ResultSet.getString(int)(n$135:java.sql.ResultSet*,12:int) interface virtual [line 359]\n  *&facultate:java.lang.String*=n$137 [line 359]\n  EXIT_SCOPE(_,n$134,n$135,n$137); [line 359]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_45" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_46" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_45" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_47" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_45" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_46" [label="46: Prune (true branch, if) \n   n$138=*&grupa:java.lang.String* [line 360]\n  PRUNE(!(n$138 == null), true); [line 360]\n  EXIT_SCOPE(n$138); [line 360]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_46" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_48" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_46" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_49" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_46" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_47" [label="47: Prune (false branch, if) \n   n$138=*&grupa:java.lang.String* [line 360]\n  PRUNE((n$138 == null), false); [line 360]\n  NULLIFY(&facultate); [line 360]\n  NULLIFY(&serie); [line 360]\n  NULLIFY(&grupa); [line 360]\n  EXIT_SCOPE(n$138,facultate,serie,grupa); [line 360]\n  APPLY_ABSTRACTION; [line 360]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_47" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_61" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_47" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_48" [label="48: Prune (true branch, if) \n   n$139=*&serie:java.lang.String* [line 360]\n  PRUNE(!(n$139 == null), true); [line 360]\n  EXIT_SCOPE(n$139); [line 360]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_48" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_50" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_48" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_51" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_48" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_49" [label="49: Prune (false branch, if) \n   n$139=*&serie:java.lang.String* [line 360]\n  PRUNE((n$139 == null), false); [line 360]\n  NULLIFY(&facultate); [line 360]\n  NULLIFY(&serie); [line 360]\n  NULLIFY(&grupa); [line 360]\n  EXIT_SCOPE(n$139,facultate,serie,grupa); [line 360]\n  APPLY_ABSTRACTION; [line 360]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_49" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_61" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_49" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_50" [label="50: Prune (true branch, if) \n   n$140=*&facultate:java.lang.String* [line 360]\n  PRUNE(!(n$140 == null), true); [line 360]\n  EXIT_SCOPE(n$140); [line 360]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_50" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_52" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_50" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_51" [label="51: Prune (false branch, if) \n   n$140=*&facultate:java.lang.String* [line 360]\n  PRUNE((n$140 == null), false); [line 360]\n  NULLIFY(&facultate); [line 360]\n  NULLIFY(&serie); [line 360]\n  NULLIFY(&grupa); [line 360]\n  EXIT_SCOPE(n$140,facultate,serie,grupa); [line 360]\n  APPLY_ABSTRACTION; [line 360]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_51" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_61" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_51" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_52" [label="52:  Call void User.setGrupa(String) \n   n$141=*&user:com.stn.pojo.User* [line 361]\n  _=*n$141:com.stn.pojo.User*(root com.stn.pojo.User) [line 361]\n  n$143=*&grupa:java.lang.String* [line 361]\n  n$144=_fun_void User.setGrupa(String)(n$141:com.stn.pojo.User*,n$143:java.lang.String*) virtual [line 361]\n  NULLIFY(&grupa); [line 361]\n  EXIT_SCOPE(_,n$141,n$143,n$144,grupa); [line 361]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_52" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_53" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_52" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_53" [label="53:  Call void User.setSerie(String) \n   n$145=*&user:com.stn.pojo.User* [line 362]\n  _=*n$145:com.stn.pojo.User*(root com.stn.pojo.User) [line 362]\n  n$147=*&serie:java.lang.String* [line 362]\n  n$148=_fun_void User.setSerie(String)(n$145:com.stn.pojo.User*,n$147:java.lang.String*) virtual [line 362]\n  NULLIFY(&serie); [line 362]\n  EXIT_SCOPE(_,n$145,n$147,n$148,serie); [line 362]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_53" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_54" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_53" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_54" [label="54:  Call void User.setFacultate(String) \n   n$149=*&user:com.stn.pojo.User* [line 363]\n  _=*n$149:com.stn.pojo.User*(root com.stn.pojo.User) [line 363]\n  n$151=*&facultate:java.lang.String* [line 363]\n  n$152=_fun_void User.setFacultate(String)(n$149:com.stn.pojo.User*,n$151:java.lang.String*) virtual [line 363]\n  NULLIFY(&facultate); [line 363]\n  EXIT_SCOPE(_,n$149,n$151,n$152,facultate); [line 363]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_54" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_55" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_54" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_55" [label="55:  Call int ResultSet.getInt(int) \n   n$153=*&this:com.stn.helpers.UserHelper* [line 364]\n  n$154=*n$153.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 364]\n  _=*n$154:java.sql.ResultSet*(root java.sql.ResultSet) [line 364]\n  n$156=_fun_int ResultSet.getInt(int)(n$154:java.sql.ResultSet*,13:int) interface virtual [line 364]\n  *&$irvar17:int=n$156 [line 364]\n  EXIT_SCOPE(_,n$153,n$154,n$156); [line 364]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_55" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_56" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_55" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_56" [label="56:  Call void User.setIdGrupa(int) \n   n$157=*&user:com.stn.pojo.User* [line 364]\n  _=*n$157:com.stn.pojo.User*(root com.stn.pojo.User) [line 364]\n  n$159=*&$irvar17:int [line 364]\n  n$160=_fun_void User.setIdGrupa(int)(n$157:com.stn.pojo.User*,n$159:int) virtual [line 364]\n  NULLIFY(&$irvar17); [line 364]\n  EXIT_SCOPE(_,n$157,n$159,n$160,$irvar17); [line 364]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_56" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_57" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_56" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_57" [label="57:  Call int ResultSet.getInt(int) \n   n$161=*&this:com.stn.helpers.UserHelper* [line 365]\n  n$162=*n$161.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 365]\n  _=*n$162:java.sql.ResultSet*(root java.sql.ResultSet) [line 365]\n  n$164=_fun_int ResultSet.getInt(int)(n$162:java.sql.ResultSet*,14:int) interface virtual [line 365]\n  *&$irvar18:int=n$164 [line 365]\n  EXIT_SCOPE(_,n$161,n$162,n$164); [line 365]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_57" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_58" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_57" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_58" [label="58:  Call void User.setIdSerie(int) \n   n$165=*&user:com.stn.pojo.User* [line 365]\n  _=*n$165:com.stn.pojo.User*(root com.stn.pojo.User) [line 365]\n  n$167=*&$irvar18:int [line 365]\n  n$168=_fun_void User.setIdSerie(int)(n$165:com.stn.pojo.User*,n$167:int) virtual [line 365]\n  NULLIFY(&$irvar18); [line 365]\n  EXIT_SCOPE(_,n$165,n$167,n$168,$irvar18); [line 365]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_58" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_59" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_58" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_59" [label="59:  Call int ResultSet.getInt(int) \n   n$169=*&this:com.stn.helpers.UserHelper* [line 366]\n  n$170=*n$169.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 366]\n  _=*n$170:java.sql.ResultSet*(root java.sql.ResultSet) [line 366]\n  n$172=_fun_int ResultSet.getInt(int)(n$170:java.sql.ResultSet*,15:int) interface virtual [line 366]\n  *&$irvar19:int=n$172 [line 366]\n  EXIT_SCOPE(_,n$169,n$170,n$172); [line 366]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_59" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_60" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_59" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_60" [label="60:  Call void User.setIdFacultate(int) \n   n$173=*&user:com.stn.pojo.User* [line 366]\n  _=*n$173:com.stn.pojo.User*(root com.stn.pojo.User) [line 366]\n  n$175=*&$irvar19:int [line 366]\n  n$176=_fun_void User.setIdFacultate(int)(n$173:com.stn.pojo.User*,n$175:int) virtual [line 366]\n  NULLIFY(&$irvar19); [line 366]\n  EXIT_SCOPE(_,n$173,n$175,n$176,$irvar19); [line 366]\n  APPLY_ABSTRACTION; [line 366]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_60" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_64" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_60" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_61" [label="61:  Call void User.setGrupa(String) \n   n$177=*&user:com.stn.pojo.User* [line 368]\n  _=*n$177:com.stn.pojo.User*(root com.stn.pojo.User) [line 368]\n  n$179=_fun_void User.setGrupa(String)(n$177:com.stn.pojo.User*,\"Not set\":java.lang.Object*) virtual [line 368]\n  EXIT_SCOPE(_,n$177,n$179); [line 368]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_61" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_62" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_61" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_62" [label="62:  Call void User.setSerie(String) \n   n$180=*&user:com.stn.pojo.User* [line 369]\n  _=*n$180:com.stn.pojo.User*(root com.stn.pojo.User) [line 369]\n  n$182=_fun_void User.setSerie(String)(n$180:com.stn.pojo.User*,\"Not set\":java.lang.Object*) virtual [line 369]\n  EXIT_SCOPE(_,n$180,n$182); [line 369]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_62" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_63" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_62" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_63" [label="63:  Call void User.setFacultate(String) \n   n$183=*&user:com.stn.pojo.User* [line 370]\n  _=*n$183:com.stn.pojo.User*(root com.stn.pojo.User) [line 370]\n  n$185=_fun_void User.setFacultate(String)(n$183:com.stn.pojo.User*,\"Not set\":java.lang.Object*) virtual [line 370]\n  EXIT_SCOPE(_,n$183,n$185); [line 370]\n  APPLY_ABSTRACTION; [line 370]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_63" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_64" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_63" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_64" [label="64:  Call int ResultSet.getInt(int) \n   n$186=*&this:com.stn.helpers.UserHelper* [line 372]\n  n$187=*n$186.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 372]\n  _=*n$187:java.sql.ResultSet*(root java.sql.ResultSet) [line 372]\n  n$189=_fun_int ResultSet.getInt(int)(n$187:java.sql.ResultSet*,16:int) interface virtual [line 372]\n  *&$irvar20:int=n$189 [line 372]\n  EXIT_SCOPE(_,n$186,n$187,n$189); [line 372]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_64" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_65" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_64" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_65" [label="65:  Call void User.setGender(int) \n   n$190=*&user:com.stn.pojo.User* [line 372]\n  _=*n$190:com.stn.pojo.User*(root com.stn.pojo.User) [line 372]\n  n$192=*&$irvar20:int [line 372]\n  n$193=_fun_void User.setGender(int)(n$190:com.stn.pojo.User*,n$192:int) virtual [line 372]\n  NULLIFY(&$irvar20); [line 372]\n  EXIT_SCOPE(_,n$190,n$192,n$193,$irvar20); [line 372]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_65" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_66" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_65" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_66" [label="66:  Call int ResultSet.getInt(int) \n   n$194=*&this:com.stn.helpers.UserHelper* [line 373]\n  n$195=*n$194.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 373]\n  _=*n$195:java.sql.ResultSet*(root java.sql.ResultSet) [line 373]\n  n$197=_fun_int ResultSet.getInt(int)(n$195:java.sql.ResultSet*,17:int) interface virtual [line 373]\n  *&countryId:int=n$197 [line 373]\n  EXIT_SCOPE(_,n$194,n$195,n$197); [line 373]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_66" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_67" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_66" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_68" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_66" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_67" [label="67: Prune (true branch, if) \n   n$198=*&countryId:int [line 374]\n  PRUNE(!(n$198 <= 0), true); [line 374]\n  NULLIFY(&countryId); [line 374]\n  EXIT_SCOPE(n$198,countryId); [line 374]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_67" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_69" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_67" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_68" [label="68: Prune (false branch, if) \n   n$198=*&countryId:int [line 374]\n  PRUNE((n$198 <= 0), false); [line 374]\n  NULLIFY(&countryId); [line 374]\n  EXIT_SCOPE(n$198,countryId); [line 374]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_68" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_75" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_68" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_69" [label="69:  Call int ResultSet.getInt(int) \n   n$199=*&this:com.stn.helpers.UserHelper* [line 376]\n  n$200=*n$199.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 376]\n  _=*n$200:java.sql.ResultSet*(root java.sql.ResultSet) [line 376]\n  n$202=_fun_int ResultSet.getInt(int)(n$200:java.sql.ResultSet*,17:int) interface virtual [line 376]\n  *&$irvar21:int=n$202 [line 376]\n  EXIT_SCOPE(_,n$199,n$200,n$202); [line 376]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_69" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_70" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_69" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_70" [label="70:  Call void User.setCountryId(int) \n   n$203=*&user:com.stn.pojo.User* [line 376]\n  _=*n$203:com.stn.pojo.User*(root com.stn.pojo.User) [line 376]\n  n$205=*&$irvar21:int [line 376]\n  n$206=_fun_void User.setCountryId(int)(n$203:com.stn.pojo.User*,n$205:int) virtual [line 376]\n  NULLIFY(&$irvar21); [line 376]\n  EXIT_SCOPE(_,n$203,n$205,n$206,$irvar21); [line 376]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_70" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_71" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_70" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_71" [label="71:  Call String ResultSet.getString(int) \n   n$207=*&this:com.stn.helpers.UserHelper* [line 377]\n  n$208=*n$207.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 377]\n  _=*n$208:java.sql.ResultSet*(root java.sql.ResultSet) [line 377]\n  n$210=_fun_String ResultSet.getString(int)(n$208:java.sql.ResultSet*,18:int) interface virtual [line 377]\n  *&$irvar22:java.lang.String*=n$210 [line 377]\n  EXIT_SCOPE(_,n$207,n$208,n$210); [line 377]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_71" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_72" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_71" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_72" [label="72:  Call void User.setCountryName(String) \n   n$211=*&user:com.stn.pojo.User* [line 377]\n  _=*n$211:com.stn.pojo.User*(root com.stn.pojo.User) [line 377]\n  n$213=*&$irvar22:java.lang.String* [line 377]\n  n$214=_fun_void User.setCountryName(String)(n$211:com.stn.pojo.User*,n$213:java.lang.String*) virtual [line 377]\n  NULLIFY(&$irvar22); [line 377]\n  EXIT_SCOPE(_,n$211,n$213,n$214,$irvar22); [line 377]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_72" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_73" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_72" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_73" [label="73:  Call String ResultSet.getString(int) \n   n$215=*&this:com.stn.helpers.UserHelper* [line 378]\n  n$216=*n$215.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 378]\n  _=*n$216:java.sql.ResultSet*(root java.sql.ResultSet) [line 378]\n  n$218=_fun_String ResultSet.getString(int)(n$216:java.sql.ResultSet*,19:int) interface virtual [line 378]\n  *&$irvar23:java.lang.String*=n$218 [line 378]\n  EXIT_SCOPE(_,n$215,n$216,n$218); [line 378]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_73" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_74" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_73" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_74" [label="74:  Call void User.setCountryImage(String) \n   n$219=*&user:com.stn.pojo.User* [line 378]\n  _=*n$219:com.stn.pojo.User*(root com.stn.pojo.User) [line 378]\n  n$221=*&$irvar23:java.lang.String* [line 378]\n  n$222=_fun_void User.setCountryImage(String)(n$219:com.stn.pojo.User*,n$221:java.lang.String*) virtual [line 378]\n  NULLIFY(&$irvar23); [line 378]\n  EXIT_SCOPE(_,n$219,n$221,n$222,$irvar23); [line 378]\n  APPLY_ABSTRACTION; [line 378]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_74" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_77" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_74" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_75" [label="75:  Call void User.setCountryId(int) \n   n$223=*&user:com.stn.pojo.User* [line 380]\n  _=*n$223:com.stn.pojo.User*(root com.stn.pojo.User) [line 380]\n  n$225=_fun_void User.setCountryId(int)(n$223:com.stn.pojo.User*,0:int) virtual [line 380]\n  EXIT_SCOPE(_,n$223,n$225); [line 380]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_75" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_76" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_75" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_76" [label="76:  Call void User.setCountryName(String) \n   n$226=*&user:com.stn.pojo.User* [line 381]\n  _=*n$226:com.stn.pojo.User*(root com.stn.pojo.User) [line 381]\n  n$228=_fun_void User.setCountryName(String)(n$226:com.stn.pojo.User*,\"Not set\":java.lang.Object*) virtual [line 381]\n  EXIT_SCOPE(_,n$226,n$228); [line 381]\n  APPLY_ABSTRACTION; [line 381]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_76" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_77" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_76" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_77" [label="77:  Call int ResultSet.getInt(int) \n   n$229=*&this:com.stn.helpers.UserHelper* [line 383]\n  n$230=*n$229.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 383]\n  _=*n$230:java.sql.ResultSet*(root java.sql.ResultSet) [line 383]\n  n$232=_fun_int ResultSet.getInt(int)(n$230:java.sql.ResultSet*,20:int) interface virtual [line 383]\n  *&$irvar24:int=n$232 [line 383]\n  EXIT_SCOPE(_,n$229,n$230,n$232); [line 383]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_77" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_78" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_77" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_78" [label="78:  Call void User.setAnonymity(int) \n   n$233=*&user:com.stn.pojo.User* [line 383]\n  _=*n$233:com.stn.pojo.User*(root com.stn.pojo.User) [line 383]\n  n$235=*&$irvar24:int [line 383]\n  n$236=_fun_void User.setAnonymity(int)(n$233:com.stn.pojo.User*,n$235:int) virtual [line 383]\n  NULLIFY(&$irvar24); [line 383]\n  EXIT_SCOPE(_,n$233,n$235,n$236,$irvar24); [line 383]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_78" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_79" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_78" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_79" [label="79:  Call int ResultSet.getInt(int) \n   n$237=*&this:com.stn.helpers.UserHelper* [line 384]\n  n$238=*n$237.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 384]\n  _=*n$238:java.sql.ResultSet*(root java.sql.ResultSet) [line 384]\n  n$240=_fun_int ResultSet.getInt(int)(n$238:java.sql.ResultSet*,21:int) interface virtual [line 384]\n  *&$irvar25:int=n$240 [line 384]\n  EXIT_SCOPE(_,n$237,n$238,n$240); [line 384]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_79" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_80" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_79" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_80" [label="80:  Call void User.setDonor(int) \n   n$241=*&user:com.stn.pojo.User* [line 384]\n  _=*n$241:com.stn.pojo.User*(root com.stn.pojo.User) [line 384]\n  n$243=*&$irvar25:int [line 384]\n  n$244=_fun_void User.setDonor(int)(n$241:com.stn.pojo.User*,n$243:int) virtual [line 384]\n  NULLIFY(&$irvar25); [line 384]\n  EXIT_SCOPE(_,n$241,n$243,n$244,$irvar25); [line 384]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_80" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_81" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_80" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_82" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_80" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_81" [label="81: Prune (true branch, if) \n   n$245=*&this:com.stn.helpers.UserHelper* [line 390]\n  n$246=*n$245.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 390]\n  PRUNE(!(n$246 == null), true); [line 390]\n  EXIT_SCOPE(n$245,n$246); [line 390]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_81" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_83" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_81" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_127" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_82" [label="82: Prune (false branch, if) \n   n$245=*&this:com.stn.helpers.UserHelper* [line 390]\n  n$246=*n$245.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 390]\n  PRUNE((n$246 == null), false); [line 390]\n  EXIT_SCOPE(n$245,n$246); [line 390]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_82" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_84" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_82" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_85" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_82" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_127" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_83" [label="83:  Call void PreparedStatement.close() \n   n$247=*&this:com.stn.helpers.UserHelper* [line 391]\n  n$248=*n$247.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 391]\n  n$251=_fun___set_mem_attribute(n$248:java.sql.PreparedStatement*) [line 391]\n  _=*n$248:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 391]\n  n$250=_fun_void PreparedStatement.close()(n$248:java.sql.PreparedStatement*) interface virtual [line 391]\n  EXIT_SCOPE(_,n$247,n$248,n$250,n$251); [line 391]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_83" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_84" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_83" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_85" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_83" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_127" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_84" [label="84: Prune (true branch, if) \n   n$252=*&this:com.stn.helpers.UserHelper* [line 392]\n  n$253=*n$252.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 392]\n  PRUNE(!(n$253 == null), true); [line 392]\n  EXIT_SCOPE(n$252,n$253); [line 392]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_84" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_86" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_84" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_127" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_85" [label="85: Prune (false branch, if) \n   n$252=*&this:com.stn.helpers.UserHelper* [line 392]\n  n$253=*n$252.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 392]\n  PRUNE((n$253 == null), false); [line 392]\n  EXIT_SCOPE(n$252,n$253); [line 392]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_85" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_87" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_85" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_88" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_85" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_127" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_86" [label="86:  Call void Connection.close() \n   n$254=*&this:com.stn.helpers.UserHelper* [line 393]\n  n$255=*n$254.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 393]\n  n$258=_fun___set_mem_attribute(n$255:java.sql.Connection*) [line 393]\n  _=*n$255:java.sql.Connection*(root java.sql.Connection) [line 393]\n  n$257=_fun_void Connection.close()(n$255:java.sql.Connection*) interface virtual [line 393]\n  EXIT_SCOPE(_,n$254,n$255,n$257,n$258); [line 393]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_86" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_87" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_86" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_88" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_86" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_127" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_87" [label="87: Prune (true branch, if) \n   n$259=*&this:com.stn.helpers.UserHelper* [line 394]\n  n$260=*n$259.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 394]\n  PRUNE(!(n$260 == null), true); [line 394]\n  EXIT_SCOPE(n$259,n$260); [line 394]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_87" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_89" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_87" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_127" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_88" [label="88: Prune (false branch, if) \n   n$259=*&this:com.stn.helpers.UserHelper* [line 394]\n  n$260=*n$259.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 394]\n  PRUNE((n$260 == null), false); [line 394]\n  NULLIFY(&this); [line 394]\n  EXIT_SCOPE(n$259,n$260,this); [line 394]\n  APPLY_ABSTRACTION; [line 394]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_88" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_118" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_88" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_127" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_89" [label="89:  Call void ResultSet.close() \n   n$261=*&this:com.stn.helpers.UserHelper* [line 395]\n  n$262=*n$261.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 395]\n  n$265=_fun___set_mem_attribute(n$262:java.sql.ResultSet*) [line 395]\n  _=*n$262:java.sql.ResultSet*(root java.sql.ResultSet) [line 395]\n  n$264=_fun_void ResultSet.close()(n$262:java.sql.ResultSet*) interface virtual [line 395]\n  NULLIFY(&this); [line 395]\n  EXIT_SCOPE(_,n$261,n$262,n$264,n$265,this); [line 395]\n  APPLY_ABSTRACTION; [line 395]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_89" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_118" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_89" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_127" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_90" [label="90:  method_body \n   n$266=*&CatchVar558:java.lang.Object* [line 396]\n  *&ex:java.lang.Object*=n$266 [line 396]\n  NULLIFY(&CatchVar558); [line 396]\n  EXIT_SCOPE(n$266,CatchVar558); [line 396]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_90" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_91" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_90" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_91" [label="91:  Call void Throwable.printStackTrace() \n   n$267=*&ex:java.lang.Object* [line 397]\n  _=*n$267:java.lang.Object*(root java.lang.Object) [line 397]\n  n$269=_fun_void Throwable.printStackTrace()(n$267:java.lang.Object*) virtual [line 397]\n  NULLIFY(&ex); [line 397]\n  EXIT_SCOPE(_,n$267,n$269,ex); [line 397]\n  APPLY_ABSTRACTION; [line 397]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_91" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_118" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_91" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_92" [label="92:  method_body \n   n$270=*&CatchVar568:java.lang.Object* [line 386]\n  *&e:java.lang.Object*=n$270 [line 386]\n  NULLIFY(&CatchVar568); [line 386]\n  EXIT_SCOPE(n$270,CatchVar568); [line 386]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_92" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_93" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_92" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_135" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_93" [label="93:  Call void Throwable.printStackTrace() \n   n$271=*&e:java.lang.Object* [line 387]\n  _=*n$271:java.lang.Object*(root java.lang.Object) [line 387]\n  n$273=_fun_void Throwable.printStackTrace()(n$271:java.lang.Object*) virtual [line 387]\n  NULLIFY(&e); [line 387]\n  EXIT_SCOPE(_,n$271,n$273,e); [line 387]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_93" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_94" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_93" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_95" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_93" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_135" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_94" [label="94: Prune (true branch, if) \n   n$274=*&this:com.stn.helpers.UserHelper* [line 390]\n  n$275=*n$274.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 390]\n  PRUNE(!(n$275 == null), true); [line 390]\n  EXIT_SCOPE(n$274,n$275); [line 390]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_94" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_96" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_94" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_133" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_95" [label="95: Prune (false branch, if) \n   n$274=*&this:com.stn.helpers.UserHelper* [line 390]\n  n$275=*n$274.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 390]\n  PRUNE((n$275 == null), false); [line 390]\n  EXIT_SCOPE(n$274,n$275); [line 390]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_95" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_97" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_95" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_98" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_95" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_133" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_96" [label="96:  Call void PreparedStatement.close() \n   n$276=*&this:com.stn.helpers.UserHelper* [line 391]\n  n$277=*n$276.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 391]\n  n$280=_fun___set_mem_attribute(n$277:java.sql.PreparedStatement*) [line 391]\n  _=*n$277:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 391]\n  n$279=_fun_void PreparedStatement.close()(n$277:java.sql.PreparedStatement*) interface virtual [line 391]\n  EXIT_SCOPE(_,n$276,n$277,n$279,n$280); [line 391]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_96" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_97" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_96" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_98" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_96" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_133" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_97" [label="97: Prune (true branch, if) \n   n$281=*&this:com.stn.helpers.UserHelper* [line 392]\n  n$282=*n$281.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 392]\n  PRUNE(!(n$282 == null), true); [line 392]\n  EXIT_SCOPE(n$281,n$282); [line 392]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_97" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_99" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_97" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_133" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_98" [label="98: Prune (false branch, if) \n   n$281=*&this:com.stn.helpers.UserHelper* [line 392]\n  n$282=*n$281.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 392]\n  PRUNE((n$282 == null), false); [line 392]\n  EXIT_SCOPE(n$281,n$282); [line 392]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_98" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_100" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_98" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_101" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_98" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_133" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_99" [label="99:  Call void Connection.close() \n   n$283=*&this:com.stn.helpers.UserHelper* [line 393]\n  n$284=*n$283.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 393]\n  n$287=_fun___set_mem_attribute(n$284:java.sql.Connection*) [line 393]\n  _=*n$284:java.sql.Connection*(root java.sql.Connection) [line 393]\n  n$286=_fun_void Connection.close()(n$284:java.sql.Connection*) interface virtual [line 393]\n  EXIT_SCOPE(_,n$283,n$284,n$286,n$287); [line 393]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_99" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_100" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_99" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_101" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_99" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_133" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_100" [label="100: Prune (true branch, if) \n   n$288=*&this:com.stn.helpers.UserHelper* [line 394]\n  n$289=*n$288.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 394]\n  PRUNE(!(n$289 == null), true); [line 394]\n  EXIT_SCOPE(n$288,n$289); [line 394]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_100" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_102" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_100" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_133" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_101" [label="101: Prune (false branch, if) \n   n$288=*&this:com.stn.helpers.UserHelper* [line 394]\n  n$289=*n$288.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 394]\n  PRUNE((n$289 == null), false); [line 394]\n  NULLIFY(&this); [line 394]\n  EXIT_SCOPE(n$288,n$289,this); [line 394]\n  APPLY_ABSTRACTION; [line 394]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_101" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_118" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_101" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_133" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_102" [label="102:  Call void ResultSet.close() \n   n$290=*&this:com.stn.helpers.UserHelper* [line 395]\n  n$291=*n$290.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 395]\n  n$294=_fun___set_mem_attribute(n$291:java.sql.ResultSet*) [line 395]\n  _=*n$291:java.sql.ResultSet*(root java.sql.ResultSet) [line 395]\n  n$293=_fun_void ResultSet.close()(n$291:java.sql.ResultSet*) interface virtual [line 395]\n  NULLIFY(&this); [line 395]\n  EXIT_SCOPE(_,n$290,n$291,n$293,n$294,this); [line 395]\n  APPLY_ABSTRACTION; [line 395]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_102" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_118" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_102" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_133" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_103" [label="103:  method_body \n   n$295=*&CatchVar626:java.lang.Object* [line 396]\n  *&ex:java.lang.Object*=n$295 [line 396]\n  NULLIFY(&CatchVar626); [line 396]\n  EXIT_SCOPE(n$295,CatchVar626); [line 396]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_103" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_104" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_103" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_104" [label="104:  Call void Throwable.printStackTrace() \n   n$296=*&ex:java.lang.Object* [line 397]\n  _=*n$296:java.lang.Object*(root java.lang.Object) [line 397]\n  n$298=_fun_void Throwable.printStackTrace()(n$296:java.lang.Object*) virtual [line 397]\n  NULLIFY(&ex); [line 397]\n  EXIT_SCOPE(_,n$296,n$298,ex); [line 397]\n  APPLY_ABSTRACTION; [line 397]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_104" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_118" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_104" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_105" [label="105:  method_body \n   n$299=*&CatchVar636:java.lang.Object* [line 389]\n  *&$bcvar8:java.lang.Object*=n$299 [line 389]\n  EXIT_SCOPE(n$299); [line 389]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_105" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_106" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_105" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_107" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_105" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_137" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_106" [label="106: Prune (true branch, if) \n   n$300=*&this:com.stn.helpers.UserHelper* [line 390]\n  n$301=*n$300.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 390]\n  PRUNE(!(n$301 == null), true); [line 390]\n  EXIT_SCOPE(n$300,n$301); [line 390]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_106" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_108" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_106" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_130" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_107" [label="107: Prune (false branch, if) \n   n$300=*&this:com.stn.helpers.UserHelper* [line 390]\n  n$301=*n$300.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 390]\n  PRUNE((n$301 == null), false); [line 390]\n  EXIT_SCOPE(n$300,n$301); [line 390]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_107" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_109" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_107" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_110" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_107" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_130" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_108" [label="108:  Call void PreparedStatement.close() \n   n$302=*&this:com.stn.helpers.UserHelper* [line 391]\n  n$303=*n$302.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 391]\n  n$306=_fun___set_mem_attribute(n$303:java.sql.PreparedStatement*) [line 391]\n  _=*n$303:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 391]\n  n$305=_fun_void PreparedStatement.close()(n$303:java.sql.PreparedStatement*) interface virtual [line 391]\n  EXIT_SCOPE(_,n$302,n$303,n$305,n$306); [line 391]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_108" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_109" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_108" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_110" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_108" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_130" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_109" [label="109: Prune (true branch, if) \n   n$307=*&this:com.stn.helpers.UserHelper* [line 392]\n  n$308=*n$307.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 392]\n  PRUNE(!(n$308 == null), true); [line 392]\n  EXIT_SCOPE(n$307,n$308); [line 392]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_109" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_111" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_109" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_130" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_110" [label="110: Prune (false branch, if) \n   n$307=*&this:com.stn.helpers.UserHelper* [line 392]\n  n$308=*n$307.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 392]\n  PRUNE((n$308 == null), false); [line 392]\n  EXIT_SCOPE(n$307,n$308); [line 392]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_110" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_112" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_110" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_113" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_110" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_130" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_111" [label="111:  Call void Connection.close() \n   n$309=*&this:com.stn.helpers.UserHelper* [line 393]\n  n$310=*n$309.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 393]\n  n$313=_fun___set_mem_attribute(n$310:java.sql.Connection*) [line 393]\n  _=*n$310:java.sql.Connection*(root java.sql.Connection) [line 393]\n  n$312=_fun_void Connection.close()(n$310:java.sql.Connection*) interface virtual [line 393]\n  EXIT_SCOPE(_,n$309,n$310,n$312,n$313); [line 393]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_111" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_112" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_111" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_113" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_111" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_130" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_112" [label="112: Prune (true branch, if) \n   n$314=*&this:com.stn.helpers.UserHelper* [line 394]\n  n$315=*n$314.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 394]\n  PRUNE(!(n$315 == null), true); [line 394]\n  EXIT_SCOPE(n$314,n$315); [line 394]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_112" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_114" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_112" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_130" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_113" [label="113: Prune (false branch, if) \n   n$314=*&this:com.stn.helpers.UserHelper* [line 394]\n  n$315=*n$314.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 394]\n  PRUNE((n$315 == null), false); [line 394]\n  NULLIFY(&this); [line 394]\n  EXIT_SCOPE(n$314,n$315,this); [line 394]\n  APPLY_ABSTRACTION; [line 394]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_113" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_117" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_113" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_130" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_114" [label="114:  Call void ResultSet.close() \n   n$316=*&this:com.stn.helpers.UserHelper* [line 395]\n  n$317=*n$316.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 395]\n  n$320=_fun___set_mem_attribute(n$317:java.sql.ResultSet*) [line 395]\n  _=*n$317:java.sql.ResultSet*(root java.sql.ResultSet) [line 395]\n  n$319=_fun_void ResultSet.close()(n$317:java.sql.ResultSet*) interface virtual [line 395]\n  NULLIFY(&this); [line 395]\n  EXIT_SCOPE(_,n$316,n$317,n$319,n$320,this); [line 395]\n  APPLY_ABSTRACTION; [line 395]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_114" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_117" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_114" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_130" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_115" [label="115:  method_body \n   n$321=*&CatchVar689:java.lang.Object* [line 396]\n  *&ex:java.lang.Object*=n$321 [line 396]\n  NULLIFY(&CatchVar689); [line 396]\n  EXIT_SCOPE(n$321,CatchVar689); [line 396]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_115" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_116" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_115" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_116" [label="116:  Call void Throwable.printStackTrace() \n   n$322=*&ex:java.lang.Object* [line 397]\n  _=*n$322:java.lang.Object*(root java.lang.Object) [line 397]\n  n$324=_fun_void Throwable.printStackTrace()(n$322:java.lang.Object*) virtual [line 397]\n  NULLIFY(&ex); [line 397]\n  EXIT_SCOPE(_,n$322,n$324,ex); [line 397]\n  APPLY_ABSTRACTION; [line 397]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_116" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_117" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_116" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_117" [label="117:  throw \n   n$325=*&$bcvar8:java.lang.Object* [line 399]\n  *&return:com.stn.pojo.User*=EXN n$325 [line 399]\n  NULLIFY(&$bcvar8); [line 399]\n  EXIT_SCOPE(n$325,$bcvar8); [line 399]\n  APPLY_ABSTRACTION; [line 399]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_117" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_2" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_117" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_118" [label="118:  method_body \n   n$326=*&user:com.stn.pojo.User* [line 400]\n  *&return:com.stn.pojo.User*=n$326 [line 400]\n  NULLIFY(&user); [line 400]\n  EXIT_SCOPE(n$326,user); [line 400]\n  APPLY_ABSTRACTION; [line 400]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_118" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_2" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_118" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_119" [label="119:  Finally branch \n   APPLY_ABSTRACTION; [line 389]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_119" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_105" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_119" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_120" [label="120: Prune (true branch, switch) \n   n$329=_fun___instanceof(n$328:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 386]\n  PRUNE(n$329, true); [line 386]\n  *&CatchVar568:com.stn.pojo.User*=n$328 [line 386]\n  EXIT_SCOPE(n$328,n$329); [line 386]\n  APPLY_ABSTRACTION; [line 386]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_120" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_92" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_120" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_121" [label="121: Prune (false branch, switch) \n   n$329=_fun___instanceof(n$328:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 386]\n  PRUNE(!n$329, false); [line 386]\n  NULLIFY(&user); [line 386]\n  EXIT_SCOPE(n$328,n$329,user); [line 386]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_121" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_119" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_121" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_122" [label="122: Prune (true branch, switch) \n   n$330=_fun___instanceof(n$328:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 386]\n  PRUNE(n$330, true); [line 386]\n  *&CatchVar568:com.stn.pojo.User*=n$328 [line 386]\n  EXIT_SCOPE(n$328,n$330); [line 386]\n  APPLY_ABSTRACTION; [line 386]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_122" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_92" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_122" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_123" [label="123: Prune (false branch, switch) \n   n$330=_fun___instanceof(n$328:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 386]\n  PRUNE(!n$330, false); [line 386]\n  EXIT_SCOPE(n$330); [line 386]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_123" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_120" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_123" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_121" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_123" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" [label="124:  exception handler \n   n$327=*&return:com.stn.pojo.User* [line 386]\n  *&return:com.stn.pojo.User*=null [line 386]\n  n$328=_fun___unwrap_exception(n$327:com.stn.pojo.User*) [line 386]\n  NULLIFY(&$irvar22); [line 386]\n  NULLIFY(&$irvar25); [line 386]\n  NULLIFY(&$irvar3); [line 386]\n  NULLIFY(&$irvar9); [line 386]\n  NULLIFY(&$irvar17); [line 386]\n  NULLIFY(&facultate); [line 386]\n  NULLIFY(&serie); [line 386]\n  NULLIFY(&avatarURL); [line 386]\n  NULLIFY(&$irvar18); [line 386]\n  NULLIFY(&$irvar5); [line 386]\n  NULLIFY(&$irvar16); [line 386]\n  NULLIFY(&grupa); [line 386]\n  NULLIFY(&$irvar4); [line 386]\n  NULLIFY(&$irvar7); [line 386]\n  NULLIFY(&$irvar12); [line 386]\n  NULLIFY(&$irvar19); [line 386]\n  NULLIFY(&$irvar21); [line 386]\n  NULLIFY(&countryId); [line 386]\n  NULLIFY(&$irvar20); [line 386]\n  NULLIFY(&$irvar6); [line 386]\n  NULLIFY(&$irvar23); [line 386]\n  NULLIFY(&$irvar13); [line 386]\n  NULLIFY(&$irvar11); [line 386]\n  NULLIFY(&$irvar10); [line 386]\n  NULLIFY(&$irvar24); [line 386]\n  NULLIFY(&$irvar8); [line 386]\n  NULLIFY(&$irvar1); [line 386]\n  NULLIFY(&$irvar2); [line 386]\n  NULLIFY(&$irvar15); [line 386]\n  NULLIFY(&$irvar14); [line 386]\n  EXIT_SCOPE(n$327,$irvar22,$irvar25,$irvar3,$irvar9,$irvar17,facultate,serie,avatarURL,$irvar18,$irvar5,$irvar16,grupa,$irvar4,$irvar7,$irvar12,$irvar19,$irvar21,countryId,$irvar20,$irvar6,$irvar23,$irvar13,$irvar11,$irvar10,$irvar24,$irvar8,$irvar1,$irvar2,$irvar15,$irvar14); [line 386]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_122" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_123" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_124" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_125" [label="125: Prune (true branch, switch) \n   n$331=_fun___instanceof(n$328:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 396]\n  PRUNE(n$331, true); [line 396]\n  *&CatchVar558:com.stn.pojo.User*=n$328 [line 396]\n  EXIT_SCOPE(n$328,n$331); [line 396]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_125" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_90" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_125" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_126" [label="126: Prune (false branch, switch) \n   n$331=_fun___instanceof(n$328:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 396]\n  PRUNE(!n$331, false); [line 396]\n  *&return:com.stn.pojo.User*=EXN n$328 [line 396]\n  NULLIFY(&user); [line 396]\n  EXIT_SCOPE(n$328,n$331,user); [line 396]\n  APPLY_ABSTRACTION; [line 396]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_126" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_126" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_127" [label="127:  exception handler \n   n$327=*&return:com.stn.pojo.User* [line 396]\n  *&return:com.stn.pojo.User*=null [line 396]\n  n$328=_fun___unwrap_exception(n$327:com.stn.pojo.User*) [line 396]\n  EXIT_SCOPE(n$327); [line 396]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_127" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_125" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_127" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_126" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_127" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_128" [label="128: Prune (true branch, switch) \n   n$332=_fun___instanceof(n$328:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 396]\n  PRUNE(n$332, true); [line 396]\n  *&CatchVar689:com.stn.pojo.User*=n$328 [line 396]\n  EXIT_SCOPE(n$328,n$332); [line 396]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_128" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_115" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_128" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_129" [label="129: Prune (false branch, switch) \n   n$332=_fun___instanceof(n$328:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 396]\n  PRUNE(!n$332, false); [line 396]\n  *&return:com.stn.pojo.User*=EXN n$328 [line 396]\n  NULLIFY(&$bcvar8); [line 396]\n  EXIT_SCOPE(n$328,n$332,$bcvar8); [line 396]\n  APPLY_ABSTRACTION; [line 396]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_129" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_129" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_130" [label="130:  exception handler \n   n$327=*&return:com.stn.pojo.User* [line 396]\n  *&return:com.stn.pojo.User*=null [line 396]\n  n$328=_fun___unwrap_exception(n$327:com.stn.pojo.User*) [line 396]\n  EXIT_SCOPE(n$327); [line 396]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_130" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_128" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_130" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_129" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_130" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_131" [label="131: Prune (true branch, switch) \n   n$333=_fun___instanceof(n$328:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 396]\n  PRUNE(n$333, true); [line 396]\n  *&CatchVar626:com.stn.pojo.User*=n$328 [line 396]\n  EXIT_SCOPE(n$328,n$333); [line 396]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_131" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_103" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_131" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_132" [label="132: Prune (false branch, switch) \n   n$333=_fun___instanceof(n$328:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 396]\n  PRUNE(!n$333, false); [line 396]\n  *&return:com.stn.pojo.User*=EXN n$328 [line 396]\n  NULLIFY(&user); [line 396]\n  EXIT_SCOPE(n$328,n$333,user); [line 396]\n  APPLY_ABSTRACTION; [line 396]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_132" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_132" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_133" [label="133:  exception handler \n   n$327=*&return:com.stn.pojo.User* [line 396]\n  *&return:com.stn.pojo.User*=null [line 396]\n  n$328=_fun___unwrap_exception(n$327:com.stn.pojo.User*) [line 396]\n  EXIT_SCOPE(n$327); [line 396]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_133" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_131" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_133" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_132" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_133" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_134" [label="134:  Finally branch \n   APPLY_ABSTRACTION; [line 389]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_134" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_105" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_134" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_135" [label="135:  exception handler \n   n$327=*&return:com.stn.pojo.User* [line 389]\n  *&return:com.stn.pojo.User*=null [line 389]\n  n$328=_fun___unwrap_exception(n$327:com.stn.pojo.User*) [line 389]\n  NULLIFY(&user); [line 389]\n  NULLIFY(&e); [line 389]\n  EXIT_SCOPE(n$327,n$328,user,e); [line 389]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_135" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_134" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_135" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_136" [label="136:  Finally branch \n   APPLY_ABSTRACTION; [line 389]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_136" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_105" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_136" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+"com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_137" [label="137:  exception handler \n   n$327=*&return:com.stn.pojo.User* [line 389]\n  *&return:com.stn.pojo.User*=null [line 389]\n  n$328=_fun___unwrap_exception(n$327:com.stn.pojo.User*) [line 389]\n  NULLIFY(&$bcvar8); [line 389]\n  EXIT_SCOPE(n$327,n$328,$bcvar8); [line 389]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_137" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_136" ;
+	 "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_137" -> "com.stn.helpers.UserHelper.getUserInfo(int):com.stn.pojo.User.c109599a56f0928e1ece0ebf35fc9053_3" [color="red" ];
+}

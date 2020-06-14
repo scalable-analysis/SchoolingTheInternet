@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.User.setUserName(java.lang.String):void.415f52f14c712a1270f84ff48b662b46_1" [label="1: Start void User.setUserName(String)\nFormals:  this:com.stn.pojo.User* userName:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.User.setUserName(java.lang.String):void.415f52f14c712a1270f84ff48b662b46_1" -> "com.stn.pojo.User.setUserName(java.lang.String):void.415f52f14c712a1270f84ff48b662b46_4" ;
+"com.stn.pojo.User.setUserName(java.lang.String):void.415f52f14c712a1270f84ff48b662b46_2" [label="2: Exit void User.setUserName(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.User.setUserName(java.lang.String):void.415f52f14c712a1270f84ff48b662b46_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 42]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.setUserName(java.lang.String):void.415f52f14c712a1270f84ff48b662b46_3" -> "com.stn.pojo.User.setUserName(java.lang.String):void.415f52f14c712a1270f84ff48b662b46_2" ;
+"com.stn.pojo.User.setUserName(java.lang.String):void.415f52f14c712a1270f84ff48b662b46_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.User* [line 41]\n  n$1=*&userName:java.lang.String* [line 41]\n  *n$0.userName:com.stn.pojo.User(root com.stn.pojo.User)=n$1 [line 41]\n  NULLIFY(&userName); [line 41]\n  NULLIFY(&this); [line 41]\n  EXIT_SCOPE(n$0,n$1,userName,this); [line 41]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.setUserName(java.lang.String):void.415f52f14c712a1270f84ff48b662b46_4" -> "com.stn.pojo.User.setUserName(java.lang.String):void.415f52f14c712a1270f84ff48b662b46_5" ;
+	 "com.stn.pojo.User.setUserName(java.lang.String):void.415f52f14c712a1270f84ff48b662b46_4" -> "com.stn.pojo.User.setUserName(java.lang.String):void.415f52f14c712a1270f84ff48b662b46_3" [color="red" ];
+"com.stn.pojo.User.setUserName(java.lang.String):void.415f52f14c712a1270f84ff48b662b46_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 42]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.setUserName(java.lang.String):void.415f52f14c712a1270f84ff48b662b46_5" -> "com.stn.pojo.User.setUserName(java.lang.String):void.415f52f14c712a1270f84ff48b662b46_2" ;
+	 "com.stn.pojo.User.setUserName(java.lang.String):void.415f52f14c712a1270f84ff48b662b46_5" -> "com.stn.pojo.User.setUserName(java.lang.String):void.415f52f14c712a1270f84ff48b662b46_3" [color="red" ];
+}

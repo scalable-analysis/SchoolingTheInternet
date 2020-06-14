@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Topic.getAuthorClass():int.6d063a82f66f95a3113957ab2e665954_1" [label="1: Start int Topic.getAuthorClass()\nFormals:  this:com.stn.pojo.Topic*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Topic.getAuthorClass():int.6d063a82f66f95a3113957ab2e665954_1" -> "com.stn.pojo.Topic.getAuthorClass():int.6d063a82f66f95a3113957ab2e665954_4" ;
+"com.stn.pojo.Topic.getAuthorClass():int.6d063a82f66f95a3113957ab2e665954_2" [label="2: Exit int Topic.getAuthorClass() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Topic.getAuthorClass():int.6d063a82f66f95a3113957ab2e665954_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 58]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Topic.getAuthorClass():int.6d063a82f66f95a3113957ab2e665954_3" -> "com.stn.pojo.Topic.getAuthorClass():int.6d063a82f66f95a3113957ab2e665954_2" ;
+"com.stn.pojo.Topic.getAuthorClass():int.6d063a82f66f95a3113957ab2e665954_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Topic* [line 58]\n  n$1=*n$0.authorClass:int(root com.stn.pojo.Topic) [line 58]\n  *&return:int=n$1 [line 58]\n  NULLIFY(&this); [line 58]\n  EXIT_SCOPE(n$0,n$1,this); [line 58]\n  APPLY_ABSTRACTION; [line 58]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Topic.getAuthorClass():int.6d063a82f66f95a3113957ab2e665954_4" -> "com.stn.pojo.Topic.getAuthorClass():int.6d063a82f66f95a3113957ab2e665954_2" ;
+	 "com.stn.pojo.Topic.getAuthorClass():int.6d063a82f66f95a3113957ab2e665954_4" -> "com.stn.pojo.Topic.getAuthorClass():int.6d063a82f66f95a3113957ab2e665954_3" [color="red" ];
+}

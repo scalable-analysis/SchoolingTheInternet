@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.User.getIdFacultate():int.3058e2a50de4cc89c2db4cc0696be895_1" [label="1: Start int User.getIdFacultate()\nFormals:  this:com.stn.pojo.User*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.User.getIdFacultate():int.3058e2a50de4cc89c2db4cc0696be895_1" -> "com.stn.pojo.User.getIdFacultate():int.3058e2a50de4cc89c2db4cc0696be895_4" ;
+"com.stn.pojo.User.getIdFacultate():int.3058e2a50de4cc89c2db4cc0696be895_2" [label="2: Exit int User.getIdFacultate() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.User.getIdFacultate():int.3058e2a50de4cc89c2db4cc0696be895_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 189]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.getIdFacultate():int.3058e2a50de4cc89c2db4cc0696be895_3" -> "com.stn.pojo.User.getIdFacultate():int.3058e2a50de4cc89c2db4cc0696be895_2" ;
+"com.stn.pojo.User.getIdFacultate():int.3058e2a50de4cc89c2db4cc0696be895_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.User* [line 189]\n  n$1=*n$0.idFacultate:int(root com.stn.pojo.User) [line 189]\n  *&return:int=n$1 [line 189]\n  NULLIFY(&this); [line 189]\n  EXIT_SCOPE(n$0,n$1,this); [line 189]\n  APPLY_ABSTRACTION; [line 189]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.getIdFacultate():int.3058e2a50de4cc89c2db4cc0696be895_4" -> "com.stn.pojo.User.getIdFacultate():int.3058e2a50de4cc89c2db4cc0696be895_2" ;
+	 "com.stn.pojo.User.getIdFacultate():int.3058e2a50de4cc89c2db4cc0696be895_4" -> "com.stn.pojo.User.getIdFacultate():int.3058e2a50de4cc89c2db4cc0696be895_3" [color="red" ];
+}

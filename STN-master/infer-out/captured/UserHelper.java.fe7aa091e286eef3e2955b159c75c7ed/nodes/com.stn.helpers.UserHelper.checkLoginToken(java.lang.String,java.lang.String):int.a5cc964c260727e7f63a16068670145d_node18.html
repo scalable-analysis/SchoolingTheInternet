@@ -1,0 +1,252 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_node18</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE191">18</a></h1></center>PROC: <a href="./../com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d.html">int UserHelper.checkLoginToken(String,String)</a> LINE: <a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE191">191</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node17.html"><span class='visited with_tooltip'>N_17<span class='tooltip'>node17 preds:16 succs:18 exn:44 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node19.html"><span class='visited with_tooltip'>N_19<span class='tooltip'>node19 preds:18 succs:21 exn:44 </span></span></a> <a href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node20.html"><span class='visited with_tooltip'>N_20<span class='tooltip'>node20 preds:18 succs:22 23 exn:44 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node44.html"><span class='visited with_tooltip'>N_44<span class='tooltip'>node44 preds: succs:43 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$41=*&amp;this:com.stn.helpers.UserHelper* [line 191];
+n$42=*n$41.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 191];
+_=*n$42:java.sql.ResultSet*(root java.sql.ResultSet) [line 191];
+n$44=_fun_boolean ResultSet.next()(n$42:java.sql.ResultSet*) interface virtual [line 191];
+*&amp;$irvar7:_Bool=n$44 [line 191];
+</LISTING>
+<hr width="100%">
+<a name="session62" href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node18.html#session62">node18#session62</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE191">191</a>) [compute pre] liveness 18
+<LISTING class='color_black'>JOIN
+
+LEFT:   { $irvar7, this }
+RIGHT:  { $irvar7, this, id }
+RESULT: { $irvar7, this, id }
+
+</LISTING>
+<hr width="100%">
+<a name="session63" href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node18.html#session63">node18#session63</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE191">191</a>) [exec] liveness 18
+<LISTING class='color_black'>PRE STATE:
+{ $irvar7, this, id }
+
+INSTR=  *&amp;$irvar7:_Bool=n$44 [line 191]; 
+
+STATE:
+{ n$44, this, id }
+
+INSTR=  n$44=_fun_boolean ResultSet.next()(n$42:java.sql.ResultSet*) interface virtual [line 191]; 
+
+STATE:
+{ n$42, this, id }
+
+INSTR=  _=*n$42:java.sql.ResultSet*(root java.sql.ResultSet) [line 191]; 
+
+STATE UNCHANGED
+
+INSTR=  n$42=*n$41.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 191]; 
+
+STATE:
+{ n$41, this, id }
+
+INSTR=  n$41=*&amp;this:com.stn.helpers.UserHelper* [line 191]; 
+
+STATE:
+{ this, id }
+
+</LISTING>
+<hr width="100%">
+<a name="session158" href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node18.html#session158">node18#session158</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE191">191</a>) [compute pre] liveness 18
+<LISTING class='color_black'>JOIN
+
+LEFT:   { $irvar7, return, CatchVar159, this }
+RIGHT:  { $irvar7, this, id }
+RESULT: { $irvar7, return, CatchVar159, this, id }
+
+JOIN
+
+LEFT:   { $irvar7, return, CatchVar159, this, id }
+RIGHT:  { return, CatchVar159, this }
+RESULT: { $irvar7, return, CatchVar159, this, id }
+
+</LISTING>
+<hr width="100%">
+<a name="session159" href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node18.html#session159">node18#session159</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE191">191</a>) [exec] liveness 18
+<LISTING class='color_black'>PRE STATE:
+{ $irvar7, return, CatchVar159, this, id }
+
+INSTR=  *&amp;$irvar7:_Bool=n$44 [line 191]; 
+
+STATE:
+{ n$44, return, CatchVar159, this, id }
+
+INSTR=  n$44=_fun_boolean ResultSet.next()(n$42:java.sql.ResultSet*) interface virtual [line 191]; 
+
+STATE:
+{ n$42, return, CatchVar159, this, id }
+
+INSTR=  _=*n$42:java.sql.ResultSet*(root java.sql.ResultSet) [line 191]; 
+
+STATE UNCHANGED
+
+INSTR=  n$42=*n$41.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 191]; 
+
+STATE:
+{ n$41, return, CatchVar159, this, id }
+
+INSTR=  n$41=*&amp;this:com.stn.helpers.UserHelper* [line 191]; 
+
+STATE:
+{ return, CatchVar159, this, id }
+
+</LISTING>
+<hr width="100%">
+<a name="session164" href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node18.html#session164">node18#session164</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE191">191</a>) [compute pre] liveness 18
+<LISTING class='color_black'>JOIN
+
+LEFT:   { $irvar7, return, CatchVar159, this }
+RIGHT:  { $irvar7, return, CatchVar159, this, id }
+RESULT: { $irvar7, return, CatchVar159, this, id }
+
+JOIN
+
+LEFT:   { $irvar7, return, CatchVar159, this, id }
+RIGHT:  { return, CatchVar159, this }
+RESULT: { $irvar7, return, CatchVar159, this, id }
+
+</LISTING>
+<hr width="100%">
+<a name="session165" href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node18.html#session165">node18#session165</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE191">191</a>) [exec] liveness 18
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session206" href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node18.html#session206">node18#session206</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE191">191</a>) [compute pre] liveness 18
+<LISTING class='color_black'>JOIN
+
+LEFT:   { $irvar7, return, CatchVar159, this }
+RIGHT:  { $irvar7, return, CatchVar159, this, id }
+RESULT: { $irvar7, return, CatchVar159, this, id }
+
+JOIN
+
+LEFT:   { $irvar7, return, CatchVar159, this, id }
+RIGHT:  { return, CatchVar159, this }
+RESULT: { $irvar7, return, CatchVar159, this, id }
+
+</LISTING>
+<hr width="100%">
+<a name="session207" href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node18.html#session207">node18#session207</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE191">191</a>) [exec] liveness 18
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session243" href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node18.html#session243">node18#session243</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE191">191</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session244" href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node18.html#session244">node18#session244</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE191">191</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ id },{ n$39, n$40, $irvar6 })
+
+INSTR=  n$41=*&amp;this:com.stn.helpers.UserHelper* [line 191]; 
+
+STATE:
+({ n$41, id },{ n$39, n$40, $irvar6 })
+
+INSTR=  n$42=*n$41.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 191]; 
+
+STATE:
+({ n$41, n$42, id },{ n$39, n$40, $irvar6 })
+
+INSTR=  _=*n$42:java.sql.ResultSet*(root java.sql.ResultSet) [line 191]; 
+
+STATE:
+({ _, n$41, n$42, id },{ n$39, n$40, $irvar6 })
+
+INSTR=  n$44=_fun_boolean ResultSet.next()(n$42:java.sql.ResultSet*) interface virtual [line 191]; 
+
+STATE:
+({ _, n$41, n$42, n$44, id },{ n$39, n$40, $irvar6 })
+
+INSTR=  *&amp;$irvar7:_Bool=n$44 [line 191]; 
+
+STATE:
+({ $irvar7, id },{ _, n$41, n$42, n$44 })
+
+</LISTING>
+<hr width="100%">
+<a name="session30" href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node18.html#session30">node18#session30</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE191">191</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session31" href="./../nodes/com.stn.helpers.UserHelper.checkLoginToken%28java.lang.String%2Cjava.lang.String%29%3Aint.a5cc964c260727e7f63a16068670145d_node18.html#session31">node18#session31</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE191">191</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$38 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 190) } + Footprint({ @val$2*,
+                                                                    @val$1*,
+                                                                    @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$2*,
+                                              @val$1*,
+                                              @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { },
+            resultSet -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 190) } + Footprint({ @val$2*,
+                                                                    @val$1*,
+                                                                    @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  id -&gt; { } }
+
+
+
+
+INSTR=  n$44 := boolean ResultSet.next()({ this-&gt;resultSet }) [line 191]; 
+
+STATE UNCHANGED
+
+
+
+</LISTING>

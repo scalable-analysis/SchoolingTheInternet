@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>File src/main/java/com/stn/servlets/LeaveGrupaProcess.java </h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.stn.servlets; </td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import com.stn.helpers.UserHelper; </td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line">import javax.servlet.ServletException; </td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import javax.servlet.annotation.WebServlet; </td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import javax.servlet.http.HttpServlet; </td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">import javax.servlet.http.HttpServletRequest; </td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">import javax.servlet.http.HttpServletResponse; </td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line">import javax.servlet.http.HttpSession; </td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">import java.io.IOException; </td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line">import java.io.PrintWriter; </td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line">import java.sql.SQLException; </td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line">@WebServlet(&quot;/LeaveGrupaProcess&quot;) </td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line">public class LeaveGrupaProcess extends HttpServlet { <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.<init>%28%29.9e9573d09c10e31359d2f8e1200c58af_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.<init>%28%29.9e9573d09c10e31359d2f8e1200c58af_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.servlets.LeaveGrupaProcess* [line 16];
+n$1=_fun_HttpServlet.&lt;init&gt;()(n$0:com.stn.servlets.LeaveGrupaProcess*) [line 16];
+</span></span></a> <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.<init>%28%29.9e9573d09c10e31359d2f8e1200c58af_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.<init>%28%29.9e9573d09c10e31359d2f8e1200c58af_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.<init>%28%29.9e9573d09c10e31359d2f8e1200c58af_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/com.stn.servlets.LeaveGrupaProcess.<init>%28%29.9e9573d09c10e31359d2f8e1200c58af.html">summary for LeaveGrupaProcess.&lt;init&gt;()</a></td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line">    @Override </td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line">    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.ad7098a32555d06b41b27a73fbf4ffff_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/com.stn.servlets.LeaveGrupaProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.ad7098a32555d06b41b27a73fbf4ffff.html">summary for void LeaveGrupaProcess.doGet(HttpServletRequest,HttpServletResponse)</a></td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line">        response.sendRedirect(&quot;/group.jsp&quot;); <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.ad7098a32555d06b41b27a73fbf4ffff_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;response:javax.servlet.http.HttpServletResponse* [line 20];
+_=*n$0:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 20];
+n$2=_fun_void HttpServletResponse.sendRedirect(String)(n$0:javax.servlet.http.HttpServletResponse*,"/group.jsp":java.lang.Object*) interface virtual [line 20];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line">    } <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.ad7098a32555d06b41b27a73fbf4ffff_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.ad7098a32555d06b41b27a73fbf4ffff_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.ad7098a32555d06b41b27a73fbf4ffff_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0.html">summary for void LeaveGrupaProcess.doPost(HttpServletRequest,HttpServletResponse)</a></td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line">        HttpSession session = request.getSession(); <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;request:javax.servlet.http.HttpServletRequest* [line 25];
+_=*n$0:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 25];
+n$2=_fun_HttpSession HttpServletRequest.getSession()(n$0:javax.servlet.http.HttpServletRequest*) interface virtual [line 25];
+*&amp;session:javax.servlet.http.HttpSession*=n$2 [line 25];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">        String result = &quot;&quot;; <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;result:java.lang.Object*="" [line 27];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">        String url = &quot;/group.jsp&quot;; <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+*&amp;url:java.lang.Object*="/group.jsp" [line 28];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">        response.setContentType(&quot;text/html&quot;); <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$3=*&amp;response:javax.servlet.http.HttpServletResponse* [line 29];
+_=*n$3:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 29];
+n$5=_fun_void HttpServletResponse.setContentType(String)(n$3:javax.servlet.http.HttpServletResponse*,"text/html":java.lang.Object*) interface virtual [line 29];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">        PrintWriter out = response.getWriter(); <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$6=*&amp;response:javax.servlet.http.HttpServletResponse* [line 30];
+_=*n$6:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 30];
+n$8=_fun_PrintWriter HttpServletResponse.getWriter()(n$6:javax.servlet.http.HttpServletResponse*) interface virtual [line 30];
+*&amp;out:java.io.PrintWriter*=n$8 [line 30];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line">        int idUser = (int) session.getAttribute(&quot;userId&quot;); <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$9=*&amp;session:javax.servlet.http.HttpSession* [line 32];
+_=*n$9:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 32];
+n$11=_fun_Object HttpSession.getAttribute(String)(n$9:javax.servlet.http.HttpSession*,"userId":java.lang.Object*) interface virtual [line 32];
+*&amp;$irvar0:java.lang.Object*=n$11 [line 32];
+</span></span></a> <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$12=*&amp;$irvar0:java.lang.Object* [line 32];
+n$13=_fun___cast(n$12:java.lang.Object*,sizeof(t=java.lang.Integer;sub_t=( sub )(cast)):void) [line 32];
+_=*n$13:java.lang.Integer*(root java.lang.Integer) [line 32];
+n$15=_fun_int Integer.intValue()(n$13:java.lang.Integer*) virtual [line 32];
+*&amp;idUser:int=n$15 [line 32];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line">        UserHelper userHelper = new UserHelper(); <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$16=_fun___new(sizeof(t=com.stn.helpers.UserHelper):com.stn.helpers.UserHelper*) [line 33];
+n$17=_fun_UserHelper.&lt;init&gt;()(n$16:com.stn.helpers.UserHelper*) [line 33];
+*&amp;userHelper:com.stn.helpers.UserHelper*=n$16 [line 33];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">        try { </td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line">            userHelper.deleteGrupa(idUser); <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:16 exn:22 Instructions
+n$18=*&amp;userHelper:com.stn.helpers.UserHelper* [line 36];
+_=*n$18:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 36];
+n$20=*&amp;idUser:int [line 36];
+n$21=_fun_void UserHelper.deleteGrupa(int)(n$18:com.stn.helpers.UserHelper*,n$20:int) virtual [line 36];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">        } catch (ClassNotFoundException | SQLException e) { <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:20 18 succs:14 exn:3 Instructions
+n$22=*&amp;CatchVar66:java.lang.Object* [line 37];
+*&amp;e:java.lang.Object*=n$22 [line 37];
+</span></span></a> <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:21 succs:13 exn:3 Conditional exception handler
+n$33=_fun___instanceof(n$32:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 37];
+PRUNE(n$33, true); [line 37];
+*&amp;CatchVar66:void=n$32 [line 37];
+</span></span></a> <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node19.html"><span class='visited with_tooltip'>C_19<span class='tooltip'>node19 preds:21 succs:3 exn:3 Conditional exception handler
+n$33=_fun___instanceof(n$32:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 37];
+PRUNE(!n$33, false); [line 37];
+*&amp;return:void=EXN n$32 [line 37];
+</span></span></a> <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node20.html"><span class='visited with_tooltip'>C_20<span class='tooltip'>node20 preds:22 succs:13 exn:3 Conditional exception handler
+n$34=_fun___instanceof(n$32:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 37];
+PRUNE(n$34, true); [line 37];
+*&amp;CatchVar66:void=n$32 [line 37];
+</span></span></a> <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node21.html"><span class='visited with_tooltip'>C_21<span class='tooltip'>node21 preds:22 succs:18 19 exn:3 Conditional exception handler
+n$34=_fun___instanceof(n$32:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 37];
+PRUNE(!n$34, false); [line 37];
+</span></span></a> <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds: succs:20 21 exn:3 Instructions
+n$31=*&amp;return:void [line 37];
+*&amp;return:void=null [line 37];
+n$32=_fun___unwrap_exception(n$31:void) [line 37];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line">            out.println(e); <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$23=*&amp;out:java.io.PrintWriter* [line 38];
+_=*n$23:java.io.PrintWriter*(root java.io.PrintWriter) [line 38];
+n$25=*&amp;e:java.lang.Object* [line 38];
+n$26=_fun_void PrintWriter.println(Object)(n$23:java.io.PrintWriter*,n$25:java.lang.Object*) virtual [line 38];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line">            return; <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:2 exn:3 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">        response.sendRedirect(url); <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:12 succs:17 exn:3 Instructions
+n$27=*&amp;response:javax.servlet.http.HttpServletResponse* [line 42];
+_=*n$27:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 42];
+n$29=*&amp;url:java.lang.Object* [line 42];
+n$30=_fun_void HttpServletResponse.sendRedirect(String)(n$27:javax.servlet.http.HttpServletResponse*,n$29:java.lang.Object*) interface virtual [line 42];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">    } <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:2 exn:3 Instructions
+</span></span></a> <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:17 15 3 succs: exn: Exit
+</span></span></a> <a href="./LeaveGrupaProcess.java.aced71b20418426ee608eb5b34b4ab8e/nodes/com.stn.servlets.LeaveGrupaProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.H.7ee7fac886f7a7af978381d54425eea0_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:19 succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line">} </td></tr>
+</table>
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.servlets.RegisterProcess.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node68</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../RegisterProcess.java.62c6992345fe77ce12e8185b826ba52f.html#LINE83">68</a></h1></center>PROC: <a href="./../com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765.html">void RegisterProcess.doPost(HttpServletRequest,HttpServletResponse)</a> LINE: <a href="./../../RegisterProcess.java.62c6992345fe77ce12e8185b826ba52f.html#LINE83">83</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node61.html"><span class='visited with_tooltip'>N_61<span class='tooltip'>node61 preds:59 succs:68 exn:3 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node69.html"><span class='visited with_tooltip'>N_69<span class='tooltip'>node69 preds:68 succs:71 exn:3 </span></span></a> <a href="./../nodes/com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node70.html"><span class='visited with_tooltip'>N_70<span class='tooltip'>node70 preds:68 succs:77 exn:3 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node3.html"><span class='visited with_tooltip'>N_3<span class='tooltip'>node3 preds:197 190 succs:2 exn:2 </span></span></a><br>
+<LISTING class='color_green'>n$124=*&amp;username:java.lang.String* [line 83];
+n$125=_fun_boolean Validator.between(String,int,int)(n$124:java.lang.String*,3:int,20:int) [line 83];
+*&amp;$irvar16:_Bool=n$125 [line 83];
+</LISTING>
+<hr width="100%">
+<a name="session290" href="./../nodes/com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node68.html#session290">node68#session290</a>(<a href="./../../RegisterProcess.java.62c6992345fe77ce12e8185b826ba52f.html#LINE83">83</a>) [compute pre] liveness 68
+<LISTING class='color_black'>JOIN
+
+LEFT:   { username,
+          firstName,
+          extra,
+          $irvar16,
+          request,
+          lastName,
+          email,
+          this,
+          session,
+          response }
+RIGHT:  { error,
+          url,
+          out,
+          username,
+          firstName,
+          extra,
+          $irvar16,
+          password1,
+          request,
+          faq,
+          invitatie,
+          lastName,
+          email,
+          return,
+          password2,
+          this,
+          terms,
+          applicationHelper,
+          session,
+          response }
+RESULT: { error,
+          url,
+          out,
+          username,
+          firstName,
+          extra,
+          $irvar16,
+          password1,
+          request,
+          faq,
+          invitatie,
+          lastName,
+          email,
+          return,
+          password2,
+          this,
+          terms,
+          applicationHelper,
+          session,
+          response }
+
+JOIN
+
+LEFT:   { error,
+          url,
+          out,
+          username,
+          firstName,
+          extra,
+          $irvar16,
+          password1,
+          request,
+          faq,
+          invitatie,
+          lastName,
+          email,
+          return,
+          password2,
+          this,
+          terms,
+          applicationHelper,
+          session,
+          response }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session291" href="./../nodes/com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node68.html#session291">node68#session291</a>(<a href="./../../RegisterProcess.java.62c6992345fe77ce12e8185b826ba52f.html#LINE83">83</a>) [exec] liveness 68
+<LISTING class='color_black'>PRE STATE:
+{ error,
+  url,
+  out,
+  username,
+  firstName,
+  extra,
+  $irvar16,
+  password1,
+  request,
+  faq,
+  invitatie,
+  lastName,
+  email,
+  return,
+  password2,
+  this,
+  terms,
+  applicationHelper,
+  session,
+  response }
+
+INSTR=  *&amp;$irvar16:_Bool=n$125 [line 83]; 
+
+STATE:
+{ n$125,
+  error,
+  url,
+  out,
+  username,
+  firstName,
+  extra,
+  password1,
+  request,
+  faq,
+  invitatie,
+  lastName,
+  email,
+  return,
+  password2,
+  this,
+  terms,
+  applicationHelper,
+  session,
+  response }
+
+INSTR=  n$125=_fun_boolean Validator.between(String,int,int)(n$124:java.lang.String*,3:int,20:int) [line 83]; 
+
+STATE:
+{ n$124,
+  error,
+  url,
+  out,
+  username,
+  firstName,
+  extra,
+  password1,
+  request,
+  faq,
+  invitatie,
+  lastName,
+  email,
+  return,
+  password2,
+  this,
+  terms,
+  applicationHelper,
+  session,
+  response }
+
+INSTR=  n$124=*&amp;username:java.lang.String* [line 83]; 
+
+STATE:
+{ error,
+  url,
+  out,
+  username,
+  firstName,
+  extra,
+  password1,
+  request,
+  faq,
+  invitatie,
+  lastName,
+  email,
+  return,
+  password2,
+  this,
+  terms,
+  applicationHelper,
+  session,
+  response }
+
+</LISTING>
+<hr width="100%">
+<a name="session523" href="./../nodes/com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node68.html#session523">node68#session523</a>(<a href="./../../RegisterProcess.java.62c6992345fe77ce12e8185b826ba52f.html#LINE83">83</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session524" href="./../nodes/com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node68.html#session524">node68#session524</a>(<a href="./../../RegisterProcess.java.62c6992345fe77ce12e8185b826ba52f.html#LINE83">83</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ error,
+   url,
+   out,
+   username,
+   firstName,
+   extra,
+   password1,
+   faq,
+   invitatie,
+   lastName,
+   email,
+   password2,
+   terms,
+   applicationHelper,
+   session },
+{ n$104, $irvar12 })
+
+INSTR=  n$124=*&amp;username:java.lang.String* [line 83]; 
+
+STATE:
+({ n$124,
+   error,
+   url,
+   out,
+   username,
+   firstName,
+   extra,
+   password1,
+   faq,
+   invitatie,
+   lastName,
+   email,
+   password2,
+   terms,
+   applicationHelper,
+   session },
+{ n$104, $irvar12 })
+
+INSTR=  n$125=_fun_boolean Validator.between(String,int,int)(n$124:java.lang.String*,3:int,20:int) [line 83]; 
+
+STATE:
+({ n$124,
+   n$125,
+   error,
+   url,
+   out,
+   username,
+   firstName,
+   extra,
+   password1,
+   faq,
+   invitatie,
+   lastName,
+   email,
+   password2,
+   terms,
+   applicationHelper,
+   session },
+{ n$104, $irvar12 })
+
+INSTR=  *&amp;$irvar16:_Bool=n$125 [line 83]; 
+
+STATE:
+({ error,
+   url,
+   out,
+   username,
+   firstName,
+   extra,
+   $irvar16,
+   password1,
+   faq,
+   invitatie,
+   lastName,
+   email,
+   password2,
+   terms,
+   applicationHelper,
+   session },
+{ n$124, n$125 })
+
+</LISTING>
+<hr width="100%">
+<a name="session124" href="./../nodes/com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node68.html#session124">node68#session124</a>(<a href="./../../RegisterProcess.java.62c6992345fe77ce12e8185b826ba52f.html#LINE83">83</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session125" href="./../nodes/com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node68.html#session125">node68#session125</a>(<a href="./../../RegisterProcess.java.62c6992345fe77ce12e8185b826ba52f.html#LINE83">83</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$36 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  n$46 -&gt; { email -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+            expDate -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+            idFacultate -&gt; { },
+            idGrupa -&gt; { },
+            idInvitatie -&gt; { },
+            idSerie -&gt; { },
+            token -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+            userClass -&gt; { } },
+  n$52 -&gt; { [_] -&gt; { } },
+  n$56 -&gt; { },
+  n$62 -&gt; { },
+  n$66 -&gt; { },
+  n$71 -&gt; { [_] -&gt; { } },
+  n$75 -&gt; { },
+  n$89 -&gt; { [_] -&gt; { } },
+  n$103 -&gt; { },
+  inviteCode -&gt; { },
+  error -&gt; { },
+  url -&gt; { },
+  out -&gt; { },
+  username -&gt; { },
+  firstName -&gt; { },
+  extra -&gt; { },
+  password1 -&gt; { },
+  faq -&gt; { },
+  invitatie -&gt; { email -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+                 expDate -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+                 idFacultate -&gt; { },
+                 idGrupa -&gt; { },
+                 idInvitatie -&gt; { },
+                 idSerie -&gt; { },
+                 token -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+                 userClass -&gt; { } },
+  lastName -&gt; { },
+  email -&gt; { },
+  hashedPassword -&gt; { },
+  password2 -&gt; { },
+  terms -&gt; { },
+  applicationHelper -&gt; { connection -&gt; *,
+                         dbHost -&gt; { },
+                         dbName -&gt; { },
+                         dbPassword -&gt; { },
+                         dbPort -&gt; { },
+                         dbUser -&gt; { },
+                         preparedStatement -&gt; *,
+                         query -&gt; { },
+                         resultSet -&gt; ({ Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  session -&gt; { } }
+
+
+INSTR=  n$125 := boolean Validator.between(String,int,int)({ username,
+                                                             3,
+                                                             20 }) [line 83]; 
+
+STATE:
+{ n$36 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  n$46 -&gt; { email -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+            expDate -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+            idFacultate -&gt; { },
+            idGrupa -&gt; { },
+            idInvitatie -&gt; { },
+            idSerie -&gt; { },
+            token -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+            userClass -&gt; { } },
+  n$52 -&gt; { [_] -&gt; { } },
+  n$56 -&gt; { },
+  n$62 -&gt; { },
+  n$66 -&gt; { },
+  n$71 -&gt; { [_] -&gt; { } },
+  n$75 -&gt; { },
+  n$89 -&gt; { [_] -&gt; { } },
+  n$103 -&gt; { },
+  n$125 -&gt; { },
+  inviteCode -&gt; { },
+  error -&gt; { },
+  url -&gt; { },
+  out -&gt; { },
+  username -&gt; { },
+  firstName -&gt; { },
+  extra -&gt; { },
+  password1 -&gt; { },
+  faq -&gt; { },
+  invitatie -&gt; { email -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+                 expDate -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+                 idFacultate -&gt; { },
+                 idGrupa -&gt; { },
+                 idInvitatie -&gt; { },
+                 idSerie -&gt; { },
+                 token -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+                 userClass -&gt; { } },
+  lastName -&gt; { },
+  email -&gt; { },
+  hashedPassword -&gt; { },
+  password2 -&gt; { },
+  terms -&gt; { },
+  applicationHelper -&gt; { connection -&gt; *,
+                         dbHost -&gt; { },
+                         dbName -&gt; { },
+                         dbPassword -&gt; { },
+                         dbPort -&gt; { },
+                         dbUser -&gt; { },
+                         preparedStatement -&gt; *,
+                         query -&gt; { },
+                         resultSet -&gt; ({ Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  session -&gt; { } }
+
+
+
+</LISTING>

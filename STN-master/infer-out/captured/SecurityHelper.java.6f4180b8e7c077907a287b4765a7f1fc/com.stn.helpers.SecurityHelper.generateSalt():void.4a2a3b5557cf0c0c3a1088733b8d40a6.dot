@@ -1,0 +1,39 @@
+/* @generated */
+digraph cfg {
+"com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_1" [label="1: Start void SecurityHelper.generateSalt()\nFormals:  this:com.stn.helpers.SecurityHelper*\nLocals:  salt:signed char[_*_](*) sr:java.security.SecureRandom* \n  " color=yellow style=filled]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_1" -> "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_4" ;
+"com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_2" [label="2: Exit void SecurityHelper.generateSalt() \n  " color=yellow style=filled]
+	
+
+"com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_3" [label="3:  exceptions sink \n   NULLIFY(&salt); [line 61]\n  NULLIFY(&sr); [line 61]\n  EXIT_SCOPE(salt,sr); [line 61]\n  APPLY_ABSTRACTION; [line 61]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_3" -> "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_2" ;
+"com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_4" [label="4:  Call SecureRandom SecureRandom.getInstance(String) \n   n$0=_fun_SecureRandom SecureRandom.getInstance(String)(\"SHA1PRNG\":java.lang.Object*) [line 57]\n  *&sr:java.security.SecureRandom*=n$0 [line 57]\n  EXIT_SCOPE(n$0); [line 57]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_4" -> "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_5" ;
+	 "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_4" -> "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_5" [label="5:  method_body \n   n$1=_fun___new_array(sizeof(t=signed char[_*_];len=[16]):signed char[_*_](*)) [line 58]\n  *&salt:signed char[_*_](*)=n$1 [line 58]\n  EXIT_SCOPE(n$1); [line 58]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_5" -> "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_6" ;
+	 "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_5" -> "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_6" [label="6:  Call void SecureRandom.nextBytes(byte[]) \n   n$2=*&sr:java.security.SecureRandom* [line 59]\n  _=*n$2:java.security.SecureRandom*(root java.security.SecureRandom) [line 59]\n  n$4=*&salt:signed char[_*_](*) [line 59]\n  n$5=_fun_void SecureRandom.nextBytes(byte[])(n$2:java.security.SecureRandom*,n$4:signed char[_*_](*)) virtual [line 59]\n  NULLIFY(&sr); [line 59]\n  EXIT_SCOPE(_,n$2,n$4,n$5,sr); [line 59]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_6" -> "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_7" ;
+	 "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_6" -> "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_7" [label="7:  method_body \n   n$6=*&this:com.stn.helpers.SecurityHelper* [line 60]\n  n$7=*&salt:signed char[_*_](*) [line 60]\n  *n$6.salt:com.stn.helpers.SecurityHelper(root com.stn.helpers.SecurityHelper)=n$7 [line 60]\n  NULLIFY(&salt); [line 60]\n  NULLIFY(&this); [line 60]\n  EXIT_SCOPE(n$6,n$7,salt,this); [line 60]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_7" -> "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_8" ;
+	 "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_7" -> "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_8" [label="8:  method_body \n   APPLY_ABSTRACTION; [line 61]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_8" -> "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_2" ;
+	 "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_8" -> "com.stn.helpers.SecurityHelper.generateSalt():void.4a2a3b5557cf0c0c3a1088733b8d40a6_3" [color="red" ];
+}

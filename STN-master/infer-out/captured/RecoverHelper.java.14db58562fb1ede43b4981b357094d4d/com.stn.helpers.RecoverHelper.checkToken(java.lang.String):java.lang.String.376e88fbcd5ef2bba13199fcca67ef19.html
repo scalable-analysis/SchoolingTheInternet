@@ -1,0 +1,353 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.RecoverHelper.checkToken(java.lang.String):java.lang.String.376e88fbcd5ef2bba13199fcca67ef19</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE32">String RecoverHelper.checkToken(String)</a></h1></center>
+<a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:41 40 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$bcvar3); [line 55];
+NULLIFY(&amp;email); [line 55];
+EXIT_SCOPE($bcvar3,email); [line 55];
+APPLY_ABSTRACTION; [line 55];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;email:java.lang.Object*=null [line 33];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$0=*&amp;this:com.stn.helpers.RecoverHelper* [line 35];
+*n$0.query:com.stn.helpers.RecoverHelper(root com.stn.helpers.RecoverHelper)="SELECT Email FROM password_reset WHERE Token = ?" [line 35];
+EXIT_SCOPE(n$0); [line 35];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:43 Instructions
+n$1=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 38];
+*&amp;$irvar0:java.lang.Class*=n$1 [line 38];
+NULLIFY(&amp;$irvar0); [line 38];
+EXIT_SCOPE(n$1,$irvar0); [line 38];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:43 Instructions
+n$2=*&amp;this:com.stn.helpers.RecoverHelper* [line 39];
+_=*n$2:com.stn.helpers.RecoverHelper*(root com.stn.helpers.RecoverHelper) [line 39];
+n$4=_fun_String DBConnection.getHost()(n$2:com.stn.helpers.RecoverHelper*) virtual [line 39];
+*&amp;$irvar1:java.lang.String*=n$4 [line 39];
+EXIT_SCOPE(_,n$2,n$4); [line 39];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:43 Instructions
+n$5=*&amp;this:com.stn.helpers.RecoverHelper* [line 39];
+_=*n$5:com.stn.helpers.RecoverHelper*(root com.stn.helpers.RecoverHelper) [line 39];
+n$7=_fun_String DBConnection.getUser()(n$5:com.stn.helpers.RecoverHelper*) virtual [line 39];
+*&amp;$irvar2:java.lang.String*=n$7 [line 39];
+EXIT_SCOPE(_,n$5,n$7); [line 39];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:43 Instructions
+n$8=*&amp;this:com.stn.helpers.RecoverHelper* [line 39];
+_=*n$8:com.stn.helpers.RecoverHelper*(root com.stn.helpers.RecoverHelper) [line 39];
+n$10=_fun_String DBConnection.getPassword()(n$8:com.stn.helpers.RecoverHelper*) virtual [line 39];
+*&amp;$irvar3:java.lang.String*=n$10 [line 39];
+EXIT_SCOPE(_,n$8,n$10); [line 39];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:43 Instructions
+n$11=*&amp;$irvar1:java.lang.String* [line 39];
+n$12=*&amp;$irvar2:java.lang.String* [line 39];
+n$13=*&amp;$irvar3:java.lang.String* [line 39];
+n$14=_fun_Connection DriverManager.getConnection(String,String,String)(n$11:java.lang.String*,n$12:java.lang.String*,n$13:java.lang.String*) [line 39];
+*&amp;$irvar4:java.sql.Connection*=n$14 [line 39];
+NULLIFY(&amp;$irvar3); [line 39];
+NULLIFY(&amp;$irvar1); [line 39];
+NULLIFY(&amp;$irvar2); [line 39];
+EXIT_SCOPE(n$11,n$12,n$13,n$14,$irvar3,$irvar1,$irvar2); [line 39];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:43 Instructions
+n$15=*&amp;this:com.stn.helpers.RecoverHelper* [line 39];
+n$16=*&amp;$irvar4:java.sql.Connection* [line 39];
+*n$15.connection:com.stn.helpers.RecoverHelper(root com.stn.helpers.RecoverHelper)=n$16 [line 39];
+NULLIFY(&amp;$irvar4); [line 39];
+EXIT_SCOPE(n$15,n$16,$irvar4); [line 39];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:43 Instructions
+n$17=*&amp;this:com.stn.helpers.RecoverHelper* [line 40];
+n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 40];
+_=*n$18:java.sql.Connection*(root java.sql.Connection) [line 40];
+n$20=*&amp;this:com.stn.helpers.RecoverHelper* [line 40];
+n$21=*n$20.query:java.lang.String*(root com.stn.helpers.RecoverHelper) [line 40];
+n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 40];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 40];
+EXIT_SCOPE(_,n$17,n$18,n$20,n$21,n$22); [line 40];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:43 Instructions
+n$23=*&amp;this:com.stn.helpers.RecoverHelper* [line 40];
+n$24=*&amp;$irvar5:java.sql.PreparedStatement* [line 40];
+*n$23.preparedStatement:com.stn.helpers.RecoverHelper(root com.stn.helpers.RecoverHelper)=n$24 [line 40];
+NULLIFY(&amp;$irvar5); [line 40];
+EXIT_SCOPE(n$23,n$24,$irvar5); [line 40];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:43 Instructions
+n$25=*&amp;this:com.stn.helpers.RecoverHelper* [line 41];
+n$26=*n$25.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 41];
+_=*n$26:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 41];
+n$28=*&amp;token:java.lang.String* [line 41];
+n$29=_fun_void PreparedStatement.setString(int,String)(n$26:java.sql.PreparedStatement*,1:int,n$28:java.lang.String*) interface virtual [line 41];
+NULLIFY(&amp;token); [line 41];
+EXIT_SCOPE(_,n$25,n$26,n$28,n$29,token); [line 41];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:43 Instructions
+n$30=*&amp;this:com.stn.helpers.RecoverHelper* [line 42];
+n$31=*n$30.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 42];
+_=*n$31:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 42];
+n$33=_fun_ResultSet PreparedStatement.executeQuery()(n$31:java.sql.PreparedStatement*) interface virtual [line 42];
+*&amp;$irvar6:java.sql.ResultSet*=n$33 [line 42];
+EXIT_SCOPE(_,n$30,n$31,n$33); [line 42];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:43 Instructions
+n$34=*&amp;this:com.stn.helpers.RecoverHelper* [line 42];
+n$35=*&amp;$irvar6:java.sql.ResultSet* [line 42];
+*n$34.resultSet:com.stn.helpers.RecoverHelper(root com.stn.helpers.RecoverHelper)=n$35 [line 42];
+NULLIFY(&amp;$irvar6); [line 42];
+EXIT_SCOPE(n$34,n$35,$irvar6); [line 42];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 19 exn:43 Instructions
+n$36=*&amp;this:com.stn.helpers.RecoverHelper* [line 43];
+n$37=*n$36.resultSet:java.sql.ResultSet*(root com.stn.helpers.RecoverHelper) [line 43];
+_=*n$37:java.sql.ResultSet*(root java.sql.ResultSet) [line 43];
+n$39=_fun_boolean ResultSet.next()(n$37:java.sql.ResultSet*) interface virtual [line 43];
+*&amp;$irvar7:_Bool=n$39 [line 43];
+EXIT_SCOPE(_,n$36,n$37,n$39); [line 43];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:17 succs:20 exn:43 Conditional method_body
+n$40=*&amp;$irvar7:_Bool [line 43];
+PRUNE(!(n$40 == 0), true); [line 43];
+NULLIFY(&amp;$irvar7); [line 43];
+NULLIFY(&amp;email); [line 43];
+EXIT_SCOPE(n$40,$irvar7,email); [line 43];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node19.html"><span class='visited with_tooltip'>C_19<span class='tooltip'>node19 preds:17 succs:21 22 exn:43 Conditional method_body
+n$40=*&amp;$irvar7:_Bool [line 43];
+PRUNE((n$40 == 0), false); [line 43];
+NULLIFY(&amp;$irvar7); [line 43];
+EXIT_SCOPE(n$40,$irvar7); [line 43];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:18 succs:21 22 exn:43 Instructions
+n$41=*&amp;this:com.stn.helpers.RecoverHelper* [line 44];
+n$42=*n$41.resultSet:java.sql.ResultSet*(root com.stn.helpers.RecoverHelper) [line 44];
+_=*n$42:java.sql.ResultSet*(root java.sql.ResultSet) [line 44];
+n$44=_fun_String ResultSet.getString(String)(n$42:java.sql.ResultSet*,"Email":java.lang.Object*) interface virtual [line 44];
+*&amp;email:java.lang.String*=n$44 [line 44];
+EXIT_SCOPE(_,n$41,n$42,n$44); [line 44];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node21.html"><span class='visited with_tooltip'>C_21<span class='tooltip'>node21 preds:20 19 succs:23 exn:3 Conditional method_body
+n$45=*&amp;this:com.stn.helpers.RecoverHelper* [line 47];
+n$46=*n$45.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 47];
+PRUNE(!(n$46 == null), true); [line 47];
+EXIT_SCOPE(n$45,n$46); [line 47];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node22.html"><span class='visited with_tooltip'>C_22<span class='tooltip'>node22 preds:20 19 succs:24 25 exn:3 Conditional method_body
+n$45=*&amp;this:com.stn.helpers.RecoverHelper* [line 47];
+n$46=*n$45.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 47];
+PRUNE((n$46 == null), false); [line 47];
+EXIT_SCOPE(n$45,n$46); [line 47];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:21 succs:24 25 exn:3 Instructions
+n$47=*&amp;this:com.stn.helpers.RecoverHelper* [line 48];
+n$48=*n$47.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 48];
+n$51=_fun___set_mem_attribute(n$48:java.sql.PreparedStatement*) [line 48];
+_=*n$48:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 48];
+n$50=_fun_void PreparedStatement.close()(n$48:java.sql.PreparedStatement*) interface virtual [line 48];
+EXIT_SCOPE(_,n$47,n$48,n$50,n$51); [line 48];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node24.html"><span class='visited with_tooltip'>C_24<span class='tooltip'>node24 preds:23 22 succs:26 exn:3 Conditional method_body
+n$52=*&amp;this:com.stn.helpers.RecoverHelper* [line 49];
+n$53=*n$52.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 49];
+PRUNE(!(n$53 == null), true); [line 49];
+EXIT_SCOPE(n$52,n$53); [line 49];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node25.html"><span class='visited with_tooltip'>C_25<span class='tooltip'>node25 preds:23 22 succs:27 28 exn:3 Conditional method_body
+n$52=*&amp;this:com.stn.helpers.RecoverHelper* [line 49];
+n$53=*n$52.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 49];
+PRUNE((n$53 == null), false); [line 49];
+EXIT_SCOPE(n$52,n$53); [line 49];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:24 succs:27 28 exn:3 Instructions
+n$54=*&amp;this:com.stn.helpers.RecoverHelper* [line 50];
+n$55=*n$54.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 50];
+n$58=_fun___set_mem_attribute(n$55:java.sql.Connection*) [line 50];
+_=*n$55:java.sql.Connection*(root java.sql.Connection) [line 50];
+n$57=_fun_void Connection.close()(n$55:java.sql.Connection*) interface virtual [line 50];
+EXIT_SCOPE(_,n$54,n$55,n$57,n$58); [line 50];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node27.html"><span class='visited with_tooltip'>C_27<span class='tooltip'>node27 preds:26 25 succs:29 exn:3 Conditional method_body
+n$59=*&amp;this:com.stn.helpers.RecoverHelper* [line 51];
+n$60=*n$59.resultSet:java.sql.ResultSet*(root com.stn.helpers.RecoverHelper) [line 51];
+PRUNE(!(n$60 == null), true); [line 51];
+EXIT_SCOPE(n$59,n$60); [line 51];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node28.html"><span class='visited with_tooltip'>C_28<span class='tooltip'>node28 preds:26 25 succs:41 exn:3 Conditional method_body
+n$59=*&amp;this:com.stn.helpers.RecoverHelper* [line 51];
+n$60=*n$59.resultSet:java.sql.ResultSet*(root com.stn.helpers.RecoverHelper) [line 51];
+PRUNE((n$60 == null), false); [line 51];
+NULLIFY(&amp;this); [line 51];
+EXIT_SCOPE(n$59,n$60,this); [line 51];
+APPLY_ABSTRACTION; [line 51];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:27 succs:41 exn:3 Instructions
+n$61=*&amp;this:com.stn.helpers.RecoverHelper* [line 52];
+n$62=*n$61.resultSet:java.sql.ResultSet*(root com.stn.helpers.RecoverHelper) [line 52];
+n$65=_fun___set_mem_attribute(n$62:java.sql.ResultSet*) [line 52];
+_=*n$62:java.sql.ResultSet*(root java.sql.ResultSet) [line 52];
+n$64=_fun_void ResultSet.close()(n$62:java.sql.ResultSet*) interface virtual [line 52];
+NULLIFY(&amp;this); [line 52];
+EXIT_SCOPE(_,n$61,n$62,n$64,n$65,this); [line 52];
+APPLY_ABSTRACTION; [line 52];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:42 succs:31 32 exn:3 Instructions
+n$66=*&amp;CatchVar149:java.lang.Object* [line 47];
+*&amp;$bcvar3:java.lang.Object*=n$66 [line 47];
+NULLIFY(&amp;CatchVar149); [line 47];
+EXIT_SCOPE(n$66,CatchVar149); [line 47];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node31.html"><span class='visited with_tooltip'>C_31<span class='tooltip'>node31 preds:30 succs:33 exn:3 Conditional method_body
+n$67=*&amp;this:com.stn.helpers.RecoverHelper* [line 47];
+n$68=*n$67.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 47];
+PRUNE(!(n$68 == null), true); [line 47];
+EXIT_SCOPE(n$67,n$68); [line 47];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:30 succs:34 35 exn:3 Conditional method_body
+n$67=*&amp;this:com.stn.helpers.RecoverHelper* [line 47];
+n$68=*n$67.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 47];
+PRUNE((n$68 == null), false); [line 47];
+EXIT_SCOPE(n$67,n$68); [line 47];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:31 succs:34 35 exn:3 Instructions
+n$69=*&amp;this:com.stn.helpers.RecoverHelper* [line 48];
+n$70=*n$69.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 48];
+n$73=_fun___set_mem_attribute(n$70:java.sql.PreparedStatement*) [line 48];
+_=*n$70:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 48];
+n$72=_fun_void PreparedStatement.close()(n$70:java.sql.PreparedStatement*) interface virtual [line 48];
+EXIT_SCOPE(_,n$69,n$70,n$72,n$73); [line 48];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node34.html"><span class='visited with_tooltip'>C_34<span class='tooltip'>node34 preds:33 32 succs:36 exn:3 Conditional method_body
+n$74=*&amp;this:com.stn.helpers.RecoverHelper* [line 49];
+n$75=*n$74.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 49];
+PRUNE(!(n$75 == null), true); [line 49];
+EXIT_SCOPE(n$74,n$75); [line 49];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node35.html"><span class='visited with_tooltip'>C_35<span class='tooltip'>node35 preds:33 32 succs:37 38 exn:3 Conditional method_body
+n$74=*&amp;this:com.stn.helpers.RecoverHelper* [line 49];
+n$75=*n$74.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 49];
+PRUNE((n$75 == null), false); [line 49];
+EXIT_SCOPE(n$74,n$75); [line 49];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:34 succs:37 38 exn:3 Instructions
+n$76=*&amp;this:com.stn.helpers.RecoverHelper* [line 50];
+n$77=*n$76.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 50];
+n$80=_fun___set_mem_attribute(n$77:java.sql.Connection*) [line 50];
+_=*n$77:java.sql.Connection*(root java.sql.Connection) [line 50];
+n$79=_fun_void Connection.close()(n$77:java.sql.Connection*) interface virtual [line 50];
+EXIT_SCOPE(_,n$76,n$77,n$79,n$80); [line 50];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node37.html"><span class='visited with_tooltip'>C_37<span class='tooltip'>node37 preds:36 35 succs:39 exn:3 Conditional method_body
+n$81=*&amp;this:com.stn.helpers.RecoverHelper* [line 51];
+n$82=*n$81.resultSet:java.sql.ResultSet*(root com.stn.helpers.RecoverHelper) [line 51];
+PRUNE(!(n$82 == null), true); [line 51];
+EXIT_SCOPE(n$81,n$82); [line 51];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node38.html"><span class='visited with_tooltip'>C_38<span class='tooltip'>node38 preds:36 35 succs:40 exn:3 Conditional method_body
+n$81=*&amp;this:com.stn.helpers.RecoverHelper* [line 51];
+n$82=*n$81.resultSet:java.sql.ResultSet*(root com.stn.helpers.RecoverHelper) [line 51];
+PRUNE((n$82 == null), false); [line 51];
+NULLIFY(&amp;this); [line 51];
+EXIT_SCOPE(n$81,n$82,this); [line 51];
+APPLY_ABSTRACTION; [line 51];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:37 succs:40 exn:3 Instructions
+n$83=*&amp;this:com.stn.helpers.RecoverHelper* [line 52];
+n$84=*n$83.resultSet:java.sql.ResultSet*(root com.stn.helpers.RecoverHelper) [line 52];
+n$87=_fun___set_mem_attribute(n$84:java.sql.ResultSet*) [line 52];
+_=*n$84:java.sql.ResultSet*(root java.sql.ResultSet) [line 52];
+n$86=_fun_void ResultSet.close()(n$84:java.sql.ResultSet*) interface virtual [line 52];
+NULLIFY(&amp;this); [line 52];
+EXIT_SCOPE(_,n$83,n$84,n$86,n$87,this); [line 52];
+APPLY_ABSTRACTION; [line 52];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:39 38 succs:2 exn:3 Instructions
+n$88=*&amp;$bcvar3:java.lang.Object* [line 53];
+*&amp;return:java.lang.String*=EXN n$88 [line 53];
+NULLIFY(&amp;$bcvar3); [line 53];
+EXIT_SCOPE(n$88,$bcvar3); [line 53];
+APPLY_ABSTRACTION; [line 53];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:29 28 succs:2 exn:3 Instructions
+n$89=*&amp;email:java.lang.String* [line 55];
+*&amp;return:java.lang.String*=n$89 [line 55];
+NULLIFY(&amp;email); [line 55];
+EXIT_SCOPE(n$89,email); [line 55];
+APPLY_ABSTRACTION; [line 55];
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:43 succs:30 exn:3 Instructions
+</span></span></a> <a href="./nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds: succs:42 exn:3 Instructions
+n$90=*&amp;return:java.lang.String* [line 47];
+*&amp;return:java.lang.String*=null [line 47];
+n$91=_fun___unwrap_exception(n$90:java.lang.String*) [line 47];
+NULLIFY(&amp;$irvar3); [line 47];
+NULLIFY(&amp;$irvar5); [line 47];
+NULLIFY(&amp;$irvar4); [line 47];
+NULLIFY(&amp;$irvar7); [line 47];
+NULLIFY(&amp;$irvar6); [line 47];
+NULLIFY(&amp;email); [line 47];
+NULLIFY(&amp;$irvar1); [line 47];
+NULLIFY(&amp;$irvar2); [line 47];
+EXIT_SCOPE(n$90,n$91,$irvar3,$irvar5,$irvar4,$irvar7,$irvar6,email,$irvar1,$irvar2); [line 47];
+</span></span></a><br />@
+
+<span class='color_black'>java.lang.String* String RecoverHelper.checkToken(String)(com.stn.helpers.RecoverHelper* this, java.lang.String* token)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { @val$0 -> { connection -> (Footprint({ @val$0.dbUser,
+                                                   @val$0.dbPort*,
+                                                   @val$0.dbPassword,
+                                                   @val$0.dbName*,
+                                                   @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        preparedStatement -> (Footprint({ @val$1*,
+                                                          @val$0.dbUser,
+                                                          @val$0.dbPort*,
+                                                          @val$0.dbPassword,
+                                                          @val$0.dbName*,
+                                                          @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        query -> { },
+                        resultSet -> ({ Other(ResultSet PreparedStatement.executeQuery() at line 42) } + Footprint({ @val$1*,
+                                                                    @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *) },
+            return -> ({ Other(ResultSet PreparedStatement.executeQuery() at line 42) } + Footprint({ @val$1*,
+                                                                    @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *) }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= String RecoverHelper.checkToken(String)
+; translation_unit= src/main/java/com/stn/helpers/RecoverHelper.java
+; access= Public
+; exceptions= [java.lang.ClassNotFoundException;  java.sql.SQLException]
+; formals= [(this,com.stn.helpers.RecoverHelper*);  (token,java.lang.String*)]
+; is_defined= true
+; loc= src/main/java/com/stn/helpers/RecoverHelper.java:32
+; locals= [{ name= $bcvar3; typ= void; modify_in_block= false }; 
+           { name= CatchVar149; typ= void; modify_in_block= false }; 
+           { name= $irvar7; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= email; typ= java.lang.String*; modify_in_block= false }]
+; ret_type= java.lang.String* 
+; proc_id= com.stn.helpers.RecoverHelper.checkToken(java.lang.String):java.lang.String }</pre>
+</body>
+</html>

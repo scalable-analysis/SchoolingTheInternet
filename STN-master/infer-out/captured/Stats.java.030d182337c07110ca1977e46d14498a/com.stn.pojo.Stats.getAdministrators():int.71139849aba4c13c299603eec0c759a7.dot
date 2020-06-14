@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Stats.getAdministrators():int.71139849aba4c13c299603eec0c759a7_1" [label="1: Start int Stats.getAdministrators()\nFormals:  this:com.stn.pojo.Stats*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Stats.getAdministrators():int.71139849aba4c13c299603eec0c759a7_1" -> "com.stn.pojo.Stats.getAdministrators():int.71139849aba4c13c299603eec0c759a7_4" ;
+"com.stn.pojo.Stats.getAdministrators():int.71139849aba4c13c299603eec0c759a7_2" [label="2: Exit int Stats.getAdministrators() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Stats.getAdministrators():int.71139849aba4c13c299603eec0c759a7_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 107]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Stats.getAdministrators():int.71139849aba4c13c299603eec0c759a7_3" -> "com.stn.pojo.Stats.getAdministrators():int.71139849aba4c13c299603eec0c759a7_2" ;
+"com.stn.pojo.Stats.getAdministrators():int.71139849aba4c13c299603eec0c759a7_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Stats* [line 107]\n  n$1=*n$0.administrators:int(root com.stn.pojo.Stats) [line 107]\n  *&return:int=n$1 [line 107]\n  NULLIFY(&this); [line 107]\n  EXIT_SCOPE(n$0,n$1,this); [line 107]\n  APPLY_ABSTRACTION; [line 107]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Stats.getAdministrators():int.71139849aba4c13c299603eec0c759a7_4" -> "com.stn.pojo.Stats.getAdministrators():int.71139849aba4c13c299603eec0c759a7_2" ;
+	 "com.stn.pojo.Stats.getAdministrators():int.71139849aba4c13c299603eec0c759a7_4" -> "com.stn.pojo.Stats.getAdministrators():int.71139849aba4c13c299603eec0c759a7_3" [color="red" ];
+}

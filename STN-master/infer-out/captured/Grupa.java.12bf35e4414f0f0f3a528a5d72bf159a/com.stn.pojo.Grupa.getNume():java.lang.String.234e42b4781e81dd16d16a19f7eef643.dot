@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Grupa.getNume():java.lang.String.234e42b4781e81dd16d16a19f7eef643_1" [label="1: Start String Grupa.getNume()\nFormals:  this:com.stn.pojo.Grupa*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Grupa.getNume():java.lang.String.234e42b4781e81dd16d16a19f7eef643_1" -> "com.stn.pojo.Grupa.getNume():java.lang.String.234e42b4781e81dd16d16a19f7eef643_4" ;
+"com.stn.pojo.Grupa.getNume():java.lang.String.234e42b4781e81dd16d16a19f7eef643_2" [label="2: Exit String Grupa.getNume() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Grupa.getNume():java.lang.String.234e42b4781e81dd16d16a19f7eef643_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 32]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Grupa.getNume():java.lang.String.234e42b4781e81dd16d16a19f7eef643_3" -> "com.stn.pojo.Grupa.getNume():java.lang.String.234e42b4781e81dd16d16a19f7eef643_2" ;
+"com.stn.pojo.Grupa.getNume():java.lang.String.234e42b4781e81dd16d16a19f7eef643_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Grupa* [line 32]\n  n$1=*n$0.nume:java.lang.String*(root com.stn.pojo.Grupa) [line 32]\n  *&return:java.lang.String*=n$1 [line 32]\n  NULLIFY(&this); [line 32]\n  EXIT_SCOPE(n$0,n$1,this); [line 32]\n  APPLY_ABSTRACTION; [line 32]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Grupa.getNume():java.lang.String.234e42b4781e81dd16d16a19f7eef643_4" -> "com.stn.pojo.Grupa.getNume():java.lang.String.234e42b4781e81dd16d16a19f7eef643_2" ;
+	 "com.stn.pojo.Grupa.getNume():java.lang.String.234e42b4781e81dd16d16a19f7eef643_4" -> "com.stn.pojo.Grupa.getNume():java.lang.String.234e42b4781e81dd16d16a19f7eef643_3" [color="red" ];
+}

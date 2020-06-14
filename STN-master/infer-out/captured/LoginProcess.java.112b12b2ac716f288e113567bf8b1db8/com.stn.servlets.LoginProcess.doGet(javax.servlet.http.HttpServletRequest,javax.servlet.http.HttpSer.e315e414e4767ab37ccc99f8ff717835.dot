@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.servlets.LoginProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.e315e414e4767ab37ccc99f8ff717835_1" [label="1: Start void LoginProcess.doGet(HttpServletRequest,HttpServletResponse)\nFormals:  this:com.stn.servlets.LoginProcess* request:javax.servlet.http.HttpServletRequest* response:javax.servlet.http.HttpServletResponse*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.servlets.LoginProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.e315e414e4767ab37ccc99f8ff717835_1" -> "com.stn.servlets.LoginProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.e315e414e4767ab37ccc99f8ff717835_4" ;
+"com.stn.servlets.LoginProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.e315e414e4767ab37ccc99f8ff717835_2" [label="2: Exit void LoginProcess.doGet(HttpServletRequest,HttpServletResponse) \n  " color=yellow style=filled]
+	
+
+"com.stn.servlets.LoginProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.e315e414e4767ab37ccc99f8ff717835_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 19]\n " shape="box"]
+	
+
+	 "com.stn.servlets.LoginProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.e315e414e4767ab37ccc99f8ff717835_3" -> "com.stn.servlets.LoginProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.e315e414e4767ab37ccc99f8ff717835_2" ;
+"com.stn.servlets.LoginProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.e315e414e4767ab37ccc99f8ff717835_4" [label="4:  Call void HttpServletResponse.sendRedirect(String) \n   n$0=*&response:javax.servlet.http.HttpServletResponse* [line 18]\n  _=*n$0:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 18]\n  n$2=_fun_void HttpServletResponse.sendRedirect(String)(n$0:javax.servlet.http.HttpServletResponse*,\"login.jsp\":java.lang.Object*) interface virtual [line 18]\n  NULLIFY(&response); [line 18]\n  EXIT_SCOPE(_,n$0,n$2,response); [line 18]\n " shape="box"]
+	
+
+	 "com.stn.servlets.LoginProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.e315e414e4767ab37ccc99f8ff717835_4" -> "com.stn.servlets.LoginProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.e315e414e4767ab37ccc99f8ff717835_5" ;
+	 "com.stn.servlets.LoginProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.e315e414e4767ab37ccc99f8ff717835_4" -> "com.stn.servlets.LoginProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.e315e414e4767ab37ccc99f8ff717835_3" [color="red" ];
+"com.stn.servlets.LoginProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.e315e414e4767ab37ccc99f8ff717835_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 19]\n " shape="box"]
+	
+
+	 "com.stn.servlets.LoginProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.e315e414e4767ab37ccc99f8ff717835_5" -> "com.stn.servlets.LoginProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.e315e414e4767ab37ccc99f8ff717835_2" ;
+	 "com.stn.servlets.LoginProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.e315e414e4767ab37ccc99f8ff717835_5" -> "com.stn.servlets.LoginProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.e315e414e4767ab37ccc99f8ff717835_3" [color="red" ];
+}

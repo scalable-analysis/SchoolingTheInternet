@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.RecoverHelper.checkToken(java.lang.String):java.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node10</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE39">10</a></h1></center>PROC: <a href="./../com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19.html">String RecoverHelper.checkToken(String)</a> LINE: <a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE39">39</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node9.html"><span class='visited with_tooltip'>N_9<span class='tooltip'>node9 preds:8 succs:10 exn:43 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node11.html"><span class='visited with_tooltip'>N_11<span class='tooltip'>node11 preds:10 succs:12 exn:43 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node43.html"><span class='visited with_tooltip'>N_43<span class='tooltip'>node43 preds: succs:42 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$11=*&amp;$irvar1:java.lang.String* [line 39];
+n$12=*&amp;$irvar2:java.lang.String* [line 39];
+n$13=*&amp;$irvar3:java.lang.String* [line 39];
+n$14=_fun_Connection DriverManager.getConnection(String,String,String)(n$11:java.lang.String*,n$12:java.lang.String*,n$13:java.lang.String*) [line 39];
+*&amp;$irvar4:java.sql.Connection*=n$14 [line 39];
+</LISTING>
+<hr width="100%">
+<a name="session70" href="./../nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node10.html#session70">node10#session70</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE39">39</a>) [compute pre] liveness 10
+<LISTING class='color_black'>JOIN
+
+LEFT:   { token, CatchVar149, $irvar4, email, return, this }
+RIGHT:  { CatchVar149, return, this }
+RESULT: { token, CatchVar149, $irvar4, email, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session71" href="./../nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node10.html#session71">node10#session71</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE39">39</a>) [exec] liveness 10
+<LISTING class='color_black'>PRE STATE:
+{ token, CatchVar149, $irvar4, email, return, this }
+
+INSTR=  *&amp;$irvar4:java.sql.Connection*=n$14 [line 39]; 
+
+STATE:
+{ n$14, token, CatchVar149, email, return, this }
+
+INSTR=  n$14=_fun_Connection DriverManager.getConnection(String,String,String)(n$11:java.lang.String*,n$12:java.lang.String*,n$13:java.lang.String*) [line 39]; 
+
+STATE:
+{ n$11, n$12, n$13, token, CatchVar149, email, return, this }
+
+INSTR=  n$13=*&amp;$irvar3:java.lang.String* [line 39]; 
+
+STATE:
+{ n$11, n$12, $irvar3, token, CatchVar149, email, return, this }
+
+INSTR=  n$12=*&amp;$irvar2:java.lang.String* [line 39]; 
+
+STATE:
+{ n$11, $irvar3, token, CatchVar149, email, return, $irvar2, this }
+
+INSTR=  n$11=*&amp;$irvar1:java.lang.String* [line 39]; 
+
+STATE:
+{ $irvar3, token, CatchVar149, email, return, $irvar1, $irvar2, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session99" href="./../nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node10.html#session99">node10#session99</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE39">39</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session100" href="./../nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node10.html#session100">node10#session100</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE39">39</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ $irvar3, email, $irvar1, $irvar2 },{ _, n$8, n$10 })
+
+INSTR=  n$11=*&amp;$irvar1:java.lang.String* [line 39]; 
+
+STATE:
+({ n$11, $irvar3, email, $irvar1, $irvar2 },{ _, n$8, n$10 })
+
+INSTR=  n$12=*&amp;$irvar2:java.lang.String* [line 39]; 
+
+STATE:
+({ n$11, n$12, $irvar3, email, $irvar1, $irvar2 },{ _, n$8, n$10 })
+
+INSTR=  n$13=*&amp;$irvar3:java.lang.String* [line 39]; 
+
+STATE:
+({ n$11, n$12, n$13, $irvar3, email, $irvar1, $irvar2 },{ _, n$8, n$10 })
+
+INSTR=  n$14=_fun_Connection DriverManager.getConnection(String,String,String)(n$11:java.lang.String*,n$12:java.lang.String*,n$13:java.lang.String*) [line 39]; 
+
+STATE:
+({ n$11, n$12, n$13, n$14, $irvar3, email, $irvar1, $irvar2 },
+{ _, n$8, n$10 })
+
+INSTR=  *&amp;$irvar4:java.sql.Connection*=n$14 [line 39]; 
+
+STATE:
+({ $irvar4, email },{ n$11, n$12, n$13, n$14, $irvar3, $irvar1, $irvar2 })
+
+</LISTING>
+<hr width="100%">
+<a name="session14" href="./../nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node10.html#session14">node10#session14</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE39">39</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session15" href="./../nodes/com.stn.helpers.RecoverHelper.checkToken%28java.lang.String%29%3Ajava.lang.String.376e88fbcd5ef2bba13199fcca67ef19_node10.html#session15">node10#session15</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE39">39</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  email -&gt; { },
+  this -&gt; { query -&gt; { } } }
+
+
+
+
+TAINTED_CALL1: (callee="Connection DriverManager.getConnection(String,String,String)", caller="String RecoverHelper.checkToken(String)")
+INSTR=  n$14 := Connection DriverManager.getConnection(String,String,String)({ n$4,
+                                                                    n$7,
+                                                                    n$10 }) [line 39]; 
+
+STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  email -&gt; { },
+  this -&gt; { query -&gt; { } } }
+
+
+INSTR=  NULLIFY(&amp;$irvar3); [line 39]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar1); [line 39]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar2); [line 39]; 
+
+STATE UNCHANGED
+
+
+</LISTING>

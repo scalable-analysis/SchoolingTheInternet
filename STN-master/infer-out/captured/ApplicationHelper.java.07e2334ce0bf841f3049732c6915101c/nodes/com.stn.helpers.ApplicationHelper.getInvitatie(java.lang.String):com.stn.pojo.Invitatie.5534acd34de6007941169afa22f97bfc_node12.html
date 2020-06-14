@@ -1,0 +1,259 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.ApplicationHelper.getInvitatie(java.lang.String):com.stn.pojo.Invitatie.5534acd34de6007941169afa22f97bfc_node12</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE124">12</a></h1></center>PROC: <a href="./../com.stn.helpers.ApplicationHelper.getInvitatie%28java.lang.String%29%3Acom.stn.pojo.Invitatie.5534acd34de6007941169afa22f97bfc.html">Invitatie ApplicationHelper.getInvitatie(String)</a> LINE: <a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE124">124</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.helpers.ApplicationHelper.getInvitatie%28java.lang.String%29%3Acom.stn.pojo.Invitatie.5534acd34de6007941169afa22f97bfc_node11.html"><span class='visited with_tooltip'>N_11<span class='tooltip'>node11 preds:10 succs:12 exn:48 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.helpers.ApplicationHelper.getInvitatie%28java.lang.String%29%3Acom.stn.pojo.Invitatie.5534acd34de6007941169afa22f97bfc_node13.html"><span class='visited with_tooltip'>N_13<span class='tooltip'>node13 preds:12 succs:14 exn:48 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.helpers.ApplicationHelper.getInvitatie%28java.lang.String%29%3Acom.stn.pojo.Invitatie.5534acd34de6007941169afa22f97bfc_node48.html"><span class='visited with_tooltip'>N_48<span class='tooltip'>node48 preds: succs:47 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$17=*&amp;this:com.stn.helpers.ApplicationHelper* [line 124];
+n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.ApplicationHelper) [line 124];
+_=*n$18:java.sql.Connection*(root java.sql.Connection) [line 124];
+n$20=*&amp;this:com.stn.helpers.ApplicationHelper* [line 124];
+n$21=*n$20.query:java.lang.String*(root com.stn.helpers.ApplicationHelper) [line 124];
+n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 124];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 124];
+</LISTING>
+<hr width="100%">
+<a name="session58" href="./../nodes/com.stn.helpers.ApplicationHelper.getInvitatie%28java.lang.String%29%3Acom.stn.pojo.Invitatie.5534acd34de6007941169afa22f97bfc_node12.html#session58">node12#session58</a>(<a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE124">124</a>) [compute pre] liveness 12
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session59" href="./../nodes/com.stn.helpers.ApplicationHelper.getInvitatie%28java.lang.String%29%3Acom.stn.pojo.Invitatie.5534acd34de6007941169afa22f97bfc_node12.html#session59">node12#session59</a>(<a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE124">124</a>) [exec] liveness 12
+<LISTING class='color_black'>PRE STATE:
+{ token, $irvar5, invitatie, this }
+
+INSTR=  *&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 124]; 
+
+STATE:
+{ n$22, token, invitatie, this }
+
+INSTR=  n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 124]; 
+
+STATE:
+{ n$18, n$21, token, invitatie, this }
+
+INSTR=  n$21=*n$20.query:java.lang.String*(root com.stn.helpers.ApplicationHelper) [line 124]; 
+
+STATE:
+{ n$18, n$20, token, invitatie, this }
+
+INSTR=  n$20=*&amp;this:com.stn.helpers.ApplicationHelper* [line 124]; 
+
+STATE:
+{ n$18, token, invitatie, this }
+
+INSTR=  _=*n$18:java.sql.Connection*(root java.sql.Connection) [line 124]; 
+
+STATE UNCHANGED
+
+INSTR=  n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.ApplicationHelper) [line 124]; 
+
+STATE:
+{ n$17, token, invitatie, this }
+
+INSTR=  n$17=*&amp;this:com.stn.helpers.ApplicationHelper* [line 124]; 
+
+STATE:
+{ token, invitatie, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session138" href="./../nodes/com.stn.helpers.ApplicationHelper.getInvitatie%28java.lang.String%29%3Acom.stn.pojo.Invitatie.5534acd34de6007941169afa22f97bfc_node12.html#session138">node12#session138</a>(<a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE124">124</a>) [compute pre] liveness 12
+<LISTING class='color_black'>JOIN
+
+LEFT:   { token, $irvar5, invitatie, this }
+RIGHT:  { CatchVar243, return, this }
+RESULT: { token, $irvar5, CatchVar243, invitatie, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session139" href="./../nodes/com.stn.helpers.ApplicationHelper.getInvitatie%28java.lang.String%29%3Acom.stn.pojo.Invitatie.5534acd34de6007941169afa22f97bfc_node12.html#session139">node12#session139</a>(<a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE124">124</a>) [exec] liveness 12
+<LISTING class='color_black'>PRE STATE:
+{ token, $irvar5, CatchVar243, invitatie, return, this }
+
+INSTR=  *&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 124]; 
+
+STATE:
+{ n$22, token, CatchVar243, invitatie, return, this }
+
+INSTR=  n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 124]; 
+
+STATE:
+{ n$18, n$21, token, CatchVar243, invitatie, return, this }
+
+INSTR=  n$21=*n$20.query:java.lang.String*(root com.stn.helpers.ApplicationHelper) [line 124]; 
+
+STATE:
+{ n$18, n$20, token, CatchVar243, invitatie, return, this }
+
+INSTR=  n$20=*&amp;this:com.stn.helpers.ApplicationHelper* [line 124]; 
+
+STATE:
+{ n$18, token, CatchVar243, invitatie, return, this }
+
+INSTR=  _=*n$18:java.sql.Connection*(root java.sql.Connection) [line 124]; 
+
+STATE UNCHANGED
+
+INSTR=  n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.ApplicationHelper) [line 124]; 
+
+STATE:
+{ n$17, token, CatchVar243, invitatie, return, this }
+
+INSTR=  n$17=*&amp;this:com.stn.helpers.ApplicationHelper* [line 124]; 
+
+STATE:
+{ token, CatchVar243, invitatie, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session144" href="./../nodes/com.stn.helpers.ApplicationHelper.getInvitatie%28java.lang.String%29%3Acom.stn.pojo.Invitatie.5534acd34de6007941169afa22f97bfc_node12.html#session144">node12#session144</a>(<a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE124">124</a>) [compute pre] liveness 12
+<LISTING class='color_black'>JOIN
+
+LEFT:   { token, $irvar5, CatchVar243, invitatie, return, this }
+RIGHT:  { CatchVar243, return, this }
+RESULT: { token, $irvar5, CatchVar243, invitatie, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session145" href="./../nodes/com.stn.helpers.ApplicationHelper.getInvitatie%28java.lang.String%29%3Acom.stn.pojo.Invitatie.5534acd34de6007941169afa22f97bfc_node12.html#session145">node12#session145</a>(<a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE124">124</a>) [exec] liveness 12
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session212" href="./../nodes/com.stn.helpers.ApplicationHelper.getInvitatie%28java.lang.String%29%3Acom.stn.pojo.Invitatie.5534acd34de6007941169afa22f97bfc_node12.html#session212">node12#session212</a>(<a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE124">124</a>) [compute pre] liveness 12
+<LISTING class='color_black'>JOIN
+
+LEFT:   { token, $irvar5, CatchVar243, invitatie, return, this }
+RIGHT:  { CatchVar243, return, this }
+RESULT: { token, $irvar5, CatchVar243, invitatie, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session213" href="./../nodes/com.stn.helpers.ApplicationHelper.getInvitatie%28java.lang.String%29%3Acom.stn.pojo.Invitatie.5534acd34de6007941169afa22f97bfc_node12.html#session213">node12#session213</a>(<a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE124">124</a>) [exec] liveness 12
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session265" href="./../nodes/com.stn.helpers.ApplicationHelper.getInvitatie%28java.lang.String%29%3Acom.stn.pojo.Invitatie.5534acd34de6007941169afa22f97bfc_node12.html#session265">node12#session265</a>(<a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE124">124</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session266" href="./../nodes/com.stn.helpers.ApplicationHelper.getInvitatie%28java.lang.String%29%3Acom.stn.pojo.Invitatie.5534acd34de6007941169afa22f97bfc_node12.html#session266">node12#session266</a>(<a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE124">124</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ invitatie },{ n$15, n$16, $irvar4 })
+
+INSTR=  n$17=*&amp;this:com.stn.helpers.ApplicationHelper* [line 124]; 
+
+STATE:
+({ n$17, invitatie },{ n$15, n$16, $irvar4 })
+
+INSTR=  n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.ApplicationHelper) [line 124]; 
+
+STATE:
+({ n$17, n$18, invitatie },{ n$15, n$16, $irvar4 })
+
+INSTR=  _=*n$18:java.sql.Connection*(root java.sql.Connection) [line 124]; 
+
+STATE:
+({ _, n$17, n$18, invitatie },{ n$15, n$16, $irvar4 })
+
+INSTR=  n$20=*&amp;this:com.stn.helpers.ApplicationHelper* [line 124]; 
+
+STATE:
+({ _, n$17, n$18, n$20, invitatie },{ n$15, n$16, $irvar4 })
+
+INSTR=  n$21=*n$20.query:java.lang.String*(root com.stn.helpers.ApplicationHelper) [line 124]; 
+
+STATE:
+({ _, n$17, n$18, n$20, n$21, invitatie },{ n$15, n$16, $irvar4 })
+
+INSTR=  n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 124]; 
+
+STATE:
+({ _, n$17, n$18, n$20, n$21, n$22, invitatie },{ n$15, n$16, $irvar4 })
+
+INSTR=  *&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 124]; 
+
+STATE:
+({ $irvar5, invitatie },{ _, n$17, n$18, n$20, n$21, n$22 })
+
+</LISTING>
+<hr width="100%">
+<a name="session18" href="./../nodes/com.stn.helpers.ApplicationHelper.getInvitatie%28java.lang.String%29%3Acom.stn.pojo.Invitatie.5534acd34de6007941169afa22f97bfc_node12.html#session18">node12#session18</a>(<a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE124">124</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session19" href="./../nodes/com.stn.helpers.ApplicationHelper.getInvitatie%28java.lang.String%29%3Acom.stn.pojo.Invitatie.5534acd34de6007941169afa22f97bfc_node12.html#session19">node12#session19</a>(<a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE124">124</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  invitatie -&gt; { },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+
+
+
+
+
+TAINTED_CALL1: (callee="PreparedStatement Connection.prepareStatement(String)", caller="Invitatie ApplicationHelper.getInvitatie(String)")
+TAINTED_CALL1: (callee="PreparedStatement Connection.prepareStatement(String)", caller="Invitatie ApplicationHelper.getInvitatie(String)")
+INSTR=  n$22 := PreparedStatement Connection.prepareStatement(String)({ this-&gt;connection,
+                                                                    this-&gt;query }) [line 124]; 
+
+STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  invitatie -&gt; { },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+
+
+</LISTING>

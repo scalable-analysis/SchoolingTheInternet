@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Facultate.getIdFacultate():int.463ab6ccfa1c208425cfdc45ad57c727_1" [label="1: Start int Facultate.getIdFacultate()\nFormals:  this:com.stn.pojo.Facultate*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Facultate.getIdFacultate():int.463ab6ccfa1c208425cfdc45ad57c727_1" -> "com.stn.pojo.Facultate.getIdFacultate():int.463ab6ccfa1c208425cfdc45ad57c727_4" ;
+"com.stn.pojo.Facultate.getIdFacultate():int.463ab6ccfa1c208425cfdc45ad57c727_2" [label="2: Exit int Facultate.getIdFacultate() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Facultate.getIdFacultate():int.463ab6ccfa1c208425cfdc45ad57c727_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 22]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Facultate.getIdFacultate():int.463ab6ccfa1c208425cfdc45ad57c727_3" -> "com.stn.pojo.Facultate.getIdFacultate():int.463ab6ccfa1c208425cfdc45ad57c727_2" ;
+"com.stn.pojo.Facultate.getIdFacultate():int.463ab6ccfa1c208425cfdc45ad57c727_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Facultate* [line 22]\n  n$1=*n$0.idFacultate:int(root com.stn.pojo.Facultate) [line 22]\n  *&return:int=n$1 [line 22]\n  NULLIFY(&this); [line 22]\n  EXIT_SCOPE(n$0,n$1,this); [line 22]\n  APPLY_ABSTRACTION; [line 22]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Facultate.getIdFacultate():int.463ab6ccfa1c208425cfdc45ad57c727_4" -> "com.stn.pojo.Facultate.getIdFacultate():int.463ab6ccfa1c208425cfdc45ad57c727_2" ;
+	 "com.stn.pojo.Facultate.getIdFacultate():int.463ab6ccfa1c208425cfdc45ad57c727_4" -> "com.stn.pojo.Facultate.getIdFacultate():int.463ab6ccfa1c208425cfdc45ad57c727_3" [color="red" ];
+}

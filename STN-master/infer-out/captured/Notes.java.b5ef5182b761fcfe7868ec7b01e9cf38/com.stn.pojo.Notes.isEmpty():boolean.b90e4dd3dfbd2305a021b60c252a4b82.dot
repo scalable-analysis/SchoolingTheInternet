@@ -1,0 +1,90 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_1" [label="1: Start boolean Notes.isEmpty()\nFormals:  this:com.stn.pojo.Notes*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_1" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_4" ;
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_1" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_5" ;
+"com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_2" [label="2: Exit boolean Notes.isEmpty() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 19]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_3" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_2" ;
+"com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_4" [label="4: Prune (true branch, if) \n   n$0=*&this:com.stn.pojo.Notes* [line 12]\n  n$1=*n$0.id:int(root com.stn.pojo.Notes) [line 12]\n  PRUNE(!(n$1 != -1), true); [line 12]\n  EXIT_SCOPE(n$0,n$1); [line 12]\n " shape="invhouse"]
+	
+
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_4" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_6" ;
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_4" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_7" ;
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_4" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_3" [color="red" ];
+"com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_5" [label="5: Prune (false branch, if) \n   n$0=*&this:com.stn.pojo.Notes* [line 12]\n  n$1=*n$0.id:int(root com.stn.pojo.Notes) [line 12]\n  PRUNE((n$1 != -1), false); [line 12]\n  NULLIFY(&this); [line 12]\n  EXIT_SCOPE(n$0,n$1,this); [line 12]\n  APPLY_ABSTRACTION; [line 12]\n " shape="invhouse"]
+	
+
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_5" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_17" ;
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_5" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_3" [color="red" ];
+"com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_6" [label="6: Prune (true branch, if) \n   n$2=*&this:com.stn.pojo.Notes* [line 12]\n  n$3=*n$2.id_ora:int(root com.stn.pojo.Notes) [line 12]\n  PRUNE(!(n$3 != -1), true); [line 12]\n  EXIT_SCOPE(n$2,n$3); [line 12]\n " shape="invhouse"]
+	
+
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_6" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_8" ;
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_6" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_9" ;
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_6" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_3" [color="red" ];
+"com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_7" [label="7: Prune (false branch, if) \n   n$2=*&this:com.stn.pojo.Notes* [line 12]\n  n$3=*n$2.id_ora:int(root com.stn.pojo.Notes) [line 12]\n  PRUNE((n$3 != -1), false); [line 12]\n  NULLIFY(&this); [line 12]\n  EXIT_SCOPE(n$2,n$3,this); [line 12]\n  APPLY_ABSTRACTION; [line 12]\n " shape="invhouse"]
+	
+
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_7" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_17" ;
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_7" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_3" [color="red" ];
+"com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_8" [label="8: Prune (true branch, if) \n   n$4=*&this:com.stn.pojo.Notes* [line 12]\n  n$5=*n$4.id_stud:int(root com.stn.pojo.Notes) [line 12]\n  PRUNE(!(n$5 != -1), true); [line 12]\n  EXIT_SCOPE(n$4,n$5); [line 12]\n " shape="invhouse"]
+	
+
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_8" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_10" ;
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_8" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_11" ;
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_8" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_3" [color="red" ];
+"com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_9" [label="9: Prune (false branch, if) \n   n$4=*&this:com.stn.pojo.Notes* [line 12]\n  n$5=*n$4.id_stud:int(root com.stn.pojo.Notes) [line 12]\n  PRUNE((n$5 != -1), false); [line 12]\n  NULLIFY(&this); [line 12]\n  EXIT_SCOPE(n$4,n$5,this); [line 12]\n  APPLY_ABSTRACTION; [line 12]\n " shape="invhouse"]
+	
+
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_9" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_17" ;
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_9" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_3" [color="red" ];
+"com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_10" [label="10: Prune (true branch, if) \n   n$6=*&this:com.stn.pojo.Notes* [line 12]\n  n$7=*n$6.tema:java.lang.String*(root com.stn.pojo.Notes) [line 12]\n  PRUNE(!(n$7 != \"\"), true); [line 12]\n  EXIT_SCOPE(n$6,n$7); [line 12]\n " shape="invhouse"]
+	
+
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_10" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_12" ;
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_10" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_13" ;
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_10" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_3" [color="red" ];
+"com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_11" [label="11: Prune (false branch, if) \n   n$6=*&this:com.stn.pojo.Notes* [line 12]\n  n$7=*n$6.tema:java.lang.String*(root com.stn.pojo.Notes) [line 12]\n  PRUNE((n$7 != \"\"), false); [line 12]\n  NULLIFY(&this); [line 12]\n  EXIT_SCOPE(n$6,n$7,this); [line 12]\n  APPLY_ABSTRACTION; [line 12]\n " shape="invhouse"]
+	
+
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_11" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_17" ;
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_11" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_3" [color="red" ];
+"com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_12" [label="12: Prune (true branch, if) \n   n$8=*&this:com.stn.pojo.Notes* [line 12]\n  n$9=*n$8.examen:java.lang.String*(root com.stn.pojo.Notes) [line 12]\n  PRUNE(!(n$9 != \"\"), true); [line 12]\n  EXIT_SCOPE(n$8,n$9); [line 12]\n " shape="invhouse"]
+	
+
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_12" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_14" ;
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_12" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_15" ;
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_12" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_3" [color="red" ];
+"com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_13" [label="13: Prune (false branch, if) \n   n$8=*&this:com.stn.pojo.Notes* [line 12]\n  n$9=*n$8.examen:java.lang.String*(root com.stn.pojo.Notes) [line 12]\n  PRUNE((n$9 != \"\"), false); [line 12]\n  NULLIFY(&this); [line 12]\n  EXIT_SCOPE(n$8,n$9,this); [line 12]\n  APPLY_ABSTRACTION; [line 12]\n " shape="invhouse"]
+	
+
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_13" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_17" ;
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_13" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_3" [color="red" ];
+"com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_14" [label="14: Prune (true branch, if) \n   n$10=*&this:com.stn.pojo.Notes* [line 12]\n  n$11=*n$10.nota:int(root com.stn.pojo.Notes) [line 12]\n  PRUNE(!(n$11 != -1), true); [line 12]\n  NULLIFY(&this); [line 12]\n  EXIT_SCOPE(n$10,n$11,this); [line 12]\n " shape="invhouse"]
+	
+
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_14" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_16" ;
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_14" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_3" [color="red" ];
+"com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_15" [label="15: Prune (false branch, if) \n   n$10=*&this:com.stn.pojo.Notes* [line 12]\n  n$11=*n$10.nota:int(root com.stn.pojo.Notes) [line 12]\n  PRUNE((n$11 != -1), false); [line 12]\n  NULLIFY(&this); [line 12]\n  EXIT_SCOPE(n$10,n$11,this); [line 12]\n  APPLY_ABSTRACTION; [line 12]\n " shape="invhouse"]
+	
+
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_15" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_17" ;
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_15" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_3" [color="red" ];
+"com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_16" [label="16:  method_body \n   *&return:_Bool=1 [line 18]\n  APPLY_ABSTRACTION; [line 18]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_16" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_2" ;
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_16" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_3" [color="red" ];
+"com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_17" [label="17:  method_body \n   *&return:_Bool=0 [line 19]\n  APPLY_ABSTRACTION; [line 19]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_17" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_2" ;
+	 "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_17" -> "com.stn.pojo.Notes.isEmpty():boolean.b90e4dd3dfbd2305a021b60c252a4b82_3" [color="red" ];
+}

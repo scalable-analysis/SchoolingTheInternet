@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.User.getAvatar():java.lang.String.ca07374c3546df38f5ce74591b6df25a_1" [label="1: Start String User.getAvatar()\nFormals:  this:com.stn.pojo.User*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.User.getAvatar():java.lang.String.ca07374c3546df38f5ce74591b6df25a_1" -> "com.stn.pojo.User.getAvatar():java.lang.String.ca07374c3546df38f5ce74591b6df25a_4" ;
+"com.stn.pojo.User.getAvatar():java.lang.String.ca07374c3546df38f5ce74591b6df25a_2" [label="2: Exit String User.getAvatar() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.User.getAvatar():java.lang.String.ca07374c3546df38f5ce74591b6df25a_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 161]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.getAvatar():java.lang.String.ca07374c3546df38f5ce74591b6df25a_3" -> "com.stn.pojo.User.getAvatar():java.lang.String.ca07374c3546df38f5ce74591b6df25a_2" ;
+"com.stn.pojo.User.getAvatar():java.lang.String.ca07374c3546df38f5ce74591b6df25a_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.User* [line 161]\n  n$1=*n$0.avatar:java.lang.String*(root com.stn.pojo.User) [line 161]\n  *&return:java.lang.String*=n$1 [line 161]\n  NULLIFY(&this); [line 161]\n  EXIT_SCOPE(n$0,n$1,this); [line 161]\n  APPLY_ABSTRACTION; [line 161]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.getAvatar():java.lang.String.ca07374c3546df38f5ce74591b6df25a_4" -> "com.stn.pojo.User.getAvatar():java.lang.String.ca07374c3546df38f5ce74591b6df25a_2" ;
+	 "com.stn.pojo.User.getAvatar():java.lang.String.ca07374c3546df38f5ce74591b6df25a_4" -> "com.stn.pojo.User.getAvatar():java.lang.String.ca07374c3546df38f5ce74591b6df25a_3" [color="red" ];
+}

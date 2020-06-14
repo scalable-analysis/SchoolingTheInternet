@@ -1,0 +1,573 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.UserHelper.verifyAcces(javax.servlet.http.HttpServletRequest,javax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE678">void UserHelper.verifyAcces(HttpServletRequest,HttpServletResponse)</a></h1></center>
+<a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:87 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:89 succs:2 exn:2 Instructions
+NULLIFY(&amp;CatchVar330); [line 716];
+NULLIFY(&amp;uri); [line 716];
+NULLIFY(&amp;$irvar0); [line 716];
+NULLIFY(&amp;$irvar1); [line 716];
+NULLIFY(&amp;$irvar2); [line 716];
+NULLIFY(&amp;session); [line 716];
+NULLIFY(&amp;pageName); [line 716];
+NULLIFY(&amp;e); [line 716];
+EXIT_SCOPE(n$135,CatchVar330,uri,$irvar0,$irvar1,$irvar2,session,pageName,e); [line 716];
+APPLY_ABSTRACTION; [line 716];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;request:javax.servlet.http.HttpServletRequest* [line 679];
+_=*n$0:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 679];
+n$2=_fun_HttpSession HttpServletRequest.getSession()(n$0:javax.servlet.http.HttpServletRequest*) interface virtual [line 679];
+*&amp;session:javax.servlet.http.HttpSession*=n$2 [line 679];
+EXIT_SCOPE(_,n$0,n$2); [line 679];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 7 exn:3 Instructions
+n$3=*&amp;session:javax.servlet.http.HttpSession* [line 681];
+_=*n$3:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 681];
+n$5=_fun_Object HttpSession.getAttribute(String)(n$3:javax.servlet.http.HttpSession*,"userclass":java.lang.Object*) interface virtual [line 681];
+*&amp;$irvar0:java.lang.Object*=n$5 [line 681];
+EXIT_SCOPE(_,n$3,n$5); [line 681];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node6.html"><span class='visited with_tooltip'>C_6<span class='tooltip'>node6 preds:5 succs:8 exn:3 Conditional method_body
+n$6=*&amp;$irvar0:java.lang.Object* [line 681];
+PRUNE(!(n$6 != null), true); [line 681];
+NULLIFY(&amp;$irvar0); [line 681];
+EXIT_SCOPE(n$6,$irvar0); [line 681];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node7.html"><span class='visited with_tooltip'>C_7<span class='tooltip'>node7 preds:5 succs:10 exn:3 Conditional method_body
+n$6=*&amp;$irvar0:java.lang.Object* [line 681];
+PRUNE((n$6 != null), false); [line 681];
+NULLIFY(&amp;$irvar0); [line 681];
+EXIT_SCOPE(n$6,$irvar0); [line 681];
+APPLY_ABSTRACTION; [line 681];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:6 succs:9 exn:3 Instructions
+n$7=_fun_Integer Integer.valueOf(int)(0:int) [line 682];
+*&amp;$irvar1:java.lang.Integer*=n$7 [line 682];
+EXIT_SCOPE(n$7); [line 682];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$8=*&amp;session:javax.servlet.http.HttpSession* [line 682];
+_=*n$8:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 682];
+n$10=*&amp;$irvar1:java.lang.Integer* [line 682];
+n$11=_fun_void HttpSession.setAttribute(String,Object)(n$8:javax.servlet.http.HttpSession*,"userclass":java.lang.Object*,n$10:java.lang.Integer*) interface virtual [line 682];
+NULLIFY(&amp;$irvar1); [line 682];
+EXIT_SCOPE(_,n$8,n$10,n$11,$irvar1); [line 682];
+APPLY_ABSTRACTION; [line 682];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 7 succs:11 exn:3 Instructions
+n$12=*&amp;request:javax.servlet.http.HttpServletRequest* [line 685];
+_=*n$12:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 685];
+n$14=_fun_String HttpServletRequest.getRequestURI()(n$12:javax.servlet.http.HttpServletRequest*) interface virtual [line 685];
+*&amp;uri:java.lang.String*=n$14 [line 685];
+NULLIFY(&amp;request); [line 685];
+EXIT_SCOPE(_,n$12,n$14,request); [line 685];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$15=*&amp;uri:java.lang.String* [line 686];
+_=*n$15:java.lang.String*(root java.lang.String) [line 686];
+n$17=_fun_int String.lastIndexOf(String)(n$15:java.lang.String*,"/":java.lang.Object*) virtual [line 686];
+*&amp;$irvar2:int=n$17 [line 686];
+EXIT_SCOPE(_,n$15,n$17); [line 686];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$18=*&amp;uri:java.lang.String* [line 686];
+_=*n$18:java.lang.String*(root java.lang.String) [line 686];
+n$20=*&amp;$irvar2:int [line 686];
+n$21=_fun_String String.substring(int)(n$18:java.lang.String*,(n$20 + 1):int) virtual [line 686];
+*&amp;pageName:java.lang.String*=n$21 [line 686];
+NULLIFY(&amp;uri); [line 686];
+NULLIFY(&amp;$irvar2); [line 686];
+EXIT_SCOPE(_,n$18,n$20,n$21,uri,$irvar2); [line 686];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:90 Instructions
+n$22=*&amp;#GB<>$com.stn.helpers.UserHelper.guestAcces:java.lang.String*[_*_](*)(root com.stn.helpers.UserHelper) [line 689];
+*&amp;$bcvar5:java.lang.String*[_*_](*)=n$22 [line 689];
+EXIT_SCOPE(n$22); [line 689];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:90 Instructions
+n$23=*&amp;$bcvar5:java.lang.String*[_*_](*) [line 689];
+_=*n$23:int(root java.lang.String*[_*_]) [line 689];
+n$25=_fun___get_array_length(n$23:java.lang.String*[_*_](*)) [line 689];
+*&amp;$bcvar6:int=n$25 [line 689];
+EXIT_SCOPE(_,n$23,n$25); [line 689];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:18 exn:90 Instructions
+*&amp;$bcvar7:int=0 [line 689];
+APPLY_ABSTRACTION; [line 689];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node16.html"><span class='visited with_tooltip'>C_16<span class='tooltip'>node16 preds:18 succs:19 exn:90 Conditional method_body
+n$26=*&amp;$bcvar7:int [line 689];
+n$27=*&amp;$bcvar6:int [line 689];
+PRUNE(!(n$26  &gt;=  n$27), true); [line 689];
+EXIT_SCOPE(n$26,n$27); [line 689];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node17.html"><span class='visited with_tooltip'>C_17<span class='tooltip'>node17 preds:18 succs:31 exn:90 Conditional method_body
+n$26=*&amp;$bcvar7:int [line 689];
+n$27=*&amp;$bcvar6:int [line 689];
+PRUNE((n$26  &gt;=  n$27), false); [line 689];
+NULLIFY(&amp;$bcvar6); [line 689];
+NULLIFY(&amp;$bcvar7); [line 689];
+NULLIFY(&amp;$bcvar5); [line 689];
+EXIT_SCOPE(n$26,n$27,$bcvar6,$bcvar7,$bcvar5); [line 689];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node18.html"><span class='visited with_tooltip'>J_18<span class='tooltip'>node18 preds:30 15 succs:16 17 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:16 succs:20 exn:90 Instructions
+n$28=*&amp;$bcvar5:java.lang.String*[_*_](*) [line 689];
+_=*n$28:java.lang.String*(root java.lang.String*[_*_]) [line 689];
+n$29=*&amp;$bcvar7:int [line 689];
+n$31=*n$28[n$29]:java.lang.String* [line 689];
+*&amp;page:java.lang.String*=n$31 [line 689];
+EXIT_SCOPE(_,n$28,n$29,n$31); [line 689];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:23 exn:90 Instructions
+n$32=*&amp;page:java.lang.String* [line 690];
+_=*n$32:java.lang.String*(root java.lang.String) [line 690];
+n$34=*&amp;pageName:java.lang.String* [line 690];
+n$35=_fun_boolean String.equals(Object)(n$32:java.lang.String*,n$34:java.lang.String*) virtual [line 690];
+*&amp;$irvar3:_Bool=n$35 [line 690];
+NULLIFY(&amp;page); [line 690];
+EXIT_SCOPE(_,n$32,n$34,n$35,page); [line 690];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node21.html"><span class='visited with_tooltip'>C_21<span class='tooltip'>node21 preds:23 succs:24 exn:90 Conditional method_body
+n$36=*&amp;$irvar3:_Bool [line 690];
+PRUNE(!(n$36 == 0), true); [line 690];
+NULLIFY(&amp;$irvar3); [line 690];
+EXIT_SCOPE(n$36,$irvar3); [line 690];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node22.html"><span class='visited with_tooltip'>C_22<span class='tooltip'>node22 preds:23 succs:30 exn:90 Conditional method_body
+n$36=*&amp;$irvar3:_Bool [line 690];
+PRUNE((n$36 == 0), false); [line 690];
+NULLIFY(&amp;$irvar3); [line 690];
+EXIT_SCOPE(n$36,$irvar3); [line 690];
+APPLY_ABSTRACTION; [line 690];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node23.html"><span class='visited with_tooltip'>J_23<span class='tooltip'>node23 preds:20 succs:21 22 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:21 succs:25 exn:90 Instructions
+n$37=*&amp;session:javax.servlet.http.HttpSession* [line 690];
+_=*n$37:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 690];
+n$39=_fun_Object HttpSession.getAttribute(String)(n$37:javax.servlet.http.HttpSession*,"userclass":java.lang.Object*) interface virtual [line 690];
+*&amp;$irvar4:java.lang.Object*=n$39 [line 690];
+EXIT_SCOPE(_,n$37,n$39); [line 690];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:28 exn:90 Instructions
+n$40=*&amp;$irvar4:java.lang.Object* [line 690];
+n$41=_fun___cast(n$40:java.lang.Object*,sizeof(t=java.lang.Integer;sub_t=( sub )(cast)):void) [line 690];
+_=*n$41:java.lang.Integer*(root java.lang.Integer) [line 690];
+n$43=_fun_int Integer.intValue()(n$41:java.lang.Integer*) virtual [line 690];
+*&amp;$irvar5:int=n$43 [line 690];
+NULLIFY(&amp;$irvar4); [line 690];
+EXIT_SCOPE(_,n$40,n$41,n$43,$irvar4); [line 690];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node26.html"><span class='visited with_tooltip'>C_26<span class='tooltip'>node26 preds:28 succs:29 exn:90 Conditional method_body
+n$44=*&amp;$irvar5:int [line 690];
+PRUNE(!(n$44  &lt;=  0), true); [line 690];
+NULLIFY(&amp;$irvar5); [line 690];
+EXIT_SCOPE(n$44,$irvar5); [line 690];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node27.html"><span class='visited with_tooltip'>C_27<span class='tooltip'>node27 preds:28 succs:30 exn:90 Conditional method_body
+n$44=*&amp;$irvar5:int [line 690];
+PRUNE((n$44  &lt;=  0), false); [line 690];
+NULLIFY(&amp;$irvar5); [line 690];
+EXIT_SCOPE(n$44,$irvar5); [line 690];
+APPLY_ABSTRACTION; [line 690];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node28.html"><span class='visited with_tooltip'>J_28<span class='tooltip'>node28 preds:25 succs:26 27 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:26 succs:30 exn:90 Instructions
+n$45=*&amp;response:javax.servlet.http.HttpServletResponse* [line 691];
+_=*n$45:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 691];
+n$47=_fun_void HttpServletResponse.sendRedirect(String)(n$45:javax.servlet.http.HttpServletResponse*,"index.jsp":java.lang.Object*) interface virtual [line 691];
+EXIT_SCOPE(_,n$45,n$47); [line 691];
+APPLY_ABSTRACTION; [line 691];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 27 22 succs:18 exn:90 Instructions
+n$48=*&amp;$bcvar7:int [line 689];
+*&amp;$bcvar7:int=(n$48 + 1) [line 689];
+EXIT_SCOPE(n$48); [line 689];
+APPLY_ABSTRACTION; [line 689];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:17 succs:32 exn:90 Instructions
+n$49=*&amp;#GB<>$com.stn.helpers.UserHelper.userAcces:java.lang.String*[_*_](*)(root com.stn.helpers.UserHelper) [line 695];
+*&amp;$bcvar5:java.lang.String*[_*_](*)=n$49 [line 695];
+EXIT_SCOPE(n$49); [line 695];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:31 succs:33 exn:90 Instructions
+n$50=*&amp;$bcvar5:java.lang.String*[_*_](*) [line 695];
+_=*n$50:int(root java.lang.String*[_*_]) [line 695];
+n$52=_fun___get_array_length(n$50:java.lang.String*[_*_](*)) [line 695];
+*&amp;$bcvar6:int=n$52 [line 695];
+EXIT_SCOPE(_,n$50,n$52); [line 695];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:32 succs:36 exn:90 Instructions
+*&amp;$bcvar7:int=0 [line 695];
+APPLY_ABSTRACTION; [line 695];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node34.html"><span class='visited with_tooltip'>C_34<span class='tooltip'>node34 preds:36 succs:37 exn:90 Conditional method_body
+n$53=*&amp;$bcvar7:int [line 695];
+n$54=*&amp;$bcvar6:int [line 695];
+PRUNE(!(n$53  &gt;=  n$54), true); [line 695];
+EXIT_SCOPE(n$53,n$54); [line 695];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node35.html"><span class='visited with_tooltip'>C_35<span class='tooltip'>node35 preds:36 succs:49 exn:90 Conditional method_body
+n$53=*&amp;$bcvar7:int [line 695];
+n$54=*&amp;$bcvar6:int [line 695];
+PRUNE((n$53  &gt;=  n$54), false); [line 695];
+NULLIFY(&amp;$bcvar6); [line 695];
+NULLIFY(&amp;$bcvar7); [line 695];
+NULLIFY(&amp;$bcvar5); [line 695];
+EXIT_SCOPE(n$53,n$54,$bcvar6,$bcvar7,$bcvar5); [line 695];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node36.html"><span class='visited with_tooltip'>J_36<span class='tooltip'>node36 preds:48 33 succs:34 35 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:34 succs:38 exn:90 Instructions
+n$55=*&amp;$bcvar5:java.lang.String*[_*_](*) [line 695];
+_=*n$55:java.lang.String*(root java.lang.String*[_*_]) [line 695];
+n$56=*&amp;$bcvar7:int [line 695];
+n$58=*n$55[n$56]:java.lang.String* [line 695];
+*&amp;page:java.lang.String*=n$58 [line 695];
+EXIT_SCOPE(_,n$55,n$56,n$58); [line 695];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:37 succs:41 exn:90 Instructions
+n$59=*&amp;page:java.lang.String* [line 696];
+_=*n$59:java.lang.String*(root java.lang.String) [line 696];
+n$61=*&amp;pageName:java.lang.String* [line 696];
+n$62=_fun_boolean String.equals(Object)(n$59:java.lang.String*,n$61:java.lang.String*) virtual [line 696];
+*&amp;$irvar6:_Bool=n$62 [line 696];
+NULLIFY(&amp;page); [line 696];
+EXIT_SCOPE(_,n$59,n$61,n$62,page); [line 696];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node39.html"><span class='visited with_tooltip'>C_39<span class='tooltip'>node39 preds:41 succs:42 exn:90 Conditional method_body
+n$63=*&amp;$irvar6:_Bool [line 696];
+PRUNE(!(n$63 == 0), true); [line 696];
+NULLIFY(&amp;$irvar6); [line 696];
+EXIT_SCOPE(n$63,$irvar6); [line 696];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node40.html"><span class='visited with_tooltip'>C_40<span class='tooltip'>node40 preds:41 succs:48 exn:90 Conditional method_body
+n$63=*&amp;$irvar6:_Bool [line 696];
+PRUNE((n$63 == 0), false); [line 696];
+NULLIFY(&amp;$irvar6); [line 696];
+EXIT_SCOPE(n$63,$irvar6); [line 696];
+APPLY_ABSTRACTION; [line 696];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node41.html"><span class='visited with_tooltip'>J_41<span class='tooltip'>node41 preds:38 succs:39 40 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:39 succs:43 exn:90 Instructions
+n$64=*&amp;session:javax.servlet.http.HttpSession* [line 696];
+_=*n$64:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 696];
+n$66=_fun_Object HttpSession.getAttribute(String)(n$64:javax.servlet.http.HttpSession*,"userclass":java.lang.Object*) interface virtual [line 696];
+*&amp;$irvar7:java.lang.Object*=n$66 [line 696];
+EXIT_SCOPE(_,n$64,n$66); [line 696];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:42 succs:46 exn:90 Instructions
+n$67=*&amp;$irvar7:java.lang.Object* [line 696];
+n$68=_fun___cast(n$67:java.lang.Object*,sizeof(t=java.lang.Integer;sub_t=( sub )(cast)):void) [line 696];
+_=*n$68:java.lang.Integer*(root java.lang.Integer) [line 696];
+n$70=_fun_int Integer.intValue()(n$68:java.lang.Integer*) virtual [line 696];
+*&amp;$irvar8:int=n$70 [line 696];
+NULLIFY(&amp;$irvar7); [line 696];
+EXIT_SCOPE(_,n$67,n$68,n$70,$irvar7); [line 696];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node44.html"><span class='visited with_tooltip'>C_44<span class='tooltip'>node44 preds:46 succs:47 exn:90 Conditional method_body
+n$71=*&amp;$irvar8:int [line 696];
+PRUNE(!(n$71  &gt;=  1), true); [line 696];
+NULLIFY(&amp;$irvar8); [line 696];
+EXIT_SCOPE(n$71,$irvar8); [line 696];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node45.html"><span class='visited with_tooltip'>C_45<span class='tooltip'>node45 preds:46 succs:48 exn:90 Conditional method_body
+n$71=*&amp;$irvar8:int [line 696];
+PRUNE((n$71  &gt;=  1), false); [line 696];
+NULLIFY(&amp;$irvar8); [line 696];
+EXIT_SCOPE(n$71,$irvar8); [line 696];
+APPLY_ABSTRACTION; [line 696];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node46.html"><span class='visited with_tooltip'>J_46<span class='tooltip'>node46 preds:43 succs:44 45 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node47.html"><span class='visited with_tooltip'>I_47<span class='tooltip'>node47 preds:44 succs:48 exn:90 Instructions
+n$72=*&amp;response:javax.servlet.http.HttpServletResponse* [line 697];
+_=*n$72:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 697];
+n$74=_fun_void HttpServletResponse.sendRedirect(String)(n$72:javax.servlet.http.HttpServletResponse*,"login.jsp":java.lang.Object*) interface virtual [line 697];
+EXIT_SCOPE(_,n$72,n$74); [line 697];
+APPLY_ABSTRACTION; [line 697];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node48.html"><span class='visited with_tooltip'>I_48<span class='tooltip'>node48 preds:47 45 40 succs:36 exn:90 Instructions
+n$75=*&amp;$bcvar7:int [line 695];
+*&amp;$bcvar7:int=(n$75 + 1) [line 695];
+EXIT_SCOPE(n$75); [line 695];
+APPLY_ABSTRACTION; [line 695];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node49.html"><span class='visited with_tooltip'>I_49<span class='tooltip'>node49 preds:35 succs:50 exn:90 Instructions
+n$76=*&amp;#GB<>$com.stn.helpers.UserHelper.modAcces:java.lang.String*[_*_](*)(root com.stn.helpers.UserHelper) [line 701];
+*&amp;$bcvar5:java.lang.String*[_*_](*)=n$76 [line 701];
+EXIT_SCOPE(n$76); [line 701];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node50.html"><span class='visited with_tooltip'>I_50<span class='tooltip'>node50 preds:49 succs:51 exn:90 Instructions
+n$77=*&amp;$bcvar5:java.lang.String*[_*_](*) [line 701];
+_=*n$77:int(root java.lang.String*[_*_]) [line 701];
+n$79=_fun___get_array_length(n$77:java.lang.String*[_*_](*)) [line 701];
+*&amp;$bcvar6:int=n$79 [line 701];
+EXIT_SCOPE(_,n$77,n$79); [line 701];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node51.html"><span class='visited with_tooltip'>I_51<span class='tooltip'>node51 preds:50 succs:54 exn:90 Instructions
+*&amp;$bcvar7:int=0 [line 701];
+APPLY_ABSTRACTION; [line 701];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node52.html"><span class='visited with_tooltip'>C_52<span class='tooltip'>node52 preds:54 succs:55 exn:90 Conditional method_body
+n$80=*&amp;$bcvar7:int [line 701];
+n$81=*&amp;$bcvar6:int [line 701];
+PRUNE(!(n$80  &gt;=  n$81), true); [line 701];
+EXIT_SCOPE(n$80,n$81); [line 701];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node53.html"><span class='visited with_tooltip'>C_53<span class='tooltip'>node53 preds:54 succs:67 exn:90 Conditional method_body
+n$80=*&amp;$bcvar7:int [line 701];
+n$81=*&amp;$bcvar6:int [line 701];
+PRUNE((n$80  &gt;=  n$81), false); [line 701];
+NULLIFY(&amp;$bcvar6); [line 701];
+NULLIFY(&amp;$bcvar7); [line 701];
+NULLIFY(&amp;$bcvar5); [line 701];
+EXIT_SCOPE(n$80,n$81,$bcvar6,$bcvar7,$bcvar5); [line 701];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node54.html"><span class='visited with_tooltip'>J_54<span class='tooltip'>node54 preds:66 51 succs:52 53 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node55.html"><span class='visited with_tooltip'>I_55<span class='tooltip'>node55 preds:52 succs:56 exn:90 Instructions
+n$82=*&amp;$bcvar5:java.lang.String*[_*_](*) [line 701];
+_=*n$82:java.lang.String*(root java.lang.String*[_*_]) [line 701];
+n$83=*&amp;$bcvar7:int [line 701];
+n$85=*n$82[n$83]:java.lang.String* [line 701];
+*&amp;page:java.lang.String*=n$85 [line 701];
+EXIT_SCOPE(_,n$82,n$83,n$85); [line 701];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node56.html"><span class='visited with_tooltip'>I_56<span class='tooltip'>node56 preds:55 succs:59 exn:90 Instructions
+n$86=*&amp;page:java.lang.String* [line 702];
+_=*n$86:java.lang.String*(root java.lang.String) [line 702];
+n$88=*&amp;pageName:java.lang.String* [line 702];
+n$89=_fun_boolean String.equals(Object)(n$86:java.lang.String*,n$88:java.lang.String*) virtual [line 702];
+*&amp;$irvar9:_Bool=n$89 [line 702];
+NULLIFY(&amp;page); [line 702];
+EXIT_SCOPE(_,n$86,n$88,n$89,page); [line 702];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node57.html"><span class='visited with_tooltip'>C_57<span class='tooltip'>node57 preds:59 succs:60 exn:90 Conditional method_body
+n$90=*&amp;$irvar9:_Bool [line 702];
+PRUNE(!(n$90 == 0), true); [line 702];
+NULLIFY(&amp;$irvar9); [line 702];
+EXIT_SCOPE(n$90,$irvar9); [line 702];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node58.html"><span class='visited with_tooltip'>C_58<span class='tooltip'>node58 preds:59 succs:66 exn:90 Conditional method_body
+n$90=*&amp;$irvar9:_Bool [line 702];
+PRUNE((n$90 == 0), false); [line 702];
+NULLIFY(&amp;$irvar9); [line 702];
+EXIT_SCOPE(n$90,$irvar9); [line 702];
+APPLY_ABSTRACTION; [line 702];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node59.html"><span class='visited with_tooltip'>J_59<span class='tooltip'>node59 preds:56 succs:57 58 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node60.html"><span class='visited with_tooltip'>I_60<span class='tooltip'>node60 preds:57 succs:61 exn:90 Instructions
+n$91=*&amp;session:javax.servlet.http.HttpSession* [line 702];
+_=*n$91:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 702];
+n$93=_fun_Object HttpSession.getAttribute(String)(n$91:javax.servlet.http.HttpSession*,"userclass":java.lang.Object*) interface virtual [line 702];
+*&amp;$irvar10:java.lang.Object*=n$93 [line 702];
+EXIT_SCOPE(_,n$91,n$93); [line 702];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node61.html"><span class='visited with_tooltip'>I_61<span class='tooltip'>node61 preds:60 succs:64 exn:90 Instructions
+n$94=*&amp;$irvar10:java.lang.Object* [line 702];
+n$95=_fun___cast(n$94:java.lang.Object*,sizeof(t=java.lang.Integer;sub_t=( sub )(cast)):void) [line 702];
+_=*n$95:java.lang.Integer*(root java.lang.Integer) [line 702];
+n$97=_fun_int Integer.intValue()(n$95:java.lang.Integer*) virtual [line 702];
+*&amp;$irvar11:int=n$97 [line 702];
+NULLIFY(&amp;$irvar10); [line 702];
+EXIT_SCOPE(_,n$94,n$95,n$97,$irvar10); [line 702];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node62.html"><span class='visited with_tooltip'>C_62<span class='tooltip'>node62 preds:64 succs:65 exn:90 Conditional method_body
+n$98=*&amp;$irvar11:int [line 702];
+PRUNE(!(n$98  &gt;=  5), true); [line 702];
+NULLIFY(&amp;$irvar11); [line 702];
+EXIT_SCOPE(n$98,$irvar11); [line 702];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node63.html"><span class='visited with_tooltip'>C_63<span class='tooltip'>node63 preds:64 succs:66 exn:90 Conditional method_body
+n$98=*&amp;$irvar11:int [line 702];
+PRUNE((n$98  &gt;=  5), false); [line 702];
+NULLIFY(&amp;$irvar11); [line 702];
+EXIT_SCOPE(n$98,$irvar11); [line 702];
+APPLY_ABSTRACTION; [line 702];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node64.html"><span class='visited with_tooltip'>J_64<span class='tooltip'>node64 preds:61 succs:62 63 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node65.html"><span class='visited with_tooltip'>I_65<span class='tooltip'>node65 preds:62 succs:66 exn:90 Instructions
+n$99=*&amp;response:javax.servlet.http.HttpServletResponse* [line 703];
+_=*n$99:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 703];
+n$101=_fun_void HttpServletResponse.sendRedirect(String)(n$99:javax.servlet.http.HttpServletResponse*,"/index.jsp":java.lang.Object*) interface virtual [line 703];
+EXIT_SCOPE(_,n$99,n$101); [line 703];
+APPLY_ABSTRACTION; [line 703];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node66.html"><span class='visited with_tooltip'>I_66<span class='tooltip'>node66 preds:65 63 58 succs:54 exn:90 Instructions
+n$102=*&amp;$bcvar7:int [line 701];
+*&amp;$bcvar7:int=(n$102 + 1) [line 701];
+EXIT_SCOPE(n$102); [line 701];
+APPLY_ABSTRACTION; [line 701];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node67.html"><span class='visited with_tooltip'>I_67<span class='tooltip'>node67 preds:53 succs:68 exn:90 Instructions
+n$103=*&amp;#GB<>$com.stn.helpers.UserHelper.adminAcces:java.lang.String*[_*_](*)(root com.stn.helpers.UserHelper) [line 707];
+*&amp;$bcvar5:java.lang.String*[_*_](*)=n$103 [line 707];
+EXIT_SCOPE(n$103); [line 707];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node68.html"><span class='visited with_tooltip'>I_68<span class='tooltip'>node68 preds:67 succs:69 exn:90 Instructions
+n$104=*&amp;$bcvar5:java.lang.String*[_*_](*) [line 707];
+_=*n$104:int(root java.lang.String*[_*_]) [line 707];
+n$106=_fun___get_array_length(n$104:java.lang.String*[_*_](*)) [line 707];
+*&amp;$bcvar6:int=n$106 [line 707];
+EXIT_SCOPE(_,n$104,n$106); [line 707];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node69.html"><span class='visited with_tooltip'>I_69<span class='tooltip'>node69 preds:68 succs:72 exn:90 Instructions
+*&amp;$bcvar7:int=0 [line 707];
+APPLY_ABSTRACTION; [line 707];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node70.html"><span class='visited with_tooltip'>C_70<span class='tooltip'>node70 preds:72 succs:73 exn:90 Conditional method_body
+n$107=*&amp;$bcvar7:int [line 707];
+n$108=*&amp;$bcvar6:int [line 707];
+PRUNE(!(n$107  &gt;=  n$108), true); [line 707];
+EXIT_SCOPE(n$107,n$108); [line 707];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node71.html"><span class='visited with_tooltip'>C_71<span class='tooltip'>node71 preds:72 succs:87 exn:90 Conditional method_body
+n$107=*&amp;$bcvar7:int [line 707];
+n$108=*&amp;$bcvar6:int [line 707];
+PRUNE((n$107  &gt;=  n$108), false); [line 707];
+NULLIFY(&amp;$bcvar6); [line 707];
+NULLIFY(&amp;$bcvar7); [line 707];
+NULLIFY(&amp;$bcvar5); [line 707];
+NULLIFY(&amp;session); [line 707];
+NULLIFY(&amp;pageName); [line 707];
+EXIT_SCOPE(n$107,n$108,$bcvar6,$bcvar7,$bcvar5,session,pageName); [line 707];
+APPLY_ABSTRACTION; [line 707];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node72.html"><span class='visited with_tooltip'>J_72<span class='tooltip'>node72 preds:84 69 succs:70 71 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node73.html"><span class='visited with_tooltip'>I_73<span class='tooltip'>node73 preds:70 succs:74 exn:90 Instructions
+n$109=*&amp;$bcvar5:java.lang.String*[_*_](*) [line 707];
+_=*n$109:java.lang.String*(root java.lang.String*[_*_]) [line 707];
+n$110=*&amp;$bcvar7:int [line 707];
+n$112=*n$109[n$110]:java.lang.String* [line 707];
+*&amp;page:java.lang.String*=n$112 [line 707];
+EXIT_SCOPE(_,n$109,n$110,n$112); [line 707];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node74.html"><span class='visited with_tooltip'>I_74<span class='tooltip'>node74 preds:73 succs:77 exn:90 Instructions
+n$113=*&amp;page:java.lang.String* [line 708];
+_=*n$113:java.lang.String*(root java.lang.String) [line 708];
+n$115=*&amp;pageName:java.lang.String* [line 708];
+n$116=_fun_boolean String.equals(Object)(n$113:java.lang.String*,n$115:java.lang.String*) virtual [line 708];
+*&amp;$irvar12:_Bool=n$116 [line 708];
+NULLIFY(&amp;page); [line 708];
+EXIT_SCOPE(_,n$113,n$115,n$116,page); [line 708];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node75.html"><span class='visited with_tooltip'>C_75<span class='tooltip'>node75 preds:77 succs:78 exn:90 Conditional method_body
+n$117=*&amp;$irvar12:_Bool [line 708];
+PRUNE(!(n$117 == 0), true); [line 708];
+NULLIFY(&amp;$irvar12); [line 708];
+EXIT_SCOPE(n$117,$irvar12); [line 708];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node76.html"><span class='visited with_tooltip'>C_76<span class='tooltip'>node76 preds:77 succs:84 exn:90 Conditional method_body
+n$117=*&amp;$irvar12:_Bool [line 708];
+PRUNE((n$117 == 0), false); [line 708];
+NULLIFY(&amp;$irvar12); [line 708];
+EXIT_SCOPE(n$117,$irvar12); [line 708];
+APPLY_ABSTRACTION; [line 708];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node77.html"><span class='visited with_tooltip'>J_77<span class='tooltip'>node77 preds:74 succs:75 76 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node78.html"><span class='visited with_tooltip'>I_78<span class='tooltip'>node78 preds:75 succs:79 exn:90 Instructions
+n$118=*&amp;session:javax.servlet.http.HttpSession* [line 708];
+_=*n$118:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 708];
+n$120=_fun_Object HttpSession.getAttribute(String)(n$118:javax.servlet.http.HttpSession*,"userclass":java.lang.Object*) interface virtual [line 708];
+*&amp;$irvar13:java.lang.Object*=n$120 [line 708];
+EXIT_SCOPE(_,n$118,n$120); [line 708];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node79.html"><span class='visited with_tooltip'>I_79<span class='tooltip'>node79 preds:78 succs:82 exn:90 Instructions
+n$121=*&amp;$irvar13:java.lang.Object* [line 708];
+n$122=_fun___cast(n$121:java.lang.Object*,sizeof(t=java.lang.Integer;sub_t=( sub )(cast)):void) [line 708];
+_=*n$122:java.lang.Integer*(root java.lang.Integer) [line 708];
+n$124=_fun_int Integer.intValue()(n$122:java.lang.Integer*) virtual [line 708];
+*&amp;$irvar14:int=n$124 [line 708];
+NULLIFY(&amp;$irvar13); [line 708];
+EXIT_SCOPE(_,n$121,n$122,n$124,$irvar13); [line 708];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node80.html"><span class='visited with_tooltip'>C_80<span class='tooltip'>node80 preds:82 succs:83 exn:90 Conditional method_body
+n$125=*&amp;$irvar14:int [line 708];
+PRUNE(!(n$125  &gt;=  6), true); [line 708];
+NULLIFY(&amp;$irvar14); [line 708];
+EXIT_SCOPE(n$125,$irvar14); [line 708];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node81.html"><span class='visited with_tooltip'>C_81<span class='tooltip'>node81 preds:82 succs:84 exn:90 Conditional method_body
+n$125=*&amp;$irvar14:int [line 708];
+PRUNE((n$125  &gt;=  6), false); [line 708];
+NULLIFY(&amp;$irvar14); [line 708];
+EXIT_SCOPE(n$125,$irvar14); [line 708];
+APPLY_ABSTRACTION; [line 708];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node82.html"><span class='visited with_tooltip'>J_82<span class='tooltip'>node82 preds:79 succs:80 81 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node83.html"><span class='visited with_tooltip'>I_83<span class='tooltip'>node83 preds:80 succs:84 exn:90 Instructions
+n$126=*&amp;response:javax.servlet.http.HttpServletResponse* [line 709];
+_=*n$126:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 709];
+n$128=_fun_void HttpServletResponse.sendRedirect(String)(n$126:javax.servlet.http.HttpServletResponse*,"/index.jsp":java.lang.Object*) interface virtual [line 709];
+EXIT_SCOPE(_,n$126,n$128); [line 709];
+APPLY_ABSTRACTION; [line 709];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node84.html"><span class='visited with_tooltip'>I_84<span class='tooltip'>node84 preds:83 81 76 succs:72 exn:90 Instructions
+n$129=*&amp;$bcvar7:int [line 707];
+*&amp;$bcvar7:int=(n$129 + 1) [line 707];
+EXIT_SCOPE(n$129); [line 707];
+APPLY_ABSTRACTION; [line 707];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node85.html"><span class='visited with_tooltip'>I_85<span class='tooltip'>node85 preds:88 succs:86 exn:3 Instructions
+n$130=*&amp;CatchVar330:java.lang.Object* [line 713];
+*&amp;e:java.lang.Object*=n$130 [line 713];
+NULLIFY(&amp;CatchVar330); [line 713];
+EXIT_SCOPE(n$130,CatchVar330); [line 713];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node86.html"><span class='visited with_tooltip'>I_86<span class='tooltip'>node86 preds:85 succs:87 exn:3 Instructions
+n$131=*&amp;e:java.lang.Object* [line 714];
+_=*n$131:java.lang.Object*(root java.lang.Object) [line 714];
+n$133=_fun_void Throwable.printStackTrace()(n$131:java.lang.Object*) virtual [line 714];
+NULLIFY(&amp;e); [line 714];
+EXIT_SCOPE(_,n$131,n$133,e); [line 714];
+APPLY_ABSTRACTION; [line 714];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node87.html"><span class='visited with_tooltip'>I_87<span class='tooltip'>node87 preds:86 71 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 716];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node88.html"><span class='visited with_tooltip'>C_88<span class='tooltip'>node88 preds:90 succs:85 exn:3 Conditional exception handler
+n$136=_fun___instanceof(n$135:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 713];
+PRUNE(n$136, true); [line 713];
+*&amp;CatchVar330:void=n$135 [line 713];
+EXIT_SCOPE(n$135,n$136); [line 713];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node89.html"><span class='visited with_tooltip'>C_89<span class='tooltip'>node89 preds:90 succs:3 exn:3 Conditional exception handler
+n$136=_fun___instanceof(n$135:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 713];
+PRUNE(!n$136, false); [line 713];
+*&amp;return:void=EXN n$135 [line 713];
+EXIT_SCOPE(n$135,n$136); [line 713];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.verifyAcces%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.eb18b077b21b0aef7ab918053de641c8_node90.html"><span class='visited with_tooltip'>I_90<span class='tooltip'>node90 preds: succs:88 89 exn:3 Instructions
+n$134=*&amp;return:void [line 713];
+*&amp;return:void=null [line 713];
+n$135=_fun___unwrap_exception(n$134:void) [line 713];
+NULLIFY(&amp;$bcvar6); [line 713];
+NULLIFY(&amp;$irvar3); [line 713];
+NULLIFY(&amp;$irvar9); [line 713];
+NULLIFY(&amp;$bcvar7); [line 713];
+NULLIFY(&amp;$irvar5); [line 713];
+NULLIFY(&amp;$irvar4); [line 713];
+NULLIFY(&amp;$irvar7); [line 713];
+NULLIFY(&amp;$irvar12); [line 713];
+NULLIFY(&amp;$bcvar5); [line 713];
+NULLIFY(&amp;$irvar6); [line 713];
+NULLIFY(&amp;page); [line 713];
+NULLIFY(&amp;$irvar13); [line 713];
+NULLIFY(&amp;$irvar11); [line 713];
+NULLIFY(&amp;$irvar10); [line 713];
+NULLIFY(&amp;$irvar8); [line 713];
+NULLIFY(&amp;session); [line 713];
+NULLIFY(&amp;pageName); [line 713];
+NULLIFY(&amp;$irvar14); [line 713];
+EXIT_SCOPE(n$134,$bcvar6,$irvar3,$irvar9,$bcvar7,$irvar5,$irvar4,$irvar7,$irvar12,$bcvar5,$irvar6,page,$irvar13,$irvar11,$irvar10,$irvar8,session,pageName,$irvar14); [line 713];
+</span></span></a><br />@
+
+<span class='color_black'>void void UserHelper.verifyAcces(HttpServletRequest,HttpServletResponse)(javax.servlet.http.HttpServletRequest* request, javax.servlet.http.HttpServletResponse* response)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= void UserHelper.verifyAcces(HttpServletRequest,HttpServletResponse)
+; translation_unit= src/main/java/com/stn/helpers/UserHelper.java
+; access= Public
+; formals= [(request,javax.servlet.http.HttpServletRequest*);  (response,
+            javax.servlet.http.HttpServletResponse*)]
+; is_defined= true
+; loc= src/main/java/com/stn/helpers/UserHelper.java:678
+; locals= [{ name= CatchVar330; typ= void; modify_in_block= false }; 
+           { name= $irvar14; typ= void; modify_in_block= false }; 
+           { name= $irvar13; typ= void; modify_in_block= false }; 
+           { name= $irvar12; typ= void; modify_in_block= false }; 
+           { name= $irvar11; typ= void; modify_in_block= false }; 
+           { name= $irvar10; typ= void; modify_in_block= false }; 
+           { name= $irvar9; typ= void; modify_in_block= false }; 
+           { name= $irvar8; typ= void; modify_in_block= false }; 
+           { name= $irvar7; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $bcvar7; typ= void; modify_in_block= false }; 
+           { name= $bcvar6; typ= void; modify_in_block= false }; 
+           { name= $bcvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= pageName; typ= java.lang.String*; modify_in_block= false }; 
+           { name= uri; typ= java.lang.String*; modify_in_block= false }; 
+           { name= session; typ= javax.servlet.http.HttpSession*; modify_in_block= false }; 
+           { name= e; typ= java.io.IOException*; modify_in_block= false }; 
+           { name= page; typ= java.lang.String*; modify_in_block= false }]
+; ret_type= void 
+; proc_id= com.stn.helpers.UserHelper.verifyAcces(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void }</pre>
+</body>
+</html>

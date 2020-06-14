@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Stats.getFacultatiCount():int.f1e05a6689f3f26ad2bc3a103ea174e2_1" [label="1: Start int Stats.getFacultatiCount()\nFormals:  this:com.stn.pojo.Stats*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Stats.getFacultatiCount():int.f1e05a6689f3f26ad2bc3a103ea174e2_1" -> "com.stn.pojo.Stats.getFacultatiCount():int.f1e05a6689f3f26ad2bc3a103ea174e2_4" ;
+"com.stn.pojo.Stats.getFacultatiCount():int.f1e05a6689f3f26ad2bc3a103ea174e2_2" [label="2: Exit int Stats.getFacultatiCount() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Stats.getFacultatiCount():int.f1e05a6689f3f26ad2bc3a103ea174e2_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 63]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Stats.getFacultatiCount():int.f1e05a6689f3f26ad2bc3a103ea174e2_3" -> "com.stn.pojo.Stats.getFacultatiCount():int.f1e05a6689f3f26ad2bc3a103ea174e2_2" ;
+"com.stn.pojo.Stats.getFacultatiCount():int.f1e05a6689f3f26ad2bc3a103ea174e2_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Stats* [line 63]\n  n$1=*n$0.facultatiCount:int(root com.stn.pojo.Stats) [line 63]\n  *&return:int=n$1 [line 63]\n  NULLIFY(&this); [line 63]\n  EXIT_SCOPE(n$0,n$1,this); [line 63]\n  APPLY_ABSTRACTION; [line 63]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Stats.getFacultatiCount():int.f1e05a6689f3f26ad2bc3a103ea174e2_4" -> "com.stn.pojo.Stats.getFacultatiCount():int.f1e05a6689f3f26ad2bc3a103ea174e2_2" ;
+	 "com.stn.pojo.Stats.getFacultatiCount():int.f1e05a6689f3f26ad2bc3a103ea174e2_4" -> "com.stn.pojo.Stats.getFacultatiCount():int.f1e05a6689f3f26ad2bc3a103ea174e2_3" [color="red" ];
+}

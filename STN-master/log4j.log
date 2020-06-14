@@ -1,0 +1,356 @@
+2020-05-27 17:29:57,148 INFO main soot.jimple.infoflow.AbstractInfoflow - Resetting Soot...
+2020-05-27 17:30:39,626 INFO main soot.jimple.infoflow.AbstractInfoflow - Resetting Soot...
+2020-05-27 17:31:16,685 INFO main soot.jimple.infoflow.AbstractInfoflow - Resetting Soot...
+2020-05-27 17:31:16,772 INFO main soot.jimple.infoflow.AbstractInfoflow - Basic class loading done.
+2020-05-27 17:31:16,774 ERROR main soot.jimple.infoflow.AbstractInfoflow - Only phantom classes loaded, skipping analysis...
+2020-05-27 17:31:16,791 INFO main soot.jimple.infoflow.InfoflowConfiguration - Implicit flow tracking is enabled
+2020-05-27 17:31:16,791 INFO main soot.jimple.infoflow.InfoflowConfiguration - Exceptional flow tracking is enabled
+2020-05-27 17:31:16,792 INFO main soot.jimple.infoflow.InfoflowConfiguration - Running with a maximum access path length of 5
+2020-05-27 17:31:16,792 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using path-agnostic result collection
+2020-05-27 17:31:16,792 INFO main soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
+2020-05-27 17:31:16,792 INFO main soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: true
+2020-05-27 17:31:16,792 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
+2020-05-27 17:31:16,855 DEBUG main soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder - [Call Graph] For information on where the call graph may be incomplete,use the verbose option to the cg phase.
+2020-05-27 17:31:16,859 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Assignment Graph in 0.0 seconds.
+2020-05-27 17:31:16,860 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Type masks in 0.0 seconds.
+2020-05-27 17:31:16,860 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Graph simplified in 0.0 seconds.
+2020-05-27 17:31:16,862 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Propagation in 0.0 seconds.
+2020-05-27 17:31:16,862 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Solution found in 0.0 seconds.
+2020-05-27 17:31:16,864 INFO main soot.jimple.infoflow.Infoflow - Callgraph construction took 0 seconds
+2020-05-27 17:31:16,864 ERROR main soot.jimple.infoflow.Infoflow - Exception during data flow analysis
+java.lang.RuntimeException: oops java.io.BufferedReader.readLine
+	at soot.Scene.signatureToClass(Scene.java:818)
+	at soot.Scene.grabMethod(Scene.java:859)
+	at soot.jimple.infoflow.sourcesSinks.manager.DefaultSourceSinkManager.initialize(DefaultSourceSinkManager.java:323)
+	at soot.jimple.infoflow.Infoflow.runAnalysis(Infoflow.java:279)
+	at soot.jimple.infoflow.Infoflow.computeInfoflow(Infoflow.java:185)
+	at soot.jimple.infoflow.AbstractInfoflow.computeInfoflow(AbstractInfoflow.java:135)
+	at dev.muse.datatracer.Main.runInfoFlow(Main.java:110)
+	at dev.muse.datatracer.Main.runInfoFlow(Main.java:94)
+	at dev.muse.datatracer.Main.main(Main.java:77)
+2020-05-27 17:44:53,023 INFO main soot.jimple.infoflow.AbstractInfoflow - Resetting Soot...
+2020-05-27 17:44:53,125 INFO main soot.jimple.infoflow.AbstractInfoflow - Basic class loading done.
+2020-05-27 17:44:53,127 ERROR main soot.jimple.infoflow.AbstractInfoflow - Only phantom classes loaded, skipping analysis...
+2020-05-27 17:44:53,140 INFO main soot.jimple.infoflow.InfoflowConfiguration - Implicit flow tracking is enabled
+2020-05-27 17:44:53,140 INFO main soot.jimple.infoflow.InfoflowConfiguration - Exceptional flow tracking is enabled
+2020-05-27 17:44:53,141 INFO main soot.jimple.infoflow.InfoflowConfiguration - Running with a maximum access path length of 5
+2020-05-27 17:44:53,142 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using path-agnostic result collection
+2020-05-27 17:44:53,142 INFO main soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
+2020-05-27 17:44:53,142 INFO main soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: true
+2020-05-27 17:44:53,142 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
+2020-05-27 17:44:53,199 DEBUG main soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder - [Call Graph] For information on where the call graph may be incomplete,use the verbose option to the cg phase.
+2020-05-27 17:44:53,204 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Assignment Graph in 0.0 seconds.
+2020-05-27 17:44:53,204 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Type masks in 0.0 seconds.
+2020-05-27 17:44:53,205 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Graph simplified in 0.0 seconds.
+2020-05-27 17:44:53,206 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Propagation in 0.0 seconds.
+2020-05-27 17:44:53,206 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Solution found in 0.0 seconds.
+2020-05-27 17:44:53,208 INFO main soot.jimple.infoflow.Infoflow - Callgraph construction took 0 seconds
+2020-05-27 17:44:53,208 ERROR main soot.jimple.infoflow.Infoflow - Exception during data flow analysis
+java.lang.RuntimeException: oops java.io.BufferedReader.readLine
+	at soot.Scene.signatureToClass(Scene.java:818)
+	at soot.Scene.grabMethod(Scene.java:859)
+	at soot.jimple.infoflow.sourcesSinks.manager.DefaultSourceSinkManager.initialize(DefaultSourceSinkManager.java:323)
+	at soot.jimple.infoflow.Infoflow.runAnalysis(Infoflow.java:279)
+	at soot.jimple.infoflow.Infoflow.computeInfoflow(Infoflow.java:185)
+	at soot.jimple.infoflow.AbstractInfoflow.computeInfoflow(AbstractInfoflow.java:135)
+	at dev.muse.datatracer.Main.runInfoFlow(Main.java:110)
+	at dev.muse.datatracer.Main.runInfoFlow(Main.java:94)
+	at dev.muse.datatracer.Main.main(Main.java:77)
+2020-05-27 17:45:30,540 INFO main soot.jimple.infoflow.AbstractInfoflow - Resetting Soot...
+2020-05-27 17:45:30,648 INFO main soot.jimple.infoflow.AbstractInfoflow - Basic class loading done.
+2020-05-27 17:45:30,649 ERROR main soot.jimple.infoflow.AbstractInfoflow - Only phantom classes loaded, skipping analysis...
+2020-05-27 17:45:30,665 INFO main soot.jimple.infoflow.InfoflowConfiguration - Implicit flow tracking is enabled
+2020-05-27 17:45:30,666 INFO main soot.jimple.infoflow.InfoflowConfiguration - Exceptional flow tracking is enabled
+2020-05-27 17:45:30,667 INFO main soot.jimple.infoflow.InfoflowConfiguration - Running with a maximum access path length of 5
+2020-05-27 17:45:30,667 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using path-agnostic result collection
+2020-05-27 17:45:30,667 INFO main soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
+2020-05-27 17:45:30,667 INFO main soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: true
+2020-05-27 17:45:30,667 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
+2020-05-27 17:45:30,723 DEBUG main soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder - [Call Graph] For information on where the call graph may be incomplete,use the verbose option to the cg phase.
+2020-05-27 17:45:30,727 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Assignment Graph in 0.0 seconds.
+2020-05-27 17:45:30,728 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Type masks in 0.0 seconds.
+2020-05-27 17:45:30,728 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Graph simplified in 0.0 seconds.
+2020-05-27 17:45:30,729 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Propagation in 0.0 seconds.
+2020-05-27 17:45:30,729 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Solution found in 0.0 seconds.
+2020-05-27 17:45:30,731 INFO main soot.jimple.infoflow.Infoflow - Callgraph construction took 0 seconds
+2020-05-27 17:45:30,732 ERROR main soot.jimple.infoflow.Infoflow - Exception during data flow analysis
+java.lang.RuntimeException: oops java.io.BufferedReader.readLine
+	at soot.Scene.signatureToClass(Scene.java:818)
+	at soot.Scene.grabMethod(Scene.java:859)
+	at soot.jimple.infoflow.sourcesSinks.manager.DefaultSourceSinkManager.initialize(DefaultSourceSinkManager.java:323)
+	at soot.jimple.infoflow.Infoflow.runAnalysis(Infoflow.java:279)
+	at soot.jimple.infoflow.Infoflow.computeInfoflow(Infoflow.java:185)
+	at soot.jimple.infoflow.AbstractInfoflow.computeInfoflow(AbstractInfoflow.java:135)
+	at dev.muse.datatracer.Main.runInfoFlow(Main.java:110)
+	at dev.muse.datatracer.Main.runInfoFlow(Main.java:94)
+	at dev.muse.datatracer.Main.main(Main.java:77)
+2020-05-27 17:46:29,776 INFO main soot.jimple.infoflow.AbstractInfoflow - Resetting Soot...
+2020-05-27 17:46:29,888 INFO main soot.jimple.infoflow.AbstractInfoflow - Basic class loading done.
+2020-05-27 17:46:29,890 ERROR main soot.jimple.infoflow.AbstractInfoflow - Only phantom classes loaded, skipping analysis...
+2020-05-27 17:46:29,905 INFO main soot.jimple.infoflow.InfoflowConfiguration - Implicit flow tracking is enabled
+2020-05-27 17:46:29,905 INFO main soot.jimple.infoflow.InfoflowConfiguration - Exceptional flow tracking is enabled
+2020-05-27 17:46:29,906 INFO main soot.jimple.infoflow.InfoflowConfiguration - Running with a maximum access path length of 5
+2020-05-27 17:46:29,906 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using path-agnostic result collection
+2020-05-27 17:46:29,906 INFO main soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
+2020-05-27 17:46:29,906 INFO main soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: true
+2020-05-27 17:46:29,906 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
+2020-05-27 17:46:29,961 DEBUG main soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder - [Call Graph] For information on where the call graph may be incomplete,use the verbose option to the cg phase.
+2020-05-27 17:46:29,965 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Assignment Graph in 0.0 seconds.
+2020-05-27 17:46:29,966 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Type masks in 0.0 seconds.
+2020-05-27 17:46:29,966 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Graph simplified in 0.0 seconds.
+2020-05-27 17:46:29,968 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Propagation in 0.0 seconds.
+2020-05-27 17:46:29,968 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Solution found in 0.0 seconds.
+2020-05-27 17:46:29,970 INFO main soot.jimple.infoflow.Infoflow - Callgraph construction took 0 seconds
+2020-05-27 17:46:29,970 ERROR main soot.jimple.infoflow.Infoflow - Exception during data flow analysis
+java.lang.RuntimeException: oops java.io.BufferedReader.readLine
+	at soot.Scene.signatureToClass(Scene.java:818)
+	at soot.Scene.grabMethod(Scene.java:859)
+	at soot.jimple.infoflow.sourcesSinks.manager.DefaultSourceSinkManager.initialize(DefaultSourceSinkManager.java:323)
+	at soot.jimple.infoflow.Infoflow.runAnalysis(Infoflow.java:279)
+	at soot.jimple.infoflow.Infoflow.computeInfoflow(Infoflow.java:185)
+	at soot.jimple.infoflow.AbstractInfoflow.computeInfoflow(AbstractInfoflow.java:135)
+	at dev.muse.datatracer.Main.runInfoFlow(Main.java:110)
+	at dev.muse.datatracer.Main.runInfoFlow(Main.java:94)
+	at dev.muse.datatracer.Main.main(Main.java:77)
+2020-05-27 17:52:09,587 INFO main soot.jimple.infoflow.AbstractInfoflow - Resetting Soot...
+2020-05-27 17:52:09,695 INFO main soot.jimple.infoflow.AbstractInfoflow - Basic class loading done.
+2020-05-27 17:52:09,697 ERROR main soot.jimple.infoflow.AbstractInfoflow - Only phantom classes loaded, skipping analysis...
+2020-05-27 17:52:09,715 INFO main soot.jimple.infoflow.InfoflowConfiguration - Implicit flow tracking is enabled
+2020-05-27 17:52:09,715 INFO main soot.jimple.infoflow.InfoflowConfiguration - Exceptional flow tracking is enabled
+2020-05-27 17:52:09,716 INFO main soot.jimple.infoflow.InfoflowConfiguration - Running with a maximum access path length of 5
+2020-05-27 17:52:09,716 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using path-agnostic result collection
+2020-05-27 17:52:09,716 INFO main soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
+2020-05-27 17:52:09,716 INFO main soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: true
+2020-05-27 17:52:09,716 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
+2020-05-27 17:52:09,780 DEBUG main soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder - [Call Graph] For information on where the call graph may be incomplete,use the verbose option to the cg phase.
+2020-05-27 17:52:09,785 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Assignment Graph in 0.0 seconds.
+2020-05-27 17:52:09,786 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Type masks in 0.0 seconds.
+2020-05-27 17:52:09,786 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Graph simplified in 0.0 seconds.
+2020-05-27 17:52:09,787 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Propagation in 0.0 seconds.
+2020-05-27 17:52:09,787 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Solution found in 0.0 seconds.
+2020-05-27 17:52:09,789 INFO main soot.jimple.infoflow.Infoflow - Callgraph construction took 0 seconds
+2020-05-27 17:52:09,790 ERROR main soot.jimple.infoflow.Infoflow - Exception during data flow analysis
+java.lang.RuntimeException: oops java.io.BufferedReader.readLine
+	at soot.Scene.signatureToClass(Scene.java:818)
+	at soot.Scene.grabMethod(Scene.java:859)
+	at soot.jimple.infoflow.sourcesSinks.manager.DefaultSourceSinkManager.initialize(DefaultSourceSinkManager.java:323)
+	at soot.jimple.infoflow.Infoflow.runAnalysis(Infoflow.java:279)
+	at soot.jimple.infoflow.Infoflow.computeInfoflow(Infoflow.java:185)
+	at soot.jimple.infoflow.AbstractInfoflow.computeInfoflow(AbstractInfoflow.java:135)
+	at dev.muse.datatracer.Main.runInfoFlow(Main.java:110)
+	at dev.muse.datatracer.Main.runInfoFlow(Main.java:94)
+	at dev.muse.datatracer.Main.main(Main.java:77)
+2020-05-27 17:52:34,961 INFO main soot.jimple.infoflow.AbstractInfoflow - Resetting Soot...
+2020-05-27 17:52:35,071 INFO main soot.jimple.infoflow.AbstractInfoflow - Basic class loading done.
+2020-05-27 17:52:35,072 ERROR main soot.jimple.infoflow.AbstractInfoflow - Only phantom classes loaded, skipping analysis...
+2020-05-27 17:52:35,091 INFO main soot.jimple.infoflow.InfoflowConfiguration - Implicit flow tracking is enabled
+2020-05-27 17:52:35,091 INFO main soot.jimple.infoflow.InfoflowConfiguration - Exceptional flow tracking is enabled
+2020-05-27 17:52:35,092 INFO main soot.jimple.infoflow.InfoflowConfiguration - Running with a maximum access path length of 5
+2020-05-27 17:52:35,092 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using path-agnostic result collection
+2020-05-27 17:52:35,092 INFO main soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
+2020-05-27 17:52:35,092 INFO main soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: true
+2020-05-27 17:52:35,093 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
+2020-05-27 17:52:35,149 DEBUG main soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder - [Call Graph] For information on where the call graph may be incomplete,use the verbose option to the cg phase.
+2020-05-27 17:52:35,153 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Assignment Graph in 0.0 seconds.
+2020-05-27 17:52:35,154 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Type masks in 0.0 seconds.
+2020-05-27 17:52:35,154 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Graph simplified in 0.0 seconds.
+2020-05-27 17:52:35,156 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Propagation in 0.0 seconds.
+2020-05-27 17:52:35,156 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Solution found in 0.0 seconds.
+2020-05-27 17:52:35,158 INFO main soot.jimple.infoflow.Infoflow - Callgraph construction took 0 seconds
+2020-05-27 17:52:35,158 ERROR main soot.jimple.infoflow.Infoflow - Exception during data flow analysis
+java.lang.RuntimeException: oops java.io.BufferedReader.readLine
+	at soot.Scene.signatureToClass(Scene.java:818)
+	at soot.Scene.grabMethod(Scene.java:859)
+	at soot.jimple.infoflow.sourcesSinks.manager.DefaultSourceSinkManager.initialize(DefaultSourceSinkManager.java:323)
+	at soot.jimple.infoflow.Infoflow.runAnalysis(Infoflow.java:279)
+	at soot.jimple.infoflow.Infoflow.computeInfoflow(Infoflow.java:185)
+	at soot.jimple.infoflow.AbstractInfoflow.computeInfoflow(AbstractInfoflow.java:135)
+	at dev.muse.datatracer.Main.runInfoFlow(Main.java:110)
+	at dev.muse.datatracer.Main.runInfoFlow(Main.java:94)
+	at dev.muse.datatracer.Main.main(Main.java:77)
+2020-05-27 17:54:19,592 INFO main soot.jimple.infoflow.AbstractInfoflow - Resetting Soot...
+2020-05-27 17:54:19,690 INFO main soot.jimple.infoflow.AbstractInfoflow - Basic class loading done.
+2020-05-27 17:54:19,691 ERROR main soot.jimple.infoflow.AbstractInfoflow - Only phantom classes loaded, skipping analysis...
+2020-05-27 17:54:19,707 INFO main soot.jimple.infoflow.InfoflowConfiguration - Implicit flow tracking is enabled
+2020-05-27 17:54:19,707 INFO main soot.jimple.infoflow.InfoflowConfiguration - Exceptional flow tracking is enabled
+2020-05-27 17:54:19,709 INFO main soot.jimple.infoflow.InfoflowConfiguration - Running with a maximum access path length of 5
+2020-05-27 17:54:19,709 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using path-agnostic result collection
+2020-05-27 17:54:19,709 INFO main soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
+2020-05-27 17:54:19,709 INFO main soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: true
+2020-05-27 17:54:19,709 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
+2020-05-27 17:54:19,766 DEBUG main soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder - [Call Graph] For information on where the call graph may be incomplete,use the verbose option to the cg phase.
+2020-05-27 17:54:19,771 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Assignment Graph in 0.0 seconds.
+2020-05-27 17:54:19,771 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Type masks in 0.0 seconds.
+2020-05-27 17:54:19,772 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Graph simplified in 0.0 seconds.
+2020-05-27 17:54:19,773 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Propagation in 0.0 seconds.
+2020-05-27 17:54:19,773 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Solution found in 0.0 seconds.
+2020-05-27 17:54:19,775 INFO main soot.jimple.infoflow.Infoflow - Callgraph construction took 0 seconds
+2020-05-27 17:54:19,775 ERROR main soot.jimple.infoflow.Infoflow - Exception during data flow analysis
+java.lang.RuntimeException: oops java.io.BufferedReader.readLine
+	at soot.Scene.signatureToClass(Scene.java:818)
+	at soot.Scene.grabMethod(Scene.java:859)
+	at soot.jimple.infoflow.sourcesSinks.manager.DefaultSourceSinkManager.initialize(DefaultSourceSinkManager.java:323)
+	at soot.jimple.infoflow.Infoflow.runAnalysis(Infoflow.java:279)
+	at soot.jimple.infoflow.Infoflow.computeInfoflow(Infoflow.java:185)
+	at soot.jimple.infoflow.AbstractInfoflow.computeInfoflow(AbstractInfoflow.java:135)
+	at dev.muse.datatracer.Main.runInfoFlow(Main.java:110)
+	at dev.muse.datatracer.Main.runInfoFlow(Main.java:94)
+	at dev.muse.datatracer.Main.main(Main.java:77)
+2020-05-27 17:54:51,837 INFO main soot.jimple.infoflow.AbstractInfoflow - Resetting Soot...
+2020-05-27 17:54:51,938 INFO main soot.jimple.infoflow.AbstractInfoflow - Basic class loading done.
+2020-05-27 17:54:51,939 ERROR main soot.jimple.infoflow.AbstractInfoflow - Only phantom classes loaded, skipping analysis...
+2020-05-27 17:54:51,953 INFO main soot.jimple.infoflow.InfoflowConfiguration - Implicit flow tracking is enabled
+2020-05-27 17:54:51,954 INFO main soot.jimple.infoflow.InfoflowConfiguration - Exceptional flow tracking is enabled
+2020-05-27 17:54:51,955 INFO main soot.jimple.infoflow.InfoflowConfiguration - Running with a maximum access path length of 5
+2020-05-27 17:54:51,955 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using path-agnostic result collection
+2020-05-27 17:54:51,955 INFO main soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
+2020-05-27 17:54:51,956 INFO main soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: true
+2020-05-27 17:54:51,956 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
+2020-05-27 17:54:52,012 DEBUG main soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder - [Call Graph] For information on where the call graph may be incomplete,use the verbose option to the cg phase.
+2020-05-27 17:54:52,017 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Assignment Graph in 0.0 seconds.
+2020-05-27 17:54:52,017 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Type masks in 0.0 seconds.
+2020-05-27 17:54:52,018 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Graph simplified in 0.0 seconds.
+2020-05-27 17:54:52,019 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Propagation in 0.0 seconds.
+2020-05-27 17:54:52,019 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Solution found in 0.0 seconds.
+2020-05-27 17:54:52,021 INFO main soot.jimple.infoflow.Infoflow - Callgraph construction took 0 seconds
+2020-05-27 17:54:52,021 ERROR main soot.jimple.infoflow.Infoflow - Exception during data flow analysis
+java.lang.RuntimeException: oops java.io.BufferedReader.readLine
+	at soot.Scene.signatureToClass(Scene.java:818)
+	at soot.Scene.grabMethod(Scene.java:859)
+	at soot.jimple.infoflow.sourcesSinks.manager.DefaultSourceSinkManager.initialize(DefaultSourceSinkManager.java:323)
+	at soot.jimple.infoflow.Infoflow.runAnalysis(Infoflow.java:279)
+	at soot.jimple.infoflow.Infoflow.computeInfoflow(Infoflow.java:185)
+	at soot.jimple.infoflow.AbstractInfoflow.computeInfoflow(AbstractInfoflow.java:135)
+	at dev.muse.datatracer.Main.runInfoFlow(Main.java:110)
+	at dev.muse.datatracer.Main.runInfoFlow(Main.java:94)
+	at dev.muse.datatracer.Main.main(Main.java:77)
+2020-05-27 17:55:06,945 INFO main soot.jimple.infoflow.AbstractInfoflow - Resetting Soot...
+2020-05-27 17:55:07,054 INFO main soot.jimple.infoflow.AbstractInfoflow - Basic class loading done.
+2020-05-27 17:55:07,055 ERROR main soot.jimple.infoflow.AbstractInfoflow - Only phantom classes loaded, skipping analysis...
+2020-05-27 17:55:07,069 INFO main soot.jimple.infoflow.InfoflowConfiguration - Implicit flow tracking is enabled
+2020-05-27 17:55:07,070 INFO main soot.jimple.infoflow.InfoflowConfiguration - Exceptional flow tracking is enabled
+2020-05-27 17:55:07,071 INFO main soot.jimple.infoflow.InfoflowConfiguration - Running with a maximum access path length of 5
+2020-05-27 17:55:07,071 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using path-agnostic result collection
+2020-05-27 17:55:07,071 INFO main soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
+2020-05-27 17:55:07,071 INFO main soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: true
+2020-05-27 17:55:07,071 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
+2020-05-27 17:55:07,131 DEBUG main soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder - [Call Graph] For information on where the call graph may be incomplete,use the verbose option to the cg phase.
+2020-05-27 17:55:07,135 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Assignment Graph in 0.0 seconds.
+2020-05-27 17:55:07,136 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Type masks in 0.0 seconds.
+2020-05-27 17:55:07,137 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Graph simplified in 0.0 seconds.
+2020-05-27 17:55:07,138 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Propagation in 0.0 seconds.
+2020-05-27 17:55:07,138 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Solution found in 0.0 seconds.
+2020-05-27 17:55:07,140 INFO main soot.jimple.infoflow.Infoflow - Callgraph construction took 0 seconds
+2020-05-27 17:55:07,141 ERROR main soot.jimple.infoflow.Infoflow - Exception during data flow analysis
+java.lang.RuntimeException: oops java.io.BufferedReader.readLine
+	at soot.Scene.signatureToClass(Scene.java:818)
+	at soot.Scene.grabMethod(Scene.java:859)
+	at soot.jimple.infoflow.sourcesSinks.manager.DefaultSourceSinkManager.initialize(DefaultSourceSinkManager.java:323)
+	at soot.jimple.infoflow.Infoflow.runAnalysis(Infoflow.java:279)
+	at soot.jimple.infoflow.Infoflow.computeInfoflow(Infoflow.java:185)
+	at soot.jimple.infoflow.AbstractInfoflow.computeInfoflow(AbstractInfoflow.java:135)
+	at dev.muse.datatracer.Main.runInfoFlow(Main.java:110)
+	at dev.muse.datatracer.Main.runInfoFlow(Main.java:94)
+	at dev.muse.datatracer.Main.main(Main.java:77)
+2020-05-28 18:25:37,582 DEBUG main soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder - [Call Graph] For information on where the call graph may be incomplete,use the verbose option to the cg phase.
+2020-05-28 18:26:36,559 DEBUG main soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder - [Call Graph] For information on where the call graph may be incomplete,use the verbose option to the cg phase.
+2020-05-28 18:28:56,047 DEBUG main soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder - [Call Graph] For information on where the call graph may be incomplete,use the verbose option to the cg phase.
+2020-05-28 18:29:58,794 DEBUG main soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder - [Call Graph] For information on where the call graph may be incomplete,use the verbose option to the cg phase.
+2020-05-29 08:23:08,199 DEBUG main soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder - [Call Graph] For information on where the call graph may be incomplete,use the verbose option to the cg phase.
+2020-05-29 08:23:32,658 INFO main soot.jimple.infoflow.AbstractInfoflow - Resetting Soot...
+2020-05-29 08:23:32,759 INFO main soot.jimple.infoflow.AbstractInfoflow - Basic class loading done.
+2020-05-29 08:23:32,761 ERROR main soot.jimple.infoflow.AbstractInfoflow - Only phantom classes loaded, skipping analysis...
+2020-05-29 08:23:32,776 INFO main soot.jimple.infoflow.InfoflowConfiguration - Implicit flow tracking is enabled
+2020-05-29 08:23:32,777 INFO main soot.jimple.infoflow.InfoflowConfiguration - Exceptional flow tracking is enabled
+2020-05-29 08:23:32,779 INFO main soot.jimple.infoflow.InfoflowConfiguration - Running with a maximum access path length of 5
+2020-05-29 08:23:32,779 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using path-agnostic result collection
+2020-05-29 08:23:32,779 INFO main soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
+2020-05-29 08:23:32,779 INFO main soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: true
+2020-05-29 08:23:32,779 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
+2020-05-29 08:23:32,850 DEBUG main soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder - [Call Graph] For information on where the call graph may be incomplete,use the verbose option to the cg phase.
+2020-05-29 08:23:32,855 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Assignment Graph in 0.0 seconds.
+2020-05-29 08:23:32,856 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Type masks in 0.0 seconds.
+2020-05-29 08:23:32,856 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Graph simplified in 0.0 seconds.
+2020-05-29 08:23:32,857 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Propagation in 0.0 seconds.
+2020-05-29 08:23:32,857 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Solution found in 0.0 seconds.
+2020-05-29 08:23:32,859 INFO main soot.jimple.infoflow.Infoflow - Callgraph construction took 0 seconds
+2020-05-29 08:23:32,864 INFO main soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+2020-05-29 08:23:32,871 INFO main soot.jimple.infoflow.Infoflow - Dead code elimination took 0.009890927 seconds
+2020-05-29 08:23:32,871 INFO main soot.jimple.infoflow.Infoflow - Callgraph has 0 edges
+2020-05-29 08:23:32,871 INFO main soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+2020-05-29 08:23:32,878 INFO main soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+2020-05-29 08:23:32,898 INFO main soot.jimple.infoflow.Infoflow - Using context- and flow-sensitive solver
+2020-05-29 08:23:32,900 WARN main soot.jimple.infoflow.Infoflow - Running with limited join point abstractions can break context-sensitive path builders
+2020-05-29 08:23:32,900 INFO main soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+2020-05-29 08:23:32,900 ERROR main soot.jimple.infoflow.Infoflow - No sources found, aborting analysis
+2020-05-29 08:23:32,900 INFO main soot.jimple.infoflow.memory.MemoryWarningSystem - Shutting down the memory warning system...
+2020-05-29 08:23:32,900 WARN main soot.jimple.infoflow.Infoflow - No results found.
+2020-05-29 08:23:32,900 INFO main soot.jimple.infoflow.Infoflow - Data flow solver took 0 seconds. Maximum memory consumption: 43 MB
+2020-05-29 08:35:29,654 INFO main soot.jimple.infoflow.AbstractInfoflow - Resetting Soot...
+2020-05-29 08:35:31,027 INFO main soot.jimple.infoflow.AbstractInfoflow - Basic class loading done.
+2020-05-29 08:35:31,048 INFO main soot.jimple.infoflow.InfoflowConfiguration - Implicit flow tracking is enabled
+2020-05-29 08:35:31,048 INFO main soot.jimple.infoflow.InfoflowConfiguration - Exceptional flow tracking is enabled
+2020-05-29 08:35:31,049 INFO main soot.jimple.infoflow.InfoflowConfiguration - Running with a maximum access path length of 5
+2020-05-29 08:35:31,049 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using path-agnostic result collection
+2020-05-29 08:35:31,049 INFO main soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
+2020-05-29 08:35:31,049 INFO main soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: true
+2020-05-29 08:35:31,049 INFO main soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
+2020-05-29 08:35:31,127 DEBUG main soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder - [Call Graph] For information on where the call graph may be incomplete,use the verbose option to the cg phase.
+2020-05-29 08:35:31,664 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Assignment Graph in 0.6 seconds.
+2020-05-29 08:35:31,674 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Type masks in 0.0 seconds.
+2020-05-29 08:35:31,676 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Pointer Graph simplified in 0.0 seconds.
+2020-05-29 08:35:33,327 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Propagation in 1.6 seconds.
+2020-05-29 08:35:33,327 DEBUG main soot.jimple.spark.SparkTransformer - [Spark] Solution found in 1.6 seconds.
+2020-05-29 08:35:33,328 INFO main soot.jimple.infoflow.Infoflow - Callgraph construction took 2 seconds
+2020-05-29 08:35:33,513 INFO main soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+2020-05-29 08:35:33,712 INFO main soot.jimple.infoflow.Infoflow - Dead code elimination took 0.380430038 seconds
+2020-05-29 08:35:33,712 INFO main soot.jimple.infoflow.Infoflow - Callgraph has 10957 edges
+2020-05-29 08:35:33,713 INFO main soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+2020-05-29 08:35:33,721 INFO main soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+2020-05-29 08:35:33,733 INFO main soot.jimple.infoflow.Infoflow - Using context- and flow-sensitive solver
+2020-05-29 08:35:33,735 WARN main soot.jimple.infoflow.Infoflow - Running with limited join point abstractions can break context-sensitive path builders
+2020-05-29 08:35:33,735 INFO main soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+2020-05-29 08:35:33,737 DEBUG main soot.jimple.infoflow.Infoflow - Source found: $r99 = virtualinvoke r95.<java.io.BufferedReader: java.lang.String readLine()>()
+2020-05-29 08:35:33,739 DEBUG main soot.jimple.infoflow.Infoflow - Sink found: virtualinvoke r93.<java.io.BufferedWriter: void write(java.lang.String)>($r38)
+2020-05-29 08:35:33,741 DEBUG main soot.jimple.infoflow.Infoflow - Source found: r60 = virtualinvoke r59.<java.io.BufferedReader: java.lang.String readLine()>()
+2020-05-29 08:35:33,798 INFO main soot.jimple.infoflow.Infoflow - Source lookup done, found 2 sources and 1 sinks.
+2020-05-29 08:37:45,948 INFO Service Thread soot.jimple.infoflow.memory.MemoryWarningSystem$1 - Triggering memory warning at 2548 MB (2548 MB in tenured gen)...
+2020-05-29 08:37:46,006 DEBUG main heros.FlowFunctionCache - Stats for flow-function cache:
+Normal:         CacheStats{hitCount=409076, missCount=13522, loadSuccessCount=13256, loadExceptionCount=0, totalLoadTime=39275855, evictionCount=0}
+Call:           CacheStats{hitCount=380722, missCount=4746, loadSuccessCount=4569, loadExceptionCount=0, totalLoadTime=51970430, evictionCount=0}
+Return:         CacheStats{hitCount=4319899, missCount=5653, loadSuccessCount=5481, loadExceptionCount=0, totalLoadTime=52392304, evictionCount=0}
+Call-to-return: CacheStats{hitCount=387312, missCount=8564, loadSuccessCount=8297, loadExceptionCount=0, totalLoadTime=60302910, evictionCount=0}
+
+2020-05-29 08:37:46,319 INFO main soot.jimple.infoflow.Infoflow - IFDS problem with 2586280 forward and 10780009 backward edges solved, processing 4 results...
+2020-05-29 08:37:46,319 INFO main soot.jimple.infoflow.Infoflow - Current memory consumption: 2557 MB
+2020-05-29 08:37:46,353 WARN Service Thread soot.jimple.infoflow.memory.FlowDroidMemoryWatcher$1 - Running out of memory, solvers terminated
+2020-05-29 08:37:46,669 INFO main soot.jimple.infoflow.Infoflow - Memory consumption after cleanup: 120 MB
+2020-05-29 08:37:46,670 INFO main soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder - Running path reconstruction batch 1 with 4 elements
+2020-05-29 08:37:46,670 INFO main soot.jimple.infoflow.data.pathBuilders.ConcurrentAbstractionPathBuilder - Obtainted 4 connections between sources and sinks
+2020-05-29 08:37:46,670 INFO main soot.jimple.infoflow.data.pathBuilders.ConcurrentAbstractionPathBuilder - Building path 1...
+2020-05-29 08:37:46,693 INFO main soot.jimple.infoflow.data.pathBuilders.ConcurrentAbstractionPathBuilder - Building path 2...
+2020-05-29 08:37:46,729 INFO main soot.jimple.infoflow.data.pathBuilders.ConcurrentAbstractionPathBuilder - Building path 3...
+2020-05-29 08:37:46,730 INFO main soot.jimple.infoflow.data.pathBuilders.ConcurrentAbstractionPathBuilder - Building path 4...
+2020-05-29 08:37:46,731 INFO main soot.jimple.infoflow.memory.MemoryWarningSystem - Shutting down the memory warning system...
+2020-05-29 08:37:46,928 INFO main soot.jimple.infoflow.Infoflow - Memory consumption after path building: 120 MB
+2020-05-29 08:37:46,928 INFO main soot.jimple.infoflow.Infoflow - Path reconstruction took 0 seconds
+2020-05-29 08:37:46,928 INFO main soot.jimple.infoflow.Infoflow - The sink virtualinvoke r93.<java.io.BufferedWriter: void write(java.lang.String)>($r38) in method <com.dulishuo.crawler.pgmCrawler: void main(java.lang.String[])> was called with values from the following sources:
+2020-05-29 08:37:46,928 INFO main soot.jimple.infoflow.Infoflow - - $r99 = virtualinvoke r95.<java.io.BufferedReader: java.lang.String readLine()>() in method <com.dulishuo.crawler.pgmCrawler: void main(java.lang.String[])>
+2020-05-29 08:37:46,928 INFO main soot.jimple.infoflow.Infoflow - 	on Path: 
+2020-05-29 08:37:46,929 INFO main soot.jimple.infoflow.Infoflow - 	 -> <com.dulishuo.crawler.pgmCrawler: void main(java.lang.String[])>
+2020-05-29 08:37:46,929 INFO main soot.jimple.infoflow.Infoflow - 		 -> $r99 = virtualinvoke r95.<java.io.BufferedReader: java.lang.String readLine()>()
+2020-05-29 08:37:46,929 INFO main soot.jimple.infoflow.Infoflow - 	 -> <com.dulishuo.crawler.pgmCrawler: void main(java.lang.String[])>
+2020-05-29 08:37:46,929 INFO main soot.jimple.infoflow.Infoflow - 		 -> if $r99 == null goto virtualinvoke r93.<java.io.BufferedWriter: void close()>()
+2020-05-29 08:37:46,929 INFO main soot.jimple.infoflow.Infoflow - 	 -> <com.dulishuo.crawler.pgmCrawler: void main(java.lang.String[])>
+2020-05-29 08:37:46,929 INFO main soot.jimple.infoflow.Infoflow - 		 -> i6 = 0
+2020-05-29 08:37:46,929 INFO main soot.jimple.infoflow.Infoflow - 	 -> <com.dulishuo.crawler.pgmCrawler: void main(java.lang.String[])>
+2020-05-29 08:37:46,929 INFO main soot.jimple.infoflow.Infoflow - 		 -> if i6 >= i1 goto r117 = staticinvoke <net.sf.json.JSONObject: net.sf.json.JSONObject fromObject(java.lang.Object)>(r11)
+2020-05-29 08:37:46,929 INFO main soot.jimple.infoflow.Infoflow - 	 -> <com.dulishuo.crawler.pgmCrawler: void main(java.lang.String[])>
+2020-05-29 08:37:46,929 INFO main soot.jimple.infoflow.Infoflow - 		 -> $r38 = virtualinvoke $r37.<java.lang.StringBuilder: java.lang.String toString()>()
+2020-05-29 08:37:46,929 INFO main soot.jimple.infoflow.Infoflow - 	 -> <com.dulishuo.crawler.pgmCrawler: void main(java.lang.String[])>
+2020-05-29 08:37:46,929 INFO main soot.jimple.infoflow.Infoflow - 		 -> virtualinvoke r93.<java.io.BufferedWriter: void write(java.lang.String)>($r38)
+2020-05-29 08:37:46,930 INFO main soot.jimple.infoflow.Infoflow - Data flow solver took 136 seconds. Maximum memory consumption: 112 MB
+2020-05-29 10:57:25,597 DEBUG main soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder - [Call Graph] For information on where the call graph may be incomplete,use the verbose option to the cg phase.
+2020-05-29 14:02:13,299 DEBUG main soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder - [Call Graph] For information on where the call graph may be incomplete,use the verbose option to the cg phase.
+2020-05-29 14:02:31,474 DEBUG main soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder - [Call Graph] For information on where the call graph may be incomplete,use the verbose option to the cg phase.
+2020-05-29 15:21:48,982 DEBUG main soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder - [Call Graph] For information on where the call graph may be incomplete,use the verbose option to the cg phase.

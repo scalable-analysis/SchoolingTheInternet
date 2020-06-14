@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.servlets.EditNewsProcess.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node16</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0.html#LINE53">16</a></h1></center>PROC: <a href="./../com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0.html">void EditNewsProcess.doPost(HttpServletRequest,HttpServletResponse)</a> LINE: <a href="./../../EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0.html#LINE53">53</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node14.html"><span class='visited with_tooltip'>N_14<span class='tooltip'>node14 preds:12 succs:16 exn:3 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node17.html"><span class='visited with_tooltip'>N_17<span class='tooltip'>node17 preds:16 15 succs:18 exn:3 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node3.html"><span class='visited with_tooltip'>N_3<span class='tooltip'>node3 preds:38 33 succs:2 exn:2 </span></span></a><br>
+<LISTING class='color_green'>n$17=*&amp;request:javax.servlet.http.HttpServletRequest* [line 53];
+_=*n$17:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 53];
+n$19=_fun_String HttpServletRequest.getParameter(String)(n$17:javax.servlet.http.HttpServletRequest*,"news_body_temp":java.lang.Object*) interface virtual [line 53];
+*&amp;body:java.lang.String*=n$19 [line 53];
+</LISTING>
+<hr width="100%">
+<a name="session58" href="./../nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node16.html#session58">node16#session58</a>(<a href="./../../EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0.html#LINE53">53</a>) [compute pre] liveness 16
+<LISTING class='color_black'>JOIN
+
+LEFT:   { body, title, type, url, out, request, return, response }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session59" href="./../nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node16.html#session59">node16#session59</a>(<a href="./../../EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0.html#LINE53">53</a>) [exec] liveness 16
+<LISTING class='color_black'>PRE STATE:
+{ body, title, type, url, out, request, return, response }
+
+INSTR=  *&amp;body:java.lang.String*=n$19 [line 53]; 
+
+STATE:
+{ n$19, title, type, url, out, request, return, response }
+
+INSTR=  n$19=_fun_String HttpServletRequest.getParameter(String)(n$17:javax.servlet.http.HttpServletRequest*,&quot;news_body_temp&quot;:java.lang.Object*) interface virtual [line 53]; 
+
+STATE:
+{ n$17, title, type, url, out, request, return, response }
+
+INSTR=  _=*n$17:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 53]; 
+
+STATE UNCHANGED
+
+INSTR=  n$17=*&amp;request:javax.servlet.http.HttpServletRequest* [line 53]; 
+
+STATE:
+{ title, type, url, out, request, return, response }
+
+</LISTING>
+<hr width="100%">
+<a name="session107" href="./../nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node16.html#session107">node16#session107</a>(<a href="./../../EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0.html#LINE53">53</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session108" href="./../nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node16.html#session108">node16#session108</a>(<a href="./../../EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0.html#LINE53">53</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ title, type, url, out },{ n$13, body })
+
+INSTR=  n$17=*&amp;request:javax.servlet.http.HttpServletRequest* [line 53]; 
+
+STATE:
+({ n$17, title, type, url, out },{ n$13, body })
+
+INSTR=  _=*n$17:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 53]; 
+
+STATE:
+({ _, n$17, title, type, url, out },{ n$13, body })
+
+INSTR=  n$19=_fun_String HttpServletRequest.getParameter(String)(n$17:javax.servlet.http.HttpServletRequest*,&quot;news_body_temp&quot;:java.lang.Object*) interface virtual [line 53]; 
+
+STATE:
+({ _, n$17, n$19, title, type, url, out },{ n$13, body })
+
+INSTR=  *&amp;body:java.lang.String*=n$19 [line 53]; 
+
+STATE:
+({ body, title, type, url, out },{ _, n$17, n$19 })
+
+</LISTING>
+<hr width="100%">
+<a name="session26" href="./../nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node16.html#session26">node16#session26</a>(<a href="./../../EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0.html#LINE53">53</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session27" href="./../nodes/com.stn.servlets.EditNewsProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.caf5b817b00d5b5623134ac30fc838e0_node16.html#session27">node16#session27</a>(<a href="./../../EditNewsProcess.java.1e36cb9c43911751a0f51c43e88ef9e0.html#LINE53">53</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$6 -&gt; { connection -&gt; { },
+           dbHost -&gt; { },
+           dbName -&gt; { },
+           dbPassword -&gt; { },
+           dbPort -&gt; { },
+           dbUser -&gt; { },
+           preparedStatement -&gt; { },
+           query -&gt; { },
+           resultSet -&gt; { } },
+  body -&gt; { },
+  title -&gt; { },
+  type -&gt; { },
+  error -&gt; { },
+  url -&gt; { },
+  out -&gt; { },
+  userHelper -&gt; { connection -&gt; { },
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; { },
+                  query -&gt; { },
+                  resultSet -&gt; { } } }
+
+
+
+INSTR=  n$19 := String HttpServletRequest.getParameter(String)({ request,
+                                                                 &quot;news_body_temp&quot; }) [line 53]; 
+
+STATE UNCHANGED
+
+INSTR=  body := n$19 [line 53]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(n$19); [line 53]; 
+
+STATE:
+{ n$6 -&gt; { connection -&gt; { },
+           dbHost -&gt; { },
+           dbName -&gt; { },
+           dbPassword -&gt; { },
+           dbPort -&gt; { },
+           dbUser -&gt; { },
+           preparedStatement -&gt; { },
+           query -&gt; { },
+           resultSet -&gt; { } },
+  body -&gt; { },
+  title -&gt; { },
+  type -&gt; { },
+  error -&gt; { },
+  url -&gt; { },
+  out -&gt; { },
+  userHelper -&gt; { connection -&gt; { },
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; { },
+                  query -&gt; { },
+                  resultSet -&gt; { } } }
+
+INSTR=  APPLY_ABSTRACTION; [line 53]; 
+
+STATE UNCHANGED
+
+</LISTING>

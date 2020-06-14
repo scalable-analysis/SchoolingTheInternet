@@ -1,0 +1,279 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.servlets.UpdateFacProcess.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../UpdateFacProcess.java.c09397adc92bb1e3fd4cd17c2c9ef939.html#LINE18">void UpdateFacProcess.doPost(HttpServletRequest,HttpServletResponse)</a></h1></center>
+<a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:26 23 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:28 succs:2 exn:2 Instructions
+NULLIFY(&amp;idSerie); [line 43];
+NULLIFY(&amp;$irvar3); [line 43];
+NULLIFY(&amp;url); [line 43];
+NULLIFY(&amp;CatchVar122); [line 43];
+NULLIFY(&amp;out); [line 43];
+NULLIFY(&amp;$irvar5); [line 43];
+NULLIFY(&amp;idFacultate); [line 43];
+NULLIFY(&amp;$irvar4); [line 43];
+NULLIFY(&amp;$irvar6); [line 43];
+NULLIFY(&amp;$irvar0); [line 43];
+NULLIFY(&amp;idUser); [line 43];
+NULLIFY(&amp;$irvar1); [line 43];
+NULLIFY(&amp;idGrupa); [line 43];
+NULLIFY(&amp;userHelper); [line 43];
+NULLIFY(&amp;$irvar2); [line 43];
+NULLIFY(&amp;session); [line 43];
+NULLIFY(&amp;e); [line 43];
+EXIT_SCOPE(n$63,idSerie,$irvar3,url,CatchVar122,out,$irvar5,idFacultate,$irvar4,$irvar6,$irvar0,idUser,$irvar1,idGrupa,userHelper,$irvar2,session,e); [line 43];
+APPLY_ABSTRACTION; [line 43];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;request:javax.servlet.http.HttpServletRequest* [line 20];
+_=*n$0:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 20];
+n$2=_fun_HttpSession HttpServletRequest.getSession()(n$0:javax.servlet.http.HttpServletRequest*) interface virtual [line 20];
+*&amp;session:javax.servlet.http.HttpSession*=n$2 [line 20];
+EXIT_SCOPE(_,n$0,n$2); [line 20];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$3=*&amp;response:javax.servlet.http.HttpServletResponse* [line 22];
+_=*n$3:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 22];
+n$5=_fun_void HttpServletResponse.setContentType(String)(n$3:javax.servlet.http.HttpServletResponse*,"text/html":java.lang.Object*) interface virtual [line 22];
+EXIT_SCOPE(_,n$3,n$5); [line 22];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$6=*&amp;response:javax.servlet.http.HttpServletResponse* [line 23];
+_=*n$6:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 23];
+n$8=_fun_PrintWriter HttpServletResponse.getWriter()(n$6:javax.servlet.http.HttpServletResponse*) interface virtual [line 23];
+*&amp;out:java.io.PrintWriter*=n$8 [line 23];
+EXIT_SCOPE(_,n$6,n$8); [line 23];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$9=*&amp;request:javax.servlet.http.HttpServletRequest* [line 25];
+_=*n$9:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 25];
+n$11=_fun_String HttpServletRequest.getParameter(String)(n$9:javax.servlet.http.HttpServletRequest*,"idgrupa":java.lang.Object*) interface virtual [line 25];
+*&amp;$irvar0:java.lang.String*=n$11 [line 25];
+EXIT_SCOPE(_,n$9,n$11); [line 25];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$12=*&amp;$irvar0:java.lang.String* [line 25];
+n$13=_fun_int Integer.parseInt(String)(n$12:java.lang.String*) [line 25];
+*&amp;idGrupa:int=n$13 [line 25];
+NULLIFY(&amp;$irvar0); [line 25];
+EXIT_SCOPE(n$12,n$13,$irvar0); [line 25];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$14=*&amp;request:javax.servlet.http.HttpServletRequest* [line 26];
+_=*n$14:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 26];
+n$16=_fun_String HttpServletRequest.getParameter(String)(n$14:javax.servlet.http.HttpServletRequest*,"idserie":java.lang.Object*) interface virtual [line 26];
+*&amp;$irvar1:java.lang.String*=n$16 [line 26];
+EXIT_SCOPE(_,n$14,n$16); [line 26];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$17=*&amp;$irvar1:java.lang.String* [line 26];
+n$18=_fun_int Integer.parseInt(String)(n$17:java.lang.String*) [line 26];
+*&amp;idSerie:int=n$18 [line 26];
+NULLIFY(&amp;$irvar1); [line 26];
+EXIT_SCOPE(n$17,n$18,$irvar1); [line 26];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$19=*&amp;request:javax.servlet.http.HttpServletRequest* [line 27];
+_=*n$19:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 27];
+n$21=_fun_String HttpServletRequest.getParameter(String)(n$19:javax.servlet.http.HttpServletRequest*,"idfacultate":java.lang.Object*) interface virtual [line 27];
+*&amp;$irvar2:java.lang.String*=n$21 [line 27];
+EXIT_SCOPE(_,n$19,n$21); [line 27];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$22=*&amp;$irvar2:java.lang.String* [line 27];
+n$23=_fun_int Integer.parseInt(String)(n$22:java.lang.String*) [line 27];
+*&amp;idFacultate:int=n$23 [line 27];
+NULLIFY(&amp;$irvar2); [line 27];
+EXIT_SCOPE(n$22,n$23,$irvar2); [line 27];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$24=*&amp;request:javax.servlet.http.HttpServletRequest* [line 28];
+_=*n$24:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 28];
+n$26=_fun_String HttpServletRequest.getParameter(String)(n$24:javax.servlet.http.HttpServletRequest*,"idaplicatie":java.lang.Object*) interface virtual [line 28];
+*&amp;$irvar3:java.lang.String*=n$26 [line 28];
+NULLIFY(&amp;request); [line 28];
+EXIT_SCOPE(_,n$24,n$26,request); [line 28];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$27=*&amp;$irvar3:java.lang.String* [line 28];
+n$28=_fun_int Integer.parseInt(String)(n$27:java.lang.String*) [line 28];
+*&amp;idUser:int=n$28 [line 28];
+NULLIFY(&amp;$irvar3); [line 28];
+EXIT_SCOPE(n$27,n$28,$irvar3); [line 28];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:3 Instructions
+n$29=_fun___new(sizeof(t=com.stn.helpers.UserHelper):com.stn.helpers.UserHelper*) [line 29];
+n$30=_fun_UserHelper.&lt;init&gt;()(n$29:com.stn.helpers.UserHelper*) [line 29];
+*&amp;userHelper:com.stn.helpers.UserHelper*=n$29 [line 29];
+EXIT_SCOPE(n$29,n$30); [line 29];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$31=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 31];
+n$32=_fun_StringBuilder.&lt;init&gt;()(n$31:java.lang.StringBuilder*) [line 31];
+*&amp;$irvar4:java.lang.StringBuilder*=n$31 [line 31];
+EXIT_SCOPE(n$31,n$32); [line 31];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:3 Instructions
+n$33=*&amp;$irvar4:java.lang.StringBuilder* [line 31];
+_=*n$33:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 31];
+n$35=_fun_StringBuilder StringBuilder.append(String)(n$33:java.lang.StringBuilder*,"/userdetails.jsp?id=":java.lang.Object*) virtual [line 31];
+*&amp;$irvar5:java.lang.StringBuilder*=n$35 [line 31];
+NULLIFY(&amp;$irvar4); [line 31];
+EXIT_SCOPE(_,n$33,n$35,$irvar4); [line 31];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:3 Instructions
+n$36=*&amp;$irvar5:java.lang.StringBuilder* [line 31];
+_=*n$36:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 31];
+n$38=*&amp;idUser:int [line 31];
+n$39=_fun_StringBuilder StringBuilder.append(int)(n$36:java.lang.StringBuilder*,n$38:int) virtual [line 31];
+*&amp;$irvar6:java.lang.StringBuilder*=n$39 [line 31];
+NULLIFY(&amp;$irvar5); [line 31];
+EXIT_SCOPE(_,n$36,n$38,n$39,$irvar5); [line 31];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:3 Instructions
+n$40=*&amp;$irvar6:java.lang.StringBuilder* [line 31];
+_=*n$40:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 31];
+n$42=_fun_String StringBuilder.toString()(n$40:java.lang.StringBuilder*) virtual [line 31];
+*&amp;url:java.lang.String*=n$42 [line 31];
+NULLIFY(&amp;$irvar6); [line 31];
+EXIT_SCOPE(_,n$40,n$42,$irvar6); [line 31];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:24 exn:31 Instructions
+n$43=*&amp;userHelper:com.stn.helpers.UserHelper* [line 34];
+_=*n$43:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 34];
+n$45=*&amp;idUser:int [line 34];
+n$46=*&amp;idGrupa:int [line 34];
+n$47=*&amp;idSerie:int [line 34];
+n$48=*&amp;idFacultate:int [line 34];
+n$49=_fun_void UserHelper.updateFacultateAdmin(int,int,int,int)(n$43:com.stn.helpers.UserHelper*,n$45:int,n$46:int,n$47:int,n$48:int) virtual [line 34];
+NULLIFY(&amp;idSerie); [line 34];
+NULLIFY(&amp;idFacultate); [line 34];
+NULLIFY(&amp;idUser); [line 34];
+NULLIFY(&amp;idGrupa); [line 34];
+NULLIFY(&amp;userHelper); [line 34];
+EXIT_SCOPE(_,n$43,n$45,n$46,n$47,n$48,n$49,idSerie,idFacultate,idUser,idGrupa,userHelper); [line 34];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:29 27 succs:22 exn:3 Instructions
+n$50=*&amp;CatchVar122:java.lang.Object* [line 35];
+*&amp;e:java.lang.Object*=n$50 [line 35];
+NULLIFY(&amp;CatchVar122); [line 35];
+EXIT_SCOPE(n$50,CatchVar122); [line 35];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:3 Instructions
+n$51=*&amp;out:java.io.PrintWriter* [line 36];
+_=*n$51:java.io.PrintWriter*(root java.io.PrintWriter) [line 36];
+n$53=*&amp;e:java.lang.Object* [line 36];
+n$54=_fun_void PrintWriter.println(Object)(n$51:java.io.PrintWriter*,n$53:java.lang.Object*) virtual [line 36];
+NULLIFY(&amp;out); [line 36];
+NULLIFY(&amp;e); [line 36];
+EXIT_SCOPE(_,n$51,n$53,n$54,out,e); [line 36];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 37];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:20 succs:25 exn:3 Instructions
+n$55=*&amp;session:javax.servlet.http.HttpSession* [line 40];
+_=*n$55:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 40];
+n$57=_fun_void HttpSession.setAttribute(String,Object)(n$55:javax.servlet.http.HttpSession*,"error2":java.lang.Object*,"<b style='color: green; display: inline'>Profile updated!</b>":java.lang.Object*) interface virtual [line 40];
+NULLIFY(&amp;out); [line 40];
+NULLIFY(&amp;session); [line 40];
+EXIT_SCOPE(_,n$55,n$57,out,session); [line 40];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:3 Instructions
+n$58=*&amp;response:javax.servlet.http.HttpServletResponse* [line 41];
+_=*n$58:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 41];
+n$60=*&amp;url:java.lang.String* [line 41];
+n$61=_fun_void HttpServletResponse.sendRedirect(String)(n$58:javax.servlet.http.HttpServletResponse*,n$60:java.lang.String*) interface virtual [line 41];
+NULLIFY(&amp;url); [line 41];
+NULLIFY(&amp;response); [line 41];
+EXIT_SCOPE(_,n$58,n$60,n$61,url,response); [line 41];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 43];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node27.html"><span class='visited with_tooltip'>C_27<span class='tooltip'>node27 preds:30 succs:21 exn:3 Conditional exception handler
+n$64=_fun___instanceof(n$63:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 35];
+PRUNE(n$64, true); [line 35];
+*&amp;CatchVar122:void=n$63 [line 35];
+EXIT_SCOPE(n$63,n$64); [line 35];
+APPLY_ABSTRACTION; [line 35];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node28.html"><span class='visited with_tooltip'>C_28<span class='tooltip'>node28 preds:30 succs:3 exn:3 Conditional exception handler
+n$64=_fun___instanceof(n$63:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 35];
+PRUNE(!n$64, false); [line 35];
+*&amp;return:void=EXN n$63 [line 35];
+NULLIFY(&amp;out); [line 35];
+EXIT_SCOPE(n$63,n$64,out); [line 35];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node29.html"><span class='visited with_tooltip'>C_29<span class='tooltip'>node29 preds:31 succs:21 exn:3 Conditional exception handler
+n$65=_fun___instanceof(n$63:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 35];
+PRUNE(n$65, true); [line 35];
+*&amp;CatchVar122:void=n$63 [line 35];
+EXIT_SCOPE(n$63,n$65); [line 35];
+APPLY_ABSTRACTION; [line 35];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node30.html"><span class='visited with_tooltip'>C_30<span class='tooltip'>node30 preds:31 succs:27 28 exn:3 Conditional exception handler
+n$65=_fun___instanceof(n$63:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 35];
+PRUNE(!n$65, false); [line 35];
+EXIT_SCOPE(n$65); [line 35];
+</span></span></a> <a href="./nodes/com.stn.servlets.UpdateFacProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Ht.d6b04fcac1b394e677a3341be72ffb00_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds: succs:29 30 exn:3 Instructions
+n$62=*&amp;return:void [line 35];
+*&amp;return:void=null [line 35];
+n$63=_fun___unwrap_exception(n$62:void) [line 35];
+NULLIFY(&amp;url); [line 35];
+NULLIFY(&amp;session); [line 35];
+EXIT_SCOPE(n$62,url,session); [line 35];
+</span></span></a><br />@
+
+<span class='color_black'>void void UpdateFacProcess.doPost(HttpServletRequest,HttpServletResponse)(com.stn.servlets.UpdateFacProcess* this, javax.servlet.http.HttpServletRequest* request, javax.servlet.http.HttpServletResponse* response)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= void UpdateFacProcess.doPost(HttpServletRequest,HttpServletResponse)
+; translation_unit= src/main/java/com/stn/servlets/UpdateFacProcess.java
+; access= Protected
+; exceptions= [javax.servlet.ServletException;  java.io.IOException]
+; formals= [(this,com.stn.servlets.UpdateFacProcess*);  (request,
+            javax.servlet.http.HttpServletRequest*);  (response,
+            javax.servlet.http.HttpServletResponse*)]
+; is_defined= true
+; loc= src/main/java/com/stn/servlets/UpdateFacProcess.java:18
+; locals= [{ name= CatchVar122; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= url; typ= java.lang.String*; modify_in_block= false }; 
+           { name= userHelper; typ= com.stn.helpers.UserHelper*; modify_in_block= false }; 
+           { name= idUser; typ= int; modify_in_block= false }; 
+           { name= idFacultate; typ= int; modify_in_block= false }; 
+           { name= idSerie; typ= int; modify_in_block= false }; 
+           { name= idGrupa; typ= int; modify_in_block= false }; 
+           { name= out; typ= java.io.PrintWriter*; modify_in_block= false }; 
+           { name= session; typ= javax.servlet.http.HttpSession*; modify_in_block= false }; 
+           { name= e; typ= java.lang.Exception*; modify_in_block= false }]
+; ret_type= void 
+; proc_id= com.stn.servlets.UpdateFacProcess.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void }</pre>
+</body>
+</html>

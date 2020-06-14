@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.User.getAnonymity():int.a4a8f8a8499dc000086b4da756c6b5ba_1" [label="1: Start int User.getAnonymity()\nFormals:  this:com.stn.pojo.User*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.User.getAnonymity():int.a4a8f8a8499dc000086b4da756c6b5ba_1" -> "com.stn.pojo.User.getAnonymity():int.a4a8f8a8499dc000086b4da756c6b5ba_4" ;
+"com.stn.pojo.User.getAnonymity():int.a4a8f8a8499dc000086b4da756c6b5ba_2" [label="2: Exit int User.getAnonymity() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.User.getAnonymity():int.a4a8f8a8499dc000086b4da756c6b5ba_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 209]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.getAnonymity():int.a4a8f8a8499dc000086b4da756c6b5ba_3" -> "com.stn.pojo.User.getAnonymity():int.a4a8f8a8499dc000086b4da756c6b5ba_2" ;
+"com.stn.pojo.User.getAnonymity():int.a4a8f8a8499dc000086b4da756c6b5ba_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.User* [line 209]\n  n$1=*n$0.anonymity:int(root com.stn.pojo.User) [line 209]\n  *&return:int=n$1 [line 209]\n  NULLIFY(&this); [line 209]\n  EXIT_SCOPE(n$0,n$1,this); [line 209]\n  APPLY_ABSTRACTION; [line 209]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.getAnonymity():int.a4a8f8a8499dc000086b4da756c6b5ba_4" -> "com.stn.pojo.User.getAnonymity():int.a4a8f8a8499dc000086b4da756c6b5ba_2" ;
+	 "com.stn.pojo.User.getAnonymity():int.a4a8f8a8499dc000086b4da756c6b5ba_4" -> "com.stn.pojo.User.getAnonymity():int.a4a8f8a8499dc000086b4da756c6b5ba_3" [color="red" ];
+}

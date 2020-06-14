@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.servlets.CategoryProcess.<init>().e131888c9b06170d3f86662fef7df25f_1" [label="1: Start CategoryProcess.<init>()\nFormals:  this:com.stn.servlets.CategoryProcess*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.servlets.CategoryProcess.<init>().e131888c9b06170d3f86662fef7df25f_1" -> "com.stn.servlets.CategoryProcess.<init>().e131888c9b06170d3f86662fef7df25f_4" ;
+"com.stn.servlets.CategoryProcess.<init>().e131888c9b06170d3f86662fef7df25f_2" [label="2: Exit CategoryProcess.<init>() \n  " color=yellow style=filled]
+	
+
+"com.stn.servlets.CategoryProcess.<init>().e131888c9b06170d3f86662fef7df25f_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 20]\n " shape="box"]
+	
+
+	 "com.stn.servlets.CategoryProcess.<init>().e131888c9b06170d3f86662fef7df25f_3" -> "com.stn.servlets.CategoryProcess.<init>().e131888c9b06170d3f86662fef7df25f_2" ;
+"com.stn.servlets.CategoryProcess.<init>().e131888c9b06170d3f86662fef7df25f_4" [label="4:  Call HttpServlet.<init>() \n   n$0=*&this:com.stn.servlets.CategoryProcess* [line 20]\n  n$1=_fun_HttpServlet.<init>()(n$0:com.stn.servlets.CategoryProcess*) [line 20]\n  NULLIFY(&this); [line 20]\n  EXIT_SCOPE(n$0,n$1,this); [line 20]\n " shape="box"]
+	
+
+	 "com.stn.servlets.CategoryProcess.<init>().e131888c9b06170d3f86662fef7df25f_4" -> "com.stn.servlets.CategoryProcess.<init>().e131888c9b06170d3f86662fef7df25f_5" ;
+	 "com.stn.servlets.CategoryProcess.<init>().e131888c9b06170d3f86662fef7df25f_4" -> "com.stn.servlets.CategoryProcess.<init>().e131888c9b06170d3f86662fef7df25f_3" [color="red" ];
+"com.stn.servlets.CategoryProcess.<init>().e131888c9b06170d3f86662fef7df25f_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 20]\n " shape="box"]
+	
+
+	 "com.stn.servlets.CategoryProcess.<init>().e131888c9b06170d3f86662fef7df25f_5" -> "com.stn.servlets.CategoryProcess.<init>().e131888c9b06170d3f86662fef7df25f_2" ;
+	 "com.stn.servlets.CategoryProcess.<init>().e131888c9b06170d3f86662fef7df25f_5" -> "com.stn.servlets.CategoryProcess.<init>().e131888c9b06170d3f86662fef7df25f_3" [color="red" ];
+}

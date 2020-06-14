@@ -1,0 +1,217 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.servlets.ProfileProcess.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node29</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../ProfileProcess.java.acaecb725e6f52069aa4257f550c5b8e.html#LINE58">29</a></h1></center>PROC: <a href="./../com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875.html">void ProfileProcess.doPost(HttpServletRequest,HttpServletResponse)</a> LINE: <a href="./../../ProfileProcess.java.acaecb725e6f52069aa4257f550c5b8e.html#LINE58">58</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node28.html"><span class='visited with_tooltip'>N_28<span class='tooltip'>node28 preds:27 succs:29 exn:3 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node30.html"><span class='visited with_tooltip'>N_30<span class='tooltip'>node30 preds:29 succs:31 exn:3 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node3.html"><span class='visited with_tooltip'>N_3<span class='tooltip'>node3 preds:35 succs:2 exn:2 </span></span></a><br>
+<LISTING class='color_green'>n$47=*&amp;$irvar5:java.lang.StringBuilder* [line 58];
+_=*n$47:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 58];
+n$49=*&amp;userId:int [line 58];
+n$50=_fun_StringBuilder StringBuilder.append(int)(n$47:java.lang.StringBuilder*,n$49:int) virtual [line 58];
+*&amp;$irvar6:java.lang.StringBuilder*=n$50 [line 58];
+</LISTING>
+<hr width="100%">
+<a name="session18" href="./../nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node29.html#session18">node29#session18</a>(<a href="./../../ProfileProcess.java.acaecb725e6f52069aa4257f550c5b8e.html#LINE58">58</a>) [compute pre] liveness 29
+<LISTING class='color_black'>JOIN
+
+LEFT:   { error, $irvar6, session, response }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session19" href="./../nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node29.html#session19">node29#session19</a>(<a href="./../../ProfileProcess.java.acaecb725e6f52069aa4257f550c5b8e.html#LINE58">58</a>) [exec] liveness 29
+<LISTING class='color_black'>PRE STATE:
+{ error, $irvar6, session, response }
+
+INSTR=  *&amp;$irvar6:java.lang.StringBuilder*=n$50 [line 58]; 
+
+STATE:
+{ n$50, error, session, response }
+
+INSTR=  n$50=_fun_StringBuilder StringBuilder.append(int)(n$47:java.lang.StringBuilder*,n$49:int) virtual [line 58]; 
+
+STATE:
+{ n$47, n$49, error, session, response }
+
+INSTR=  n$49=*&amp;userId:int [line 58]; 
+
+STATE:
+{ n$47, error, session, response, userId }
+
+INSTR=  _=*n$47:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 58]; 
+
+STATE UNCHANGED
+
+INSTR=  n$47=*&amp;$irvar5:java.lang.StringBuilder* [line 58]; 
+
+STATE:
+{ error, $irvar5, session, response, userId }
+
+</LISTING>
+<hr width="100%">
+<a name="session121" href="./../nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node29.html#session121">node29#session121</a>(<a href="./../../ProfileProcess.java.acaecb725e6f52069aa4257f550c5b8e.html#LINE58">58</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session122" href="./../nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node29.html#session122">node29#session122</a>(<a href="./../../ProfileProcess.java.acaecb725e6f52069aa4257f550c5b8e.html#LINE58">58</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ error, $irvar5, session, userId },{ _, n$44, n$46, $irvar4 })
+
+INSTR=  n$47=*&amp;$irvar5:java.lang.StringBuilder* [line 58]; 
+
+STATE:
+({ n$47, error, $irvar5, session, userId },{ _, n$44, n$46, $irvar4 })
+
+INSTR=  _=*n$47:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 58]; 
+
+STATE:
+({ _, n$47, error, $irvar5, session, userId },{ _, n$44, n$46, $irvar4 })
+
+INSTR=  n$49=*&amp;userId:int [line 58]; 
+
+STATE:
+({ _, n$47, n$49, error, $irvar5, session, userId },
+{ _, n$44, n$46, $irvar4 })
+
+INSTR=  n$50=_fun_StringBuilder StringBuilder.append(int)(n$47:java.lang.StringBuilder*,n$49:int) virtual [line 58]; 
+
+STATE:
+({ _, n$47, n$49, n$50, error, $irvar5, session, userId },
+{ _, n$44, n$46, $irvar4 })
+
+INSTR=  *&amp;$irvar6:java.lang.StringBuilder*=n$50 [line 58]; 
+
+STATE:
+({ error, $irvar6, session },{ _, n$47, n$49, n$50, $irvar5, userId })
+
+</LISTING>
+<hr width="100%">
+<a name="session46" href="./../nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node29.html#session46">node29#session46</a>(<a href="./../../ProfileProcess.java.acaecb725e6f52069aa4257f550c5b8e.html#LINE58">58</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session47" href="./../nodes/com.stn.servlets.ProfileProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.67ed28898d5e54dea7d9b4b6c5620875_node29.html#session47">node29#session47</a>(<a href="./../../ProfileProcess.java.acaecb725e6f52069aa4257f550c5b8e.html#LINE58">58</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$28 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  n$46 -&gt; { },
+  error -&gt; { },
+  userClass -&gt; { },
+  donor -&gt; { },
+  out -&gt; { },
+  userHelper -&gt; { connection -&gt; *,
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; *,
+                  query -&gt; { },
+                  resultSet -&gt; { } },
+  session -&gt; { },
+  userId -&gt; { } }
+
+
+
+
+TAINTED_CALL2: (callee="StringBuilder StringBuilder.append(int)", caller="void ProfileProcess.doPost(HttpServletRequest,HttpServletResponse)")
+INSTR=  n$50 := StringBuilder StringBuilder.append(int)({ n$46, userId }) [line 58]; 
+
+STATE:
+{ n$28 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  n$46 -&gt; { },
+  n$50 -&gt; { },
+  error -&gt; { },
+  userClass -&gt; { },
+  donor -&gt; { },
+  out -&gt; { },
+  userHelper -&gt; { connection -&gt; *,
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; *,
+                  query -&gt; { },
+                  resultSet -&gt; { } },
+  session -&gt; { },
+  userId -&gt; { } }
+
+
+INSTR=  NULLIFY(&amp;$irvar5); [line 58]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;userId); [line 58]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(userId); [line 58]; 
+
+STATE:
+{ n$28 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  n$46 -&gt; { },
+  n$50 -&gt; { },
+  error -&gt; { },
+  userClass -&gt; { },
+  donor -&gt; { },
+  out -&gt; { },
+  userHelper -&gt; { connection -&gt; *,
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; *,
+                  query -&gt; { },
+                  resultSet -&gt; { } },
+  session -&gt; { },
+  userId -&gt; { } }
+
+</LISTING>

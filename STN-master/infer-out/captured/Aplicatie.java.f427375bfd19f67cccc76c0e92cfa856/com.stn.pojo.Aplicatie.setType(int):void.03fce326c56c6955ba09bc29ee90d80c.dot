@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Aplicatie.setType(int):void.03fce326c56c6955ba09bc29ee90d80c_1" [label="1: Start void Aplicatie.setType(int)\nFormals:  this:com.stn.pojo.Aplicatie* type:int\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Aplicatie.setType(int):void.03fce326c56c6955ba09bc29ee90d80c_1" -> "com.stn.pojo.Aplicatie.setType(int):void.03fce326c56c6955ba09bc29ee90d80c_4" ;
+"com.stn.pojo.Aplicatie.setType(int):void.03fce326c56c6955ba09bc29ee90d80c_2" [label="2: Exit void Aplicatie.setType(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Aplicatie.setType(int):void.03fce326c56c6955ba09bc29ee90d80c_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 69]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.setType(int):void.03fce326c56c6955ba09bc29ee90d80c_3" -> "com.stn.pojo.Aplicatie.setType(int):void.03fce326c56c6955ba09bc29ee90d80c_2" ;
+"com.stn.pojo.Aplicatie.setType(int):void.03fce326c56c6955ba09bc29ee90d80c_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Aplicatie* [line 68]\n  n$1=*&type:int [line 68]\n  *n$0.type:com.stn.pojo.Aplicatie(root com.stn.pojo.Aplicatie)=n$1 [line 68]\n  NULLIFY(&type); [line 68]\n  NULLIFY(&this); [line 68]\n  EXIT_SCOPE(n$0,n$1,type,this); [line 68]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.setType(int):void.03fce326c56c6955ba09bc29ee90d80c_4" -> "com.stn.pojo.Aplicatie.setType(int):void.03fce326c56c6955ba09bc29ee90d80c_5" ;
+	 "com.stn.pojo.Aplicatie.setType(int):void.03fce326c56c6955ba09bc29ee90d80c_4" -> "com.stn.pojo.Aplicatie.setType(int):void.03fce326c56c6955ba09bc29ee90d80c_3" [color="red" ];
+"com.stn.pojo.Aplicatie.setType(int):void.03fce326c56c6955ba09bc29ee90d80c_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 69]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.setType(int):void.03fce326c56c6955ba09bc29ee90d80c_5" -> "com.stn.pojo.Aplicatie.setType(int):void.03fce326c56c6955ba09bc29ee90d80c_2" ;
+	 "com.stn.pojo.Aplicatie.setType(int):void.03fce326c56c6955ba09bc29ee90d80c_5" -> "com.stn.pojo.Aplicatie.setType(int):void.03fce326c56c6955ba09bc29ee90d80c_3" [color="red" ];
+}

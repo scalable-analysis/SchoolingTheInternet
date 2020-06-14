@@ -1,0 +1,364 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.CommentsHelper.addComment(java.lang.Integer,java.lang.Integer,java.lang.String):void.9d6a149ebeda1a962c80020b559a39b7</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../CommentsHelper.java.928d57cf41085973a68359c2785c1cad.html#LINE81">void CommentsHelper.addComment(Integer,Integer,String)</a></h1></center>
+<a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:40 39 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$bcvar5); [line 100];
+NULLIFY(&amp;$irvar0); [line 100];
+NULLIFY(&amp;$irvar1); [line 100];
+NULLIFY(&amp;date); [line 100];
+EXIT_SCOPE($bcvar5,$irvar0,$irvar1,date); [line 100];
+APPLY_ABSTRACTION; [line 100];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.Date):java.util.Date*) [line 82];
+n$1=_fun_Date.&lt;init&gt;()(n$0:java.util.Date*) [line 82];
+*&amp;$irvar0:java.util.Date*=n$0 [line 82];
+EXIT_SCOPE(n$0,n$1); [line 82];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$2=*&amp;$irvar0:java.util.Date* [line 82];
+_=*n$2:java.util.Date*(root java.util.Date) [line 82];
+n$4=_fun_long Date.getTime()(n$2:java.util.Date*) virtual [line 82];
+*&amp;$irvar1:long=n$4 [line 82];
+NULLIFY(&amp;$irvar0); [line 82];
+EXIT_SCOPE(_,n$2,n$4,$irvar0); [line 82];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$5=_fun___new(sizeof(t=java.sql.Timestamp):java.sql.Timestamp*) [line 82];
+n$6=*&amp;$irvar1:long [line 82];
+n$7=_fun_Timestamp.&lt;init&gt;(long)(n$5:java.sql.Timestamp*,n$6:long) [line 82];
+*&amp;date:java.sql.Timestamp*=n$5 [line 82];
+NULLIFY(&amp;$irvar1); [line 82];
+EXIT_SCOPE(n$5,n$6,n$7,$irvar1); [line 82];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$8=*&amp;this:com.stn.helpers.CommentsHelper* [line 83];
+*n$8.query:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)="Insert into comments(IdPost,IdUser,Continut,Data,LastEdit) values(?,?,?,?,?)" [line 83];
+EXIT_SCOPE(n$8); [line 83];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:42 Instructions
+n$9=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 85];
+*&amp;$irvar2:java.lang.Class*=n$9 [line 85];
+NULLIFY(&amp;$irvar2); [line 85];
+EXIT_SCOPE(n$9,$irvar2); [line 85];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:42 Instructions
+n$10=*&amp;this:com.stn.helpers.CommentsHelper* [line 86];
+_=*n$10:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 86];
+n$12=_fun_String DBConnection.getHost()(n$10:com.stn.helpers.CommentsHelper*) virtual [line 86];
+*&amp;$irvar3:java.lang.String*=n$12 [line 86];
+EXIT_SCOPE(_,n$10,n$12); [line 86];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:42 Instructions
+n$13=*&amp;this:com.stn.helpers.CommentsHelper* [line 86];
+_=*n$13:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 86];
+n$15=_fun_String DBConnection.getUser()(n$13:com.stn.helpers.CommentsHelper*) virtual [line 86];
+*&amp;$irvar4:java.lang.String*=n$15 [line 86];
+EXIT_SCOPE(_,n$13,n$15); [line 86];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:42 Instructions
+n$16=*&amp;this:com.stn.helpers.CommentsHelper* [line 86];
+_=*n$16:com.stn.helpers.CommentsHelper*(root com.stn.helpers.CommentsHelper) [line 86];
+n$18=_fun_String DBConnection.getPassword()(n$16:com.stn.helpers.CommentsHelper*) virtual [line 86];
+*&amp;$irvar5:java.lang.String*=n$18 [line 86];
+EXIT_SCOPE(_,n$16,n$18); [line 86];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:42 Instructions
+n$19=*&amp;$irvar3:java.lang.String* [line 86];
+n$20=*&amp;$irvar4:java.lang.String* [line 86];
+n$21=*&amp;$irvar5:java.lang.String* [line 86];
+n$22=_fun_Connection DriverManager.getConnection(String,String,String)(n$19:java.lang.String*,n$20:java.lang.String*,n$21:java.lang.String*) [line 86];
+*&amp;$irvar6:java.sql.Connection*=n$22 [line 86];
+NULLIFY(&amp;$irvar3); [line 86];
+NULLIFY(&amp;$irvar5); [line 86];
+NULLIFY(&amp;$irvar4); [line 86];
+EXIT_SCOPE(n$19,n$20,n$21,n$22,$irvar3,$irvar5,$irvar4); [line 86];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:42 Instructions
+n$23=*&amp;this:com.stn.helpers.CommentsHelper* [line 86];
+n$24=*&amp;$irvar6:java.sql.Connection* [line 86];
+*n$23.connection:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)=n$24 [line 86];
+NULLIFY(&amp;$irvar6); [line 86];
+EXIT_SCOPE(n$23,n$24,$irvar6); [line 86];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:42 Instructions
+n$25=*&amp;this:com.stn.helpers.CommentsHelper* [line 87];
+n$26=*n$25.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 87];
+_=*n$26:java.sql.Connection*(root java.sql.Connection) [line 87];
+n$28=*&amp;this:com.stn.helpers.CommentsHelper* [line 87];
+n$29=*n$28.query:java.lang.String*(root com.stn.helpers.CommentsHelper) [line 87];
+n$30=_fun_PreparedStatement Connection.prepareStatement(String)(n$26:java.sql.Connection*,n$29:java.lang.String*) interface virtual [line 87];
+*&amp;$irvar7:java.sql.PreparedStatement*=n$30 [line 87];
+EXIT_SCOPE(_,n$25,n$26,n$28,n$29,n$30); [line 87];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:42 Instructions
+n$31=*&amp;this:com.stn.helpers.CommentsHelper* [line 87];
+n$32=*&amp;$irvar7:java.sql.PreparedStatement* [line 87];
+*n$31.preparedStatement:com.stn.helpers.CommentsHelper(root com.stn.helpers.CommentsHelper)=n$32 [line 87];
+NULLIFY(&amp;$irvar7); [line 87];
+EXIT_SCOPE(n$31,n$32,$irvar7); [line 87];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:42 Instructions
+n$33=*&amp;this:com.stn.helpers.CommentsHelper* [line 88];
+n$34=*n$33.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 88];
+*&amp;$irvar9:java.sql.PreparedStatement*=n$34 [line 88];
+EXIT_SCOPE(n$33,n$34); [line 88];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:42 Instructions
+n$35=*&amp;idPost:java.lang.Integer* [line 88];
+_=*n$35:java.lang.Integer*(root java.lang.Integer) [line 88];
+n$37=_fun_int Integer.intValue()(n$35:java.lang.Integer*) virtual [line 88];
+*&amp;$irvar8:int=n$37 [line 88];
+NULLIFY(&amp;idPost); [line 88];
+EXIT_SCOPE(_,n$35,n$37,idPost); [line 88];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:42 Instructions
+n$38=*&amp;$irvar9:java.sql.PreparedStatement* [line 88];
+_=*n$38:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 88];
+n$40=*&amp;$irvar8:int [line 88];
+n$41=_fun_void PreparedStatement.setInt(int,int)(n$38:java.sql.PreparedStatement*,1:int,n$40:int) interface virtual [line 88];
+NULLIFY(&amp;$irvar9); [line 88];
+NULLIFY(&amp;$irvar8); [line 88];
+EXIT_SCOPE(_,n$38,n$40,n$41,$irvar9,$irvar8); [line 88];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:42 Instructions
+n$42=*&amp;this:com.stn.helpers.CommentsHelper* [line 89];
+n$43=*n$42.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 89];
+*&amp;$irvar11:java.sql.PreparedStatement*=n$43 [line 89];
+EXIT_SCOPE(n$42,n$43); [line 89];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:42 Instructions
+n$44=*&amp;idUser:java.lang.Integer* [line 89];
+_=*n$44:java.lang.Integer*(root java.lang.Integer) [line 89];
+n$46=_fun_int Integer.intValue()(n$44:java.lang.Integer*) virtual [line 89];
+*&amp;$irvar10:int=n$46 [line 89];
+NULLIFY(&amp;idUser); [line 89];
+EXIT_SCOPE(_,n$44,n$46,idUser); [line 89];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:42 Instructions
+n$47=*&amp;$irvar11:java.sql.PreparedStatement* [line 89];
+_=*n$47:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 89];
+n$49=*&amp;$irvar10:int [line 89];
+n$50=_fun_void PreparedStatement.setInt(int,int)(n$47:java.sql.PreparedStatement*,2:int,n$49:int) interface virtual [line 89];
+NULLIFY(&amp;$irvar11); [line 89];
+NULLIFY(&amp;$irvar10); [line 89];
+EXIT_SCOPE(_,n$47,n$49,n$50,$irvar11,$irvar10); [line 89];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:42 Instructions
+n$51=*&amp;this:com.stn.helpers.CommentsHelper* [line 90];
+n$52=*n$51.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 90];
+_=*n$52:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 90];
+n$54=*&amp;body:java.lang.String* [line 90];
+n$55=_fun_void PreparedStatement.setString(int,String)(n$52:java.sql.PreparedStatement*,3:int,n$54:java.lang.String*) interface virtual [line 90];
+NULLIFY(&amp;body); [line 90];
+EXIT_SCOPE(_,n$51,n$52,n$54,n$55,body); [line 90];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:42 Instructions
+n$56=*&amp;this:com.stn.helpers.CommentsHelper* [line 91];
+n$57=*n$56.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 91];
+_=*n$57:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 91];
+n$59=*&amp;date:java.sql.Timestamp* [line 91];
+n$60=_fun_void PreparedStatement.setTimestamp(int,Timestamp)(n$57:java.sql.PreparedStatement*,4:int,n$59:java.sql.Timestamp*) interface virtual [line 91];
+EXIT_SCOPE(_,n$56,n$57,n$59,n$60); [line 91];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:42 Instructions
+n$61=*&amp;this:com.stn.helpers.CommentsHelper* [line 92];
+n$62=*n$61.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 92];
+_=*n$62:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 92];
+n$64=*&amp;date:java.sql.Timestamp* [line 92];
+n$65=_fun_void PreparedStatement.setTimestamp(int,Timestamp)(n$62:java.sql.PreparedStatement*,5:int,n$64:java.sql.Timestamp*) interface virtual [line 92];
+NULLIFY(&amp;date); [line 92];
+EXIT_SCOPE(_,n$61,n$62,n$64,n$65,date); [line 92];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 27 exn:42 Instructions
+n$66=*&amp;this:com.stn.helpers.CommentsHelper* [line 93];
+n$67=*n$66.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 93];
+_=*n$67:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 93];
+n$69=_fun_int PreparedStatement.executeUpdate()(n$67:java.sql.PreparedStatement*) interface virtual [line 93];
+*&amp;$irvar12:int=n$69 [line 93];
+NULLIFY(&amp;$irvar12); [line 93];
+EXIT_SCOPE(_,n$66,n$67,n$69,$irvar12); [line 93];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node26.html"><span class='visited with_tooltip'>C_26<span class='tooltip'>node26 preds:25 succs:28 exn:3 Conditional method_body
+n$70=*&amp;this:com.stn.helpers.CommentsHelper* [line 95];
+n$71=*n$70.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 95];
+PRUNE(!(n$71 == null), true); [line 95];
+EXIT_SCOPE(n$70,n$71); [line 95];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node27.html"><span class='visited with_tooltip'>C_27<span class='tooltip'>node27 preds:25 succs:29 30 exn:3 Conditional method_body
+n$70=*&amp;this:com.stn.helpers.CommentsHelper* [line 95];
+n$71=*n$70.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 95];
+PRUNE((n$71 == null), false); [line 95];
+EXIT_SCOPE(n$70,n$71); [line 95];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:26 succs:29 30 exn:3 Instructions
+n$72=*&amp;this:com.stn.helpers.CommentsHelper* [line 96];
+n$73=*n$72.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 96];
+n$76=_fun___set_mem_attribute(n$73:java.sql.PreparedStatement*) [line 96];
+_=*n$73:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 96];
+n$75=_fun_void PreparedStatement.close()(n$73:java.sql.PreparedStatement*) interface virtual [line 96];
+EXIT_SCOPE(_,n$72,n$73,n$75,n$76); [line 96];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node29.html"><span class='visited with_tooltip'>C_29<span class='tooltip'>node29 preds:28 27 succs:31 exn:3 Conditional method_body
+n$77=*&amp;this:com.stn.helpers.CommentsHelper* [line 97];
+n$78=*n$77.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 97];
+PRUNE(!(n$78 == null), true); [line 97];
+EXIT_SCOPE(n$77,n$78); [line 97];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node30.html"><span class='visited with_tooltip'>C_30<span class='tooltip'>node30 preds:28 27 succs:40 exn:3 Conditional method_body
+n$77=*&amp;this:com.stn.helpers.CommentsHelper* [line 97];
+n$78=*n$77.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 97];
+PRUNE((n$78 == null), false); [line 97];
+NULLIFY(&amp;this); [line 97];
+EXIT_SCOPE(n$77,n$78,this); [line 97];
+APPLY_ABSTRACTION; [line 97];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:29 succs:40 exn:3 Instructions
+n$79=*&amp;this:com.stn.helpers.CommentsHelper* [line 98];
+n$80=*n$79.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 98];
+n$83=_fun___set_mem_attribute(n$80:java.sql.Connection*) [line 98];
+_=*n$80:java.sql.Connection*(root java.sql.Connection) [line 98];
+n$82=_fun_void Connection.close()(n$80:java.sql.Connection*) interface virtual [line 98];
+NULLIFY(&amp;this); [line 98];
+EXIT_SCOPE(_,n$79,n$80,n$82,n$83,this); [line 98];
+APPLY_ABSTRACTION; [line 98];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:43 41 succs:33 34 exn:44 Instructions
+n$84=*&amp;CatchVar175:java.lang.Object* [line 95];
+*&amp;$bcvar5:java.lang.Object*=n$84 [line 95];
+EXIT_SCOPE(n$84); [line 95];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node33.html"><span class='visited with_tooltip'>C_33<span class='tooltip'>node33 preds:32 succs:35 exn:3 Conditional method_body
+n$85=*&amp;this:com.stn.helpers.CommentsHelper* [line 95];
+n$86=*n$85.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 95];
+PRUNE(!(n$86 == null), true); [line 95];
+EXIT_SCOPE(n$85,n$86); [line 95];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node34.html"><span class='visited with_tooltip'>C_34<span class='tooltip'>node34 preds:32 succs:36 37 exn:3 Conditional method_body
+n$85=*&amp;this:com.stn.helpers.CommentsHelper* [line 95];
+n$86=*n$85.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 95];
+PRUNE((n$86 == null), false); [line 95];
+EXIT_SCOPE(n$85,n$86); [line 95];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:33 succs:36 37 exn:3 Instructions
+n$87=*&amp;this:com.stn.helpers.CommentsHelper* [line 96];
+n$88=*n$87.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 96];
+n$91=_fun___set_mem_attribute(n$88:java.sql.PreparedStatement*) [line 96];
+_=*n$88:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 96];
+n$90=_fun_void PreparedStatement.close()(n$88:java.sql.PreparedStatement*) interface virtual [line 96];
+EXIT_SCOPE(_,n$87,n$88,n$90,n$91); [line 96];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node36.html"><span class='visited with_tooltip'>C_36<span class='tooltip'>node36 preds:35 34 succs:38 exn:3 Conditional method_body
+n$92=*&amp;this:com.stn.helpers.CommentsHelper* [line 97];
+n$93=*n$92.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 97];
+PRUNE(!(n$93 == null), true); [line 97];
+EXIT_SCOPE(n$92,n$93); [line 97];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node37.html"><span class='visited with_tooltip'>C_37<span class='tooltip'>node37 preds:35 34 succs:39 exn:3 Conditional method_body
+n$92=*&amp;this:com.stn.helpers.CommentsHelper* [line 97];
+n$93=*n$92.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 97];
+PRUNE((n$93 == null), false); [line 97];
+NULLIFY(&amp;this); [line 97];
+EXIT_SCOPE(n$92,n$93,this); [line 97];
+APPLY_ABSTRACTION; [line 97];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:36 succs:39 exn:3 Instructions
+n$94=*&amp;this:com.stn.helpers.CommentsHelper* [line 98];
+n$95=*n$94.connection:java.sql.Connection*(root com.stn.helpers.CommentsHelper) [line 98];
+n$98=_fun___set_mem_attribute(n$95:java.sql.Connection*) [line 98];
+_=*n$95:java.sql.Connection*(root java.sql.Connection) [line 98];
+n$97=_fun_void Connection.close()(n$95:java.sql.Connection*) interface virtual [line 98];
+NULLIFY(&amp;this); [line 98];
+EXIT_SCOPE(_,n$94,n$95,n$97,n$98,this); [line 98];
+APPLY_ABSTRACTION; [line 98];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:38 37 succs:2 exn:3 Instructions
+n$99=*&amp;$bcvar5:java.lang.Object* [line 99];
+*&amp;return:void=EXN n$99 [line 99];
+NULLIFY(&amp;$bcvar5); [line 99];
+EXIT_SCOPE(n$99,$bcvar5); [line 99];
+APPLY_ABSTRACTION; [line 99];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:31 30 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 100];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:42 succs:32 exn:3 Instructions
+APPLY_ABSTRACTION; [line 95];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds: succs:41 exn:3 Instructions
+n$100=*&amp;return:void [line 95];
+*&amp;return:void=null [line 95];
+n$101=_fun___unwrap_exception(n$100:void) [line 95];
+NULLIFY(&amp;$irvar3); [line 95];
+NULLIFY(&amp;$irvar9); [line 95];
+NULLIFY(&amp;$irvar5); [line 95];
+NULLIFY(&amp;$irvar4); [line 95];
+NULLIFY(&amp;$irvar7); [line 95];
+NULLIFY(&amp;$irvar6); [line 95];
+NULLIFY(&amp;$irvar11); [line 95];
+NULLIFY(&amp;$irvar10); [line 95];
+NULLIFY(&amp;$irvar8); [line 95];
+NULLIFY(&amp;date); [line 95];
+EXIT_SCOPE(n$100,n$101,$irvar3,$irvar9,$irvar5,$irvar4,$irvar7,$irvar6,$irvar11,$irvar10,$irvar8,date); [line 95];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:44 succs:32 exn:3 Instructions
+APPLY_ABSTRACTION; [line 95];
+</span></span></a> <a href="./nodes/com.stn.helpers.CommentsHelper.addComment%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%29%3Avoid.9d6a149ebeda1a962c80020b559a39b7_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds: succs:43 exn:3 Instructions
+n$100=*&amp;return:void [line 95];
+*&amp;return:void=null [line 95];
+n$101=_fun___unwrap_exception(n$100:void) [line 95];
+NULLIFY(&amp;$bcvar5); [line 95];
+EXIT_SCOPE(n$100,n$101,$bcvar5); [line 95];
+</span></span></a><br />@
+
+<span class='color_black'>void void CommentsHelper.addComment(Integer,Integer,String)(com.stn.helpers.CommentsHelper* this, java.lang.Integer* idPost, java.lang.Integer* idUser, java.lang.String* body)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { @val$0 -> { connection -> (Footprint({ @val$0.dbUser,
+                                                   @val$0.dbPort*,
+                                                   @val$0.dbPassword,
+                                                   @val$0.dbName*,
+                                                   @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        preparedStatement -> (Footprint({ @val$3*,
+                                                          @val$0.dbUser,
+                                                          @val$0.dbPort*,
+                                                          @val$0.dbPassword,
+                                                          @val$0.dbName*,
+                                                          @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        query -> { } } }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= void CommentsHelper.addComment(Integer,Integer,String)
+; translation_unit= src/main/java/com/stn/helpers/CommentsHelper.java
+; access= Public
+; exceptions= [java.sql.SQLException;  java.lang.ClassNotFoundException]
+; formals= [(this,com.stn.helpers.CommentsHelper*);  (idPost,
+            java.lang.Integer*);  (idUser,java.lang.Integer*);  (body,
+            java.lang.String*)]
+; is_defined= true
+; loc= src/main/java/com/stn/helpers/CommentsHelper.java:81
+; locals= [{ name= $bcvar5; typ= void; modify_in_block= false }; 
+           { name= CatchVar175; typ= void; modify_in_block= false }; 
+           { name= $irvar12; typ= void; modify_in_block= false }; 
+           { name= $irvar11; typ= void; modify_in_block= false }; 
+           { name= $irvar10; typ= void; modify_in_block= false }; 
+           { name= $irvar9; typ= void; modify_in_block= false }; 
+           { name= $irvar8; typ= void; modify_in_block= false }; 
+           { name= $irvar7; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= date; typ= java.sql.Timestamp*; modify_in_block= false }]
+; ret_type= void 
+; proc_id= com.stn.helpers.CommentsHelper.addComment(java.lang.Integer,java.lang.Integer,java.lang.String):void }</pre>
+</body>
+</html>

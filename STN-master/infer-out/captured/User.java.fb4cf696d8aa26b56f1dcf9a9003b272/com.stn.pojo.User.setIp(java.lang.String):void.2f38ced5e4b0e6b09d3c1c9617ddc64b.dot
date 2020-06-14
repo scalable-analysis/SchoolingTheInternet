@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.User.setIp(java.lang.String):void.2f38ced5e4b0e6b09d3c1c9617ddc64b_1" [label="1: Start void User.setIp(String)\nFormals:  this:com.stn.pojo.User* ip:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.User.setIp(java.lang.String):void.2f38ced5e4b0e6b09d3c1c9617ddc64b_1" -> "com.stn.pojo.User.setIp(java.lang.String):void.2f38ced5e4b0e6b09d3c1c9617ddc64b_4" ;
+"com.stn.pojo.User.setIp(java.lang.String):void.2f38ced5e4b0e6b09d3c1c9617ddc64b_2" [label="2: Exit void User.setIp(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.User.setIp(java.lang.String):void.2f38ced5e4b0e6b09d3c1c9617ddc64b_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 70]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.setIp(java.lang.String):void.2f38ced5e4b0e6b09d3c1c9617ddc64b_3" -> "com.stn.pojo.User.setIp(java.lang.String):void.2f38ced5e4b0e6b09d3c1c9617ddc64b_2" ;
+"com.stn.pojo.User.setIp(java.lang.String):void.2f38ced5e4b0e6b09d3c1c9617ddc64b_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.User* [line 69]\n  n$1=*&ip:java.lang.String* [line 69]\n  *n$0.ip:com.stn.pojo.User(root com.stn.pojo.User)=n$1 [line 69]\n  NULLIFY(&ip); [line 69]\n  NULLIFY(&this); [line 69]\n  EXIT_SCOPE(n$0,n$1,ip,this); [line 69]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.setIp(java.lang.String):void.2f38ced5e4b0e6b09d3c1c9617ddc64b_4" -> "com.stn.pojo.User.setIp(java.lang.String):void.2f38ced5e4b0e6b09d3c1c9617ddc64b_5" ;
+	 "com.stn.pojo.User.setIp(java.lang.String):void.2f38ced5e4b0e6b09d3c1c9617ddc64b_4" -> "com.stn.pojo.User.setIp(java.lang.String):void.2f38ced5e4b0e6b09d3c1c9617ddc64b_3" [color="red" ];
+"com.stn.pojo.User.setIp(java.lang.String):void.2f38ced5e4b0e6b09d3c1c9617ddc64b_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 70]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.setIp(java.lang.String):void.2f38ced5e4b0e6b09d3c1c9617ddc64b_5" -> "com.stn.pojo.User.setIp(java.lang.String):void.2f38ced5e4b0e6b09d3c1c9617ddc64b_2" ;
+	 "com.stn.pojo.User.setIp(java.lang.String):void.2f38ced5e4b0e6b09d3c1c9617ddc64b_5" -> "com.stn.pojo.User.setIp(java.lang.String):void.2f38ced5e4b0e6b09d3c1c9617ddc64b_3" [color="red" ];
+}

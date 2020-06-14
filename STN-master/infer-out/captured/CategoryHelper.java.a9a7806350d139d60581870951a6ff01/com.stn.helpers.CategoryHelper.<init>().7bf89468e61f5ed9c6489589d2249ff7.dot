@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.helpers.CategoryHelper.<init>().7bf89468e61f5ed9c6489589d2249ff7_1" [label="1: Start CategoryHelper.<init>()\nFormals:  this:com.stn.helpers.CategoryHelper*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.helpers.CategoryHelper.<init>().7bf89468e61f5ed9c6489589d2249ff7_1" -> "com.stn.helpers.CategoryHelper.<init>().7bf89468e61f5ed9c6489589d2249ff7_4" ;
+"com.stn.helpers.CategoryHelper.<init>().7bf89468e61f5ed9c6489589d2249ff7_2" [label="2: Exit CategoryHelper.<init>() \n  " color=yellow style=filled]
+	
+
+"com.stn.helpers.CategoryHelper.<init>().7bf89468e61f5ed9c6489589d2249ff7_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 11]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.<init>().7bf89468e61f5ed9c6489589d2249ff7_3" -> "com.stn.helpers.CategoryHelper.<init>().7bf89468e61f5ed9c6489589d2249ff7_2" ;
+"com.stn.helpers.CategoryHelper.<init>().7bf89468e61f5ed9c6489589d2249ff7_4" [label="4:  Call DBConnection.<init>() \n   n$0=*&this:com.stn.helpers.CategoryHelper* [line 11]\n  n$1=_fun_DBConnection.<init>()(n$0:com.stn.helpers.CategoryHelper*) [line 11]\n  NULLIFY(&this); [line 11]\n  EXIT_SCOPE(n$0,n$1,this); [line 11]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.<init>().7bf89468e61f5ed9c6489589d2249ff7_4" -> "com.stn.helpers.CategoryHelper.<init>().7bf89468e61f5ed9c6489589d2249ff7_5" ;
+	 "com.stn.helpers.CategoryHelper.<init>().7bf89468e61f5ed9c6489589d2249ff7_4" -> "com.stn.helpers.CategoryHelper.<init>().7bf89468e61f5ed9c6489589d2249ff7_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.<init>().7bf89468e61f5ed9c6489589d2249ff7_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 11]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.<init>().7bf89468e61f5ed9c6489589d2249ff7_5" -> "com.stn.helpers.CategoryHelper.<init>().7bf89468e61f5ed9c6489589d2249ff7_2" ;
+	 "com.stn.helpers.CategoryHelper.<init>().7bf89468e61f5ed9c6489589d2249ff7_5" -> "com.stn.helpers.CategoryHelper.<init>().7bf89468e61f5ed9c6489589d2249ff7_3" [color="red" ];
+}

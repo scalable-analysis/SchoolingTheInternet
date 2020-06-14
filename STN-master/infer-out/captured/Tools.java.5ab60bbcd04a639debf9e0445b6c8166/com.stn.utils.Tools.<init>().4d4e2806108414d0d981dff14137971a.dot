@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.utils.Tools.<init>().4d4e2806108414d0d981dff14137971a_1" [label="1: Start Tools.<init>()\nFormals:  this:com.stn.utils.Tools*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.utils.Tools.<init>().4d4e2806108414d0d981dff14137971a_1" -> "com.stn.utils.Tools.<init>().4d4e2806108414d0d981dff14137971a_4" ;
+"com.stn.utils.Tools.<init>().4d4e2806108414d0d981dff14137971a_2" [label="2: Exit Tools.<init>() \n  " color=yellow style=filled]
+	
+
+"com.stn.utils.Tools.<init>().4d4e2806108414d0d981dff14137971a_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 19]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.<init>().4d4e2806108414d0d981dff14137971a_3" -> "com.stn.utils.Tools.<init>().4d4e2806108414d0d981dff14137971a_2" ;
+"com.stn.utils.Tools.<init>().4d4e2806108414d0d981dff14137971a_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.stn.utils.Tools* [line 19]\n  n$1=_fun_Object.<init>()(n$0:com.stn.utils.Tools*) [line 19]\n  NULLIFY(&this); [line 19]\n  EXIT_SCOPE(n$0,n$1,this); [line 19]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.<init>().4d4e2806108414d0d981dff14137971a_4" -> "com.stn.utils.Tools.<init>().4d4e2806108414d0d981dff14137971a_5" ;
+	 "com.stn.utils.Tools.<init>().4d4e2806108414d0d981dff14137971a_4" -> "com.stn.utils.Tools.<init>().4d4e2806108414d0d981dff14137971a_3" [color="red" ];
+"com.stn.utils.Tools.<init>().4d4e2806108414d0d981dff14137971a_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 19]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.<init>().4d4e2806108414d0d981dff14137971a_5" -> "com.stn.utils.Tools.<init>().4d4e2806108414d0d981dff14137971a_2" ;
+	 "com.stn.utils.Tools.<init>().4d4e2806108414d0d981dff14137971a_5" -> "com.stn.utils.Tools.<init>().4d4e2806108414d0d981dff14137971a_3" [color="red" ];
+}

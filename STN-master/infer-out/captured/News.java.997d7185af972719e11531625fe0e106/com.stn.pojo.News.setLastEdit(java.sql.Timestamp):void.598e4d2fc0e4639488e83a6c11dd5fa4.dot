@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.News.setLastEdit(java.sql.Timestamp):void.598e4d2fc0e4639488e83a6c11dd5fa4_1" [label="1: Start void News.setLastEdit(Timestamp)\nFormals:  this:com.stn.pojo.News* lastEdit:java.sql.Timestamp*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.News.setLastEdit(java.sql.Timestamp):void.598e4d2fc0e4639488e83a6c11dd5fa4_1" -> "com.stn.pojo.News.setLastEdit(java.sql.Timestamp):void.598e4d2fc0e4639488e83a6c11dd5fa4_4" ;
+"com.stn.pojo.News.setLastEdit(java.sql.Timestamp):void.598e4d2fc0e4639488e83a6c11dd5fa4_2" [label="2: Exit void News.setLastEdit(Timestamp) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.News.setLastEdit(java.sql.Timestamp):void.598e4d2fc0e4639488e83a6c11dd5fa4_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 52]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setLastEdit(java.sql.Timestamp):void.598e4d2fc0e4639488e83a6c11dd5fa4_3" -> "com.stn.pojo.News.setLastEdit(java.sql.Timestamp):void.598e4d2fc0e4639488e83a6c11dd5fa4_2" ;
+"com.stn.pojo.News.setLastEdit(java.sql.Timestamp):void.598e4d2fc0e4639488e83a6c11dd5fa4_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.News* [line 51]\n  n$1=*&lastEdit:java.sql.Timestamp* [line 51]\n  *n$0.lastEdit:com.stn.pojo.News(root com.stn.pojo.News)=n$1 [line 51]\n  NULLIFY(&lastEdit); [line 51]\n  NULLIFY(&this); [line 51]\n  EXIT_SCOPE(n$0,n$1,lastEdit,this); [line 51]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setLastEdit(java.sql.Timestamp):void.598e4d2fc0e4639488e83a6c11dd5fa4_4" -> "com.stn.pojo.News.setLastEdit(java.sql.Timestamp):void.598e4d2fc0e4639488e83a6c11dd5fa4_5" ;
+	 "com.stn.pojo.News.setLastEdit(java.sql.Timestamp):void.598e4d2fc0e4639488e83a6c11dd5fa4_4" -> "com.stn.pojo.News.setLastEdit(java.sql.Timestamp):void.598e4d2fc0e4639488e83a6c11dd5fa4_3" [color="red" ];
+"com.stn.pojo.News.setLastEdit(java.sql.Timestamp):void.598e4d2fc0e4639488e83a6c11dd5fa4_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 52]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setLastEdit(java.sql.Timestamp):void.598e4d2fc0e4639488e83a6c11dd5fa4_5" -> "com.stn.pojo.News.setLastEdit(java.sql.Timestamp):void.598e4d2fc0e4639488e83a6c11dd5fa4_2" ;
+	 "com.stn.pojo.News.setLastEdit(java.sql.Timestamp):void.598e4d2fc0e4639488e83a6c11dd5fa4_5" -> "com.stn.pojo.News.setLastEdit(java.sql.Timestamp):void.598e4d2fc0e4639488e83a6c11dd5fa4_3" [color="red" ];
+}

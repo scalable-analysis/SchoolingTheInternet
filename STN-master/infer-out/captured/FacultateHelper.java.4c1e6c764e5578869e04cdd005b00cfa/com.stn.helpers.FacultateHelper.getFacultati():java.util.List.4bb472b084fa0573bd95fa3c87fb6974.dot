@@ -1,0 +1,205 @@
+/* @generated */
+digraph cfg {
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_1" [label="1: Start List FacultateHelper.getFacultati()\nFormals:  this:com.stn.helpers.FacultateHelper*\nLocals:  $bcvar2:void CatchVar153:void $irvar11:void $irvar10:void $irvar9:void $irvar8:void $irvar7:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void facultate:java.util.List* \n  " color=yellow style=filled]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_1" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_4" ;
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_2" [label="2: Exit List FacultateHelper.getFacultati() \n  " color=yellow style=filled]
+	
+
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" [label="3:  exceptions sink \n   NULLIFY(&facultate); [line 119]\n  NULLIFY(&$bcvar2); [line 119]\n  EXIT_SCOPE(facultate,$bcvar2); [line 119]\n  APPLY_ABSTRACTION; [line 119]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_2" ;
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_4" [label="4:  Call ArrayList.<init>() \n   n$0=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 99]\n  n$1=_fun_ArrayList.<init>()(n$0:java.util.ArrayList*) [line 99]\n  *&facultate:java.util.ArrayList*=n$0 [line 99]\n  EXIT_SCOPE(n$0,n$1); [line 99]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_4" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_5" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_4" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_5" [label="5:  method_body \n   n$2=*&this:com.stn.helpers.FacultateHelper* [line 101]\n  *n$2.query:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)=\"SELECT * FROM facultati\" [line 101]\n  EXIT_SCOPE(n$2); [line 101]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_5" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_6" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_5" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_6" [label="6:  Call Class Class.forName(String) \n   n$3=_fun_Class Class.forName(String)(\"com.mysql.jdbc.Driver\":java.lang.Object*) [line 105]\n  *&$irvar0:java.lang.Class*=n$3 [line 105]\n  NULLIFY(&$irvar0); [line 105]\n  EXIT_SCOPE(n$3,$irvar0); [line 105]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_6" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_7" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_6" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_40" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_7" [label="7:  Call String DBConnection.getHost() \n   n$4=*&this:com.stn.helpers.FacultateHelper* [line 106]\n  _=*n$4:com.stn.helpers.FacultateHelper*(root com.stn.helpers.FacultateHelper) [line 106]\n  n$6=_fun_String DBConnection.getHost()(n$4:com.stn.helpers.FacultateHelper*) virtual [line 106]\n  *&$irvar1:java.lang.String*=n$6 [line 106]\n  EXIT_SCOPE(_,n$4,n$6); [line 106]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_7" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_8" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_7" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_40" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_8" [label="8:  Call String DBConnection.getUser() \n   n$7=*&this:com.stn.helpers.FacultateHelper* [line 106]\n  _=*n$7:com.stn.helpers.FacultateHelper*(root com.stn.helpers.FacultateHelper) [line 106]\n  n$9=_fun_String DBConnection.getUser()(n$7:com.stn.helpers.FacultateHelper*) virtual [line 106]\n  *&$irvar2:java.lang.String*=n$9 [line 106]\n  EXIT_SCOPE(_,n$7,n$9); [line 106]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_8" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_9" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_8" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_40" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_9" [label="9:  Call String DBConnection.getPassword() \n   n$10=*&this:com.stn.helpers.FacultateHelper* [line 106]\n  _=*n$10:com.stn.helpers.FacultateHelper*(root com.stn.helpers.FacultateHelper) [line 106]\n  n$12=_fun_String DBConnection.getPassword()(n$10:com.stn.helpers.FacultateHelper*) virtual [line 106]\n  *&$irvar3:java.lang.String*=n$12 [line 106]\n  EXIT_SCOPE(_,n$10,n$12); [line 106]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_9" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_10" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_9" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_40" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_10" [label="10:  Call Connection DriverManager.getConnection(String,String,String) \n   n$13=*&$irvar1:java.lang.String* [line 106]\n  n$14=*&$irvar2:java.lang.String* [line 106]\n  n$15=*&$irvar3:java.lang.String* [line 106]\n  n$16=_fun_Connection DriverManager.getConnection(String,String,String)(n$13:java.lang.String*,n$14:java.lang.String*,n$15:java.lang.String*) [line 106]\n  *&$irvar4:java.sql.Connection*=n$16 [line 106]\n  NULLIFY(&$irvar3); [line 106]\n  NULLIFY(&$irvar1); [line 106]\n  NULLIFY(&$irvar2); [line 106]\n  EXIT_SCOPE(n$13,n$14,n$15,n$16,$irvar3,$irvar1,$irvar2); [line 106]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_10" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_11" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_10" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_40" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_11" [label="11:  method_body \n   n$17=*&this:com.stn.helpers.FacultateHelper* [line 106]\n  n$18=*&$irvar4:java.sql.Connection* [line 106]\n  *n$17.connection:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)=n$18 [line 106]\n  NULLIFY(&$irvar4); [line 106]\n  EXIT_SCOPE(n$17,n$18,$irvar4); [line 106]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_11" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_12" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_11" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_40" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_12" [label="12:  Call PreparedStatement Connection.prepareStatement(String) \n   n$19=*&this:com.stn.helpers.FacultateHelper* [line 107]\n  n$20=*n$19.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 107]\n  _=*n$20:java.sql.Connection*(root java.sql.Connection) [line 107]\n  n$22=*&this:com.stn.helpers.FacultateHelper* [line 107]\n  n$23=*n$22.query:java.lang.String*(root com.stn.helpers.FacultateHelper) [line 107]\n  n$24=_fun_PreparedStatement Connection.prepareStatement(String)(n$20:java.sql.Connection*,n$23:java.lang.String*) interface virtual [line 107]\n  *&$irvar5:java.sql.PreparedStatement*=n$24 [line 107]\n  EXIT_SCOPE(_,n$19,n$20,n$22,n$23,n$24); [line 107]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_12" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_13" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_12" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_40" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_13" [label="13:  method_body \n   n$25=*&this:com.stn.helpers.FacultateHelper* [line 107]\n  n$26=*&$irvar5:java.sql.PreparedStatement* [line 107]\n  *n$25.preparedStatement:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)=n$26 [line 107]\n  NULLIFY(&$irvar5); [line 107]\n  EXIT_SCOPE(n$25,n$26,$irvar5); [line 107]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_13" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_14" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_13" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_40" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_14" [label="14:  Call ResultSet PreparedStatement.executeQuery() \n   n$27=*&this:com.stn.helpers.FacultateHelper* [line 108]\n  n$28=*n$27.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 108]\n  _=*n$28:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 108]\n  n$30=_fun_ResultSet PreparedStatement.executeQuery()(n$28:java.sql.PreparedStatement*) interface virtual [line 108]\n  *&$irvar6:java.sql.ResultSet*=n$30 [line 108]\n  EXIT_SCOPE(_,n$27,n$28,n$30); [line 108]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_14" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_15" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_14" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_40" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_15" [label="15:  method_body \n   n$31=*&this:com.stn.helpers.FacultateHelper* [line 108]\n  n$32=*&$irvar6:java.sql.ResultSet* [line 108]\n  *n$31.resultSet:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)=n$32 [line 108]\n  NULLIFY(&$irvar6); [line 108]\n  EXIT_SCOPE(n$31,n$32,$irvar6); [line 108]\n  APPLY_ABSTRACTION; [line 108]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_15" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_16" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_15" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_40" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_16" [label="16:  Call boolean ResultSet.next() \n   n$33=*&this:com.stn.helpers.FacultateHelper* [line 109]\n  n$34=*n$33.resultSet:java.sql.ResultSet*(root com.stn.helpers.FacultateHelper) [line 109]\n  _=*n$34:java.sql.ResultSet*(root java.sql.ResultSet) [line 109]\n  n$36=_fun_boolean ResultSet.next()(n$34:java.sql.ResultSet*) interface virtual [line 109]\n  *&$irvar7:_Bool=n$36 [line 109]\n  EXIT_SCOPE(_,n$33,n$34,n$36); [line 109]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_16" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_19" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_16" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_40" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_17" [label="17: Prune (true branch, if) \n   n$37=*&$irvar7:_Bool [line 109]\n  PRUNE(!(n$37 == 0), true); [line 109]\n  NULLIFY(&$irvar7); [line 109]\n  EXIT_SCOPE(n$37,$irvar7); [line 109]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_17" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_20" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_17" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_40" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_18" [label="18: Prune (false branch, if) \n   n$37=*&$irvar7:_Bool [line 109]\n  PRUNE((n$37 == 0), false); [line 109]\n  NULLIFY(&$irvar7); [line 109]\n  EXIT_SCOPE(n$37,$irvar7); [line 109]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_18" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_24" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_18" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_25" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_18" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_40" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_19" [label="19: + \n  " ]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_19" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_17" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_19" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_18" ;
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_20" [label="20:  Call int ResultSet.getInt(int) \n   n$38=*&this:com.stn.helpers.FacultateHelper* [line 110]\n  n$39=*n$38.resultSet:java.sql.ResultSet*(root com.stn.helpers.FacultateHelper) [line 110]\n  _=*n$39:java.sql.ResultSet*(root java.sql.ResultSet) [line 110]\n  n$41=_fun_int ResultSet.getInt(int)(n$39:java.sql.ResultSet*,1:int) interface virtual [line 110]\n  *&$irvar8:int=n$41 [line 110]\n  EXIT_SCOPE(_,n$38,n$39,n$41); [line 110]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_20" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_21" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_20" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_40" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_21" [label="21:  Call String ResultSet.getString(int) \n   n$42=*&this:com.stn.helpers.FacultateHelper* [line 110]\n  n$43=*n$42.resultSet:java.sql.ResultSet*(root com.stn.helpers.FacultateHelper) [line 110]\n  _=*n$43:java.sql.ResultSet*(root java.sql.ResultSet) [line 110]\n  n$45=_fun_String ResultSet.getString(int)(n$43:java.sql.ResultSet*,2:int) interface virtual [line 110]\n  *&$irvar9:java.lang.String*=n$45 [line 110]\n  EXIT_SCOPE(_,n$42,n$43,n$45); [line 110]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_21" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_22" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_21" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_40" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_22" [label="22:  Call Facultate.<init>(int,String) \n   n$46=_fun___new(sizeof(t=com.stn.pojo.Facultate):com.stn.pojo.Facultate*) [line 110]\n  n$47=*&$irvar8:int [line 110]\n  n$48=*&$irvar9:java.lang.String* [line 110]\n  n$49=_fun_Facultate.<init>(int,String)(n$46:com.stn.pojo.Facultate*,n$47:int,n$48:java.lang.String*) [line 110]\n  *&$irvar10:com.stn.pojo.Facultate*=n$46 [line 110]\n  NULLIFY(&$irvar9); [line 110]\n  NULLIFY(&$irvar8); [line 110]\n  EXIT_SCOPE(n$46,n$47,n$48,n$49,$irvar9,$irvar8); [line 110]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_22" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_23" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_22" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_40" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_23" [label="23:  Call boolean ArrayList.add(Object) \n   n$50=*&facultate:java.util.ArrayList* [line 110]\n  _=*n$50:java.util.ArrayList*(root java.util.ArrayList) [line 110]\n  n$52=*&$irvar10:com.stn.pojo.Facultate* [line 110]\n  n$53=_fun_boolean ArrayList.add(Object)(n$50:java.util.ArrayList*,n$52:com.stn.pojo.Facultate*) interface virtual [line 110]\n  *&$irvar11:_Bool=n$53 [line 110]\n  NULLIFY(&$irvar11); [line 110]\n  NULLIFY(&$irvar10); [line 110]\n  EXIT_SCOPE(_,n$50,n$52,n$53,$irvar11,$irvar10); [line 110]\n  APPLY_ABSTRACTION; [line 110]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_23" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_16" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_23" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_40" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_24" [label="24: Prune (true branch, if) \n   n$54=*&this:com.stn.helpers.FacultateHelper* [line 113]\n  n$55=*n$54.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 113]\n  PRUNE(!(n$55 == null), true); [line 113]\n  EXIT_SCOPE(n$54,n$55); [line 113]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_24" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_26" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_24" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_25" [label="25: Prune (false branch, if) \n   n$54=*&this:com.stn.helpers.FacultateHelper* [line 113]\n  n$55=*n$54.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 113]\n  PRUNE((n$55 == null), false); [line 113]\n  EXIT_SCOPE(n$54,n$55); [line 113]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_25" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_27" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_25" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_28" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_25" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_26" [label="26:  Call void PreparedStatement.close() \n   n$56=*&this:com.stn.helpers.FacultateHelper* [line 114]\n  n$57=*n$56.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 114]\n  n$60=_fun___set_mem_attribute(n$57:java.sql.PreparedStatement*) [line 114]\n  _=*n$57:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 114]\n  n$59=_fun_void PreparedStatement.close()(n$57:java.sql.PreparedStatement*) interface virtual [line 114]\n  EXIT_SCOPE(_,n$56,n$57,n$59,n$60); [line 114]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_26" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_27" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_26" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_28" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_26" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_27" [label="27: Prune (true branch, if) \n   n$61=*&this:com.stn.helpers.FacultateHelper* [line 115]\n  n$62=*n$61.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 115]\n  PRUNE(!(n$62 == null), true); [line 115]\n  EXIT_SCOPE(n$61,n$62); [line 115]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_27" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_29" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_27" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_28" [label="28: Prune (false branch, if) \n   n$61=*&this:com.stn.helpers.FacultateHelper* [line 115]\n  n$62=*n$61.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 115]\n  PRUNE((n$62 == null), false); [line 115]\n  NULLIFY(&this); [line 115]\n  EXIT_SCOPE(n$61,n$62,this); [line 115]\n  APPLY_ABSTRACTION; [line 115]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_28" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_38" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_28" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_29" [label="29:  Call void Connection.close() \n   n$63=*&this:com.stn.helpers.FacultateHelper* [line 116]\n  n$64=*n$63.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 116]\n  n$67=_fun___set_mem_attribute(n$64:java.sql.Connection*) [line 116]\n  _=*n$64:java.sql.Connection*(root java.sql.Connection) [line 116]\n  n$66=_fun_void Connection.close()(n$64:java.sql.Connection*) interface virtual [line 116]\n  NULLIFY(&this); [line 116]\n  EXIT_SCOPE(_,n$63,n$64,n$66,n$67,this); [line 116]\n  APPLY_ABSTRACTION; [line 116]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_29" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_38" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_29" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_30" [label="30:  method_body \n   n$68=*&CatchVar153:java.lang.Object* [line 113]\n  *&$bcvar2:java.lang.Object*=n$68 [line 113]\n  NULLIFY(&CatchVar153); [line 113]\n  EXIT_SCOPE(n$68,CatchVar153); [line 113]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_30" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_31" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_30" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_32" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_30" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_31" [label="31: Prune (true branch, if) \n   n$69=*&this:com.stn.helpers.FacultateHelper* [line 113]\n  n$70=*n$69.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 113]\n  PRUNE(!(n$70 == null), true); [line 113]\n  EXIT_SCOPE(n$69,n$70); [line 113]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_31" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_33" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_31" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_32" [label="32: Prune (false branch, if) \n   n$69=*&this:com.stn.helpers.FacultateHelper* [line 113]\n  n$70=*n$69.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 113]\n  PRUNE((n$70 == null), false); [line 113]\n  EXIT_SCOPE(n$69,n$70); [line 113]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_32" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_34" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_32" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_35" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_32" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_33" [label="33:  Call void PreparedStatement.close() \n   n$71=*&this:com.stn.helpers.FacultateHelper* [line 114]\n  n$72=*n$71.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 114]\n  n$75=_fun___set_mem_attribute(n$72:java.sql.PreparedStatement*) [line 114]\n  _=*n$72:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 114]\n  n$74=_fun_void PreparedStatement.close()(n$72:java.sql.PreparedStatement*) interface virtual [line 114]\n  EXIT_SCOPE(_,n$71,n$72,n$74,n$75); [line 114]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_33" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_34" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_33" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_35" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_33" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_34" [label="34: Prune (true branch, if) \n   n$76=*&this:com.stn.helpers.FacultateHelper* [line 115]\n  n$77=*n$76.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 115]\n  PRUNE(!(n$77 == null), true); [line 115]\n  EXIT_SCOPE(n$76,n$77); [line 115]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_34" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_36" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_34" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_35" [label="35: Prune (false branch, if) \n   n$76=*&this:com.stn.helpers.FacultateHelper* [line 115]\n  n$77=*n$76.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 115]\n  PRUNE((n$77 == null), false); [line 115]\n  NULLIFY(&this); [line 115]\n  EXIT_SCOPE(n$76,n$77,this); [line 115]\n  APPLY_ABSTRACTION; [line 115]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_35" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_37" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_35" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_36" [label="36:  Call void Connection.close() \n   n$78=*&this:com.stn.helpers.FacultateHelper* [line 116]\n  n$79=*n$78.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 116]\n  n$82=_fun___set_mem_attribute(n$79:java.sql.Connection*) [line 116]\n  _=*n$79:java.sql.Connection*(root java.sql.Connection) [line 116]\n  n$81=_fun_void Connection.close()(n$79:java.sql.Connection*) interface virtual [line 116]\n  NULLIFY(&this); [line 116]\n  EXIT_SCOPE(_,n$78,n$79,n$81,n$82,this); [line 116]\n  APPLY_ABSTRACTION; [line 116]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_36" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_37" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_36" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_37" [label="37:  throw \n   n$83=*&$bcvar2:java.lang.Object* [line 117]\n  *&return:java.util.List*=EXN n$83 [line 117]\n  NULLIFY(&$bcvar2); [line 117]\n  EXIT_SCOPE(n$83,$bcvar2); [line 117]\n  APPLY_ABSTRACTION; [line 117]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_37" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_2" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_37" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_38" [label="38:  method_body \n   n$84=*&facultate:java.util.ArrayList* [line 119]\n  *&return:java.util.List*=n$84 [line 119]\n  NULLIFY(&facultate); [line 119]\n  EXIT_SCOPE(n$84,facultate); [line 119]\n  APPLY_ABSTRACTION; [line 119]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_38" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_2" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_38" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_39" [label="39:  Finally branch \n  " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_39" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_30" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_39" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_40" [label="40:  exception handler \n   n$85=*&return:java.util.List* [line 113]\n  *&return:java.util.List*=null [line 113]\n  n$86=_fun___unwrap_exception(n$85:java.util.List*) [line 113]\n  NULLIFY(&$irvar3); [line 113]\n  NULLIFY(&$irvar9); [line 113]\n  NULLIFY(&facultate); [line 113]\n  NULLIFY(&$irvar5); [line 113]\n  NULLIFY(&$irvar4); [line 113]\n  NULLIFY(&$irvar7); [line 113]\n  NULLIFY(&$irvar6); [line 113]\n  NULLIFY(&$irvar10); [line 113]\n  NULLIFY(&$irvar8); [line 113]\n  NULLIFY(&$irvar1); [line 113]\n  NULLIFY(&$irvar2); [line 113]\n  EXIT_SCOPE(n$85,n$86,$irvar3,$irvar9,facultate,$irvar5,$irvar4,$irvar7,$irvar6,$irvar10,$irvar8,$irvar1,$irvar2); [line 113]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_40" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_39" ;
+	 "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_40" -> "com.stn.helpers.FacultateHelper.getFacultati():java.util.List.4bb472b084fa0573bd95fa3c87fb6974_3" [color="red" ];
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>File src/main/java/com/stn/servlets/LogoutProcess.java </h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.stn.servlets; </td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import com.stn.helpers.UserHelper; </td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line">import javax.servlet.ServletException; </td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import javax.servlet.annotation.WebServlet; </td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import javax.servlet.http.*; </td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">import java.io.IOException; </td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line">@WebServlet(&quot;/LogoutProcess&quot;) </td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">public class LogoutProcess extends HttpServlet { <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.<init>%28%29.da5b362349f930fd671290372768045b_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.<init>%28%29.da5b362349f930fd671290372768045b_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.servlets.LogoutProcess* [line 11];
+n$1=_fun_HttpServlet.&lt;init&gt;()(n$0:com.stn.servlets.LogoutProcess*) [line 11];
+</span></span></a> <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.<init>%28%29.da5b362349f930fd671290372768045b_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.<init>%28%29.da5b362349f930fd671290372768045b_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.<init>%28%29.da5b362349f930fd671290372768045b_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/com.stn.servlets.LogoutProcess.<init>%28%29.da5b362349f930fd671290372768045b.html">summary for LogoutProcess.&lt;init&gt;()</a></td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line">    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b.html">summary for void LogoutProcess.doGet(HttpServletRequest,HttpServletResponse)</a></td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line">        UserHelper userHelper = new UserHelper(); <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=com.stn.helpers.UserHelper):com.stn.helpers.UserHelper*) [line 15];
+n$1=_fun_UserHelper.&lt;init&gt;()(n$0:com.stn.helpers.UserHelper*) [line 15];
+*&amp;userHelper:com.stn.helpers.UserHelper*=n$0 [line 15];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line">        String url = &quot;index.jsp&quot;; <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;url:java.lang.Object*="index.jsp" [line 17];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line">        HttpSession session = request.getSession(); <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$2=*&amp;request:javax.servlet.http.HttpServletRequest* [line 19];
+_=*n$2:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 19];
+n$4=_fun_HttpSession HttpServletRequest.getSession()(n$2:javax.servlet.http.HttpServletRequest*) interface virtual [line 19];
+*&amp;session:javax.servlet.http.HttpSession*=n$4 [line 19];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line">        if(session.getAttribute(&quot;userId&quot;) != null) <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 9 exn:3 Instructions
+n$5=*&amp;session:javax.servlet.http.HttpSession* [line 20];
+_=*n$5:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 20];
+n$7=_fun_Object HttpSession.getAttribute(String)(n$5:javax.servlet.http.HttpSession*,"userId":java.lang.Object*) interface virtual [line 20];
+*&amp;$irvar0:java.lang.Object*=n$7 [line 20];
+</span></span></a> <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node8.html"><span class='visited with_tooltip'>C_8<span class='tooltip'>node8 preds:7 succs:10 exn:3 Conditional method_body
+n$8=*&amp;$irvar0:java.lang.Object* [line 20];
+PRUNE(!(n$8 == null), true); [line 20];
+</span></span></a> <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node9.html"><span class='visited with_tooltip'>C_9<span class='tooltip'>node9 preds:7 succs:25 exn:3 Conditional method_body
+n$8=*&amp;$irvar0:java.lang.Object* [line 20];
+PRUNE((n$8 == null), false); [line 20];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line">        { </td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line">            for (Cookie cookie : request.getCookies()) { <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:8 succs:11 exn:3 Instructions
+n$9=*&amp;request:javax.servlet.http.HttpServletRequest* [line 22];
+_=*n$9:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 22];
+n$11=_fun_Cookie[] HttpServletRequest.getCookies()(n$9:javax.servlet.http.HttpServletRequest*) interface virtual [line 22];
+*&amp;$bcvar6:javax.servlet.http.Cookie*[_*_](*)=n$11 [line 22];
+</span></span></a> <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$12=*&amp;$bcvar6:javax.servlet.http.Cookie*[_*_](*) [line 22];
+_=*n$12:int(root javax.servlet.http.Cookie*[_*_]) [line 22];
+n$14=_fun___get_array_length(n$12:javax.servlet.http.Cookie*[_*_](*)) [line 22];
+*&amp;$bcvar7:int=n$14 [line 22];
+</span></span></a> <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:15 exn:3 Instructions
+*&amp;$bcvar8:int=0 [line 22];
+</span></span></a> <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node15.html"><span class='visited with_tooltip'>J_15<span class='tooltip'>node15 preds:20 12 succs:13 14 exn: Join
+</span></span></a> <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node13.html"><span class='visited with_tooltip'>C_13<span class='tooltip'>node13 preds:15 succs:16 exn:3 Conditional method_body
+n$15=*&amp;$bcvar8:int [line 22];
+n$16=*&amp;$bcvar7:int [line 22];
+PRUNE(!(n$15  &gt;=  n$16), true); [line 22];
+</span></span></a> <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:13 succs:17 exn:3 Instructions
+n$17=*&amp;$bcvar6:javax.servlet.http.Cookie*[_*_](*) [line 22];
+_=*n$17:javax.servlet.http.Cookie*(root javax.servlet.http.Cookie*[_*_]) [line 22];
+n$18=*&amp;$bcvar8:int [line 22];
+n$20=*n$17[n$18]:javax.servlet.http.Cookie* [line 22];
+*&amp;cookie:javax.servlet.http.Cookie*=n$20 [line 22];
+</span></span></a> <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:15 exn:3 Instructions
+n$31=*&amp;$bcvar8:int [line 22];
+*&amp;$bcvar8:int=(n$31 + 1) [line 22];
+</span></span></a> <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node14.html"><span class='visited with_tooltip'>C_14<span class='tooltip'>node14 preds:15 succs:21 exn:3 Conditional method_body
+n$15=*&amp;$bcvar8:int [line 22];
+n$16=*&amp;$bcvar7:int [line 22];
+PRUNE((n$15  &gt;=  n$16), false); [line 22];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">                cookie.setValue(&quot;&quot;); <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:3 Instructions
+n$21=*&amp;cookie:javax.servlet.http.Cookie* [line 23];
+_=*n$21:javax.servlet.http.Cookie*(root javax.servlet.http.Cookie) [line 23];
+n$23=_fun_void Cookie.setValue(String)(n$21:javax.servlet.http.Cookie*,"":java.lang.Object*) virtual [line 23];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line">                cookie.setMaxAge(0); <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:3 Instructions
+n$24=*&amp;cookie:javax.servlet.http.Cookie* [line 24];
+_=*n$24:javax.servlet.http.Cookie*(root javax.servlet.http.Cookie) [line 24];
+n$26=_fun_void Cookie.setMaxAge(int)(n$24:javax.servlet.http.Cookie*,0:int) virtual [line 24];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line">                response.addCookie(cookie); <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:3 Instructions
+n$27=*&amp;response:javax.servlet.http.HttpServletResponse* [line 25];
+_=*n$27:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 25];
+n$29=*&amp;cookie:javax.servlet.http.Cookie* [line 25];
+n$30=_fun_void HttpServletResponse.addCookie(Cookie)(n$27:javax.servlet.http.HttpServletResponse*,n$29:javax.servlet.http.Cookie*) interface virtual [line 25];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line">            } </td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">            userHelper.deleteToken((int)session.getAttribute(&quot;userId&quot;)); <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:14 succs:22 exn:3 Instructions
+n$32=*&amp;session:javax.servlet.http.HttpSession* [line 28];
+_=*n$32:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 28];
+n$34=_fun_Object HttpSession.getAttribute(String)(n$32:javax.servlet.http.HttpSession*,"userId":java.lang.Object*) interface virtual [line 28];
+*&amp;$irvar1:java.lang.Object*=n$34 [line 28];
+</span></span></a> <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:3 Instructions
+n$35=*&amp;$irvar1:java.lang.Object* [line 28];
+n$36=_fun___cast(n$35:java.lang.Object*,sizeof(t=java.lang.Integer;sub_t=( sub )(cast)):void) [line 28];
+_=*n$36:java.lang.Integer*(root java.lang.Integer) [line 28];
+n$38=_fun_int Integer.intValue()(n$36:java.lang.Integer*) virtual [line 28];
+*&amp;$irvar2:int=n$38 [line 28];
+</span></span></a> <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:3 Instructions
+n$39=*&amp;userHelper:com.stn.helpers.UserHelper* [line 28];
+_=*n$39:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 28];
+n$41=*&amp;$irvar2:int [line 28];
+n$42=_fun_void UserHelper.deleteToken(int)(n$39:com.stn.helpers.UserHelper*,n$41:int) virtual [line 28];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">            session.invalidate(); <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:3 Instructions
+n$43=*&amp;session:javax.servlet.http.HttpSession* [line 29];
+_=*n$43:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 29];
+n$45=_fun_void HttpSession.invalidate()(n$43:javax.servlet.http.HttpSession*) interface virtual [line 29];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line">        response.sendRedirect(url); <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 9 succs:26 exn:3 Instructions
+n$46=*&amp;response:javax.servlet.http.HttpServletResponse* [line 32];
+_=*n$46:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 32];
+n$48=*&amp;url:java.lang.Object* [line 32];
+n$49=_fun_void HttpServletResponse.sendRedirect(String)(n$46:javax.servlet.http.HttpServletResponse*,n$48:java.lang.Object*) interface virtual [line 32];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line">    } <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:2 exn:3 Instructions
+</span></span></a> <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:26 3 succs: exn: Exit
+</span></span></a> <a href="./LogoutProcess.java.2dcc9028d1cfafab67b7ef1f75fd7767/nodes/com.stn.servlets.LogoutProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.0eb295cbc070e0944fd516949bfe841b_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">} </td></tr>
+</table>
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+</body>
+</html>

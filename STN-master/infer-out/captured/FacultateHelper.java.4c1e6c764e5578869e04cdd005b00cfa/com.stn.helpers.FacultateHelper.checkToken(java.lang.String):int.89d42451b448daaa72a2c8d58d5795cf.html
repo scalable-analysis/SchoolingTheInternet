@@ -1,0 +1,315 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.FacultateHelper.checkToken(java.lang.String):int.89d42451b448daaa72a2c8d58d5795cf</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../FacultateHelper.java.4c1e6c764e5578869e04cdd005b00cfa.html#LINE225">int FacultateHelper.checkToken(String)</a></h1></center>
+<a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:35 34 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$bcvar3); [line 246];
+NULLIFY(&amp;id); [line 246];
+EXIT_SCOPE($bcvar3,id); [line 246];
+APPLY_ABSTRACTION; [line 246];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;id:int=-1 [line 226];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$0=*&amp;this:com.stn.helpers.FacultateHelper* [line 228];
+*n$0.query:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)="SELECT IdGrupa FROM grupe WHERE token = ?" [line 228];
+EXIT_SCOPE(n$0); [line 228];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:37 Instructions
+n$1=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 231];
+*&amp;$irvar0:java.lang.Class*=n$1 [line 231];
+NULLIFY(&amp;$irvar0); [line 231];
+EXIT_SCOPE(n$1,$irvar0); [line 231];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:37 Instructions
+n$2=*&amp;this:com.stn.helpers.FacultateHelper* [line 232];
+_=*n$2:com.stn.helpers.FacultateHelper*(root com.stn.helpers.FacultateHelper) [line 232];
+n$4=_fun_String DBConnection.getHost()(n$2:com.stn.helpers.FacultateHelper*) virtual [line 232];
+*&amp;$irvar1:java.lang.String*=n$4 [line 232];
+EXIT_SCOPE(_,n$2,n$4); [line 232];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:37 Instructions
+n$5=*&amp;this:com.stn.helpers.FacultateHelper* [line 232];
+_=*n$5:com.stn.helpers.FacultateHelper*(root com.stn.helpers.FacultateHelper) [line 232];
+n$7=_fun_String DBConnection.getUser()(n$5:com.stn.helpers.FacultateHelper*) virtual [line 232];
+*&amp;$irvar2:java.lang.String*=n$7 [line 232];
+EXIT_SCOPE(_,n$5,n$7); [line 232];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:37 Instructions
+n$8=*&amp;this:com.stn.helpers.FacultateHelper* [line 232];
+_=*n$8:com.stn.helpers.FacultateHelper*(root com.stn.helpers.FacultateHelper) [line 232];
+n$10=_fun_String DBConnection.getPassword()(n$8:com.stn.helpers.FacultateHelper*) virtual [line 232];
+*&amp;$irvar3:java.lang.String*=n$10 [line 232];
+EXIT_SCOPE(_,n$8,n$10); [line 232];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:37 Instructions
+n$11=*&amp;$irvar1:java.lang.String* [line 232];
+n$12=*&amp;$irvar2:java.lang.String* [line 232];
+n$13=*&amp;$irvar3:java.lang.String* [line 232];
+n$14=_fun_Connection DriverManager.getConnection(String,String,String)(n$11:java.lang.String*,n$12:java.lang.String*,n$13:java.lang.String*) [line 232];
+*&amp;$irvar4:java.sql.Connection*=n$14 [line 232];
+NULLIFY(&amp;$irvar3); [line 232];
+NULLIFY(&amp;$irvar1); [line 232];
+NULLIFY(&amp;$irvar2); [line 232];
+EXIT_SCOPE(n$11,n$12,n$13,n$14,$irvar3,$irvar1,$irvar2); [line 232];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:37 Instructions
+n$15=*&amp;this:com.stn.helpers.FacultateHelper* [line 232];
+n$16=*&amp;$irvar4:java.sql.Connection* [line 232];
+*n$15.connection:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)=n$16 [line 232];
+NULLIFY(&amp;$irvar4); [line 232];
+EXIT_SCOPE(n$15,n$16,$irvar4); [line 232];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:37 Instructions
+n$17=*&amp;this:com.stn.helpers.FacultateHelper* [line 233];
+n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 233];
+_=*n$18:java.sql.Connection*(root java.sql.Connection) [line 233];
+n$20=*&amp;this:com.stn.helpers.FacultateHelper* [line 233];
+n$21=*n$20.query:java.lang.String*(root com.stn.helpers.FacultateHelper) [line 233];
+n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 233];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 233];
+EXIT_SCOPE(_,n$17,n$18,n$20,n$21,n$22); [line 233];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:37 Instructions
+n$23=*&amp;this:com.stn.helpers.FacultateHelper* [line 233];
+n$24=*&amp;$irvar5:java.sql.PreparedStatement* [line 233];
+*n$23.preparedStatement:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)=n$24 [line 233];
+NULLIFY(&amp;$irvar5); [line 233];
+EXIT_SCOPE(n$23,n$24,$irvar5); [line 233];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:37 Instructions
+n$25=*&amp;this:com.stn.helpers.FacultateHelper* [line 234];
+n$26=*n$25.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 234];
+_=*n$26:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 234];
+n$28=*&amp;token:java.lang.String* [line 234];
+n$29=_fun_void PreparedStatement.setString(int,String)(n$26:java.sql.PreparedStatement*,1:int,n$28:java.lang.String*) interface virtual [line 234];
+NULLIFY(&amp;token); [line 234];
+EXIT_SCOPE(_,n$25,n$26,n$28,n$29,token); [line 234];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:37 Instructions
+n$30=*&amp;this:com.stn.helpers.FacultateHelper* [line 235];
+n$31=*n$30.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 235];
+_=*n$31:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 235];
+n$33=_fun_ResultSet PreparedStatement.executeQuery()(n$31:java.sql.PreparedStatement*) interface virtual [line 235];
+*&amp;$irvar6:java.sql.ResultSet*=n$33 [line 235];
+EXIT_SCOPE(_,n$30,n$31,n$33); [line 235];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:37 Instructions
+n$34=*&amp;this:com.stn.helpers.FacultateHelper* [line 235];
+n$35=*&amp;$irvar6:java.sql.ResultSet* [line 235];
+*n$34.resultSet:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)=n$35 [line 235];
+NULLIFY(&amp;$irvar6); [line 235];
+EXIT_SCOPE(n$34,n$35,$irvar6); [line 235];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 19 exn:37 Instructions
+n$36=*&amp;this:com.stn.helpers.FacultateHelper* [line 236];
+n$37=*n$36.resultSet:java.sql.ResultSet*(root com.stn.helpers.FacultateHelper) [line 236];
+_=*n$37:java.sql.ResultSet*(root java.sql.ResultSet) [line 236];
+n$39=_fun_boolean ResultSet.next()(n$37:java.sql.ResultSet*) interface virtual [line 236];
+*&amp;$irvar7:_Bool=n$39 [line 236];
+EXIT_SCOPE(_,n$36,n$37,n$39); [line 236];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:17 succs:20 exn:37 Conditional method_body
+n$40=*&amp;$irvar7:_Bool [line 236];
+PRUNE(!(n$40 == 0), true); [line 236];
+NULLIFY(&amp;$irvar7); [line 236];
+NULLIFY(&amp;id); [line 236];
+EXIT_SCOPE(n$40,$irvar7,id); [line 236];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node19.html"><span class='visited with_tooltip'>C_19<span class='tooltip'>node19 preds:17 succs:21 22 exn:37 Conditional method_body
+n$40=*&amp;$irvar7:_Bool [line 236];
+PRUNE((n$40 == 0), false); [line 236];
+NULLIFY(&amp;$irvar7); [line 236];
+EXIT_SCOPE(n$40,$irvar7); [line 236];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:18 succs:21 22 exn:37 Instructions
+n$41=*&amp;this:com.stn.helpers.FacultateHelper* [line 237];
+n$42=*n$41.resultSet:java.sql.ResultSet*(root com.stn.helpers.FacultateHelper) [line 237];
+_=*n$42:java.sql.ResultSet*(root java.sql.ResultSet) [line 237];
+n$44=_fun_int ResultSet.getInt(int)(n$42:java.sql.ResultSet*,1:int) interface virtual [line 237];
+*&amp;id:int=n$44 [line 237];
+EXIT_SCOPE(_,n$41,n$42,n$44); [line 237];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node21.html"><span class='visited with_tooltip'>C_21<span class='tooltip'>node21 preds:20 19 succs:23 exn:3 Conditional method_body
+n$45=*&amp;this:com.stn.helpers.FacultateHelper* [line 240];
+n$46=*n$45.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 240];
+PRUNE(!(n$46 == null), true); [line 240];
+EXIT_SCOPE(n$45,n$46); [line 240];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node22.html"><span class='visited with_tooltip'>C_22<span class='tooltip'>node22 preds:20 19 succs:24 25 exn:3 Conditional method_body
+n$45=*&amp;this:com.stn.helpers.FacultateHelper* [line 240];
+n$46=*n$45.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 240];
+PRUNE((n$46 == null), false); [line 240];
+EXIT_SCOPE(n$45,n$46); [line 240];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:21 succs:24 25 exn:3 Instructions
+n$47=*&amp;this:com.stn.helpers.FacultateHelper* [line 241];
+n$48=*n$47.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 241];
+n$51=_fun___set_mem_attribute(n$48:java.sql.PreparedStatement*) [line 241];
+_=*n$48:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 241];
+n$50=_fun_void PreparedStatement.close()(n$48:java.sql.PreparedStatement*) interface virtual [line 241];
+EXIT_SCOPE(_,n$47,n$48,n$50,n$51); [line 241];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node24.html"><span class='visited with_tooltip'>C_24<span class='tooltip'>node24 preds:23 22 succs:26 exn:3 Conditional method_body
+n$52=*&amp;this:com.stn.helpers.FacultateHelper* [line 242];
+n$53=*n$52.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 242];
+PRUNE(!(n$53 == null), true); [line 242];
+EXIT_SCOPE(n$52,n$53); [line 242];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node25.html"><span class='visited with_tooltip'>C_25<span class='tooltip'>node25 preds:23 22 succs:35 exn:3 Conditional method_body
+n$52=*&amp;this:com.stn.helpers.FacultateHelper* [line 242];
+n$53=*n$52.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 242];
+PRUNE((n$53 == null), false); [line 242];
+NULLIFY(&amp;this); [line 242];
+EXIT_SCOPE(n$52,n$53,this); [line 242];
+APPLY_ABSTRACTION; [line 242];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:24 succs:35 exn:3 Instructions
+n$54=*&amp;this:com.stn.helpers.FacultateHelper* [line 243];
+n$55=*n$54.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 243];
+n$58=_fun___set_mem_attribute(n$55:java.sql.Connection*) [line 243];
+_=*n$55:java.sql.Connection*(root java.sql.Connection) [line 243];
+n$57=_fun_void Connection.close()(n$55:java.sql.Connection*) interface virtual [line 243];
+NULLIFY(&amp;this); [line 243];
+EXIT_SCOPE(_,n$54,n$55,n$57,n$58,this); [line 243];
+APPLY_ABSTRACTION; [line 243];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:36 succs:28 29 exn:3 Instructions
+n$59=*&amp;CatchVar132:java.lang.Object* [line 240];
+*&amp;$bcvar3:java.lang.Object*=n$59 [line 240];
+NULLIFY(&amp;CatchVar132); [line 240];
+EXIT_SCOPE(n$59,CatchVar132); [line 240];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node28.html"><span class='visited with_tooltip'>C_28<span class='tooltip'>node28 preds:27 succs:30 exn:3 Conditional method_body
+n$60=*&amp;this:com.stn.helpers.FacultateHelper* [line 240];
+n$61=*n$60.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 240];
+PRUNE(!(n$61 == null), true); [line 240];
+EXIT_SCOPE(n$60,n$61); [line 240];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node29.html"><span class='visited with_tooltip'>C_29<span class='tooltip'>node29 preds:27 succs:31 32 exn:3 Conditional method_body
+n$60=*&amp;this:com.stn.helpers.FacultateHelper* [line 240];
+n$61=*n$60.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 240];
+PRUNE((n$61 == null), false); [line 240];
+EXIT_SCOPE(n$60,n$61); [line 240];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:28 succs:31 32 exn:3 Instructions
+n$62=*&amp;this:com.stn.helpers.FacultateHelper* [line 241];
+n$63=*n$62.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 241];
+n$66=_fun___set_mem_attribute(n$63:java.sql.PreparedStatement*) [line 241];
+_=*n$63:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 241];
+n$65=_fun_void PreparedStatement.close()(n$63:java.sql.PreparedStatement*) interface virtual [line 241];
+EXIT_SCOPE(_,n$62,n$63,n$65,n$66); [line 241];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node31.html"><span class='visited with_tooltip'>C_31<span class='tooltip'>node31 preds:30 29 succs:33 exn:3 Conditional method_body
+n$67=*&amp;this:com.stn.helpers.FacultateHelper* [line 242];
+n$68=*n$67.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 242];
+PRUNE(!(n$68 == null), true); [line 242];
+EXIT_SCOPE(n$67,n$68); [line 242];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:30 29 succs:34 exn:3 Conditional method_body
+n$67=*&amp;this:com.stn.helpers.FacultateHelper* [line 242];
+n$68=*n$67.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 242];
+PRUNE((n$68 == null), false); [line 242];
+NULLIFY(&amp;this); [line 242];
+EXIT_SCOPE(n$67,n$68,this); [line 242];
+APPLY_ABSTRACTION; [line 242];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:31 succs:34 exn:3 Instructions
+n$69=*&amp;this:com.stn.helpers.FacultateHelper* [line 243];
+n$70=*n$69.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 243];
+n$73=_fun___set_mem_attribute(n$70:java.sql.Connection*) [line 243];
+_=*n$70:java.sql.Connection*(root java.sql.Connection) [line 243];
+n$72=_fun_void Connection.close()(n$70:java.sql.Connection*) interface virtual [line 243];
+NULLIFY(&amp;this); [line 243];
+EXIT_SCOPE(_,n$69,n$70,n$72,n$73,this); [line 243];
+APPLY_ABSTRACTION; [line 243];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:33 32 succs:2 exn:3 Instructions
+n$74=*&amp;$bcvar3:java.lang.Object* [line 244];
+*&amp;return:int=EXN n$74 [line 244];
+NULLIFY(&amp;$bcvar3); [line 244];
+EXIT_SCOPE(n$74,$bcvar3); [line 244];
+APPLY_ABSTRACTION; [line 244];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:26 25 succs:2 exn:3 Instructions
+n$75=*&amp;id:int [line 246];
+*&amp;return:int=n$75 [line 246];
+NULLIFY(&amp;id); [line 246];
+EXIT_SCOPE(n$75,id); [line 246];
+APPLY_ABSTRACTION; [line 246];
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:37 succs:27 exn:3 Instructions
+</span></span></a> <a href="./nodes/com.stn.helpers.FacultateHelper.checkToken%28java.lang.String%29%3Aint.89d42451b448daaa72a2c8d58d5795cf_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds: succs:36 exn:3 Instructions
+n$76=*&amp;return:int [line 240];
+*&amp;return:int=null [line 240];
+n$77=_fun___unwrap_exception(n$76:int) [line 240];
+NULLIFY(&amp;$irvar3); [line 240];
+NULLIFY(&amp;$irvar5); [line 240];
+NULLIFY(&amp;$irvar4); [line 240];
+NULLIFY(&amp;$irvar7); [line 240];
+NULLIFY(&amp;$irvar6); [line 240];
+NULLIFY(&amp;$irvar1); [line 240];
+NULLIFY(&amp;$irvar2); [line 240];
+NULLIFY(&amp;id); [line 240];
+EXIT_SCOPE(n$76,n$77,$irvar3,$irvar5,$irvar4,$irvar7,$irvar6,$irvar1,$irvar2,id); [line 240];
+</span></span></a><br />@
+
+<span class='color_black'>int int FacultateHelper.checkToken(String)(com.stn.helpers.FacultateHelper* this, java.lang.String* token)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { @val$0 -> { connection -> (Footprint({ @val$0.dbUser,
+                                                   @val$0.dbPort*,
+                                                   @val$0.dbPassword,
+                                                   @val$0.dbName*,
+                                                   @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        preparedStatement -> (Footprint({ @val$1*,
+                                                          @val$0.dbUser,
+                                                          @val$0.dbPort*,
+                                                          @val$0.dbPassword,
+                                                          @val$0.dbName*,
+                                                          @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        query -> { },
+                        resultSet -> ({ Other(ResultSet PreparedStatement.executeQuery() at line 235) } + Footprint({ @val$1*,
+                                                                    @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *) },
+            return -> { } }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= int FacultateHelper.checkToken(String)
+; translation_unit= src/main/java/com/stn/helpers/FacultateHelper.java
+; access= Public
+; exceptions= [java.sql.SQLException;  java.lang.ClassNotFoundException]
+; formals= [(this,com.stn.helpers.FacultateHelper*);  (token,
+            java.lang.String*)]
+; is_defined= true
+; loc= src/main/java/com/stn/helpers/FacultateHelper.java:225
+; locals= [{ name= $bcvar3; typ= void; modify_in_block= false }; 
+           { name= CatchVar132; typ= void; modify_in_block= false }; 
+           { name= $irvar7; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= id; typ= int; modify_in_block= false }]
+; ret_type= int 
+; proc_id= com.stn.helpers.FacultateHelper.checkToken(java.lang.String):int }</pre>
+</body>
+</html>

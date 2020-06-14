@@ -1,0 +1,261 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.RecoverHelper.insertToken(java.lang.String,java.lang.String):void.1e86f8f8f90b2a2a86f899d97d9cb2a7_node15</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE19">15</a></h1></center>PROC: <a href="./../com.stn.helpers.RecoverHelper.insertToken%28java.lang.String%2Cjava.lang.String%29%3Avoid.1e86f8f8f90b2a2a86f899d97d9cb2a7.html">void RecoverHelper.insertToken(String,String)</a> LINE: <a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE19">19</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.helpers.RecoverHelper.insertToken%28java.lang.String%2Cjava.lang.String%29%3Avoid.1e86f8f8f90b2a2a86f899d97d9cb2a7_node14.html"><span class='visited with_tooltip'>N_14<span class='tooltip'>node14 preds:13 succs:15 exn:37 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.helpers.RecoverHelper.insertToken%28java.lang.String%2Cjava.lang.String%29%3Avoid.1e86f8f8f90b2a2a86f899d97d9cb2a7_node16.html"><span class='visited with_tooltip'>N_16<span class='tooltip'>node16 preds:15 succs:17 exn:37 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.helpers.RecoverHelper.insertToken%28java.lang.String%2Cjava.lang.String%29%3Avoid.1e86f8f8f90b2a2a86f899d97d9cb2a7_node37.html"><span class='visited with_tooltip'>N_37<span class='tooltip'>node37 preds: succs:36 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$26=*&amp;this:com.stn.helpers.RecoverHelper* [line 19];
+n$27=*n$26.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 19];
+_=*n$27:java.sql.Connection*(root java.sql.Connection) [line 19];
+n$29=*&amp;this:com.stn.helpers.RecoverHelper* [line 19];
+n$30=*n$29.query:java.lang.String*(root com.stn.helpers.RecoverHelper) [line 19];
+n$31=_fun_PreparedStatement Connection.prepareStatement(String)(n$27:java.sql.Connection*,n$30:java.lang.String*) interface virtual [line 19];
+*&amp;$irvar7:java.sql.PreparedStatement*=n$31 [line 19];
+</LISTING>
+<hr width="100%">
+<a name="session80" href="./../nodes/com.stn.helpers.RecoverHelper.insertToken%28java.lang.String%2Cjava.lang.String%29%3Avoid.1e86f8f8f90b2a2a86f899d97d9cb2a7_node15.html#session80">node15#session80</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE19">19</a>) [compute pre] liveness 15
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session81" href="./../nodes/com.stn.helpers.RecoverHelper.insertToken%28java.lang.String%2Cjava.lang.String%29%3Avoid.1e86f8f8f90b2a2a86f899d97d9cb2a7_node15.html#session81">node15#session81</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE19">19</a>) [exec] liveness 15
+<LISTING class='color_black'>PRE STATE:
+{ expDate, token, $irvar7, email, this }
+
+INSTR=  *&amp;$irvar7:java.sql.PreparedStatement*=n$31 [line 19]; 
+
+STATE:
+{ n$31, expDate, token, email, this }
+
+INSTR=  n$31=_fun_PreparedStatement Connection.prepareStatement(String)(n$27:java.sql.Connection*,n$30:java.lang.String*) interface virtual [line 19]; 
+
+STATE:
+{ n$27, n$30, expDate, token, email, this }
+
+INSTR=  n$30=*n$29.query:java.lang.String*(root com.stn.helpers.RecoverHelper) [line 19]; 
+
+STATE:
+{ n$27, n$29, expDate, token, email, this }
+
+INSTR=  n$29=*&amp;this:com.stn.helpers.RecoverHelper* [line 19]; 
+
+STATE:
+{ n$27, expDate, token, email, this }
+
+INSTR=  _=*n$27:java.sql.Connection*(root java.sql.Connection) [line 19]; 
+
+STATE UNCHANGED
+
+INSTR=  n$27=*n$26.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 19]; 
+
+STATE:
+{ n$26, expDate, token, email, this }
+
+INSTR=  n$26=*&amp;this:com.stn.helpers.RecoverHelper* [line 19]; 
+
+STATE:
+{ expDate, token, email, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session150" href="./../nodes/com.stn.helpers.RecoverHelper.insertToken%28java.lang.String%2Cjava.lang.String%29%3Avoid.1e86f8f8f90b2a2a86f899d97d9cb2a7_node15.html#session150">node15#session150</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE19">19</a>) [compute pre] liveness 15
+<LISTING class='color_black'>JOIN
+
+LEFT:   { expDate, token, $irvar7, email, this }
+RIGHT:  { return, CatchVar156, this }
+RESULT: { expDate, token, $irvar7, email, return, CatchVar156, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session151" href="./../nodes/com.stn.helpers.RecoverHelper.insertToken%28java.lang.String%2Cjava.lang.String%29%3Avoid.1e86f8f8f90b2a2a86f899d97d9cb2a7_node15.html#session151">node15#session151</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE19">19</a>) [exec] liveness 15
+<LISTING class='color_black'>PRE STATE:
+{ expDate, token, $irvar7, email, return, CatchVar156, this }
+
+INSTR=  *&amp;$irvar7:java.sql.PreparedStatement*=n$31 [line 19]; 
+
+STATE:
+{ n$31, expDate, token, email, return, CatchVar156, this }
+
+INSTR=  n$31=_fun_PreparedStatement Connection.prepareStatement(String)(n$27:java.sql.Connection*,n$30:java.lang.String*) interface virtual [line 19]; 
+
+STATE:
+{ n$27, n$30, expDate, token, email, return, CatchVar156, this }
+
+INSTR=  n$30=*n$29.query:java.lang.String*(root com.stn.helpers.RecoverHelper) [line 19]; 
+
+STATE:
+{ n$27, n$29, expDate, token, email, return, CatchVar156, this }
+
+INSTR=  n$29=*&amp;this:com.stn.helpers.RecoverHelper* [line 19]; 
+
+STATE:
+{ n$27, expDate, token, email, return, CatchVar156, this }
+
+INSTR=  _=*n$27:java.sql.Connection*(root java.sql.Connection) [line 19]; 
+
+STATE UNCHANGED
+
+INSTR=  n$27=*n$26.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 19]; 
+
+STATE:
+{ n$26, expDate, token, email, return, CatchVar156, this }
+
+INSTR=  n$26=*&amp;this:com.stn.helpers.RecoverHelper* [line 19]; 
+
+STATE:
+{ expDate, token, email, return, CatchVar156, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session156" href="./../nodes/com.stn.helpers.RecoverHelper.insertToken%28java.lang.String%2Cjava.lang.String%29%3Avoid.1e86f8f8f90b2a2a86f899d97d9cb2a7_node15.html#session156">node15#session156</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE19">19</a>) [compute pre] liveness 15
+<LISTING class='color_black'>JOIN
+
+LEFT:   { expDate, token, $irvar7, email, return, CatchVar156, this }
+RIGHT:  { return, CatchVar156, this }
+RESULT: { expDate, token, $irvar7, email, return, CatchVar156, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session157" href="./../nodes/com.stn.helpers.RecoverHelper.insertToken%28java.lang.String%2Cjava.lang.String%29%3Avoid.1e86f8f8f90b2a2a86f899d97d9cb2a7_node15.html#session157">node15#session157</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE19">19</a>) [exec] liveness 15
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session192" href="./../nodes/com.stn.helpers.RecoverHelper.insertToken%28java.lang.String%2Cjava.lang.String%29%3Avoid.1e86f8f8f90b2a2a86f899d97d9cb2a7_node15.html#session192">node15#session192</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE19">19</a>) [compute pre] liveness 15
+<LISTING class='color_black'>JOIN
+
+LEFT:   { expDate, token, $irvar7, email, return, CatchVar156, this }
+RIGHT:  { return, CatchVar156, this }
+RESULT: { expDate, token, $irvar7, email, return, CatchVar156, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session193" href="./../nodes/com.stn.helpers.RecoverHelper.insertToken%28java.lang.String%2Cjava.lang.String%29%3Avoid.1e86f8f8f90b2a2a86f899d97d9cb2a7_node15.html#session193">node15#session193</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE19">19</a>) [exec] liveness 15
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session233" href="./../nodes/com.stn.helpers.RecoverHelper.insertToken%28java.lang.String%2Cjava.lang.String%29%3Avoid.1e86f8f8f90b2a2a86f899d97d9cb2a7_node15.html#session233">node15#session233</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE19">19</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session234" href="./../nodes/com.stn.helpers.RecoverHelper.insertToken%28java.lang.String%2Cjava.lang.String%29%3Avoid.1e86f8f8f90b2a2a86f899d97d9cb2a7_node15.html#session234">node15#session234</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE19">19</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ expDate },{ n$24, n$25, $irvar6 })
+
+INSTR=  n$26=*&amp;this:com.stn.helpers.RecoverHelper* [line 19]; 
+
+STATE:
+({ n$26, expDate },{ n$24, n$25, $irvar6 })
+
+INSTR=  n$27=*n$26.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 19]; 
+
+STATE:
+({ n$26, n$27, expDate },{ n$24, n$25, $irvar6 })
+
+INSTR=  _=*n$27:java.sql.Connection*(root java.sql.Connection) [line 19]; 
+
+STATE:
+({ _, n$26, n$27, expDate },{ n$24, n$25, $irvar6 })
+
+INSTR=  n$29=*&amp;this:com.stn.helpers.RecoverHelper* [line 19]; 
+
+STATE:
+({ _, n$26, n$27, n$29, expDate },{ n$24, n$25, $irvar6 })
+
+INSTR=  n$30=*n$29.query:java.lang.String*(root com.stn.helpers.RecoverHelper) [line 19]; 
+
+STATE:
+({ _, n$26, n$27, n$29, n$30, expDate },{ n$24, n$25, $irvar6 })
+
+INSTR=  n$31=_fun_PreparedStatement Connection.prepareStatement(String)(n$27:java.sql.Connection*,n$30:java.lang.String*) interface virtual [line 19]; 
+
+STATE:
+({ _, n$26, n$27, n$29, n$30, n$31, expDate },{ n$24, n$25, $irvar6 })
+
+INSTR=  *&amp;$irvar7:java.sql.PreparedStatement*=n$31 [line 19]; 
+
+STATE:
+({ expDate, $irvar7 },{ _, n$26, n$27, n$29, n$30, n$31 })
+
+</LISTING>
+<hr width="100%">
+<a name="session24" href="./../nodes/com.stn.helpers.RecoverHelper.insertToken%28java.lang.String%2Cjava.lang.String%29%3Avoid.1e86f8f8f90b2a2a86f899d97d9cb2a7_node15.html#session24">node15#session24</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE19">19</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session25" href="./../nodes/com.stn.helpers.RecoverHelper.insertToken%28java.lang.String%2Cjava.lang.String%29%3Avoid.1e86f8f8f90b2a2a86f899d97d9cb2a7_node15.html#session25">node15#session25</a>(<a href="./../../RecoverHelper.java.14db58562fb1ede43b4981b357094d4d.html#LINE19">19</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$13 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$16 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$19 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$23 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  expDate -&gt; { },
+  day -&gt; { },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+
+
+
+
+
+TAINTED_CALL1: (callee="PreparedStatement Connection.prepareStatement(String)", caller="void RecoverHelper.insertToken(String,String)")
+TAINTED_CALL1: (callee="PreparedStatement Connection.prepareStatement(String)", caller="void RecoverHelper.insertToken(String,String)")
+INSTR=  n$31 := PreparedStatement Connection.prepareStatement(String)({ this-&gt;connection,
+                                                                    this-&gt;query }) [line 19]; 
+
+STATE:
+{ n$13 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$16 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$19 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$23 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$31 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  expDate -&gt; { },
+  day -&gt; { },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+
+
+</LISTING>

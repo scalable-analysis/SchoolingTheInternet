@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Category.setTotalPosts(int):void.229ce3e252451dbc21d8f8819ca9f0c2_1" [label="1: Start void Category.setTotalPosts(int)\nFormals:  this:com.stn.pojo.Category* totalPosts:int\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Category.setTotalPosts(int):void.229ce3e252451dbc21d8f8819ca9f0c2_1" -> "com.stn.pojo.Category.setTotalPosts(int):void.229ce3e252451dbc21d8f8819ca9f0c2_4" ;
+"com.stn.pojo.Category.setTotalPosts(int):void.229ce3e252451dbc21d8f8819ca9f0c2_2" [label="2: Exit void Category.setTotalPosts(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Category.setTotalPosts(int):void.229ce3e252451dbc21d8f8819ca9f0c2_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 99]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.setTotalPosts(int):void.229ce3e252451dbc21d8f8819ca9f0c2_3" -> "com.stn.pojo.Category.setTotalPosts(int):void.229ce3e252451dbc21d8f8819ca9f0c2_2" ;
+"com.stn.pojo.Category.setTotalPosts(int):void.229ce3e252451dbc21d8f8819ca9f0c2_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Category* [line 98]\n  n$1=*&totalPosts:int [line 98]\n  *n$0.totalPosts:com.stn.pojo.Category(root com.stn.pojo.Category)=n$1 [line 98]\n  NULLIFY(&totalPosts); [line 98]\n  NULLIFY(&this); [line 98]\n  EXIT_SCOPE(n$0,n$1,totalPosts,this); [line 98]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.setTotalPosts(int):void.229ce3e252451dbc21d8f8819ca9f0c2_4" -> "com.stn.pojo.Category.setTotalPosts(int):void.229ce3e252451dbc21d8f8819ca9f0c2_5" ;
+	 "com.stn.pojo.Category.setTotalPosts(int):void.229ce3e252451dbc21d8f8819ca9f0c2_4" -> "com.stn.pojo.Category.setTotalPosts(int):void.229ce3e252451dbc21d8f8819ca9f0c2_3" [color="red" ];
+"com.stn.pojo.Category.setTotalPosts(int):void.229ce3e252451dbc21d8f8819ca9f0c2_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 99]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.setTotalPosts(int):void.229ce3e252451dbc21d8f8819ca9f0c2_5" -> "com.stn.pojo.Category.setTotalPosts(int):void.229ce3e252451dbc21d8f8819ca9f0c2_2" ;
+	 "com.stn.pojo.Category.setTotalPosts(int):void.229ce3e252451dbc21d8f8819ca9f0c2_5" -> "com.stn.pojo.Category.setTotalPosts(int):void.229ce3e252451dbc21d8f8819ca9f0c2_3" [color="red" ];
+}

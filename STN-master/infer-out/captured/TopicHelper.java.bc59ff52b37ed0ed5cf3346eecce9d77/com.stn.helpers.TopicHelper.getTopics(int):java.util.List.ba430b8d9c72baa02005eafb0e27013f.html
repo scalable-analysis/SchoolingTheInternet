@@ -1,0 +1,451 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.TopicHelper.getTopics(int):java.util.List.ba430b8d9c72baa02005eafb0e27013f</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../TopicHelper.java.bc59ff52b37ed0ed5cf3346eecce9d77.html#LINE58">List TopicHelper.getTopics(int)</a></h1></center>
+<a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:51 50 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$bcvar4); [line 89];
+NULLIFY(&amp;topic); [line 89];
+EXIT_SCOPE($bcvar4,topic); [line 89];
+APPLY_ABSTRACTION; [line 89];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 59];
+n$1=_fun_ArrayList.&lt;init&gt;()(n$0:java.util.ArrayList*) [line 59];
+*&amp;topic:java.util.ArrayList*=n$0 [line 59];
+EXIT_SCOPE(n$0,n$1); [line 59];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$2=*&amp;this:com.stn.helpers.TopicHelper* [line 61];
+*n$2.query:com.stn.helpers.TopicHelper(root com.stn.helpers.TopicHelper)="SELECT TopicId,Name,GroupId,t.Author,u.Username,u.Class, (SELECT COUNT(*) FROM comments WHERE IdPost = TopicId) FROM topics t JOIN users u ON t.Author = u.Id  WHERE GroupId = ?" [line 61];
+EXIT_SCOPE(n$2); [line 61];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:53 Instructions
+n$3=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 66];
+*&amp;$irvar0:java.lang.Class*=n$3 [line 66];
+NULLIFY(&amp;$irvar0); [line 66];
+EXIT_SCOPE(n$3,$irvar0); [line 66];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:53 Instructions
+n$4=*&amp;this:com.stn.helpers.TopicHelper* [line 67];
+_=*n$4:com.stn.helpers.TopicHelper*(root com.stn.helpers.TopicHelper) [line 67];
+n$6=_fun_String DBConnection.getHost()(n$4:com.stn.helpers.TopicHelper*) virtual [line 67];
+*&amp;$irvar1:java.lang.String*=n$6 [line 67];
+EXIT_SCOPE(_,n$4,n$6); [line 67];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:53 Instructions
+n$7=*&amp;this:com.stn.helpers.TopicHelper* [line 67];
+_=*n$7:com.stn.helpers.TopicHelper*(root com.stn.helpers.TopicHelper) [line 67];
+n$9=_fun_String DBConnection.getUser()(n$7:com.stn.helpers.TopicHelper*) virtual [line 67];
+*&amp;$irvar2:java.lang.String*=n$9 [line 67];
+EXIT_SCOPE(_,n$7,n$9); [line 67];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:53 Instructions
+n$10=*&amp;this:com.stn.helpers.TopicHelper* [line 67];
+_=*n$10:com.stn.helpers.TopicHelper*(root com.stn.helpers.TopicHelper) [line 67];
+n$12=_fun_String DBConnection.getPassword()(n$10:com.stn.helpers.TopicHelper*) virtual [line 67];
+*&amp;$irvar3:java.lang.String*=n$12 [line 67];
+EXIT_SCOPE(_,n$10,n$12); [line 67];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:53 Instructions
+n$13=*&amp;$irvar1:java.lang.String* [line 67];
+n$14=*&amp;$irvar2:java.lang.String* [line 67];
+n$15=*&amp;$irvar3:java.lang.String* [line 67];
+n$16=_fun_Connection DriverManager.getConnection(String,String,String)(n$13:java.lang.String*,n$14:java.lang.String*,n$15:java.lang.String*) [line 67];
+*&amp;$irvar4:java.sql.Connection*=n$16 [line 67];
+NULLIFY(&amp;$irvar3); [line 67];
+NULLIFY(&amp;$irvar1); [line 67];
+NULLIFY(&amp;$irvar2); [line 67];
+EXIT_SCOPE(n$13,n$14,n$15,n$16,$irvar3,$irvar1,$irvar2); [line 67];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:53 Instructions
+n$17=*&amp;this:com.stn.helpers.TopicHelper* [line 67];
+n$18=*&amp;$irvar4:java.sql.Connection* [line 67];
+*n$17.connection:com.stn.helpers.TopicHelper(root com.stn.helpers.TopicHelper)=n$18 [line 67];
+NULLIFY(&amp;$irvar4); [line 67];
+EXIT_SCOPE(n$17,n$18,$irvar4); [line 67];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:53 Instructions
+n$19=*&amp;this:com.stn.helpers.TopicHelper* [line 68];
+n$20=*n$19.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 68];
+_=*n$20:java.sql.Connection*(root java.sql.Connection) [line 68];
+n$22=*&amp;this:com.stn.helpers.TopicHelper* [line 68];
+n$23=*n$22.query:java.lang.String*(root com.stn.helpers.TopicHelper) [line 68];
+n$24=_fun_PreparedStatement Connection.prepareStatement(String)(n$20:java.sql.Connection*,n$23:java.lang.String*) interface virtual [line 68];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$24 [line 68];
+EXIT_SCOPE(_,n$19,n$20,n$22,n$23,n$24); [line 68];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:53 Instructions
+n$25=*&amp;this:com.stn.helpers.TopicHelper* [line 68];
+n$26=*&amp;$irvar5:java.sql.PreparedStatement* [line 68];
+*n$25.preparedStatement:com.stn.helpers.TopicHelper(root com.stn.helpers.TopicHelper)=n$26 [line 68];
+NULLIFY(&amp;$irvar5); [line 68];
+EXIT_SCOPE(n$25,n$26,$irvar5); [line 68];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:53 Instructions
+n$27=*&amp;this:com.stn.helpers.TopicHelper* [line 69];
+n$28=*n$27.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 69];
+_=*n$28:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 69];
+n$30=*&amp;catId:int [line 69];
+n$31=_fun_void PreparedStatement.setInt(int,int)(n$28:java.sql.PreparedStatement*,1:int,n$30:int) interface virtual [line 69];
+NULLIFY(&amp;catId); [line 69];
+EXIT_SCOPE(_,n$27,n$28,n$30,n$31,catId); [line 69];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:53 Instructions
+n$32=*&amp;this:com.stn.helpers.TopicHelper* [line 70];
+n$33=*n$32.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 70];
+_=*n$33:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 70];
+n$35=_fun_ResultSet PreparedStatement.executeQuery()(n$33:java.sql.PreparedStatement*) interface virtual [line 70];
+*&amp;$irvar6:java.sql.ResultSet*=n$35 [line 70];
+EXIT_SCOPE(_,n$32,n$33,n$35); [line 70];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:53 Instructions
+n$36=*&amp;this:com.stn.helpers.TopicHelper* [line 70];
+n$37=*&amp;$irvar6:java.sql.ResultSet* [line 70];
+*n$36.resultSet:com.stn.helpers.TopicHelper(root com.stn.helpers.TopicHelper)=n$37 [line 70];
+NULLIFY(&amp;$irvar6); [line 70];
+EXIT_SCOPE(n$36,n$37,$irvar6); [line 70];
+APPLY_ABSTRACTION; [line 70];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:36 16 succs:20 exn:53 Instructions
+n$38=*&amp;this:com.stn.helpers.TopicHelper* [line 71];
+n$39=*n$38.resultSet:java.sql.ResultSet*(root com.stn.helpers.TopicHelper) [line 71];
+_=*n$39:java.sql.ResultSet*(root java.sql.ResultSet) [line 71];
+n$41=_fun_boolean ResultSet.next()(n$39:java.sql.ResultSet*) interface virtual [line 71];
+*&amp;$irvar7:_Bool=n$41 [line 71];
+EXIT_SCOPE(_,n$38,n$39,n$41); [line 71];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:20 succs:21 exn:53 Conditional method_body
+n$42=*&amp;$irvar7:_Bool [line 71];
+PRUNE(!(n$42 == 0), true); [line 71];
+NULLIFY(&amp;$irvar7); [line 71];
+EXIT_SCOPE(n$42,$irvar7); [line 71];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node19.html"><span class='visited with_tooltip'>C_19<span class='tooltip'>node19 preds:20 succs:37 38 exn:53 Conditional method_body
+n$42=*&amp;$irvar7:_Bool [line 71];
+PRUNE((n$42 == 0), false); [line 71];
+NULLIFY(&amp;$irvar7); [line 71];
+EXIT_SCOPE(n$42,$irvar7); [line 71];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node20.html"><span class='visited with_tooltip'>J_20<span class='tooltip'>node20 preds:17 succs:18 19 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:18 succs:22 exn:53 Instructions
+n$43=_fun___new(sizeof(t=com.stn.pojo.Topic):com.stn.pojo.Topic*) [line 72];
+n$44=_fun_Topic.&lt;init&gt;()(n$43:com.stn.pojo.Topic*) [line 72];
+*&amp;t:com.stn.pojo.Topic*=n$43 [line 72];
+EXIT_SCOPE(n$43,n$44); [line 72];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:53 Instructions
+n$45=*&amp;this:com.stn.helpers.TopicHelper* [line 73];
+n$46=*n$45.resultSet:java.sql.ResultSet*(root com.stn.helpers.TopicHelper) [line 73];
+_=*n$46:java.sql.ResultSet*(root java.sql.ResultSet) [line 73];
+n$48=_fun_int ResultSet.getInt(int)(n$46:java.sql.ResultSet*,1:int) interface virtual [line 73];
+*&amp;$irvar8:int=n$48 [line 73];
+EXIT_SCOPE(_,n$45,n$46,n$48); [line 73];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:53 Instructions
+n$49=*&amp;t:com.stn.pojo.Topic* [line 73];
+_=*n$49:com.stn.pojo.Topic*(root com.stn.pojo.Topic) [line 73];
+n$51=*&amp;$irvar8:int [line 73];
+n$52=_fun_void Topic.setTopicId(int)(n$49:com.stn.pojo.Topic*,n$51:int) virtual [line 73];
+NULLIFY(&amp;$irvar8); [line 73];
+EXIT_SCOPE(_,n$49,n$51,n$52,$irvar8); [line 73];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:53 Instructions
+n$53=*&amp;this:com.stn.helpers.TopicHelper* [line 74];
+n$54=*n$53.resultSet:java.sql.ResultSet*(root com.stn.helpers.TopicHelper) [line 74];
+_=*n$54:java.sql.ResultSet*(root java.sql.ResultSet) [line 74];
+n$56=_fun_String ResultSet.getString(int)(n$54:java.sql.ResultSet*,2:int) interface virtual [line 74];
+*&amp;$irvar9:java.lang.String*=n$56 [line 74];
+EXIT_SCOPE(_,n$53,n$54,n$56); [line 74];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:53 Instructions
+n$57=*&amp;t:com.stn.pojo.Topic* [line 74];
+_=*n$57:com.stn.pojo.Topic*(root com.stn.pojo.Topic) [line 74];
+n$59=*&amp;$irvar9:java.lang.String* [line 74];
+n$60=_fun_void Topic.setName(String)(n$57:com.stn.pojo.Topic*,n$59:java.lang.String*) virtual [line 74];
+NULLIFY(&amp;$irvar9); [line 74];
+EXIT_SCOPE(_,n$57,n$59,n$60,$irvar9); [line 74];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:53 Instructions
+n$61=*&amp;this:com.stn.helpers.TopicHelper* [line 75];
+n$62=*n$61.resultSet:java.sql.ResultSet*(root com.stn.helpers.TopicHelper) [line 75];
+_=*n$62:java.sql.ResultSet*(root java.sql.ResultSet) [line 75];
+n$64=_fun_int ResultSet.getInt(int)(n$62:java.sql.ResultSet*,3:int) interface virtual [line 75];
+*&amp;$irvar10:int=n$64 [line 75];
+EXIT_SCOPE(_,n$61,n$62,n$64); [line 75];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:53 Instructions
+n$65=*&amp;t:com.stn.pojo.Topic* [line 75];
+_=*n$65:com.stn.pojo.Topic*(root com.stn.pojo.Topic) [line 75];
+n$67=*&amp;$irvar10:int [line 75];
+n$68=_fun_void Topic.setGroupId(int)(n$65:com.stn.pojo.Topic*,n$67:int) virtual [line 75];
+NULLIFY(&amp;$irvar10); [line 75];
+EXIT_SCOPE(_,n$65,n$67,n$68,$irvar10); [line 75];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:53 Instructions
+n$69=*&amp;this:com.stn.helpers.TopicHelper* [line 76];
+n$70=*n$69.resultSet:java.sql.ResultSet*(root com.stn.helpers.TopicHelper) [line 76];
+_=*n$70:java.sql.ResultSet*(root java.sql.ResultSet) [line 76];
+n$72=_fun_int ResultSet.getInt(int)(n$70:java.sql.ResultSet*,4:int) interface virtual [line 76];
+*&amp;$irvar11:int=n$72 [line 76];
+EXIT_SCOPE(_,n$69,n$70,n$72); [line 76];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:30 exn:53 Instructions
+n$73=*&amp;t:com.stn.pojo.Topic* [line 76];
+_=*n$73:com.stn.pojo.Topic*(root com.stn.pojo.Topic) [line 76];
+n$75=*&amp;$irvar11:int [line 76];
+n$76=_fun_void Topic.setAuthorId(int)(n$73:com.stn.pojo.Topic*,n$75:int) virtual [line 76];
+NULLIFY(&amp;$irvar11); [line 76];
+EXIT_SCOPE(_,n$73,n$75,n$76,$irvar11); [line 76];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 succs:31 exn:53 Instructions
+n$77=*&amp;this:com.stn.helpers.TopicHelper* [line 77];
+n$78=*n$77.resultSet:java.sql.ResultSet*(root com.stn.helpers.TopicHelper) [line 77];
+_=*n$78:java.sql.ResultSet*(root java.sql.ResultSet) [line 77];
+n$80=_fun_String ResultSet.getString(int)(n$78:java.sql.ResultSet*,5:int) interface virtual [line 77];
+*&amp;$irvar12:java.lang.String*=n$80 [line 77];
+EXIT_SCOPE(_,n$77,n$78,n$80); [line 77];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:30 succs:32 exn:53 Instructions
+n$81=*&amp;t:com.stn.pojo.Topic* [line 77];
+_=*n$81:com.stn.pojo.Topic*(root com.stn.pojo.Topic) [line 77];
+n$83=*&amp;$irvar12:java.lang.String* [line 77];
+n$84=_fun_void Topic.setAuthorName(String)(n$81:com.stn.pojo.Topic*,n$83:java.lang.String*) virtual [line 77];
+NULLIFY(&amp;$irvar12); [line 77];
+EXIT_SCOPE(_,n$81,n$83,n$84,$irvar12); [line 77];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:31 succs:33 exn:53 Instructions
+n$85=*&amp;this:com.stn.helpers.TopicHelper* [line 78];
+n$86=*n$85.resultSet:java.sql.ResultSet*(root com.stn.helpers.TopicHelper) [line 78];
+_=*n$86:java.sql.ResultSet*(root java.sql.ResultSet) [line 78];
+n$88=_fun_int ResultSet.getInt(int)(n$86:java.sql.ResultSet*,6:int) interface virtual [line 78];
+*&amp;$irvar13:int=n$88 [line 78];
+EXIT_SCOPE(_,n$85,n$86,n$88); [line 78];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:32 succs:34 exn:53 Instructions
+n$89=*&amp;t:com.stn.pojo.Topic* [line 78];
+_=*n$89:com.stn.pojo.Topic*(root com.stn.pojo.Topic) [line 78];
+n$91=*&amp;$irvar13:int [line 78];
+n$92=_fun_void Topic.setAuthorClass(int)(n$89:com.stn.pojo.Topic*,n$91:int) virtual [line 78];
+NULLIFY(&amp;$irvar13); [line 78];
+EXIT_SCOPE(_,n$89,n$91,n$92,$irvar13); [line 78];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:33 succs:35 exn:53 Instructions
+n$93=*&amp;this:com.stn.helpers.TopicHelper* [line 79];
+n$94=*n$93.resultSet:java.sql.ResultSet*(root com.stn.helpers.TopicHelper) [line 79];
+_=*n$94:java.sql.ResultSet*(root java.sql.ResultSet) [line 79];
+n$96=_fun_int ResultSet.getInt(int)(n$94:java.sql.ResultSet*,7:int) interface virtual [line 79];
+*&amp;$irvar14:int=n$96 [line 79];
+EXIT_SCOPE(_,n$93,n$94,n$96); [line 79];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:34 succs:36 exn:53 Instructions
+n$97=*&amp;t:com.stn.pojo.Topic* [line 79];
+_=*n$97:com.stn.pojo.Topic*(root com.stn.pojo.Topic) [line 79];
+n$99=*&amp;$irvar14:int [line 79];
+n$100=_fun_void Topic.setTotalposts(int)(n$97:com.stn.pojo.Topic*,n$99:int) virtual [line 79];
+NULLIFY(&amp;$irvar14); [line 79];
+EXIT_SCOPE(_,n$97,n$99,n$100,$irvar14); [line 79];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:35 succs:17 exn:53 Instructions
+n$101=*&amp;topic:java.util.ArrayList* [line 80];
+_=*n$101:java.util.ArrayList*(root java.util.ArrayList) [line 80];
+n$103=*&amp;t:com.stn.pojo.Topic* [line 80];
+n$104=_fun_boolean ArrayList.add(Object)(n$101:java.util.ArrayList*,n$103:com.stn.pojo.Topic*) interface virtual [line 80];
+*&amp;$irvar15:_Bool=n$104 [line 80];
+NULLIFY(&amp;t); [line 80];
+NULLIFY(&amp;$irvar15); [line 80];
+EXIT_SCOPE(_,n$101,n$103,n$104,t,$irvar15); [line 80];
+APPLY_ABSTRACTION; [line 80];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node37.html"><span class='visited with_tooltip'>C_37<span class='tooltip'>node37 preds:19 succs:39 exn:3 Conditional method_body
+n$105=*&amp;this:com.stn.helpers.TopicHelper* [line 83];
+n$106=*n$105.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 83];
+PRUNE(!(n$106 == null), true); [line 83];
+EXIT_SCOPE(n$105,n$106); [line 83];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node38.html"><span class='visited with_tooltip'>C_38<span class='tooltip'>node38 preds:19 succs:40 41 exn:3 Conditional method_body
+n$105=*&amp;this:com.stn.helpers.TopicHelper* [line 83];
+n$106=*n$105.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 83];
+PRUNE((n$106 == null), false); [line 83];
+EXIT_SCOPE(n$105,n$106); [line 83];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:37 succs:40 41 exn:3 Instructions
+n$107=*&amp;this:com.stn.helpers.TopicHelper* [line 84];
+n$108=*n$107.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 84];
+n$111=_fun___set_mem_attribute(n$108:java.sql.PreparedStatement*) [line 84];
+_=*n$108:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 84];
+n$110=_fun_void PreparedStatement.close()(n$108:java.sql.PreparedStatement*) interface virtual [line 84];
+EXIT_SCOPE(_,n$107,n$108,n$110,n$111); [line 84];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node40.html"><span class='visited with_tooltip'>C_40<span class='tooltip'>node40 preds:39 38 succs:42 exn:3 Conditional method_body
+n$112=*&amp;this:com.stn.helpers.TopicHelper* [line 85];
+n$113=*n$112.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 85];
+PRUNE(!(n$113 == null), true); [line 85];
+EXIT_SCOPE(n$112,n$113); [line 85];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node41.html"><span class='visited with_tooltip'>C_41<span class='tooltip'>node41 preds:39 38 succs:51 exn:3 Conditional method_body
+n$112=*&amp;this:com.stn.helpers.TopicHelper* [line 85];
+n$113=*n$112.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 85];
+PRUNE((n$113 == null), false); [line 85];
+NULLIFY(&amp;this); [line 85];
+EXIT_SCOPE(n$112,n$113,this); [line 85];
+APPLY_ABSTRACTION; [line 85];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:40 succs:51 exn:3 Instructions
+n$114=*&amp;this:com.stn.helpers.TopicHelper* [line 86];
+n$115=*n$114.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 86];
+n$118=_fun___set_mem_attribute(n$115:java.sql.Connection*) [line 86];
+_=*n$115:java.sql.Connection*(root java.sql.Connection) [line 86];
+n$117=_fun_void Connection.close()(n$115:java.sql.Connection*) interface virtual [line 86];
+NULLIFY(&amp;this); [line 86];
+EXIT_SCOPE(_,n$114,n$115,n$117,n$118,this); [line 86];
+APPLY_ABSTRACTION; [line 86];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:54 52 succs:44 45 exn:55 Instructions
+n$119=*&amp;CatchVar246:java.lang.Object* [line 83];
+*&amp;$bcvar4:java.lang.Object*=n$119 [line 83];
+EXIT_SCOPE(n$119); [line 83];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node44.html"><span class='visited with_tooltip'>C_44<span class='tooltip'>node44 preds:43 succs:46 exn:3 Conditional method_body
+n$120=*&amp;this:com.stn.helpers.TopicHelper* [line 83];
+n$121=*n$120.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 83];
+PRUNE(!(n$121 == null), true); [line 83];
+EXIT_SCOPE(n$120,n$121); [line 83];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node45.html"><span class='visited with_tooltip'>C_45<span class='tooltip'>node45 preds:43 succs:47 48 exn:3 Conditional method_body
+n$120=*&amp;this:com.stn.helpers.TopicHelper* [line 83];
+n$121=*n$120.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 83];
+PRUNE((n$121 == null), false); [line 83];
+EXIT_SCOPE(n$120,n$121); [line 83];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node46.html"><span class='visited with_tooltip'>I_46<span class='tooltip'>node46 preds:44 succs:47 48 exn:3 Instructions
+n$122=*&amp;this:com.stn.helpers.TopicHelper* [line 84];
+n$123=*n$122.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 84];
+n$126=_fun___set_mem_attribute(n$123:java.sql.PreparedStatement*) [line 84];
+_=*n$123:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 84];
+n$125=_fun_void PreparedStatement.close()(n$123:java.sql.PreparedStatement*) interface virtual [line 84];
+EXIT_SCOPE(_,n$122,n$123,n$125,n$126); [line 84];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node47.html"><span class='visited with_tooltip'>C_47<span class='tooltip'>node47 preds:46 45 succs:49 exn:3 Conditional method_body
+n$127=*&amp;this:com.stn.helpers.TopicHelper* [line 85];
+n$128=*n$127.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 85];
+PRUNE(!(n$128 == null), true); [line 85];
+EXIT_SCOPE(n$127,n$128); [line 85];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node48.html"><span class='visited with_tooltip'>C_48<span class='tooltip'>node48 preds:46 45 succs:50 exn:3 Conditional method_body
+n$127=*&amp;this:com.stn.helpers.TopicHelper* [line 85];
+n$128=*n$127.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 85];
+PRUNE((n$128 == null), false); [line 85];
+NULLIFY(&amp;this); [line 85];
+EXIT_SCOPE(n$127,n$128,this); [line 85];
+APPLY_ABSTRACTION; [line 85];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node49.html"><span class='visited with_tooltip'>I_49<span class='tooltip'>node49 preds:47 succs:50 exn:3 Instructions
+n$129=*&amp;this:com.stn.helpers.TopicHelper* [line 86];
+n$130=*n$129.connection:java.sql.Connection*(root com.stn.helpers.TopicHelper) [line 86];
+n$133=_fun___set_mem_attribute(n$130:java.sql.Connection*) [line 86];
+_=*n$130:java.sql.Connection*(root java.sql.Connection) [line 86];
+n$132=_fun_void Connection.close()(n$130:java.sql.Connection*) interface virtual [line 86];
+NULLIFY(&amp;this); [line 86];
+EXIT_SCOPE(_,n$129,n$130,n$132,n$133,this); [line 86];
+APPLY_ABSTRACTION; [line 86];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node50.html"><span class='visited with_tooltip'>I_50<span class='tooltip'>node50 preds:49 48 succs:2 exn:3 Instructions
+n$134=*&amp;$bcvar4:java.lang.Object* [line 87];
+*&amp;return:java.util.List*=EXN n$134 [line 87];
+NULLIFY(&amp;$bcvar4); [line 87];
+EXIT_SCOPE(n$134,$bcvar4); [line 87];
+APPLY_ABSTRACTION; [line 87];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node51.html"><span class='visited with_tooltip'>I_51<span class='tooltip'>node51 preds:42 41 succs:2 exn:3 Instructions
+n$135=*&amp;topic:java.util.ArrayList* [line 89];
+*&amp;return:java.util.List*=n$135 [line 89];
+NULLIFY(&amp;topic); [line 89];
+EXIT_SCOPE(n$135,topic); [line 89];
+APPLY_ABSTRACTION; [line 89];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node52.html"><span class='visited with_tooltip'>I_52<span class='tooltip'>node52 preds:53 succs:43 exn:3 Instructions
+APPLY_ABSTRACTION; [line 83];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node53.html"><span class='visited with_tooltip'>I_53<span class='tooltip'>node53 preds: succs:52 exn:3 Instructions
+n$136=*&amp;return:java.util.List* [line 83];
+*&amp;return:java.util.List*=null [line 83];
+n$137=_fun___unwrap_exception(n$136:java.util.List*) [line 83];
+NULLIFY(&amp;$irvar3); [line 83];
+NULLIFY(&amp;$irvar9); [line 83];
+NULLIFY(&amp;$irvar5); [line 83];
+NULLIFY(&amp;$irvar4); [line 83];
+NULLIFY(&amp;$irvar7); [line 83];
+NULLIFY(&amp;$irvar12); [line 83];
+NULLIFY(&amp;$irvar6); [line 83];
+NULLIFY(&amp;$irvar13); [line 83];
+NULLIFY(&amp;$irvar11); [line 83];
+NULLIFY(&amp;$irvar10); [line 83];
+NULLIFY(&amp;$irvar8); [line 83];
+NULLIFY(&amp;$irvar1); [line 83];
+NULLIFY(&amp;t); [line 83];
+NULLIFY(&amp;$irvar2); [line 83];
+NULLIFY(&amp;topic); [line 83];
+NULLIFY(&amp;$irvar14); [line 83];
+EXIT_SCOPE(n$136,n$137,$irvar3,$irvar9,$irvar5,$irvar4,$irvar7,$irvar12,$irvar6,$irvar13,$irvar11,$irvar10,$irvar8,$irvar1,t,$irvar2,topic,$irvar14); [line 83];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node54.html"><span class='visited with_tooltip'>I_54<span class='tooltip'>node54 preds:55 succs:43 exn:3 Instructions
+APPLY_ABSTRACTION; [line 83];
+</span></span></a> <a href="./nodes/com.stn.helpers.TopicHelper.getTopics%28int%29%3Ajava.util.List.ba430b8d9c72baa02005eafb0e27013f_node55.html"><span class='visited with_tooltip'>I_55<span class='tooltip'>node55 preds: succs:54 exn:3 Instructions
+n$136=*&amp;return:java.util.List* [line 83];
+*&amp;return:java.util.List*=null [line 83];
+n$137=_fun___unwrap_exception(n$136:java.util.List*) [line 83];
+NULLIFY(&amp;$bcvar4); [line 83];
+EXIT_SCOPE(n$136,n$137,$bcvar4); [line 83];
+</span></span></a><br />@
+
+<span class='color_black'>java.util.List* List TopicHelper.getTopics(int)(com.stn.helpers.TopicHelper* this, int catId)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { @val$0 -> { connection -> (Footprint({ @val$0.dbUser,
+                                                   @val$0.dbPort*,
+                                                   @val$0.dbPassword,
+                                                   @val$0.dbName*,
+                                                   @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        preparedStatement -> (Footprint({ @val$0.dbUser,
+                                                          @val$0.dbPort*,
+                                                          @val$0.dbPassword,
+                                                          @val$0.dbName*,
+                                                          @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        query -> { },
+                        resultSet -> ({ Other(ResultSet PreparedStatement.executeQuery() at line 70) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *) },
+            return -> ({ Other(ResultSet PreparedStatement.executeQuery() at line 70) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *) }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= List TopicHelper.getTopics(int)
+; translation_unit= src/main/java/com/stn/helpers/TopicHelper.java
+; access= Public
+; exceptions= [java.lang.ClassNotFoundException;  java.sql.SQLException]
+; formals= [(this,com.stn.helpers.TopicHelper*);  (catId,int)]
+; is_defined= true
+; loc= src/main/java/com/stn/helpers/TopicHelper.java:58
+; locals= [{ name= $bcvar4; typ= void; modify_in_block= false }; 
+           { name= CatchVar246; typ= void; modify_in_block= false }; 
+           { name= $irvar15; typ= void; modify_in_block= false }; 
+           { name= $irvar14; typ= void; modify_in_block= false }; 
+           { name= $irvar13; typ= void; modify_in_block= false }; 
+           { name= $irvar12; typ= void; modify_in_block= false }; 
+           { name= $irvar11; typ= void; modify_in_block= false }; 
+           { name= $irvar10; typ= void; modify_in_block= false }; 
+           { name= $irvar9; typ= void; modify_in_block= false }; 
+           { name= $irvar8; typ= void; modify_in_block= false }; 
+           { name= $irvar7; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= topic; typ= java.util.List*; modify_in_block= false }; 
+           { name= t; typ= com.stn.pojo.Topic*; modify_in_block= false }]
+; ret_type= java.util.List* 
+; proc_id= com.stn.helpers.TopicHelper.getTopics(int):java.util.List }</pre>
+</body>
+</html>

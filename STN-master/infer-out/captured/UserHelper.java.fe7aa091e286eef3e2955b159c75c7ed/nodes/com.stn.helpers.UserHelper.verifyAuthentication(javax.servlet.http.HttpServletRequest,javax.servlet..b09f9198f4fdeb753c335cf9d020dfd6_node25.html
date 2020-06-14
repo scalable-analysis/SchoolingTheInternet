@@ -1,0 +1,279 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.UserHelper.verifyAuthentication(javax.servlet.http.HttpServletRequest,javax.servlet..b09f9198f4fdeb753c335cf9d020dfd6_node25</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE730">25</a></h1></center>PROC: <a href="./../com.stn.helpers.UserHelper.verifyAuthentication%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet..b09f9198f4fdeb753c335cf9d020dfd6.html">void UserHelper.verifyAuthentication(HttpServletRequest,HttpServletResponse)</a> LINE: <a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE730">730</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.helpers.UserHelper.verifyAuthentication%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet..b09f9198f4fdeb753c335cf9d020dfd6_node22.html"><span class='visited with_tooltip'>N_22<span class='tooltip'>node22 preds:24 succs:25 exn:3 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.helpers.UserHelper.verifyAuthentication%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet..b09f9198f4fdeb753c335cf9d020dfd6_node26.html"><span class='visited with_tooltip'>N_26<span class='tooltip'>node26 preds:25 23 succs:18 exn:3 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.helpers.UserHelper.verifyAuthentication%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet..b09f9198f4fdeb753c335cf9d020dfd6_node3.html"><span class='visited with_tooltip'>N_3<span class='tooltip'>node3 preds:45 succs:2 exn:2 </span></span></a><br>
+<LISTING class='color_green'>n$30=*&amp;cookie:javax.servlet.http.Cookie* [line 730];
+_=*n$30:javax.servlet.http.Cookie*(root javax.servlet.http.Cookie) [line 730];
+n$32=_fun_String Cookie.getValue()(n$30:javax.servlet.http.Cookie*) virtual [line 730];
+*&amp;token:java.lang.String*=n$32 [line 730];
+</LISTING>
+<hr width="100%">
+<a name="session124" href="./../nodes/com.stn.helpers.UserHelper.verifyAuthentication%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet..b09f9198f4fdeb753c335cf9d020dfd6_node25.html#session124">node25#session124</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE730">730</a>) [compute pre] liveness 25
+<LISTING class='color_black'>JOIN
+
+LEFT:   { ip, token, return, userHelper, $bcvar11, session, $bcvar10 }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session125" href="./../nodes/com.stn.helpers.UserHelper.verifyAuthentication%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet..b09f9198f4fdeb753c335cf9d020dfd6_node25.html#session125">node25#session125</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE730">730</a>) [exec] liveness 25
+<LISTING class='color_black'>PRE STATE:
+{ ip, token, return, userHelper, $bcvar11, session, $bcvar10 }
+
+INSTR=  *&amp;token:java.lang.String*=n$32 [line 730]; 
+
+STATE:
+{ n$32, ip, return, userHelper, $bcvar11, session, $bcvar10 }
+
+INSTR=  n$32=_fun_String Cookie.getValue()(n$30:javax.servlet.http.Cookie*) virtual [line 730]; 
+
+STATE:
+{ n$30, ip, return, userHelper, $bcvar11, session, $bcvar10 }
+
+INSTR=  _=*n$30:javax.servlet.http.Cookie*(root javax.servlet.http.Cookie) [line 730]; 
+
+STATE UNCHANGED
+
+INSTR=  n$30=*&amp;cookie:javax.servlet.http.Cookie* [line 730]; 
+
+STATE:
+{ ip, return, cookie, userHelper, $bcvar11, session, $bcvar10 }
+
+</LISTING>
+<hr width="100%">
+<a name="session168" href="./../nodes/com.stn.helpers.UserHelper.verifyAuthentication%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet..b09f9198f4fdeb753c335cf9d020dfd6_node25.html#session168">node25#session168</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE730">730</a>) [compute pre] liveness 25
+<LISTING class='color_black'>JOIN
+
+LEFT:   { ip,
+          token,
+          $bcvar9,
+          return,
+          userHelper,
+          $bcvar11,
+          session,
+          $bcvar10 }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session169" href="./../nodes/com.stn.helpers.UserHelper.verifyAuthentication%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet..b09f9198f4fdeb753c335cf9d020dfd6_node25.html#session169">node25#session169</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE730">730</a>) [exec] liveness 25
+<LISTING class='color_black'>PRE STATE:
+{ ip, token, $bcvar9, return, userHelper, $bcvar11, session, $bcvar10 }
+
+INSTR=  *&amp;token:java.lang.String*=n$32 [line 730]; 
+
+STATE:
+{ n$32, ip, $bcvar9, return, userHelper, $bcvar11, session, $bcvar10 }
+
+INSTR=  n$32=_fun_String Cookie.getValue()(n$30:javax.servlet.http.Cookie*) virtual [line 730]; 
+
+STATE:
+{ n$30, ip, $bcvar9, return, userHelper, $bcvar11, session, $bcvar10 }
+
+INSTR=  _=*n$30:javax.servlet.http.Cookie*(root javax.servlet.http.Cookie) [line 730]; 
+
+STATE UNCHANGED
+
+INSTR=  n$30=*&amp;cookie:javax.servlet.http.Cookie* [line 730]; 
+
+STATE:
+{ ip, $bcvar9, return, cookie, userHelper, $bcvar11, session, $bcvar10 }
+
+</LISTING>
+<hr width="100%">
+<a name="session219" href="./../nodes/com.stn.helpers.UserHelper.verifyAuthentication%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet..b09f9198f4fdeb753c335cf9d020dfd6_node25.html#session219">node25#session219</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE730">730</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session220" href="./../nodes/com.stn.helpers.UserHelper.verifyAuthentication%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet..b09f9198f4fdeb753c335cf9d020dfd6_node25.html#session220">node25#session220</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE730">730</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ ip, $bcvar9, cookie, userHelper, $bcvar11, session, $bcvar10 },
+{ n$29, token, $irvar1 })
+
+INSTR=  n$30=*&amp;cookie:javax.servlet.http.Cookie* [line 730]; 
+
+STATE:
+({ n$30, ip, $bcvar9, cookie, userHelper, $bcvar11, session, $bcvar10 },
+{ n$29, token, $irvar1 })
+
+INSTR=  _=*n$30:javax.servlet.http.Cookie*(root javax.servlet.http.Cookie) [line 730]; 
+
+STATE:
+({ _, n$30, ip, $bcvar9, cookie, userHelper, $bcvar11, session, $bcvar10 },
+{ n$29, token, $irvar1 })
+
+INSTR=  n$32=_fun_String Cookie.getValue()(n$30:javax.servlet.http.Cookie*) virtual [line 730]; 
+
+STATE:
+({ _,
+   n$30,
+   n$32,
+   ip,
+   $bcvar9,
+   cookie,
+   userHelper,
+   $bcvar11,
+   session,
+   $bcvar10 },
+{ n$29, token, $irvar1 })
+
+INSTR=  *&amp;token:java.lang.String*=n$32 [line 730]; 
+
+STATE:
+({ ip, token, $bcvar9, userHelper, $bcvar11, session, $bcvar10 },
+{ _, n$30, n$32, cookie })
+
+</LISTING>
+<hr width="100%">
+<a name="session44" href="./../nodes/com.stn.helpers.UserHelper.verifyAuthentication%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet..b09f9198f4fdeb753c335cf9d020dfd6_node25.html#session44">node25#session44</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE730">730</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session45" href="./../nodes/com.stn.helpers.UserHelper.verifyAuthentication%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet..b09f9198f4fdeb753c335cf9d020dfd6_node25.html#session45">node25#session45</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE730">730</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$3 -&gt; { connection -&gt; { },
+           dbHost -&gt; { },
+           dbName -&gt; { },
+           dbPassword -&gt; { },
+           dbPort -&gt; { },
+           dbUser -&gt; { },
+           preparedStatement -&gt; { },
+           query -&gt; { },
+           resultSet -&gt; { },
+           AB -&gt; { },
+           rnd -&gt; { } },
+  n$5 -&gt; { connection -&gt; { },
+           dbHost -&gt; { },
+           dbName -&gt; { },
+           dbPassword -&gt; { },
+           dbPort -&gt; { },
+           dbUser -&gt; { },
+           preparedStatement -&gt; { },
+           query -&gt; { },
+           resultSet -&gt; { } },
+  n$8 -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  ip -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  token -&gt; { },
+  securityHelper -&gt; { connection -&gt; { },
+                      dbHost -&gt; { },
+                      dbName -&gt; { },
+                      dbPassword -&gt; { },
+                      dbPort -&gt; { },
+                      dbUser -&gt; { },
+                      preparedStatement -&gt; { },
+                      query -&gt; { },
+                      resultSet -&gt; { },
+                      AB -&gt; { },
+                      rnd -&gt; { } },
+  cookie -&gt; { },
+  userHelper -&gt; { connection -&gt; { },
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; { },
+                  query -&gt; { },
+                  resultSet -&gt; { } },
+  $bcvar11 -&gt; { },
+  id -&gt; { },
+  session -&gt; { },
+  cookies -&gt; { } }
+
+
+
+INSTR=  n$32 := String Cookie.getValue()({ cookie }) [line 730]; 
+
+STATE UNCHANGED
+
+INSTR=  token := n$32 [line 730]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;cookie); [line 730]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(n$32,cookie); [line 730]; 
+
+STATE:
+{ n$3 -&gt; { connection -&gt; { },
+           dbHost -&gt; { },
+           dbName -&gt; { },
+           dbPassword -&gt; { },
+           dbPort -&gt; { },
+           dbUser -&gt; { },
+           preparedStatement -&gt; { },
+           query -&gt; { },
+           resultSet -&gt; { },
+           AB -&gt; { },
+           rnd -&gt; { } },
+  n$5 -&gt; { connection -&gt; { },
+           dbHost -&gt; { },
+           dbName -&gt; { },
+           dbPassword -&gt; { },
+           dbPort -&gt; { },
+           dbUser -&gt; { },
+           preparedStatement -&gt; { },
+           query -&gt; { },
+           resultSet -&gt; { } },
+  n$8 -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  ip -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  token -&gt; { },
+  securityHelper -&gt; { connection -&gt; { },
+                      dbHost -&gt; { },
+                      dbName -&gt; { },
+                      dbPassword -&gt; { },
+                      dbPort -&gt; { },
+                      dbUser -&gt; { },
+                      preparedStatement -&gt; { },
+                      query -&gt; { },
+                      resultSet -&gt; { },
+                      AB -&gt; { },
+                      rnd -&gt; { } },
+  cookie -&gt; { },
+  userHelper -&gt; { connection -&gt; { },
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; { },
+                  query -&gt; { },
+                  resultSet -&gt; { } },
+  $bcvar11 -&gt; { },
+  id -&gt; { },
+  session -&gt; { },
+  cookies -&gt; { } }
+
+INSTR=  APPLY_ABSTRACTION; [line 730]; 
+
+STATE UNCHANGED
+
+</LISTING>

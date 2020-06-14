@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.servlets.FacultateProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.4ec674c4f322bf867f8527a337649fa9_1" [label="1: Start void FacultateProcess.doGet(HttpServletRequest,HttpServletResponse)\nFormals:  this:com.stn.servlets.FacultateProcess* request:javax.servlet.http.HttpServletRequest* response:javax.servlet.http.HttpServletResponse*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.servlets.FacultateProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.4ec674c4f322bf867f8527a337649fa9_1" -> "com.stn.servlets.FacultateProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.4ec674c4f322bf867f8527a337649fa9_4" ;
+"com.stn.servlets.FacultateProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.4ec674c4f322bf867f8527a337649fa9_2" [label="2: Exit void FacultateProcess.doGet(HttpServletRequest,HttpServletResponse) \n  " color=yellow style=filled]
+	
+
+"com.stn.servlets.FacultateProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.4ec674c4f322bf867f8527a337649fa9_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 25]\n " shape="box"]
+	
+
+	 "com.stn.servlets.FacultateProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.4ec674c4f322bf867f8527a337649fa9_3" -> "com.stn.servlets.FacultateProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.4ec674c4f322bf867f8527a337649fa9_2" ;
+"com.stn.servlets.FacultateProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.4ec674c4f322bf867f8527a337649fa9_4" [label="4:  Call void HttpServletResponse.sendRedirect(String) \n   n$0=*&response:javax.servlet.http.HttpServletResponse* [line 24]\n  _=*n$0:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 24]\n  n$2=_fun_void HttpServletResponse.sendRedirect(String)(n$0:javax.servlet.http.HttpServletResponse*,\"/panel/editfacultati.jsp\":java.lang.Object*) interface virtual [line 24]\n  NULLIFY(&response); [line 24]\n  EXIT_SCOPE(_,n$0,n$2,response); [line 24]\n " shape="box"]
+	
+
+	 "com.stn.servlets.FacultateProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.4ec674c4f322bf867f8527a337649fa9_4" -> "com.stn.servlets.FacultateProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.4ec674c4f322bf867f8527a337649fa9_5" ;
+	 "com.stn.servlets.FacultateProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.4ec674c4f322bf867f8527a337649fa9_4" -> "com.stn.servlets.FacultateProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.4ec674c4f322bf867f8527a337649fa9_3" [color="red" ];
+"com.stn.servlets.FacultateProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.4ec674c4f322bf867f8527a337649fa9_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 25]\n " shape="box"]
+	
+
+	 "com.stn.servlets.FacultateProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.4ec674c4f322bf867f8527a337649fa9_5" -> "com.stn.servlets.FacultateProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.4ec674c4f322bf867f8527a337649fa9_2" ;
+	 "com.stn.servlets.FacultateProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.4ec674c4f322bf867f8527a337649fa9_5" -> "com.stn.servlets.FacultateProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.4ec674c4f322bf867f8527a337649fa9_3" [color="red" ];
+}

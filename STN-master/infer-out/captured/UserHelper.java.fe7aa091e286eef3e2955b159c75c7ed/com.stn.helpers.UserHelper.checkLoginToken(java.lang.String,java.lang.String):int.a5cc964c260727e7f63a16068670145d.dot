@@ -1,0 +1,241 @@
+/* @generated */
+digraph cfg {
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_1" [label="1: Start int UserHelper.checkLoginToken(String,String)\nFormals:  this:com.stn.helpers.UserHelper* token:java.lang.String* ip:java.lang.String*\nLocals:  $bcvar4:void CatchVar159:void $irvar7:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void id:int \n  " color=yellow style=filled]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_1" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_4" ;
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_2" [label="2: Exit int UserHelper.checkLoginToken(String,String) \n  " color=yellow style=filled]
+	
+
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [label="3:  exceptions sink \n   NULLIFY(&$bcvar4); [line 203]\n  NULLIFY(&id); [line 203]\n  EXIT_SCOPE($bcvar4,id); [line 203]\n  APPLY_ABSTRACTION; [line 203]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_2" ;
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_4" [label="4:  method_body \n   *&id:int=-1 [line 180]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_4" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_5" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_4" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_5" [label="5:  method_body \n   n$0=*&this:com.stn.helpers.UserHelper* [line 182]\n  *n$0.query:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=\"SELECT Id FROM users WHERE LoginToken = ? AND Ip = ?\" [line 182]\n  EXIT_SCOPE(n$0); [line 182]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_5" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_6" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_5" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_6" [label="6:  Call Class Class.forName(String) \n   n$1=_fun_Class Class.forName(String)(\"com.mysql.jdbc.Driver\":java.lang.Object*) [line 185]\n  *&$irvar0:java.lang.Class*=n$1 [line 185]\n  NULLIFY(&$irvar0); [line 185]\n  EXIT_SCOPE(n$1,$irvar0); [line 185]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_6" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_7" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_6" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_7" [label="7:  Call String DBConnection.getHost() \n   n$2=*&this:com.stn.helpers.UserHelper* [line 186]\n  _=*n$2:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 186]\n  n$4=_fun_String DBConnection.getHost()(n$2:com.stn.helpers.UserHelper*) virtual [line 186]\n  *&$irvar1:java.lang.String*=n$4 [line 186]\n  EXIT_SCOPE(_,n$2,n$4); [line 186]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_7" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_8" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_7" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_8" [label="8:  Call String DBConnection.getUser() \n   n$5=*&this:com.stn.helpers.UserHelper* [line 186]\n  _=*n$5:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 186]\n  n$7=_fun_String DBConnection.getUser()(n$5:com.stn.helpers.UserHelper*) virtual [line 186]\n  *&$irvar2:java.lang.String*=n$7 [line 186]\n  EXIT_SCOPE(_,n$5,n$7); [line 186]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_8" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_9" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_8" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_9" [label="9:  Call String DBConnection.getPassword() \n   n$8=*&this:com.stn.helpers.UserHelper* [line 186]\n  _=*n$8:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 186]\n  n$10=_fun_String DBConnection.getPassword()(n$8:com.stn.helpers.UserHelper*) virtual [line 186]\n  *&$irvar3:java.lang.String*=n$10 [line 186]\n  EXIT_SCOPE(_,n$8,n$10); [line 186]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_9" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_10" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_9" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_10" [label="10:  Call Connection DriverManager.getConnection(String,String,String) \n   n$11=*&$irvar1:java.lang.String* [line 186]\n  n$12=*&$irvar2:java.lang.String* [line 186]\n  n$13=*&$irvar3:java.lang.String* [line 186]\n  n$14=_fun_Connection DriverManager.getConnection(String,String,String)(n$11:java.lang.String*,n$12:java.lang.String*,n$13:java.lang.String*) [line 186]\n  *&$irvar4:java.sql.Connection*=n$14 [line 186]\n  NULLIFY(&$irvar3); [line 186]\n  NULLIFY(&$irvar1); [line 186]\n  NULLIFY(&$irvar2); [line 186]\n  EXIT_SCOPE(n$11,n$12,n$13,n$14,$irvar3,$irvar1,$irvar2); [line 186]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_10" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_11" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_10" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_11" [label="11:  method_body \n   n$15=*&this:com.stn.helpers.UserHelper* [line 186]\n  n$16=*&$irvar4:java.sql.Connection* [line 186]\n  *n$15.connection:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$16 [line 186]\n  NULLIFY(&$irvar4); [line 186]\n  EXIT_SCOPE(n$15,n$16,$irvar4); [line 186]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_11" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_12" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_11" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_12" [label="12:  Call PreparedStatement Connection.prepareStatement(String) \n   n$17=*&this:com.stn.helpers.UserHelper* [line 187]\n  n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 187]\n  _=*n$18:java.sql.Connection*(root java.sql.Connection) [line 187]\n  n$20=*&this:com.stn.helpers.UserHelper* [line 187]\n  n$21=*n$20.query:java.lang.String*(root com.stn.helpers.UserHelper) [line 187]\n  n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 187]\n  *&$irvar5:java.sql.PreparedStatement*=n$22 [line 187]\n  EXIT_SCOPE(_,n$17,n$18,n$20,n$21,n$22); [line 187]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_12" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_13" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_12" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_13" [label="13:  method_body \n   n$23=*&this:com.stn.helpers.UserHelper* [line 187]\n  n$24=*&$irvar5:java.sql.PreparedStatement* [line 187]\n  *n$23.preparedStatement:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$24 [line 187]\n  NULLIFY(&$irvar5); [line 187]\n  EXIT_SCOPE(n$23,n$24,$irvar5); [line 187]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_13" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_14" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_13" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_14" [label="14:  Call void PreparedStatement.setString(int,String) \n   n$25=*&this:com.stn.helpers.UserHelper* [line 188]\n  n$26=*n$25.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 188]\n  _=*n$26:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 188]\n  n$28=*&token:java.lang.String* [line 188]\n  n$29=_fun_void PreparedStatement.setString(int,String)(n$26:java.sql.PreparedStatement*,1:int,n$28:java.lang.String*) interface virtual [line 188]\n  NULLIFY(&token); [line 188]\n  EXIT_SCOPE(_,n$25,n$26,n$28,n$29,token); [line 188]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_14" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_15" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_14" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_15" [label="15:  Call void PreparedStatement.setString(int,String) \n   n$30=*&this:com.stn.helpers.UserHelper* [line 189]\n  n$31=*n$30.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 189]\n  _=*n$31:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 189]\n  n$33=*&ip:java.lang.String* [line 189]\n  n$34=_fun_void PreparedStatement.setString(int,String)(n$31:java.sql.PreparedStatement*,2:int,n$33:java.lang.String*) interface virtual [line 189]\n  NULLIFY(&ip); [line 189]\n  EXIT_SCOPE(_,n$30,n$31,n$33,n$34,ip); [line 189]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_15" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_16" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_15" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_16" [label="16:  Call ResultSet PreparedStatement.executeQuery() \n   n$35=*&this:com.stn.helpers.UserHelper* [line 190]\n  n$36=*n$35.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 190]\n  _=*n$36:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 190]\n  n$38=_fun_ResultSet PreparedStatement.executeQuery()(n$36:java.sql.PreparedStatement*) interface virtual [line 190]\n  *&$irvar6:java.sql.ResultSet*=n$38 [line 190]\n  EXIT_SCOPE(_,n$35,n$36,n$38); [line 190]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_16" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_17" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_16" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_17" [label="17:  method_body \n   n$39=*&this:com.stn.helpers.UserHelper* [line 190]\n  n$40=*&$irvar6:java.sql.ResultSet* [line 190]\n  *n$39.resultSet:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$40 [line 190]\n  NULLIFY(&$irvar6); [line 190]\n  EXIT_SCOPE(n$39,n$40,$irvar6); [line 190]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_17" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_18" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_17" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_18" [label="18:  Call boolean ResultSet.next() \n   n$41=*&this:com.stn.helpers.UserHelper* [line 191]\n  n$42=*n$41.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 191]\n  _=*n$42:java.sql.ResultSet*(root java.sql.ResultSet) [line 191]\n  n$44=_fun_boolean ResultSet.next()(n$42:java.sql.ResultSet*) interface virtual [line 191]\n  *&$irvar7:_Bool=n$44 [line 191]\n  EXIT_SCOPE(_,n$41,n$42,n$44); [line 191]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_18" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_19" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_18" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_20" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_18" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_19" [label="19: Prune (true branch, if) \n   n$45=*&$irvar7:_Bool [line 191]\n  PRUNE(!(n$45 == 0), true); [line 191]\n  NULLIFY(&$irvar7); [line 191]\n  NULLIFY(&id); [line 191]\n  EXIT_SCOPE(n$45,$irvar7,id); [line 191]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_19" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_21" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_19" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_20" [label="20: Prune (false branch, if) \n   n$45=*&$irvar7:_Bool [line 191]\n  PRUNE((n$45 == 0), false); [line 191]\n  NULLIFY(&$irvar7); [line 191]\n  EXIT_SCOPE(n$45,$irvar7); [line 191]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_20" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_22" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_20" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_23" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_20" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_21" [label="21:  Call int ResultSet.getInt(int) \n   n$46=*&this:com.stn.helpers.UserHelper* [line 192]\n  n$47=*n$46.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 192]\n  _=*n$47:java.sql.ResultSet*(root java.sql.ResultSet) [line 192]\n  n$49=_fun_int ResultSet.getInt(int)(n$47:java.sql.ResultSet*,1:int) interface virtual [line 192]\n  *&id:int=n$49 [line 192]\n  EXIT_SCOPE(_,n$46,n$47,n$49); [line 192]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_21" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_22" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_21" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_23" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_21" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_44" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_22" [label="22: Prune (true branch, if) \n   n$50=*&this:com.stn.helpers.UserHelper* [line 195]\n  n$51=*n$50.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 195]\n  PRUNE(!(n$51 == null), true); [line 195]\n  EXIT_SCOPE(n$50,n$51); [line 195]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_22" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_24" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_22" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_23" [label="23: Prune (false branch, if) \n   n$50=*&this:com.stn.helpers.UserHelper* [line 195]\n  n$51=*n$50.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 195]\n  PRUNE((n$51 == null), false); [line 195]\n  EXIT_SCOPE(n$50,n$51); [line 195]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_23" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_25" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_23" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_26" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_23" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_24" [label="24:  Call void PreparedStatement.close() \n   n$52=*&this:com.stn.helpers.UserHelper* [line 196]\n  n$53=*n$52.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 196]\n  n$56=_fun___set_mem_attribute(n$53:java.sql.PreparedStatement*) [line 196]\n  _=*n$53:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 196]\n  n$55=_fun_void PreparedStatement.close()(n$53:java.sql.PreparedStatement*) interface virtual [line 196]\n  EXIT_SCOPE(_,n$52,n$53,n$55,n$56); [line 196]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_24" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_25" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_24" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_26" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_24" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_25" [label="25: Prune (true branch, if) \n   n$57=*&this:com.stn.helpers.UserHelper* [line 197]\n  n$58=*n$57.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 197]\n  PRUNE(!(n$58 == null), true); [line 197]\n  EXIT_SCOPE(n$57,n$58); [line 197]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_25" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_27" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_25" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_26" [label="26: Prune (false branch, if) \n   n$57=*&this:com.stn.helpers.UserHelper* [line 197]\n  n$58=*n$57.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 197]\n  PRUNE((n$58 == null), false); [line 197]\n  EXIT_SCOPE(n$57,n$58); [line 197]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_26" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_28" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_26" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_29" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_26" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_27" [label="27:  Call void Connection.close() \n   n$59=*&this:com.stn.helpers.UserHelper* [line 198]\n  n$60=*n$59.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 198]\n  n$63=_fun___set_mem_attribute(n$60:java.sql.Connection*) [line 198]\n  _=*n$60:java.sql.Connection*(root java.sql.Connection) [line 198]\n  n$62=_fun_void Connection.close()(n$60:java.sql.Connection*) interface virtual [line 198]\n  EXIT_SCOPE(_,n$59,n$60,n$62,n$63); [line 198]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_27" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_28" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_27" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_29" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_27" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_28" [label="28: Prune (true branch, if) \n   n$64=*&this:com.stn.helpers.UserHelper* [line 199]\n  n$65=*n$64.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 199]\n  PRUNE(!(n$65 == null), true); [line 199]\n  EXIT_SCOPE(n$64,n$65); [line 199]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_28" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_30" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_28" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_29" [label="29: Prune (false branch, if) \n   n$64=*&this:com.stn.helpers.UserHelper* [line 199]\n  n$65=*n$64.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 199]\n  PRUNE((n$65 == null), false); [line 199]\n  NULLIFY(&this); [line 199]\n  EXIT_SCOPE(n$64,n$65,this); [line 199]\n  APPLY_ABSTRACTION; [line 199]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_29" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_42" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_29" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_30" [label="30:  Call void ResultSet.close() \n   n$66=*&this:com.stn.helpers.UserHelper* [line 200]\n  n$67=*n$66.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 200]\n  n$70=_fun___set_mem_attribute(n$67:java.sql.ResultSet*) [line 200]\n  _=*n$67:java.sql.ResultSet*(root java.sql.ResultSet) [line 200]\n  n$69=_fun_void ResultSet.close()(n$67:java.sql.ResultSet*) interface virtual [line 200]\n  NULLIFY(&this); [line 200]\n  EXIT_SCOPE(_,n$66,n$67,n$69,n$70,this); [line 200]\n  APPLY_ABSTRACTION; [line 200]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_30" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_42" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_30" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_31" [label="31:  method_body \n   n$71=*&CatchVar159:java.lang.Object* [line 195]\n  *&$bcvar4:java.lang.Object*=n$71 [line 195]\n  EXIT_SCOPE(n$71); [line 195]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_31" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_32" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_31" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_33" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_31" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_46" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_32" [label="32: Prune (true branch, if) \n   n$72=*&this:com.stn.helpers.UserHelper* [line 195]\n  n$73=*n$72.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 195]\n  PRUNE(!(n$73 == null), true); [line 195]\n  EXIT_SCOPE(n$72,n$73); [line 195]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_32" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_34" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_32" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_33" [label="33: Prune (false branch, if) \n   n$72=*&this:com.stn.helpers.UserHelper* [line 195]\n  n$73=*n$72.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 195]\n  PRUNE((n$73 == null), false); [line 195]\n  EXIT_SCOPE(n$72,n$73); [line 195]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_33" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_35" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_33" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_36" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_33" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_34" [label="34:  Call void PreparedStatement.close() \n   n$74=*&this:com.stn.helpers.UserHelper* [line 196]\n  n$75=*n$74.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 196]\n  n$78=_fun___set_mem_attribute(n$75:java.sql.PreparedStatement*) [line 196]\n  _=*n$75:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 196]\n  n$77=_fun_void PreparedStatement.close()(n$75:java.sql.PreparedStatement*) interface virtual [line 196]\n  EXIT_SCOPE(_,n$74,n$75,n$77,n$78); [line 196]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_34" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_35" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_34" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_36" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_34" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_35" [label="35: Prune (true branch, if) \n   n$79=*&this:com.stn.helpers.UserHelper* [line 197]\n  n$80=*n$79.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 197]\n  PRUNE(!(n$80 == null), true); [line 197]\n  EXIT_SCOPE(n$79,n$80); [line 197]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_35" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_37" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_35" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_36" [label="36: Prune (false branch, if) \n   n$79=*&this:com.stn.helpers.UserHelper* [line 197]\n  n$80=*n$79.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 197]\n  PRUNE((n$80 == null), false); [line 197]\n  EXIT_SCOPE(n$79,n$80); [line 197]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_36" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_38" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_36" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_39" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_36" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_37" [label="37:  Call void Connection.close() \n   n$81=*&this:com.stn.helpers.UserHelper* [line 198]\n  n$82=*n$81.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 198]\n  n$85=_fun___set_mem_attribute(n$82:java.sql.Connection*) [line 198]\n  _=*n$82:java.sql.Connection*(root java.sql.Connection) [line 198]\n  n$84=_fun_void Connection.close()(n$82:java.sql.Connection*) interface virtual [line 198]\n  EXIT_SCOPE(_,n$81,n$82,n$84,n$85); [line 198]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_37" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_38" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_37" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_39" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_37" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_38" [label="38: Prune (true branch, if) \n   n$86=*&this:com.stn.helpers.UserHelper* [line 199]\n  n$87=*n$86.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 199]\n  PRUNE(!(n$87 == null), true); [line 199]\n  EXIT_SCOPE(n$86,n$87); [line 199]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_38" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_40" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_38" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_39" [label="39: Prune (false branch, if) \n   n$86=*&this:com.stn.helpers.UserHelper* [line 199]\n  n$87=*n$86.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 199]\n  PRUNE((n$87 == null), false); [line 199]\n  NULLIFY(&this); [line 199]\n  EXIT_SCOPE(n$86,n$87,this); [line 199]\n  APPLY_ABSTRACTION; [line 199]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_39" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_41" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_39" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_40" [label="40:  Call void ResultSet.close() \n   n$88=*&this:com.stn.helpers.UserHelper* [line 200]\n  n$89=*n$88.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 200]\n  n$92=_fun___set_mem_attribute(n$89:java.sql.ResultSet*) [line 200]\n  _=*n$89:java.sql.ResultSet*(root java.sql.ResultSet) [line 200]\n  n$91=_fun_void ResultSet.close()(n$89:java.sql.ResultSet*) interface virtual [line 200]\n  NULLIFY(&this); [line 200]\n  EXIT_SCOPE(_,n$88,n$89,n$91,n$92,this); [line 200]\n  APPLY_ABSTRACTION; [line 200]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_40" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_41" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_40" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_41" [label="41:  throw \n   n$93=*&$bcvar4:java.lang.Object* [line 201]\n  *&return:int=EXN n$93 [line 201]\n  NULLIFY(&$bcvar4); [line 201]\n  EXIT_SCOPE(n$93,$bcvar4); [line 201]\n  APPLY_ABSTRACTION; [line 201]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_41" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_2" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_41" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_42" [label="42:  method_body \n   n$94=*&id:int [line 203]\n  *&return:int=n$94 [line 203]\n  NULLIFY(&id); [line 203]\n  EXIT_SCOPE(n$94,id); [line 203]\n  APPLY_ABSTRACTION; [line 203]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_42" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_2" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_42" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_43" [label="43:  Finally branch \n   APPLY_ABSTRACTION; [line 195]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_43" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_31" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_43" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_44" [label="44:  exception handler \n   n$95=*&return:int [line 195]\n  *&return:int=null [line 195]\n  n$96=_fun___unwrap_exception(n$95:int) [line 195]\n  NULLIFY(&$irvar3); [line 195]\n  NULLIFY(&$irvar5); [line 195]\n  NULLIFY(&$irvar4); [line 195]\n  NULLIFY(&$irvar7); [line 195]\n  NULLIFY(&$irvar6); [line 195]\n  NULLIFY(&$irvar1); [line 195]\n  NULLIFY(&$irvar2); [line 195]\n  NULLIFY(&id); [line 195]\n  EXIT_SCOPE(n$95,n$96,$irvar3,$irvar5,$irvar4,$irvar7,$irvar6,$irvar1,$irvar2,id); [line 195]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_44" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_43" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_44" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_45" [label="45:  Finally branch \n   APPLY_ABSTRACTION; [line 195]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_45" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_31" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_45" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+"com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_46" [label="46:  exception handler \n   n$95=*&return:int [line 195]\n  *&return:int=null [line 195]\n  n$96=_fun___unwrap_exception(n$95:int) [line 195]\n  NULLIFY(&$bcvar4); [line 195]\n  EXIT_SCOPE(n$95,n$96,$bcvar4); [line 195]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_46" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_45" ;
+	 "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_46" -> "com.stn.helpers.UserHelper.checkLoginToken(java.lang.String,java.lang.String):int.a5cc964c260727e7f63a16068670145d_3" [color="red" ];
+}

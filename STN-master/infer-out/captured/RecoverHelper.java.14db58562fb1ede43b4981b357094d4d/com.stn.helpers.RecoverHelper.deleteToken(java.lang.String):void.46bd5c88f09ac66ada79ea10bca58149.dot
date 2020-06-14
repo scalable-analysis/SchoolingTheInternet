@@ -1,0 +1,194 @@
+/* @generated */
+digraph cfg {
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_1" [label="1: Start void RecoverHelper.deleteToken(String)\nFormals:  this:com.stn.helpers.RecoverHelper* token:java.lang.String*\nLocals:  $bcvar2:void CatchVar120:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void \n  " color=yellow style=filled]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_1" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_4" ;
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_2" [label="2: Exit void RecoverHelper.deleteToken(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [label="3:  exceptions sink \n   NULLIFY(&$bcvar2); [line 75]\n  EXIT_SCOPE($bcvar2); [line 75]\n  APPLY_ABSTRACTION; [line 75]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_2" ;
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_4" [label="4:  method_body \n   n$0=*&this:com.stn.helpers.RecoverHelper* [line 59]\n  *n$0.query:com.stn.helpers.RecoverHelper(root com.stn.helpers.RecoverHelper)=\"DELETE FROM password_reset WHERE Token = ?\" [line 59]\n  EXIT_SCOPE(n$0); [line 59]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_4" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_5" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_4" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_5" [label="5:  Call Class Class.forName(String) \n   n$1=_fun_Class Class.forName(String)(\"com.mysql.jdbc.Driver\":java.lang.Object*) [line 62]\n  *&$irvar0:java.lang.Class*=n$1 [line 62]\n  NULLIFY(&$irvar0); [line 62]\n  EXIT_SCOPE(n$1,$irvar0); [line 62]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_5" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_6" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_5" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_37" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_6" [label="6:  Call String DBConnection.getHost() \n   n$2=*&this:com.stn.helpers.RecoverHelper* [line 63]\n  _=*n$2:com.stn.helpers.RecoverHelper*(root com.stn.helpers.RecoverHelper) [line 63]\n  n$4=_fun_String DBConnection.getHost()(n$2:com.stn.helpers.RecoverHelper*) virtual [line 63]\n  *&$irvar1:java.lang.String*=n$4 [line 63]\n  EXIT_SCOPE(_,n$2,n$4); [line 63]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_6" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_7" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_6" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_37" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_7" [label="7:  Call String DBConnection.getUser() \n   n$5=*&this:com.stn.helpers.RecoverHelper* [line 63]\n  _=*n$5:com.stn.helpers.RecoverHelper*(root com.stn.helpers.RecoverHelper) [line 63]\n  n$7=_fun_String DBConnection.getUser()(n$5:com.stn.helpers.RecoverHelper*) virtual [line 63]\n  *&$irvar2:java.lang.String*=n$7 [line 63]\n  EXIT_SCOPE(_,n$5,n$7); [line 63]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_7" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_8" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_7" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_37" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_8" [label="8:  Call String DBConnection.getPassword() \n   n$8=*&this:com.stn.helpers.RecoverHelper* [line 63]\n  _=*n$8:com.stn.helpers.RecoverHelper*(root com.stn.helpers.RecoverHelper) [line 63]\n  n$10=_fun_String DBConnection.getPassword()(n$8:com.stn.helpers.RecoverHelper*) virtual [line 63]\n  *&$irvar3:java.lang.String*=n$10 [line 63]\n  EXIT_SCOPE(_,n$8,n$10); [line 63]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_8" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_9" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_8" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_37" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_9" [label="9:  Call Connection DriverManager.getConnection(String,String,String) \n   n$11=*&$irvar1:java.lang.String* [line 63]\n  n$12=*&$irvar2:java.lang.String* [line 63]\n  n$13=*&$irvar3:java.lang.String* [line 63]\n  n$14=_fun_Connection DriverManager.getConnection(String,String,String)(n$11:java.lang.String*,n$12:java.lang.String*,n$13:java.lang.String*) [line 63]\n  *&$irvar4:java.sql.Connection*=n$14 [line 63]\n  NULLIFY(&$irvar3); [line 63]\n  NULLIFY(&$irvar1); [line 63]\n  NULLIFY(&$irvar2); [line 63]\n  EXIT_SCOPE(n$11,n$12,n$13,n$14,$irvar3,$irvar1,$irvar2); [line 63]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_9" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_10" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_9" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_37" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_10" [label="10:  method_body \n   n$15=*&this:com.stn.helpers.RecoverHelper* [line 63]\n  n$16=*&$irvar4:java.sql.Connection* [line 63]\n  *n$15.connection:com.stn.helpers.RecoverHelper(root com.stn.helpers.RecoverHelper)=n$16 [line 63]\n  NULLIFY(&$irvar4); [line 63]\n  EXIT_SCOPE(n$15,n$16,$irvar4); [line 63]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_10" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_11" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_10" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_37" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_11" [label="11:  Call PreparedStatement Connection.prepareStatement(String) \n   n$17=*&this:com.stn.helpers.RecoverHelper* [line 64]\n  n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 64]\n  _=*n$18:java.sql.Connection*(root java.sql.Connection) [line 64]\n  n$20=*&this:com.stn.helpers.RecoverHelper* [line 64]\n  n$21=*n$20.query:java.lang.String*(root com.stn.helpers.RecoverHelper) [line 64]\n  n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 64]\n  *&$irvar5:java.sql.PreparedStatement*=n$22 [line 64]\n  EXIT_SCOPE(_,n$17,n$18,n$20,n$21,n$22); [line 64]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_11" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_12" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_11" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_37" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_12" [label="12:  method_body \n   n$23=*&this:com.stn.helpers.RecoverHelper* [line 64]\n  n$24=*&$irvar5:java.sql.PreparedStatement* [line 64]\n  *n$23.preparedStatement:com.stn.helpers.RecoverHelper(root com.stn.helpers.RecoverHelper)=n$24 [line 64]\n  NULLIFY(&$irvar5); [line 64]\n  EXIT_SCOPE(n$23,n$24,$irvar5); [line 64]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_12" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_13" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_12" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_37" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_13" [label="13:  Call void PreparedStatement.setString(int,String) \n   n$25=*&this:com.stn.helpers.RecoverHelper* [line 65]\n  n$26=*n$25.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 65]\n  _=*n$26:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 65]\n  n$28=*&token:java.lang.String* [line 65]\n  n$29=_fun_void PreparedStatement.setString(int,String)(n$26:java.sql.PreparedStatement*,1:int,n$28:java.lang.String*) interface virtual [line 65]\n  NULLIFY(&token); [line 65]\n  EXIT_SCOPE(_,n$25,n$26,n$28,n$29,token); [line 65]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_13" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_14" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_13" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_37" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_14" [label="14:  Call int PreparedStatement.executeUpdate() \n   n$30=*&this:com.stn.helpers.RecoverHelper* [line 66]\n  n$31=*n$30.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 66]\n  _=*n$31:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 66]\n  n$33=_fun_int PreparedStatement.executeUpdate()(n$31:java.sql.PreparedStatement*) interface virtual [line 66]\n  *&$irvar6:int=n$33 [line 66]\n  NULLIFY(&$irvar6); [line 66]\n  EXIT_SCOPE(_,n$30,n$31,n$33,$irvar6); [line 66]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_14" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_15" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_14" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_16" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_14" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_37" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_15" [label="15: Prune (true branch, if) \n   n$34=*&this:com.stn.helpers.RecoverHelper* [line 68]\n  n$35=*n$34.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 68]\n  PRUNE(!(n$35 == null), true); [line 68]\n  EXIT_SCOPE(n$34,n$35); [line 68]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_15" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_17" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_15" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_16" [label="16: Prune (false branch, if) \n   n$34=*&this:com.stn.helpers.RecoverHelper* [line 68]\n  n$35=*n$34.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 68]\n  PRUNE((n$35 == null), false); [line 68]\n  EXIT_SCOPE(n$34,n$35); [line 68]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_16" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_18" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_16" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_19" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_16" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_17" [label="17:  Call void PreparedStatement.close() \n   n$36=*&this:com.stn.helpers.RecoverHelper* [line 69]\n  n$37=*n$36.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 69]\n  n$40=_fun___set_mem_attribute(n$37:java.sql.PreparedStatement*) [line 69]\n  _=*n$37:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 69]\n  n$39=_fun_void PreparedStatement.close()(n$37:java.sql.PreparedStatement*) interface virtual [line 69]\n  EXIT_SCOPE(_,n$36,n$37,n$39,n$40); [line 69]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_17" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_18" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_17" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_19" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_17" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_18" [label="18: Prune (true branch, if) \n   n$41=*&this:com.stn.helpers.RecoverHelper* [line 70]\n  n$42=*n$41.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 70]\n  PRUNE(!(n$42 == null), true); [line 70]\n  EXIT_SCOPE(n$41,n$42); [line 70]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_18" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_20" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_18" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_19" [label="19: Prune (false branch, if) \n   n$41=*&this:com.stn.helpers.RecoverHelper* [line 70]\n  n$42=*n$41.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 70]\n  PRUNE((n$42 == null), false); [line 70]\n  EXIT_SCOPE(n$41,n$42); [line 70]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_19" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_21" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_19" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_22" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_19" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_20" [label="20:  Call void Connection.close() \n   n$43=*&this:com.stn.helpers.RecoverHelper* [line 71]\n  n$44=*n$43.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 71]\n  n$47=_fun___set_mem_attribute(n$44:java.sql.Connection*) [line 71]\n  _=*n$44:java.sql.Connection*(root java.sql.Connection) [line 71]\n  n$46=_fun_void Connection.close()(n$44:java.sql.Connection*) interface virtual [line 71]\n  EXIT_SCOPE(_,n$43,n$44,n$46,n$47); [line 71]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_20" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_21" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_20" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_22" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_20" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_21" [label="21: Prune (true branch, if) \n   n$48=*&this:com.stn.helpers.RecoverHelper* [line 72]\n  n$49=*n$48.resultSet:java.sql.ResultSet*(root com.stn.helpers.RecoverHelper) [line 72]\n  PRUNE(!(n$49 == null), true); [line 72]\n  EXIT_SCOPE(n$48,n$49); [line 72]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_21" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_23" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_21" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_22" [label="22: Prune (false branch, if) \n   n$48=*&this:com.stn.helpers.RecoverHelper* [line 72]\n  n$49=*n$48.resultSet:java.sql.ResultSet*(root com.stn.helpers.RecoverHelper) [line 72]\n  PRUNE((n$49 == null), false); [line 72]\n  NULLIFY(&this); [line 72]\n  EXIT_SCOPE(n$48,n$49,this); [line 72]\n  APPLY_ABSTRACTION; [line 72]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_22" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_35" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_22" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_23" [label="23:  Call void ResultSet.close() \n   n$50=*&this:com.stn.helpers.RecoverHelper* [line 73]\n  n$51=*n$50.resultSet:java.sql.ResultSet*(root com.stn.helpers.RecoverHelper) [line 73]\n  n$54=_fun___set_mem_attribute(n$51:java.sql.ResultSet*) [line 73]\n  _=*n$51:java.sql.ResultSet*(root java.sql.ResultSet) [line 73]\n  n$53=_fun_void ResultSet.close()(n$51:java.sql.ResultSet*) interface virtual [line 73]\n  NULLIFY(&this); [line 73]\n  EXIT_SCOPE(_,n$50,n$51,n$53,n$54,this); [line 73]\n  APPLY_ABSTRACTION; [line 73]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_23" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_35" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_23" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_24" [label="24:  method_body \n   n$55=*&CatchVar120:java.lang.Object* [line 68]\n  *&$bcvar2:java.lang.Object*=n$55 [line 68]\n  NULLIFY(&CatchVar120); [line 68]\n  EXIT_SCOPE(n$55,CatchVar120); [line 68]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_24" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_25" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_24" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_26" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_24" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_25" [label="25: Prune (true branch, if) \n   n$56=*&this:com.stn.helpers.RecoverHelper* [line 68]\n  n$57=*n$56.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 68]\n  PRUNE(!(n$57 == null), true); [line 68]\n  EXIT_SCOPE(n$56,n$57); [line 68]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_25" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_27" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_25" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_26" [label="26: Prune (false branch, if) \n   n$56=*&this:com.stn.helpers.RecoverHelper* [line 68]\n  n$57=*n$56.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 68]\n  PRUNE((n$57 == null), false); [line 68]\n  EXIT_SCOPE(n$56,n$57); [line 68]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_26" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_28" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_26" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_29" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_26" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_27" [label="27:  Call void PreparedStatement.close() \n   n$58=*&this:com.stn.helpers.RecoverHelper* [line 69]\n  n$59=*n$58.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.RecoverHelper) [line 69]\n  n$62=_fun___set_mem_attribute(n$59:java.sql.PreparedStatement*) [line 69]\n  _=*n$59:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 69]\n  n$61=_fun_void PreparedStatement.close()(n$59:java.sql.PreparedStatement*) interface virtual [line 69]\n  EXIT_SCOPE(_,n$58,n$59,n$61,n$62); [line 69]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_27" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_28" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_27" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_29" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_27" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_28" [label="28: Prune (true branch, if) \n   n$63=*&this:com.stn.helpers.RecoverHelper* [line 70]\n  n$64=*n$63.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 70]\n  PRUNE(!(n$64 == null), true); [line 70]\n  EXIT_SCOPE(n$63,n$64); [line 70]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_28" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_30" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_28" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_29" [label="29: Prune (false branch, if) \n   n$63=*&this:com.stn.helpers.RecoverHelper* [line 70]\n  n$64=*n$63.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 70]\n  PRUNE((n$64 == null), false); [line 70]\n  EXIT_SCOPE(n$63,n$64); [line 70]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_29" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_31" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_29" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_32" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_29" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_30" [label="30:  Call void Connection.close() \n   n$65=*&this:com.stn.helpers.RecoverHelper* [line 71]\n  n$66=*n$65.connection:java.sql.Connection*(root com.stn.helpers.RecoverHelper) [line 71]\n  n$69=_fun___set_mem_attribute(n$66:java.sql.Connection*) [line 71]\n  _=*n$66:java.sql.Connection*(root java.sql.Connection) [line 71]\n  n$68=_fun_void Connection.close()(n$66:java.sql.Connection*) interface virtual [line 71]\n  EXIT_SCOPE(_,n$65,n$66,n$68,n$69); [line 71]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_30" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_31" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_30" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_32" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_30" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_31" [label="31: Prune (true branch, if) \n   n$70=*&this:com.stn.helpers.RecoverHelper* [line 72]\n  n$71=*n$70.resultSet:java.sql.ResultSet*(root com.stn.helpers.RecoverHelper) [line 72]\n  PRUNE(!(n$71 == null), true); [line 72]\n  EXIT_SCOPE(n$70,n$71); [line 72]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_31" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_33" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_31" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_32" [label="32: Prune (false branch, if) \n   n$70=*&this:com.stn.helpers.RecoverHelper* [line 72]\n  n$71=*n$70.resultSet:java.sql.ResultSet*(root com.stn.helpers.RecoverHelper) [line 72]\n  PRUNE((n$71 == null), false); [line 72]\n  NULLIFY(&this); [line 72]\n  EXIT_SCOPE(n$70,n$71,this); [line 72]\n  APPLY_ABSTRACTION; [line 72]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_32" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_34" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_32" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_33" [label="33:  Call void ResultSet.close() \n   n$72=*&this:com.stn.helpers.RecoverHelper* [line 73]\n  n$73=*n$72.resultSet:java.sql.ResultSet*(root com.stn.helpers.RecoverHelper) [line 73]\n  n$76=_fun___set_mem_attribute(n$73:java.sql.ResultSet*) [line 73]\n  _=*n$73:java.sql.ResultSet*(root java.sql.ResultSet) [line 73]\n  n$75=_fun_void ResultSet.close()(n$73:java.sql.ResultSet*) interface virtual [line 73]\n  NULLIFY(&this); [line 73]\n  EXIT_SCOPE(_,n$72,n$73,n$75,n$76,this); [line 73]\n  APPLY_ABSTRACTION; [line 73]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_33" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_34" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_33" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_34" [label="34:  throw \n   n$77=*&$bcvar2:java.lang.Object* [line 74]\n  *&return:void=EXN n$77 [line 74]\n  NULLIFY(&$bcvar2); [line 74]\n  EXIT_SCOPE(n$77,$bcvar2); [line 74]\n  APPLY_ABSTRACTION; [line 74]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_34" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_2" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_34" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_35" [label="35:  method_body \n   APPLY_ABSTRACTION; [line 75]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_35" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_2" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_35" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_36" [label="36:  Finally branch \n  " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_36" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_24" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_36" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+"com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_37" [label="37:  exception handler \n   n$78=*&return:void [line 68]\n  *&return:void=null [line 68]\n  n$79=_fun___unwrap_exception(n$78:void) [line 68]\n  NULLIFY(&$irvar3); [line 68]\n  NULLIFY(&$irvar5); [line 68]\n  NULLIFY(&$irvar4); [line 68]\n  NULLIFY(&$irvar1); [line 68]\n  NULLIFY(&$irvar2); [line 68]\n  EXIT_SCOPE(n$78,n$79,$irvar3,$irvar5,$irvar4,$irvar1,$irvar2); [line 68]\n " shape="box"]
+	
+
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_37" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_36" ;
+	 "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_37" -> "com.stn.helpers.RecoverHelper.deleteToken(java.lang.String):void.46bd5c88f09ac66ada79ea10bca58149_3" [color="red" ];
+}

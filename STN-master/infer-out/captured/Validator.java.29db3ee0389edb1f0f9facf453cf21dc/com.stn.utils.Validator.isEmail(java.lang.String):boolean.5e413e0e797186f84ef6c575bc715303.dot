@@ -1,0 +1,55 @@
+/* @generated */
+digraph cfg {
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_1" [label="1: Start boolean Validator.isEmail(String)\nFormals:  email:java.lang.String*\nLocals:  CatchVar16:void ex:java.lang.Exception* emailAddr:javax.mail.internet.InternetAddress* \n  " color=yellow style=filled]
+	
+
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_1" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_4" ;
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_2" [label="2: Exit boolean Validator.isEmail(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_3" [label="3:  exceptions sink \n   NULLIFY(&CatchVar16); [line 18]\n  EXIT_SCOPE(n$8,CatchVar16); [line 18]\n  APPLY_ABSTRACTION; [line 18]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_3" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_2" ;
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_4" [label="4:  Call InternetAddress.<init>(String) \n   n$0=_fun___new(sizeof(t=javax.mail.internet.InternetAddress):javax.mail.internet.InternetAddress*) [line 13]\n  n$1=*&email:java.lang.String* [line 13]\n  n$2=_fun_InternetAddress.<init>(String)(n$0:javax.mail.internet.InternetAddress*,n$1:java.lang.String*) [line 13]\n  *&emailAddr:javax.mail.internet.InternetAddress*=n$0 [line 13]\n  NULLIFY(&email); [line 13]\n  EXIT_SCOPE(n$0,n$1,n$2,email); [line 13]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_4" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_5" ;
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_4" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_11" [color="red" ];
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_5" [label="5:  Call void InternetAddress.validate() \n   n$3=*&emailAddr:javax.mail.internet.InternetAddress* [line 14]\n  _=*n$3:javax.mail.internet.InternetAddress*(root javax.mail.internet.InternetAddress) [line 14]\n  n$5=_fun_void InternetAddress.validate()(n$3:javax.mail.internet.InternetAddress*) virtual [line 14]\n  NULLIFY(&emailAddr); [line 14]\n  EXIT_SCOPE(_,n$3,n$5,emailAddr); [line 14]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_5" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_8" ;
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_5" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_11" [color="red" ];
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_6" [label="6:  method_body \n   n$6=*&CatchVar16:java.lang.Object* [line 15]\n  *&ex:java.lang.Object*=n$6 [line 15]\n  NULLIFY(&ex); [line 15]\n  NULLIFY(&CatchVar16); [line 15]\n  EXIT_SCOPE(n$6,ex,CatchVar16); [line 15]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_6" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_7" ;
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_6" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_3" [color="red" ];
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_7" [label="7:  method_body \n   *&return:_Bool=0 [line 16]\n  APPLY_ABSTRACTION; [line 16]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_7" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_2" ;
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_7" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_3" [color="red" ];
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_8" [label="8:  method_body \n   *&return:_Bool=1 [line 18]\n  APPLY_ABSTRACTION; [line 18]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_8" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_2" ;
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_8" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_3" [color="red" ];
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_9" [label="9: Prune (true branch, switch) \n   n$9=_fun___instanceof(n$8:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 15]\n  PRUNE(n$9, true); [line 15]\n  *&CatchVar16:_Bool=n$8 [line 15]\n  EXIT_SCOPE(n$8,n$9); [line 15]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_9" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_6" ;
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_9" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_3" [color="red" ];
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_10" [label="10: Prune (false branch, switch) \n   n$9=_fun___instanceof(n$8:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 15]\n  PRUNE(!n$9, false); [line 15]\n  *&return:_Bool=EXN n$8 [line 15]\n  EXIT_SCOPE(n$8,n$9); [line 15]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_10" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_3" ;
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_10" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_3" [color="red" ];
+"com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_11" [label="11:  exception handler \n   n$7=*&return:_Bool [line 15]\n  *&return:_Bool=null [line 15]\n  n$8=_fun___unwrap_exception(n$7:_Bool) [line 15]\n  NULLIFY(&emailAddr); [line 15]\n  EXIT_SCOPE(n$7,emailAddr); [line 15]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_11" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_9" ;
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_11" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_10" ;
+	 "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_11" -> "com.stn.utils.Validator.isEmail(java.lang.String):boolean.5e413e0e797186f84ef6c575bc715303_3" [color="red" ];
+}

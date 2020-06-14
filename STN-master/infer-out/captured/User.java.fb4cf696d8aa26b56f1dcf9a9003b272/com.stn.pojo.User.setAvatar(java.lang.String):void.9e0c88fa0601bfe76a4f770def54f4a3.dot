@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.User.setAvatar(java.lang.String):void.9e0c88fa0601bfe76a4f770def54f4a3_1" [label="1: Start void User.setAvatar(String)\nFormals:  this:com.stn.pojo.User* avatar:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.User.setAvatar(java.lang.String):void.9e0c88fa0601bfe76a4f770def54f4a3_1" -> "com.stn.pojo.User.setAvatar(java.lang.String):void.9e0c88fa0601bfe76a4f770def54f4a3_4" ;
+"com.stn.pojo.User.setAvatar(java.lang.String):void.9e0c88fa0601bfe76a4f770def54f4a3_2" [label="2: Exit void User.setAvatar(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.User.setAvatar(java.lang.String):void.9e0c88fa0601bfe76a4f770def54f4a3_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 66]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.setAvatar(java.lang.String):void.9e0c88fa0601bfe76a4f770def54f4a3_3" -> "com.stn.pojo.User.setAvatar(java.lang.String):void.9e0c88fa0601bfe76a4f770def54f4a3_2" ;
+"com.stn.pojo.User.setAvatar(java.lang.String):void.9e0c88fa0601bfe76a4f770def54f4a3_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.User* [line 65]\n  n$1=*&avatar:java.lang.String* [line 65]\n  *n$0.avatar:com.stn.pojo.User(root com.stn.pojo.User)=n$1 [line 65]\n  NULLIFY(&avatar); [line 65]\n  NULLIFY(&this); [line 65]\n  EXIT_SCOPE(n$0,n$1,avatar,this); [line 65]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.setAvatar(java.lang.String):void.9e0c88fa0601bfe76a4f770def54f4a3_4" -> "com.stn.pojo.User.setAvatar(java.lang.String):void.9e0c88fa0601bfe76a4f770def54f4a3_5" ;
+	 "com.stn.pojo.User.setAvatar(java.lang.String):void.9e0c88fa0601bfe76a4f770def54f4a3_4" -> "com.stn.pojo.User.setAvatar(java.lang.String):void.9e0c88fa0601bfe76a4f770def54f4a3_3" [color="red" ];
+"com.stn.pojo.User.setAvatar(java.lang.String):void.9e0c88fa0601bfe76a4f770def54f4a3_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 66]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.setAvatar(java.lang.String):void.9e0c88fa0601bfe76a4f770def54f4a3_5" -> "com.stn.pojo.User.setAvatar(java.lang.String):void.9e0c88fa0601bfe76a4f770def54f4a3_2" ;
+	 "com.stn.pojo.User.setAvatar(java.lang.String):void.9e0c88fa0601bfe76a4f770def54f4a3_5" -> "com.stn.pojo.User.setAvatar(java.lang.String):void.9e0c88fa0601bfe76a4f770def54f4a3_3" [color="red" ];
+}

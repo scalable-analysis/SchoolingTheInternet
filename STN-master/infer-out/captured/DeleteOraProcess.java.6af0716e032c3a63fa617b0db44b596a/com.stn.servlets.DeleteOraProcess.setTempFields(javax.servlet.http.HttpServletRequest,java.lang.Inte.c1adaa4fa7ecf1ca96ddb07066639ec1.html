@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../DeleteOraProcess.java.6af0716e032c3a63fa617b0db44b596a.html#LINE24">void DeleteOraProcess.setTempFields(HttpServletRequest,Integer,Integer)</a></h1></center>
+<a href="./nodes/com.stn.servlets.DeleteOraProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:7 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;session); [line 28];
+EXIT_SCOPE(session); [line 28];
+APPLY_ABSTRACTION; [line 28];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;request:javax.servlet.http.HttpServletRequest* [line 25];
+_=*n$0:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 25];
+n$2=_fun_HttpSession HttpServletRequest.getSession()(n$0:javax.servlet.http.HttpServletRequest*) interface virtual [line 25];
+*&amp;session:javax.servlet.http.HttpSession*=n$2 [line 25];
+NULLIFY(&amp;request); [line 25];
+EXIT_SCOPE(_,n$0,n$2,request); [line 25];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$3=*&amp;session:javax.servlet.http.HttpSession* [line 26];
+_=*n$3:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 26];
+n$5=*&amp;id_ora:java.lang.Integer* [line 26];
+n$6=_fun_void HttpSession.setAttribute(String,Object)(n$3:javax.servlet.http.HttpSession*,"id_ora":java.lang.Object*,n$5:java.lang.Integer*) interface virtual [line 26];
+NULLIFY(&amp;id_ora); [line 26];
+EXIT_SCOPE(_,n$3,n$5,n$6,id_ora); [line 26];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$7=*&amp;session:javax.servlet.http.HttpSession* [line 27];
+_=*n$7:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 27];
+n$9=*&amp;id_student:java.lang.Integer* [line 27];
+n$10=_fun_void HttpSession.setAttribute(String,Object)(n$7:javax.servlet.http.HttpSession*,"id_student":java.lang.Object*,n$9:java.lang.Integer*) interface virtual [line 27];
+NULLIFY(&amp;id_student); [line 27];
+NULLIFY(&amp;session); [line 27];
+EXIT_SCOPE(_,n$7,n$9,n$10,id_student,session); [line 27];
+</span></span></a> <a href="./nodes/com.stn.servlets.DeleteOraProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.Inte.c1adaa4fa7ecf1ca96ddb07066639ec1_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 28];
+</span></span></a><br />@
+
+<span class='color_black'>void void DeleteOraProcess.setTempFields(HttpServletRequest,Integer,Integer)(com.stn.servlets.DeleteOraProcess* this, javax.servlet.http.HttpServletRequest* request, java.lang.Integer* id_ora, java.lang.Integer* id_student)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { @val$2 -> (Footprint({ @val$2* }) ~> { Other(void HttpSession.setAttribute(String,Object) at line 26) }, *),
+            @val$3 -> (Footprint({ @val$3* }) ~> { Other(void HttpSession.setAttribute(String,Object) at line 27) }, *) }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= void DeleteOraProcess.setTempFields(HttpServletRequest,Integer,Integer)
+; translation_unit= src/main/java/com/stn/servlets/DeleteOraProcess.java
+; access= Private
+; formals= [(this,com.stn.servlets.DeleteOraProcess*);  (request,
+            javax.servlet.http.HttpServletRequest*);  (id_ora,
+            java.lang.Integer*);  (id_student,java.lang.Integer*)]
+; is_defined= true
+; loc= src/main/java/com/stn/servlets/DeleteOraProcess.java:24
+; locals= [{ name= session; typ= javax.servlet.http.HttpSession*; modify_in_block= false }]
+; ret_type= void 
+; proc_id= com.stn.servlets.DeleteOraProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.Integer,java.lang.Integer):void }</pre>
+</body>
+</html>

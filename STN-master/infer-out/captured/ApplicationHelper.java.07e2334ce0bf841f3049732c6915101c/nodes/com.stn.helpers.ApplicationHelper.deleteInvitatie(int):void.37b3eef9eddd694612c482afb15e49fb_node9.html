@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.ApplicationHelper.deleteInvitatie(int):void.37b3eef9eddd694612c482afb15e49fb_node9</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE152">9</a></h1></center>PROC: <a href="./../com.stn.helpers.ApplicationHelper.deleteInvitatie%28int%29%3Avoid.37b3eef9eddd694612c482afb15e49fb.html">void ApplicationHelper.deleteInvitatie(int)</a> LINE: <a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE152">152</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.helpers.ApplicationHelper.deleteInvitatie%28int%29%3Avoid.37b3eef9eddd694612c482afb15e49fb_node8.html"><span class='visited with_tooltip'>N_8<span class='tooltip'>node8 preds:7 succs:9 exn:31 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.helpers.ApplicationHelper.deleteInvitatie%28int%29%3Avoid.37b3eef9eddd694612c482afb15e49fb_node10.html"><span class='visited with_tooltip'>N_10<span class='tooltip'>node10 preds:9 succs:11 exn:31 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.helpers.ApplicationHelper.deleteInvitatie%28int%29%3Avoid.37b3eef9eddd694612c482afb15e49fb_node31.html"><span class='visited with_tooltip'>N_31<span class='tooltip'>node31 preds: succs:30 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$11=*&amp;$irvar1:java.lang.String* [line 152];
+n$12=*&amp;$irvar2:java.lang.String* [line 152];
+n$13=*&amp;$irvar3:java.lang.String* [line 152];
+n$14=_fun_Connection DriverManager.getConnection(String,String,String)(n$11:java.lang.String*,n$12:java.lang.String*,n$13:java.lang.String*) [line 152];
+*&amp;$irvar4:java.sql.Connection*=n$14 [line 152];
+</LISTING>
+<hr width="100%">
+<a name="session48" href="./../nodes/com.stn.helpers.ApplicationHelper.deleteInvitatie%28int%29%3Avoid.37b3eef9eddd694612c482afb15e49fb_node9.html#session48">node9#session48</a>(<a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE152">152</a>) [compute pre] liveness 9
+<LISTING class='color_black'>JOIN
+
+LEFT:   { $irvar4, CatchVar104, return, this, id }
+RIGHT:  { CatchVar104, return, this }
+RESULT: { $irvar4, CatchVar104, return, this, id }
+
+</LISTING>
+<hr width="100%">
+<a name="session49" href="./../nodes/com.stn.helpers.ApplicationHelper.deleteInvitatie%28int%29%3Avoid.37b3eef9eddd694612c482afb15e49fb_node9.html#session49">node9#session49</a>(<a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE152">152</a>) [exec] liveness 9
+<LISTING class='color_black'>PRE STATE:
+{ $irvar4, CatchVar104, return, this, id }
+
+INSTR=  *&amp;$irvar4:java.sql.Connection*=n$14 [line 152]; 
+
+STATE:
+{ n$14, CatchVar104, return, this, id }
+
+INSTR=  n$14=_fun_Connection DriverManager.getConnection(String,String,String)(n$11:java.lang.String*,n$12:java.lang.String*,n$13:java.lang.String*) [line 152]; 
+
+STATE:
+{ n$11, n$12, n$13, CatchVar104, return, this, id }
+
+INSTR=  n$13=*&amp;$irvar3:java.lang.String* [line 152]; 
+
+STATE:
+{ n$11, n$12, $irvar3, CatchVar104, return, this, id }
+
+INSTR=  n$12=*&amp;$irvar2:java.lang.String* [line 152]; 
+
+STATE:
+{ n$11, $irvar3, CatchVar104, return, $irvar2, this, id }
+
+INSTR=  n$11=*&amp;$irvar1:java.lang.String* [line 152]; 
+
+STATE:
+{ $irvar3, CatchVar104, return, $irvar1, $irvar2, this, id }
+
+</LISTING>
+<hr width="100%">
+<a name="session73" href="./../nodes/com.stn.helpers.ApplicationHelper.deleteInvitatie%28int%29%3Avoid.37b3eef9eddd694612c482afb15e49fb_node9.html#session73">node9#session73</a>(<a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE152">152</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session74" href="./../nodes/com.stn.helpers.ApplicationHelper.deleteInvitatie%28int%29%3Avoid.37b3eef9eddd694612c482afb15e49fb_node9.html#session74">node9#session74</a>(<a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE152">152</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ $irvar3, $irvar1, $irvar2 },{ _, n$8, n$10 })
+
+INSTR=  n$11=*&amp;$irvar1:java.lang.String* [line 152]; 
+
+STATE:
+({ n$11, $irvar3, $irvar1, $irvar2 },{ _, n$8, n$10 })
+
+INSTR=  n$12=*&amp;$irvar2:java.lang.String* [line 152]; 
+
+STATE:
+({ n$11, n$12, $irvar3, $irvar1, $irvar2 },{ _, n$8, n$10 })
+
+INSTR=  n$13=*&amp;$irvar3:java.lang.String* [line 152]; 
+
+STATE:
+({ n$11, n$12, n$13, $irvar3, $irvar1, $irvar2 },{ _, n$8, n$10 })
+
+INSTR=  n$14=_fun_Connection DriverManager.getConnection(String,String,String)(n$11:java.lang.String*,n$12:java.lang.String*,n$13:java.lang.String*) [line 152]; 
+
+STATE:
+({ n$11, n$12, n$13, n$14, $irvar3, $irvar1, $irvar2 },{ _, n$8, n$10 })
+
+INSTR=  *&amp;$irvar4:java.sql.Connection*=n$14 [line 152]; 
+
+STATE:
+({ $irvar4 },{ n$11, n$12, n$13, n$14, $irvar3, $irvar1, $irvar2 })
+
+</LISTING>
+<hr width="100%">
+<a name="session12" href="./../nodes/com.stn.helpers.ApplicationHelper.deleteInvitatie%28int%29%3Avoid.37b3eef9eddd694612c482afb15e49fb_node9.html#session12">node9#session12</a>(<a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE152">152</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session13" href="./../nodes/com.stn.helpers.ApplicationHelper.deleteInvitatie%28int%29%3Avoid.37b3eef9eddd694612c482afb15e49fb_node9.html#session13">node9#session13</a>(<a href="./../../ApplicationHelper.java.07e2334ce0bf841f3049732c6915101c.html#LINE152">152</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  this -&gt; { query -&gt; { } } }
+
+
+
+
+TAINTED_CALL1: (callee="Connection DriverManager.getConnection(String,String,String)", caller="void ApplicationHelper.deleteInvitatie(int)")
+INSTR=  n$14 := Connection DriverManager.getConnection(String,String,String)({ n$4,
+                                                                    n$7,
+                                                                    n$10 }) [line 152]; 
+
+STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  this -&gt; { query -&gt; { } } }
+
+
+INSTR=  NULLIFY(&amp;$irvar3); [line 152]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar1); [line 152]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar2); [line 152]; 
+
+STATE UNCHANGED
+
+
+</LISTING>

@@ -1,0 +1,331 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.UserHelper.updateFacultateAdmin(int,int,int,int):void.627190adfac9f8428a906f3e91c26c6f</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE654">void UserHelper.updateFacultateAdmin(int,int,int,int)</a></h1></center>
+<a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:38 37 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$bcvar5); [line 676];
+EXIT_SCOPE($bcvar5); [line 676];
+APPLY_ABSTRACTION; [line 676];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.helpers.UserHelper* [line 656];
+*n$0.query:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)="UPDATE users SET IdGrupa = ? , IdSerie = ?, IdFacultate = ? WHERE Id = ?" [line 656];
+EXIT_SCOPE(n$0); [line 656];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:40 Instructions
+n$1=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 659];
+*&amp;$irvar0:java.lang.Class*=n$1 [line 659];
+NULLIFY(&amp;$irvar0); [line 659];
+EXIT_SCOPE(n$1,$irvar0); [line 659];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:40 Instructions
+n$2=*&amp;this:com.stn.helpers.UserHelper* [line 660];
+_=*n$2:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 660];
+n$4=_fun_String DBConnection.getHost()(n$2:com.stn.helpers.UserHelper*) virtual [line 660];
+*&amp;$irvar1:java.lang.String*=n$4 [line 660];
+EXIT_SCOPE(_,n$2,n$4); [line 660];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:40 Instructions
+n$5=*&amp;this:com.stn.helpers.UserHelper* [line 660];
+_=*n$5:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 660];
+n$7=_fun_String DBConnection.getUser()(n$5:com.stn.helpers.UserHelper*) virtual [line 660];
+*&amp;$irvar2:java.lang.String*=n$7 [line 660];
+EXIT_SCOPE(_,n$5,n$7); [line 660];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:40 Instructions
+n$8=*&amp;this:com.stn.helpers.UserHelper* [line 660];
+_=*n$8:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 660];
+n$10=_fun_String DBConnection.getPassword()(n$8:com.stn.helpers.UserHelper*) virtual [line 660];
+*&amp;$irvar3:java.lang.String*=n$10 [line 660];
+EXIT_SCOPE(_,n$8,n$10); [line 660];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:40 Instructions
+n$11=*&amp;$irvar1:java.lang.String* [line 660];
+n$12=*&amp;$irvar2:java.lang.String* [line 660];
+n$13=*&amp;$irvar3:java.lang.String* [line 660];
+n$14=_fun_Connection DriverManager.getConnection(String,String,String)(n$11:java.lang.String*,n$12:java.lang.String*,n$13:java.lang.String*) [line 660];
+*&amp;$irvar4:java.sql.Connection*=n$14 [line 660];
+NULLIFY(&amp;$irvar3); [line 660];
+NULLIFY(&amp;$irvar1); [line 660];
+NULLIFY(&amp;$irvar2); [line 660];
+EXIT_SCOPE(n$11,n$12,n$13,n$14,$irvar3,$irvar1,$irvar2); [line 660];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:40 Instructions
+n$15=*&amp;this:com.stn.helpers.UserHelper* [line 660];
+n$16=*&amp;$irvar4:java.sql.Connection* [line 660];
+*n$15.connection:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$16 [line 660];
+NULLIFY(&amp;$irvar4); [line 660];
+EXIT_SCOPE(n$15,n$16,$irvar4); [line 660];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:40 Instructions
+n$17=*&amp;this:com.stn.helpers.UserHelper* [line 661];
+n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 661];
+_=*n$18:java.sql.Connection*(root java.sql.Connection) [line 661];
+n$20=*&amp;this:com.stn.helpers.UserHelper* [line 661];
+n$21=*n$20.query:java.lang.String*(root com.stn.helpers.UserHelper) [line 661];
+n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 661];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 661];
+EXIT_SCOPE(_,n$17,n$18,n$20,n$21,n$22); [line 661];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:40 Instructions
+n$23=*&amp;this:com.stn.helpers.UserHelper* [line 661];
+n$24=*&amp;$irvar5:java.sql.PreparedStatement* [line 661];
+*n$23.preparedStatement:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$24 [line 661];
+NULLIFY(&amp;$irvar5); [line 661];
+EXIT_SCOPE(n$23,n$24,$irvar5); [line 661];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:40 Instructions
+n$25=*&amp;this:com.stn.helpers.UserHelper* [line 662];
+n$26=*n$25.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 662];
+_=*n$26:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 662];
+n$28=*&amp;idGrupa:int [line 662];
+n$29=_fun_void PreparedStatement.setInt(int,int)(n$26:java.sql.PreparedStatement*,1:int,n$28:int) interface virtual [line 662];
+NULLIFY(&amp;idGrupa); [line 662];
+EXIT_SCOPE(_,n$25,n$26,n$28,n$29,idGrupa); [line 662];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:40 Instructions
+n$30=*&amp;this:com.stn.helpers.UserHelper* [line 663];
+n$31=*n$30.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 663];
+_=*n$31:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 663];
+n$33=*&amp;idSerie:int [line 663];
+n$34=_fun_void PreparedStatement.setInt(int,int)(n$31:java.sql.PreparedStatement*,2:int,n$33:int) interface virtual [line 663];
+NULLIFY(&amp;idSerie); [line 663];
+EXIT_SCOPE(_,n$30,n$31,n$33,n$34,idSerie); [line 663];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:40 Instructions
+n$35=*&amp;this:com.stn.helpers.UserHelper* [line 664];
+n$36=*n$35.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 664];
+_=*n$36:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 664];
+n$38=*&amp;idFacultate:int [line 664];
+n$39=_fun_void PreparedStatement.setInt(int,int)(n$36:java.sql.PreparedStatement*,3:int,n$38:int) interface virtual [line 664];
+NULLIFY(&amp;idFacultate); [line 664];
+EXIT_SCOPE(_,n$35,n$36,n$38,n$39,idFacultate); [line 664];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:40 Instructions
+n$40=*&amp;this:com.stn.helpers.UserHelper* [line 665];
+n$41=*n$40.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 665];
+_=*n$41:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 665];
+n$43=*&amp;id:int [line 665];
+n$44=_fun_void PreparedStatement.setInt(int,int)(n$41:java.sql.PreparedStatement*,4:int,n$43:int) interface virtual [line 665];
+NULLIFY(&amp;id); [line 665];
+EXIT_SCOPE(_,n$40,n$41,n$43,n$44,id); [line 665];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 19 exn:40 Instructions
+n$45=*&amp;this:com.stn.helpers.UserHelper* [line 666];
+n$46=*n$45.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 666];
+_=*n$46:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 666];
+n$48=_fun_int PreparedStatement.executeUpdate()(n$46:java.sql.PreparedStatement*) interface virtual [line 666];
+*&amp;$irvar6:int=n$48 [line 666];
+NULLIFY(&amp;$irvar6); [line 666];
+EXIT_SCOPE(_,n$45,n$46,n$48,$irvar6); [line 666];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:17 succs:20 exn:3 Conditional method_body
+n$49=*&amp;this:com.stn.helpers.UserHelper* [line 668];
+n$50=*n$49.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 668];
+PRUNE(!(n$50 == null), true); [line 668];
+EXIT_SCOPE(n$49,n$50); [line 668];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node19.html"><span class='visited with_tooltip'>C_19<span class='tooltip'>node19 preds:17 succs:21 22 exn:3 Conditional method_body
+n$49=*&amp;this:com.stn.helpers.UserHelper* [line 668];
+n$50=*n$49.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 668];
+PRUNE((n$50 == null), false); [line 668];
+EXIT_SCOPE(n$49,n$50); [line 668];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:18 succs:21 22 exn:3 Instructions
+n$51=*&amp;this:com.stn.helpers.UserHelper* [line 669];
+n$52=*n$51.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 669];
+n$55=_fun___set_mem_attribute(n$52:java.sql.PreparedStatement*) [line 669];
+_=*n$52:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 669];
+n$54=_fun_void PreparedStatement.close()(n$52:java.sql.PreparedStatement*) interface virtual [line 669];
+EXIT_SCOPE(_,n$51,n$52,n$54,n$55); [line 669];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node21.html"><span class='visited with_tooltip'>C_21<span class='tooltip'>node21 preds:20 19 succs:23 exn:3 Conditional method_body
+n$56=*&amp;this:com.stn.helpers.UserHelper* [line 670];
+n$57=*n$56.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 670];
+PRUNE(!(n$57 == null), true); [line 670];
+EXIT_SCOPE(n$56,n$57); [line 670];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node22.html"><span class='visited with_tooltip'>C_22<span class='tooltip'>node22 preds:20 19 succs:24 25 exn:3 Conditional method_body
+n$56=*&amp;this:com.stn.helpers.UserHelper* [line 670];
+n$57=*n$56.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 670];
+PRUNE((n$57 == null), false); [line 670];
+EXIT_SCOPE(n$56,n$57); [line 670];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:21 succs:24 25 exn:3 Instructions
+n$58=*&amp;this:com.stn.helpers.UserHelper* [line 671];
+n$59=*n$58.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 671];
+n$62=_fun___set_mem_attribute(n$59:java.sql.Connection*) [line 671];
+_=*n$59:java.sql.Connection*(root java.sql.Connection) [line 671];
+n$61=_fun_void Connection.close()(n$59:java.sql.Connection*) interface virtual [line 671];
+EXIT_SCOPE(_,n$58,n$59,n$61,n$62); [line 671];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node24.html"><span class='visited with_tooltip'>C_24<span class='tooltip'>node24 preds:23 22 succs:26 exn:3 Conditional method_body
+n$63=*&amp;this:com.stn.helpers.UserHelper* [line 672];
+n$64=*n$63.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 672];
+PRUNE(!(n$64 == null), true); [line 672];
+EXIT_SCOPE(n$63,n$64); [line 672];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node25.html"><span class='visited with_tooltip'>C_25<span class='tooltip'>node25 preds:23 22 succs:38 exn:3 Conditional method_body
+n$63=*&amp;this:com.stn.helpers.UserHelper* [line 672];
+n$64=*n$63.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 672];
+PRUNE((n$64 == null), false); [line 672];
+NULLIFY(&amp;this); [line 672];
+EXIT_SCOPE(n$63,n$64,this); [line 672];
+APPLY_ABSTRACTION; [line 672];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:24 succs:38 exn:3 Instructions
+n$65=*&amp;this:com.stn.helpers.UserHelper* [line 673];
+n$66=*n$65.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 673];
+n$69=_fun___set_mem_attribute(n$66:java.sql.ResultSet*) [line 673];
+_=*n$66:java.sql.ResultSet*(root java.sql.ResultSet) [line 673];
+n$68=_fun_void ResultSet.close()(n$66:java.sql.ResultSet*) interface virtual [line 673];
+NULLIFY(&amp;this); [line 673];
+EXIT_SCOPE(_,n$65,n$66,n$68,n$69,this); [line 673];
+APPLY_ABSTRACTION; [line 673];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:41 39 succs:28 29 exn:42 Instructions
+n$70=*&amp;CatchVar154:java.lang.Object* [line 668];
+*&amp;$bcvar5:java.lang.Object*=n$70 [line 668];
+EXIT_SCOPE(n$70); [line 668];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node28.html"><span class='visited with_tooltip'>C_28<span class='tooltip'>node28 preds:27 succs:30 exn:3 Conditional method_body
+n$71=*&amp;this:com.stn.helpers.UserHelper* [line 668];
+n$72=*n$71.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 668];
+PRUNE(!(n$72 == null), true); [line 668];
+EXIT_SCOPE(n$71,n$72); [line 668];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node29.html"><span class='visited with_tooltip'>C_29<span class='tooltip'>node29 preds:27 succs:31 32 exn:3 Conditional method_body
+n$71=*&amp;this:com.stn.helpers.UserHelper* [line 668];
+n$72=*n$71.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 668];
+PRUNE((n$72 == null), false); [line 668];
+EXIT_SCOPE(n$71,n$72); [line 668];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:28 succs:31 32 exn:3 Instructions
+n$73=*&amp;this:com.stn.helpers.UserHelper* [line 669];
+n$74=*n$73.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 669];
+n$77=_fun___set_mem_attribute(n$74:java.sql.PreparedStatement*) [line 669];
+_=*n$74:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 669];
+n$76=_fun_void PreparedStatement.close()(n$74:java.sql.PreparedStatement*) interface virtual [line 669];
+EXIT_SCOPE(_,n$73,n$74,n$76,n$77); [line 669];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node31.html"><span class='visited with_tooltip'>C_31<span class='tooltip'>node31 preds:30 29 succs:33 exn:3 Conditional method_body
+n$78=*&amp;this:com.stn.helpers.UserHelper* [line 670];
+n$79=*n$78.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 670];
+PRUNE(!(n$79 == null), true); [line 670];
+EXIT_SCOPE(n$78,n$79); [line 670];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:30 29 succs:34 35 exn:3 Conditional method_body
+n$78=*&amp;this:com.stn.helpers.UserHelper* [line 670];
+n$79=*n$78.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 670];
+PRUNE((n$79 == null), false); [line 670];
+EXIT_SCOPE(n$78,n$79); [line 670];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:31 succs:34 35 exn:3 Instructions
+n$80=*&amp;this:com.stn.helpers.UserHelper* [line 671];
+n$81=*n$80.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 671];
+n$84=_fun___set_mem_attribute(n$81:java.sql.Connection*) [line 671];
+_=*n$81:java.sql.Connection*(root java.sql.Connection) [line 671];
+n$83=_fun_void Connection.close()(n$81:java.sql.Connection*) interface virtual [line 671];
+EXIT_SCOPE(_,n$80,n$81,n$83,n$84); [line 671];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node34.html"><span class='visited with_tooltip'>C_34<span class='tooltip'>node34 preds:33 32 succs:36 exn:3 Conditional method_body
+n$85=*&amp;this:com.stn.helpers.UserHelper* [line 672];
+n$86=*n$85.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 672];
+PRUNE(!(n$86 == null), true); [line 672];
+EXIT_SCOPE(n$85,n$86); [line 672];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node35.html"><span class='visited with_tooltip'>C_35<span class='tooltip'>node35 preds:33 32 succs:37 exn:3 Conditional method_body
+n$85=*&amp;this:com.stn.helpers.UserHelper* [line 672];
+n$86=*n$85.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 672];
+PRUNE((n$86 == null), false); [line 672];
+NULLIFY(&amp;this); [line 672];
+EXIT_SCOPE(n$85,n$86,this); [line 672];
+APPLY_ABSTRACTION; [line 672];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:34 succs:37 exn:3 Instructions
+n$87=*&amp;this:com.stn.helpers.UserHelper* [line 673];
+n$88=*n$87.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 673];
+n$91=_fun___set_mem_attribute(n$88:java.sql.ResultSet*) [line 673];
+_=*n$88:java.sql.ResultSet*(root java.sql.ResultSet) [line 673];
+n$90=_fun_void ResultSet.close()(n$88:java.sql.ResultSet*) interface virtual [line 673];
+NULLIFY(&amp;this); [line 673];
+EXIT_SCOPE(_,n$87,n$88,n$90,n$91,this); [line 673];
+APPLY_ABSTRACTION; [line 673];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:36 35 succs:2 exn:3 Instructions
+n$92=*&amp;$bcvar5:java.lang.Object* [line 674];
+*&amp;return:void=EXN n$92 [line 674];
+NULLIFY(&amp;$bcvar5); [line 674];
+EXIT_SCOPE(n$92,$bcvar5); [line 674];
+APPLY_ABSTRACTION; [line 674];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:26 25 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 676];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:40 succs:27 exn:3 Instructions
+APPLY_ABSTRACTION; [line 668];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds: succs:39 exn:3 Instructions
+n$93=*&amp;return:void [line 668];
+*&amp;return:void=null [line 668];
+n$94=_fun___unwrap_exception(n$93:void) [line 668];
+NULLIFY(&amp;$irvar3); [line 668];
+NULLIFY(&amp;$irvar5); [line 668];
+NULLIFY(&amp;$irvar4); [line 668];
+NULLIFY(&amp;$irvar1); [line 668];
+NULLIFY(&amp;$irvar2); [line 668];
+EXIT_SCOPE(n$93,n$94,$irvar3,$irvar5,$irvar4,$irvar1,$irvar2); [line 668];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:42 succs:27 exn:3 Instructions
+APPLY_ABSTRACTION; [line 668];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.updateFacultateAdmin%28int%2Cint%2Cint%2Cint%29%3Avoid.627190adfac9f8428a906f3e91c26c6f_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds: succs:41 exn:3 Instructions
+n$93=*&amp;return:void [line 668];
+*&amp;return:void=null [line 668];
+n$94=_fun___unwrap_exception(n$93:void) [line 668];
+NULLIFY(&amp;$bcvar5); [line 668];
+EXIT_SCOPE(n$93,n$94,$bcvar5); [line 668];
+</span></span></a><br />@
+
+<span class='color_black'>void void UserHelper.updateFacultateAdmin(int,int,int,int)(com.stn.helpers.UserHelper* this, int id, int idGrupa, int idSerie, int idFacultate)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { @val$0 -> { connection -> (Footprint({ @val$0.dbUser,
+                                                   @val$0.dbPort*,
+                                                   @val$0.dbPassword,
+                                                   @val$0.dbName*,
+                                                   @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        preparedStatement -> (Footprint({ @val$0.dbUser,
+                                                          @val$0.dbPort*,
+                                                          @val$0.dbPassword,
+                                                          @val$0.dbName*,
+                                                          @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        query -> { } } }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= void UserHelper.updateFacultateAdmin(int,int,int,int)
+; translation_unit= src/main/java/com/stn/helpers/UserHelper.java
+; access= Public
+; exceptions= [java.sql.SQLException;  java.lang.ClassNotFoundException]
+; formals= [(this,com.stn.helpers.UserHelper*);  (id,int);  (idGrupa,int); 
+            (idSerie,int);  (idFacultate,int)]
+; is_defined= true
+; loc= src/main/java/com/stn/helpers/UserHelper.java:654
+; locals= [{ name= $bcvar5; typ= void; modify_in_block= false }; 
+           { name= CatchVar154; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }]
+; ret_type= void 
+; proc_id= com.stn.helpers.UserHelper.updateFacultateAdmin(int,int,int,int):void }</pre>
+</body>
+</html>

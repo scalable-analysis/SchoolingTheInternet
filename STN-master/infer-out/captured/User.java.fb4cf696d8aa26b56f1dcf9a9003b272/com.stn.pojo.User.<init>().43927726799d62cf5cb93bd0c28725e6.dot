@@ -1,0 +1,109 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_1" [label="1: Start User.<init>()\nFormals:  this:com.stn.pojo.User*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_1" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_4" ;
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_2" [label="2: Exit User.<init>() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 23]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_2" ;
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.stn.pojo.User* [line 5]\n  n$1=_fun_Object.<init>()(n$0:com.stn.pojo.User*) [line 5]\n  EXIT_SCOPE(n$0,n$1); [line 5]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_4" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_5" ;
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_4" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" [color="red" ];
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_5" [label="5:  method_body \n   n$2=*&this:com.stn.pojo.User* [line 7]\n  *n$2.id:com.stn.pojo.User(root com.stn.pojo.User)=-1 [line 7]\n  EXIT_SCOPE(n$2); [line 7]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_5" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_6" ;
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_5" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" [color="red" ];
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_6" [label="6:  method_body \n   n$3=*&this:com.stn.pojo.User* [line 8]\n  *n$3.userClass:com.stn.pojo.User(root com.stn.pojo.User)=0 [line 8]\n  EXIT_SCOPE(n$3); [line 8]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_6" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_7" ;
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_6" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" [color="red" ];
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_7" [label="7:  method_body \n   n$4=*&this:com.stn.pojo.User* [line 9]\n  *n$4.userName:com.stn.pojo.User(root com.stn.pojo.User)=\"\" [line 9]\n  EXIT_SCOPE(n$4); [line 9]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_7" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_8" ;
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_7" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" [color="red" ];
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_8" [label="8:  method_body \n   n$5=*&this:com.stn.pojo.User* [line 10]\n  *n$5.email:com.stn.pojo.User(root com.stn.pojo.User)=\"\" [line 10]\n  EXIT_SCOPE(n$5); [line 10]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_8" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_9" ;
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_8" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" [color="red" ];
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_9" [label="9:  method_body \n   n$6=*&this:com.stn.pojo.User* [line 11]\n  *n$6.firstName:com.stn.pojo.User(root com.stn.pojo.User)=\"\" [line 11]\n  EXIT_SCOPE(n$6); [line 11]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_9" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_10" ;
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_9" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" [color="red" ];
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_10" [label="10:  method_body \n   n$7=*&this:com.stn.pojo.User* [line 12]\n  *n$7.lastName:com.stn.pojo.User(root com.stn.pojo.User)=\"\" [line 12]\n  EXIT_SCOPE(n$7); [line 12]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_10" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_11" ;
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_10" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" [color="red" ];
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_11" [label="11:  method_body \n   n$8=*&this:com.stn.pojo.User* [line 13]\n  *n$8.joinDate:com.stn.pojo.User(root com.stn.pojo.User)=null [line 13]\n  EXIT_SCOPE(n$8); [line 13]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_11" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_12" ;
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_11" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" [color="red" ];
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_12" [label="12:  method_body \n   n$9=*&this:com.stn.pojo.User* [line 14]\n  *n$9.lastSeen:com.stn.pojo.User(root com.stn.pojo.User)=null [line 14]\n  EXIT_SCOPE(n$9); [line 14]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_12" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_13" ;
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_12" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" [color="red" ];
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_13" [label="13:  method_body \n   n$10=*&this:com.stn.pojo.User* [line 15]\n  *n$10.avatar:com.stn.pojo.User(root com.stn.pojo.User)=\"\" [line 15]\n  EXIT_SCOPE(n$10); [line 15]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_13" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_14" ;
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_13" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" [color="red" ];
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_14" [label="14:  method_body \n   n$11=*&this:com.stn.pojo.User* [line 16]\n  *n$11.ip:com.stn.pojo.User(root com.stn.pojo.User)=\"\" [line 16]\n  EXIT_SCOPE(n$11); [line 16]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_14" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_15" ;
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_14" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" [color="red" ];
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_15" [label="15:  method_body \n   n$12=*&this:com.stn.pojo.User* [line 17]\n  *n$12.grupa:com.stn.pojo.User(root com.stn.pojo.User)=\"\" [line 17]\n  EXIT_SCOPE(n$12); [line 17]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_15" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_16" ;
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_15" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" [color="red" ];
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_16" [label="16:  method_body \n   n$13=*&this:com.stn.pojo.User* [line 18]\n  *n$13.serie:com.stn.pojo.User(root com.stn.pojo.User)=\"\" [line 18]\n  EXIT_SCOPE(n$13); [line 18]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_16" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_17" ;
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_16" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" [color="red" ];
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_17" [label="17:  method_body \n   n$14=*&this:com.stn.pojo.User* [line 19]\n  *n$14.facultate:com.stn.pojo.User(root com.stn.pojo.User)=\"\" [line 19]\n  EXIT_SCOPE(n$14); [line 19]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_17" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_18" ;
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_17" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" [color="red" ];
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_18" [label="18:  method_body \n   n$15=*&this:com.stn.pojo.User* [line 20]\n  *n$15.idGrupa:com.stn.pojo.User(root com.stn.pojo.User)=0 [line 20]\n  EXIT_SCOPE(n$15); [line 20]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_18" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_19" ;
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_18" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" [color="red" ];
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_19" [label="19:  method_body \n   n$16=*&this:com.stn.pojo.User* [line 21]\n  *n$16.idSerie:com.stn.pojo.User(root com.stn.pojo.User)=0 [line 21]\n  EXIT_SCOPE(n$16); [line 21]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_19" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_20" ;
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_19" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" [color="red" ];
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_20" [label="20:  method_body \n   n$17=*&this:com.stn.pojo.User* [line 22]\n  *n$17.idFacultate:com.stn.pojo.User(root com.stn.pojo.User)=0 [line 22]\n  EXIT_SCOPE(n$17); [line 22]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_20" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_21" ;
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_20" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" [color="red" ];
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_21" [label="21:  method_body \n   n$18=*&this:com.stn.pojo.User* [line 23]\n  *n$18.gender:com.stn.pojo.User(root com.stn.pojo.User)=0 [line 23]\n  NULLIFY(&this); [line 23]\n  EXIT_SCOPE(n$18,this); [line 23]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_21" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_22" ;
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_21" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" [color="red" ];
+"com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_22" [label="22:  method_body \n   APPLY_ABSTRACTION; [line 23]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_22" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_2" ;
+	 "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_22" -> "com.stn.pojo.User.<init>().43927726799d62cf5cb93bd0c28725e6_3" [color="red" ];
+}

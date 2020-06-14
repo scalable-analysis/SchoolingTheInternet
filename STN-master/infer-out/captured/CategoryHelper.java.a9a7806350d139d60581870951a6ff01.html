@@ -1,0 +1,641 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>CategoryHelper.java.a9a7806350d139d60581870951a6ff01</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>File src/main/java/com/stn/helpers/CategoryHelper.java </h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.stn.helpers; </td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import com.stn.pojo.Category; </td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">import com.stn.utils.DBConnection; </td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import java.sql.DriverManager; </td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import java.sql.SQLException; </td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">import java.util.ArrayList; </td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">import java.util.List; </td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">public class CategoryHelper extends DBConnection { <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.<init>%28%29.7bf89468e61f5ed9c6489589d2249ff7_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.<init>%28%29.7bf89468e61f5ed9c6489589d2249ff7_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.helpers.CategoryHelper* [line 11];
+n$1=_fun_DBConnection.&lt;init&gt;()(n$0:com.stn.helpers.CategoryHelper*) [line 11];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.<init>%28%29.7bf89468e61f5ed9c6489589d2249ff7_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.<init>%28%29.7bf89468e61f5ed9c6489589d2249ff7_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.<init>%28%29.7bf89468e61f5ed9c6489589d2249ff7_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/com.stn.helpers.CategoryHelper.<init>%28%29.7bf89468e61f5ed9c6489589d2249ff7.html">summary for CategoryHelper.&lt;init&gt;()</a></td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line">    public void addCategory(String categorie, String descriere, int idFacultate, int idSerie, int idGrupa, int pinned) throws ClassNotFoundException, SQLException { <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897.html">summary for void CategoryHelper.addCategory(String,String,int,int,int,int)</a></td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line">        query = &quot;INSERT INTO categories(categorie, descriere, idFacultate, idSerie, idGrupa, Pinned) VALUES(?,?,?,?,?,?)&quot;; <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.helpers.CategoryHelper* [line 14];
+*n$0.query:com.stn.helpers.CategoryHelper(root com.stn.helpers.CategoryHelper)="INSERT INTO categories(categorie, descriere, idFacultate, idSerie, idGrupa, Pinned) VALUES(?,?,?,?,?,?)" [line 14];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line">        try { </td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line">            Class.forName(&quot;com.mysql.jdbc.Driver&quot;); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:36 Instructions
+n$1=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 17];
+*&amp;$irvar0:java.lang.Class*=n$1 [line 17];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line">            connection = DriverManager.getConnection(this.getHost(), this.getUser(), this.getPassword()); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:36 Instructions
+n$2=*&amp;this:com.stn.helpers.CategoryHelper* [line 18];
+_=*n$2:com.stn.helpers.CategoryHelper*(root com.stn.helpers.CategoryHelper) [line 18];
+n$4=_fun_String DBConnection.getHost()(n$2:com.stn.helpers.CategoryHelper*) virtual [line 18];
+*&amp;$irvar1:java.lang.String*=n$4 [line 18];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:36 Instructions
+n$5=*&amp;this:com.stn.helpers.CategoryHelper* [line 18];
+_=*n$5:com.stn.helpers.CategoryHelper*(root com.stn.helpers.CategoryHelper) [line 18];
+n$7=_fun_String DBConnection.getUser()(n$5:com.stn.helpers.CategoryHelper*) virtual [line 18];
+*&amp;$irvar2:java.lang.String*=n$7 [line 18];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:36 Instructions
+n$8=*&amp;this:com.stn.helpers.CategoryHelper* [line 18];
+_=*n$8:com.stn.helpers.CategoryHelper*(root com.stn.helpers.CategoryHelper) [line 18];
+n$10=_fun_String DBConnection.getPassword()(n$8:com.stn.helpers.CategoryHelper*) virtual [line 18];
+*&amp;$irvar3:java.lang.String*=n$10 [line 18];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:36 Instructions
+n$11=*&amp;$irvar1:java.lang.String* [line 18];
+n$12=*&amp;$irvar2:java.lang.String* [line 18];
+n$13=*&amp;$irvar3:java.lang.String* [line 18];
+n$14=_fun_Connection DriverManager.getConnection(String,String,String)(n$11:java.lang.String*,n$12:java.lang.String*,n$13:java.lang.String*) [line 18];
+*&amp;$irvar4:java.sql.Connection*=n$14 [line 18];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:36 Instructions
+n$15=*&amp;this:com.stn.helpers.CategoryHelper* [line 18];
+n$16=*&amp;$irvar4:java.sql.Connection* [line 18];
+*n$15.connection:com.stn.helpers.CategoryHelper(root com.stn.helpers.CategoryHelper)=n$16 [line 18];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line">            preparedStatement = connection.prepareStatement(query); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:36 Instructions
+n$17=*&amp;this:com.stn.helpers.CategoryHelper* [line 19];
+n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 19];
+_=*n$18:java.sql.Connection*(root java.sql.Connection) [line 19];
+n$20=*&amp;this:com.stn.helpers.CategoryHelper* [line 19];
+n$21=*n$20.query:java.lang.String*(root com.stn.helpers.CategoryHelper) [line 19];
+n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 19];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 19];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:36 Instructions
+n$23=*&amp;this:com.stn.helpers.CategoryHelper* [line 19];
+n$24=*&amp;$irvar5:java.sql.PreparedStatement* [line 19];
+*n$23.preparedStatement:com.stn.helpers.CategoryHelper(root com.stn.helpers.CategoryHelper)=n$24 [line 19];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line">            preparedStatement.setString(1, categorie); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:36 Instructions
+n$25=*&amp;this:com.stn.helpers.CategoryHelper* [line 20];
+n$26=*n$25.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 20];
+_=*n$26:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 20];
+n$28=*&amp;categorie:java.lang.String* [line 20];
+n$29=_fun_void PreparedStatement.setString(int,String)(n$26:java.sql.PreparedStatement*,1:int,n$28:java.lang.String*) interface virtual [line 20];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line">            preparedStatement.setString(2, descriere); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:36 Instructions
+n$30=*&amp;this:com.stn.helpers.CategoryHelper* [line 21];
+n$31=*n$30.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 21];
+_=*n$31:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 21];
+n$33=*&amp;descriere:java.lang.String* [line 21];
+n$34=_fun_void PreparedStatement.setString(int,String)(n$31:java.sql.PreparedStatement*,2:int,n$33:java.lang.String*) interface virtual [line 21];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line">            preparedStatement.setInt(3, idFacultate); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:36 Instructions
+n$35=*&amp;this:com.stn.helpers.CategoryHelper* [line 22];
+n$36=*n$35.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 22];
+_=*n$36:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 22];
+n$38=*&amp;idFacultate:int [line 22];
+n$39=_fun_void PreparedStatement.setInt(int,int)(n$36:java.sql.PreparedStatement*,3:int,n$38:int) interface virtual [line 22];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">            preparedStatement.setInt(4, idSerie); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:36 Instructions
+n$40=*&amp;this:com.stn.helpers.CategoryHelper* [line 23];
+n$41=*n$40.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 23];
+_=*n$41:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 23];
+n$43=*&amp;idSerie:int [line 23];
+n$44=_fun_void PreparedStatement.setInt(int,int)(n$41:java.sql.PreparedStatement*,4:int,n$43:int) interface virtual [line 23];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line">            preparedStatement.setInt(5, idGrupa); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:36 Instructions
+n$45=*&amp;this:com.stn.helpers.CategoryHelper* [line 24];
+n$46=*n$45.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 24];
+_=*n$46:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 24];
+n$48=*&amp;idGrupa:int [line 24];
+n$49=_fun_void PreparedStatement.setInt(int,int)(n$46:java.sql.PreparedStatement*,5:int,n$48:int) interface virtual [line 24];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line">            preparedStatement.setInt(6, pinned); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:36 Instructions
+n$50=*&amp;this:com.stn.helpers.CategoryHelper* [line 25];
+n$51=*n$50.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 25];
+_=*n$51:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 25];
+n$53=*&amp;pinned:int [line 25];
+n$54=_fun_void PreparedStatement.setInt(int,int)(n$51:java.sql.PreparedStatement*,6:int,n$53:int) interface virtual [line 25];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line">            preparedStatement.executeUpdate(); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 21 exn:36 Instructions
+n$55=*&amp;this:com.stn.helpers.CategoryHelper* [line 26];
+n$56=*n$55.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 26];
+_=*n$56:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 26];
+n$58=_fun_int PreparedStatement.executeUpdate()(n$56:java.sql.PreparedStatement*) interface virtual [line 26];
+*&amp;$irvar6:int=n$58 [line 26];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">        } finally { </td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">            if (preparedStatement != null) <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node20.html"><span class='visited with_tooltip'>C_20<span class='tooltip'>node20 preds:19 succs:22 exn:3 Conditional method_body
+n$59=*&amp;this:com.stn.helpers.CategoryHelper* [line 28];
+n$60=*n$59.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 28];
+PRUNE(!(n$60 == null), true); [line 28];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node21.html"><span class='visited with_tooltip'>C_21<span class='tooltip'>node21 preds:19 succs:23 24 exn:3 Conditional method_body
+n$59=*&amp;this:com.stn.helpers.CategoryHelper* [line 28];
+n$60=*n$59.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 28];
+PRUNE((n$60 == null), false); [line 28];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:37 35 succs:27 28 exn:38 Instructions
+n$73=*&amp;CatchVar163:java.lang.Object* [line 28];
+*&amp;$bcvar7:java.lang.Object*=n$73 [line 28];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node27.html"><span class='visited with_tooltip'>C_27<span class='tooltip'>node27 preds:26 succs:29 exn:3 Conditional method_body
+n$74=*&amp;this:com.stn.helpers.CategoryHelper* [line 28];
+n$75=*n$74.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 28];
+PRUNE(!(n$75 == null), true); [line 28];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node28.html"><span class='visited with_tooltip'>C_28<span class='tooltip'>node28 preds:26 succs:30 31 exn:3 Conditional method_body
+n$74=*&amp;this:com.stn.helpers.CategoryHelper* [line 28];
+n$75=*n$74.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 28];
+PRUNE((n$75 == null), false); [line 28];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:36 succs:26 exn:3 Instructions
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds: succs:35 exn:3 Instructions
+n$89=*&amp;return:void [line 28];
+*&amp;return:void=null [line 28];
+n$90=_fun___unwrap_exception(n$89:void) [line 28];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:38 succs:26 exn:3 Instructions
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds: succs:37 exn:3 Instructions
+n$89=*&amp;return:void [line 28];
+*&amp;return:void=null [line 28];
+n$90=_fun___unwrap_exception(n$89:void) [line 28];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">                preparedStatement.close(); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:20 succs:23 24 exn:3 Instructions
+n$61=*&amp;this:com.stn.helpers.CategoryHelper* [line 29];
+n$62=*n$61.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 29];
+n$65=_fun___set_mem_attribute(n$62:java.sql.PreparedStatement*) [line 29];
+_=*n$62:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 29];
+n$64=_fun_void PreparedStatement.close()(n$62:java.sql.PreparedStatement*) interface virtual [line 29];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:27 succs:30 31 exn:3 Instructions
+n$76=*&amp;this:com.stn.helpers.CategoryHelper* [line 29];
+n$77=*n$76.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 29];
+n$80=_fun___set_mem_attribute(n$77:java.sql.PreparedStatement*) [line 29];
+_=*n$77:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 29];
+n$79=_fun_void PreparedStatement.close()(n$77:java.sql.PreparedStatement*) interface virtual [line 29];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">            if (connection != null) <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node23.html"><span class='visited with_tooltip'>C_23<span class='tooltip'>node23 preds:22 21 succs:25 exn:3 Conditional method_body
+n$66=*&amp;this:com.stn.helpers.CategoryHelper* [line 30];
+n$67=*n$66.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 30];
+PRUNE(!(n$67 == null), true); [line 30];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node24.html"><span class='visited with_tooltip'>C_24<span class='tooltip'>node24 preds:22 21 succs:34 exn:3 Conditional method_body
+n$66=*&amp;this:com.stn.helpers.CategoryHelper* [line 30];
+n$67=*n$66.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 30];
+PRUNE((n$67 == null), false); [line 30];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node30.html"><span class='visited with_tooltip'>C_30<span class='tooltip'>node30 preds:29 28 succs:32 exn:3 Conditional method_body
+n$81=*&amp;this:com.stn.helpers.CategoryHelper* [line 30];
+n$82=*n$81.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 30];
+PRUNE(!(n$82 == null), true); [line 30];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node31.html"><span class='visited with_tooltip'>C_31<span class='tooltip'>node31 preds:29 28 succs:33 exn:3 Conditional method_body
+n$81=*&amp;this:com.stn.helpers.CategoryHelper* [line 30];
+n$82=*n$81.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 30];
+PRUNE((n$82 == null), false); [line 30];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line">                connection.close(); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:23 succs:34 exn:3 Instructions
+n$68=*&amp;this:com.stn.helpers.CategoryHelper* [line 31];
+n$69=*n$68.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 31];
+n$72=_fun___set_mem_attribute(n$69:java.sql.Connection*) [line 31];
+_=*n$69:java.sql.Connection*(root java.sql.Connection) [line 31];
+n$71=_fun_void Connection.close()(n$69:java.sql.Connection*) interface virtual [line 31];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:30 succs:33 exn:3 Instructions
+n$83=*&amp;this:com.stn.helpers.CategoryHelper* [line 31];
+n$84=*n$83.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 31];
+n$87=_fun___set_mem_attribute(n$84:java.sql.Connection*) [line 31];
+_=*n$84:java.sql.Connection*(root java.sql.Connection) [line 31];
+n$86=_fun_void Connection.close()(n$84:java.sql.Connection*) interface virtual [line 31];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line">        } <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:32 31 succs:2 exn:3 Instructions
+n$88=*&amp;$bcvar7:java.lang.Object* [line 32];
+*&amp;return:void=EXN n$88 [line 32];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line">    } <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:25 24 succs:2 exn:3 Instructions
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:34 33 3 succs: exn: Exit
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">    public List&lt;Category&gt; getCategories(int idFacultate) throws SQLException { <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68.html">summary for List CategoryHelper.getCategories(int)</a></td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">        List&lt;Category&gt; category1 = new ArrayList&lt;&gt;(); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 37];
+n$1=_fun_ArrayList.&lt;init&gt;()(n$0:java.util.ArrayList*) [line 37];
+*&amp;category1:java.util.ArrayList*=n$0 [line 37];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line">        query = &quot;SELECT IdCat, categorie, pinned, descriere, idFacultate, idSerie, idGrupa, (SELECT COUNT(*) FROM topics WHERE GroupId = IdCat),&quot; + <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$2=*&amp;this:com.stn.helpers.CategoryHelper* [line 39];
+*n$2.query:com.stn.helpers.CategoryHelper(root com.stn.helpers.CategoryHelper)="SELECT IdCat, categorie, pinned, descriere, idFacultate, idSerie, idGrupa, (SELECT COUNT(*) FROM topics WHERE GroupId = IdCat),(SELECT COUNT(*) FROM comments WHERE IdPost IN (SELECT TopicId FROM topics WHERE GroupId = IdCat)) FROM categories WHERE idFacultate = ?" [line 39];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line">                &quot;(SELECT COUNT(*) FROM comments WHERE IdPost IN (SELECT TopicId FROM topics WHERE GroupId = IdCat)) &quot; + </td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line">                &quot;FROM categories &quot; + </td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">                &quot;WHERE idFacultate = ?&quot;; </td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">        try { </td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line">            Class.forName(&quot;com.mysql.jdbc.Driver&quot;); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:77 Instructions
+n$3=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 45];
+*&amp;$irvar0:java.lang.Class*=n$3 [line 45];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line">            connection = DriverManager.getConnection(this.getHost(), this.getUser(), this.getPassword()); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:77 Instructions
+n$4=*&amp;this:com.stn.helpers.CategoryHelper* [line 46];
+_=*n$4:com.stn.helpers.CategoryHelper*(root com.stn.helpers.CategoryHelper) [line 46];
+n$6=_fun_String DBConnection.getHost()(n$4:com.stn.helpers.CategoryHelper*) virtual [line 46];
+*&amp;$irvar1:java.lang.String*=n$6 [line 46];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:77 Instructions
+n$7=*&amp;this:com.stn.helpers.CategoryHelper* [line 46];
+_=*n$7:com.stn.helpers.CategoryHelper*(root com.stn.helpers.CategoryHelper) [line 46];
+n$9=_fun_String DBConnection.getUser()(n$7:com.stn.helpers.CategoryHelper*) virtual [line 46];
+*&amp;$irvar2:java.lang.String*=n$9 [line 46];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:77 Instructions
+n$10=*&amp;this:com.stn.helpers.CategoryHelper* [line 46];
+_=*n$10:com.stn.helpers.CategoryHelper*(root com.stn.helpers.CategoryHelper) [line 46];
+n$12=_fun_String DBConnection.getPassword()(n$10:com.stn.helpers.CategoryHelper*) virtual [line 46];
+*&amp;$irvar3:java.lang.String*=n$12 [line 46];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:77 Instructions
+n$13=*&amp;$irvar1:java.lang.String* [line 46];
+n$14=*&amp;$irvar2:java.lang.String* [line 46];
+n$15=*&amp;$irvar3:java.lang.String* [line 46];
+n$16=_fun_Connection DriverManager.getConnection(String,String,String)(n$13:java.lang.String*,n$14:java.lang.String*,n$15:java.lang.String*) [line 46];
+*&amp;$irvar4:java.sql.Connection*=n$16 [line 46];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:77 Instructions
+n$17=*&amp;this:com.stn.helpers.CategoryHelper* [line 46];
+n$18=*&amp;$irvar4:java.sql.Connection* [line 46];
+*n$17.connection:com.stn.helpers.CategoryHelper(root com.stn.helpers.CategoryHelper)=n$18 [line 46];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">            preparedStatement = connection.prepareStatement(query); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:77 Instructions
+n$19=*&amp;this:com.stn.helpers.CategoryHelper* [line 47];
+n$20=*n$19.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 47];
+_=*n$20:java.sql.Connection*(root java.sql.Connection) [line 47];
+n$22=*&amp;this:com.stn.helpers.CategoryHelper* [line 47];
+n$23=*n$22.query:java.lang.String*(root com.stn.helpers.CategoryHelper) [line 47];
+n$24=_fun_PreparedStatement Connection.prepareStatement(String)(n$20:java.sql.Connection*,n$23:java.lang.String*) interface virtual [line 47];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$24 [line 47];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:77 Instructions
+n$25=*&amp;this:com.stn.helpers.CategoryHelper* [line 47];
+n$26=*&amp;$irvar5:java.sql.PreparedStatement* [line 47];
+*n$25.preparedStatement:com.stn.helpers.CategoryHelper(root com.stn.helpers.CategoryHelper)=n$26 [line 47];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line">            preparedStatement.setInt(1, idFacultate); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:77 Instructions
+n$27=*&amp;this:com.stn.helpers.CategoryHelper* [line 48];
+n$28=*n$27.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 48];
+_=*n$28:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 48];
+n$30=*&amp;idFacultate:int [line 48];
+n$31=_fun_void PreparedStatement.setInt(int,int)(n$28:java.sql.PreparedStatement*,1:int,n$30:int) interface virtual [line 48];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line">            resultSet = preparedStatement.executeQuery(); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:77 Instructions
+n$32=*&amp;this:com.stn.helpers.CategoryHelper* [line 49];
+n$33=*n$32.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 49];
+_=*n$33:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 49];
+n$35=_fun_ResultSet PreparedStatement.executeQuery()(n$33:java.sql.PreparedStatement*) interface virtual [line 49];
+*&amp;$irvar6:java.sql.ResultSet*=n$35 [line 49];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:77 Instructions
+n$36=*&amp;this:com.stn.helpers.CategoryHelper* [line 49];
+n$37=*&amp;$irvar6:java.sql.ResultSet* [line 49];
+*n$36.resultSet:com.stn.helpers.CategoryHelper(root com.stn.helpers.CategoryHelper)=n$37 [line 49];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line">            while (resultSet.next()) { <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:39 16 succs:20 exn:77 Instructions
+n$38=*&amp;this:com.stn.helpers.CategoryHelper* [line 50];
+n$39=*n$38.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 50];
+_=*n$39:java.sql.ResultSet*(root java.sql.ResultSet) [line 50];
+n$41=_fun_boolean ResultSet.next()(n$39:java.sql.ResultSet*) interface virtual [line 50];
+*&amp;$irvar7:_Bool=n$41 [line 50];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node20.html"><span class='visited with_tooltip'>J_20<span class='tooltip'>node20 preds:17 succs:18 19 exn: Join
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:20 succs:21 exn:77 Conditional method_body
+n$42=*&amp;$irvar7:_Bool [line 50];
+PRUNE(!(n$42 == 0), true); [line 50];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node19.html"><span class='visited with_tooltip'>C_19<span class='tooltip'>node19 preds:20 succs:40 41 exn:77 Conditional method_body
+n$42=*&amp;$irvar7:_Bool [line 50];
+PRUNE((n$42 == 0), false); [line 50];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line">                Category category = new Category(); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:18 succs:22 exn:77 Instructions
+n$43=_fun___new(sizeof(t=com.stn.pojo.Category):com.stn.pojo.Category*) [line 51];
+n$44=_fun_Category.&lt;init&gt;()(n$43:com.stn.pojo.Category*) [line 51];
+*&amp;category:com.stn.pojo.Category*=n$43 [line 51];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line">                category.setId(resultSet.getInt(1)); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:77 Instructions
+n$45=*&amp;this:com.stn.helpers.CategoryHelper* [line 52];
+n$46=*n$45.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 52];
+_=*n$46:java.sql.ResultSet*(root java.sql.ResultSet) [line 52];
+n$48=_fun_int ResultSet.getInt(int)(n$46:java.sql.ResultSet*,1:int) interface virtual [line 52];
+*&amp;$irvar8:int=n$48 [line 52];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:77 Instructions
+n$49=*&amp;category:com.stn.pojo.Category* [line 52];
+_=*n$49:com.stn.pojo.Category*(root com.stn.pojo.Category) [line 52];
+n$51=*&amp;$irvar8:int [line 52];
+n$52=_fun_void Category.setId(int)(n$49:com.stn.pojo.Category*,n$51:int) virtual [line 52];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line">                category.setCategorie(resultSet.getString(2)); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:77 Instructions
+n$53=*&amp;this:com.stn.helpers.CategoryHelper* [line 53];
+n$54=*n$53.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 53];
+_=*n$54:java.sql.ResultSet*(root java.sql.ResultSet) [line 53];
+n$56=_fun_String ResultSet.getString(int)(n$54:java.sql.ResultSet*,2:int) interface virtual [line 53];
+*&amp;$irvar9:java.lang.String*=n$56 [line 53];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:77 Instructions
+n$57=*&amp;category:com.stn.pojo.Category* [line 53];
+_=*n$57:com.stn.pojo.Category*(root com.stn.pojo.Category) [line 53];
+n$59=*&amp;$irvar9:java.lang.String* [line 53];
+n$60=_fun_void Category.setCategorie(String)(n$57:com.stn.pojo.Category*,n$59:java.lang.String*) virtual [line 53];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line">                category.setPinned(resultSet.getInt(3)); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:77 Instructions
+n$61=*&amp;this:com.stn.helpers.CategoryHelper* [line 54];
+n$62=*n$61.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 54];
+_=*n$62:java.sql.ResultSet*(root java.sql.ResultSet) [line 54];
+n$64=_fun_int ResultSet.getInt(int)(n$62:java.sql.ResultSet*,3:int) interface virtual [line 54];
+*&amp;$irvar10:int=n$64 [line 54];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:77 Instructions
+n$65=*&amp;category:com.stn.pojo.Category* [line 54];
+_=*n$65:com.stn.pojo.Category*(root com.stn.pojo.Category) [line 54];
+n$67=*&amp;$irvar10:int [line 54];
+n$68=_fun_void Category.setPinned(int)(n$65:com.stn.pojo.Category*,n$67:int) virtual [line 54];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line">                category.setDescriere(resultSet.getString(4)); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:77 Instructions
+n$69=*&amp;this:com.stn.helpers.CategoryHelper* [line 55];
+n$70=*n$69.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 55];
+_=*n$70:java.sql.ResultSet*(root java.sql.ResultSet) [line 55];
+n$72=_fun_String ResultSet.getString(int)(n$70:java.sql.ResultSet*,4:int) interface virtual [line 55];
+*&amp;$irvar11:java.lang.String*=n$72 [line 55];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:30 exn:77 Instructions
+n$73=*&amp;category:com.stn.pojo.Category* [line 55];
+_=*n$73:com.stn.pojo.Category*(root com.stn.pojo.Category) [line 55];
+n$75=*&amp;$irvar11:java.lang.String* [line 55];
+n$76=_fun_void Category.setDescriere(String)(n$73:com.stn.pojo.Category*,n$75:java.lang.String*) virtual [line 55];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line">                category.setIdFacultate(idFacultate); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 succs:31 exn:77 Instructions
+n$77=*&amp;category:com.stn.pojo.Category* [line 56];
+_=*n$77:com.stn.pojo.Category*(root com.stn.pojo.Category) [line 56];
+n$79=*&amp;idFacultate:int [line 56];
+n$80=_fun_void Category.setIdFacultate(int)(n$77:com.stn.pojo.Category*,n$79:int) virtual [line 56];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line">                category.setIdSerie(resultSet.getInt(6)); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:30 succs:32 exn:77 Instructions
+n$81=*&amp;this:com.stn.helpers.CategoryHelper* [line 57];
+n$82=*n$81.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 57];
+_=*n$82:java.sql.ResultSet*(root java.sql.ResultSet) [line 57];
+n$84=_fun_int ResultSet.getInt(int)(n$82:java.sql.ResultSet*,6:int) interface virtual [line 57];
+*&amp;$irvar12:int=n$84 [line 57];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:31 succs:33 exn:77 Instructions
+n$85=*&amp;category:com.stn.pojo.Category* [line 57];
+_=*n$85:com.stn.pojo.Category*(root com.stn.pojo.Category) [line 57];
+n$87=*&amp;$irvar12:int [line 57];
+n$88=_fun_void Category.setIdSerie(int)(n$85:com.stn.pojo.Category*,n$87:int) virtual [line 57];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE58">58</td><td class="line">                category.setIdGrupa(resultSet.getInt(7)); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:32 succs:34 exn:77 Instructions
+n$89=*&amp;this:com.stn.helpers.CategoryHelper* [line 58];
+n$90=*n$89.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 58];
+_=*n$90:java.sql.ResultSet*(root java.sql.ResultSet) [line 58];
+n$92=_fun_int ResultSet.getInt(int)(n$90:java.sql.ResultSet*,7:int) interface virtual [line 58];
+*&amp;$irvar13:int=n$92 [line 58];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:33 succs:35 exn:77 Instructions
+n$93=*&amp;category:com.stn.pojo.Category* [line 58];
+_=*n$93:com.stn.pojo.Category*(root com.stn.pojo.Category) [line 58];
+n$95=*&amp;$irvar13:int [line 58];
+n$96=_fun_void Category.setIdGrupa(int)(n$93:com.stn.pojo.Category*,n$95:int) virtual [line 58];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE59">59</td><td class="line">                category.setTotalTopics(resultSet.getInt(8)); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:34 succs:36 exn:77 Instructions
+n$97=*&amp;this:com.stn.helpers.CategoryHelper* [line 59];
+n$98=*n$97.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 59];
+_=*n$98:java.sql.ResultSet*(root java.sql.ResultSet) [line 59];
+n$100=_fun_int ResultSet.getInt(int)(n$98:java.sql.ResultSet*,8:int) interface virtual [line 59];
+*&amp;$irvar14:int=n$100 [line 59];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:35 succs:37 exn:77 Instructions
+n$101=*&amp;category:com.stn.pojo.Category* [line 59];
+_=*n$101:com.stn.pojo.Category*(root com.stn.pojo.Category) [line 59];
+n$103=*&amp;$irvar14:int [line 59];
+n$104=_fun_void Category.setTotalTopics(int)(n$101:com.stn.pojo.Category*,n$103:int) virtual [line 59];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE60">60</td><td class="line">                category.setTotalPosts(resultSet.getInt(9)); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:36 succs:38 exn:77 Instructions
+n$105=*&amp;this:com.stn.helpers.CategoryHelper* [line 60];
+n$106=*n$105.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 60];
+_=*n$106:java.sql.ResultSet*(root java.sql.ResultSet) [line 60];
+n$108=_fun_int ResultSet.getInt(int)(n$106:java.sql.ResultSet*,9:int) interface virtual [line 60];
+*&amp;$irvar15:int=n$108 [line 60];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:37 succs:39 exn:77 Instructions
+n$109=*&amp;category:com.stn.pojo.Category* [line 60];
+_=*n$109:com.stn.pojo.Category*(root com.stn.pojo.Category) [line 60];
+n$111=*&amp;$irvar15:int [line 60];
+n$112=_fun_void Category.setTotalPosts(int)(n$109:com.stn.pojo.Category*,n$111:int) virtual [line 60];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE61">61</td><td class="line">                category1.add(category); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:38 succs:17 exn:77 Instructions
+n$113=*&amp;category1:java.util.ArrayList* [line 61];
+_=*n$113:java.util.ArrayList*(root java.util.ArrayList) [line 61];
+n$115=*&amp;category:com.stn.pojo.Category* [line 61];
+n$116=_fun_boolean ArrayList.add(Object)(n$113:java.util.ArrayList*,n$115:com.stn.pojo.Category*) interface virtual [line 61];
+*&amp;$irvar16:_Bool=n$116 [line 61];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE62">62</td><td class="line">            } </td></tr>
+<tr><td class="num" id="LINE63">63</td><td class="line">        } catch (ClassNotFoundException | SQLException e) { <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node49.html"><span class='visited with_tooltip'>I_49<span class='tooltip'>node49 preds:75 73 succs:50 exn:79 Instructions
+n$138=*&amp;CatchVar283:java.lang.Object* [line 63];
+*&amp;e:java.lang.Object*=n$138 [line 63];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node73.html"><span class='visited with_tooltip'>C_73<span class='tooltip'>node73 preds:76 succs:49 exn:3 Conditional exception handler
+n$189=_fun___instanceof(n$188:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 63];
+PRUNE(n$189, true); [line 63];
+*&amp;CatchVar283:java.util.List*=n$188 [line 63];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node74.html"><span class='visited with_tooltip'>C_74<span class='tooltip'>node74 preds:76 succs:72 exn:3 Conditional exception handler
+n$189=_fun___instanceof(n$188:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 63];
+PRUNE(!n$189, false); [line 63];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node75.html"><span class='visited with_tooltip'>C_75<span class='tooltip'>node75 preds:77 succs:49 exn:3 Conditional exception handler
+n$190=_fun___instanceof(n$188:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 63];
+PRUNE(n$190, true); [line 63];
+*&amp;CatchVar283:java.util.List*=n$188 [line 63];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node76.html"><span class='visited with_tooltip'>C_76<span class='tooltip'>node76 preds:77 succs:73 74 exn:3 Conditional exception handler
+n$190=_fun___instanceof(n$188:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 63];
+PRUNE(!n$190, false); [line 63];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node77.html"><span class='visited with_tooltip'>I_77<span class='tooltip'>node77 preds: succs:75 76 exn:3 Instructions
+n$187=*&amp;return:java.util.List* [line 63];
+*&amp;return:java.util.List*=null [line 63];
+n$188=_fun___unwrap_exception(n$187:java.util.List*) [line 63];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE64">64</td><td class="line">            e.printStackTrace(); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node50.html"><span class='visited with_tooltip'>I_50<span class='tooltip'>node50 preds:49 succs:51 52 exn:79 Instructions
+n$139=*&amp;e:java.lang.Object* [line 64];
+_=*n$139:java.lang.Object*(root java.lang.Object) [line 64];
+n$141=_fun_void Throwable.printStackTrace()(n$139:java.lang.Object*) virtual [line 64];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE65">65</td><td class="line">        } finally { </td></tr>
+<tr><td class="num" id="LINE66">66</td><td class="line">            if (preparedStatement != null) <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node40.html"><span class='visited with_tooltip'>C_40<span class='tooltip'>node40 preds:19 succs:42 exn:3 Conditional method_body
+n$117=*&amp;this:com.stn.helpers.CategoryHelper* [line 66];
+n$118=*n$117.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 66];
+PRUNE(!(n$118 == null), true); [line 66];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node41.html"><span class='visited with_tooltip'>C_41<span class='tooltip'>node41 preds:19 succs:43 44 exn:3 Conditional method_body
+n$117=*&amp;this:com.stn.helpers.CategoryHelper* [line 66];
+n$118=*n$117.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 66];
+PRUNE((n$118 == null), false); [line 66];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node51.html"><span class='visited with_tooltip'>C_51<span class='tooltip'>node51 preds:50 succs:53 exn:3 Conditional method_body
+n$142=*&amp;this:com.stn.helpers.CategoryHelper* [line 66];
+n$143=*n$142.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 66];
+PRUNE(!(n$143 == null), true); [line 66];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node52.html"><span class='visited with_tooltip'>C_52<span class='tooltip'>node52 preds:50 succs:54 55 exn:3 Conditional method_body
+n$142=*&amp;this:com.stn.helpers.CategoryHelper* [line 66];
+n$143=*n$142.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 66];
+PRUNE((n$143 == null), false); [line 66];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node60.html"><span class='visited with_tooltip'>I_60<span class='tooltip'>node60 preds:80 78 72 succs:61 62 exn:81 Instructions
+n$163=*&amp;CatchVar339:java.lang.Object* [line 66];
+*&amp;$bcvar4:java.lang.Object*=n$163 [line 66];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node61.html"><span class='visited with_tooltip'>C_61<span class='tooltip'>node61 preds:60 succs:63 exn:3 Conditional method_body
+n$164=*&amp;this:com.stn.helpers.CategoryHelper* [line 66];
+n$165=*n$164.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 66];
+PRUNE(!(n$165 == null), true); [line 66];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node62.html"><span class='visited with_tooltip'>C_62<span class='tooltip'>node62 preds:60 succs:64 65 exn:3 Conditional method_body
+n$164=*&amp;this:com.stn.helpers.CategoryHelper* [line 66];
+n$165=*n$164.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 66];
+PRUNE((n$165 == null), false); [line 66];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node72.html"><span class='visited with_tooltip'>I_72<span class='tooltip'>node72 preds:74 succs:60 exn:3 Instructions
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node78.html"><span class='visited with_tooltip'>I_78<span class='tooltip'>node78 preds:79 succs:60 exn:3 Instructions
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node79.html"><span class='visited with_tooltip'>I_79<span class='tooltip'>node79 preds: succs:78 exn:3 Instructions
+n$187=*&amp;return:java.util.List* [line 66];
+*&amp;return:java.util.List*=null [line 66];
+n$188=_fun___unwrap_exception(n$187:java.util.List*) [line 66];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node80.html"><span class='visited with_tooltip'>I_80<span class='tooltip'>node80 preds:81 succs:60 exn:3 Instructions
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node81.html"><span class='visited with_tooltip'>I_81<span class='tooltip'>node81 preds: succs:80 exn:3 Instructions
+n$187=*&amp;return:java.util.List* [line 66];
+*&amp;return:java.util.List*=null [line 66];
+n$188=_fun___unwrap_exception(n$187:java.util.List*) [line 66];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE67">67</td><td class="line">                preparedStatement.close(); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:40 succs:43 44 exn:3 Instructions
+n$119=*&amp;this:com.stn.helpers.CategoryHelper* [line 67];
+n$120=*n$119.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 67];
+n$123=_fun___set_mem_attribute(n$120:java.sql.PreparedStatement*) [line 67];
+_=*n$120:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 67];
+n$122=_fun_void PreparedStatement.close()(n$120:java.sql.PreparedStatement*) interface virtual [line 67];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node53.html"><span class='visited with_tooltip'>I_53<span class='tooltip'>node53 preds:51 succs:54 55 exn:3 Instructions
+n$144=*&amp;this:com.stn.helpers.CategoryHelper* [line 67];
+n$145=*n$144.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 67];
+n$148=_fun___set_mem_attribute(n$145:java.sql.PreparedStatement*) [line 67];
+_=*n$145:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 67];
+n$147=_fun_void PreparedStatement.close()(n$145:java.sql.PreparedStatement*) interface virtual [line 67];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node63.html"><span class='visited with_tooltip'>I_63<span class='tooltip'>node63 preds:61 succs:64 65 exn:3 Instructions
+n$166=*&amp;this:com.stn.helpers.CategoryHelper* [line 67];
+n$167=*n$166.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 67];
+n$170=_fun___set_mem_attribute(n$167:java.sql.PreparedStatement*) [line 67];
+_=*n$167:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 67];
+n$169=_fun_void PreparedStatement.close()(n$167:java.sql.PreparedStatement*) interface virtual [line 67];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE68">68</td><td class="line">            if (connection != null) <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node43.html"><span class='visited with_tooltip'>C_43<span class='tooltip'>node43 preds:42 41 succs:45 exn:3 Conditional method_body
+n$124=*&amp;this:com.stn.helpers.CategoryHelper* [line 68];
+n$125=*n$124.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 68];
+PRUNE(!(n$125 == null), true); [line 68];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node44.html"><span class='visited with_tooltip'>C_44<span class='tooltip'>node44 preds:42 41 succs:46 47 exn:3 Conditional method_body
+n$124=*&amp;this:com.stn.helpers.CategoryHelper* [line 68];
+n$125=*n$124.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 68];
+PRUNE((n$125 == null), false); [line 68];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node54.html"><span class='visited with_tooltip'>C_54<span class='tooltip'>node54 preds:53 52 succs:56 exn:3 Conditional method_body
+n$149=*&amp;this:com.stn.helpers.CategoryHelper* [line 68];
+n$150=*n$149.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 68];
+PRUNE(!(n$150 == null), true); [line 68];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node55.html"><span class='visited with_tooltip'>C_55<span class='tooltip'>node55 preds:53 52 succs:57 58 exn:3 Conditional method_body
+n$149=*&amp;this:com.stn.helpers.CategoryHelper* [line 68];
+n$150=*n$149.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 68];
+PRUNE((n$150 == null), false); [line 68];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node64.html"><span class='visited with_tooltip'>C_64<span class='tooltip'>node64 preds:63 62 succs:66 exn:3 Conditional method_body
+n$171=*&amp;this:com.stn.helpers.CategoryHelper* [line 68];
+n$172=*n$171.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 68];
+PRUNE(!(n$172 == null), true); [line 68];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node65.html"><span class='visited with_tooltip'>C_65<span class='tooltip'>node65 preds:63 62 succs:67 68 exn:3 Conditional method_body
+n$171=*&amp;this:com.stn.helpers.CategoryHelper* [line 68];
+n$172=*n$171.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 68];
+PRUNE((n$172 == null), false); [line 68];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE69">69</td><td class="line">                connection.close(); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node45.html"><span class='visited with_tooltip'>I_45<span class='tooltip'>node45 preds:43 succs:46 47 exn:3 Instructions
+n$126=*&amp;this:com.stn.helpers.CategoryHelper* [line 69];
+n$127=*n$126.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 69];
+n$130=_fun___set_mem_attribute(n$127:java.sql.Connection*) [line 69];
+_=*n$127:java.sql.Connection*(root java.sql.Connection) [line 69];
+n$129=_fun_void Connection.close()(n$127:java.sql.Connection*) interface virtual [line 69];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node56.html"><span class='visited with_tooltip'>I_56<span class='tooltip'>node56 preds:54 succs:57 58 exn:3 Instructions
+n$151=*&amp;this:com.stn.helpers.CategoryHelper* [line 69];
+n$152=*n$151.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 69];
+n$155=_fun___set_mem_attribute(n$152:java.sql.Connection*) [line 69];
+_=*n$152:java.sql.Connection*(root java.sql.Connection) [line 69];
+n$154=_fun_void Connection.close()(n$152:java.sql.Connection*) interface virtual [line 69];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node66.html"><span class='visited with_tooltip'>I_66<span class='tooltip'>node66 preds:64 succs:67 68 exn:3 Instructions
+n$173=*&amp;this:com.stn.helpers.CategoryHelper* [line 69];
+n$174=*n$173.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 69];
+n$177=_fun___set_mem_attribute(n$174:java.sql.Connection*) [line 69];
+_=*n$174:java.sql.Connection*(root java.sql.Connection) [line 69];
+n$176=_fun_void Connection.close()(n$174:java.sql.Connection*) interface virtual [line 69];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE70">70</td><td class="line">            if (resultSet != null) <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node46.html"><span class='visited with_tooltip'>C_46<span class='tooltip'>node46 preds:45 44 succs:48 exn:3 Conditional method_body
+n$131=*&amp;this:com.stn.helpers.CategoryHelper* [line 70];
+n$132=*n$131.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 70];
+PRUNE(!(n$132 == null), true); [line 70];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node47.html"><span class='visited with_tooltip'>C_47<span class='tooltip'>node47 preds:45 44 succs:71 exn:3 Conditional method_body
+n$131=*&amp;this:com.stn.helpers.CategoryHelper* [line 70];
+n$132=*n$131.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 70];
+PRUNE((n$132 == null), false); [line 70];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node57.html"><span class='visited with_tooltip'>C_57<span class='tooltip'>node57 preds:56 55 succs:59 exn:3 Conditional method_body
+n$156=*&amp;this:com.stn.helpers.CategoryHelper* [line 70];
+n$157=*n$156.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 70];
+PRUNE(!(n$157 == null), true); [line 70];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node58.html"><span class='visited with_tooltip'>C_58<span class='tooltip'>node58 preds:56 55 succs:71 exn:3 Conditional method_body
+n$156=*&amp;this:com.stn.helpers.CategoryHelper* [line 70];
+n$157=*n$156.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 70];
+PRUNE((n$157 == null), false); [line 70];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node67.html"><span class='visited with_tooltip'>C_67<span class='tooltip'>node67 preds:66 65 succs:69 exn:3 Conditional method_body
+n$178=*&amp;this:com.stn.helpers.CategoryHelper* [line 70];
+n$179=*n$178.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 70];
+PRUNE(!(n$179 == null), true); [line 70];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node68.html"><span class='visited with_tooltip'>C_68<span class='tooltip'>node68 preds:66 65 succs:70 exn:3 Conditional method_body
+n$178=*&amp;this:com.stn.helpers.CategoryHelper* [line 70];
+n$179=*n$178.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 70];
+PRUNE((n$179 == null), false); [line 70];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE71">71</td><td class="line">                resultSet.close(); <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node48.html"><span class='visited with_tooltip'>I_48<span class='tooltip'>node48 preds:46 succs:71 exn:3 Instructions
+n$133=*&amp;this:com.stn.helpers.CategoryHelper* [line 71];
+n$134=*n$133.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 71];
+n$137=_fun___set_mem_attribute(n$134:java.sql.ResultSet*) [line 71];
+_=*n$134:java.sql.ResultSet*(root java.sql.ResultSet) [line 71];
+n$136=_fun_void ResultSet.close()(n$134:java.sql.ResultSet*) interface virtual [line 71];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node59.html"><span class='visited with_tooltip'>I_59<span class='tooltip'>node59 preds:57 succs:71 exn:3 Instructions
+n$158=*&amp;this:com.stn.helpers.CategoryHelper* [line 71];
+n$159=*n$158.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 71];
+n$162=_fun___set_mem_attribute(n$159:java.sql.ResultSet*) [line 71];
+_=*n$159:java.sql.ResultSet*(root java.sql.ResultSet) [line 71];
+n$161=_fun_void ResultSet.close()(n$159:java.sql.ResultSet*) interface virtual [line 71];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node69.html"><span class='visited with_tooltip'>I_69<span class='tooltip'>node69 preds:67 succs:70 exn:3 Instructions
+n$180=*&amp;this:com.stn.helpers.CategoryHelper* [line 71];
+n$181=*n$180.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 71];
+n$184=_fun___set_mem_attribute(n$181:java.sql.ResultSet*) [line 71];
+_=*n$181:java.sql.ResultSet*(root java.sql.ResultSet) [line 71];
+n$183=_fun_void ResultSet.close()(n$181:java.sql.ResultSet*) interface virtual [line 71];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE72">72</td><td class="line">        } <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node70.html"><span class='visited with_tooltip'>I_70<span class='tooltip'>node70 preds:69 68 succs:2 exn:3 Instructions
+n$185=*&amp;$bcvar4:java.lang.Object* [line 72];
+*&amp;return:java.util.List*=EXN n$185 [line 72];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE73">73</td><td class="line">        return category1; <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node71.html"><span class='visited with_tooltip'>I_71<span class='tooltip'>node71 preds:59 58 48 47 succs:2 exn:3 Instructions
+n$186=*&amp;category1:java.util.ArrayList* [line 73];
+*&amp;return:java.util.List*=n$186 [line 73];
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:71 70 3 succs: exn: Exit
+</span></span></a> <a href="./CategoryHelper.java.a9a7806350d139d60581870951a6ff01/nodes/com.stn.helpers.CategoryHelper.getCategories%28int%29%3Ajava.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE74">74</td><td class="line">    } </td></tr>
+<tr><td class="num" id="LINE75">75</td><td class="line">} </td></tr>
+</table>
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+</body>
+</html>

@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Aplicatie.getDate():java.sql.Timestamp.4c07db475b130af300b305e9fdffbc8b_1" [label="1: Start Timestamp Aplicatie.getDate()\nFormals:  this:com.stn.pojo.Aplicatie*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Aplicatie.getDate():java.sql.Timestamp.4c07db475b130af300b305e9fdffbc8b_1" -> "com.stn.pojo.Aplicatie.getDate():java.sql.Timestamp.4c07db475b130af300b305e9fdffbc8b_4" ;
+"com.stn.pojo.Aplicatie.getDate():java.sql.Timestamp.4c07db475b130af300b305e9fdffbc8b_2" [label="2: Exit Timestamp Aplicatie.getDate() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Aplicatie.getDate():java.sql.Timestamp.4c07db475b130af300b305e9fdffbc8b_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 104]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.getDate():java.sql.Timestamp.4c07db475b130af300b305e9fdffbc8b_3" -> "com.stn.pojo.Aplicatie.getDate():java.sql.Timestamp.4c07db475b130af300b305e9fdffbc8b_2" ;
+"com.stn.pojo.Aplicatie.getDate():java.sql.Timestamp.4c07db475b130af300b305e9fdffbc8b_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Aplicatie* [line 104]\n  n$1=*n$0.date:java.sql.Timestamp*(root com.stn.pojo.Aplicatie) [line 104]\n  *&return:java.sql.Timestamp*=n$1 [line 104]\n  NULLIFY(&this); [line 104]\n  EXIT_SCOPE(n$0,n$1,this); [line 104]\n  APPLY_ABSTRACTION; [line 104]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.getDate():java.sql.Timestamp.4c07db475b130af300b305e9fdffbc8b_4" -> "com.stn.pojo.Aplicatie.getDate():java.sql.Timestamp.4c07db475b130af300b305e9fdffbc8b_2" ;
+	 "com.stn.pojo.Aplicatie.getDate():java.sql.Timestamp.4c07db475b130af300b305e9fdffbc8b_4" -> "com.stn.pojo.Aplicatie.getDate():java.sql.Timestamp.4c07db475b130af300b305e9fdffbc8b_3" [color="red" ];
+}

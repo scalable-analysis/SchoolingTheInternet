@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.User.setAnonymity(int):void.123c1ccfa6055189819f8d3592d09c5e_1" [label="1: Start void User.setAnonymity(int)\nFormals:  this:com.stn.pojo.User* anonymity:int\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.User.setAnonymity(int):void.123c1ccfa6055189819f8d3592d09c5e_1" -> "com.stn.pojo.User.setAnonymity(int):void.123c1ccfa6055189819f8d3592d09c5e_4" ;
+"com.stn.pojo.User.setAnonymity(int):void.123c1ccfa6055189819f8d3592d09c5e_2" [label="2: Exit void User.setAnonymity(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.User.setAnonymity(int):void.123c1ccfa6055189819f8d3592d09c5e_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 122]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.setAnonymity(int):void.123c1ccfa6055189819f8d3592d09c5e_3" -> "com.stn.pojo.User.setAnonymity(int):void.123c1ccfa6055189819f8d3592d09c5e_2" ;
+"com.stn.pojo.User.setAnonymity(int):void.123c1ccfa6055189819f8d3592d09c5e_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.User* [line 121]\n  n$1=*&anonymity:int [line 121]\n  *n$0.anonymity:com.stn.pojo.User(root com.stn.pojo.User)=n$1 [line 121]\n  NULLIFY(&anonymity); [line 121]\n  NULLIFY(&this); [line 121]\n  EXIT_SCOPE(n$0,n$1,anonymity,this); [line 121]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.setAnonymity(int):void.123c1ccfa6055189819f8d3592d09c5e_4" -> "com.stn.pojo.User.setAnonymity(int):void.123c1ccfa6055189819f8d3592d09c5e_5" ;
+	 "com.stn.pojo.User.setAnonymity(int):void.123c1ccfa6055189819f8d3592d09c5e_4" -> "com.stn.pojo.User.setAnonymity(int):void.123c1ccfa6055189819f8d3592d09c5e_3" [color="red" ];
+"com.stn.pojo.User.setAnonymity(int):void.123c1ccfa6055189819f8d3592d09c5e_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 122]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.setAnonymity(int):void.123c1ccfa6055189819f8d3592d09c5e_5" -> "com.stn.pojo.User.setAnonymity(int):void.123c1ccfa6055189819f8d3592d09c5e_2" ;
+	 "com.stn.pojo.User.setAnonymity(int):void.123c1ccfa6055189819f8d3592d09c5e_5" -> "com.stn.pojo.User.setAnonymity(int):void.123c1ccfa6055189819f8d3592d09c5e_3" [color="red" ];
+}

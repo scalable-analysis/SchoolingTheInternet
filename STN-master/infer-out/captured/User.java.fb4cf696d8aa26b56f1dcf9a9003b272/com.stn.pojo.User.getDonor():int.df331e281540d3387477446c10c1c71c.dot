@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.User.getDonor():int.df331e281540d3387477446c10c1c71c_1" [label="1: Start int User.getDonor()\nFormals:  this:com.stn.pojo.User*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.User.getDonor():int.df331e281540d3387477446c10c1c71c_1" -> "com.stn.pojo.User.getDonor():int.df331e281540d3387477446c10c1c71c_4" ;
+"com.stn.pojo.User.getDonor():int.df331e281540d3387477446c10c1c71c_2" [label="2: Exit int User.getDonor() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.User.getDonor():int.df331e281540d3387477446c10c1c71c_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 213]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.getDonor():int.df331e281540d3387477446c10c1c71c_3" -> "com.stn.pojo.User.getDonor():int.df331e281540d3387477446c10c1c71c_2" ;
+"com.stn.pojo.User.getDonor():int.df331e281540d3387477446c10c1c71c_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.User* [line 213]\n  n$1=*n$0.donor:int(root com.stn.pojo.User) [line 213]\n  *&return:int=n$1 [line 213]\n  NULLIFY(&this); [line 213]\n  EXIT_SCOPE(n$0,n$1,this); [line 213]\n  APPLY_ABSTRACTION; [line 213]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.getDonor():int.df331e281540d3387477446c10c1c71c_4" -> "com.stn.pojo.User.getDonor():int.df331e281540d3387477446c10c1c71c_2" ;
+	 "com.stn.pojo.User.getDonor():int.df331e281540d3387477446c10c1c71c_4" -> "com.stn.pojo.User.getDonor():int.df331e281540d3387477446c10c1c71c_3" [color="red" ];
+}

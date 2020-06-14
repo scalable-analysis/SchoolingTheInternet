@@ -1,0 +1,364 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.servlets.LoginProcess.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSe.e1e414de6daa3b1df74bcfbd62e8eeb6_node38</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../LoginProcess.java.112b12b2ac716f288e113567bf8b1db8.html#LINE52">38</a></h1></center>PROC: <a href="./../com.stn.servlets.LoginProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.e1e414de6daa3b1df74bcfbd62e8eeb6.html">void LoginProcess.doPost(HttpServletRequest,HttpServletResponse)</a> LINE: <a href="./../../LoginProcess.java.112b12b2ac716f288e113567bf8b1db8.html#LINE52">52</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.servlets.LoginProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.e1e414de6daa3b1df74bcfbd62e8eeb6_node37.html"><span class='visited with_tooltip'>N_37<span class='tooltip'>node37 preds:35 succs:38 exn:60 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.servlets.LoginProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.e1e414de6daa3b1df74bcfbd62e8eeb6_node39.html"><span class='visited with_tooltip'>N_39<span class='tooltip'>node39 preds:38 succs:40 exn:60 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.servlets.LoginProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.e1e414de6daa3b1df74bcfbd62e8eeb6_node60.html"><span class='visited with_tooltip'>N_60<span class='tooltip'>node60 preds: succs:58 59 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$59=_fun___new(sizeof(t=javax.servlet.http.Cookie):javax.servlet.http.Cookie*) [line 52];
+n$60=*&amp;token:java.lang.String* [line 52];
+n$61=_fun_Cookie.&lt;init&gt;(String,String)(n$59:javax.servlet.http.Cookie*,"token":java.lang.Object*,n$60:java.lang.String*) [line 52];
+*&amp;cookie:javax.servlet.http.Cookie*=n$59 [line 52];
+</LISTING>
+<hr width="100%">
+<a name="session52" href="./../nodes/com.stn.servlets.LoginProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.e1e414de6daa3b1df74bcfbd62e8eeb6_node38.html#session52">node38#session52</a>(<a href="./../../LoginProcess.java.112b12b2ac716f288e113567bf8b1db8.html#LINE52">52</a>) [compute pre] liveness 38
+<LISTING class='color_black'>JOIN
+
+LEFT:   { error,
+          ip,
+          url,
+          out,
+          token,
+          return,
+          cookie,
+          userHelper,
+          session,
+          response,
+          userId }
+RIGHT:  { out, return }
+RESULT: { error,
+          ip,
+          url,
+          out,
+          token,
+          return,
+          cookie,
+          userHelper,
+          session,
+          response,
+          userId }
+
+</LISTING>
+<hr width="100%">
+<a name="session53" href="./../nodes/com.stn.servlets.LoginProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.e1e414de6daa3b1df74bcfbd62e8eeb6_node38.html#session53">node38#session53</a>(<a href="./../../LoginProcess.java.112b12b2ac716f288e113567bf8b1db8.html#LINE52">52</a>) [exec] liveness 38
+<LISTING class='color_black'>PRE STATE:
+{ error,
+  ip,
+  url,
+  out,
+  token,
+  return,
+  cookie,
+  userHelper,
+  session,
+  response,
+  userId }
+
+INSTR=  *&amp;cookie:javax.servlet.http.Cookie*=n$59 [line 52]; 
+
+STATE:
+{ n$59,
+  error,
+  ip,
+  url,
+  out,
+  token,
+  return,
+  userHelper,
+  session,
+  response,
+  userId }
+
+INSTR=  n$61=_fun_Cookie.&lt;init&gt;(String,String)(n$59:javax.servlet.http.Cookie*,&quot;token&quot;:java.lang.Object*,n$60:java.lang.String*) [line 52]; 
+
+STATE:
+{ n$59,
+  n$60,
+  error,
+  ip,
+  url,
+  out,
+  token,
+  return,
+  userHelper,
+  session,
+  response,
+  userId }
+
+INSTR=  n$60=*&amp;token:java.lang.String* [line 52]; 
+
+STATE:
+{ n$59,
+  error,
+  ip,
+  url,
+  out,
+  token,
+  return,
+  userHelper,
+  session,
+  response,
+  userId }
+
+INSTR=  n$59=_fun___new(sizeof(t=javax.servlet.http.Cookie):javax.servlet.http.Cookie*) [line 52]; 
+
+STATE:
+{ error, ip, url, out, token, return, userHelper, session, response, userId }
+
+</LISTING>
+<hr width="100%">
+<a name="session189" href="./../nodes/com.stn.servlets.LoginProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.e1e414de6daa3b1df74bcfbd62e8eeb6_node38.html#session189">node38#session189</a>(<a href="./../../LoginProcess.java.112b12b2ac716f288e113567bf8b1db8.html#LINE52">52</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session190" href="./../nodes/com.stn.servlets.LoginProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.e1e414de6daa3b1df74bcfbd62e8eeb6_node38.html#session190">node38#session190</a>(<a href="./../../LoginProcess.java.112b12b2ac716f288e113567bf8b1db8.html#LINE52">52</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ error, ip, url, out, token, userHelper, session, userId },
+{ _, n$56, n$58, securityHelper })
+
+INSTR=  n$59=_fun___new(sizeof(t=javax.servlet.http.Cookie):javax.servlet.http.Cookie*) [line 52]; 
+
+STATE:
+({ n$59, error, ip, url, out, token, userHelper, session, userId },
+{ _, n$56, n$58, securityHelper })
+
+INSTR=  n$60=*&amp;token:java.lang.String* [line 52]; 
+
+STATE:
+({ n$59, n$60, error, ip, url, out, token, userHelper, session, userId },
+{ _, n$56, n$58, securityHelper })
+
+INSTR=  n$61=_fun_Cookie.&lt;init&gt;(String,String)(n$59:javax.servlet.http.Cookie*,&quot;token&quot;:java.lang.Object*,n$60:java.lang.String*) [line 52]; 
+
+STATE:
+({ n$59,
+   n$60,
+   n$61,
+   error,
+   ip,
+   url,
+   out,
+   token,
+   userHelper,
+   session,
+   userId },
+{ _, n$56, n$58, securityHelper })
+
+INSTR=  *&amp;cookie:javax.servlet.http.Cookie*=n$59 [line 52]; 
+
+STATE:
+({ error, ip, url, out, token, cookie, userHelper, session, userId },
+{ n$59, n$60, n$61 })
+
+</LISTING>
+<hr width="100%">
+<a name="session70" href="./../nodes/com.stn.servlets.LoginProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.e1e414de6daa3b1df74bcfbd62e8eeb6_node38.html#session70">node38#session70</a>(<a href="./../../LoginProcess.java.112b12b2ac716f288e113567bf8b1db8.html#LINE52">52</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session71" href="./../nodes/com.stn.servlets.LoginProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpSe.e1e414de6daa3b1df74bcfbd62e8eeb6_node38.html#session71">node38#session71</a>(<a href="./../../LoginProcess.java.112b12b2ac716f288e113567bf8b1db8.html#LINE52">52</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$18 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { },
+            AB -&gt; { },
+            rnd -&gt; { } },
+  n$21 -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  n$33 -&gt; { },
+  n$35 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  n$41 -&gt; { },
+  n$58 -&gt; { },
+  error -&gt; { },
+  ip -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  url -&gt; { },
+  out -&gt; { },
+  username -&gt; { },
+  token -&gt; { },
+  password -&gt; { },
+  securityHelper -&gt; { connection -&gt; *,
+                      dbHost -&gt; { },
+                      dbName -&gt; { },
+                      dbPassword -&gt; { },
+                      dbPort -&gt; { },
+                      dbUser -&gt; { },
+                      preparedStatement -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+                      query -&gt; { },
+                      resultSet -&gt; ({ Other(int SecurityHelper.getAttempts(HttpServletRequest) at line 41) } + Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+                      AB -&gt; *,
+                      rnd -&gt; { } },
+  rememberMe -&gt; { },
+  userHelper -&gt; { connection -&gt; *,
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+                  query -&gt; { },
+                  resultSet -&gt; ({ Other(int UserHelper.authenticateUser(String,String) at line 47) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  session -&gt; { },
+  userId -&gt; { } }
+
+INSTR=  n$59 := __new({ sizeof(javax.servlet.http.Cookie) }) [line 52]; 
+
+STATE UNCHANGED
+
+
+INSTR=  n$61 := Cookie.&lt;init&gt;(String,String)({ n$59, &quot;token&quot;, token }) [line 52]; 
+
+STATE UNCHANGED
+
+INSTR=  cookie := n$59 [line 52]; 
+
+STATE:
+{ n$18 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { },
+            AB -&gt; { },
+            rnd -&gt; { } },
+  n$21 -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  n$33 -&gt; { },
+  n$35 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  n$41 -&gt; { },
+  n$58 -&gt; { },
+  error -&gt; { },
+  ip -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  url -&gt; { },
+  out -&gt; { },
+  username -&gt; { },
+  token -&gt; { },
+  password -&gt; { },
+  securityHelper -&gt; { connection -&gt; *,
+                      dbHost -&gt; { },
+                      dbName -&gt; { },
+                      dbPassword -&gt; { },
+                      dbPort -&gt; { },
+                      dbUser -&gt; { },
+                      preparedStatement -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+                      query -&gt; { },
+                      resultSet -&gt; ({ Other(int SecurityHelper.getAttempts(HttpServletRequest) at line 41) } + Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+                      AB -&gt; *,
+                      rnd -&gt; { } },
+  rememberMe -&gt; { },
+  cookie -&gt; { },
+  userHelper -&gt; { connection -&gt; *,
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+                  query -&gt; { },
+                  resultSet -&gt; ({ Other(int UserHelper.authenticateUser(String,String) at line 47) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  session -&gt; { },
+  userId -&gt; { } }
+
+INSTR=  EXIT_SCOPE(n$59,n$61); [line 52]; 
+
+STATE:
+{ n$18 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { },
+            AB -&gt; { },
+            rnd -&gt; { } },
+  n$21 -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  n$33 -&gt; { },
+  n$35 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  n$41 -&gt; { },
+  n$58 -&gt; { },
+  error -&gt; { },
+  ip -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) ~&gt; ?, *),
+  url -&gt; { },
+  out -&gt; { },
+  username -&gt; { },
+  token -&gt; { },
+  password -&gt; { },
+  securityHelper -&gt; { connection -&gt; *,
+                      dbHost -&gt; { },
+                      dbName -&gt; { },
+                      dbPassword -&gt; { },
+                      dbPort -&gt; { },
+                      dbUser -&gt; { },
+                      preparedStatement -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+                      query -&gt; { },
+                      resultSet -&gt; ({ Other(int SecurityHelper.getAttempts(HttpServletRequest) at line 41) } + Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+                      AB -&gt; *,
+                      rnd -&gt; { } },
+  rememberMe -&gt; { },
+  cookie -&gt; { },
+  userHelper -&gt; { connection -&gt; *,
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; (Footprint({ helpers.SecurityHelper.IP_HEADER_CANDIDATES.[{ $bcvar3 }] }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+                  query -&gt; { },
+                  resultSet -&gt; ({ Other(int UserHelper.authenticateUser(String,String) at line 47) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  session -&gt; { },
+  userId -&gt; { } }
+
+</LISTING>

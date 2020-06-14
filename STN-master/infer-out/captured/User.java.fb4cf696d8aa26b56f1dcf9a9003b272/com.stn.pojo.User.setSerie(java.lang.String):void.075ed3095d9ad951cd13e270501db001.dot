@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.User.setSerie(java.lang.String):void.075ed3095d9ad951cd13e270501db001_1" [label="1: Start void User.setSerie(String)\nFormals:  this:com.stn.pojo.User* serie:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.User.setSerie(java.lang.String):void.075ed3095d9ad951cd13e270501db001_1" -> "com.stn.pojo.User.setSerie(java.lang.String):void.075ed3095d9ad951cd13e270501db001_4" ;
+"com.stn.pojo.User.setSerie(java.lang.String):void.075ed3095d9ad951cd13e270501db001_2" [label="2: Exit void User.setSerie(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.User.setSerie(java.lang.String):void.075ed3095d9ad951cd13e270501db001_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 78]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.setSerie(java.lang.String):void.075ed3095d9ad951cd13e270501db001_3" -> "com.stn.pojo.User.setSerie(java.lang.String):void.075ed3095d9ad951cd13e270501db001_2" ;
+"com.stn.pojo.User.setSerie(java.lang.String):void.075ed3095d9ad951cd13e270501db001_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.User* [line 77]\n  n$1=*&serie:java.lang.String* [line 77]\n  *n$0.serie:com.stn.pojo.User(root com.stn.pojo.User)=n$1 [line 77]\n  NULLIFY(&serie); [line 77]\n  NULLIFY(&this); [line 77]\n  EXIT_SCOPE(n$0,n$1,serie,this); [line 77]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.setSerie(java.lang.String):void.075ed3095d9ad951cd13e270501db001_4" -> "com.stn.pojo.User.setSerie(java.lang.String):void.075ed3095d9ad951cd13e270501db001_5" ;
+	 "com.stn.pojo.User.setSerie(java.lang.String):void.075ed3095d9ad951cd13e270501db001_4" -> "com.stn.pojo.User.setSerie(java.lang.String):void.075ed3095d9ad951cd13e270501db001_3" [color="red" ];
+"com.stn.pojo.User.setSerie(java.lang.String):void.075ed3095d9ad951cd13e270501db001_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 78]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.setSerie(java.lang.String):void.075ed3095d9ad951cd13e270501db001_5" -> "com.stn.pojo.User.setSerie(java.lang.String):void.075ed3095d9ad951cd13e270501db001_2" ;
+	 "com.stn.pojo.User.setSerie(java.lang.String):void.075ed3095d9ad951cd13e270501db001_5" -> "com.stn.pojo.User.setSerie(java.lang.String):void.075ed3095d9ad951cd13e270501db001_3" [color="red" ];
+}

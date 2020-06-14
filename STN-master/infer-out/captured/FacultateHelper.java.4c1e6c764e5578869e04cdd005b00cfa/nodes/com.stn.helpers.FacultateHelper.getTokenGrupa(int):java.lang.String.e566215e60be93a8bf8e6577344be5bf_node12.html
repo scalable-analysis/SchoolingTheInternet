@@ -1,0 +1,329 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_node12</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../FacultateHelper.java.4c1e6c764e5578869e04cdd005b00cfa.html#LINE209">12</a></h1></center>PROC: <a href="./../com.stn.helpers.FacultateHelper.getTokenGrupa%28int%29%3Ajava.lang.String.e566215e60be93a8bf8e6577344be5bf.html">String FacultateHelper.getTokenGrupa(int)</a> LINE: <a href="./../../FacultateHelper.java.4c1e6c764e5578869e04cdd005b00cfa.html#LINE209">209</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.helpers.FacultateHelper.getTokenGrupa%28int%29%3Ajava.lang.String.e566215e60be93a8bf8e6577344be5bf_node11.html"><span class='visited with_tooltip'>N_11<span class='tooltip'>node11 preds:10 succs:12 exn:38 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.helpers.FacultateHelper.getTokenGrupa%28int%29%3Ajava.lang.String.e566215e60be93a8bf8e6577344be5bf_node13.html"><span class='visited with_tooltip'>N_13<span class='tooltip'>node13 preds:12 succs:14 exn:38 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.helpers.FacultateHelper.getTokenGrupa%28int%29%3Ajava.lang.String.e566215e60be93a8bf8e6577344be5bf_node38.html"><span class='visited with_tooltip'>N_38<span class='tooltip'>node38 preds: succs:37 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$17=*&amp;this:com.stn.helpers.FacultateHelper* [line 209];
+n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 209];
+_=*n$18:java.sql.Connection*(root java.sql.Connection) [line 209];
+n$20=*&amp;this:com.stn.helpers.FacultateHelper* [line 209];
+n$21=*n$20.query:java.lang.String*(root com.stn.helpers.FacultateHelper) [line 209];
+n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 209];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 209];
+</LISTING>
+<hr width="100%">
+<a name="session88" href="./../nodes/com.stn.helpers.FacultateHelper.getTokenGrupa%28int%29%3Ajava.lang.String.e566215e60be93a8bf8e6577344be5bf_node12.html#session88">node12#session88</a>(<a href="./../../FacultateHelper.java.4c1e6c764e5578869e04cdd005b00cfa.html#LINE209">209</a>) [compute pre] liveness 12
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session89" href="./../nodes/com.stn.helpers.FacultateHelper.getTokenGrupa%28int%29%3Ajava.lang.String.e566215e60be93a8bf8e6577344be5bf_node12.html#session89">node12#session89</a>(<a href="./../../FacultateHelper.java.4c1e6c764e5578869e04cdd005b00cfa.html#LINE209">209</a>) [exec] liveness 12
+<LISTING class='color_black'>PRE STATE:
+{ return, this, CatchVar136 }
+
+INSTR=  *&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 209]; 
+
+STATE:
+{ n$22, return, this, CatchVar136 }
+
+INSTR=  n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 209]; 
+
+STATE:
+{ n$18, n$21, return, this, CatchVar136 }
+
+INSTR=  n$21=*n$20.query:java.lang.String*(root com.stn.helpers.FacultateHelper) [line 209]; 
+
+STATE:
+{ n$18, n$20, return, this, CatchVar136 }
+
+INSTR=  n$20=*&amp;this:com.stn.helpers.FacultateHelper* [line 209]; 
+
+STATE:
+{ n$18, return, this, CatchVar136 }
+
+INSTR=  _=*n$18:java.sql.Connection*(root java.sql.Connection) [line 209]; 
+
+STATE UNCHANGED
+
+INSTR=  n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 209]; 
+
+STATE:
+{ n$17, return, this, CatchVar136 }
+
+INSTR=  n$17=*&amp;this:com.stn.helpers.FacultateHelper* [line 209]; 
+
+STATE:
+{ return, this, CatchVar136 }
+
+</LISTING>
+<hr width="100%">
+<a name="session94" href="./../nodes/com.stn.helpers.FacultateHelper.getTokenGrupa%28int%29%3Ajava.lang.String.e566215e60be93a8bf8e6577344be5bf_node12.html#session94">node12#session94</a>(<a href="./../../FacultateHelper.java.4c1e6c764e5578869e04cdd005b00cfa.html#LINE209">209</a>) [compute pre] liveness 12
+<LISTING class='color_black'>JOIN
+
+LEFT:   { $irvar5, return, this, CatchVar136 }
+RIGHT:  { return, this, CatchVar136 }
+RESULT: { $irvar5, return, this, CatchVar136 }
+
+</LISTING>
+<hr width="100%">
+<a name="session95" href="./../nodes/com.stn.helpers.FacultateHelper.getTokenGrupa%28int%29%3Ajava.lang.String.e566215e60be93a8bf8e6577344be5bf_node12.html#session95">node12#session95</a>(<a href="./../../FacultateHelper.java.4c1e6c764e5578869e04cdd005b00cfa.html#LINE209">209</a>) [exec] liveness 12
+<LISTING class='color_black'>PRE STATE:
+{ $irvar5, return, this, CatchVar136 }
+
+INSTR=  *&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 209]; 
+
+STATE:
+{ n$22, return, this, CatchVar136 }
+
+INSTR=  n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 209]; 
+
+STATE:
+{ n$18, n$21, return, this, CatchVar136 }
+
+INSTR=  n$21=*n$20.query:java.lang.String*(root com.stn.helpers.FacultateHelper) [line 209]; 
+
+STATE:
+{ n$18, n$20, return, this, CatchVar136 }
+
+INSTR=  n$20=*&amp;this:com.stn.helpers.FacultateHelper* [line 209]; 
+
+STATE:
+{ n$18, return, this, CatchVar136 }
+
+INSTR=  _=*n$18:java.sql.Connection*(root java.sql.Connection) [line 209]; 
+
+STATE UNCHANGED
+
+INSTR=  n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 209]; 
+
+STATE:
+{ n$17, return, this, CatchVar136 }
+
+INSTR=  n$17=*&amp;this:com.stn.helpers.FacultateHelper* [line 209]; 
+
+STATE:
+{ return, this, CatchVar136 }
+
+</LISTING>
+<hr width="100%">
+<a name="session102" href="./../nodes/com.stn.helpers.FacultateHelper.getTokenGrupa%28int%29%3Ajava.lang.String.e566215e60be93a8bf8e6577344be5bf_node12.html#session102">node12#session102</a>(<a href="./../../FacultateHelper.java.4c1e6c764e5578869e04cdd005b00cfa.html#LINE209">209</a>) [compute pre] liveness 12
+<LISTING class='color_black'>JOIN
+
+LEFT:   { $irvar5, return, this, id, CatchVar136 }
+RIGHT:  { return, this, CatchVar136 }
+RESULT: { $irvar5, return, this, id, CatchVar136 }
+
+</LISTING>
+<hr width="100%">
+<a name="session103" href="./../nodes/com.stn.helpers.FacultateHelper.getTokenGrupa%28int%29%3Ajava.lang.String.e566215e60be93a8bf8e6577344be5bf_node12.html#session103">node12#session103</a>(<a href="./../../FacultateHelper.java.4c1e6c764e5578869e04cdd005b00cfa.html#LINE209">209</a>) [exec] liveness 12
+<LISTING class='color_black'>PRE STATE:
+{ $irvar5, return, this, id, CatchVar136 }
+
+INSTR=  *&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 209]; 
+
+STATE:
+{ n$22, return, this, id, CatchVar136 }
+
+INSTR=  n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 209]; 
+
+STATE:
+{ n$18, n$21, return, this, id, CatchVar136 }
+
+INSTR=  n$21=*n$20.query:java.lang.String*(root com.stn.helpers.FacultateHelper) [line 209]; 
+
+STATE:
+{ n$18, n$20, return, this, id, CatchVar136 }
+
+INSTR=  n$20=*&amp;this:com.stn.helpers.FacultateHelper* [line 209]; 
+
+STATE:
+{ n$18, return, this, id, CatchVar136 }
+
+INSTR=  _=*n$18:java.sql.Connection*(root java.sql.Connection) [line 209]; 
+
+STATE UNCHANGED
+
+INSTR=  n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 209]; 
+
+STATE:
+{ n$17, return, this, id, CatchVar136 }
+
+INSTR=  n$17=*&amp;this:com.stn.helpers.FacultateHelper* [line 209]; 
+
+STATE:
+{ return, this, id, CatchVar136 }
+
+</LISTING>
+<hr width="100%">
+<a name="session152" href="./../nodes/com.stn.helpers.FacultateHelper.getTokenGrupa%28int%29%3Ajava.lang.String.e566215e60be93a8bf8e6577344be5bf_node12.html#session152">node12#session152</a>(<a href="./../../FacultateHelper.java.4c1e6c764e5578869e04cdd005b00cfa.html#LINE209">209</a>) [compute pre] liveness 12
+<LISTING class='color_black'>JOIN
+
+LEFT:   { token, $irvar5, return, this, id, CatchVar136 }
+RIGHT:  { return, this, CatchVar136 }
+RESULT: { token, $irvar5, return, this, id, CatchVar136 }
+
+</LISTING>
+<hr width="100%">
+<a name="session153" href="./../nodes/com.stn.helpers.FacultateHelper.getTokenGrupa%28int%29%3Ajava.lang.String.e566215e60be93a8bf8e6577344be5bf_node12.html#session153">node12#session153</a>(<a href="./../../FacultateHelper.java.4c1e6c764e5578869e04cdd005b00cfa.html#LINE209">209</a>) [exec] liveness 12
+<LISTING class='color_black'>PRE STATE:
+{ token, $irvar5, return, this, id, CatchVar136 }
+
+INSTR=  *&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 209]; 
+
+STATE:
+{ n$22, token, return, this, id, CatchVar136 }
+
+INSTR=  n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 209]; 
+
+STATE:
+{ n$18, n$21, token, return, this, id, CatchVar136 }
+
+INSTR=  n$21=*n$20.query:java.lang.String*(root com.stn.helpers.FacultateHelper) [line 209]; 
+
+STATE:
+{ n$18, n$20, token, return, this, id, CatchVar136 }
+
+INSTR=  n$20=*&amp;this:com.stn.helpers.FacultateHelper* [line 209]; 
+
+STATE:
+{ n$18, token, return, this, id, CatchVar136 }
+
+INSTR=  _=*n$18:java.sql.Connection*(root java.sql.Connection) [line 209]; 
+
+STATE UNCHANGED
+
+INSTR=  n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 209]; 
+
+STATE:
+{ n$17, token, return, this, id, CatchVar136 }
+
+INSTR=  n$17=*&amp;this:com.stn.helpers.FacultateHelper* [line 209]; 
+
+STATE:
+{ token, return, this, id, CatchVar136 }
+
+</LISTING>
+<hr width="100%">
+<a name="session193" href="./../nodes/com.stn.helpers.FacultateHelper.getTokenGrupa%28int%29%3Ajava.lang.String.e566215e60be93a8bf8e6577344be5bf_node12.html#session193">node12#session193</a>(<a href="./../../FacultateHelper.java.4c1e6c764e5578869e04cdd005b00cfa.html#LINE209">209</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session194" href="./../nodes/com.stn.helpers.FacultateHelper.getTokenGrupa%28int%29%3Ajava.lang.String.e566215e60be93a8bf8e6577344be5bf_node12.html#session194">node12#session194</a>(<a href="./../../FacultateHelper.java.4c1e6c764e5578869e04cdd005b00cfa.html#LINE209">209</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ token },{ n$15, n$16, $irvar4 })
+
+INSTR=  n$17=*&amp;this:com.stn.helpers.FacultateHelper* [line 209]; 
+
+STATE:
+({ n$17, token },{ n$15, n$16, $irvar4 })
+
+INSTR=  n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 209]; 
+
+STATE:
+({ n$17, n$18, token },{ n$15, n$16, $irvar4 })
+
+INSTR=  _=*n$18:java.sql.Connection*(root java.sql.Connection) [line 209]; 
+
+STATE:
+({ _, n$17, n$18, token },{ n$15, n$16, $irvar4 })
+
+INSTR=  n$20=*&amp;this:com.stn.helpers.FacultateHelper* [line 209]; 
+
+STATE:
+({ _, n$17, n$18, n$20, token },{ n$15, n$16, $irvar4 })
+
+INSTR=  n$21=*n$20.query:java.lang.String*(root com.stn.helpers.FacultateHelper) [line 209]; 
+
+STATE:
+({ _, n$17, n$18, n$20, n$21, token },{ n$15, n$16, $irvar4 })
+
+INSTR=  n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 209]; 
+
+STATE:
+({ _, n$17, n$18, n$20, n$21, n$22, token },{ n$15, n$16, $irvar4 })
+
+INSTR=  *&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 209]; 
+
+STATE:
+({ token, $irvar5 },{ _, n$17, n$18, n$20, n$21, n$22 })
+
+</LISTING>
+<hr width="100%">
+<a name="session18" href="./../nodes/com.stn.helpers.FacultateHelper.getTokenGrupa%28int%29%3Ajava.lang.String.e566215e60be93a8bf8e6577344be5bf_node12.html#session18">node12#session18</a>(<a href="./../../FacultateHelper.java.4c1e6c764e5578869e04cdd005b00cfa.html#LINE209">209</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session19" href="./../nodes/com.stn.helpers.FacultateHelper.getTokenGrupa%28int%29%3Ajava.lang.String.e566215e60be93a8bf8e6577344be5bf_node12.html#session19">node12#session19</a>(<a href="./../../FacultateHelper.java.4c1e6c764e5578869e04cdd005b00cfa.html#LINE209">209</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  token -&gt; { },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+
+
+
+
+
+TAINTED_CALL1: (callee="PreparedStatement Connection.prepareStatement(String)", caller="String FacultateHelper.getTokenGrupa(int)")
+TAINTED_CALL1: (callee="PreparedStatement Connection.prepareStatement(String)", caller="String FacultateHelper.getTokenGrupa(int)")
+INSTR=  n$22 := PreparedStatement Connection.prepareStatement(String)({ this-&gt;connection,
+                                                                    this-&gt;query }) [line 209]; 
+
+STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  token -&gt; { },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+
+
+</LISTING>

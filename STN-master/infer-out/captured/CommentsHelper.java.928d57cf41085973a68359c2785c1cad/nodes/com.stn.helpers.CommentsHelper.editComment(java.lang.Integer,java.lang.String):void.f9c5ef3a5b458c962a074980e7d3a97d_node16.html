@@ -1,0 +1,274 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.CommentsHelper.editComment(java.lang.Integer,java.lang.String):void.f9c5ef3a5b458c962a074980e7d3a97d_node16</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../CommentsHelper.java.928d57cf41085973a68359c2785c1cad.html#LINE145">16</a></h1></center>PROC: <a href="./../com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d.html">void CommentsHelper.editComment(Integer,String)</a> LINE: <a href="./../../CommentsHelper.java.928d57cf41085973a68359c2785c1cad.html#LINE145">145</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node15.html"><span class='visited with_tooltip'>N_15<span class='tooltip'>node15 preds:14 succs:16 exn:38 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node17.html"><span class='visited with_tooltip'>N_17<span class='tooltip'>node17 preds:16 succs:18 exn:38 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node38.html"><span class='visited with_tooltip'>N_38<span class='tooltip'>node38 preds: succs:37 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$33=*&amp;this:com.stn.helpers.CommentsHelper* [line 145];
+n$34=*n$33.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 145];
+_=*n$34:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 145];
+n$36=*&amp;body:java.lang.String* [line 145];
+n$37=_fun_void PreparedStatement.setString(int,String)(n$34:java.sql.PreparedStatement*,1:int,n$36:java.lang.String*) interface virtual [line 145];
+</LISTING>
+<hr width="100%">
+<a name="session70" href="./../nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node16.html#session70">node16#session70</a>(<a href="./../../CommentsHelper.java.928d57cf41085973a68359c2785c1cad.html#LINE145">145</a>) [compute pre] liveness 16
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session71" href="./../nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node16.html#session71">node16#session71</a>(<a href="./../../CommentsHelper.java.928d57cf41085973a68359c2785c1cad.html#LINE145">145</a>) [exec] liveness 16
+<LISTING class='color_black'>PRE STATE:
+{ this, id, date }
+
+INSTR=  n$37=_fun_void PreparedStatement.setString(int,String)(n$34:java.sql.PreparedStatement*,1:int,n$36:java.lang.String*) interface virtual [line 145]; 
+
+STATE:
+{ n$34, n$36, this, id, date }
+
+INSTR=  n$36=*&amp;body:java.lang.String* [line 145]; 
+
+STATE:
+{ n$34, body, this, id, date }
+
+INSTR=  _=*n$34:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 145]; 
+
+STATE UNCHANGED
+
+INSTR=  n$34=*n$33.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 145]; 
+
+STATE:
+{ n$33, body, this, id, date }
+
+INSTR=  n$33=*&amp;this:com.stn.helpers.CommentsHelper* [line 145]; 
+
+STATE:
+{ body, this, id, date }
+
+</LISTING>
+<hr width="100%">
+<a name="session148" href="./../nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node16.html#session148">node16#session148</a>(<a href="./../../CommentsHelper.java.928d57cf41085973a68359c2785c1cad.html#LINE145">145</a>) [compute pre] liveness 16
+<LISTING class='color_black'>JOIN
+
+LEFT:   { this, id, date }
+RIGHT:  { CatchVar147, return, this }
+RESULT: { CatchVar147, return, this, id, date }
+
+</LISTING>
+<hr width="100%">
+<a name="session149" href="./../nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node16.html#session149">node16#session149</a>(<a href="./../../CommentsHelper.java.928d57cf41085973a68359c2785c1cad.html#LINE145">145</a>) [exec] liveness 16
+<LISTING class='color_black'>PRE STATE:
+{ CatchVar147, return, this, id, date }
+
+INSTR=  n$37=_fun_void PreparedStatement.setString(int,String)(n$34:java.sql.PreparedStatement*,1:int,n$36:java.lang.String*) interface virtual [line 145]; 
+
+STATE:
+{ n$34, n$36, CatchVar147, return, this, id, date }
+
+INSTR=  n$36=*&amp;body:java.lang.String* [line 145]; 
+
+STATE:
+{ n$34, body, CatchVar147, return, this, id, date }
+
+INSTR=  _=*n$34:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 145]; 
+
+STATE UNCHANGED
+
+INSTR=  n$34=*n$33.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 145]; 
+
+STATE:
+{ n$33, body, CatchVar147, return, this, id, date }
+
+INSTR=  n$33=*&amp;this:com.stn.helpers.CommentsHelper* [line 145]; 
+
+STATE:
+{ body, CatchVar147, return, this, id, date }
+
+</LISTING>
+<hr width="100%">
+<a name="session154" href="./../nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node16.html#session154">node16#session154</a>(<a href="./../../CommentsHelper.java.928d57cf41085973a68359c2785c1cad.html#LINE145">145</a>) [compute pre] liveness 16
+<LISTING class='color_black'>JOIN
+
+LEFT:   { CatchVar147, return, this, id, date }
+RIGHT:  { CatchVar147, return, this }
+RESULT: { CatchVar147, return, this, id, date }
+
+</LISTING>
+<hr width="100%">
+<a name="session155" href="./../nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node16.html#session155">node16#session155</a>(<a href="./../../CommentsHelper.java.928d57cf41085973a68359c2785c1cad.html#LINE145">145</a>) [exec] liveness 16
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session194" href="./../nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node16.html#session194">node16#session194</a>(<a href="./../../CommentsHelper.java.928d57cf41085973a68359c2785c1cad.html#LINE145">145</a>) [compute pre] liveness 16
+<LISTING class='color_black'>JOIN
+
+LEFT:   { CatchVar147, return, this, id, date }
+RIGHT:  { CatchVar147, return, this }
+RESULT: { CatchVar147, return, this, id, date }
+
+</LISTING>
+<hr width="100%">
+<a name="session195" href="./../nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node16.html#session195">node16#session195</a>(<a href="./../../CommentsHelper.java.928d57cf41085973a68359c2785c1cad.html#LINE145">145</a>) [exec] liveness 16
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session237" href="./../nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node16.html#session237">node16#session237</a>(<a href="./../../CommentsHelper.java.928d57cf41085973a68359c2785c1cad.html#LINE145">145</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session238" href="./../nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node16.html#session238">node16#session238</a>(<a href="./../../CommentsHelper.java.928d57cf41085973a68359c2785c1cad.html#LINE145">145</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ date },{ n$31, n$32, $irvar7 })
+
+INSTR=  n$33=*&amp;this:com.stn.helpers.CommentsHelper* [line 145]; 
+
+STATE:
+({ n$33, date },{ n$31, n$32, $irvar7 })
+
+INSTR=  n$34=*n$33.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CommentsHelper) [line 145]; 
+
+STATE:
+({ n$33, n$34, date },{ n$31, n$32, $irvar7 })
+
+INSTR=  _=*n$34:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 145]; 
+
+STATE:
+({ _, n$33, n$34, date },{ n$31, n$32, $irvar7 })
+
+INSTR=  n$36=*&amp;body:java.lang.String* [line 145]; 
+
+STATE:
+({ _, n$33, n$34, n$36, date },{ n$31, n$32, $irvar7 })
+
+INSTR=  n$37=_fun_void PreparedStatement.setString(int,String)(n$34:java.sql.PreparedStatement*,1:int,n$36:java.lang.String*) interface virtual [line 145]; 
+
+STATE:
+({ date },{ _, n$33, n$34, n$36, n$37, body })
+
+</LISTING>
+<hr width="100%">
+<a name="session26" href="./../nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node16.html#session26">node16#session26</a>(<a href="./../../CommentsHelper.java.928d57cf41085973a68359c2785c1cad.html#LINE145">145</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session27" href="./../nodes/com.stn.helpers.CommentsHelper.editComment%28java.lang.Integer%2Cjava.lang.String%29%3Avoid.f9c5ef3a5b458c962a074980e7d3a97d_node16.html#session27">node16#session27</a>(<a href="./../../CommentsHelper.java.928d57cf41085973a68359c2785c1cad.html#LINE145">145</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$12 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$15 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$18 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$30 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } },
+  date -&gt; { } }
+
+
+
+
+
+TAINTED_CALL1: (callee="void PreparedStatement.setString(int,String)", caller="void CommentsHelper.editComment(Integer,String)")
+INSTR=  n$37 := void PreparedStatement.setString(int,String)({ this-&gt;preparedStatement,
+                                                               1,
+                                                               body }) [line 145]; 
+
+STATE:
+{ n$12 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$15 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$18 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$30 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$2*,
+                                              @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } },
+  date -&gt; { } }
+
+INSTR=  NULLIFY(&amp;body); [line 145]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(n$37,body); [line 145]; 
+
+STATE:
+{ n$12 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$15 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$18 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$30 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$2*,
+                                              @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } },
+  date -&gt; { } }
+
+</LISTING>

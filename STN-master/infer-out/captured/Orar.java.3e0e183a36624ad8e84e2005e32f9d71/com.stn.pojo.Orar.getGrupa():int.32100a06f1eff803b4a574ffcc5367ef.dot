@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Orar.getGrupa():int.32100a06f1eff803b4a574ffcc5367ef_1" [label="1: Start int Orar.getGrupa()\nFormals:  this:com.stn.pojo.Orar*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Orar.getGrupa():int.32100a06f1eff803b4a574ffcc5367ef_1" -> "com.stn.pojo.Orar.getGrupa():int.32100a06f1eff803b4a574ffcc5367ef_4" ;
+"com.stn.pojo.Orar.getGrupa():int.32100a06f1eff803b4a574ffcc5367ef_2" [label="2: Exit int Orar.getGrupa() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Orar.getGrupa():int.32100a06f1eff803b4a574ffcc5367ef_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 33]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Orar.getGrupa():int.32100a06f1eff803b4a574ffcc5367ef_3" -> "com.stn.pojo.Orar.getGrupa():int.32100a06f1eff803b4a574ffcc5367ef_2" ;
+"com.stn.pojo.Orar.getGrupa():int.32100a06f1eff803b4a574ffcc5367ef_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Orar* [line 33]\n  n$1=*n$0.grupa:int(root com.stn.pojo.Orar) [line 33]\n  *&return:int=n$1 [line 33]\n  NULLIFY(&this); [line 33]\n  EXIT_SCOPE(n$0,n$1,this); [line 33]\n  APPLY_ABSTRACTION; [line 33]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Orar.getGrupa():int.32100a06f1eff803b4a574ffcc5367ef_4" -> "com.stn.pojo.Orar.getGrupa():int.32100a06f1eff803b4a574ffcc5367ef_2" ;
+	 "com.stn.pojo.Orar.getGrupa():int.32100a06f1eff803b4a574ffcc5367ef_4" -> "com.stn.pojo.Orar.getGrupa():int.32100a06f1eff803b4a574ffcc5367ef_3" [color="red" ];
+}

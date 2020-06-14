@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../Tools.java.5ab60bbcd04a639debf9e0445b6c8166.html#LINE147">double Tools.getSystemLoad()</a></h1></center>
+<a href="./nodes/com.stn.utils.Tools.getSystemLoad%28%29%3Adouble.e559e50333afc0949348cebed3838e01_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.getSystemLoad%28%29%3Adouble.e559e50333afc0949348cebed3838e01_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:8 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.getSystemLoad%28%29%3Adouble.e559e50333afc0949348cebed3838e01_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;osBean); [line 149];
+NULLIFY(&amp;$irvar0); [line 149];
+NULLIFY(&amp;$irvar1); [line 149];
+NULLIFY(&amp;$irvar2); [line 149];
+EXIT_SCOPE(osBean,$irvar0,$irvar1,$irvar2); [line 149];
+APPLY_ABSTRACTION; [line 149];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.getSystemLoad%28%29%3Adouble.e559e50333afc0949348cebed3838e01_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun_PlatformManagedObject ManagementFactory.getPlatformMXBean(Class)(com.sun.management.OperatingSystemMXBean:java.lang.Object*) [line 148];
+*&amp;$irvar0:java.lang.management.PlatformManagedObject*=n$0 [line 148];
+EXIT_SCOPE(n$0); [line 148];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.getSystemLoad%28%29%3Adouble.e559e50333afc0949348cebed3838e01_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$1=*&amp;$irvar0:java.lang.management.PlatformManagedObject* [line 148];
+n$2=_fun___cast(n$1:java.lang.management.PlatformManagedObject*,sizeof(t=com.sun.management.OperatingSystemMXBean;sub_t=( sub )(cast)):void) [line 148];
+*&amp;osBean:com.sun.management.OperatingSystemMXBean*=n$2 [line 148];
+NULLIFY(&amp;$irvar0); [line 148];
+EXIT_SCOPE(n$1,n$2,$irvar0); [line 148];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.getSystemLoad%28%29%3Adouble.e559e50333afc0949348cebed3838e01_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$3=*&amp;osBean:com.sun.management.OperatingSystemMXBean* [line 149];
+_=*n$3:com.sun.management.OperatingSystemMXBean*(root com.sun.management.OperatingSystemMXBean) [line 149];
+n$5=_fun_double OperatingSystemMXBean.getSystemCpuLoad()(n$3:com.sun.management.OperatingSystemMXBean*) interface virtual [line 149];
+*&amp;$irvar1:double=n$5 [line 149];
+NULLIFY(&amp;osBean); [line 149];
+EXIT_SCOPE(_,n$3,n$5,osBean); [line 149];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.getSystemLoad%28%29%3Adouble.e559e50333afc0949348cebed3838e01_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$6=*&amp;$irvar1:double [line 149];
+n$7=_fun_long Math.round(double)((n$6 * 100.):double) [line 149];
+*&amp;$irvar2:long=n$7 [line 149];
+NULLIFY(&amp;$irvar1); [line 149];
+EXIT_SCOPE(n$6,n$7,$irvar1); [line 149];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.getSystemLoad%28%29%3Adouble.e559e50333afc0949348cebed3838e01_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:2 exn:3 Instructions
+n$8=*&amp;$irvar2:long [line 149];
+*&amp;return:double=(double)n$8 [line 149];
+NULLIFY(&amp;$irvar2); [line 149];
+EXIT_SCOPE(n$8,$irvar2); [line 149];
+APPLY_ABSTRACTION; [line 149];
+</span></span></a><br />@
+
+<span class='color_black'>double double Tools.getSystemLoad()(com.stn.utils.Tools* this)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { return -> { } }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= double Tools.getSystemLoad()
+; translation_unit= src/main/java/com/stn/utils/Tools.java
+; access= Public
+; formals= [(this,com.stn.utils.Tools*)]
+; is_defined= true
+; loc= src/main/java/com/stn/utils/Tools.java:147
+; locals= [{ name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= osBean; typ= com.sun.management.OperatingSystemMXBean*; modify_in_block= false }]
+; ret_type= double 
+; proc_id= com.stn.utils.Tools.getSystemLoad():double }</pre>
+</body>
+</html>

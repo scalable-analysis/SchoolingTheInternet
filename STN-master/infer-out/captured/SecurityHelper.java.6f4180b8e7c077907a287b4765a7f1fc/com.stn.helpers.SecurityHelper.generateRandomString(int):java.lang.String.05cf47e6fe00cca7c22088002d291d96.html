@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE49">String SecurityHelper.generateRandomString(int)</a></h1></center>
+<a href="./nodes/com.stn.helpers.SecurityHelper.generateRandomString%28int%29%3Ajava.lang.String.05cf47e6fe00cca7c22088002d291d96_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.generateRandomString%28int%29%3Ajava.lang.String.05cf47e6fe00cca7c22088002d291d96_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:17 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.generateRandomString%28int%29%3Ajava.lang.String.05cf47e6fe00cca7c22088002d291d96_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;sb); [line 53];
+NULLIFY(&amp;$irvar3); [line 53];
+NULLIFY(&amp;$irvar4); [line 53];
+NULLIFY(&amp;i); [line 53];
+NULLIFY(&amp;$irvar6); [line 53];
+NULLIFY(&amp;$irvar0); [line 53];
+NULLIFY(&amp;$irvar1); [line 53];
+NULLIFY(&amp;$irvar2); [line 53];
+EXIT_SCOPE(sb,$irvar3,$irvar4,i,$irvar6,$irvar0,$irvar1,$irvar2); [line 53];
+APPLY_ABSTRACTION; [line 53];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.generateRandomString%28int%29%3Ajava.lang.String.05cf47e6fe00cca7c22088002d291d96_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 50];
+n$1=*&amp;len:int [line 50];
+n$2=_fun_StringBuilder.&lt;init&gt;(int)(n$0:java.lang.StringBuilder*,n$1:int) [line 50];
+*&amp;sb:java.lang.StringBuilder*=n$0 [line 50];
+EXIT_SCOPE(n$0,n$1,n$2); [line 50];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.generateRandomString%28int%29%3Ajava.lang.String.05cf47e6fe00cca7c22088002d291d96_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:8 exn:3 Instructions
+*&amp;i:int=0 [line 51];
+APPLY_ABSTRACTION; [line 51];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.generateRandomString%28int%29%3Ajava.lang.String.05cf47e6fe00cca7c22088002d291d96_node6.html"><span class='visited with_tooltip'>C_6<span class='tooltip'>node6 preds:8 succs:9 exn:3 Conditional method_body
+n$3=*&amp;i:int [line 51];
+n$4=*&amp;len:int [line 51];
+PRUNE(!(n$3  &gt;=  n$4), true); [line 51];
+EXIT_SCOPE(n$3,n$4); [line 51];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.generateRandomString%28int%29%3Ajava.lang.String.05cf47e6fe00cca7c22088002d291d96_node7.html"><span class='visited with_tooltip'>C_7<span class='tooltip'>node7 preds:8 succs:16 exn:3 Conditional method_body
+n$3=*&amp;i:int [line 51];
+n$4=*&amp;len:int [line 51];
+PRUNE((n$3  &gt;=  n$4), false); [line 51];
+NULLIFY(&amp;len); [line 51];
+NULLIFY(&amp;i); [line 51];
+EXIT_SCOPE(n$3,n$4,len,i); [line 51];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.generateRandomString%28int%29%3Ajava.lang.String.05cf47e6fe00cca7c22088002d291d96_node8.html"><span class='visited with_tooltip'>J_8<span class='tooltip'>node8 preds:15 5 succs:6 7 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.generateRandomString%28int%29%3Ajava.lang.String.05cf47e6fe00cca7c22088002d291d96_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:6 succs:10 exn:3 Instructions
+n$5=*&amp;this:com.stn.helpers.SecurityHelper* [line 52];
+n$6=*n$5.rnd:java.security.SecureRandom*(root com.stn.helpers.SecurityHelper) [line 52];
+*&amp;$irvar2:java.security.SecureRandom*=n$6 [line 52];
+EXIT_SCOPE(n$5,n$6); [line 52];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.generateRandomString%28int%29%3Ajava.lang.String.05cf47e6fe00cca7c22088002d291d96_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$7=*&amp;this:com.stn.helpers.SecurityHelper* [line 52];
+n$8=*n$7.AB:java.lang.String*(root com.stn.helpers.SecurityHelper) [line 52];
+*&amp;$irvar1:java.lang.String*=n$8 [line 52];
+EXIT_SCOPE(n$7,n$8); [line 52];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.generateRandomString%28int%29%3Ajava.lang.String.05cf47e6fe00cca7c22088002d291d96_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$9=*&amp;this:com.stn.helpers.SecurityHelper* [line 52];
+n$10=*n$9.AB:java.lang.String*(root com.stn.helpers.SecurityHelper) [line 52];
+_=*n$10:java.lang.String*(root java.lang.String) [line 52];
+n$12=_fun_int String.length()(n$10:java.lang.String*) virtual [line 52];
+*&amp;$irvar0:int=n$12 [line 52];
+EXIT_SCOPE(_,n$9,n$10,n$12); [line 52];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.generateRandomString%28int%29%3Ajava.lang.String.05cf47e6fe00cca7c22088002d291d96_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$13=*&amp;$irvar2:java.security.SecureRandom* [line 52];
+_=*n$13:java.security.SecureRandom*(root java.security.SecureRandom) [line 52];
+n$15=*&amp;$irvar0:int [line 52];
+n$16=_fun_int Random.nextInt(int)(n$13:java.security.SecureRandom*,n$15:int) virtual [line 52];
+*&amp;$irvar3:int=n$16 [line 52];
+NULLIFY(&amp;$irvar0); [line 52];
+NULLIFY(&amp;$irvar2); [line 52];
+EXIT_SCOPE(_,n$13,n$15,n$16,$irvar0,$irvar2); [line 52];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.generateRandomString%28int%29%3Ajava.lang.String.05cf47e6fe00cca7c22088002d291d96_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$17=*&amp;$irvar1:java.lang.String* [line 52];
+_=*n$17:java.lang.String*(root java.lang.String) [line 52];
+n$19=*&amp;$irvar3:int [line 52];
+n$20=_fun_char String.charAt(int)(n$17:java.lang.String*,n$19:int) virtual [line 52];
+*&amp;$irvar4:unsigned short=n$20 [line 52];
+NULLIFY(&amp;$irvar3); [line 52];
+NULLIFY(&amp;$irvar1); [line 52];
+EXIT_SCOPE(_,n$17,n$19,n$20,$irvar3,$irvar1); [line 52];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.generateRandomString%28int%29%3Ajava.lang.String.05cf47e6fe00cca7c22088002d291d96_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$21=*&amp;sb:java.lang.StringBuilder* [line 52];
+_=*n$21:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 52];
+n$23=*&amp;$irvar4:unsigned short [line 52];
+n$24=_fun_StringBuilder StringBuilder.append(char)(n$21:java.lang.StringBuilder*,n$23:unsigned short) virtual [line 52];
+*&amp;$irvar5:java.lang.StringBuilder*=n$24 [line 52];
+NULLIFY(&amp;$irvar5); [line 52];
+NULLIFY(&amp;$irvar4); [line 52];
+EXIT_SCOPE(_,n$21,n$23,n$24,$irvar5,$irvar4); [line 52];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.generateRandomString%28int%29%3Ajava.lang.String.05cf47e6fe00cca7c22088002d291d96_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:8 exn:3 Instructions
+n$25=*&amp;i:int [line 51];
+*&amp;i:int=(n$25 + 1) [line 51];
+EXIT_SCOPE(n$25); [line 51];
+APPLY_ABSTRACTION; [line 51];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.generateRandomString%28int%29%3Ajava.lang.String.05cf47e6fe00cca7c22088002d291d96_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:7 succs:17 exn:3 Instructions
+n$26=*&amp;sb:java.lang.StringBuilder* [line 53];
+_=*n$26:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 53];
+n$28=_fun_String StringBuilder.toString()(n$26:java.lang.StringBuilder*) virtual [line 53];
+*&amp;$irvar6:java.lang.String*=n$28 [line 53];
+NULLIFY(&amp;sb); [line 53];
+EXIT_SCOPE(_,n$26,n$28,sb); [line 53];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.generateRandomString%28int%29%3Ajava.lang.String.05cf47e6fe00cca7c22088002d291d96_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:2 exn:3 Instructions
+n$29=*&amp;$irvar6:java.lang.String* [line 53];
+*&amp;return:java.lang.String*=n$29 [line 53];
+NULLIFY(&amp;$irvar6); [line 53];
+EXIT_SCOPE(n$29,$irvar6); [line 53];
+APPLY_ABSTRACTION; [line 53];
+</span></span></a><br />@
+
+<span class='color_black'>java.lang.String* String SecurityHelper.generateRandomString(int)(com.stn.helpers.SecurityHelper* this, int len)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { @val$0 -> { AB -> (Footprint({ @val$0.AB* }) ~> ?, *) },
+            return -> { } }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= String SecurityHelper.generateRandomString(int)
+; translation_unit= src/main/java/com/stn/helpers/SecurityHelper.java
+; access= Public
+; formals= [(this,com.stn.helpers.SecurityHelper*);  (len,int)]
+; is_defined= true
+; loc= src/main/java/com/stn/helpers/SecurityHelper.java:49
+; locals= [{ name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= sb; typ= java.lang.StringBuilder*; modify_in_block= false }; 
+           { name= i; typ= int; modify_in_block= false }]
+; ret_type= java.lang.String* 
+; proc_id= com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String }</pre>
+</body>
+</html>

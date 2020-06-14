@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Orar.setZi(java.lang.String):void.5aec2aaad97acff55a5bbe4e2f032ad0_1" [label="1: Start void Orar.setZi(String)\nFormals:  this:com.stn.pojo.Orar* zi:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Orar.setZi(java.lang.String):void.5aec2aaad97acff55a5bbe4e2f032ad0_1" -> "com.stn.pojo.Orar.setZi(java.lang.String):void.5aec2aaad97acff55a5bbe4e2f032ad0_4" ;
+"com.stn.pojo.Orar.setZi(java.lang.String):void.5aec2aaad97acff55a5bbe4e2f032ad0_2" [label="2: Exit void Orar.setZi(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Orar.setZi(java.lang.String):void.5aec2aaad97acff55a5bbe4e2f032ad0_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 102]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Orar.setZi(java.lang.String):void.5aec2aaad97acff55a5bbe4e2f032ad0_3" -> "com.stn.pojo.Orar.setZi(java.lang.String):void.5aec2aaad97acff55a5bbe4e2f032ad0_2" ;
+"com.stn.pojo.Orar.setZi(java.lang.String):void.5aec2aaad97acff55a5bbe4e2f032ad0_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Orar* [line 101]\n  n$1=*&zi:java.lang.String* [line 101]\n  *n$0.zi:com.stn.pojo.Orar(root com.stn.pojo.Orar)=n$1 [line 101]\n  NULLIFY(&zi); [line 101]\n  NULLIFY(&this); [line 101]\n  EXIT_SCOPE(n$0,n$1,zi,this); [line 101]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Orar.setZi(java.lang.String):void.5aec2aaad97acff55a5bbe4e2f032ad0_4" -> "com.stn.pojo.Orar.setZi(java.lang.String):void.5aec2aaad97acff55a5bbe4e2f032ad0_5" ;
+	 "com.stn.pojo.Orar.setZi(java.lang.String):void.5aec2aaad97acff55a5bbe4e2f032ad0_4" -> "com.stn.pojo.Orar.setZi(java.lang.String):void.5aec2aaad97acff55a5bbe4e2f032ad0_3" [color="red" ];
+"com.stn.pojo.Orar.setZi(java.lang.String):void.5aec2aaad97acff55a5bbe4e2f032ad0_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 102]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Orar.setZi(java.lang.String):void.5aec2aaad97acff55a5bbe4e2f032ad0_5" -> "com.stn.pojo.Orar.setZi(java.lang.String):void.5aec2aaad97acff55a5bbe4e2f032ad0_2" ;
+	 "com.stn.pojo.Orar.setZi(java.lang.String):void.5aec2aaad97acff55a5bbe4e2f032ad0_5" -> "com.stn.pojo.Orar.setZi(java.lang.String):void.5aec2aaad97acff55a5bbe4e2f032ad0_3" [color="red" ];
+}

@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Orar.getDurata():java.lang.String.cbcf01786b2f78ff98cedf9f846abaa0_1" [label="1: Start String Orar.getDurata()\nFormals:  this:com.stn.pojo.Orar*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Orar.getDurata():java.lang.String.cbcf01786b2f78ff98cedf9f846abaa0_1" -> "com.stn.pojo.Orar.getDurata():java.lang.String.cbcf01786b2f78ff98cedf9f846abaa0_4" ;
+"com.stn.pojo.Orar.getDurata():java.lang.String.cbcf01786b2f78ff98cedf9f846abaa0_2" [label="2: Exit String Orar.getDurata() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Orar.getDurata():java.lang.String.cbcf01786b2f78ff98cedf9f846abaa0_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 65]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Orar.getDurata():java.lang.String.cbcf01786b2f78ff98cedf9f846abaa0_3" -> "com.stn.pojo.Orar.getDurata():java.lang.String.cbcf01786b2f78ff98cedf9f846abaa0_2" ;
+"com.stn.pojo.Orar.getDurata():java.lang.String.cbcf01786b2f78ff98cedf9f846abaa0_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Orar* [line 65]\n  n$1=*n$0.durata:java.lang.String*(root com.stn.pojo.Orar) [line 65]\n  *&return:java.lang.String*=n$1 [line 65]\n  NULLIFY(&this); [line 65]\n  EXIT_SCOPE(n$0,n$1,this); [line 65]\n  APPLY_ABSTRACTION; [line 65]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Orar.getDurata():java.lang.String.cbcf01786b2f78ff98cedf9f846abaa0_4" -> "com.stn.pojo.Orar.getDurata():java.lang.String.cbcf01786b2f78ff98cedf9f846abaa0_2" ;
+	 "com.stn.pojo.Orar.getDurata():java.lang.String.cbcf01786b2f78ff98cedf9f846abaa0_4" -> "com.stn.pojo.Orar.getDurata():java.lang.String.cbcf01786b2f78ff98cedf9f846abaa0_3" [color="red" ];
+}

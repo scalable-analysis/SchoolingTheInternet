@@ -1,0 +1,375 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.UserHelper.checkAvailability(java.lang.String,java.lang.String):boolean.f4a424857c80eeb6c90b2913eece1152</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE128">boolean UserHelper.checkAvailability(String,String)</a></h1></center>
+<a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:43 41 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$bcvar4); [line 151];
+NULLIFY(&amp;$irvar8); [line 151];
+NULLIFY(&amp;available); [line 151];
+EXIT_SCOPE($bcvar4,$irvar8,available); [line 151];
+APPLY_ABSTRACTION; [line 151];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun_Boolean Boolean.valueOf(boolean)(1:int) [line 129];
+*&amp;available:java.lang.Boolean*=n$0 [line 129];
+EXIT_SCOPE(n$0); [line 129];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$1=*&amp;this:com.stn.helpers.UserHelper* [line 131];
+*n$1.query:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)="SELECT 1 FROM users WHERE Username = ? OR Email = ?" [line 131];
+EXIT_SCOPE(n$1); [line 131];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:45 Instructions
+n$2=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 134];
+*&amp;$irvar0:java.lang.Class*=n$2 [line 134];
+NULLIFY(&amp;$irvar0); [line 134];
+EXIT_SCOPE(n$2,$irvar0); [line 134];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:45 Instructions
+n$3=*&amp;this:com.stn.helpers.UserHelper* [line 135];
+_=*n$3:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 135];
+n$5=_fun_String DBConnection.getHost()(n$3:com.stn.helpers.UserHelper*) virtual [line 135];
+*&amp;$irvar1:java.lang.String*=n$5 [line 135];
+EXIT_SCOPE(_,n$3,n$5); [line 135];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:45 Instructions
+n$6=*&amp;this:com.stn.helpers.UserHelper* [line 135];
+_=*n$6:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 135];
+n$8=_fun_String DBConnection.getUser()(n$6:com.stn.helpers.UserHelper*) virtual [line 135];
+*&amp;$irvar2:java.lang.String*=n$8 [line 135];
+EXIT_SCOPE(_,n$6,n$8); [line 135];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:45 Instructions
+n$9=*&amp;this:com.stn.helpers.UserHelper* [line 135];
+_=*n$9:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 135];
+n$11=_fun_String DBConnection.getPassword()(n$9:com.stn.helpers.UserHelper*) virtual [line 135];
+*&amp;$irvar3:java.lang.String*=n$11 [line 135];
+EXIT_SCOPE(_,n$9,n$11); [line 135];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:45 Instructions
+n$12=*&amp;$irvar1:java.lang.String* [line 135];
+n$13=*&amp;$irvar2:java.lang.String* [line 135];
+n$14=*&amp;$irvar3:java.lang.String* [line 135];
+n$15=_fun_Connection DriverManager.getConnection(String,String,String)(n$12:java.lang.String*,n$13:java.lang.String*,n$14:java.lang.String*) [line 135];
+*&amp;$irvar4:java.sql.Connection*=n$15 [line 135];
+NULLIFY(&amp;$irvar3); [line 135];
+NULLIFY(&amp;$irvar1); [line 135];
+NULLIFY(&amp;$irvar2); [line 135];
+EXIT_SCOPE(n$12,n$13,n$14,n$15,$irvar3,$irvar1,$irvar2); [line 135];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:45 Instructions
+n$16=*&amp;this:com.stn.helpers.UserHelper* [line 135];
+n$17=*&amp;$irvar4:java.sql.Connection* [line 135];
+*n$16.connection:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$17 [line 135];
+NULLIFY(&amp;$irvar4); [line 135];
+EXIT_SCOPE(n$16,n$17,$irvar4); [line 135];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:45 Instructions
+n$18=*&amp;this:com.stn.helpers.UserHelper* [line 136];
+n$19=*n$18.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 136];
+_=*n$19:java.sql.Connection*(root java.sql.Connection) [line 136];
+n$21=*&amp;this:com.stn.helpers.UserHelper* [line 136];
+n$22=*n$21.query:java.lang.String*(root com.stn.helpers.UserHelper) [line 136];
+n$23=_fun_PreparedStatement Connection.prepareStatement(String)(n$19:java.sql.Connection*,n$22:java.lang.String*) interface virtual [line 136];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$23 [line 136];
+EXIT_SCOPE(_,n$18,n$19,n$21,n$22,n$23); [line 136];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:45 Instructions
+n$24=*&amp;this:com.stn.helpers.UserHelper* [line 136];
+n$25=*&amp;$irvar5:java.sql.PreparedStatement* [line 136];
+*n$24.preparedStatement:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$25 [line 136];
+NULLIFY(&amp;$irvar5); [line 136];
+EXIT_SCOPE(n$24,n$25,$irvar5); [line 136];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:45 Instructions
+n$26=*&amp;this:com.stn.helpers.UserHelper* [line 137];
+n$27=*n$26.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 137];
+_=*n$27:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 137];
+n$29=*&amp;username:java.lang.String* [line 137];
+n$30=_fun_void PreparedStatement.setString(int,String)(n$27:java.sql.PreparedStatement*,1:int,n$29:java.lang.String*) interface virtual [line 137];
+NULLIFY(&amp;username); [line 137];
+EXIT_SCOPE(_,n$26,n$27,n$29,n$30,username); [line 137];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:45 Instructions
+n$31=*&amp;this:com.stn.helpers.UserHelper* [line 138];
+n$32=*n$31.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 138];
+_=*n$32:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 138];
+n$34=*&amp;email:java.lang.String* [line 138];
+n$35=_fun_void PreparedStatement.setString(int,String)(n$32:java.sql.PreparedStatement*,2:int,n$34:java.lang.String*) interface virtual [line 138];
+NULLIFY(&amp;email); [line 138];
+EXIT_SCOPE(_,n$31,n$32,n$34,n$35,email); [line 138];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:45 Instructions
+n$36=*&amp;this:com.stn.helpers.UserHelper* [line 139];
+n$37=*n$36.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 139];
+_=*n$37:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 139];
+n$39=_fun_ResultSet PreparedStatement.executeQuery()(n$37:java.sql.PreparedStatement*) interface virtual [line 139];
+*&amp;$irvar6:java.sql.ResultSet*=n$39 [line 139];
+EXIT_SCOPE(_,n$36,n$37,n$39); [line 139];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:45 Instructions
+n$40=*&amp;this:com.stn.helpers.UserHelper* [line 139];
+n$41=*&amp;$irvar6:java.sql.ResultSet* [line 139];
+*n$40.resultSet:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$41 [line 139];
+NULLIFY(&amp;$irvar6); [line 139];
+EXIT_SCOPE(n$40,n$41,$irvar6); [line 139];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 20 exn:45 Instructions
+n$42=*&amp;this:com.stn.helpers.UserHelper* [line 140];
+n$43=*n$42.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 140];
+_=*n$43:java.sql.ResultSet*(root java.sql.ResultSet) [line 140];
+n$45=_fun_boolean ResultSet.next()(n$43:java.sql.ResultSet*) interface virtual [line 140];
+*&amp;$irvar7:_Bool=n$45 [line 140];
+EXIT_SCOPE(_,n$42,n$43,n$45); [line 140];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node19.html"><span class='visited with_tooltip'>C_19<span class='tooltip'>node19 preds:18 succs:21 exn:45 Conditional method_body
+n$46=*&amp;$irvar7:_Bool [line 140];
+PRUNE(!(n$46 == 0), true); [line 140];
+NULLIFY(&amp;$irvar7); [line 140];
+NULLIFY(&amp;available); [line 140];
+EXIT_SCOPE(n$46,$irvar7,available); [line 140];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node20.html"><span class='visited with_tooltip'>C_20<span class='tooltip'>node20 preds:18 succs:22 23 exn:45 Conditional method_body
+n$46=*&amp;$irvar7:_Bool [line 140];
+PRUNE((n$46 == 0), false); [line 140];
+NULLIFY(&amp;$irvar7); [line 140];
+EXIT_SCOPE(n$46,$irvar7); [line 140];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:19 succs:22 23 exn:45 Instructions
+n$47=_fun_Boolean Boolean.valueOf(boolean)(0:int) [line 141];
+*&amp;available:java.lang.Boolean*=n$47 [line 141];
+EXIT_SCOPE(n$47); [line 141];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node22.html"><span class='visited with_tooltip'>C_22<span class='tooltip'>node22 preds:21 20 succs:24 exn:3 Conditional method_body
+n$48=*&amp;this:com.stn.helpers.UserHelper* [line 144];
+n$49=*n$48.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 144];
+PRUNE(!(n$49 == null), true); [line 144];
+EXIT_SCOPE(n$48,n$49); [line 144];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node23.html"><span class='visited with_tooltip'>C_23<span class='tooltip'>node23 preds:21 20 succs:25 26 exn:3 Conditional method_body
+n$48=*&amp;this:com.stn.helpers.UserHelper* [line 144];
+n$49=*n$48.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 144];
+PRUNE((n$49 == null), false); [line 144];
+EXIT_SCOPE(n$48,n$49); [line 144];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:22 succs:25 26 exn:3 Instructions
+n$50=*&amp;this:com.stn.helpers.UserHelper* [line 145];
+n$51=*n$50.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 145];
+n$54=_fun___set_mem_attribute(n$51:java.sql.PreparedStatement*) [line 145];
+_=*n$51:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 145];
+n$53=_fun_void PreparedStatement.close()(n$51:java.sql.PreparedStatement*) interface virtual [line 145];
+EXIT_SCOPE(_,n$50,n$51,n$53,n$54); [line 145];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node25.html"><span class='visited with_tooltip'>C_25<span class='tooltip'>node25 preds:24 23 succs:27 exn:3 Conditional method_body
+n$55=*&amp;this:com.stn.helpers.UserHelper* [line 146];
+n$56=*n$55.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 146];
+PRUNE(!(n$56 == null), true); [line 146];
+EXIT_SCOPE(n$55,n$56); [line 146];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node26.html"><span class='visited with_tooltip'>C_26<span class='tooltip'>node26 preds:24 23 succs:28 29 exn:3 Conditional method_body
+n$55=*&amp;this:com.stn.helpers.UserHelper* [line 146];
+n$56=*n$55.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 146];
+PRUNE((n$56 == null), false); [line 146];
+EXIT_SCOPE(n$55,n$56); [line 146];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:25 succs:28 29 exn:3 Instructions
+n$57=*&amp;this:com.stn.helpers.UserHelper* [line 147];
+n$58=*n$57.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 147];
+n$61=_fun___set_mem_attribute(n$58:java.sql.Connection*) [line 147];
+_=*n$58:java.sql.Connection*(root java.sql.Connection) [line 147];
+n$60=_fun_void Connection.close()(n$58:java.sql.Connection*) interface virtual [line 147];
+EXIT_SCOPE(_,n$57,n$58,n$60,n$61); [line 147];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node28.html"><span class='visited with_tooltip'>C_28<span class='tooltip'>node28 preds:27 26 succs:30 exn:3 Conditional method_body
+n$62=*&amp;this:com.stn.helpers.UserHelper* [line 148];
+n$63=*n$62.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 148];
+PRUNE(!(n$63 == null), true); [line 148];
+EXIT_SCOPE(n$62,n$63); [line 148];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node29.html"><span class='visited with_tooltip'>C_29<span class='tooltip'>node29 preds:27 26 succs:42 exn:3 Conditional method_body
+n$62=*&amp;this:com.stn.helpers.UserHelper* [line 148];
+n$63=*n$62.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 148];
+PRUNE((n$63 == null), false); [line 148];
+NULLIFY(&amp;this); [line 148];
+EXIT_SCOPE(n$62,n$63,this); [line 148];
+APPLY_ABSTRACTION; [line 148];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:28 succs:42 exn:3 Instructions
+n$64=*&amp;this:com.stn.helpers.UserHelper* [line 149];
+n$65=*n$64.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 149];
+n$68=_fun___set_mem_attribute(n$65:java.sql.ResultSet*) [line 149];
+_=*n$65:java.sql.ResultSet*(root java.sql.ResultSet) [line 149];
+n$67=_fun_void ResultSet.close()(n$65:java.sql.ResultSet*) interface virtual [line 149];
+NULLIFY(&amp;this); [line 149];
+EXIT_SCOPE(_,n$64,n$65,n$67,n$68,this); [line 149];
+APPLY_ABSTRACTION; [line 149];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:46 44 succs:32 33 exn:47 Instructions
+n$69=*&amp;CatchVar156:java.lang.Object* [line 144];
+*&amp;$bcvar4:java.lang.Object*=n$69 [line 144];
+EXIT_SCOPE(n$69); [line 144];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:31 succs:34 exn:3 Conditional method_body
+n$70=*&amp;this:com.stn.helpers.UserHelper* [line 144];
+n$71=*n$70.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 144];
+PRUNE(!(n$71 == null), true); [line 144];
+EXIT_SCOPE(n$70,n$71); [line 144];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node33.html"><span class='visited with_tooltip'>C_33<span class='tooltip'>node33 preds:31 succs:35 36 exn:3 Conditional method_body
+n$70=*&amp;this:com.stn.helpers.UserHelper* [line 144];
+n$71=*n$70.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 144];
+PRUNE((n$71 == null), false); [line 144];
+EXIT_SCOPE(n$70,n$71); [line 144];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:32 succs:35 36 exn:3 Instructions
+n$72=*&amp;this:com.stn.helpers.UserHelper* [line 145];
+n$73=*n$72.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 145];
+n$76=_fun___set_mem_attribute(n$73:java.sql.PreparedStatement*) [line 145];
+_=*n$73:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 145];
+n$75=_fun_void PreparedStatement.close()(n$73:java.sql.PreparedStatement*) interface virtual [line 145];
+EXIT_SCOPE(_,n$72,n$73,n$75,n$76); [line 145];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node35.html"><span class='visited with_tooltip'>C_35<span class='tooltip'>node35 preds:34 33 succs:37 exn:3 Conditional method_body
+n$77=*&amp;this:com.stn.helpers.UserHelper* [line 146];
+n$78=*n$77.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 146];
+PRUNE(!(n$78 == null), true); [line 146];
+EXIT_SCOPE(n$77,n$78); [line 146];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node36.html"><span class='visited with_tooltip'>C_36<span class='tooltip'>node36 preds:34 33 succs:38 39 exn:3 Conditional method_body
+n$77=*&amp;this:com.stn.helpers.UserHelper* [line 146];
+n$78=*n$77.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 146];
+PRUNE((n$78 == null), false); [line 146];
+EXIT_SCOPE(n$77,n$78); [line 146];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:35 succs:38 39 exn:3 Instructions
+n$79=*&amp;this:com.stn.helpers.UserHelper* [line 147];
+n$80=*n$79.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 147];
+n$83=_fun___set_mem_attribute(n$80:java.sql.Connection*) [line 147];
+_=*n$80:java.sql.Connection*(root java.sql.Connection) [line 147];
+n$82=_fun_void Connection.close()(n$80:java.sql.Connection*) interface virtual [line 147];
+EXIT_SCOPE(_,n$79,n$80,n$82,n$83); [line 147];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node38.html"><span class='visited with_tooltip'>C_38<span class='tooltip'>node38 preds:37 36 succs:40 exn:3 Conditional method_body
+n$84=*&amp;this:com.stn.helpers.UserHelper* [line 148];
+n$85=*n$84.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 148];
+PRUNE(!(n$85 == null), true); [line 148];
+EXIT_SCOPE(n$84,n$85); [line 148];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node39.html"><span class='visited with_tooltip'>C_39<span class='tooltip'>node39 preds:37 36 succs:41 exn:3 Conditional method_body
+n$84=*&amp;this:com.stn.helpers.UserHelper* [line 148];
+n$85=*n$84.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 148];
+PRUNE((n$85 == null), false); [line 148];
+NULLIFY(&amp;this); [line 148];
+EXIT_SCOPE(n$84,n$85,this); [line 148];
+APPLY_ABSTRACTION; [line 148];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:38 succs:41 exn:3 Instructions
+n$86=*&amp;this:com.stn.helpers.UserHelper* [line 149];
+n$87=*n$86.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 149];
+n$90=_fun___set_mem_attribute(n$87:java.sql.ResultSet*) [line 149];
+_=*n$87:java.sql.ResultSet*(root java.sql.ResultSet) [line 149];
+n$89=_fun_void ResultSet.close()(n$87:java.sql.ResultSet*) interface virtual [line 149];
+NULLIFY(&amp;this); [line 149];
+EXIT_SCOPE(_,n$86,n$87,n$89,n$90,this); [line 149];
+APPLY_ABSTRACTION; [line 149];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:40 39 succs:2 exn:3 Instructions
+n$91=*&amp;$bcvar4:java.lang.Object* [line 150];
+*&amp;return:_Bool=EXN n$91 [line 150];
+NULLIFY(&amp;$bcvar4); [line 150];
+EXIT_SCOPE(n$91,$bcvar4); [line 150];
+APPLY_ABSTRACTION; [line 150];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:30 29 succs:43 exn:3 Instructions
+n$92=*&amp;available:java.lang.Boolean* [line 151];
+_=*n$92:java.lang.Boolean*(root java.lang.Boolean) [line 151];
+n$94=_fun_boolean Boolean.booleanValue()(n$92:java.lang.Boolean*) virtual [line 151];
+*&amp;$irvar8:_Bool=n$94 [line 151];
+NULLIFY(&amp;available); [line 151];
+EXIT_SCOPE(_,n$92,n$94,available); [line 151];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:42 succs:2 exn:3 Instructions
+n$95=*&amp;$irvar8:_Bool [line 151];
+*&amp;return:_Bool=n$95 [line 151];
+NULLIFY(&amp;$irvar8); [line 151];
+EXIT_SCOPE(n$95,$irvar8); [line 151];
+APPLY_ABSTRACTION; [line 151];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds:45 succs:31 exn:3 Instructions
+APPLY_ABSTRACTION; [line 144];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node45.html"><span class='visited with_tooltip'>I_45<span class='tooltip'>node45 preds: succs:44 exn:3 Instructions
+n$96=*&amp;return:_Bool [line 144];
+*&amp;return:_Bool=null [line 144];
+n$97=_fun___unwrap_exception(n$96:_Bool) [line 144];
+NULLIFY(&amp;$irvar3); [line 144];
+NULLIFY(&amp;$irvar5); [line 144];
+NULLIFY(&amp;$irvar4); [line 144];
+NULLIFY(&amp;$irvar7); [line 144];
+NULLIFY(&amp;$irvar6); [line 144];
+NULLIFY(&amp;available); [line 144];
+NULLIFY(&amp;$irvar1); [line 144];
+NULLIFY(&amp;$irvar2); [line 144];
+EXIT_SCOPE(n$96,n$97,$irvar3,$irvar5,$irvar4,$irvar7,$irvar6,available,$irvar1,$irvar2); [line 144];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node46.html"><span class='visited with_tooltip'>I_46<span class='tooltip'>node46 preds:47 succs:31 exn:3 Instructions
+APPLY_ABSTRACTION; [line 144];
+</span></span></a> <a href="./nodes/com.stn.helpers.UserHelper.checkAvailability%28java.lang.String%2Cjava.lang.String%29%3Aboolean.f4a424857c80eeb6c90b2913eece1152_node47.html"><span class='visited with_tooltip'>I_47<span class='tooltip'>node47 preds: succs:46 exn:3 Instructions
+n$96=*&amp;return:_Bool [line 144];
+*&amp;return:_Bool=null [line 144];
+n$97=_fun___unwrap_exception(n$96:_Bool) [line 144];
+NULLIFY(&amp;$bcvar4); [line 144];
+EXIT_SCOPE(n$96,n$97,$bcvar4); [line 144];
+</span></span></a><br />@
+
+<span class='color_black'>_Bool boolean UserHelper.checkAvailability(String,String)(com.stn.helpers.UserHelper* this, java.lang.String* username, java.lang.String* email)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { @val$0 -> { connection -> (Footprint({ @val$0.dbUser,
+                                                   @val$0.dbPort*,
+                                                   @val$0.dbPassword,
+                                                   @val$0.dbName*,
+                                                   @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        preparedStatement -> (Footprint({ @val$2*,
+                                                          @val$1*,
+                                                          @val$0.dbUser,
+                                                          @val$0.dbPort*,
+                                                          @val$0.dbPassword,
+                                                          @val$0.dbName*,
+                                                          @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        query -> { },
+                        resultSet -> ({ Other(ResultSet PreparedStatement.executeQuery() at line 139) } + Footprint({ @val$2*,
+                                                                    @val$1*,
+                                                                    @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *) },
+            return -> { } }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= boolean UserHelper.checkAvailability(String,String)
+; translation_unit= src/main/java/com/stn/helpers/UserHelper.java
+; access= Public
+; exceptions= [java.lang.ClassNotFoundException;  java.sql.SQLException]
+; formals= [(this,com.stn.helpers.UserHelper*);  (username,
+            java.lang.String*);  (email,java.lang.String*)]
+; is_defined= true
+; loc= src/main/java/com/stn/helpers/UserHelper.java:128
+; locals= [{ name= $irvar8; typ= void; modify_in_block= false }; 
+           { name= $bcvar4; typ= void; modify_in_block= false }; 
+           { name= CatchVar156; typ= void; modify_in_block= false }; 
+           { name= $irvar7; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= available; typ= java.lang.Boolean*; modify_in_block= false }]
+; ret_type= _Bool 
+; proc_id= com.stn.helpers.UserHelper.checkAvailability(java.lang.String,java.lang.String):boolean }</pre>
+</body>
+</html>

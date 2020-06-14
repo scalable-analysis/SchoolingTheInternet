@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.News.setUserClass(int):void.b827ac48bfef4a024d2a5474a6d67a61_1" [label="1: Start void News.setUserClass(int)\nFormals:  this:com.stn.pojo.News* userClass:int\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.News.setUserClass(int):void.b827ac48bfef4a024d2a5474a6d67a61_1" -> "com.stn.pojo.News.setUserClass(int):void.b827ac48bfef4a024d2a5474a6d67a61_4" ;
+"com.stn.pojo.News.setUserClass(int):void.b827ac48bfef4a024d2a5474a6d67a61_2" [label="2: Exit void News.setUserClass(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.News.setUserClass(int):void.b827ac48bfef4a024d2a5474a6d67a61_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 44]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setUserClass(int):void.b827ac48bfef4a024d2a5474a6d67a61_3" -> "com.stn.pojo.News.setUserClass(int):void.b827ac48bfef4a024d2a5474a6d67a61_2" ;
+"com.stn.pojo.News.setUserClass(int):void.b827ac48bfef4a024d2a5474a6d67a61_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.News* [line 43]\n  n$1=*&userClass:int [line 43]\n  *n$0.userClass:com.stn.pojo.News(root com.stn.pojo.News)=n$1 [line 43]\n  NULLIFY(&userClass); [line 43]\n  NULLIFY(&this); [line 43]\n  EXIT_SCOPE(n$0,n$1,userClass,this); [line 43]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setUserClass(int):void.b827ac48bfef4a024d2a5474a6d67a61_4" -> "com.stn.pojo.News.setUserClass(int):void.b827ac48bfef4a024d2a5474a6d67a61_5" ;
+	 "com.stn.pojo.News.setUserClass(int):void.b827ac48bfef4a024d2a5474a6d67a61_4" -> "com.stn.pojo.News.setUserClass(int):void.b827ac48bfef4a024d2a5474a6d67a61_3" [color="red" ];
+"com.stn.pojo.News.setUserClass(int):void.b827ac48bfef4a024d2a5474a6d67a61_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 44]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setUserClass(int):void.b827ac48bfef4a024d2a5474a6d67a61_5" -> "com.stn.pojo.News.setUserClass(int):void.b827ac48bfef4a024d2a5474a6d67a61_2" ;
+	 "com.stn.pojo.News.setUserClass(int):void.b827ac48bfef4a024d2a5474a6d67a61_5" -> "com.stn.pojo.News.setUserClass(int):void.b827ac48bfef4a024d2a5474a6d67a61_3" [color="red" ];
+}

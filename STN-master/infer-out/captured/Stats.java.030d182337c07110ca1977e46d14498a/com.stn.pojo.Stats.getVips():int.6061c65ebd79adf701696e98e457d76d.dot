@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Stats.getVips():int.6061c65ebd79adf701696e98e457d76d_1" [label="1: Start int Stats.getVips()\nFormals:  this:com.stn.pojo.Stats*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Stats.getVips():int.6061c65ebd79adf701696e98e457d76d_1" -> "com.stn.pojo.Stats.getVips():int.6061c65ebd79adf701696e98e457d76d_4" ;
+"com.stn.pojo.Stats.getVips():int.6061c65ebd79adf701696e98e457d76d_2" [label="2: Exit int Stats.getVips() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Stats.getVips():int.6061c65ebd79adf701696e98e457d76d_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 95]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Stats.getVips():int.6061c65ebd79adf701696e98e457d76d_3" -> "com.stn.pojo.Stats.getVips():int.6061c65ebd79adf701696e98e457d76d_2" ;
+"com.stn.pojo.Stats.getVips():int.6061c65ebd79adf701696e98e457d76d_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Stats* [line 95]\n  n$1=*n$0.vips:int(root com.stn.pojo.Stats) [line 95]\n  *&return:int=n$1 [line 95]\n  NULLIFY(&this); [line 95]\n  EXIT_SCOPE(n$0,n$1,this); [line 95]\n  APPLY_ABSTRACTION; [line 95]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Stats.getVips():int.6061c65ebd79adf701696e98e457d76d_4" -> "com.stn.pojo.Stats.getVips():int.6061c65ebd79adf701696e98e457d76d_2" ;
+	 "com.stn.pojo.Stats.getVips():int.6061c65ebd79adf701696e98e457d76d_4" -> "com.stn.pojo.Stats.getVips():int.6061c65ebd79adf701696e98e457d76d_3" [color="red" ];
+}

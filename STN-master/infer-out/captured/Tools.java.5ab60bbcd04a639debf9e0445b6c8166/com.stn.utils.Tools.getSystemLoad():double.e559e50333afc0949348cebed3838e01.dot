@@ -1,0 +1,39 @@
+/* @generated */
+digraph cfg {
+"com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_1" [label="1: Start double Tools.getSystemLoad()\nFormals:  this:com.stn.utils.Tools*\nLocals:  $irvar2:void $irvar1:void $irvar0:void osBean:com.sun.management.OperatingSystemMXBean* \n  " color=yellow style=filled]
+	
+
+	 "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_1" -> "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_4" ;
+"com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_2" [label="2: Exit double Tools.getSystemLoad() \n  " color=yellow style=filled]
+	
+
+"com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_3" [label="3:  exceptions sink \n   NULLIFY(&osBean); [line 149]\n  NULLIFY(&$irvar0); [line 149]\n  NULLIFY(&$irvar1); [line 149]\n  NULLIFY(&$irvar2); [line 149]\n  EXIT_SCOPE(osBean,$irvar0,$irvar1,$irvar2); [line 149]\n  APPLY_ABSTRACTION; [line 149]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_3" -> "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_2" ;
+"com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_4" [label="4:  Call PlatformManagedObject ManagementFactory.getPlatformMXBean(Class) \n   n$0=_fun_PlatformManagedObject ManagementFactory.getPlatformMXBean(Class)(com.sun.management.OperatingSystemMXBean:java.lang.Object*) [line 148]\n  *&$irvar0:java.lang.management.PlatformManagedObject*=n$0 [line 148]\n  EXIT_SCOPE(n$0); [line 148]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_4" -> "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_5" ;
+	 "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_4" -> "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_3" [color="red" ];
+"com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_5" [label="5:  method_body \n   n$1=*&$irvar0:java.lang.management.PlatformManagedObject* [line 148]\n  n$2=_fun___cast(n$1:java.lang.management.PlatformManagedObject*,sizeof(t=com.sun.management.OperatingSystemMXBean;sub_t=( sub )(cast)):void) [line 148]\n  *&osBean:com.sun.management.OperatingSystemMXBean*=n$2 [line 148]\n  NULLIFY(&$irvar0); [line 148]\n  EXIT_SCOPE(n$1,n$2,$irvar0); [line 148]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_5" -> "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_6" ;
+	 "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_5" -> "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_3" [color="red" ];
+"com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_6" [label="6:  Call double OperatingSystemMXBean.getSystemCpuLoad() \n   n$3=*&osBean:com.sun.management.OperatingSystemMXBean* [line 149]\n  _=*n$3:com.sun.management.OperatingSystemMXBean*(root com.sun.management.OperatingSystemMXBean) [line 149]\n  n$5=_fun_double OperatingSystemMXBean.getSystemCpuLoad()(n$3:com.sun.management.OperatingSystemMXBean*) interface virtual [line 149]\n  *&$irvar1:double=n$5 [line 149]\n  NULLIFY(&osBean); [line 149]\n  EXIT_SCOPE(_,n$3,n$5,osBean); [line 149]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_6" -> "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_7" ;
+	 "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_6" -> "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_3" [color="red" ];
+"com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_7" [label="7:  Call long Math.round(double) \n   n$6=*&$irvar1:double [line 149]\n  n$7=_fun_long Math.round(double)((n$6 * 100.):double) [line 149]\n  *&$irvar2:long=n$7 [line 149]\n  NULLIFY(&$irvar1); [line 149]\n  EXIT_SCOPE(n$6,n$7,$irvar1); [line 149]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_7" -> "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_8" ;
+	 "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_7" -> "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_3" [color="red" ];
+"com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_8" [label="8:  method_body \n   n$8=*&$irvar2:long [line 149]\n  *&return:double=(double)n$8 [line 149]\n  NULLIFY(&$irvar2); [line 149]\n  EXIT_SCOPE(n$8,$irvar2); [line 149]\n  APPLY_ABSTRACTION; [line 149]\n " shape="box"]
+	
+
+	 "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_8" -> "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_2" ;
+	 "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_8" -> "com.stn.utils.Tools.getSystemLoad():double.e559e50333afc0949348cebed3838e01_3" [color="red" ];
+}

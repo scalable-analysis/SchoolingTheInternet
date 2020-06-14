@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.User.getGender():int.9bb62c830329a8e8e7fb5a868d4818d5_1" [label="1: Start int User.getGender()\nFormals:  this:com.stn.pojo.User*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.User.getGender():int.9bb62c830329a8e8e7fb5a868d4818d5_1" -> "com.stn.pojo.User.getGender():int.9bb62c830329a8e8e7fb5a868d4818d5_4" ;
+"com.stn.pojo.User.getGender():int.9bb62c830329a8e8e7fb5a868d4818d5_2" [label="2: Exit int User.getGender() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.User.getGender():int.9bb62c830329a8e8e7fb5a868d4818d5_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 193]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.getGender():int.9bb62c830329a8e8e7fb5a868d4818d5_3" -> "com.stn.pojo.User.getGender():int.9bb62c830329a8e8e7fb5a868d4818d5_2" ;
+"com.stn.pojo.User.getGender():int.9bb62c830329a8e8e7fb5a868d4818d5_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.User* [line 193]\n  n$1=*n$0.gender:int(root com.stn.pojo.User) [line 193]\n  *&return:int=n$1 [line 193]\n  NULLIFY(&this); [line 193]\n  EXIT_SCOPE(n$0,n$1,this); [line 193]\n  APPLY_ABSTRACTION; [line 193]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.getGender():int.9bb62c830329a8e8e7fb5a868d4818d5_4" -> "com.stn.pojo.User.getGender():int.9bb62c830329a8e8e7fb5a868d4818d5_2" ;
+	 "com.stn.pojo.User.getGender():int.9bb62c830329a8e8e7fb5a868d4818d5_4" -> "com.stn.pojo.User.getGender():int.9bb62c830329a8e8e7fb5a868d4818d5_3" [color="red" ];
+}

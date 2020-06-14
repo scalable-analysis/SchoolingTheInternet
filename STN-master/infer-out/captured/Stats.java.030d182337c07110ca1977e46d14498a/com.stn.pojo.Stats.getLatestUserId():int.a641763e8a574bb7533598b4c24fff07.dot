@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Stats.getLatestUserId():int.a641763e8a574bb7533598b4c24fff07_1" [label="1: Start int Stats.getLatestUserId()\nFormals:  this:com.stn.pojo.Stats*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Stats.getLatestUserId():int.a641763e8a574bb7533598b4c24fff07_1" -> "com.stn.pojo.Stats.getLatestUserId():int.a641763e8a574bb7533598b4c24fff07_4" ;
+"com.stn.pojo.Stats.getLatestUserId():int.a641763e8a574bb7533598b4c24fff07_2" [label="2: Exit int Stats.getLatestUserId() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Stats.getLatestUserId():int.a641763e8a574bb7533598b4c24fff07_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 75]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Stats.getLatestUserId():int.a641763e8a574bb7533598b4c24fff07_3" -> "com.stn.pojo.Stats.getLatestUserId():int.a641763e8a574bb7533598b4c24fff07_2" ;
+"com.stn.pojo.Stats.getLatestUserId():int.a641763e8a574bb7533598b4c24fff07_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Stats* [line 75]\n  n$1=*n$0.latestUserId:int(root com.stn.pojo.Stats) [line 75]\n  *&return:int=n$1 [line 75]\n  NULLIFY(&this); [line 75]\n  EXIT_SCOPE(n$0,n$1,this); [line 75]\n  APPLY_ABSTRACTION; [line 75]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Stats.getLatestUserId():int.a641763e8a574bb7533598b4c24fff07_4" -> "com.stn.pojo.Stats.getLatestUserId():int.a641763e8a574bb7533598b4c24fff07_2" ;
+	 "com.stn.pojo.Stats.getLatestUserId():int.a641763e8a574bb7533598b4c24fff07_4" -> "com.stn.pojo.Stats.getLatestUserId():int.a641763e8a574bb7533598b4c24fff07_3" [color="red" ];
+}

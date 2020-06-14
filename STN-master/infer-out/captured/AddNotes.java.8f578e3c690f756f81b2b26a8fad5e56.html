@@ -1,0 +1,600 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>File src/main/java/com/stn/servlets/AddNotes.java </h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.stn.servlets; </td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import com.stn.helpers.OrarHelper; </td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">import com.stn.helpers.UserHelper; </td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line">import com.stn.pojo.Orar; </td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import com.stn.pojo.User; </td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">import javax.servlet.ServletException; </td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">import javax.servlet.annotation.WebServlet; </td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line">import javax.servlet.http.HttpServlet; </td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">import javax.servlet.http.HttpServletRequest; </td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line">import javax.servlet.http.HttpServletResponse; </td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line">import javax.servlet.http.HttpSession; </td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line">import java.io.IOException; </td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line">import java.io.PrintWriter; </td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line">import java.sql.SQLException; </td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line">import java.util.ArrayList; </td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line">@WebServlet(&quot;/AddNotes&quot;) </td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line">public class AddNotes extends HttpServlet { <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.<init>%28%29.faaa90026abbc52638af1d29e752356f_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.<init>%28%29.faaa90026abbc52638af1d29e752356f_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.servlets.AddNotes* [line 20];
+n$1=_fun_HttpServlet.&lt;init&gt;()(n$0:com.stn.servlets.AddNotes*) [line 20];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.<init>%28%29.faaa90026abbc52638af1d29e752356f_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.<init>%28%29.faaa90026abbc52638af1d29e752356f_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.<init>%28%29.faaa90026abbc52638af1d29e752356f_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/com.stn.servlets.AddNotes.<init>%28%29.faaa90026abbc52638af1d29e752356f.html">summary for AddNotes.&lt;init&gt;()</a></td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line">    private void setTempFields(HttpServletRequest request, Integer id_ora, Integer id_stud, String teme, String examen, Integer nota) { <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.Integer%2Cjava.95b10828049e9e7aef3fbed540a3d178_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/com.stn.servlets.AddNotes.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.Integer%2Cjava.95b10828049e9e7aef3fbed540a3d178.html">summary for void AddNotes.setTempFields(HttpServletRequest,Integer,Integer,String,String,Integer)</a></td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line">        HttpSession session = request.getSession(); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.Integer%2Cjava.95b10828049e9e7aef3fbed540a3d178_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;request:javax.servlet.http.HttpServletRequest* [line 22];
+_=*n$0:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 22];
+n$2=_fun_HttpSession HttpServletRequest.getSession()(n$0:javax.servlet.http.HttpServletRequest*) interface virtual [line 22];
+*&amp;session:javax.servlet.http.HttpSession*=n$2 [line 22];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">        session.setAttribute(&quot;id_stud&quot;, id_stud); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.Integer%2Cjava.95b10828049e9e7aef3fbed540a3d178_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$3=*&amp;session:javax.servlet.http.HttpSession* [line 23];
+_=*n$3:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 23];
+n$5=*&amp;id_stud:java.lang.Integer* [line 23];
+n$6=_fun_void HttpSession.setAttribute(String,Object)(n$3:javax.servlet.http.HttpSession*,"id_stud":java.lang.Object*,n$5:java.lang.Integer*) interface virtual [line 23];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line">        session.setAttribute(&quot;id_ora&quot;, id_ora); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.Integer%2Cjava.95b10828049e9e7aef3fbed540a3d178_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$7=*&amp;session:javax.servlet.http.HttpSession* [line 24];
+_=*n$7:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 24];
+n$9=*&amp;id_ora:java.lang.Integer* [line 24];
+n$10=_fun_void HttpSession.setAttribute(String,Object)(n$7:javax.servlet.http.HttpSession*,"id_ora":java.lang.Object*,n$9:java.lang.Integer*) interface virtual [line 24];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line">        session.setAttribute(&quot;teme&quot;, teme); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.Integer%2Cjava.95b10828049e9e7aef3fbed540a3d178_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$11=*&amp;session:javax.servlet.http.HttpSession* [line 25];
+_=*n$11:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 25];
+n$13=*&amp;teme:java.lang.String* [line 25];
+n$14=_fun_void HttpSession.setAttribute(String,Object)(n$11:javax.servlet.http.HttpSession*,"teme":java.lang.Object*,n$13:java.lang.String*) interface virtual [line 25];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line">        session.setAttribute(&quot;examen&quot;, examen); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.Integer%2Cjava.95b10828049e9e7aef3fbed540a3d178_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$15=*&amp;session:javax.servlet.http.HttpSession* [line 26];
+_=*n$15:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 26];
+n$17=*&amp;examen:java.lang.String* [line 26];
+n$18=_fun_void HttpSession.setAttribute(String,Object)(n$15:javax.servlet.http.HttpSession*,"examen":java.lang.Object*,n$17:java.lang.String*) interface virtual [line 26];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">        session.setAttribute(&quot;nota&quot;, nota); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.Integer%2Cjava.95b10828049e9e7aef3fbed540a3d178_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$19=*&amp;session:javax.servlet.http.HttpSession* [line 27];
+_=*n$19:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 27];
+n$21=*&amp;nota:java.lang.Integer* [line 27];
+n$22=_fun_void HttpSession.setAttribute(String,Object)(n$19:javax.servlet.http.HttpSession*,"nota":java.lang.Object*,n$21:java.lang.Integer*) interface virtual [line 27];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">    } <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.Integer%2Cjava.95b10828049e9e7aef3fbed540a3d178_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:2 exn:3 Instructions
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.Integer%2Cjava.95b10828049e9e7aef3fbed540a3d178_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:10 3 succs: exn: Exit
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.Integer%2Cjava.95b10828049e9e7aef3fbed540a3d178_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014.html">summary for void AddNotes.doGet(HttpServletRequest,HttpServletResponse)</a></td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line">        HttpSession session = request.getSession(); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;request:javax.servlet.http.HttpServletRequest* [line 31];
+_=*n$0:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 31];
+n$2=_fun_HttpSession HttpServletRequest.getSession()(n$0:javax.servlet.http.HttpServletRequest*) interface virtual [line 31];
+*&amp;session:javax.servlet.http.HttpSession*=n$2 [line 31];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line">        String error = &quot;&quot;; <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;error:java.lang.Object*="" [line 33];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line">        response.setContentType(&quot;text/html&quot;); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$3=*&amp;response:javax.servlet.http.HttpServletResponse* [line 34];
+_=*n$3:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 34];
+n$5=_fun_void HttpServletResponse.setContentType(String)(n$3:javax.servlet.http.HttpServletResponse*,"text/html":java.lang.Object*) interface virtual [line 34];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">        PrintWriter out = response.getWriter(); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$6=*&amp;response:javax.servlet.http.HttpServletResponse* [line 35];
+_=*n$6:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 35];
+n$8=_fun_PrintWriter HttpServletResponse.getWriter()(n$6:javax.servlet.http.HttpServletResponse*) interface virtual [line 35];
+*&amp;out:java.io.PrintWriter*=n$8 [line 35];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line">        Integer id_ora = Integer.valueOf(request.getParameter(&quot;id_ora&quot;)); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$9=*&amp;request:javax.servlet.http.HttpServletRequest* [line 36];
+_=*n$9:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 36];
+n$11=_fun_String HttpServletRequest.getParameter(String)(n$9:javax.servlet.http.HttpServletRequest*,"id_ora":java.lang.Object*) interface virtual [line 36];
+*&amp;$irvar0:java.lang.String*=n$11 [line 36];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$12=*&amp;$irvar0:java.lang.String* [line 36];
+n$13=_fun_Integer Integer.valueOf(String)(n$12:java.lang.String*) [line 36];
+*&amp;id_ora:java.lang.Integer*=n$13 [line 36];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">        Integer id_student = Integer.valueOf(request.getParameter(&quot;id_student&quot;)); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$14=*&amp;request:javax.servlet.http.HttpServletRequest* [line 37];
+_=*n$14:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 37];
+n$16=_fun_String HttpServletRequest.getParameter(String)(n$14:javax.servlet.http.HttpServletRequest*,"id_student":java.lang.Object*) interface virtual [line 37];
+*&amp;$irvar1:java.lang.String*=n$16 [line 37];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$17=*&amp;$irvar1:java.lang.String* [line 37];
+n$18=_fun_Integer Integer.valueOf(String)(n$17:java.lang.String*) [line 37];
+*&amp;id_student:java.lang.Integer*=n$18 [line 37];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line">        String url = &quot;ora1.jsp?id=&quot; + id_ora; <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$19=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 38];
+n$20=_fun_StringBuilder.&lt;init&gt;()(n$19:java.lang.StringBuilder*) [line 38];
+*&amp;$irvar2:java.lang.StringBuilder*=n$19 [line 38];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$21=*&amp;$irvar2:java.lang.StringBuilder* [line 38];
+_=*n$21:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 38];
+n$23=_fun_StringBuilder StringBuilder.append(String)(n$21:java.lang.StringBuilder*,"ora1.jsp?id=":java.lang.Object*) virtual [line 38];
+*&amp;$irvar3:java.lang.StringBuilder*=n$23 [line 38];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$24=*&amp;$irvar3:java.lang.StringBuilder* [line 38];
+_=*n$24:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 38];
+n$26=*&amp;id_ora:java.lang.Integer* [line 38];
+n$27=_fun_StringBuilder StringBuilder.append(Object)(n$24:java.lang.StringBuilder*,n$26:java.lang.Integer*) virtual [line 38];
+*&amp;$irvar4:java.lang.StringBuilder*=n$27 [line 38];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:3 Instructions
+n$28=*&amp;$irvar4:java.lang.StringBuilder* [line 38];
+_=*n$28:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 38];
+n$30=_fun_String StringBuilder.toString()(n$28:java.lang.StringBuilder*) virtual [line 38];
+*&amp;url:java.lang.String*=n$30 [line 38];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line">        OrarHelper addNotes = new OrarHelper(); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$31=_fun___new(sizeof(t=com.stn.helpers.OrarHelper):com.stn.helpers.OrarHelper*) [line 39];
+n$32=_fun_OrarHelper.&lt;init&gt;()(n$31:com.stn.helpers.OrarHelper*) [line 39];
+*&amp;addNotes:com.stn.helpers.OrarHelper*=n$31 [line 39];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line">        UserHelper user = new UserHelper(); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:3 Instructions
+n$33=_fun___new(sizeof(t=com.stn.helpers.UserHelper):com.stn.helpers.UserHelper*) [line 40];
+n$34=_fun_UserHelper.&lt;init&gt;()(n$33:com.stn.helpers.UserHelper*) [line 40];
+*&amp;user:com.stn.helpers.UserHelper*=n$33 [line 40];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line">        ArrayList&lt;Orar&gt; orar = null; <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:3 Instructions
+*&amp;orar:java.lang.Object*=null [line 41];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">        User user1 = user.getUserInfo(id_student); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:3 Instructions
+n$35=*&amp;id_student:java.lang.Integer* [line 42];
+_=*n$35:java.lang.Integer*(root java.lang.Integer) [line 42];
+n$37=_fun_int Integer.intValue()(n$35:java.lang.Integer*) virtual [line 42];
+*&amp;$irvar5:int=n$37 [line 42];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$38=*&amp;user:com.stn.helpers.UserHelper* [line 42];
+_=*n$38:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 42];
+n$40=*&amp;$irvar5:int [line 42];
+n$41=_fun_User UserHelper.getUserInfo(int)(n$38:com.stn.helpers.UserHelper*,n$40:int) virtual [line 42];
+*&amp;user1:com.stn.pojo.User*=n$41 [line 42];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line">        try { </td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">            orar = addNotes.getOrar(user1.getIdGrupa()); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:68 Instructions
+n$42=*&amp;user1:com.stn.pojo.User* [line 44];
+_=*n$42:com.stn.pojo.User*(root com.stn.pojo.User) [line 44];
+n$44=_fun_int User.getIdGrupa()(n$42:com.stn.pojo.User*) virtual [line 44];
+*&amp;$irvar6:int=n$44 [line 44];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:68 Instructions
+n$45=*&amp;$irvar6:int [line 44];
+n$46=_fun_Integer Integer.valueOf(int)(n$45:int) [line 44];
+*&amp;$irvar7:java.lang.Integer*=n$46 [line 44];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:28 exn:68 Instructions
+n$47=*&amp;addNotes:com.stn.helpers.OrarHelper* [line 44];
+_=*n$47:com.stn.helpers.OrarHelper*(root com.stn.helpers.OrarHelper) [line 44];
+n$49=*&amp;$irvar7:java.lang.Integer* [line 44];
+n$50=_fun_ArrayList OrarHelper.getOrar(Integer)(n$47:com.stn.helpers.OrarHelper*,n$49:java.lang.Integer*) virtual [line 44];
+*&amp;orar:java.util.ArrayList*=n$50 [line 44];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line">        } catch (SQLException e) { <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:66 succs:25 exn:3 Instructions
+n$51=*&amp;CatchVar126:java.lang.Object* [line 45];
+*&amp;e:java.lang.Object*=n$51 [line 45];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node66.html"><span class='visited with_tooltip'>C_66<span class='tooltip'>node66 preds:68 succs:24 exn:3 Conditional exception handler
+n$152=_fun___instanceof(n$148:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 45];
+PRUNE(n$152, true); [line 45];
+*&amp;CatchVar126:void=n$148 [line 45];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node67.html"><span class='visited with_tooltip'>C_67<span class='tooltip'>node67 preds:68 succs:64 65 exn:3 Conditional exception handler
+n$152=_fun___instanceof(n$148:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 45];
+PRUNE(!n$152, false); [line 45];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node68.html"><span class='visited with_tooltip'>I_68<span class='tooltip'>node68 preds: succs:66 67 exn:3 Instructions
+n$147=*&amp;return:void [line 45];
+*&amp;return:void=null [line 45];
+n$148=_fun___unwrap_exception(n$147:void) [line 45];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line">            e.printStackTrace(); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:28 exn:3 Instructions
+n$52=*&amp;e:java.lang.Object* [line 46];
+_=*n$52:java.lang.Object*(root java.lang.Object) [line 46];
+n$54=_fun_void Throwable.printStackTrace()(n$52:java.lang.Object*) virtual [line 46];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">        } catch (ClassNotFoundException e) { <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:64 succs:27 exn:3 Instructions
+n$55=*&amp;CatchVar136:java.lang.Object* [line 47];
+*&amp;e:java.lang.Object*=n$55 [line 47];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node64.html"><span class='visited with_tooltip'>C_64<span class='tooltip'>node64 preds:67 succs:26 exn:3 Conditional exception handler
+n$151=_fun___instanceof(n$148:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 47];
+PRUNE(n$151, true); [line 47];
+*&amp;CatchVar136:void=n$148 [line 47];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node65.html"><span class='visited with_tooltip'>C_65<span class='tooltip'>node65 preds:67 succs:3 exn:3 Conditional exception handler
+n$151=_fun___instanceof(n$148:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 47];
+PRUNE(!n$151, false); [line 47];
+*&amp;return:void=EXN n$148 [line 47];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line">            e.printStackTrace(); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:3 Instructions
+n$56=*&amp;e:java.lang.Object* [line 48];
+_=*n$56:java.lang.Object*(root java.lang.Object) [line 48];
+n$58=_fun_void Throwable.printStackTrace()(n$56:java.lang.Object*) virtual [line 48];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line">        Orar ora = addNotes.getOra(id_ora, orar); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 25 23 succs:29 exn:3 Instructions
+n$59=*&amp;addNotes:com.stn.helpers.OrarHelper* [line 50];
+_=*n$59:com.stn.helpers.OrarHelper*(root com.stn.helpers.OrarHelper) [line 50];
+n$61=*&amp;id_ora:java.lang.Integer* [line 50];
+n$62=*&amp;orar:java.lang.Object* [line 50];
+n$63=_fun_Orar OrarHelper.getOra(Integer,ArrayList)(n$59:com.stn.helpers.OrarHelper*,n$61:java.lang.Integer*,n$62:java.lang.Object*) virtual [line 50];
+*&amp;ora:com.stn.pojo.Orar*=n$63 [line 50];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line">        try { </td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line">            if (addNotes.getSchool(id_ora, id_student).isEmpty()) { <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:30 exn:63 Instructions
+n$64=*&amp;id_ora:java.lang.Integer* [line 52];
+_=*n$64:java.lang.Integer*(root java.lang.Integer) [line 52];
+n$66=_fun_int Integer.intValue()(n$64:java.lang.Integer*) virtual [line 52];
+*&amp;$irvar8:int=n$66 [line 52];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 succs:31 exn:63 Instructions
+n$67=*&amp;id_student:java.lang.Integer* [line 52];
+_=*n$67:java.lang.Integer*(root java.lang.Integer) [line 52];
+n$69=_fun_int Integer.intValue()(n$67:java.lang.Integer*) virtual [line 52];
+*&amp;$irvar9:int=n$69 [line 52];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:30 succs:32 exn:63 Instructions
+n$70=*&amp;addNotes:com.stn.helpers.OrarHelper* [line 52];
+_=*n$70:com.stn.helpers.OrarHelper*(root com.stn.helpers.OrarHelper) [line 52];
+n$72=*&amp;$irvar8:int [line 52];
+n$73=*&amp;$irvar9:int [line 52];
+n$74=_fun_Notes OrarHelper.getSchool(int,int)(n$70:com.stn.helpers.OrarHelper*,n$72:int,n$73:int) virtual [line 52];
+*&amp;$irvar10:com.stn.pojo.Notes*=n$74 [line 52];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:31 succs:33 34 exn:63 Instructions
+n$75=*&amp;$irvar10:com.stn.pojo.Notes* [line 52];
+_=*n$75:com.stn.pojo.Notes*(root com.stn.pojo.Notes) [line 52];
+n$77=_fun_boolean Notes.isEmpty()(n$75:com.stn.pojo.Notes*) virtual [line 52];
+*&amp;$irvar11:_Bool=n$77 [line 52];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node33.html"><span class='visited with_tooltip'>C_33<span class='tooltip'>node33 preds:32 succs:35 exn:63 Conditional method_body
+n$78=*&amp;$irvar11:_Bool [line 52];
+PRUNE(!(n$78 == 0), true); [line 52];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node34.html"><span class='visited with_tooltip'>C_34<span class='tooltip'>node34 preds:32 succs:52 exn:63 Conditional method_body
+n$78=*&amp;$irvar11:_Bool [line 52];
+PRUNE((n$78 == 0), false); [line 52];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line">                addNotes.addNotes(user1.getIdGrupa(), user1.getId(), ora.getName(), ora.getDurata(), ora.getTip_act(), ora.getSgr(), ora.getSala(), ora.getNume_prof(), ora.getZi(), ora.getGrupa(), ora.getSapt()); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:33 succs:36 exn:63 Instructions
+n$79=*&amp;user1:com.stn.pojo.User* [line 53];
+_=*n$79:com.stn.pojo.User*(root com.stn.pojo.User) [line 53];
+n$81=_fun_int User.getIdGrupa()(n$79:com.stn.pojo.User*) virtual [line 53];
+*&amp;$irvar12:int=n$81 [line 53];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:35 succs:37 exn:63 Instructions
+n$82=*&amp;$irvar12:int [line 53];
+n$83=_fun_Integer Integer.valueOf(int)(n$82:int) [line 53];
+*&amp;$irvar13:java.lang.Integer*=n$83 [line 53];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:36 succs:38 exn:63 Instructions
+n$84=*&amp;user1:com.stn.pojo.User* [line 53];
+_=*n$84:com.stn.pojo.User*(root com.stn.pojo.User) [line 53];
+n$86=_fun_int User.getId()(n$84:com.stn.pojo.User*) virtual [line 53];
+*&amp;$irvar14:int=n$86 [line 53];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:37 succs:39 exn:63 Instructions
+n$87=*&amp;$irvar14:int [line 53];
+n$88=_fun_Integer Integer.valueOf(int)(n$87:int) [line 53];
+*&amp;$irvar15:java.lang.Integer*=n$88 [line 53];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:38 succs:40 exn:63 Instructions
+n$89=*&amp;ora:com.stn.pojo.Orar* [line 53];
+_=*n$89:com.stn.pojo.Orar*(root com.stn.pojo.Orar) [line 53];
+n$91=_fun_String Orar.getName()(n$89:com.stn.pojo.Orar*) virtual [line 53];
+*&amp;$irvar16:java.lang.String*=n$91 [line 53];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:39 succs:41 exn:63 Instructions
+n$92=*&amp;ora:com.stn.pojo.Orar* [line 53];
+_=*n$92:com.stn.pojo.Orar*(root com.stn.pojo.Orar) [line 53];
+n$94=_fun_String Orar.getDurata()(n$92:com.stn.pojo.Orar*) virtual [line 53];
+*&amp;$irvar17:java.lang.String*=n$94 [line 53];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:40 succs:42 exn:63 Instructions
+n$95=*&amp;ora:com.stn.pojo.Orar* [line 53];
+_=*n$95:com.stn.pojo.Orar*(root com.stn.pojo.Orar) [line 53];
+n$97=_fun_String Orar.getTip_act()(n$95:com.stn.pojo.Orar*) virtual [line 53];
+*&amp;$irvar18:java.lang.String*=n$97 [line 53];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:41 succs:43 exn:63 Instructions
+n$98=*&amp;ora:com.stn.pojo.Orar* [line 53];
+_=*n$98:com.stn.pojo.Orar*(root com.stn.pojo.Orar) [line 53];
+n$100=_fun_int Orar.getSgr()(n$98:com.stn.pojo.Orar*) virtual [line 53];
+*&amp;$irvar19:int=n$100 [line 53];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:42 succs:44 exn:63 Instructions
+n$101=*&amp;$irvar19:int [line 53];
+n$102=_fun_Integer Integer.valueOf(int)(n$101:int) [line 53];
+*&amp;$irvar20:java.lang.Integer*=n$102 [line 53];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds:43 succs:45 exn:63 Instructions
+n$103=*&amp;ora:com.stn.pojo.Orar* [line 53];
+_=*n$103:com.stn.pojo.Orar*(root com.stn.pojo.Orar) [line 53];
+n$105=_fun_String Orar.getSala()(n$103:com.stn.pojo.Orar*) virtual [line 53];
+*&amp;$irvar21:java.lang.String*=n$105 [line 53];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node45.html"><span class='visited with_tooltip'>I_45<span class='tooltip'>node45 preds:44 succs:46 exn:63 Instructions
+n$106=*&amp;ora:com.stn.pojo.Orar* [line 53];
+_=*n$106:com.stn.pojo.Orar*(root com.stn.pojo.Orar) [line 53];
+n$108=_fun_String Orar.getNume_prof()(n$106:com.stn.pojo.Orar*) virtual [line 53];
+*&amp;$irvar22:java.lang.String*=n$108 [line 53];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node46.html"><span class='visited with_tooltip'>I_46<span class='tooltip'>node46 preds:45 succs:47 exn:63 Instructions
+n$109=*&amp;ora:com.stn.pojo.Orar* [line 53];
+_=*n$109:com.stn.pojo.Orar*(root com.stn.pojo.Orar) [line 53];
+n$111=_fun_String Orar.getZi()(n$109:com.stn.pojo.Orar*) virtual [line 53];
+*&amp;$irvar23:java.lang.String*=n$111 [line 53];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node47.html"><span class='visited with_tooltip'>I_47<span class='tooltip'>node47 preds:46 succs:48 exn:63 Instructions
+n$112=*&amp;ora:com.stn.pojo.Orar* [line 53];
+_=*n$112:com.stn.pojo.Orar*(root com.stn.pojo.Orar) [line 53];
+n$114=_fun_int Orar.getGrupa()(n$112:com.stn.pojo.Orar*) virtual [line 53];
+*&amp;$irvar24:int=n$114 [line 53];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node48.html"><span class='visited with_tooltip'>I_48<span class='tooltip'>node48 preds:47 succs:49 exn:63 Instructions
+n$115=*&amp;$irvar24:int [line 53];
+n$116=_fun_Integer Integer.valueOf(int)(n$115:int) [line 53];
+*&amp;$irvar25:java.lang.Integer*=n$116 [line 53];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node49.html"><span class='visited with_tooltip'>I_49<span class='tooltip'>node49 preds:48 succs:50 exn:63 Instructions
+n$117=*&amp;ora:com.stn.pojo.Orar* [line 53];
+_=*n$117:com.stn.pojo.Orar*(root com.stn.pojo.Orar) [line 53];
+n$119=_fun_String Orar.getSapt()(n$117:com.stn.pojo.Orar*) virtual [line 53];
+*&amp;$irvar26:java.lang.String*=n$119 [line 53];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node50.html"><span class='visited with_tooltip'>I_50<span class='tooltip'>node50 preds:49 succs:51 exn:63 Instructions
+n$120=*&amp;addNotes:com.stn.helpers.OrarHelper* [line 53];
+_=*n$120:com.stn.helpers.OrarHelper*(root com.stn.helpers.OrarHelper) [line 53];
+n$122=*&amp;$irvar13:java.lang.Integer* [line 53];
+n$123=*&amp;$irvar15:java.lang.Integer* [line 53];
+n$124=*&amp;$irvar16:java.lang.String* [line 53];
+n$125=*&amp;$irvar17:java.lang.String* [line 53];
+n$126=*&amp;$irvar18:java.lang.String* [line 53];
+n$127=*&amp;$irvar20:java.lang.Integer* [line 53];
+n$128=*&amp;$irvar21:java.lang.String* [line 53];
+n$129=*&amp;$irvar22:java.lang.String* [line 53];
+n$130=*&amp;$irvar23:java.lang.String* [line 53];
+n$131=*&amp;$irvar25:java.lang.Integer* [line 53];
+n$132=*&amp;$irvar26:java.lang.String* [line 53];
+n$133=_fun_void OrarHelper.addNotes(Integer,Integer,String,String,String,Integer,String,String,String,Integer,String)(n$120:com.stn.helpers.OrarHelper*,n$122:java.lang.Integer*,n$123:java.lang.Integer*,n$124:java.lang.String*,n$125:java.lang.String*,n$126:java.lang.String*,n$127:java.lang.Integer*,n$128:java.lang.String*,n$129:java.lang.String*,n$130:java.lang.String*,n$131:java.lang.Integer*,n$132:java.lang.String*) virtual [line 53];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line">                error = &quot;Aceasta este pagina cu notite&quot;; <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node51.html"><span class='visited with_tooltip'>I_51<span class='tooltip'>node51 preds:50 succs:56 exn:63 Instructions
+*&amp;error:java.lang.Object*="Aceasta este pagina cu notite" [line 54];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line">            }else </td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line">                error=&quot;Buna!&quot;; <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node52.html"><span class='visited with_tooltip'>I_52<span class='tooltip'>node52 preds:34 succs:56 exn:63 Instructions
+*&amp;error:java.lang.Object*="Buna!" [line 56];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line">        } catch (SQLException | ClassNotFoundException e) { <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node53.html"><span class='visited with_tooltip'>I_53<span class='tooltip'>node53 preds:61 59 succs:54 exn:3 Instructions
+n$134=*&amp;CatchVar261:java.lang.Object* [line 57];
+*&amp;e:java.lang.Object*=n$134 [line 57];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node59.html"><span class='visited with_tooltip'>C_59<span class='tooltip'>node59 preds:62 succs:53 exn:3 Conditional exception handler
+n$149=_fun___instanceof(n$148:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 57];
+PRUNE(n$149, true); [line 57];
+*&amp;CatchVar261:void=n$148 [line 57];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node60.html"><span class='visited with_tooltip'>C_60<span class='tooltip'>node60 preds:62 succs:3 exn:3 Conditional exception handler
+n$149=_fun___instanceof(n$148:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 57];
+PRUNE(!n$149, false); [line 57];
+*&amp;return:void=EXN n$148 [line 57];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node61.html"><span class='visited with_tooltip'>C_61<span class='tooltip'>node61 preds:63 succs:53 exn:3 Conditional exception handler
+n$150=_fun___instanceof(n$148:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 57];
+PRUNE(n$150, true); [line 57];
+*&amp;CatchVar261:void=n$148 [line 57];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node62.html"><span class='visited with_tooltip'>C_62<span class='tooltip'>node62 preds:63 succs:59 60 exn:3 Conditional exception handler
+n$150=_fun___instanceof(n$148:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 57];
+PRUNE(!n$150, false); [line 57];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node63.html"><span class='visited with_tooltip'>I_63<span class='tooltip'>node63 preds: succs:61 62 exn:3 Instructions
+n$147=*&amp;return:void [line 57];
+*&amp;return:void=null [line 57];
+n$148=_fun___unwrap_exception(n$147:void) [line 57];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE58">58</td><td class="line">            out.println(e); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node54.html"><span class='visited with_tooltip'>I_54<span class='tooltip'>node54 preds:53 succs:55 exn:3 Instructions
+n$135=*&amp;out:java.io.PrintWriter* [line 58];
+_=*n$135:java.io.PrintWriter*(root java.io.PrintWriter) [line 58];
+n$137=*&amp;e:java.lang.Object* [line 58];
+n$138=_fun_void PrintWriter.println(Object)(n$135:java.io.PrintWriter*,n$137:java.lang.Object*) virtual [line 58];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE59">59</td><td class="line">            return; <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node55.html"><span class='visited with_tooltip'>I_55<span class='tooltip'>node55 preds:54 succs:2 exn:3 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE60">60</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE61">61</td><td class="line">        session.setAttribute(&quot;error&quot;, error); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node56.html"><span class='visited with_tooltip'>I_56<span class='tooltip'>node56 preds:52 51 succs:57 exn:3 Instructions
+n$139=*&amp;session:javax.servlet.http.HttpSession* [line 61];
+_=*n$139:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 61];
+n$141=*&amp;error:java.lang.Object* [line 61];
+n$142=_fun_void HttpSession.setAttribute(String,Object)(n$139:javax.servlet.http.HttpSession*,"error":java.lang.Object*,n$141:java.lang.Object*) interface virtual [line 61];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE62">62</td><td class="line">        response.sendRedirect(url); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node57.html"><span class='visited with_tooltip'>I_57<span class='tooltip'>node57 preds:56 succs:58 exn:3 Instructions
+n$143=*&amp;response:javax.servlet.http.HttpServletResponse* [line 62];
+_=*n$143:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 62];
+n$145=*&amp;url:java.lang.String* [line 62];
+n$146=_fun_void HttpServletResponse.sendRedirect(String)(n$143:javax.servlet.http.HttpServletResponse*,n$145:java.lang.String*) interface virtual [line 62];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE63">63</td><td class="line">    } <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node58.html"><span class='visited with_tooltip'>I_58<span class='tooltip'>node58 preds:57 succs:2 exn:3 Instructions
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:58 55 3 succs: exn: Exit
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServlet.26e9739ae05b2e7d14039784c336f014_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:65 60 succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE64">64</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE65">65</td><td class="line">    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a.html">summary for void AddNotes.doPost(HttpServletRequest,HttpServletResponse)</a></td></tr>
+<tr><td class="num" id="LINE66">66</td><td class="line">        HttpSession session = request.getSession(); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;request:javax.servlet.http.HttpServletRequest* [line 66];
+_=*n$0:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 66];
+n$2=_fun_HttpSession HttpServletRequest.getSession()(n$0:javax.servlet.http.HttpServletRequest*) interface virtual [line 66];
+*&amp;session:javax.servlet.http.HttpSession*=n$2 [line 66];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE67">67</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE68">68</td><td class="line">        String error = &quot;&quot;; <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;error:java.lang.Object*="" [line 68];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE69">69</td><td class="line">        response.setContentType(&quot;text/html&quot;); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$3=*&amp;response:javax.servlet.http.HttpServletResponse* [line 69];
+_=*n$3:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 69];
+n$5=_fun_void HttpServletResponse.setContentType(String)(n$3:javax.servlet.http.HttpServletResponse*,"text/html":java.lang.Object*) interface virtual [line 69];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE70">70</td><td class="line">        PrintWriter out = response.getWriter(); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$6=*&amp;response:javax.servlet.http.HttpServletResponse* [line 70];
+_=*n$6:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 70];
+n$8=_fun_PrintWriter HttpServletResponse.getWriter()(n$6:javax.servlet.http.HttpServletResponse*) interface virtual [line 70];
+*&amp;out:java.io.PrintWriter*=n$8 [line 70];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE71">71</td><td class="line">        String name = request.getParameter(&quot;name&quot;); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$9=*&amp;request:javax.servlet.http.HttpServletRequest* [line 71];
+_=*n$9:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 71];
+n$11=_fun_String HttpServletRequest.getParameter(String)(n$9:javax.servlet.http.HttpServletRequest*,"name":java.lang.Object*) interface virtual [line 71];
+*&amp;name:java.lang.String*=n$11 [line 71];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE72">72</td><td class="line">        Integer id_ora = Integer.valueOf(request.getParameter(&quot;id_ora&quot;)); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$12=*&amp;request:javax.servlet.http.HttpServletRequest* [line 72];
+_=*n$12:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 72];
+n$14=_fun_String HttpServletRequest.getParameter(String)(n$12:javax.servlet.http.HttpServletRequest*,"id_ora":java.lang.Object*) interface virtual [line 72];
+*&amp;$irvar0:java.lang.String*=n$14 [line 72];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$15=*&amp;$irvar0:java.lang.String* [line 72];
+n$16=_fun_Integer Integer.valueOf(String)(n$15:java.lang.String*) [line 72];
+*&amp;id_ora:java.lang.Integer*=n$16 [line 72];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE73">73</td><td class="line">        Integer id_student = Integer.valueOf(request.getParameter(&quot;id_user&quot;)); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$17=*&amp;request:javax.servlet.http.HttpServletRequest* [line 73];
+_=*n$17:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 73];
+n$19=_fun_String HttpServletRequest.getParameter(String)(n$17:javax.servlet.http.HttpServletRequest*,"id_user":java.lang.Object*) interface virtual [line 73];
+*&amp;$irvar1:java.lang.String*=n$19 [line 73];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$20=*&amp;$irvar1:java.lang.String* [line 73];
+n$21=_fun_Integer Integer.valueOf(String)(n$20:java.lang.String*) [line 73];
+*&amp;id_student:java.lang.Integer*=n$21 [line 73];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE74">74</td><td class="line">        String url = &quot;ora1.jsp?id=&quot; + id_ora; <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$22=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 74];
+n$23=_fun_StringBuilder.&lt;init&gt;()(n$22:java.lang.StringBuilder*) [line 74];
+*&amp;$irvar2:java.lang.StringBuilder*=n$22 [line 74];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$24=*&amp;$irvar2:java.lang.StringBuilder* [line 74];
+_=*n$24:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 74];
+n$26=_fun_StringBuilder StringBuilder.append(String)(n$24:java.lang.StringBuilder*,"ora1.jsp?id=":java.lang.Object*) virtual [line 74];
+*&amp;$irvar3:java.lang.StringBuilder*=n$26 [line 74];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:3 Instructions
+n$27=*&amp;$irvar3:java.lang.StringBuilder* [line 74];
+_=*n$27:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 74];
+n$29=*&amp;id_ora:java.lang.Integer* [line 74];
+n$30=_fun_StringBuilder StringBuilder.append(Object)(n$27:java.lang.StringBuilder*,n$29:java.lang.Integer*) virtual [line 74];
+*&amp;$irvar4:java.lang.StringBuilder*=n$30 [line 74];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$31=*&amp;$irvar4:java.lang.StringBuilder* [line 74];
+_=*n$31:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 74];
+n$33=_fun_String StringBuilder.toString()(n$31:java.lang.StringBuilder*) virtual [line 74];
+*&amp;url:java.lang.String*=n$33 [line 74];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE75">75</td><td class="line">        String teme = request.getParameter(&quot;teme&quot;); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:3 Instructions
+n$34=*&amp;request:javax.servlet.http.HttpServletRequest* [line 75];
+_=*n$34:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 75];
+n$36=_fun_String HttpServletRequest.getParameter(String)(n$34:javax.servlet.http.HttpServletRequest*,"teme":java.lang.Object*) interface virtual [line 75];
+*&amp;teme:java.lang.String*=n$36 [line 75];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE76">76</td><td class="line">        String examen = request.getParameter(&quot;examen&quot;); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:3 Instructions
+n$37=*&amp;request:javax.servlet.http.HttpServletRequest* [line 76];
+_=*n$37:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 76];
+n$39=_fun_String HttpServletRequest.getParameter(String)(n$37:javax.servlet.http.HttpServletRequest*,"examen":java.lang.Object*) interface virtual [line 76];
+*&amp;examen:java.lang.String*=n$39 [line 76];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE77">77</td><td class="line">        Integer nota = Integer.valueOf(request.getParameter(&quot;nota&quot;)); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:3 Instructions
+n$40=*&amp;request:javax.servlet.http.HttpServletRequest* [line 77];
+_=*n$40:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 77];
+n$42=_fun_String HttpServletRequest.getParameter(String)(n$40:javax.servlet.http.HttpServletRequest*,"nota":java.lang.Object*) interface virtual [line 77];
+*&amp;$irvar5:java.lang.String*=n$42 [line 77];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$43=*&amp;$irvar5:java.lang.String* [line 77];
+n$44=_fun_Integer Integer.valueOf(String)(n$43:java.lang.String*) [line 77];
+*&amp;nota:java.lang.Integer*=n$44 [line 77];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE78">78</td><td class="line">        OrarHelper addNotes = new OrarHelper(); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:3 Instructions
+n$45=_fun___new(sizeof(t=com.stn.helpers.OrarHelper):com.stn.helpers.OrarHelper*) [line 78];
+n$46=_fun_OrarHelper.&lt;init&gt;()(n$45:com.stn.helpers.OrarHelper*) [line 78];
+*&amp;addNotes:com.stn.helpers.OrarHelper*=n$45 [line 78];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE79">79</td><td class="line">        try { </td></tr>
+<tr><td class="num" id="LINE80">80</td><td class="line">            addNotes.updateNotes(id_ora, id_student, teme, examen, nota); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:26 exn:34 Instructions
+n$47=*&amp;addNotes:com.stn.helpers.OrarHelper* [line 80];
+_=*n$47:com.stn.helpers.OrarHelper*(root com.stn.helpers.OrarHelper) [line 80];
+n$49=*&amp;id_ora:java.lang.Integer* [line 80];
+n$50=*&amp;id_student:java.lang.Integer* [line 80];
+n$51=*&amp;teme:java.lang.String* [line 80];
+n$52=*&amp;examen:java.lang.String* [line 80];
+n$53=*&amp;nota:java.lang.Integer* [line 80];
+n$54=_fun_void OrarHelper.updateNotes(Integer,Integer,String,String,Integer)(n$47:com.stn.helpers.OrarHelper*,n$49:java.lang.Integer*,n$50:java.lang.Integer*,n$51:java.lang.String*,n$52:java.lang.String*,n$53:java.lang.Integer*) virtual [line 80];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE81">81</td><td class="line">        } catch (SQLException | ClassNotFoundException e) { <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:32 30 succs:24 exn:3 Instructions
+n$55=*&amp;CatchVar145:java.lang.Object* [line 81];
+*&amp;e:java.lang.Object*=n$55 [line 81];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node30.html"><span class='visited with_tooltip'>C_30<span class='tooltip'>node30 preds:33 succs:23 exn:3 Conditional exception handler
+n$70=_fun___instanceof(n$69:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 81];
+PRUNE(n$70, true); [line 81];
+*&amp;CatchVar145:void=n$69 [line 81];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node31.html"><span class='visited with_tooltip'>C_31<span class='tooltip'>node31 preds:33 succs:3 exn:3 Conditional exception handler
+n$70=_fun___instanceof(n$69:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 81];
+PRUNE(!n$70, false); [line 81];
+*&amp;return:void=EXN n$69 [line 81];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:34 succs:23 exn:3 Conditional exception handler
+n$71=_fun___instanceof(n$69:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 81];
+PRUNE(n$71, true); [line 81];
+*&amp;CatchVar145:void=n$69 [line 81];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node33.html"><span class='visited with_tooltip'>C_33<span class='tooltip'>node33 preds:34 succs:30 31 exn:3 Conditional exception handler
+n$71=_fun___instanceof(n$69:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 81];
+PRUNE(!n$71, false); [line 81];
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds: succs:32 33 exn:3 Instructions
+n$68=*&amp;return:void [line 81];
+*&amp;return:void=null [line 81];
+n$69=_fun___unwrap_exception(n$68:void) [line 81];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE82">82</td><td class="line">            out.println(e); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:3 Instructions
+n$56=*&amp;out:java.io.PrintWriter* [line 82];
+_=*n$56:java.io.PrintWriter*(root java.io.PrintWriter) [line 82];
+n$58=*&amp;e:java.lang.Object* [line 82];
+n$59=_fun_void PrintWriter.println(Object)(n$56:java.io.PrintWriter*,n$58:java.lang.Object*) virtual [line 82];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE83">83</td><td class="line">            return; <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:2 exn:3 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE84">84</td><td class="line">        } </td></tr>
+<tr><td class="num" id="LINE85">85</td><td class="line">        error = &quot;Schimbat&quot;; <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:22 succs:27 exn:3 Instructions
+*&amp;error:java.lang.Object*="Schimbat" [line 85];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE86">86</td><td class="line">        session.setAttribute(&quot;error&quot;, error); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:3 Instructions
+n$60=*&amp;session:javax.servlet.http.HttpSession* [line 86];
+_=*n$60:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 86];
+n$62=*&amp;error:java.lang.Object* [line 86];
+n$63=_fun_void HttpSession.setAttribute(String,Object)(n$60:javax.servlet.http.HttpSession*,"error":java.lang.Object*,n$62:java.lang.Object*) interface virtual [line 86];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE87">87</td><td class="line">        response.sendRedirect(url); <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:3 Instructions
+n$64=*&amp;response:javax.servlet.http.HttpServletResponse* [line 87];
+_=*n$64:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 87];
+n$66=*&amp;url:java.lang.String* [line 87];
+n$67=_fun_void HttpServletResponse.sendRedirect(String)(n$64:javax.servlet.http.HttpServletResponse*,n$66:java.lang.String*) interface virtual [line 87];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE88">88</td><td class="line">    } <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:2 exn:3 Instructions
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:29 25 3 succs: exn: Exit
+</span></span></a> <a href="./AddNotes.java.8f578e3c690f756f81b2b26a8fad5e56/nodes/com.stn.servlets.AddNotes.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.e64dd16075001890e4ebd766b9c5606a_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:31 succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE89">89</td><td class="line">} </td></tr>
+</table>
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+</body>
+</html>

@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.News.setIdSerie(int):void.11337769be961811314eefb7724b0ed0_1" [label="1: Start void News.setIdSerie(int)\nFormals:  this:com.stn.pojo.News* idSerie:int\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.News.setIdSerie(int):void.11337769be961811314eefb7724b0ed0_1" -> "com.stn.pojo.News.setIdSerie(int):void.11337769be961811314eefb7724b0ed0_4" ;
+"com.stn.pojo.News.setIdSerie(int):void.11337769be961811314eefb7724b0ed0_2" [label="2: Exit void News.setIdSerie(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.News.setIdSerie(int):void.11337769be961811314eefb7724b0ed0_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 40]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setIdSerie(int):void.11337769be961811314eefb7724b0ed0_3" -> "com.stn.pojo.News.setIdSerie(int):void.11337769be961811314eefb7724b0ed0_2" ;
+"com.stn.pojo.News.setIdSerie(int):void.11337769be961811314eefb7724b0ed0_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.News* [line 39]\n  n$1=*&idSerie:int [line 39]\n  *n$0.idSerie:com.stn.pojo.News(root com.stn.pojo.News)=n$1 [line 39]\n  NULLIFY(&idSerie); [line 39]\n  NULLIFY(&this); [line 39]\n  EXIT_SCOPE(n$0,n$1,idSerie,this); [line 39]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setIdSerie(int):void.11337769be961811314eefb7724b0ed0_4" -> "com.stn.pojo.News.setIdSerie(int):void.11337769be961811314eefb7724b0ed0_5" ;
+	 "com.stn.pojo.News.setIdSerie(int):void.11337769be961811314eefb7724b0ed0_4" -> "com.stn.pojo.News.setIdSerie(int):void.11337769be961811314eefb7724b0ed0_3" [color="red" ];
+"com.stn.pojo.News.setIdSerie(int):void.11337769be961811314eefb7724b0ed0_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 40]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setIdSerie(int):void.11337769be961811314eefb7724b0ed0_5" -> "com.stn.pojo.News.setIdSerie(int):void.11337769be961811314eefb7724b0ed0_2" ;
+	 "com.stn.pojo.News.setIdSerie(int):void.11337769be961811314eefb7724b0ed0_5" -> "com.stn.pojo.News.setIdSerie(int):void.11337769be961811314eefb7724b0ed0_3" [color="red" ];
+}

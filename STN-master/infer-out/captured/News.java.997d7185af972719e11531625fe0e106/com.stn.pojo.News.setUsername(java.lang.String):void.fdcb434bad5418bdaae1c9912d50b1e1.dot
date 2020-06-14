@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.News.setUsername(java.lang.String):void.fdcb434bad5418bdaae1c9912d50b1e1_1" [label="1: Start void News.setUsername(String)\nFormals:  this:com.stn.pojo.News* username:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.News.setUsername(java.lang.String):void.fdcb434bad5418bdaae1c9912d50b1e1_1" -> "com.stn.pojo.News.setUsername(java.lang.String):void.fdcb434bad5418bdaae1c9912d50b1e1_4" ;
+"com.stn.pojo.News.setUsername(java.lang.String):void.fdcb434bad5418bdaae1c9912d50b1e1_2" [label="2: Exit void News.setUsername(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.News.setUsername(java.lang.String):void.fdcb434bad5418bdaae1c9912d50b1e1_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 48]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setUsername(java.lang.String):void.fdcb434bad5418bdaae1c9912d50b1e1_3" -> "com.stn.pojo.News.setUsername(java.lang.String):void.fdcb434bad5418bdaae1c9912d50b1e1_2" ;
+"com.stn.pojo.News.setUsername(java.lang.String):void.fdcb434bad5418bdaae1c9912d50b1e1_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.News* [line 47]\n  n$1=*&username:java.lang.String* [line 47]\n  *n$0.username:com.stn.pojo.News(root com.stn.pojo.News)=n$1 [line 47]\n  NULLIFY(&username); [line 47]\n  NULLIFY(&this); [line 47]\n  EXIT_SCOPE(n$0,n$1,username,this); [line 47]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setUsername(java.lang.String):void.fdcb434bad5418bdaae1c9912d50b1e1_4" -> "com.stn.pojo.News.setUsername(java.lang.String):void.fdcb434bad5418bdaae1c9912d50b1e1_5" ;
+	 "com.stn.pojo.News.setUsername(java.lang.String):void.fdcb434bad5418bdaae1c9912d50b1e1_4" -> "com.stn.pojo.News.setUsername(java.lang.String):void.fdcb434bad5418bdaae1c9912d50b1e1_3" [color="red" ];
+"com.stn.pojo.News.setUsername(java.lang.String):void.fdcb434bad5418bdaae1c9912d50b1e1_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 48]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setUsername(java.lang.String):void.fdcb434bad5418bdaae1c9912d50b1e1_5" -> "com.stn.pojo.News.setUsername(java.lang.String):void.fdcb434bad5418bdaae1c9912d50b1e1_2" ;
+	 "com.stn.pojo.News.setUsername(java.lang.String):void.fdcb434bad5418bdaae1c9912d50b1e1_5" -> "com.stn.pojo.News.setUsername(java.lang.String):void.fdcb434bad5418bdaae1c9912d50b1e1_3" [color="red" ];
+}

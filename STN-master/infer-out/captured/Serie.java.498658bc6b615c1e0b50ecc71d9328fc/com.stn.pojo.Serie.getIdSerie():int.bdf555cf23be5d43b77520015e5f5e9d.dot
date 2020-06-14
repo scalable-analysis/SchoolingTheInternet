@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Serie.getIdSerie():int.bdf555cf23be5d43b77520015e5f5e9d_1" [label="1: Start int Serie.getIdSerie()\nFormals:  this:com.stn.pojo.Serie*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Serie.getIdSerie():int.bdf555cf23be5d43b77520015e5f5e9d_1" -> "com.stn.pojo.Serie.getIdSerie():int.bdf555cf23be5d43b77520015e5f5e9d_4" ;
+"com.stn.pojo.Serie.getIdSerie():int.bdf555cf23be5d43b77520015e5f5e9d_2" [label="2: Exit int Serie.getIdSerie() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Serie.getIdSerie():int.bdf555cf23be5d43b77520015e5f5e9d_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 28]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Serie.getIdSerie():int.bdf555cf23be5d43b77520015e5f5e9d_3" -> "com.stn.pojo.Serie.getIdSerie():int.bdf555cf23be5d43b77520015e5f5e9d_2" ;
+"com.stn.pojo.Serie.getIdSerie():int.bdf555cf23be5d43b77520015e5f5e9d_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Serie* [line 28]\n  n$1=*n$0.idSerie:int(root com.stn.pojo.Serie) [line 28]\n  *&return:int=n$1 [line 28]\n  NULLIFY(&this); [line 28]\n  EXIT_SCOPE(n$0,n$1,this); [line 28]\n  APPLY_ABSTRACTION; [line 28]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Serie.getIdSerie():int.bdf555cf23be5d43b77520015e5f5e9d_4" -> "com.stn.pojo.Serie.getIdSerie():int.bdf555cf23be5d43b77520015e5f5e9d_2" ;
+	 "com.stn.pojo.Serie.getIdSerie():int.bdf555cf23be5d43b77520015e5f5e9d_4" -> "com.stn.pojo.Serie.getIdSerie():int.bdf555cf23be5d43b77520015e5f5e9d_3" [color="red" ];
+}

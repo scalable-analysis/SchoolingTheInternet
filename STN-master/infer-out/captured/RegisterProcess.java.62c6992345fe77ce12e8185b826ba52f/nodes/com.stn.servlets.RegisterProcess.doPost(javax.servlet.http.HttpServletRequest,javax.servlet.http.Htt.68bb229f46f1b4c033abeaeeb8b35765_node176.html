@@ -1,0 +1,794 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.servlets.RegisterProcess.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node176</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../RegisterProcess.java.62c6992345fe77ce12e8185b826ba52f.html#LINE151">176</a></h1></center>PROC: <a href="./../com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765.html">void RegisterProcess.doPost(HttpServletRequest,HttpServletResponse)</a> LINE: <a href="./../../RegisterProcess.java.62c6992345fe77ce12e8185b826ba52f.html#LINE151">151</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node168.html"><span class='dangling with_tooltip'>N_168<span class='tooltip'>node168 preds:166 succs:176 exn:195 
+NOT VISITED</span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node186.html"><span class='visited with_tooltip'>N_186<span class='tooltip'>node186 preds:182 176 175 158 148 139 130 121 112 103 94 85 76 67 51 succs:187 exn:3 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node195.html"><span class='visited with_tooltip'>N_195<span class='tooltip'>node195 preds: succs:193 194 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$399=*&amp;userHelper:com.stn.helpers.UserHelper* [line 151];
+_=*n$399:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 151];
+n$401=*&amp;username:java.lang.String* [line 151];
+n$402=*&amp;hashedPassword:java.lang.String* [line 151];
+n$403=*&amp;salt:signed char[_*_](*) [line 151];
+n$404=*&amp;email:java.lang.String* [line 151];
+n$405=*&amp;firstName:java.lang.String* [line 151];
+n$406=*&amp;lastName:java.lang.String* [line 151];
+n$407=_fun_void UserHelper.addUser(String,String,byte[],String,String,String,int,int,int,int)(n$399:com.stn.helpers.UserHelper*,n$401:java.lang.String*,n$402:java.lang.String*,n$403:signed char[_*_](*),n$404:java.lang.String*,n$405:java.lang.String*,n$406:java.lang.String*,0:int,0:int,0:int,1:int) virtual [line 151];
+</LISTING>
+<hr width="100%">
+<a name="session220" href="./../nodes/com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node176.html#session220">node176#session220</a>(<a href="./../../RegisterProcess.java.62c6992345fe77ce12e8185b826ba52f.html#LINE151">151</a>) [compute pre] liveness 176
+<LISTING class='color_black'>JOIN
+
+LEFT:   { error, url, session, response }
+RIGHT:  { out, return }
+RESULT: { error, url, out, return, session, response }
+
+</LISTING>
+<hr width="100%">
+<a name="session221" href="./../nodes/com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node176.html#session221">node176#session221</a>(<a href="./../../RegisterProcess.java.62c6992345fe77ce12e8185b826ba52f.html#LINE151">151</a>) [exec] liveness 176
+<LISTING class='color_black'>PRE STATE:
+{ error, url, out, return, session, response }
+
+INSTR=  n$407=_fun_void UserHelper.addUser(String,String,byte[],String,String,String,int,int,int,int)(n$399:com.stn.helpers.UserHelper*,n$401:java.lang.String*,n$402:java.lang.String*,n$403:signed char[_*_](*),n$404:java.lang.String*,n$405:java.lang.String*,n$406:java.lang.String*,0:int,0:int,0:int,1:int) virtual [line 151]; 
+
+STATE:
+{ n$399,
+  n$401,
+  n$402,
+  n$403,
+  n$404,
+  n$405,
+  n$406,
+  error,
+  url,
+  out,
+  return,
+  session,
+  response }
+
+INSTR=  n$406=*&amp;lastName:java.lang.String* [line 151]; 
+
+STATE:
+{ n$399,
+  n$401,
+  n$402,
+  n$403,
+  n$404,
+  n$405,
+  error,
+  url,
+  out,
+  lastName,
+  return,
+  session,
+  response }
+
+INSTR=  n$405=*&amp;firstName:java.lang.String* [line 151]; 
+
+STATE:
+{ n$399,
+  n$401,
+  n$402,
+  n$403,
+  n$404,
+  error,
+  url,
+  out,
+  firstName,
+  lastName,
+  return,
+  session,
+  response }
+
+INSTR=  n$404=*&amp;email:java.lang.String* [line 151]; 
+
+STATE:
+{ n$399,
+  n$401,
+  n$402,
+  n$403,
+  error,
+  url,
+  out,
+  firstName,
+  lastName,
+  email,
+  return,
+  session,
+  response }
+
+INSTR=  n$403=*&amp;salt:signed char[_*_](*) [line 151]; 
+
+STATE:
+{ n$399,
+  n$401,
+  n$402,
+  error,
+  url,
+  out,
+  firstName,
+  salt,
+  lastName,
+  email,
+  return,
+  session,
+  response }
+
+INSTR=  n$402=*&amp;hashedPassword:java.lang.String* [line 151]; 
+
+STATE:
+{ n$399,
+  n$401,
+  error,
+  url,
+  out,
+  firstName,
+  salt,
+  lastName,
+  email,
+  return,
+  hashedPassword,
+  session,
+  response }
+
+INSTR=  n$401=*&amp;username:java.lang.String* [line 151]; 
+
+STATE:
+{ n$399,
+  error,
+  url,
+  out,
+  username,
+  firstName,
+  salt,
+  lastName,
+  email,
+  return,
+  hashedPassword,
+  session,
+  response }
+
+INSTR=  _=*n$399:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 151]; 
+
+STATE UNCHANGED
+
+INSTR=  n$399=*&amp;userHelper:com.stn.helpers.UserHelper* [line 151]; 
+
+STATE:
+{ error,
+  url,
+  out,
+  username,
+  firstName,
+  salt,
+  lastName,
+  email,
+  return,
+  hashedPassword,
+  userHelper,
+  session,
+  response }
+
+</LISTING>
+<hr width="100%">
+<a name="session739" href="./../nodes/com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node176.html#session739">node176#session739</a>(<a href="./../../RegisterProcess.java.62c6992345fe77ce12e8185b826ba52f.html#LINE151">151</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session740" href="./../nodes/com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node176.html#session740">node176#session740</a>(<a href="./../../RegisterProcess.java.62c6992345fe77ce12e8185b826ba52f.html#LINE151">151</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ error,
+   url,
+   out,
+   username,
+   firstName,
+   salt,
+   lastName,
+   email,
+   hashedPassword,
+   userHelper,
+   session },
+{ n$366, invitatie, applicationHelper })
+
+INSTR=  n$399=*&amp;userHelper:com.stn.helpers.UserHelper* [line 151]; 
+
+STATE:
+({ n$399,
+   error,
+   url,
+   out,
+   username,
+   firstName,
+   salt,
+   lastName,
+   email,
+   hashedPassword,
+   userHelper,
+   session },
+{ n$366, invitatie, applicationHelper })
+
+INSTR=  _=*n$399:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 151]; 
+
+STATE:
+({ _,
+   n$399,
+   error,
+   url,
+   out,
+   username,
+   firstName,
+   salt,
+   lastName,
+   email,
+   hashedPassword,
+   userHelper,
+   session },
+{ n$366, invitatie, applicationHelper })
+
+INSTR=  n$401=*&amp;username:java.lang.String* [line 151]; 
+
+STATE:
+({ _,
+   n$399,
+   n$401,
+   error,
+   url,
+   out,
+   username,
+   firstName,
+   salt,
+   lastName,
+   email,
+   hashedPassword,
+   userHelper,
+   session },
+{ n$366, invitatie, applicationHelper })
+
+INSTR=  n$402=*&amp;hashedPassword:java.lang.String* [line 151]; 
+
+STATE:
+({ _,
+   n$399,
+   n$401,
+   n$402,
+   error,
+   url,
+   out,
+   username,
+   firstName,
+   salt,
+   lastName,
+   email,
+   hashedPassword,
+   userHelper,
+   session },
+{ n$366, invitatie, applicationHelper })
+
+INSTR=  n$403=*&amp;salt:signed char[_*_](*) [line 151]; 
+
+STATE:
+({ _,
+   n$399,
+   n$401,
+   n$402,
+   n$403,
+   error,
+   url,
+   out,
+   username,
+   firstName,
+   salt,
+   lastName,
+   email,
+   hashedPassword,
+   userHelper,
+   session },
+{ n$366, invitatie, applicationHelper })
+
+INSTR=  n$404=*&amp;email:java.lang.String* [line 151]; 
+
+STATE:
+({ _,
+   n$399,
+   n$401,
+   n$402,
+   n$403,
+   n$404,
+   error,
+   url,
+   out,
+   username,
+   firstName,
+   salt,
+   lastName,
+   email,
+   hashedPassword,
+   userHelper,
+   session },
+{ n$366, invitatie, applicationHelper })
+
+INSTR=  n$405=*&amp;firstName:java.lang.String* [line 151]; 
+
+STATE:
+({ _,
+   n$399,
+   n$401,
+   n$402,
+   n$403,
+   n$404,
+   n$405,
+   error,
+   url,
+   out,
+   username,
+   firstName,
+   salt,
+   lastName,
+   email,
+   hashedPassword,
+   userHelper,
+   session },
+{ n$366, invitatie, applicationHelper })
+
+INSTR=  n$406=*&amp;lastName:java.lang.String* [line 151]; 
+
+STATE:
+({ _,
+   n$399,
+   n$401,
+   n$402,
+   n$403,
+   n$404,
+   n$405,
+   n$406,
+   error,
+   url,
+   out,
+   username,
+   firstName,
+   salt,
+   lastName,
+   email,
+   hashedPassword,
+   userHelper,
+   session },
+{ n$366, invitatie, applicationHelper })
+
+INSTR=  n$407=_fun_void UserHelper.addUser(String,String,byte[],String,String,String,int,int,int,int)(n$399:com.stn.helpers.UserHelper*,n$401:java.lang.String*,n$402:java.lang.String*,n$403:signed char[_*_](*),n$404:java.lang.String*,n$405:java.lang.String*,n$406:java.lang.String*,0:int,0:int,0:int,1:int) virtual [line 151]; 
+
+STATE:
+({ error, url, out, session },
+{ _,
+  n$399,
+  n$401,
+  n$402,
+  n$403,
+  n$404,
+  n$405,
+  n$406,
+  n$407,
+  username,
+  firstName,
+  salt,
+  lastName,
+  email,
+  hashedPassword,
+  userHelper })
+
+</LISTING>
+<hr width="100%">
+<a name="session340" href="./../nodes/com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node176.html#session340">node176#session340</a>(<a href="./../../RegisterProcess.java.62c6992345fe77ce12e8185b826ba52f.html#LINE151">151</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session341" href="./../nodes/com.stn.servlets.RegisterProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.68bb229f46f1b4c033abeaeeb8b35765_node176.html#session341">node176#session341</a>(<a href="./../../RegisterProcess.java.62c6992345fe77ce12e8185b826ba52f.html#LINE151">151</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$36 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  n$46 -&gt; { email -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+            expDate -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+            idFacultate -&gt; { },
+            idGrupa -&gt; { },
+            idInvitatie -&gt; { },
+            idSerie -&gt; { },
+            token -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+            userClass -&gt; { } },
+  n$52 -&gt; { [_] -&gt; { } },
+  n$56 -&gt; { },
+  n$62 -&gt; { },
+  n$66 -&gt; { },
+  n$71 -&gt; { [_] -&gt; { } },
+  n$75 -&gt; { },
+  n$89 -&gt; { [_] -&gt; { } },
+  n$103 -&gt; { },
+  n$125 -&gt; { },
+  n$147 -&gt; { },
+  n$169 -&gt; { },
+  n$191 -&gt; { },
+  n$213 -&gt; { },
+  n$235 -&gt; { },
+  n$257 -&gt; { },
+  n$346 -&gt; { connection -&gt; { },
+             dbHost -&gt; { },
+             dbName -&gt; { },
+             dbPassword -&gt; { },
+             dbPort -&gt; { },
+             dbUser -&gt; { },
+             preparedStatement -&gt; { },
+             query -&gt; { },
+             resultSet -&gt; { } },
+  n$352 -&gt; { },
+  n$354 -&gt; { connection -&gt; { },
+             dbHost -&gt; { },
+             dbName -&gt; { },
+             dbPassword -&gt; { },
+             dbPort -&gt; { },
+             dbUser -&gt; { },
+             preparedStatement -&gt; { },
+             query -&gt; { },
+             resultSet -&gt; { },
+             AB -&gt; { },
+             rnd -&gt; { } },
+  n$361 -&gt; { },
+  n$365 -&gt; *,
+  inviteCode -&gt; { },
+  error -&gt; { },
+  url -&gt; { },
+  out -&gt; { },
+  username -&gt; { },
+  firstName -&gt; { },
+  salt -&gt; { },
+  extra -&gt; { },
+  password1 -&gt; { },
+  faq -&gt; { },
+  invitatie -&gt; { email -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+                 expDate -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+                 idFacultate -&gt; { },
+                 idGrupa -&gt; { },
+                 idInvitatie -&gt; { },
+                 idSerie -&gt; { },
+                 token -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+                 userClass -&gt; { } },
+  lastName -&gt; { },
+  email -&gt; { },
+  hashedPassword -&gt; *,
+  securityHelper -&gt; { connection -&gt; { },
+                      dbHost -&gt; { },
+                      dbName -&gt; { },
+                      dbPassword -&gt; { },
+                      dbPort -&gt; { },
+                      dbUser -&gt; { },
+                      preparedStatement -&gt; { },
+                      query -&gt; { },
+                      resultSet -&gt; { },
+                      AB -&gt; { },
+                      rnd -&gt; { },
+                      salt -&gt; { } },
+  password2 -&gt; { },
+  userHelper -&gt; { connection -&gt; *,
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; *,
+                  query -&gt; { },
+                  resultSet -&gt; ({ Other(boolean UserHelper.checkAvailability(String,String) at line 138) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  terms -&gt; { },
+  applicationHelper -&gt; { connection -&gt; *,
+                         dbHost -&gt; { },
+                         dbName -&gt; { },
+                         dbPassword -&gt; { },
+                         dbPort -&gt; { },
+                         dbUser -&gt; { },
+                         preparedStatement -&gt; *,
+                         query -&gt; { },
+                         resultSet -&gt; ({ Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  session -&gt; { } }
+
+
+
+
+
+
+
+
+
+INSTR=  n$407 := void UserHelper.addUser(String,String,byte[],String,String,String,int,int,int,int)({ userHelper,
+                                                                    username,
+                                                                    hashedPassword,
+                                                                    salt,
+                                                                    email,
+                                                                    firstName,
+                                                                    lastName,
+                                                                    0,
+                                                                    0,
+                                                                    0,
+                                                                    1 }) [line 151]; 
+
+STATE:
+{ n$36 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  n$46 -&gt; { email -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+            expDate -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+            idFacultate -&gt; { },
+            idGrupa -&gt; { },
+            idInvitatie -&gt; { },
+            idSerie -&gt; { },
+            token -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+            userClass -&gt; { } },
+  n$52 -&gt; { [_] -&gt; { } },
+  n$56 -&gt; { },
+  n$62 -&gt; { },
+  n$66 -&gt; { },
+  n$71 -&gt; { [_] -&gt; { } },
+  n$75 -&gt; { },
+  n$89 -&gt; { [_] -&gt; { } },
+  n$103 -&gt; { },
+  n$125 -&gt; { },
+  n$147 -&gt; { },
+  n$169 -&gt; { },
+  n$191 -&gt; { },
+  n$213 -&gt; { },
+  n$235 -&gt; { },
+  n$257 -&gt; { },
+  n$346 -&gt; { connection -&gt; { },
+             dbHost -&gt; { },
+             dbName -&gt; { },
+             dbPassword -&gt; { },
+             dbPort -&gt; { },
+             dbUser -&gt; { },
+             preparedStatement -&gt; { },
+             query -&gt; { },
+             resultSet -&gt; { } },
+  n$352 -&gt; { },
+  n$354 -&gt; { connection -&gt; { },
+             dbHost -&gt; { },
+             dbName -&gt; { },
+             dbPassword -&gt; { },
+             dbPort -&gt; { },
+             dbUser -&gt; { },
+             preparedStatement -&gt; { },
+             query -&gt; { },
+             resultSet -&gt; { },
+             AB -&gt; { },
+             rnd -&gt; { } },
+  n$361 -&gt; { },
+  n$365 -&gt; *,
+  inviteCode -&gt; { },
+  error -&gt; { },
+  url -&gt; { },
+  out -&gt; { },
+  username -&gt; { },
+  firstName -&gt; { },
+  salt -&gt; { },
+  extra -&gt; { },
+  password1 -&gt; { },
+  faq -&gt; { },
+  invitatie -&gt; { email -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+                 expDate -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+                 idFacultate -&gt; { },
+                 idGrupa -&gt; { },
+                 idInvitatie -&gt; { },
+                 idSerie -&gt; { },
+                 token -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+                 userClass -&gt; { } },
+  lastName -&gt; { },
+  email -&gt; { },
+  hashedPassword -&gt; *,
+  securityHelper -&gt; { connection -&gt; { },
+                      dbHost -&gt; { },
+                      dbName -&gt; { },
+                      dbPassword -&gt; { },
+                      dbPort -&gt; { },
+                      dbUser -&gt; { },
+                      preparedStatement -&gt; { },
+                      query -&gt; { },
+                      resultSet -&gt; { },
+                      AB -&gt; { },
+                      rnd -&gt; { },
+                      salt -&gt; { } },
+  password2 -&gt; { },
+  userHelper -&gt; { connection -&gt; *,
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; *,
+                  query -&gt; { },
+                  resultSet -&gt; ({ Other(boolean UserHelper.checkAvailability(String,String) at line 138) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  terms -&gt; { },
+  applicationHelper -&gt; { connection -&gt; *,
+                         dbHost -&gt; { },
+                         dbName -&gt; { },
+                         dbPassword -&gt; { },
+                         dbPort -&gt; { },
+                         dbUser -&gt; { },
+                         preparedStatement -&gt; *,
+                         query -&gt; { },
+                         resultSet -&gt; ({ Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  session -&gt; { } }
+
+INSTR=  NULLIFY(&amp;username); [line 151]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;firstName); [line 151]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;salt); [line 151]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;lastName); [line 151]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;email); [line 151]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;hashedPassword); [line 151]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;userHelper); [line 151]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(n$407,username,firstName,salt,lastName,email,hashedPassword,userHelper); [line 151]; 
+
+STATE:
+{ n$36 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  n$46 -&gt; { email -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+            expDate -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+            idFacultate -&gt; { },
+            idGrupa -&gt; { },
+            idInvitatie -&gt; { },
+            idSerie -&gt; { },
+            token -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+            userClass -&gt; { } },
+  n$52 -&gt; { [_] -&gt; { } },
+  n$56 -&gt; { },
+  n$62 -&gt; { },
+  n$66 -&gt; { },
+  n$71 -&gt; { [_] -&gt; { } },
+  n$75 -&gt; { },
+  n$89 -&gt; { [_] -&gt; { } },
+  n$103 -&gt; { },
+  n$125 -&gt; { },
+  n$147 -&gt; { },
+  n$169 -&gt; { },
+  n$191 -&gt; { },
+  n$213 -&gt; { },
+  n$235 -&gt; { },
+  n$257 -&gt; { },
+  n$346 -&gt; { connection -&gt; { },
+             dbHost -&gt; { },
+             dbName -&gt; { },
+             dbPassword -&gt; { },
+             dbPort -&gt; { },
+             dbUser -&gt; { },
+             preparedStatement -&gt; { },
+             query -&gt; { },
+             resultSet -&gt; { } },
+  n$352 -&gt; { },
+  n$354 -&gt; { connection -&gt; { },
+             dbHost -&gt; { },
+             dbName -&gt; { },
+             dbPassword -&gt; { },
+             dbPort -&gt; { },
+             dbUser -&gt; { },
+             preparedStatement -&gt; { },
+             query -&gt; { },
+             resultSet -&gt; { },
+             AB -&gt; { },
+             rnd -&gt; { } },
+  n$361 -&gt; { },
+  n$365 -&gt; *,
+  inviteCode -&gt; { },
+  error -&gt; { },
+  url -&gt; { },
+  out -&gt; { },
+  username -&gt; { },
+  firstName -&gt; { },
+  salt -&gt; { },
+  extra -&gt; { },
+  password1 -&gt; { },
+  faq -&gt; { },
+  invitatie -&gt; { email -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+                 expDate -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+                 idFacultate -&gt; { },
+                 idGrupa -&gt; { },
+                 idInvitatie -&gt; { },
+                 idSerie -&gt; { },
+                 token -&gt; { Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+                 userClass -&gt; { } },
+  lastName -&gt; { },
+  email -&gt; { },
+  hashedPassword -&gt; *,
+  securityHelper -&gt; { connection -&gt; { },
+                      dbHost -&gt; { },
+                      dbName -&gt; { },
+                      dbPassword -&gt; { },
+                      dbPort -&gt; { },
+                      dbUser -&gt; { },
+                      preparedStatement -&gt; { },
+                      query -&gt; { },
+                      resultSet -&gt; { },
+                      AB -&gt; { },
+                      rnd -&gt; { },
+                      salt -&gt; { } },
+  password2 -&gt; { },
+  userHelper -&gt; { connection -&gt; *,
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; *,
+                  query -&gt; { },
+                  resultSet -&gt; ({ Other(boolean UserHelper.checkAvailability(String,String) at line 138) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  terms -&gt; { },
+  applicationHelper -&gt; { connection -&gt; *,
+                         dbHost -&gt; { },
+                         dbName -&gt; { },
+                         dbPassword -&gt; { },
+                         dbPort -&gt; { },
+                         dbUser -&gt; { },
+                         preparedStatement -&gt; *,
+                         query -&gt; { },
+                         resultSet -&gt; ({ Other(Invitatie ApplicationHelper.getInvitatie(String) at line 60) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  session -&gt; { } }
+
+INSTR=  APPLY_ABSTRACTION; [line 151]; 
+
+STATE UNCHANGED
+
+</LISTING>

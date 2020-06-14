@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Invitatie.getUserClass():int.260262d678426679c97c23875dcd6122_1" [label="1: Start int Invitatie.getUserClass()\nFormals:  this:com.stn.pojo.Invitatie*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Invitatie.getUserClass():int.260262d678426679c97c23875dcd6122_1" -> "com.stn.pojo.Invitatie.getUserClass():int.260262d678426679c97c23875dcd6122_4" ;
+"com.stn.pojo.Invitatie.getUserClass():int.260262d678426679c97c23875dcd6122_2" [label="2: Exit int Invitatie.getUserClass() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Invitatie.getUserClass():int.260262d678426679c97c23875dcd6122_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 84]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.getUserClass():int.260262d678426679c97c23875dcd6122_3" -> "com.stn.pojo.Invitatie.getUserClass():int.260262d678426679c97c23875dcd6122_2" ;
+"com.stn.pojo.Invitatie.getUserClass():int.260262d678426679c97c23875dcd6122_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Invitatie* [line 84]\n  n$1=*n$0.userClass:int(root com.stn.pojo.Invitatie) [line 84]\n  *&return:int=n$1 [line 84]\n  NULLIFY(&this); [line 84]\n  EXIT_SCOPE(n$0,n$1,this); [line 84]\n  APPLY_ABSTRACTION; [line 84]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.getUserClass():int.260262d678426679c97c23875dcd6122_4" -> "com.stn.pojo.Invitatie.getUserClass():int.260262d678426679c97c23875dcd6122_2" ;
+	 "com.stn.pojo.Invitatie.getUserClass():int.260262d678426679c97c23875dcd6122_4" -> "com.stn.pojo.Invitatie.getUserClass():int.260262d678426679c97c23875dcd6122_3" [color="red" ];
+}

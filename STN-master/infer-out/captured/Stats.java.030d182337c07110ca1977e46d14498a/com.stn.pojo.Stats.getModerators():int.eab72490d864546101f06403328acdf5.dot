@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Stats.getModerators():int.eab72490d864546101f06403328acdf5_1" [label="1: Start int Stats.getModerators()\nFormals:  this:com.stn.pojo.Stats*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Stats.getModerators():int.eab72490d864546101f06403328acdf5_1" -> "com.stn.pojo.Stats.getModerators():int.eab72490d864546101f06403328acdf5_4" ;
+"com.stn.pojo.Stats.getModerators():int.eab72490d864546101f06403328acdf5_2" [label="2: Exit int Stats.getModerators() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Stats.getModerators():int.eab72490d864546101f06403328acdf5_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 103]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Stats.getModerators():int.eab72490d864546101f06403328acdf5_3" -> "com.stn.pojo.Stats.getModerators():int.eab72490d864546101f06403328acdf5_2" ;
+"com.stn.pojo.Stats.getModerators():int.eab72490d864546101f06403328acdf5_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Stats* [line 103]\n  n$1=*n$0.moderators:int(root com.stn.pojo.Stats) [line 103]\n  *&return:int=n$1 [line 103]\n  NULLIFY(&this); [line 103]\n  EXIT_SCOPE(n$0,n$1,this); [line 103]\n  APPLY_ABSTRACTION; [line 103]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Stats.getModerators():int.eab72490d864546101f06403328acdf5_4" -> "com.stn.pojo.Stats.getModerators():int.eab72490d864546101f06403328acdf5_2" ;
+	 "com.stn.pojo.Stats.getModerators():int.eab72490d864546101f06403328acdf5_4" -> "com.stn.pojo.Stats.getModerators():int.eab72490d864546101f06403328acdf5_3" [color="red" ];
+}

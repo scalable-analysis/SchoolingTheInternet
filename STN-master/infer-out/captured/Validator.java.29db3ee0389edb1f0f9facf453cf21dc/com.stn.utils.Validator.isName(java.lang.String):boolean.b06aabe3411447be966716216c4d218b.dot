@@ -1,0 +1,89 @@
+/* @generated */
+digraph cfg {
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_1" [label="1: Start boolean Validator.isName(String)\nFormals:  name:java.lang.String*\nLocals:  $irvar0:void $bcvar4:void $bcvar3:void $bcvar2:void chars:unsigned short[_*_](*) c:unsigned short \n  " color=yellow style=filled]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_1" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_4" ;
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_2" [label="2: Exit boolean Validator.isName(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [label="3:  exceptions sink \n   NULLIFY(&chars); [line 37]\n  NULLIFY(&$bcvar3); [line 37]\n  NULLIFY(&$bcvar4); [line 37]\n  NULLIFY(&$bcvar2); [line 37]\n  NULLIFY(&c); [line 37]\n  NULLIFY(&$irvar0); [line 37]\n  EXIT_SCOPE(chars,$bcvar3,$bcvar4,$bcvar2,c,$irvar0); [line 37]\n  APPLY_ABSTRACTION; [line 37]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_2" ;
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_4" [label="4:  Call char[] String.toCharArray() \n   n$0=*&name:java.lang.String* [line 30]\n  _=*n$0:java.lang.String*(root java.lang.String) [line 30]\n  n$2=_fun_char[] String.toCharArray()(n$0:java.lang.String*) virtual [line 30]\n  *&chars:unsigned short[_*_](*)=n$2 [line 30]\n  NULLIFY(&name); [line 30]\n  EXIT_SCOPE(_,n$0,n$2,name); [line 30]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_4" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_5" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_4" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_5" [label="5:  method_body \n   n$3=*&chars:unsigned short[_*_](*) [line 32]\n  *&$bcvar2:unsigned short[_*_](*)=n$3 [line 32]\n  NULLIFY(&chars); [line 32]\n  EXIT_SCOPE(n$3,chars); [line 32]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_5" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_6" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_5" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_6" [label="6:  method_body \n   n$4=*&$bcvar2:unsigned short[_*_](*) [line 32]\n  _=*n$4:int(root unsigned short[_*_]) [line 32]\n  n$6=_fun___get_array_length(n$4:unsigned short[_*_](*)) [line 32]\n  *&$bcvar3:int=n$6 [line 32]\n  EXIT_SCOPE(_,n$4,n$6); [line 32]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_6" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_7" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_6" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_7" [label="7:  method_body \n   *&$bcvar4:int=0 [line 32]\n  APPLY_ABSTRACTION; [line 32]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_7" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_10" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_7" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_8" [label="8: Prune (true branch, if) \n   n$7=*&$bcvar4:int [line 32]\n  n$8=*&$bcvar3:int [line 32]\n  PRUNE(!(n$7 >= n$8), true); [line 32]\n  EXIT_SCOPE(n$7,n$8); [line 32]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_8" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_11" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_8" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_9" [label="9: Prune (false branch, if) \n   n$7=*&$bcvar4:int [line 32]\n  n$8=*&$bcvar3:int [line 32]\n  PRUNE((n$7 >= n$8), false); [line 32]\n  NULLIFY(&$bcvar3); [line 32]\n  NULLIFY(&$bcvar4); [line 32]\n  NULLIFY(&$bcvar2); [line 32]\n  EXIT_SCOPE(n$7,n$8,$bcvar3,$bcvar4,$bcvar2); [line 32]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_9" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_18" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_9" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_10" [label="10: + \n  " ]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_10" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_8" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_10" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_9" ;
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_11" [label="11:  method_body \n   n$9=*&$bcvar2:unsigned short[_*_](*) [line 32]\n  _=*n$9:unsigned short(root unsigned short[_*_]) [line 32]\n  n$10=*&$bcvar4:int [line 32]\n  n$12=*n$9[n$10]:unsigned short [line 32]\n  *&c:unsigned short=n$12 [line 32]\n  EXIT_SCOPE(_,n$9,n$10,n$12); [line 32]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_11" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_12" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_11" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_12" [label="12:  Call boolean Character.isLetter(char) \n   n$13=*&c:unsigned short [line 33]\n  n$14=_fun_boolean Character.isLetter(char)(n$13:unsigned short) [line 33]\n  *&$irvar0:_Bool=n$14 [line 33]\n  NULLIFY(&c); [line 33]\n  EXIT_SCOPE(n$13,n$14,c); [line 33]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_12" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_15" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_12" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_13" [label="13: Prune (true branch, if) \n   n$15=*&$irvar0:_Bool [line 33]\n  PRUNE(!(n$15 != 0), true); [line 33]\n  NULLIFY(&$bcvar3); [line 33]\n  NULLIFY(&$bcvar4); [line 33]\n  NULLIFY(&$bcvar2); [line 33]\n  NULLIFY(&$irvar0); [line 33]\n  EXIT_SCOPE(n$15,$bcvar3,$bcvar4,$bcvar2,$irvar0); [line 33]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_13" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_16" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_13" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_14" [label="14: Prune (false branch, if) \n   n$15=*&$irvar0:_Bool [line 33]\n  PRUNE((n$15 != 0), false); [line 33]\n  NULLIFY(&$irvar0); [line 33]\n  EXIT_SCOPE(n$15,$irvar0); [line 33]\n " shape="invhouse"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_14" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_17" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_14" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_15" [label="15: + \n  " ]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_15" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_13" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_15" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_14" ;
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_16" [label="16:  method_body \n   *&return:_Bool=0 [line 34]\n  APPLY_ABSTRACTION; [line 34]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_16" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_2" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_16" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_17" [label="17:  method_body \n   n$16=*&$bcvar4:int [line 32]\n  *&$bcvar4:int=(n$16 + 1) [line 32]\n  EXIT_SCOPE(n$16); [line 32]\n  APPLY_ABSTRACTION; [line 32]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_17" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_10" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_17" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+"com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_18" [label="18:  method_body \n   *&return:_Bool=1 [line 37]\n  APPLY_ABSTRACTION; [line 37]\n " shape="box"]
+	
+
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_18" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_2" ;
+	 "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_18" -> "com.stn.utils.Validator.isName(java.lang.String):boolean.b06aabe3411447be966716216c4d218b_3" [color="red" ];
+}

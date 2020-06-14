@@ -72,7 +72,7 @@ public class FacultateProcess extends HttpServlet {
                 if(facultati.size() > 0) {
                     for (Facultate fac : facultati) {
                         result = result + "<tr><td class='row' style='padding: 2pt'>"+fac.getIdFacultate()+"</td>";
-                        result = result + "<td class='row' style='padding: 2pt'>"+ Encode.forHtml(fac.getNume())+"</td></tr>";
+                        result = result + "<td class='row' style='padding: 2pt'>";//+ Encode.forHtml(fac.getNume())+"</td></tr>";
                     }
                 } else {
                     result = result + "<tr><td class='row' colspan='2' style='padding: 2pt; text-align: center'>Nu au fost gasite facultati!</td></tr>";

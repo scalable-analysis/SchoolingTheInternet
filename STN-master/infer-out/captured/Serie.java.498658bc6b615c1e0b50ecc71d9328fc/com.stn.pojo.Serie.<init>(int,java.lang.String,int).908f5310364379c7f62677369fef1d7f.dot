@@ -1,0 +1,39 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_1" [label="1: Start Serie.<init>(int,String,int)\nFormals:  this:com.stn.pojo.Serie* idSerie:int nume:java.lang.String* idFacultate:int\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_1" -> "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_4" ;
+"com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_2" [label="2: Exit Serie.<init>(int,String,int) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 13]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_3" -> "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_2" ;
+"com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.stn.pojo.Serie* [line 9]\n  n$1=_fun_Object.<init>()(n$0:com.stn.pojo.Serie*) [line 9]\n  EXIT_SCOPE(n$0,n$1); [line 9]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_4" -> "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_5" ;
+	 "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_4" -> "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_3" [color="red" ];
+"com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_5" [label="5:  method_body \n   n$2=*&this:com.stn.pojo.Serie* [line 10]\n  n$3=*&idSerie:int [line 10]\n  *n$2.idSerie:com.stn.pojo.Serie(root com.stn.pojo.Serie)=n$3 [line 10]\n  NULLIFY(&idSerie); [line 10]\n  EXIT_SCOPE(n$2,n$3,idSerie); [line 10]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_5" -> "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_6" ;
+	 "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_5" -> "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_3" [color="red" ];
+"com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_6" [label="6:  method_body \n   n$4=*&this:com.stn.pojo.Serie* [line 11]\n  n$5=*&nume:java.lang.String* [line 11]\n  *n$4.nume:com.stn.pojo.Serie(root com.stn.pojo.Serie)=n$5 [line 11]\n  NULLIFY(&nume); [line 11]\n  EXIT_SCOPE(n$4,n$5,nume); [line 11]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_6" -> "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_7" ;
+	 "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_6" -> "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_3" [color="red" ];
+"com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_7" [label="7:  method_body \n   n$6=*&this:com.stn.pojo.Serie* [line 12]\n  n$7=*&idFacultate:int [line 12]\n  *n$6.idFacultate:com.stn.pojo.Serie(root com.stn.pojo.Serie)=n$7 [line 12]\n  NULLIFY(&idFacultate); [line 12]\n  NULLIFY(&this); [line 12]\n  EXIT_SCOPE(n$6,n$7,idFacultate,this); [line 12]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_7" -> "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_8" ;
+	 "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_7" -> "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_3" [color="red" ];
+"com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_8" [label="8:  method_body \n   APPLY_ABSTRACTION; [line 13]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_8" -> "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_2" ;
+	 "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_8" -> "com.stn.pojo.Serie.<init>(int,java.lang.String,int).908f5310364379c7f62677369fef1d7f_3" [color="red" ];
+}

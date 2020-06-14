@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Topic.setAuthorId(int):void.75f26e47d7f100a661b7dbb5f766e77d_1" [label="1: Start void Topic.setAuthorId(int)\nFormals:  this:com.stn.pojo.Topic* authorId:int\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Topic.setAuthorId(int):void.75f26e47d7f100a661b7dbb5f766e77d_1" -> "com.stn.pojo.Topic.setAuthorId(int):void.75f26e47d7f100a661b7dbb5f766e77d_4" ;
+"com.stn.pojo.Topic.setAuthorId(int):void.75f26e47d7f100a661b7dbb5f766e77d_2" [label="2: Exit void Topic.setAuthorId(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Topic.setAuthorId(int):void.75f26e47d7f100a661b7dbb5f766e77d_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 27]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Topic.setAuthorId(int):void.75f26e47d7f100a661b7dbb5f766e77d_3" -> "com.stn.pojo.Topic.setAuthorId(int):void.75f26e47d7f100a661b7dbb5f766e77d_2" ;
+"com.stn.pojo.Topic.setAuthorId(int):void.75f26e47d7f100a661b7dbb5f766e77d_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Topic* [line 26]\n  n$1=*&authorId:int [line 26]\n  *n$0.authorId:com.stn.pojo.Topic(root com.stn.pojo.Topic)=n$1 [line 26]\n  NULLIFY(&this); [line 26]\n  NULLIFY(&authorId); [line 26]\n  EXIT_SCOPE(n$0,n$1,this,authorId); [line 26]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Topic.setAuthorId(int):void.75f26e47d7f100a661b7dbb5f766e77d_4" -> "com.stn.pojo.Topic.setAuthorId(int):void.75f26e47d7f100a661b7dbb5f766e77d_5" ;
+	 "com.stn.pojo.Topic.setAuthorId(int):void.75f26e47d7f100a661b7dbb5f766e77d_4" -> "com.stn.pojo.Topic.setAuthorId(int):void.75f26e47d7f100a661b7dbb5f766e77d_3" [color="red" ];
+"com.stn.pojo.Topic.setAuthorId(int):void.75f26e47d7f100a661b7dbb5f766e77d_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 27]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Topic.setAuthorId(int):void.75f26e47d7f100a661b7dbb5f766e77d_5" -> "com.stn.pojo.Topic.setAuthorId(int):void.75f26e47d7f100a661b7dbb5f766e77d_2" ;
+	 "com.stn.pojo.Topic.setAuthorId(int):void.75f26e47d7f100a661b7dbb5f766e77d_5" -> "com.stn.pojo.Topic.setAuthorId(int):void.75f26e47d7f100a661b7dbb5f766e77d_3" [color="red" ];
+}

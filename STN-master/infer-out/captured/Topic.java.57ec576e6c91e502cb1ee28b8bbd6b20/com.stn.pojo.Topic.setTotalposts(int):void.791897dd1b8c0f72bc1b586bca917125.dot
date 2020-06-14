@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Topic.setTotalposts(int):void.791897dd1b8c0f72bc1b586bca917125_1" [label="1: Start void Topic.setTotalposts(int)\nFormals:  this:com.stn.pojo.Topic* totalposts:int\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Topic.setTotalposts(int):void.791897dd1b8c0f72bc1b586bca917125_1" -> "com.stn.pojo.Topic.setTotalposts(int):void.791897dd1b8c0f72bc1b586bca917125_4" ;
+"com.stn.pojo.Topic.setTotalposts(int):void.791897dd1b8c0f72bc1b586bca917125_2" [label="2: Exit void Topic.setTotalposts(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Topic.setTotalposts(int):void.791897dd1b8c0f72bc1b586bca917125_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 39]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Topic.setTotalposts(int):void.791897dd1b8c0f72bc1b586bca917125_3" -> "com.stn.pojo.Topic.setTotalposts(int):void.791897dd1b8c0f72bc1b586bca917125_2" ;
+"com.stn.pojo.Topic.setTotalposts(int):void.791897dd1b8c0f72bc1b586bca917125_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Topic* [line 38]\n  n$1=*&totalposts:int [line 38]\n  *n$0.totalposts:com.stn.pojo.Topic(root com.stn.pojo.Topic)=n$1 [line 38]\n  NULLIFY(&this); [line 38]\n  NULLIFY(&totalposts); [line 38]\n  EXIT_SCOPE(n$0,n$1,this,totalposts); [line 38]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Topic.setTotalposts(int):void.791897dd1b8c0f72bc1b586bca917125_4" -> "com.stn.pojo.Topic.setTotalposts(int):void.791897dd1b8c0f72bc1b586bca917125_5" ;
+	 "com.stn.pojo.Topic.setTotalposts(int):void.791897dd1b8c0f72bc1b586bca917125_4" -> "com.stn.pojo.Topic.setTotalposts(int):void.791897dd1b8c0f72bc1b586bca917125_3" [color="red" ];
+"com.stn.pojo.Topic.setTotalposts(int):void.791897dd1b8c0f72bc1b586bca917125_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 39]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Topic.setTotalposts(int):void.791897dd1b8c0f72bc1b586bca917125_5" -> "com.stn.pojo.Topic.setTotalposts(int):void.791897dd1b8c0f72bc1b586bca917125_2" ;
+	 "com.stn.pojo.Topic.setTotalposts(int):void.791897dd1b8c0f72bc1b586bca917125_5" -> "com.stn.pojo.Topic.setTotalposts(int):void.791897dd1b8c0f72bc1b586bca917125_3" [color="red" ];
+}

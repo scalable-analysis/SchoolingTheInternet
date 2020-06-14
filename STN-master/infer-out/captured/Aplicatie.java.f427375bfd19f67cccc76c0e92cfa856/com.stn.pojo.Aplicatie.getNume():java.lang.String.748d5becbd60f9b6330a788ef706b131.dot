@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Aplicatie.getNume():java.lang.String.748d5becbd60f9b6330a788ef706b131_1" [label="1: Start String Aplicatie.getNume()\nFormals:  this:com.stn.pojo.Aplicatie*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Aplicatie.getNume():java.lang.String.748d5becbd60f9b6330a788ef706b131_1" -> "com.stn.pojo.Aplicatie.getNume():java.lang.String.748d5becbd60f9b6330a788ef706b131_4" ;
+"com.stn.pojo.Aplicatie.getNume():java.lang.String.748d5becbd60f9b6330a788ef706b131_2" [label="2: Exit String Aplicatie.getNume() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Aplicatie.getNume():java.lang.String.748d5becbd60f9b6330a788ef706b131_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 76]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.getNume():java.lang.String.748d5becbd60f9b6330a788ef706b131_3" -> "com.stn.pojo.Aplicatie.getNume():java.lang.String.748d5becbd60f9b6330a788ef706b131_2" ;
+"com.stn.pojo.Aplicatie.getNume():java.lang.String.748d5becbd60f9b6330a788ef706b131_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Aplicatie* [line 76]\n  n$1=*n$0.nume:java.lang.String*(root com.stn.pojo.Aplicatie) [line 76]\n  *&return:java.lang.String*=n$1 [line 76]\n  NULLIFY(&this); [line 76]\n  EXIT_SCOPE(n$0,n$1,this); [line 76]\n  APPLY_ABSTRACTION; [line 76]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.getNume():java.lang.String.748d5becbd60f9b6330a788ef706b131_4" -> "com.stn.pojo.Aplicatie.getNume():java.lang.String.748d5becbd60f9b6330a788ef706b131_2" ;
+	 "com.stn.pojo.Aplicatie.getNume():java.lang.String.748d5becbd60f9b6330a788ef706b131_4" -> "com.stn.pojo.Aplicatie.getNume():java.lang.String.748d5becbd60f9b6330a788ef706b131_3" [color="red" ];
+}

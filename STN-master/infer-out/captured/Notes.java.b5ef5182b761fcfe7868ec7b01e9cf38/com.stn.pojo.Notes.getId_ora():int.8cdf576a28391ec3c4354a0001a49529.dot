@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Notes.getId_ora():int.8cdf576a28391ec3c4354a0001a49529_1" [label="1: Start int Notes.getId_ora()\nFormals:  this:com.stn.pojo.Notes*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Notes.getId_ora():int.8cdf576a28391ec3c4354a0001a49529_1" -> "com.stn.pojo.Notes.getId_ora():int.8cdf576a28391ec3c4354a0001a49529_4" ;
+"com.stn.pojo.Notes.getId_ora():int.8cdf576a28391ec3c4354a0001a49529_2" [label="2: Exit int Notes.getId_ora() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Notes.getId_ora():int.8cdf576a28391ec3c4354a0001a49529_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 31]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Notes.getId_ora():int.8cdf576a28391ec3c4354a0001a49529_3" -> "com.stn.pojo.Notes.getId_ora():int.8cdf576a28391ec3c4354a0001a49529_2" ;
+"com.stn.pojo.Notes.getId_ora():int.8cdf576a28391ec3c4354a0001a49529_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Notes* [line 31]\n  n$1=*n$0.id_ora:int(root com.stn.pojo.Notes) [line 31]\n  *&return:int=n$1 [line 31]\n  NULLIFY(&this); [line 31]\n  EXIT_SCOPE(n$0,n$1,this); [line 31]\n  APPLY_ABSTRACTION; [line 31]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Notes.getId_ora():int.8cdf576a28391ec3c4354a0001a49529_4" -> "com.stn.pojo.Notes.getId_ora():int.8cdf576a28391ec3c4354a0001a49529_2" ;
+	 "com.stn.pojo.Notes.getId_ora():int.8cdf576a28391ec3c4354a0001a49529_4" -> "com.stn.pojo.Notes.getId_ora():int.8cdf576a28391ec3c4354a0001a49529_3" [color="red" ];
+}

@@ -1,0 +1,408 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.TopicHelper.addTopic(java.lang.String,java.lang.String,int,int):void.5610c6c8fe2bd57d3669e078bfe1a356_node14</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../TopicHelper.java.bc59ff52b37ed0ed5cf3346eecce9d77.html#LINE22">14</a></h1></center>PROC: <a href="./../com.stn.helpers.TopicHelper.addTopic%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.5610c6c8fe2bd57d3669e078bfe1a356.html">void TopicHelper.addTopic(String,String,int,int)</a> LINE: <a href="./../../TopicHelper.java.bc59ff52b37ed0ed5cf3346eecce9d77.html#LINE22">22</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.helpers.TopicHelper.addTopic%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.5610c6c8fe2bd57d3669e078bfe1a356_node13.html"><span class='visited with_tooltip'>N_13<span class='tooltip'>node13 preds:12 succs:14 exn:69 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.helpers.TopicHelper.addTopic%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.5610c6c8fe2bd57d3669e078bfe1a356_node15.html"><span class='visited with_tooltip'>N_15<span class='tooltip'>node15 preds:14 succs:16 exn:69 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.helpers.TopicHelper.addTopic%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.5610c6c8fe2bd57d3669e078bfe1a356_node69.html"><span class='visited with_tooltip'>N_69<span class='tooltip'>node69 preds: succs:68 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$25=*&amp;this:com.stn.helpers.TopicHelper* [line 22];
+n$26=*n$25.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 22];
+_=*n$26:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 22];
+n$28=*&amp;title:java.lang.String* [line 22];
+n$29=_fun_void PreparedStatement.setString(int,String)(n$26:java.sql.PreparedStatement*,1:int,n$28:java.lang.String*) interface virtual [line 22];
+</LISTING>
+<hr width="100%">
+<a name="session84" href="./../nodes/com.stn.helpers.TopicHelper.addTopic%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.5610c6c8fe2bd57d3669e078bfe1a356_node14.html#session84">node14#session84</a>(<a href="./../../TopicHelper.java.bc59ff52b37ed0ed5cf3346eecce9d77.html#LINE22">22</a>) [compute pre] liveness 14
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session85" href="./../nodes/com.stn.helpers.TopicHelper.addTopic%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.5610c6c8fe2bd57d3669e078bfe1a356_node14.html#session85">node14#session85</a>(<a href="./../../TopicHelper.java.bc59ff52b37ed0ed5cf3346eecce9d77.html#LINE22">22</a>) [exec] liveness 14
+<LISTING class='color_black'>PRE STATE:
+{ idGroup, idUser, this }
+
+INSTR=  n$29=_fun_void PreparedStatement.setString(int,String)(n$26:java.sql.PreparedStatement*,1:int,n$28:java.lang.String*) interface virtual [line 22]; 
+
+STATE:
+{ n$26, n$28, idGroup, idUser, this }
+
+INSTR=  n$28=*&amp;title:java.lang.String* [line 22]; 
+
+STATE:
+{ n$26, title, idGroup, idUser, this }
+
+INSTR=  _=*n$26:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 22]; 
+
+STATE UNCHANGED
+
+INSTR=  n$26=*n$25.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 22]; 
+
+STATE:
+{ n$25, title, idGroup, idUser, this }
+
+INSTR=  n$25=*&amp;this:com.stn.helpers.TopicHelper* [line 22]; 
+
+STATE:
+{ title, idGroup, idUser, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session168" href="./../nodes/com.stn.helpers.TopicHelper.addTopic%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.5610c6c8fe2bd57d3669e078bfe1a356_node14.html#session168">node14#session168</a>(<a href="./../../TopicHelper.java.bc59ff52b37ed0ed5cf3346eecce9d77.html#LINE22">22</a>) [compute pre] liveness 14
+<LISTING class='color_black'>JOIN
+
+LEFT:   { idGroup, idUser, this }
+RIGHT:  { return, CatchVar168, this }
+RESULT: { idGroup, return, idUser, CatchVar168, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session169" href="./../nodes/com.stn.helpers.TopicHelper.addTopic%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.5610c6c8fe2bd57d3669e078bfe1a356_node14.html#session169">node14#session169</a>(<a href="./../../TopicHelper.java.bc59ff52b37ed0ed5cf3346eecce9d77.html#LINE22">22</a>) [exec] liveness 14
+<LISTING class='color_black'>PRE STATE:
+{ idGroup, return, idUser, CatchVar168, this }
+
+INSTR=  n$29=_fun_void PreparedStatement.setString(int,String)(n$26:java.sql.PreparedStatement*,1:int,n$28:java.lang.String*) interface virtual [line 22]; 
+
+STATE:
+{ n$26, n$28, idGroup, return, idUser, CatchVar168, this }
+
+INSTR=  n$28=*&amp;title:java.lang.String* [line 22]; 
+
+STATE:
+{ n$26, title, idGroup, return, idUser, CatchVar168, this }
+
+INSTR=  _=*n$26:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 22]; 
+
+STATE UNCHANGED
+
+INSTR=  n$26=*n$25.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 22]; 
+
+STATE:
+{ n$25, title, idGroup, return, idUser, CatchVar168, this }
+
+INSTR=  n$25=*&amp;this:com.stn.helpers.TopicHelper* [line 22]; 
+
+STATE:
+{ title, idGroup, return, idUser, CatchVar168, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session174" href="./../nodes/com.stn.helpers.TopicHelper.addTopic%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.5610c6c8fe2bd57d3669e078bfe1a356_node14.html#session174">node14#session174</a>(<a href="./../../TopicHelper.java.bc59ff52b37ed0ed5cf3346eecce9d77.html#LINE22">22</a>) [compute pre] liveness 14
+<LISTING class='color_black'>JOIN
+
+LEFT:   { idGroup, return, idUser, CatchVar168, this }
+RIGHT:  { return, CatchVar168, this }
+RESULT: { idGroup, return, idUser, CatchVar168, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session175" href="./../nodes/com.stn.helpers.TopicHelper.addTopic%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.5610c6c8fe2bd57d3669e078bfe1a356_node14.html#session175">node14#session175</a>(<a href="./../../TopicHelper.java.bc59ff52b37ed0ed5cf3346eecce9d77.html#LINE22">22</a>) [exec] liveness 14
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session318" href="./../nodes/com.stn.helpers.TopicHelper.addTopic%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.5610c6c8fe2bd57d3669e078bfe1a356_node14.html#session318">node14#session318</a>(<a href="./../../TopicHelper.java.bc59ff52b37ed0ed5cf3346eecce9d77.html#LINE22">22</a>) [compute pre] liveness 14
+<LISTING class='color_black'>JOIN
+
+LEFT:   { idGroup, last_inserted_id, return, idUser, CatchVar168, this }
+RIGHT:  { return, CatchVar168, this }
+RESULT: { idGroup, last_inserted_id, return, idUser, CatchVar168, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session319" href="./../nodes/com.stn.helpers.TopicHelper.addTopic%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.5610c6c8fe2bd57d3669e078bfe1a356_node14.html#session319">node14#session319</a>(<a href="./../../TopicHelper.java.bc59ff52b37ed0ed5cf3346eecce9d77.html#LINE22">22</a>) [exec] liveness 14
+<LISTING class='color_black'>PRE STATE:
+{ idGroup, last_inserted_id, return, idUser, CatchVar168, this }
+
+INSTR=  n$29=_fun_void PreparedStatement.setString(int,String)(n$26:java.sql.PreparedStatement*,1:int,n$28:java.lang.String*) interface virtual [line 22]; 
+
+STATE:
+{ n$26, n$28, idGroup, last_inserted_id, return, idUser, CatchVar168, this }
+
+INSTR=  n$28=*&amp;title:java.lang.String* [line 22]; 
+
+STATE:
+{ n$26, title, idGroup, last_inserted_id, return, idUser, CatchVar168, this }
+
+INSTR=  _=*n$26:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 22]; 
+
+STATE UNCHANGED
+
+INSTR=  n$26=*n$25.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 22]; 
+
+STATE:
+{ n$25, title, idGroup, last_inserted_id, return, idUser, CatchVar168, this }
+
+INSTR=  n$25=*&amp;this:com.stn.helpers.TopicHelper* [line 22]; 
+
+STATE:
+{ title, idGroup, last_inserted_id, return, idUser, CatchVar168, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session364" href="./../nodes/com.stn.helpers.TopicHelper.addTopic%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.5610c6c8fe2bd57d3669e078bfe1a356_node14.html#session364">node14#session364</a>(<a href="./../../TopicHelper.java.bc59ff52b37ed0ed5cf3346eecce9d77.html#LINE22">22</a>) [compute pre] liveness 14
+<LISTING class='color_black'>JOIN
+
+LEFT:   { idGroup, last_inserted_id, return, idUser, CatchVar168, this }
+RIGHT:  { return, CatchVar168, this }
+RESULT: { idGroup, last_inserted_id, return, idUser, CatchVar168, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session365" href="./../nodes/com.stn.helpers.TopicHelper.addTopic%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.5610c6c8fe2bd57d3669e078bfe1a356_node14.html#session365">node14#session365</a>(<a href="./../../TopicHelper.java.bc59ff52b37ed0ed5cf3346eecce9d77.html#LINE22">22</a>) [exec] liveness 14
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session422" href="./../nodes/com.stn.helpers.TopicHelper.addTopic%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.5610c6c8fe2bd57d3669e078bfe1a356_node14.html#session422">node14#session422</a>(<a href="./../../TopicHelper.java.bc59ff52b37ed0ed5cf3346eecce9d77.html#LINE22">22</a>) [compute pre] liveness 14
+<LISTING class='color_black'>JOIN
+
+LEFT:   { body,
+          CatchVar337,
+          idGroup,
+          last_inserted_id,
+          return,
+          idUser,
+          CatchVar168,
+          this }
+RIGHT:  { return, CatchVar168, this }
+RESULT: { body,
+          CatchVar337,
+          idGroup,
+          last_inserted_id,
+          return,
+          idUser,
+          CatchVar168,
+          this }
+
+</LISTING>
+<hr width="100%">
+<a name="session423" href="./../nodes/com.stn.helpers.TopicHelper.addTopic%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.5610c6c8fe2bd57d3669e078bfe1a356_node14.html#session423">node14#session423</a>(<a href="./../../TopicHelper.java.bc59ff52b37ed0ed5cf3346eecce9d77.html#LINE22">22</a>) [exec] liveness 14
+<LISTING class='color_black'>PRE STATE:
+{ body,
+  CatchVar337,
+  idGroup,
+  last_inserted_id,
+  return,
+  idUser,
+  CatchVar168,
+  this }
+
+INSTR=  n$29=_fun_void PreparedStatement.setString(int,String)(n$26:java.sql.PreparedStatement*,1:int,n$28:java.lang.String*) interface virtual [line 22]; 
+
+STATE:
+{ n$26,
+  n$28,
+  body,
+  CatchVar337,
+  idGroup,
+  last_inserted_id,
+  return,
+  idUser,
+  CatchVar168,
+  this }
+
+INSTR=  n$28=*&amp;title:java.lang.String* [line 22]; 
+
+STATE:
+{ n$26,
+  body,
+  title,
+  CatchVar337,
+  idGroup,
+  last_inserted_id,
+  return,
+  idUser,
+  CatchVar168,
+  this }
+
+INSTR=  _=*n$26:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 22]; 
+
+STATE UNCHANGED
+
+INSTR=  n$26=*n$25.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 22]; 
+
+STATE:
+{ n$25,
+  body,
+  title,
+  CatchVar337,
+  idGroup,
+  last_inserted_id,
+  return,
+  idUser,
+  CatchVar168,
+  this }
+
+INSTR=  n$25=*&amp;this:com.stn.helpers.TopicHelper* [line 22]; 
+
+STATE:
+{ body,
+  title,
+  CatchVar337,
+  idGroup,
+  last_inserted_id,
+  return,
+  idUser,
+  CatchVar168,
+  this }
+
+</LISTING>
+<hr width="100%">
+<a name="session507" href="./../nodes/com.stn.helpers.TopicHelper.addTopic%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.5610c6c8fe2bd57d3669e078bfe1a356_node14.html#session507">node14#session507</a>(<a href="./../../TopicHelper.java.bc59ff52b37ed0ed5cf3346eecce9d77.html#LINE22">22</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session508" href="./../nodes/com.stn.helpers.TopicHelper.addTopic%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.5610c6c8fe2bd57d3669e078bfe1a356_node14.html#session508">node14#session508</a>(<a href="./../../TopicHelper.java.bc59ff52b37ed0ed5cf3346eecce9d77.html#LINE22">22</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ last_inserted_id },{ n$23, n$24, $irvar5 })
+
+INSTR=  n$25=*&amp;this:com.stn.helpers.TopicHelper* [line 22]; 
+
+STATE:
+({ n$25, last_inserted_id },{ n$23, n$24, $irvar5 })
+
+INSTR=  n$26=*n$25.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.TopicHelper) [line 22]; 
+
+STATE:
+({ n$25, n$26, last_inserted_id },{ n$23, n$24, $irvar5 })
+
+INSTR=  _=*n$26:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 22]; 
+
+STATE:
+({ _, n$25, n$26, last_inserted_id },{ n$23, n$24, $irvar5 })
+
+INSTR=  n$28=*&amp;title:java.lang.String* [line 22]; 
+
+STATE:
+({ _, n$25, n$26, n$28, last_inserted_id },{ n$23, n$24, $irvar5 })
+
+INSTR=  n$29=_fun_void PreparedStatement.setString(int,String)(n$26:java.sql.PreparedStatement*,1:int,n$28:java.lang.String*) interface virtual [line 22]; 
+
+STATE:
+({ last_inserted_id },{ _, n$25, n$26, n$28, n$29, title })
+
+</LISTING>
+<hr width="100%">
+<a name="session22" href="./../nodes/com.stn.helpers.TopicHelper.addTopic%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.5610c6c8fe2bd57d3669e078bfe1a356_node14.html#session22">node14#session22</a>(<a href="./../../TopicHelper.java.bc59ff52b37ed0ed5cf3346eecce9d77.html#LINE22">22</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session23" href="./../nodes/com.stn.helpers.TopicHelper.addTopic%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.5610c6c8fe2bd57d3669e078bfe1a356_node14.html#session23">node14#session23</a>(<a href="./../../TopicHelper.java.bc59ff52b37ed0ed5cf3346eecce9d77.html#LINE22">22</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  last_inserted_id -&gt; { },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+
+
+
+
+TAINTED_CALL1: (callee="void PreparedStatement.setString(int,String)", caller="void TopicHelper.addTopic(String,String,int,int)")
+INSTR=  n$29 := void PreparedStatement.setString(int,String)({ this-&gt;preparedStatement,
+                                                               1,
+                                                               title }) [line 22]; 
+
+STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  last_inserted_id -&gt; { },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$1*,
+                                              @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+INSTR=  NULLIFY(&amp;title); [line 22]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(n$29,title); [line 22]; 
+
+STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  last_inserted_id -&gt; { },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$1*,
+                                              @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+</LISTING>

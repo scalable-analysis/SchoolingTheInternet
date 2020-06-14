@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Grupa.getIdGrupa():int.1bf0c2dd6ea5d50db18c12e18c5cfd5d_1" [label="1: Start int Grupa.getIdGrupa()\nFormals:  this:com.stn.pojo.Grupa*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Grupa.getIdGrupa():int.1bf0c2dd6ea5d50db18c12e18c5cfd5d_1" -> "com.stn.pojo.Grupa.getIdGrupa():int.1bf0c2dd6ea5d50db18c12e18c5cfd5d_4" ;
+"com.stn.pojo.Grupa.getIdGrupa():int.1bf0c2dd6ea5d50db18c12e18c5cfd5d_2" [label="2: Exit int Grupa.getIdGrupa() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Grupa.getIdGrupa():int.1bf0c2dd6ea5d50db18c12e18c5cfd5d_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 28]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Grupa.getIdGrupa():int.1bf0c2dd6ea5d50db18c12e18c5cfd5d_3" -> "com.stn.pojo.Grupa.getIdGrupa():int.1bf0c2dd6ea5d50db18c12e18c5cfd5d_2" ;
+"com.stn.pojo.Grupa.getIdGrupa():int.1bf0c2dd6ea5d50db18c12e18c5cfd5d_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Grupa* [line 28]\n  n$1=*n$0.idGrupa:int(root com.stn.pojo.Grupa) [line 28]\n  *&return:int=n$1 [line 28]\n  NULLIFY(&this); [line 28]\n  EXIT_SCOPE(n$0,n$1,this); [line 28]\n  APPLY_ABSTRACTION; [line 28]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Grupa.getIdGrupa():int.1bf0c2dd6ea5d50db18c12e18c5cfd5d_4" -> "com.stn.pojo.Grupa.getIdGrupa():int.1bf0c2dd6ea5d50db18c12e18c5cfd5d_2" ;
+	 "com.stn.pojo.Grupa.getIdGrupa():int.1bf0c2dd6ea5d50db18c12e18c5cfd5d_4" -> "com.stn.pojo.Grupa.getIdGrupa():int.1bf0c2dd6ea5d50db18c12e18c5cfd5d_3" [color="red" ];
+}

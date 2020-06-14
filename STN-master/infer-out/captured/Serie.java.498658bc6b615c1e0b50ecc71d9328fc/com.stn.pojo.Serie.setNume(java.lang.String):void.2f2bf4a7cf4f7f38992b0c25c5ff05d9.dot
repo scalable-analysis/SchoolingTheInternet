@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Serie.setNume(java.lang.String):void.2f2bf4a7cf4f7f38992b0c25c5ff05d9_1" [label="1: Start void Serie.setNume(String)\nFormals:  this:com.stn.pojo.Serie* nume:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Serie.setNume(java.lang.String):void.2f2bf4a7cf4f7f38992b0c25c5ff05d9_1" -> "com.stn.pojo.Serie.setNume(java.lang.String):void.2f2bf4a7cf4f7f38992b0c25c5ff05d9_4" ;
+"com.stn.pojo.Serie.setNume(java.lang.String):void.2f2bf4a7cf4f7f38992b0c25c5ff05d9_2" [label="2: Exit void Serie.setNume(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Serie.setNume(java.lang.String):void.2f2bf4a7cf4f7f38992b0c25c5ff05d9_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 21]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Serie.setNume(java.lang.String):void.2f2bf4a7cf4f7f38992b0c25c5ff05d9_3" -> "com.stn.pojo.Serie.setNume(java.lang.String):void.2f2bf4a7cf4f7f38992b0c25c5ff05d9_2" ;
+"com.stn.pojo.Serie.setNume(java.lang.String):void.2f2bf4a7cf4f7f38992b0c25c5ff05d9_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Serie* [line 20]\n  n$1=*&nume:java.lang.String* [line 20]\n  *n$0.nume:com.stn.pojo.Serie(root com.stn.pojo.Serie)=n$1 [line 20]\n  NULLIFY(&nume); [line 20]\n  NULLIFY(&this); [line 20]\n  EXIT_SCOPE(n$0,n$1,nume,this); [line 20]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Serie.setNume(java.lang.String):void.2f2bf4a7cf4f7f38992b0c25c5ff05d9_4" -> "com.stn.pojo.Serie.setNume(java.lang.String):void.2f2bf4a7cf4f7f38992b0c25c5ff05d9_5" ;
+	 "com.stn.pojo.Serie.setNume(java.lang.String):void.2f2bf4a7cf4f7f38992b0c25c5ff05d9_4" -> "com.stn.pojo.Serie.setNume(java.lang.String):void.2f2bf4a7cf4f7f38992b0c25c5ff05d9_3" [color="red" ];
+"com.stn.pojo.Serie.setNume(java.lang.String):void.2f2bf4a7cf4f7f38992b0c25c5ff05d9_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 21]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Serie.setNume(java.lang.String):void.2f2bf4a7cf4f7f38992b0c25c5ff05d9_5" -> "com.stn.pojo.Serie.setNume(java.lang.String):void.2f2bf4a7cf4f7f38992b0c25c5ff05d9_2" ;
+	 "com.stn.pojo.Serie.setNume(java.lang.String):void.2f2bf4a7cf4f7f38992b0c25c5ff05d9_5" -> "com.stn.pojo.Serie.setNume(java.lang.String):void.2f2bf4a7cf4f7f38992b0c25c5ff05d9_3" [color="red" ];
+}

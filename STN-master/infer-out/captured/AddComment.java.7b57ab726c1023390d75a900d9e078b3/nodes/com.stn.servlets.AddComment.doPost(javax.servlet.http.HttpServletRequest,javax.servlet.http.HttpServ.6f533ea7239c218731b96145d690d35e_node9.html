@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.servlets.AddComment.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e_node9</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../AddComment.java.7b57ab726c1023390d75a900d9e078b3.html#LINE24">9</a></h1></center>PROC: <a href="./../com.stn.servlets.AddComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e.html">void AddComment.doPost(HttpServletRequest,HttpServletResponse)</a> LINE: <a href="./../../AddComment.java.7b57ab726c1023390d75a900d9e078b3.html#LINE24">24</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.servlets.AddComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e_node8.html"><span class='visited with_tooltip'>N_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.servlets.AddComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e_node10.html"><span class='visited with_tooltip'>N_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.servlets.AddComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e_node3.html"><span class='visited with_tooltip'>N_3<span class='tooltip'>node3 preds:79 74 71 68 succs:2 exn:2 </span></span></a><br>
+<LISTING class='color_green'>n$14=*&amp;$irvar1:java.lang.Object* [line 24];
+n$15=_fun___cast(n$14:java.lang.Object*,sizeof(t=java.lang.Integer;sub_t=( sub )(cast)):void) [line 24];
+_=*n$15:java.lang.Integer*(root java.lang.Integer) [line 24];
+n$17=_fun_int Integer.intValue()(n$15:java.lang.Integer*) virtual [line 24];
+*&amp;idUser:int=n$17 [line 24];
+</LISTING>
+<hr width="100%">
+<a name="session150" href="./../nodes/com.stn.servlets.AddComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e_node9.html#session150">node9#session150</a>(<a href="./../../AddComment.java.7b57ab726c1023390d75a900d9e078b3.html#LINE24">24</a>) [compute pre] liveness 9
+<LISTING class='color_black'>JOIN
+
+LEFT:   { idPost, out, request, return, idUser, session, response }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session151" href="./../nodes/com.stn.servlets.AddComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e_node9.html#session151">node9#session151</a>(<a href="./../../AddComment.java.7b57ab726c1023390d75a900d9e078b3.html#LINE24">24</a>) [exec] liveness 9
+<LISTING class='color_black'>PRE STATE:
+{ idPost, out, request, return, idUser, session, response }
+
+INSTR=  *&amp;idUser:int=n$17 [line 24]; 
+
+STATE:
+{ n$17, idPost, out, request, return, session, response }
+
+INSTR=  n$17=_fun_int Integer.intValue()(n$15:java.lang.Integer*) virtual [line 24]; 
+
+STATE:
+{ n$15, idPost, out, request, return, session, response }
+
+INSTR=  _=*n$15:java.lang.Integer*(root java.lang.Integer) [line 24]; 
+
+STATE UNCHANGED
+
+INSTR=  n$15=_fun___cast(n$14:java.lang.Object*,sizeof(t=java.lang.Integer;sub_t=( sub )(cast)):void) [line 24]; 
+
+STATE:
+{ n$14, idPost, out, request, return, session, response }
+
+INSTR=  n$14=*&amp;$irvar1:java.lang.Object* [line 24]; 
+
+STATE:
+{ idPost, out, request, return, $irvar1, session, response }
+
+</LISTING>
+<hr width="100%">
+<a name="session175" href="./../nodes/com.stn.servlets.AddComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e_node9.html#session175">node9#session175</a>(<a href="./../../AddComment.java.7b57ab726c1023390d75a900d9e078b3.html#LINE24">24</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session176" href="./../nodes/com.stn.servlets.AddComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e_node9.html#session176">node9#session176</a>(<a href="./../../AddComment.java.7b57ab726c1023390d75a900d9e078b3.html#LINE24">24</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ idPost, out, $irvar1, session },{ _, n$11, n$13 })
+
+INSTR=  n$14=*&amp;$irvar1:java.lang.Object* [line 24]; 
+
+STATE:
+({ n$14, idPost, out, $irvar1, session },{ _, n$11, n$13 })
+
+INSTR=  n$15=_fun___cast(n$14:java.lang.Object*,sizeof(t=java.lang.Integer;sub_t=( sub )(cast)):void) [line 24]; 
+
+STATE:
+({ n$14, n$15, idPost, out, $irvar1, session },{ _, n$11, n$13 })
+
+INSTR=  _=*n$15:java.lang.Integer*(root java.lang.Integer) [line 24]; 
+
+STATE:
+({ _, n$14, n$15, idPost, out, $irvar1, session },{ _, n$11, n$13 })
+
+INSTR=  n$17=_fun_int Integer.intValue()(n$15:java.lang.Integer*) virtual [line 24]; 
+
+STATE:
+({ _, n$14, n$15, n$17, idPost, out, $irvar1, session },{ _, n$11, n$13 })
+
+INSTR=  *&amp;idUser:int=n$17 [line 24]; 
+
+STATE:
+({ idPost, out, idUser, session },{ _, n$14, n$15, n$17, $irvar1 })
+
+</LISTING>
+<hr width="100%">
+<a name="session12" href="./../nodes/com.stn.servlets.AddComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e_node9.html#session12">node9#session12</a>(<a href="./../../AddComment.java.7b57ab726c1023390d75a900d9e078b3.html#LINE24">24</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session13" href="./../nodes/com.stn.servlets.AddComment.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServ.6f533ea7239c218731b96145d690d35e_node9.html#session13">node9#session13</a>(<a href="./../../AddComment.java.7b57ab726c1023390d75a900d9e078b3.html#LINE24">24</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ idPost -&gt; { }, out -&gt; { }, session -&gt; { } }
+
+
+
+
+INSTR=  n$17 := int Integer.intValue()({ n$13 }) [line 24]; 
+
+STATE UNCHANGED
+
+INSTR=  idUser := n$17 [line 24]; 
+
+STATE:
+{ idPost -&gt; { }, out -&gt; { }, idUser -&gt; { }, session -&gt; { } }
+
+INSTR=  NULLIFY(&amp;$irvar1); [line 24]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(n$17); [line 24]; 
+
+STATE:
+{ idPost -&gt; { }, out -&gt; { }, idUser -&gt; { }, session -&gt; { } }
+
+</LISTING>

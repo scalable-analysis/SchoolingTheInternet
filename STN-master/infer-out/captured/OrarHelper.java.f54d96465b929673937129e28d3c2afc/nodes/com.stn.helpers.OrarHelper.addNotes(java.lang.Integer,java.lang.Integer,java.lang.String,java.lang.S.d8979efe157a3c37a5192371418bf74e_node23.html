@@ -1,0 +1,954 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.OrarHelper.addNotes(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.S.d8979efe157a3c37a5192371418bf74e_node23</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">23</a></h1></center>PROC: <a href="./../com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e.html">void OrarHelper.addNotes(Integer,Integer,String,String,String,Integer,String,String,String,Integer,String)</a> LINE: <a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node22.html"><span class='visited with_tooltip'>N_22<span class='tooltip'>node22 preds:21 succs:23 exn:97 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node24.html"><span class='visited with_tooltip'>N_24<span class='tooltip'>node24 preds:23 succs:25 exn:97 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node97.html"><span class='visited with_tooltip'>N_97<span class='tooltip'>node97 preds: succs:96 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$58=*&amp;this:com.stn.helpers.OrarHelper* [line 151];
+n$59=*n$58.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 151];
+_=*n$59:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 151];
+n$61=*&amp;sala:java.lang.String* [line 151];
+n$62=_fun_void PreparedStatement.setString(int,String)(n$59:java.sql.PreparedStatement*,6:int,n$61:java.lang.String*) interface virtual [line 151];
+</LISTING>
+<hr width="100%">
+<a name="session106" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session106">node23#session106</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [compute pre] liveness 23
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session107" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session107">node23#session107</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [exec] liveness 23
+<LISTING class='color_black'>PRE STATE:
+{ numep, zi, gr, sapt, this }
+
+INSTR=  n$62=_fun_void PreparedStatement.setString(int,String)(n$59:java.sql.PreparedStatement*,6:int,n$61:java.lang.String*) interface virtual [line 151]; 
+
+STATE:
+{ n$59, n$61, numep, zi, gr, sapt, this }
+
+INSTR=  n$61=*&amp;sala:java.lang.String* [line 151]; 
+
+STATE:
+{ n$59, numep, zi, gr, sapt, sala, this }
+
+INSTR=  _=*n$59:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 151]; 
+
+STATE UNCHANGED
+
+INSTR=  n$59=*n$58.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 151]; 
+
+STATE:
+{ n$58, numep, zi, gr, sapt, sala, this }
+
+INSTR=  n$58=*&amp;this:com.stn.helpers.OrarHelper* [line 151]; 
+
+STATE:
+{ numep, zi, gr, sapt, sala, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session256" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session256">node23#session256</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [compute pre] liveness 23
+<LISTING class='color_black'>JOIN
+
+LEFT:   { numep, zi, gr, sapt, this }
+RIGHT:  { CatchVar271, return, this }
+RESULT: { numep, zi, CatchVar271, gr, sapt, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session257" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session257">node23#session257</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [exec] liveness 23
+<LISTING class='color_black'>PRE STATE:
+{ numep, zi, CatchVar271, gr, sapt, return, this }
+
+INSTR=  n$62=_fun_void PreparedStatement.setString(int,String)(n$59:java.sql.PreparedStatement*,6:int,n$61:java.lang.String*) interface virtual [line 151]; 
+
+STATE:
+{ n$59, n$61, numep, zi, CatchVar271, gr, sapt, return, this }
+
+INSTR=  n$61=*&amp;sala:java.lang.String* [line 151]; 
+
+STATE:
+{ n$59, numep, zi, CatchVar271, gr, sapt, sala, return, this }
+
+INSTR=  _=*n$59:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 151]; 
+
+STATE UNCHANGED
+
+INSTR=  n$59=*n$58.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 151]; 
+
+STATE:
+{ n$58, numep, zi, CatchVar271, gr, sapt, sala, return, this }
+
+INSTR=  n$58=*&amp;this:com.stn.helpers.OrarHelper* [line 151]; 
+
+STATE:
+{ numep, zi, CatchVar271, gr, sapt, sala, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session262" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session262">node23#session262</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [compute pre] liveness 23
+<LISTING class='color_black'>JOIN
+
+LEFT:   { numep, zi, CatchVar271, gr, sapt, return, this }
+RIGHT:  { CatchVar271, return, this }
+RESULT: { numep, zi, CatchVar271, gr, sapt, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session263" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session263">node23#session263</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [exec] liveness 23
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session388" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session388">node23#session388</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [compute pre] liveness 23
+<LISTING class='color_black'>JOIN
+
+LEFT:   { numep,
+          id_student,
+          zi,
+          CatchVar271,
+          gr,
+          sapt,
+          id_ora,
+          return,
+          this }
+RIGHT:  { CatchVar271, return, this }
+RESULT: { numep,
+          id_student,
+          zi,
+          CatchVar271,
+          gr,
+          sapt,
+          id_ora,
+          return,
+          this }
+
+</LISTING>
+<hr width="100%">
+<a name="session389" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session389">node23#session389</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [exec] liveness 23
+<LISTING class='color_black'>PRE STATE:
+{ numep, id_student, zi, CatchVar271, gr, sapt, id_ora, return, this }
+
+INSTR=  n$62=_fun_void PreparedStatement.setString(int,String)(n$59:java.sql.PreparedStatement*,6:int,n$61:java.lang.String*) interface virtual [line 151]; 
+
+STATE:
+{ n$59,
+  n$61,
+  numep,
+  id_student,
+  zi,
+  CatchVar271,
+  gr,
+  sapt,
+  id_ora,
+  return,
+  this }
+
+INSTR=  n$61=*&amp;sala:java.lang.String* [line 151]; 
+
+STATE:
+{ n$59,
+  numep,
+  id_student,
+  zi,
+  CatchVar271,
+  gr,
+  sapt,
+  id_ora,
+  sala,
+  return,
+  this }
+
+INSTR=  _=*n$59:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 151]; 
+
+STATE UNCHANGED
+
+INSTR=  n$59=*n$58.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 151]; 
+
+STATE:
+{ n$58,
+  numep,
+  id_student,
+  zi,
+  CatchVar271,
+  gr,
+  sapt,
+  id_ora,
+  sala,
+  return,
+  this }
+
+INSTR=  n$58=*&amp;this:com.stn.helpers.OrarHelper* [line 151]; 
+
+STATE:
+{ numep, id_student, zi, CatchVar271, gr, sapt, id_ora, sala, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session486" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session486">node23#session486</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [compute pre] liveness 23
+<LISTING class='color_black'>JOIN
+
+LEFT:   { numep,
+          id_student,
+          zi,
+          CatchVar271,
+          gr,
+          sapt,
+          CatchVar494,
+          id_ora,
+          return,
+          this }
+RIGHT:  { CatchVar271, return, this }
+RESULT: { numep,
+          id_student,
+          zi,
+          CatchVar271,
+          gr,
+          sapt,
+          CatchVar494,
+          id_ora,
+          return,
+          this }
+
+</LISTING>
+<hr width="100%">
+<a name="session487" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session487">node23#session487</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [exec] liveness 23
+<LISTING class='color_black'>PRE STATE:
+{ numep,
+  id_student,
+  zi,
+  CatchVar271,
+  gr,
+  sapt,
+  CatchVar494,
+  id_ora,
+  return,
+  this }
+
+INSTR=  n$62=_fun_void PreparedStatement.setString(int,String)(n$59:java.sql.PreparedStatement*,6:int,n$61:java.lang.String*) interface virtual [line 151]; 
+
+STATE:
+{ n$59,
+  n$61,
+  numep,
+  id_student,
+  zi,
+  CatchVar271,
+  gr,
+  sapt,
+  CatchVar494,
+  id_ora,
+  return,
+  this }
+
+INSTR=  n$61=*&amp;sala:java.lang.String* [line 151]; 
+
+STATE:
+{ n$59,
+  numep,
+  id_student,
+  zi,
+  CatchVar271,
+  gr,
+  sapt,
+  CatchVar494,
+  id_ora,
+  sala,
+  return,
+  this }
+
+INSTR=  _=*n$59:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 151]; 
+
+STATE UNCHANGED
+
+INSTR=  n$59=*n$58.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 151]; 
+
+STATE:
+{ n$58,
+  numep,
+  id_student,
+  zi,
+  CatchVar271,
+  gr,
+  sapt,
+  CatchVar494,
+  id_ora,
+  sala,
+  return,
+  this }
+
+INSTR=  n$58=*&amp;this:com.stn.helpers.OrarHelper* [line 151]; 
+
+STATE:
+{ numep,
+  id_student,
+  zi,
+  CatchVar271,
+  gr,
+  sapt,
+  CatchVar494,
+  id_ora,
+  sala,
+  return,
+  this }
+
+</LISTING>
+<hr width="100%">
+<a name="session624" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session624">node23#session624</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [compute pre] liveness 23
+<LISTING class='color_black'>JOIN
+
+LEFT:   { numep,
+          id_student,
+          zi,
+          CatchVar271,
+          gr,
+          sapt,
+          CatchVar494,
+          id_ora,
+          return,
+          this }
+RIGHT:  { CatchVar271, return, this }
+RESULT: { numep,
+          id_student,
+          zi,
+          CatchVar271,
+          gr,
+          sapt,
+          CatchVar494,
+          id_ora,
+          return,
+          this }
+
+</LISTING>
+<hr width="100%">
+<a name="session625" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session625">node23#session625</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [exec] liveness 23
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session743" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session743">node23#session743</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session744" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session744">node23#session744</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ id_ora },{ _, n$54, n$56, n$57, $irvar9, $irvar8 })
+
+INSTR=  n$58=*&amp;this:com.stn.helpers.OrarHelper* [line 151]; 
+
+STATE:
+({ n$58, id_ora },{ _, n$54, n$56, n$57, $irvar9, $irvar8 })
+
+INSTR=  n$59=*n$58.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 151]; 
+
+STATE:
+({ n$58, n$59, id_ora },{ _, n$54, n$56, n$57, $irvar9, $irvar8 })
+
+INSTR=  _=*n$59:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 151]; 
+
+STATE:
+({ _, n$58, n$59, id_ora },{ _, n$54, n$56, n$57, $irvar9, $irvar8 })
+
+INSTR=  n$61=*&amp;sala:java.lang.String* [line 151]; 
+
+STATE:
+({ _, n$58, n$59, n$61, id_ora },{ _, n$54, n$56, n$57, $irvar9, $irvar8 })
+
+INSTR=  n$62=_fun_void PreparedStatement.setString(int,String)(n$59:java.sql.PreparedStatement*,6:int,n$61:java.lang.String*) interface virtual [line 151]; 
+
+STATE:
+({ id_ora },{ _, n$58, n$59, n$61, n$62, sala })
+
+</LISTING>
+<hr width="100%">
+<a name="session40" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session40">node23#session40</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session41" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session41">node23#session41</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  id_ora -&gt; { },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$5*,
+                                              @val$4*,
+                                              @val$3*,
+                                              @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+
+
+
+
+TAINTED_CALL1: (callee="void PreparedStatement.setString(int,String)", caller="void OrarHelper.addNotes(Integer,Integer,String,String,String,Integer,String,String,String,Integer,String)")
+INSTR=  n$62 := void PreparedStatement.setString(int,String)({ this-&gt;preparedStatement,
+                                                               6,
+                                                               sala }) [line 151]; 
+
+STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  id_ora -&gt; { },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$7*,
+                                              @val$5*,
+                                              @val$4*,
+                                              @val$3*,
+                                              @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+INSTR=  NULLIFY(&amp;sala); [line 151]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(n$62,sala); [line 151]; 
+
+STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  id_ora -&gt; { },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$7*,
+                                              @val$5*,
+                                              @val$4*,
+                                              @val$3*,
+                                              @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+</LISTING>
+<hr width="100%">
+<a name="session106" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session106">node23#session106</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [compute pre] liveness 23
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session107" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session107">node23#session107</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [exec] liveness 23
+<LISTING class='color_black'>PRE STATE:
+{ numep, zi, gr, sapt, this }
+
+INSTR=  n$62=_fun_void PreparedStatement.setString(int,String)(n$59:java.sql.PreparedStatement*,6:int,n$61:java.lang.String*) interface virtual [line 151]; 
+
+STATE:
+{ n$59, n$61, numep, zi, gr, sapt, this }
+
+INSTR=  n$61=*&amp;sala:java.lang.String* [line 151]; 
+
+STATE:
+{ n$59, numep, zi, gr, sapt, sala, this }
+
+INSTR=  _=*n$59:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 151]; 
+
+STATE UNCHANGED
+
+INSTR=  n$59=*n$58.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 151]; 
+
+STATE:
+{ n$58, numep, zi, gr, sapt, sala, this }
+
+INSTR=  n$58=*&amp;this:com.stn.helpers.OrarHelper* [line 151]; 
+
+STATE:
+{ numep, zi, gr, sapt, sala, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session256" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session256">node23#session256</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [compute pre] liveness 23
+<LISTING class='color_black'>JOIN
+
+LEFT:   { numep, zi, gr, sapt, this }
+RIGHT:  { CatchVar271, return, this }
+RESULT: { numep, zi, CatchVar271, gr, sapt, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session257" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session257">node23#session257</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [exec] liveness 23
+<LISTING class='color_black'>PRE STATE:
+{ numep, zi, CatchVar271, gr, sapt, return, this }
+
+INSTR=  n$62=_fun_void PreparedStatement.setString(int,String)(n$59:java.sql.PreparedStatement*,6:int,n$61:java.lang.String*) interface virtual [line 151]; 
+
+STATE:
+{ n$59, n$61, numep, zi, CatchVar271, gr, sapt, return, this }
+
+INSTR=  n$61=*&amp;sala:java.lang.String* [line 151]; 
+
+STATE:
+{ n$59, numep, zi, CatchVar271, gr, sapt, sala, return, this }
+
+INSTR=  _=*n$59:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 151]; 
+
+STATE UNCHANGED
+
+INSTR=  n$59=*n$58.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 151]; 
+
+STATE:
+{ n$58, numep, zi, CatchVar271, gr, sapt, sala, return, this }
+
+INSTR=  n$58=*&amp;this:com.stn.helpers.OrarHelper* [line 151]; 
+
+STATE:
+{ numep, zi, CatchVar271, gr, sapt, sala, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session262" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session262">node23#session262</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [compute pre] liveness 23
+<LISTING class='color_black'>JOIN
+
+LEFT:   { numep, zi, CatchVar271, gr, sapt, return, this }
+RIGHT:  { CatchVar271, return, this }
+RESULT: { numep, zi, CatchVar271, gr, sapt, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session263" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session263">node23#session263</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [exec] liveness 23
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session388" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session388">node23#session388</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [compute pre] liveness 23
+<LISTING class='color_black'>JOIN
+
+LEFT:   { numep,
+          id_student,
+          zi,
+          CatchVar271,
+          gr,
+          sapt,
+          id_ora,
+          return,
+          this }
+RIGHT:  { CatchVar271, return, this }
+RESULT: { numep,
+          id_student,
+          zi,
+          CatchVar271,
+          gr,
+          sapt,
+          id_ora,
+          return,
+          this }
+
+</LISTING>
+<hr width="100%">
+<a name="session389" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session389">node23#session389</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [exec] liveness 23
+<LISTING class='color_black'>PRE STATE:
+{ numep, id_student, zi, CatchVar271, gr, sapt, id_ora, return, this }
+
+INSTR=  n$62=_fun_void PreparedStatement.setString(int,String)(n$59:java.sql.PreparedStatement*,6:int,n$61:java.lang.String*) interface virtual [line 151]; 
+
+STATE:
+{ n$59,
+  n$61,
+  numep,
+  id_student,
+  zi,
+  CatchVar271,
+  gr,
+  sapt,
+  id_ora,
+  return,
+  this }
+
+INSTR=  n$61=*&amp;sala:java.lang.String* [line 151]; 
+
+STATE:
+{ n$59,
+  numep,
+  id_student,
+  zi,
+  CatchVar271,
+  gr,
+  sapt,
+  id_ora,
+  sala,
+  return,
+  this }
+
+INSTR=  _=*n$59:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 151]; 
+
+STATE UNCHANGED
+
+INSTR=  n$59=*n$58.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 151]; 
+
+STATE:
+{ n$58,
+  numep,
+  id_student,
+  zi,
+  CatchVar271,
+  gr,
+  sapt,
+  id_ora,
+  sala,
+  return,
+  this }
+
+INSTR=  n$58=*&amp;this:com.stn.helpers.OrarHelper* [line 151]; 
+
+STATE:
+{ numep, id_student, zi, CatchVar271, gr, sapt, id_ora, sala, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session486" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session486">node23#session486</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [compute pre] liveness 23
+<LISTING class='color_black'>JOIN
+
+LEFT:   { numep,
+          id_student,
+          zi,
+          CatchVar271,
+          gr,
+          sapt,
+          CatchVar494,
+          id_ora,
+          return,
+          this }
+RIGHT:  { CatchVar271, return, this }
+RESULT: { numep,
+          id_student,
+          zi,
+          CatchVar271,
+          gr,
+          sapt,
+          CatchVar494,
+          id_ora,
+          return,
+          this }
+
+</LISTING>
+<hr width="100%">
+<a name="session487" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session487">node23#session487</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [exec] liveness 23
+<LISTING class='color_black'>PRE STATE:
+{ numep,
+  id_student,
+  zi,
+  CatchVar271,
+  gr,
+  sapt,
+  CatchVar494,
+  id_ora,
+  return,
+  this }
+
+INSTR=  n$62=_fun_void PreparedStatement.setString(int,String)(n$59:java.sql.PreparedStatement*,6:int,n$61:java.lang.String*) interface virtual [line 151]; 
+
+STATE:
+{ n$59,
+  n$61,
+  numep,
+  id_student,
+  zi,
+  CatchVar271,
+  gr,
+  sapt,
+  CatchVar494,
+  id_ora,
+  return,
+  this }
+
+INSTR=  n$61=*&amp;sala:java.lang.String* [line 151]; 
+
+STATE:
+{ n$59,
+  numep,
+  id_student,
+  zi,
+  CatchVar271,
+  gr,
+  sapt,
+  CatchVar494,
+  id_ora,
+  sala,
+  return,
+  this }
+
+INSTR=  _=*n$59:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 151]; 
+
+STATE UNCHANGED
+
+INSTR=  n$59=*n$58.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 151]; 
+
+STATE:
+{ n$58,
+  numep,
+  id_student,
+  zi,
+  CatchVar271,
+  gr,
+  sapt,
+  CatchVar494,
+  id_ora,
+  sala,
+  return,
+  this }
+
+INSTR=  n$58=*&amp;this:com.stn.helpers.OrarHelper* [line 151]; 
+
+STATE:
+{ numep,
+  id_student,
+  zi,
+  CatchVar271,
+  gr,
+  sapt,
+  CatchVar494,
+  id_ora,
+  sala,
+  return,
+  this }
+
+</LISTING>
+<hr width="100%">
+<a name="session624" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session624">node23#session624</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [compute pre] liveness 23
+<LISTING class='color_black'>JOIN
+
+LEFT:   { numep,
+          id_student,
+          zi,
+          CatchVar271,
+          gr,
+          sapt,
+          CatchVar494,
+          id_ora,
+          return,
+          this }
+RIGHT:  { CatchVar271, return, this }
+RESULT: { numep,
+          id_student,
+          zi,
+          CatchVar271,
+          gr,
+          sapt,
+          CatchVar494,
+          id_ora,
+          return,
+          this }
+
+</LISTING>
+<hr width="100%">
+<a name="session625" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session625">node23#session625</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [exec] liveness 23
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session743" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session743">node23#session743</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session744" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session744">node23#session744</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ id_ora },{ _, n$54, n$56, n$57, $irvar9, $irvar8 })
+
+INSTR=  n$58=*&amp;this:com.stn.helpers.OrarHelper* [line 151]; 
+
+STATE:
+({ n$58, id_ora },{ _, n$54, n$56, n$57, $irvar9, $irvar8 })
+
+INSTR=  n$59=*n$58.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 151]; 
+
+STATE:
+({ n$58, n$59, id_ora },{ _, n$54, n$56, n$57, $irvar9, $irvar8 })
+
+INSTR=  _=*n$59:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 151]; 
+
+STATE:
+({ _, n$58, n$59, id_ora },{ _, n$54, n$56, n$57, $irvar9, $irvar8 })
+
+INSTR=  n$61=*&amp;sala:java.lang.String* [line 151]; 
+
+STATE:
+({ _, n$58, n$59, n$61, id_ora },{ _, n$54, n$56, n$57, $irvar9, $irvar8 })
+
+INSTR=  n$62=_fun_void PreparedStatement.setString(int,String)(n$59:java.sql.PreparedStatement*,6:int,n$61:java.lang.String*) interface virtual [line 151]; 
+
+STATE:
+({ id_ora },{ _, n$58, n$59, n$61, n$62, sala })
+
+</LISTING>
+<hr width="100%">
+<a name="session40" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session40">node23#session40</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session41" href="./../nodes/com.stn.helpers.OrarHelper.addNotes%28java.lang.Integer%2Cjava.lang.Integer%2Cjava.lang.String%2Cjava.lang.S.d8979efe157a3c37a5192371418bf74e_node23.html#session41">node23#session41</a>(<a href="./../../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE151">151</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  id_ora -&gt; { },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$5*,
+                                              @val$4*,
+                                              @val$3*,
+                                              @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+
+
+
+
+TAINTED_CALL1: (callee="void PreparedStatement.setString(int,String)", caller="void OrarHelper.addNotes(Integer,Integer,String,String,String,Integer,String,String,String,Integer,String)")
+INSTR=  n$62 := void PreparedStatement.setString(int,String)({ this-&gt;preparedStatement,
+                                                               6,
+                                                               sala }) [line 151]; 
+
+STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  id_ora -&gt; { },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$7*,
+                                              @val$5*,
+                                              @val$4*,
+                                              @val$3*,
+                                              @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+INSTR=  NULLIFY(&amp;sala); [line 151]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(n$62,sala); [line 151]; 
+
+STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  id_ora -&gt; { },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$7*,
+                                              @val$5*,
+                                              @val$4*,
+                                              @val$3*,
+                                              @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+</LISTING>

@@ -1,0 +1,433 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.OrarHelper.getSchool(int,int):com.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../OrarHelper.java.f54d96465b929673937129e28d3c2afc.html#LINE213">Notes OrarHelper.getSchool(int,int)</a></h1></center>
+<a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:47 46 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$bcvar4); [line 238];
+NULLIFY(&amp;notes); [line 238];
+EXIT_SCOPE($bcvar4,notes); [line 238];
+APPLY_ABSTRACTION; [line 238];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=com.stn.pojo.Notes):com.stn.pojo.Notes*) [line 214];
+n$1=_fun_Notes.&lt;init&gt;()(n$0:com.stn.pojo.Notes*) [line 214];
+*&amp;notes:com.stn.pojo.Notes*=n$0 [line 214];
+EXIT_SCOPE(n$0,n$1); [line 214];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$2=*&amp;this:com.stn.helpers.OrarHelper* [line 215];
+*n$2.query:com.stn.helpers.OrarHelper(root com.stn.helpers.OrarHelper)="Select * from notes where IdOra=? and IdStudent=?" [line 215];
+EXIT_SCOPE(n$2); [line 215];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:49 Instructions
+n$3=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 218];
+*&amp;$irvar0:java.lang.Class*=n$3 [line 218];
+NULLIFY(&amp;$irvar0); [line 218];
+EXIT_SCOPE(n$3,$irvar0); [line 218];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:49 Instructions
+n$4=*&amp;this:com.stn.helpers.OrarHelper* [line 219];
+_=*n$4:com.stn.helpers.OrarHelper*(root com.stn.helpers.OrarHelper) [line 219];
+n$6=_fun_String DBConnection.getHost()(n$4:com.stn.helpers.OrarHelper*) virtual [line 219];
+*&amp;$irvar1:java.lang.String*=n$6 [line 219];
+EXIT_SCOPE(_,n$4,n$6); [line 219];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:49 Instructions
+n$7=*&amp;this:com.stn.helpers.OrarHelper* [line 219];
+_=*n$7:com.stn.helpers.OrarHelper*(root com.stn.helpers.OrarHelper) [line 219];
+n$9=_fun_String DBConnection.getUser()(n$7:com.stn.helpers.OrarHelper*) virtual [line 219];
+*&amp;$irvar2:java.lang.String*=n$9 [line 219];
+EXIT_SCOPE(_,n$7,n$9); [line 219];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:49 Instructions
+n$10=*&amp;this:com.stn.helpers.OrarHelper* [line 219];
+_=*n$10:com.stn.helpers.OrarHelper*(root com.stn.helpers.OrarHelper) [line 219];
+n$12=_fun_String DBConnection.getPassword()(n$10:com.stn.helpers.OrarHelper*) virtual [line 219];
+*&amp;$irvar3:java.lang.String*=n$12 [line 219];
+EXIT_SCOPE(_,n$10,n$12); [line 219];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:49 Instructions
+n$13=*&amp;$irvar1:java.lang.String* [line 219];
+n$14=*&amp;$irvar2:java.lang.String* [line 219];
+n$15=*&amp;$irvar3:java.lang.String* [line 219];
+n$16=_fun_Connection DriverManager.getConnection(String,String,String)(n$13:java.lang.String*,n$14:java.lang.String*,n$15:java.lang.String*) [line 219];
+*&amp;$irvar4:java.sql.Connection*=n$16 [line 219];
+NULLIFY(&amp;$irvar3); [line 219];
+NULLIFY(&amp;$irvar1); [line 219];
+NULLIFY(&amp;$irvar2); [line 219];
+EXIT_SCOPE(n$13,n$14,n$15,n$16,$irvar3,$irvar1,$irvar2); [line 219];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:49 Instructions
+n$17=*&amp;this:com.stn.helpers.OrarHelper* [line 219];
+n$18=*&amp;$irvar4:java.sql.Connection* [line 219];
+*n$17.connection:com.stn.helpers.OrarHelper(root com.stn.helpers.OrarHelper)=n$18 [line 219];
+NULLIFY(&amp;$irvar4); [line 219];
+EXIT_SCOPE(n$17,n$18,$irvar4); [line 219];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:49 Instructions
+n$19=*&amp;this:com.stn.helpers.OrarHelper* [line 220];
+n$20=*n$19.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 220];
+_=*n$20:java.sql.Connection*(root java.sql.Connection) [line 220];
+n$22=*&amp;this:com.stn.helpers.OrarHelper* [line 220];
+n$23=*n$22.query:java.lang.String*(root com.stn.helpers.OrarHelper) [line 220];
+n$24=_fun_PreparedStatement Connection.prepareStatement(String)(n$20:java.sql.Connection*,n$23:java.lang.String*) interface virtual [line 220];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$24 [line 220];
+EXIT_SCOPE(_,n$19,n$20,n$22,n$23,n$24); [line 220];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:49 Instructions
+n$25=*&amp;this:com.stn.helpers.OrarHelper* [line 220];
+n$26=*&amp;$irvar5:java.sql.PreparedStatement* [line 220];
+*n$25.preparedStatement:com.stn.helpers.OrarHelper(root com.stn.helpers.OrarHelper)=n$26 [line 220];
+NULLIFY(&amp;$irvar5); [line 220];
+EXIT_SCOPE(n$25,n$26,$irvar5); [line 220];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:49 Instructions
+n$27=*&amp;this:com.stn.helpers.OrarHelper* [line 221];
+n$28=*n$27.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 221];
+_=*n$28:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 221];
+n$30=*&amp;id_ora:int [line 221];
+n$31=_fun_void PreparedStatement.setInt(int,int)(n$28:java.sql.PreparedStatement*,1:int,n$30:int) interface virtual [line 221];
+NULLIFY(&amp;id_ora); [line 221];
+EXIT_SCOPE(_,n$27,n$28,n$30,n$31,id_ora); [line 221];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:49 Instructions
+n$32=*&amp;this:com.stn.helpers.OrarHelper* [line 222];
+n$33=*n$32.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 222];
+_=*n$33:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 222];
+n$35=*&amp;id_student:int [line 222];
+n$36=_fun_void PreparedStatement.setInt(int,int)(n$33:java.sql.PreparedStatement*,2:int,n$35:int) interface virtual [line 222];
+NULLIFY(&amp;id_student); [line 222];
+EXIT_SCOPE(_,n$32,n$33,n$35,n$36,id_student); [line 222];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:49 Instructions
+n$37=*&amp;this:com.stn.helpers.OrarHelper* [line 223];
+n$38=*n$37.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 223];
+_=*n$38:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 223];
+n$40=_fun_ResultSet PreparedStatement.executeQuery()(n$38:java.sql.PreparedStatement*) interface virtual [line 223];
+*&amp;$irvar6:java.sql.ResultSet*=n$40 [line 223];
+EXIT_SCOPE(_,n$37,n$38,n$40); [line 223];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:49 Instructions
+n$41=*&amp;this:com.stn.helpers.OrarHelper* [line 223];
+n$42=*&amp;$irvar6:java.sql.ResultSet* [line 223];
+*n$41.resultSet:com.stn.helpers.OrarHelper(root com.stn.helpers.OrarHelper)=n$42 [line 223];
+NULLIFY(&amp;$irvar6); [line 223];
+EXIT_SCOPE(n$41,n$42,$irvar6); [line 223];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 20 exn:49 Instructions
+n$43=*&amp;this:com.stn.helpers.OrarHelper* [line 224];
+n$44=*n$43.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 224];
+_=*n$44:java.sql.ResultSet*(root java.sql.ResultSet) [line 224];
+n$46=_fun_boolean ResultSet.next()(n$44:java.sql.ResultSet*) interface virtual [line 224];
+*&amp;$irvar7:_Bool=n$46 [line 224];
+EXIT_SCOPE(_,n$43,n$44,n$46); [line 224];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node19.html"><span class='visited with_tooltip'>C_19<span class='tooltip'>node19 preds:18 succs:21 exn:49 Conditional method_body
+n$47=*&amp;$irvar7:_Bool [line 224];
+PRUNE(!(n$47 == 0), true); [line 224];
+NULLIFY(&amp;$irvar7); [line 224];
+EXIT_SCOPE(n$47,$irvar7); [line 224];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node20.html"><span class='visited with_tooltip'>C_20<span class='tooltip'>node20 preds:18 succs:33 34 exn:49 Conditional method_body
+n$47=*&amp;$irvar7:_Bool [line 224];
+PRUNE((n$47 == 0), false); [line 224];
+NULLIFY(&amp;$irvar7); [line 224];
+EXIT_SCOPE(n$47,$irvar7); [line 224];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:19 succs:22 exn:49 Instructions
+n$48=*&amp;this:com.stn.helpers.OrarHelper* [line 225];
+n$49=*n$48.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 225];
+_=*n$49:java.sql.ResultSet*(root java.sql.ResultSet) [line 225];
+n$51=_fun_int ResultSet.getInt(int)(n$49:java.sql.ResultSet*,1:int) interface virtual [line 225];
+*&amp;$irvar8:int=n$51 [line 225];
+EXIT_SCOPE(_,n$48,n$49,n$51); [line 225];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:49 Instructions
+n$52=*&amp;notes:com.stn.pojo.Notes* [line 225];
+_=*n$52:com.stn.pojo.Notes*(root com.stn.pojo.Notes) [line 225];
+n$54=*&amp;$irvar8:int [line 225];
+n$55=_fun_void Notes.setId(int)(n$52:com.stn.pojo.Notes*,n$54:int) virtual [line 225];
+NULLIFY(&amp;$irvar8); [line 225];
+EXIT_SCOPE(_,n$52,n$54,n$55,$irvar8); [line 225];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:49 Instructions
+n$56=*&amp;this:com.stn.helpers.OrarHelper* [line 226];
+n$57=*n$56.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 226];
+_=*n$57:java.sql.ResultSet*(root java.sql.ResultSet) [line 226];
+n$59=_fun_int ResultSet.getInt(int)(n$57:java.sql.ResultSet*,2:int) interface virtual [line 226];
+*&amp;$irvar9:int=n$59 [line 226];
+EXIT_SCOPE(_,n$56,n$57,n$59); [line 226];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:49 Instructions
+n$60=*&amp;notes:com.stn.pojo.Notes* [line 226];
+_=*n$60:com.stn.pojo.Notes*(root com.stn.pojo.Notes) [line 226];
+n$62=*&amp;$irvar9:int [line 226];
+n$63=_fun_void Notes.setId_ora(int)(n$60:com.stn.pojo.Notes*,n$62:int) virtual [line 226];
+NULLIFY(&amp;$irvar9); [line 226];
+EXIT_SCOPE(_,n$60,n$62,n$63,$irvar9); [line 226];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:49 Instructions
+n$64=*&amp;this:com.stn.helpers.OrarHelper* [line 227];
+n$65=*n$64.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 227];
+_=*n$65:java.sql.ResultSet*(root java.sql.ResultSet) [line 227];
+n$67=_fun_int ResultSet.getInt(int)(n$65:java.sql.ResultSet*,3:int) interface virtual [line 227];
+*&amp;$irvar10:int=n$67 [line 227];
+EXIT_SCOPE(_,n$64,n$65,n$67); [line 227];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:49 Instructions
+n$68=*&amp;notes:com.stn.pojo.Notes* [line 227];
+_=*n$68:com.stn.pojo.Notes*(root com.stn.pojo.Notes) [line 227];
+n$70=*&amp;$irvar10:int [line 227];
+n$71=_fun_void Notes.setId_stud(int)(n$68:com.stn.pojo.Notes*,n$70:int) virtual [line 227];
+NULLIFY(&amp;$irvar10); [line 227];
+EXIT_SCOPE(_,n$68,n$70,n$71,$irvar10); [line 227];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:49 Instructions
+n$72=*&amp;this:com.stn.helpers.OrarHelper* [line 228];
+n$73=*n$72.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 228];
+_=*n$73:java.sql.ResultSet*(root java.sql.ResultSet) [line 228];
+n$75=_fun_String ResultSet.getString(int)(n$73:java.sql.ResultSet*,4:int) interface virtual [line 228];
+*&amp;$irvar11:java.lang.String*=n$75 [line 228];
+EXIT_SCOPE(_,n$72,n$73,n$75); [line 228];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:49 Instructions
+n$76=*&amp;notes:com.stn.pojo.Notes* [line 228];
+_=*n$76:com.stn.pojo.Notes*(root com.stn.pojo.Notes) [line 228];
+n$78=*&amp;$irvar11:java.lang.String* [line 228];
+n$79=_fun_void Notes.setTema(String)(n$76:com.stn.pojo.Notes*,n$78:java.lang.String*) virtual [line 228];
+NULLIFY(&amp;$irvar11); [line 228];
+EXIT_SCOPE(_,n$76,n$78,n$79,$irvar11); [line 228];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:30 exn:49 Instructions
+n$80=*&amp;this:com.stn.helpers.OrarHelper* [line 229];
+n$81=*n$80.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 229];
+_=*n$81:java.sql.ResultSet*(root java.sql.ResultSet) [line 229];
+n$83=_fun_String ResultSet.getString(int)(n$81:java.sql.ResultSet*,5:int) interface virtual [line 229];
+*&amp;$irvar12:java.lang.String*=n$83 [line 229];
+EXIT_SCOPE(_,n$80,n$81,n$83); [line 229];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 succs:31 exn:49 Instructions
+n$84=*&amp;notes:com.stn.pojo.Notes* [line 229];
+_=*n$84:com.stn.pojo.Notes*(root com.stn.pojo.Notes) [line 229];
+n$86=*&amp;$irvar12:java.lang.String* [line 229];
+n$87=_fun_void Notes.setExamen(String)(n$84:com.stn.pojo.Notes*,n$86:java.lang.String*) virtual [line 229];
+NULLIFY(&amp;$irvar12); [line 229];
+EXIT_SCOPE(_,n$84,n$86,n$87,$irvar12); [line 229];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:30 succs:32 exn:49 Instructions
+n$88=*&amp;this:com.stn.helpers.OrarHelper* [line 230];
+n$89=*n$88.resultSet:java.sql.ResultSet*(root com.stn.helpers.OrarHelper) [line 230];
+_=*n$89:java.sql.ResultSet*(root java.sql.ResultSet) [line 230];
+n$91=_fun_int ResultSet.getInt(int)(n$89:java.sql.ResultSet*,6:int) interface virtual [line 230];
+*&amp;$irvar13:int=n$91 [line 230];
+EXIT_SCOPE(_,n$88,n$89,n$91); [line 230];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:31 succs:33 34 exn:49 Instructions
+n$92=*&amp;notes:com.stn.pojo.Notes* [line 230];
+_=*n$92:com.stn.pojo.Notes*(root com.stn.pojo.Notes) [line 230];
+n$94=*&amp;$irvar13:int [line 230];
+n$95=_fun_void Notes.setNota(int)(n$92:com.stn.pojo.Notes*,n$94:int) virtual [line 230];
+NULLIFY(&amp;$irvar13); [line 230];
+EXIT_SCOPE(_,n$92,n$94,n$95,$irvar13); [line 230];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node33.html"><span class='visited with_tooltip'>C_33<span class='tooltip'>node33 preds:32 20 succs:35 exn:3 Conditional method_body
+n$96=*&amp;this:com.stn.helpers.OrarHelper* [line 233];
+n$97=*n$96.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 233];
+PRUNE(!(n$97 == null), true); [line 233];
+EXIT_SCOPE(n$96,n$97); [line 233];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node34.html"><span class='visited with_tooltip'>C_34<span class='tooltip'>node34 preds:32 20 succs:36 37 exn:3 Conditional method_body
+n$96=*&amp;this:com.stn.helpers.OrarHelper* [line 233];
+n$97=*n$96.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 233];
+PRUNE((n$97 == null), false); [line 233];
+EXIT_SCOPE(n$96,n$97); [line 233];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:33 succs:36 37 exn:3 Instructions
+n$98=*&amp;this:com.stn.helpers.OrarHelper* [line 234];
+n$99=*n$98.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 234];
+n$102=_fun___set_mem_attribute(n$99:java.sql.PreparedStatement*) [line 234];
+_=*n$99:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 234];
+n$101=_fun_void PreparedStatement.close()(n$99:java.sql.PreparedStatement*) interface virtual [line 234];
+EXIT_SCOPE(_,n$98,n$99,n$101,n$102); [line 234];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node36.html"><span class='visited with_tooltip'>C_36<span class='tooltip'>node36 preds:35 34 succs:38 exn:3 Conditional method_body
+n$103=*&amp;this:com.stn.helpers.OrarHelper* [line 235];
+n$104=*n$103.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 235];
+PRUNE(!(n$104 == null), true); [line 235];
+EXIT_SCOPE(n$103,n$104); [line 235];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node37.html"><span class='visited with_tooltip'>C_37<span class='tooltip'>node37 preds:35 34 succs:47 exn:3 Conditional method_body
+n$103=*&amp;this:com.stn.helpers.OrarHelper* [line 235];
+n$104=*n$103.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 235];
+PRUNE((n$104 == null), false); [line 235];
+NULLIFY(&amp;this); [line 235];
+EXIT_SCOPE(n$103,n$104,this); [line 235];
+APPLY_ABSTRACTION; [line 235];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:36 succs:47 exn:3 Instructions
+n$105=*&amp;this:com.stn.helpers.OrarHelper* [line 236];
+n$106=*n$105.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 236];
+n$109=_fun___set_mem_attribute(n$106:java.sql.Connection*) [line 236];
+_=*n$106:java.sql.Connection*(root java.sql.Connection) [line 236];
+n$108=_fun_void Connection.close()(n$106:java.sql.Connection*) interface virtual [line 236];
+NULLIFY(&amp;this); [line 236];
+EXIT_SCOPE(_,n$105,n$106,n$108,n$109,this); [line 236];
+APPLY_ABSTRACTION; [line 236];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:50 48 succs:40 41 exn:51 Instructions
+n$110=*&amp;CatchVar223:java.lang.Object* [line 233];
+*&amp;$bcvar4:java.lang.Object*=n$110 [line 233];
+EXIT_SCOPE(n$110); [line 233];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node40.html"><span class='visited with_tooltip'>C_40<span class='tooltip'>node40 preds:39 succs:42 exn:3 Conditional method_body
+n$111=*&amp;this:com.stn.helpers.OrarHelper* [line 233];
+n$112=*n$111.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 233];
+PRUNE(!(n$112 == null), true); [line 233];
+EXIT_SCOPE(n$111,n$112); [line 233];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node41.html"><span class='visited with_tooltip'>C_41<span class='tooltip'>node41 preds:39 succs:43 44 exn:3 Conditional method_body
+n$111=*&amp;this:com.stn.helpers.OrarHelper* [line 233];
+n$112=*n$111.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 233];
+PRUNE((n$112 == null), false); [line 233];
+EXIT_SCOPE(n$111,n$112); [line 233];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:40 succs:43 44 exn:3 Instructions
+n$113=*&amp;this:com.stn.helpers.OrarHelper* [line 234];
+n$114=*n$113.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.OrarHelper) [line 234];
+n$117=_fun___set_mem_attribute(n$114:java.sql.PreparedStatement*) [line 234];
+_=*n$114:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 234];
+n$116=_fun_void PreparedStatement.close()(n$114:java.sql.PreparedStatement*) interface virtual [line 234];
+EXIT_SCOPE(_,n$113,n$114,n$116,n$117); [line 234];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node43.html"><span class='visited with_tooltip'>C_43<span class='tooltip'>node43 preds:42 41 succs:45 exn:3 Conditional method_body
+n$118=*&amp;this:com.stn.helpers.OrarHelper* [line 235];
+n$119=*n$118.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 235];
+PRUNE(!(n$119 == null), true); [line 235];
+EXIT_SCOPE(n$118,n$119); [line 235];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node44.html"><span class='visited with_tooltip'>C_44<span class='tooltip'>node44 preds:42 41 succs:46 exn:3 Conditional method_body
+n$118=*&amp;this:com.stn.helpers.OrarHelper* [line 235];
+n$119=*n$118.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 235];
+PRUNE((n$119 == null), false); [line 235];
+NULLIFY(&amp;this); [line 235];
+EXIT_SCOPE(n$118,n$119,this); [line 235];
+APPLY_ABSTRACTION; [line 235];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node45.html"><span class='visited with_tooltip'>I_45<span class='tooltip'>node45 preds:43 succs:46 exn:3 Instructions
+n$120=*&amp;this:com.stn.helpers.OrarHelper* [line 236];
+n$121=*n$120.connection:java.sql.Connection*(root com.stn.helpers.OrarHelper) [line 236];
+n$124=_fun___set_mem_attribute(n$121:java.sql.Connection*) [line 236];
+_=*n$121:java.sql.Connection*(root java.sql.Connection) [line 236];
+n$123=_fun_void Connection.close()(n$121:java.sql.Connection*) interface virtual [line 236];
+NULLIFY(&amp;this); [line 236];
+EXIT_SCOPE(_,n$120,n$121,n$123,n$124,this); [line 236];
+APPLY_ABSTRACTION; [line 236];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node46.html"><span class='visited with_tooltip'>I_46<span class='tooltip'>node46 preds:45 44 succs:2 exn:3 Instructions
+n$125=*&amp;$bcvar4:java.lang.Object* [line 237];
+*&amp;return:com.stn.pojo.Notes*=EXN n$125 [line 237];
+NULLIFY(&amp;$bcvar4); [line 237];
+EXIT_SCOPE(n$125,$bcvar4); [line 237];
+APPLY_ABSTRACTION; [line 237];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node47.html"><span class='visited with_tooltip'>I_47<span class='tooltip'>node47 preds:38 37 succs:2 exn:3 Instructions
+n$126=*&amp;notes:com.stn.pojo.Notes* [line 238];
+*&amp;return:com.stn.pojo.Notes*=n$126 [line 238];
+NULLIFY(&amp;notes); [line 238];
+EXIT_SCOPE(n$126,notes); [line 238];
+APPLY_ABSTRACTION; [line 238];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node48.html"><span class='visited with_tooltip'>I_48<span class='tooltip'>node48 preds:49 succs:39 exn:3 Instructions
+APPLY_ABSTRACTION; [line 233];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node49.html"><span class='visited with_tooltip'>I_49<span class='tooltip'>node49 preds: succs:48 exn:3 Instructions
+n$127=*&amp;return:com.stn.pojo.Notes* [line 233];
+*&amp;return:com.stn.pojo.Notes*=null [line 233];
+n$128=_fun___unwrap_exception(n$127:com.stn.pojo.Notes*) [line 233];
+NULLIFY(&amp;$irvar3); [line 233];
+NULLIFY(&amp;$irvar9); [line 233];
+NULLIFY(&amp;notes); [line 233];
+NULLIFY(&amp;$irvar5); [line 233];
+NULLIFY(&amp;$irvar4); [line 233];
+NULLIFY(&amp;$irvar7); [line 233];
+NULLIFY(&amp;$irvar12); [line 233];
+NULLIFY(&amp;$irvar6); [line 233];
+NULLIFY(&amp;$irvar13); [line 233];
+NULLIFY(&amp;$irvar11); [line 233];
+NULLIFY(&amp;$irvar10); [line 233];
+NULLIFY(&amp;$irvar8); [line 233];
+NULLIFY(&amp;$irvar1); [line 233];
+NULLIFY(&amp;$irvar2); [line 233];
+EXIT_SCOPE(n$127,n$128,$irvar3,$irvar9,notes,$irvar5,$irvar4,$irvar7,$irvar12,$irvar6,$irvar13,$irvar11,$irvar10,$irvar8,$irvar1,$irvar2); [line 233];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node50.html"><span class='visited with_tooltip'>I_50<span class='tooltip'>node50 preds:51 succs:39 exn:3 Instructions
+APPLY_ABSTRACTION; [line 233];
+</span></span></a> <a href="./nodes/com.stn.helpers.OrarHelper.getSchool%28int%2Cint%29%3Acom.stn.pojo.Notes.7fb94ce121984e3f343b6c41e871cabc_node51.html"><span class='visited with_tooltip'>I_51<span class='tooltip'>node51 preds: succs:50 exn:3 Instructions
+n$127=*&amp;return:com.stn.pojo.Notes* [line 233];
+*&amp;return:com.stn.pojo.Notes*=null [line 233];
+n$128=_fun___unwrap_exception(n$127:com.stn.pojo.Notes*) [line 233];
+NULLIFY(&amp;$bcvar4); [line 233];
+EXIT_SCOPE(n$127,n$128,$bcvar4); [line 233];
+</span></span></a><br />@
+
+<span class='color_black'>com.stn.pojo.Notes* Notes OrarHelper.getSchool(int,int)(com.stn.helpers.OrarHelper* this, int id_ora, int id_student)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { @val$0 -> { connection -> (Footprint({ @val$0.dbUser,
+                                                   @val$0.dbPort*,
+                                                   @val$0.dbPassword,
+                                                   @val$0.dbName*,
+                                                   @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        preparedStatement -> (Footprint({ @val$0.dbUser,
+                                                          @val$0.dbPort*,
+                                                          @val$0.dbPassword,
+                                                          @val$0.dbName*,
+                                                          @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        query -> { },
+                        resultSet -> ({ Other(ResultSet PreparedStatement.executeQuery() at line 223) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *) },
+            return -> { examen -> { Other(ResultSet PreparedStatement.executeQuery() at line 223) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?,
+                        id -> { },
+                        id_ora -> { },
+                        id_stud -> { },
+                        nota -> { },
+                        tema -> { Other(ResultSet PreparedStatement.executeQuery() at line 223) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ? } }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= Notes OrarHelper.getSchool(int,int)
+; translation_unit= src/main/java/com/stn/helpers/OrarHelper.java
+; access= Public
+; exceptions= [java.sql.SQLException;  java.lang.ClassNotFoundException]
+; formals= [(this,com.stn.helpers.OrarHelper*);  (id_ora,int);  (id_student,
+            int)]
+; is_defined= true
+; loc= src/main/java/com/stn/helpers/OrarHelper.java:213
+; locals= [{ name= $bcvar4; typ= void; modify_in_block= false }; 
+           { name= CatchVar223; typ= void; modify_in_block= false }; 
+           { name= $irvar13; typ= void; modify_in_block= false }; 
+           { name= $irvar12; typ= void; modify_in_block= false }; 
+           { name= $irvar11; typ= void; modify_in_block= false }; 
+           { name= $irvar10; typ= void; modify_in_block= false }; 
+           { name= $irvar9; typ= void; modify_in_block= false }; 
+           { name= $irvar8; typ= void; modify_in_block= false }; 
+           { name= $irvar7; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= notes; typ= com.stn.pojo.Notes*; modify_in_block= false }]
+; ret_type= com.stn.pojo.Notes* 
+; proc_id= com.stn.helpers.OrarHelper.getSchool(int,int):com.stn.pojo.Notes }</pre>
+</body>
+</html>

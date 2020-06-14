@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.News.getIdNews():int.cd7912b8a8a95a92cda888b368645c70_1" [label="1: Start int News.getIdNews()\nFormals:  this:com.stn.pojo.News*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.News.getIdNews():int.cd7912b8a8a95a92cda888b368645c70_1" -> "com.stn.pojo.News.getIdNews():int.cd7912b8a8a95a92cda888b368645c70_4" ;
+"com.stn.pojo.News.getIdNews():int.cd7912b8a8a95a92cda888b368645c70_2" [label="2: Exit int News.getIdNews() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.News.getIdNews():int.cd7912b8a8a95a92cda888b368645c70_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 55]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.getIdNews():int.cd7912b8a8a95a92cda888b368645c70_3" -> "com.stn.pojo.News.getIdNews():int.cd7912b8a8a95a92cda888b368645c70_2" ;
+"com.stn.pojo.News.getIdNews():int.cd7912b8a8a95a92cda888b368645c70_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.News* [line 55]\n  n$1=*n$0.idNews:int(root com.stn.pojo.News) [line 55]\n  *&return:int=n$1 [line 55]\n  NULLIFY(&this); [line 55]\n  EXIT_SCOPE(n$0,n$1,this); [line 55]\n  APPLY_ABSTRACTION; [line 55]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.getIdNews():int.cd7912b8a8a95a92cda888b368645c70_4" -> "com.stn.pojo.News.getIdNews():int.cd7912b8a8a95a92cda888b368645c70_2" ;
+	 "com.stn.pojo.News.getIdNews():int.cd7912b8a8a95a92cda888b368645c70_4" -> "com.stn.pojo.News.getIdNews():int.cd7912b8a8a95a92cda888b368645c70_3" [color="red" ];
+}

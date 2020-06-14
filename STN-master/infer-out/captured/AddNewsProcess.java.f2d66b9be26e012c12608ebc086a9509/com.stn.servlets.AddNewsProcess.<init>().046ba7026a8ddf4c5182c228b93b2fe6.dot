@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.servlets.AddNewsProcess.<init>().046ba7026a8ddf4c5182c228b93b2fe6_1" [label="1: Start AddNewsProcess.<init>()\nFormals:  this:com.stn.servlets.AddNewsProcess*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.servlets.AddNewsProcess.<init>().046ba7026a8ddf4c5182c228b93b2fe6_1" -> "com.stn.servlets.AddNewsProcess.<init>().046ba7026a8ddf4c5182c228b93b2fe6_4" ;
+"com.stn.servlets.AddNewsProcess.<init>().046ba7026a8ddf4c5182c228b93b2fe6_2" [label="2: Exit AddNewsProcess.<init>() \n  " color=yellow style=filled]
+	
+
+"com.stn.servlets.AddNewsProcess.<init>().046ba7026a8ddf4c5182c228b93b2fe6_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 18]\n " shape="box"]
+	
+
+	 "com.stn.servlets.AddNewsProcess.<init>().046ba7026a8ddf4c5182c228b93b2fe6_3" -> "com.stn.servlets.AddNewsProcess.<init>().046ba7026a8ddf4c5182c228b93b2fe6_2" ;
+"com.stn.servlets.AddNewsProcess.<init>().046ba7026a8ddf4c5182c228b93b2fe6_4" [label="4:  Call HttpServlet.<init>() \n   n$0=*&this:com.stn.servlets.AddNewsProcess* [line 18]\n  n$1=_fun_HttpServlet.<init>()(n$0:com.stn.servlets.AddNewsProcess*) [line 18]\n  NULLIFY(&this); [line 18]\n  EXIT_SCOPE(n$0,n$1,this); [line 18]\n " shape="box"]
+	
+
+	 "com.stn.servlets.AddNewsProcess.<init>().046ba7026a8ddf4c5182c228b93b2fe6_4" -> "com.stn.servlets.AddNewsProcess.<init>().046ba7026a8ddf4c5182c228b93b2fe6_5" ;
+	 "com.stn.servlets.AddNewsProcess.<init>().046ba7026a8ddf4c5182c228b93b2fe6_4" -> "com.stn.servlets.AddNewsProcess.<init>().046ba7026a8ddf4c5182c228b93b2fe6_3" [color="red" ];
+"com.stn.servlets.AddNewsProcess.<init>().046ba7026a8ddf4c5182c228b93b2fe6_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 18]\n " shape="box"]
+	
+
+	 "com.stn.servlets.AddNewsProcess.<init>().046ba7026a8ddf4c5182c228b93b2fe6_5" -> "com.stn.servlets.AddNewsProcess.<init>().046ba7026a8ddf4c5182c228b93b2fe6_2" ;
+	 "com.stn.servlets.AddNewsProcess.<init>().046ba7026a8ddf4c5182c228b93b2fe6_5" -> "com.stn.servlets.AddNewsProcess.<init>().046ba7026a8ddf4c5182c228b93b2fe6_3" [color="red" ];
+}

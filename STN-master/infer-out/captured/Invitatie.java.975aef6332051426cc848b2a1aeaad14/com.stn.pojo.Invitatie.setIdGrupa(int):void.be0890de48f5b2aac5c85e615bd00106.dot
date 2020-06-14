@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Invitatie.setIdGrupa(int):void.be0890de48f5b2aac5c85e615bd00106_1" [label="1: Start void Invitatie.setIdGrupa(int)\nFormals:  this:com.stn.pojo.Invitatie* idGrupa:int\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Invitatie.setIdGrupa(int):void.be0890de48f5b2aac5c85e615bd00106_1" -> "com.stn.pojo.Invitatie.setIdGrupa(int):void.be0890de48f5b2aac5c85e615bd00106_4" ;
+"com.stn.pojo.Invitatie.setIdGrupa(int):void.be0890de48f5b2aac5c85e615bd00106_2" [label="2: Exit void Invitatie.setIdGrupa(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Invitatie.setIdGrupa(int):void.be0890de48f5b2aac5c85e615bd00106_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 41]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.setIdGrupa(int):void.be0890de48f5b2aac5c85e615bd00106_3" -> "com.stn.pojo.Invitatie.setIdGrupa(int):void.be0890de48f5b2aac5c85e615bd00106_2" ;
+"com.stn.pojo.Invitatie.setIdGrupa(int):void.be0890de48f5b2aac5c85e615bd00106_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Invitatie* [line 40]\n  n$1=*&idGrupa:int [line 40]\n  *n$0.idGrupa:com.stn.pojo.Invitatie(root com.stn.pojo.Invitatie)=n$1 [line 40]\n  NULLIFY(&idGrupa); [line 40]\n  NULLIFY(&this); [line 40]\n  EXIT_SCOPE(n$0,n$1,idGrupa,this); [line 40]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.setIdGrupa(int):void.be0890de48f5b2aac5c85e615bd00106_4" -> "com.stn.pojo.Invitatie.setIdGrupa(int):void.be0890de48f5b2aac5c85e615bd00106_5" ;
+	 "com.stn.pojo.Invitatie.setIdGrupa(int):void.be0890de48f5b2aac5c85e615bd00106_4" -> "com.stn.pojo.Invitatie.setIdGrupa(int):void.be0890de48f5b2aac5c85e615bd00106_3" [color="red" ];
+"com.stn.pojo.Invitatie.setIdGrupa(int):void.be0890de48f5b2aac5c85e615bd00106_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 41]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.setIdGrupa(int):void.be0890de48f5b2aac5c85e615bd00106_5" -> "com.stn.pojo.Invitatie.setIdGrupa(int):void.be0890de48f5b2aac5c85e615bd00106_2" ;
+	 "com.stn.pojo.Invitatie.setIdGrupa(int):void.be0890de48f5b2aac5c85e615bd00106_5" -> "com.stn.pojo.Invitatie.setIdGrupa(int):void.be0890de48f5b2aac5c85e615bd00106_3" [color="red" ];
+}

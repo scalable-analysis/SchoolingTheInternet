@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.servlets.AdminAppProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.Http.4ea9dcbc544885298135edeb08f52c25_node13</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../AdminAppProcess.java.9c7b1591bad23b35e563fdb87c8df127.html#LINE32">13</a></h1></center>PROC: <a href="./../com.stn.servlets.AdminAppProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.4ea9dcbc544885298135edeb08f52c25.html">void AdminAppProcess.doGet(HttpServletRequest,HttpServletResponse)</a> LINE: <a href="./../../AdminAppProcess.java.9c7b1591bad23b35e563fdb87c8df127.html#LINE32">32</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.servlets.AdminAppProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.4ea9dcbc544885298135edeb08f52c25_node11.html"><span class='visited with_tooltip'>N_11<span class='tooltip'>node11 preds:10 succs:13 exn:3 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.servlets.AdminAppProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.4ea9dcbc544885298135edeb08f52c25_node14.html"><span class='visited with_tooltip'>N_14<span class='tooltip'>node14 preds:13 succs:16 exn:3 </span></span></a> <a href="./../nodes/com.stn.servlets.AdminAppProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.4ea9dcbc544885298135edeb08f52c25_node15.html"><span class='visited with_tooltip'>N_15<span class='tooltip'>node15 preds:13 succs:22 exn:3 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.servlets.AdminAppProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.4ea9dcbc544885298135edeb08f52c25_node3.html"><span class='visited with_tooltip'>N_3<span class='tooltip'>node3 preds:25 succs:2 exn:2 </span></span></a><br>
+<LISTING class='color_green'>n$15=*&amp;request:javax.servlet.http.HttpServletRequest* [line 32];
+_=*n$15:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 32];
+n$17=_fun_String HttpServletRequest.getParameter(String)(n$15:javax.servlet.http.HttpServletRequest*,"id":java.lang.Object*) interface virtual [line 32];
+*&amp;$irvar2:java.lang.String*=n$17 [line 32];
+</LISTING>
+<hr width="100%">
+<a name="session36" href="./../nodes/com.stn.servlets.AdminAppProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.4ea9dcbc544885298135edeb08f52c25_node13.html#session36">node13#session36</a>(<a href="./../../AdminAppProcess.java.9c7b1591bad23b35e563fdb87c8df127.html#LINE32">32</a>) [compute pre] liveness 13
+<LISTING class='color_black'>JOIN
+
+LEFT:   { url, out, request, return, $irvar2, applicationHelper, response }
+RIGHT:  { url, $irvar2, response }
+RESULT: { url, out, request, return, $irvar2, applicationHelper, response }
+
+JOIN
+
+LEFT:   { url, out, request, return, $irvar2, applicationHelper, response }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session37" href="./../nodes/com.stn.servlets.AdminAppProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.4ea9dcbc544885298135edeb08f52c25_node13.html#session37">node13#session37</a>(<a href="./../../AdminAppProcess.java.9c7b1591bad23b35e563fdb87c8df127.html#LINE32">32</a>) [exec] liveness 13
+<LISTING class='color_black'>PRE STATE:
+{ url, out, request, return, $irvar2, applicationHelper, response }
+
+INSTR=  *&amp;$irvar2:java.lang.String*=n$17 [line 32]; 
+
+STATE:
+{ n$17, url, out, request, return, applicationHelper, response }
+
+INSTR=  n$17=_fun_String HttpServletRequest.getParameter(String)(n$15:javax.servlet.http.HttpServletRequest*,&quot;id&quot;:java.lang.Object*) interface virtual [line 32]; 
+
+STATE:
+{ n$15, url, out, request, return, applicationHelper, response }
+
+INSTR=  _=*n$15:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 32]; 
+
+STATE UNCHANGED
+
+INSTR=  n$15=*&amp;request:javax.servlet.http.HttpServletRequest* [line 32]; 
+
+STATE:
+{ url, out, request, return, applicationHelper, response }
+
+</LISTING>
+<hr width="100%">
+<a name="session75" href="./../nodes/com.stn.servlets.AdminAppProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.4ea9dcbc544885298135edeb08f52c25_node13.html#session75">node13#session75</a>(<a href="./../../AdminAppProcess.java.9c7b1591bad23b35e563fdb87c8df127.html#LINE32">32</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session76" href="./../nodes/com.stn.servlets.AdminAppProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.4ea9dcbc544885298135edeb08f52c25_node13.html#session76">node13#session76</a>(<a href="./../../AdminAppProcess.java.9c7b1591bad23b35e563fdb87c8df127.html#LINE32">32</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ url, out, applicationHelper },{ n$14, $irvar1 })
+
+INSTR=  n$15=*&amp;request:javax.servlet.http.HttpServletRequest* [line 32]; 
+
+STATE:
+({ n$15, url, out, applicationHelper },{ n$14, $irvar1 })
+
+INSTR=  _=*n$15:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 32]; 
+
+STATE:
+({ _, n$15, url, out, applicationHelper },{ n$14, $irvar1 })
+
+INSTR=  n$17=_fun_String HttpServletRequest.getParameter(String)(n$15:javax.servlet.http.HttpServletRequest*,&quot;id&quot;:java.lang.Object*) interface virtual [line 32]; 
+
+STATE:
+({ _, n$15, n$17, url, out, applicationHelper },{ n$14, $irvar1 })
+
+INSTR=  *&amp;$irvar2:java.lang.String*=n$17 [line 32]; 
+
+STATE:
+({ url, out, $irvar2, applicationHelper },{ _, n$15, n$17 })
+
+</LISTING>
+<hr width="100%">
+<a name="session20" href="./../nodes/com.stn.servlets.AdminAppProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.4ea9dcbc544885298135edeb08f52c25_node13.html#session20">node13#session20</a>(<a href="./../../AdminAppProcess.java.9c7b1591bad23b35e563fdb87c8df127.html#LINE32">32</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session21" href="./../nodes/com.stn.servlets.AdminAppProcess.doGet%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.4ea9dcbc544885298135edeb08f52c25_node13.html#session21">node13#session21</a>(<a href="./../../AdminAppProcess.java.9c7b1591bad23b35e563fdb87c8df127.html#LINE32">32</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$9 -&gt; { connection -&gt; { },
+           dbHost -&gt; { },
+           dbName -&gt; { },
+           dbPassword -&gt; { },
+           dbPort -&gt; { },
+           dbUser -&gt; { },
+           preparedStatement -&gt; { },
+           query -&gt; { },
+           resultSet -&gt; { } },
+  n$13 -&gt; { },
+  url -&gt; { },
+  out -&gt; { },
+  applicationHelper -&gt; { connection -&gt; { },
+                         dbHost -&gt; { },
+                         dbName -&gt; { },
+                         dbPassword -&gt; { },
+                         dbPort -&gt; { },
+                         dbUser -&gt; { },
+                         preparedStatement -&gt; { },
+                         query -&gt; { },
+                         resultSet -&gt; { } },
+  session -&gt; { } }
+
+
+
+INSTR=  n$17 := String HttpServletRequest.getParameter(String)({ request,
+                                                                 &quot;id&quot; }) [line 32]; 
+
+STATE UNCHANGED
+
+
+
+</LISTING>

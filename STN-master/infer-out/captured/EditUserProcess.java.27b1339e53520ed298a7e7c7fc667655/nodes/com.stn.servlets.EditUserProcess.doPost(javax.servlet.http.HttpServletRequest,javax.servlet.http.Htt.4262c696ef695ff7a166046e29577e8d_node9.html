@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.servlets.EditUserProcess.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.Htt.4262c696ef695ff7a166046e29577e8d_node9</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../EditUserProcess.java.27b1339e53520ed298a7e7c7fc667655.html#LINE32">9</a></h1></center>PROC: <a href="./../com.stn.servlets.EditUserProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.4262c696ef695ff7a166046e29577e8d.html">void EditUserProcess.doPost(HttpServletRequest,HttpServletResponse)</a> LINE: <a href="./../../EditUserProcess.java.27b1339e53520ed298a7e7c7fc667655.html#LINE32">32</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.servlets.EditUserProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.4262c696ef695ff7a166046e29577e8d_node8.html"><span class='visited with_tooltip'>N_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.servlets.EditUserProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.4262c696ef695ff7a166046e29577e8d_node10.html"><span class='visited with_tooltip'>N_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.servlets.EditUserProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.4262c696ef695ff7a166046e29577e8d_node3.html"><span class='visited with_tooltip'>N_3<span class='tooltip'>node3 preds:86 succs:2 exn:2 </span></span></a><br>
+<LISTING class='color_green'>n$11=*&amp;session:javax.servlet.http.HttpSession* [line 32];
+_=*n$11:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 32];
+n$13=_fun_Object HttpSession.getAttribute(String)(n$11:javax.servlet.http.HttpSession*,"userId":java.lang.Object*) interface virtual [line 32];
+*&amp;$irvar0:java.lang.Object*=n$13 [line 32];
+</LISTING>
+<hr width="100%">
+<a name="session164" href="./../nodes/com.stn.servlets.EditUserProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.4262c696ef695ff7a166046e29577e8d_node9.html#session164">node9#session164</a>(<a href="./../../EditUserProcess.java.27b1339e53520ed298a7e7c7fc667655.html#LINE32">32</a>) [compute pre] liveness 9
+<LISTING class='color_black'>JOIN
+
+LEFT:   { out, request, $irvar0, return, userHelper, session, response }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session165" href="./../nodes/com.stn.servlets.EditUserProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.4262c696ef695ff7a166046e29577e8d_node9.html#session165">node9#session165</a>(<a href="./../../EditUserProcess.java.27b1339e53520ed298a7e7c7fc667655.html#LINE32">32</a>) [exec] liveness 9
+<LISTING class='color_black'>PRE STATE:
+{ out, request, $irvar0, return, userHelper, session, response }
+
+INSTR=  *&amp;$irvar0:java.lang.Object*=n$13 [line 32]; 
+
+STATE:
+{ n$13, out, request, return, userHelper, session, response }
+
+INSTR=  n$13=_fun_Object HttpSession.getAttribute(String)(n$11:javax.servlet.http.HttpSession*,&quot;userId&quot;:java.lang.Object*) interface virtual [line 32]; 
+
+STATE:
+{ n$11, out, request, return, userHelper, session, response }
+
+INSTR=  _=*n$11:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 32]; 
+
+STATE UNCHANGED
+
+INSTR=  n$11=*&amp;session:javax.servlet.http.HttpSession* [line 32]; 
+
+STATE:
+{ out, request, return, userHelper, session, response }
+
+</LISTING>
+<hr width="100%">
+<a name="session189" href="./../nodes/com.stn.servlets.EditUserProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.4262c696ef695ff7a166046e29577e8d_node9.html#session189">node9#session189</a>(<a href="./../../EditUserProcess.java.27b1339e53520ed298a7e7c7fc667655.html#LINE32">32</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session190" href="./../nodes/com.stn.servlets.EditUserProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.4262c696ef695ff7a166046e29577e8d_node9.html#session190">node9#session190</a>(<a href="./../../EditUserProcess.java.27b1339e53520ed298a7e7c7fc667655.html#LINE32">32</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ out, userHelper, session },{ n$9, n$10 })
+
+INSTR=  n$11=*&amp;session:javax.servlet.http.HttpSession* [line 32]; 
+
+STATE:
+({ n$11, out, userHelper, session },{ n$9, n$10 })
+
+INSTR=  _=*n$11:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 32]; 
+
+STATE:
+({ _, n$11, out, userHelper, session },{ n$9, n$10 })
+
+INSTR=  n$13=_fun_Object HttpSession.getAttribute(String)(n$11:javax.servlet.http.HttpSession*,&quot;userId&quot;:java.lang.Object*) interface virtual [line 32]; 
+
+STATE:
+({ _, n$11, n$13, out, userHelper, session },{ n$9, n$10 })
+
+INSTR=  *&amp;$irvar0:java.lang.Object*=n$13 [line 32]; 
+
+STATE:
+({ out, $irvar0, userHelper, session },{ _, n$11, n$13 })
+
+</LISTING>
+<hr width="100%">
+<a name="session12" href="./../nodes/com.stn.servlets.EditUserProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.4262c696ef695ff7a166046e29577e8d_node9.html#session12">node9#session12</a>(<a href="./../../EditUserProcess.java.27b1339e53520ed298a7e7c7fc667655.html#LINE32">32</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session13" href="./../nodes/com.stn.servlets.EditUserProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Htt.4262c696ef695ff7a166046e29577e8d_node9.html#session13">node9#session13</a>(<a href="./../../EditUserProcess.java.27b1339e53520ed298a7e7c7fc667655.html#LINE32">32</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$9 -&gt; { connection -&gt; { },
+           dbHost -&gt; { },
+           dbName -&gt; { },
+           dbPassword -&gt; { },
+           dbPort -&gt; { },
+           dbUser -&gt; { },
+           preparedStatement -&gt; { },
+           query -&gt; { },
+           resultSet -&gt; { } },
+  error -&gt; { },
+  out -&gt; { },
+  userHelper -&gt; { connection -&gt; { },
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; { },
+                  query -&gt; { },
+                  resultSet -&gt; { } },
+  session -&gt; { } }
+
+
+
+INSTR=  n$13 := Object HttpSession.getAttribute(String)({ session, &quot;userId&quot; }) [line 32]; 
+
+STATE UNCHANGED
+
+
+
+</LISTING>

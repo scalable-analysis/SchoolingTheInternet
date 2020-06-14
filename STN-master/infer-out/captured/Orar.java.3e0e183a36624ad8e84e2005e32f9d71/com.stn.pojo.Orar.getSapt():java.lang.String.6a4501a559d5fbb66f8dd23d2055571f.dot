@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Orar.getSapt():java.lang.String.6a4501a559d5fbb66f8dd23d2055571f_1" [label="1: Start String Orar.getSapt()\nFormals:  this:com.stn.pojo.Orar*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Orar.getSapt():java.lang.String.6a4501a559d5fbb66f8dd23d2055571f_1" -> "com.stn.pojo.Orar.getSapt():java.lang.String.6a4501a559d5fbb66f8dd23d2055571f_4" ;
+"com.stn.pojo.Orar.getSapt():java.lang.String.6a4501a559d5fbb66f8dd23d2055571f_2" [label="2: Exit String Orar.getSapt() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Orar.getSapt():java.lang.String.6a4501a559d5fbb66f8dd23d2055571f_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 17]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Orar.getSapt():java.lang.String.6a4501a559d5fbb66f8dd23d2055571f_3" -> "com.stn.pojo.Orar.getSapt():java.lang.String.6a4501a559d5fbb66f8dd23d2055571f_2" ;
+"com.stn.pojo.Orar.getSapt():java.lang.String.6a4501a559d5fbb66f8dd23d2055571f_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Orar* [line 17]\n  n$1=*n$0.sapt:java.lang.String*(root com.stn.pojo.Orar) [line 17]\n  *&return:java.lang.String*=n$1 [line 17]\n  NULLIFY(&this); [line 17]\n  EXIT_SCOPE(n$0,n$1,this); [line 17]\n  APPLY_ABSTRACTION; [line 17]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Orar.getSapt():java.lang.String.6a4501a559d5fbb66f8dd23d2055571f_4" -> "com.stn.pojo.Orar.getSapt():java.lang.String.6a4501a559d5fbb66f8dd23d2055571f_2" ;
+	 "com.stn.pojo.Orar.getSapt():java.lang.String.6a4501a559d5fbb66f8dd23d2055571f_4" -> "com.stn.pojo.Orar.getSapt():java.lang.String.6a4501a559d5fbb66f8dd23d2055571f_3" [color="red" ];
+}

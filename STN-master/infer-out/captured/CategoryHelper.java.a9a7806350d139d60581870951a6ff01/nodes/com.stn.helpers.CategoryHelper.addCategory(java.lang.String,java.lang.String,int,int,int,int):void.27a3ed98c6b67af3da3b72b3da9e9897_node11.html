@@ -1,0 +1,396 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.CategoryHelper.addCategory(java.lang.String,java.lang.String,int,int,int,int):void.27a3ed98c6b67af3da3b72b3da9e9897_node11</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../CategoryHelper.java.a9a7806350d139d60581870951a6ff01.html#LINE19">11</a></h1></center>PROC: <a href="./../com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897.html">void CategoryHelper.addCategory(String,String,int,int,int,int)</a> LINE: <a href="./../../CategoryHelper.java.a9a7806350d139d60581870951a6ff01.html#LINE19">19</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node10.html"><span class='visited with_tooltip'>N_10<span class='tooltip'>node10 preds:9 succs:11 exn:36 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node12.html"><span class='visited with_tooltip'>N_12<span class='tooltip'>node12 preds:11 succs:13 exn:36 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node36.html"><span class='visited with_tooltip'>N_36<span class='tooltip'>node36 preds: succs:35 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$17=*&amp;this:com.stn.helpers.CategoryHelper* [line 19];
+n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 19];
+_=*n$18:java.sql.Connection*(root java.sql.Connection) [line 19];
+n$20=*&amp;this:com.stn.helpers.CategoryHelper* [line 19];
+n$21=*n$20.query:java.lang.String*(root com.stn.helpers.CategoryHelper) [line 19];
+n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 19];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 19];
+</LISTING>
+<hr width="100%">
+<a name="session54" href="./../nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node11.html#session54">node11#session54</a>(<a href="./../../CategoryHelper.java.a9a7806350d139d60581870951a6ff01.html#LINE19">19</a>) [compute pre] liveness 11
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session55" href="./../nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node11.html#session55">node11#session55</a>(<a href="./../../CategoryHelper.java.a9a7806350d139d60581870951a6ff01.html#LINE19">19</a>) [exec] liveness 11
+<LISTING class='color_black'>PRE STATE:
+{ idSerie,
+  $irvar5,
+  descriere,
+  idFacultate,
+  pinned,
+  categorie,
+  idGrupa,
+  this }
+
+INSTR=  *&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 19]; 
+
+STATE:
+{ n$22, idSerie, descriere, idFacultate, pinned, categorie, idGrupa, this }
+
+INSTR=  n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 19]; 
+
+STATE:
+{ n$18,
+  n$21,
+  idSerie,
+  descriere,
+  idFacultate,
+  pinned,
+  categorie,
+  idGrupa,
+  this }
+
+INSTR=  n$21=*n$20.query:java.lang.String*(root com.stn.helpers.CategoryHelper) [line 19]; 
+
+STATE:
+{ n$18,
+  n$20,
+  idSerie,
+  descriere,
+  idFacultate,
+  pinned,
+  categorie,
+  idGrupa,
+  this }
+
+INSTR=  n$20=*&amp;this:com.stn.helpers.CategoryHelper* [line 19]; 
+
+STATE:
+{ n$18, idSerie, descriere, idFacultate, pinned, categorie, idGrupa, this }
+
+INSTR=  _=*n$18:java.sql.Connection*(root java.sql.Connection) [line 19]; 
+
+STATE UNCHANGED
+
+INSTR=  n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 19]; 
+
+STATE:
+{ n$17, idSerie, descriere, idFacultate, pinned, categorie, idGrupa, this }
+
+INSTR=  n$17=*&amp;this:com.stn.helpers.CategoryHelper* [line 19]; 
+
+STATE:
+{ idSerie, descriere, idFacultate, pinned, categorie, idGrupa, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session108" href="./../nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node11.html#session108">node11#session108</a>(<a href="./../../CategoryHelper.java.a9a7806350d139d60581870951a6ff01.html#LINE19">19</a>) [compute pre] liveness 11
+<LISTING class='color_black'>JOIN
+
+LEFT:   { idSerie,
+          $irvar5,
+          descriere,
+          idFacultate,
+          pinned,
+          categorie,
+          idGrupa,
+          this }
+RIGHT:  { CatchVar163, return, this }
+RESULT: { idSerie,
+          CatchVar163,
+          $irvar5,
+          descriere,
+          idFacultate,
+          pinned,
+          categorie,
+          return,
+          idGrupa,
+          this }
+
+</LISTING>
+<hr width="100%">
+<a name="session109" href="./../nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node11.html#session109">node11#session109</a>(<a href="./../../CategoryHelper.java.a9a7806350d139d60581870951a6ff01.html#LINE19">19</a>) [exec] liveness 11
+<LISTING class='color_black'>PRE STATE:
+{ idSerie,
+  CatchVar163,
+  $irvar5,
+  descriere,
+  idFacultate,
+  pinned,
+  categorie,
+  return,
+  idGrupa,
+  this }
+
+INSTR=  *&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 19]; 
+
+STATE:
+{ n$22,
+  idSerie,
+  CatchVar163,
+  descriere,
+  idFacultate,
+  pinned,
+  categorie,
+  return,
+  idGrupa,
+  this }
+
+INSTR=  n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 19]; 
+
+STATE:
+{ n$18,
+  n$21,
+  idSerie,
+  CatchVar163,
+  descriere,
+  idFacultate,
+  pinned,
+  categorie,
+  return,
+  idGrupa,
+  this }
+
+INSTR=  n$21=*n$20.query:java.lang.String*(root com.stn.helpers.CategoryHelper) [line 19]; 
+
+STATE:
+{ n$18,
+  n$20,
+  idSerie,
+  CatchVar163,
+  descriere,
+  idFacultate,
+  pinned,
+  categorie,
+  return,
+  idGrupa,
+  this }
+
+INSTR=  n$20=*&amp;this:com.stn.helpers.CategoryHelper* [line 19]; 
+
+STATE:
+{ n$18,
+  idSerie,
+  CatchVar163,
+  descriere,
+  idFacultate,
+  pinned,
+  categorie,
+  return,
+  idGrupa,
+  this }
+
+INSTR=  _=*n$18:java.sql.Connection*(root java.sql.Connection) [line 19]; 
+
+STATE UNCHANGED
+
+INSTR=  n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 19]; 
+
+STATE:
+{ n$17,
+  idSerie,
+  CatchVar163,
+  descriere,
+  idFacultate,
+  pinned,
+  categorie,
+  return,
+  idGrupa,
+  this }
+
+INSTR=  n$17=*&amp;this:com.stn.helpers.CategoryHelper* [line 19]; 
+
+STATE:
+{ idSerie,
+  CatchVar163,
+  descriere,
+  idFacultate,
+  pinned,
+  categorie,
+  return,
+  idGrupa,
+  this }
+
+</LISTING>
+<hr width="100%">
+<a name="session114" href="./../nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node11.html#session114">node11#session114</a>(<a href="./../../CategoryHelper.java.a9a7806350d139d60581870951a6ff01.html#LINE19">19</a>) [compute pre] liveness 11
+<LISTING class='color_black'>JOIN
+
+LEFT:   { idSerie,
+          CatchVar163,
+          $irvar5,
+          descriere,
+          idFacultate,
+          pinned,
+          categorie,
+          return,
+          idGrupa,
+          this }
+RIGHT:  { CatchVar163, return, this }
+RESULT: { idSerie,
+          CatchVar163,
+          $irvar5,
+          descriere,
+          idFacultate,
+          pinned,
+          categorie,
+          return,
+          idGrupa,
+          this }
+
+</LISTING>
+<hr width="100%">
+<a name="session115" href="./../nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node11.html#session115">node11#session115</a>(<a href="./../../CategoryHelper.java.a9a7806350d139d60581870951a6ff01.html#LINE19">19</a>) [exec] liveness 11
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session162" href="./../nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node11.html#session162">node11#session162</a>(<a href="./../../CategoryHelper.java.a9a7806350d139d60581870951a6ff01.html#LINE19">19</a>) [compute pre] liveness 11
+<LISTING class='color_black'>JOIN
+
+LEFT:   { idSerie,
+          CatchVar163,
+          $irvar5,
+          descriere,
+          idFacultate,
+          pinned,
+          categorie,
+          return,
+          idGrupa,
+          this }
+RIGHT:  { CatchVar163, return, this }
+RESULT: { idSerie,
+          CatchVar163,
+          $irvar5,
+          descriere,
+          idFacultate,
+          pinned,
+          categorie,
+          return,
+          idGrupa,
+          this }
+
+</LISTING>
+<hr width="100%">
+<a name="session163" href="./../nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node11.html#session163">node11#session163</a>(<a href="./../../CategoryHelper.java.a9a7806350d139d60581870951a6ff01.html#LINE19">19</a>) [exec] liveness 11
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session201" href="./../nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node11.html#session201">node11#session201</a>(<a href="./../../CategoryHelper.java.a9a7806350d139d60581870951a6ff01.html#LINE19">19</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session202" href="./../nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node11.html#session202">node11#session202</a>(<a href="./../../CategoryHelper.java.a9a7806350d139d60581870951a6ff01.html#LINE19">19</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ },{ n$15, n$16, $irvar4 })
+
+INSTR=  n$17=*&amp;this:com.stn.helpers.CategoryHelper* [line 19]; 
+
+STATE:
+({ n$17 },{ n$15, n$16, $irvar4 })
+
+INSTR=  n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 19]; 
+
+STATE:
+({ n$17, n$18 },{ n$15, n$16, $irvar4 })
+
+INSTR=  _=*n$18:java.sql.Connection*(root java.sql.Connection) [line 19]; 
+
+STATE:
+({ _, n$17, n$18 },{ n$15, n$16, $irvar4 })
+
+INSTR=  n$20=*&amp;this:com.stn.helpers.CategoryHelper* [line 19]; 
+
+STATE:
+({ _, n$17, n$18, n$20 },{ n$15, n$16, $irvar4 })
+
+INSTR=  n$21=*n$20.query:java.lang.String*(root com.stn.helpers.CategoryHelper) [line 19]; 
+
+STATE:
+({ _, n$17, n$18, n$20, n$21 },{ n$15, n$16, $irvar4 })
+
+INSTR=  n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 19]; 
+
+STATE:
+({ _, n$17, n$18, n$20, n$21, n$22 },{ n$15, n$16, $irvar4 })
+
+INSTR=  *&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 19]; 
+
+STATE:
+({ $irvar5 },{ _, n$17, n$18, n$20, n$21, n$22 })
+
+</LISTING>
+<hr width="100%">
+<a name="session16" href="./../nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node11.html#session16">node11#session16</a>(<a href="./../../CategoryHelper.java.a9a7806350d139d60581870951a6ff01.html#LINE19">19</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session17" href="./../nodes/com.stn.helpers.CategoryHelper.addCategory%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%2Cint%2Cint%29%3Avoid.27a3ed98c6b67af3da3b72b3da9e9897_node11.html#session17">node11#session17</a>(<a href="./../../CategoryHelper.java.a9a7806350d139d60581870951a6ff01.html#LINE19">19</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+
+
+
+
+
+TAINTED_CALL1: (callee="PreparedStatement Connection.prepareStatement(String)", caller="void CategoryHelper.addCategory(String,String,int,int,int,int)")
+TAINTED_CALL1: (callee="PreparedStatement Connection.prepareStatement(String)", caller="void CategoryHelper.addCategory(String,String,int,int,int,int)")
+INSTR=  n$22 := PreparedStatement Connection.prepareStatement(String)({ this-&gt;connection,
+                                                                    this-&gt;query }) [line 19]; 
+
+STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+
+
+</LISTING>

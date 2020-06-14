@@ -1,0 +1,332 @@
+/* @generated */
+digraph cfg {
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_1" [label="1: Start List NewsHelper.getNews(int,int)\nFormals:  this:com.stn.helpers.NewsHelper* idSerie:int limit:int\nLocals:  $bcvar5:void CatchVar317:void $irvar17:void $irvar16:void $irvar15:void $irvar14:void $irvar13:void $irvar12:void $irvar11:void $irvar10:void $irvar9:void $irvar8:void $irvar7:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void news:java.util.List* newstemp:com.stn.pojo.News* \n  " color=yellow style=filled]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_1" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_4" ;
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_2" [label="2: Exit List NewsHelper.getNews(int,int) \n  " color=yellow style=filled]
+	
+
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [label="3:  exceptions sink \n   NULLIFY(&news); [line 76]\n  NULLIFY(&$bcvar5); [line 76]\n  EXIT_SCOPE(news,$bcvar5); [line 76]\n  APPLY_ABSTRACTION; [line 76]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_2" ;
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_4" [label="4:  Call ArrayList.<init>() \n   n$0=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 35]\n  n$1=_fun_ArrayList.<init>()(n$0:java.util.ArrayList*) [line 35]\n  *&news:java.util.ArrayList*=n$0 [line 35]\n  EXIT_SCOPE(n$0,n$1); [line 35]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_4" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_5" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_4" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_6" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_4" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_5" [label="5: Prune (true branch, if) \n   n$2=*&limit:int [line 37]\n  PRUNE(!(n$2 != -1), true); [line 37]\n  EXIT_SCOPE(n$2); [line 37]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_5" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_7" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_5" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_6" [label="6: Prune (false branch, if) \n   n$2=*&limit:int [line 37]\n  PRUNE((n$2 != -1), false); [line 37]\n  EXIT_SCOPE(n$2); [line 37]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_6" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_8" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_6" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_7" [label="7:  method_body \n   n$3=*&this:com.stn.helpers.NewsHelper* [line 38]\n  *n$3.query:com.stn.helpers.NewsHelper(root com.stn.helpers.NewsHelper)=\"SELECT IdNews,Title,Body,Date,n.IdUser,n.IdSerie,Username,Class,LastEdit FROM news_serie n JOIN users u ON u.Id = n.IdUser WHERE n.idSerie = ? ORDER BY IdNews DESC\" [line 38]\n  EXIT_SCOPE(n$3); [line 38]\n  APPLY_ABSTRACTION; [line 38]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_7" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_9" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_7" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_8" [label="8:  method_body \n   n$4=*&this:com.stn.helpers.NewsHelper* [line 42]\n  *n$4.query:com.stn.helpers.NewsHelper(root com.stn.helpers.NewsHelper)=\"SELECT IdNews,Title,Body,Date,n.IdUser,n.IdSerie,Username,Class,LastEdit FROM news_serie n JOIN users u ON u.Id = n.IdUser WHERE n.idSerie = ? ORDER BY IdNews DESC LIMIT ?\" [line 42]\n  EXIT_SCOPE(n$4); [line 42]\n  APPLY_ABSTRACTION; [line 42]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_8" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_9" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_8" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_9" [label="9:  Call Class Class.forName(String) \n   n$5=_fun_Class Class.forName(String)(\"com.mysql.jdbc.Driver\":java.lang.Object*) [line 48]\n  *&$irvar0:java.lang.Class*=n$5 [line 48]\n  NULLIFY(&$irvar0); [line 48]\n  EXIT_SCOPE(n$5,$irvar0); [line 48]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_9" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_10" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_9" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_10" [label="10:  Call String DBConnection.getHost() \n   n$6=*&this:com.stn.helpers.NewsHelper* [line 49]\n  _=*n$6:com.stn.helpers.NewsHelper*(root com.stn.helpers.NewsHelper) [line 49]\n  n$8=_fun_String DBConnection.getHost()(n$6:com.stn.helpers.NewsHelper*) virtual [line 49]\n  *&$irvar1:java.lang.String*=n$8 [line 49]\n  EXIT_SCOPE(_,n$6,n$8); [line 49]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_10" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_11" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_10" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_11" [label="11:  Call String DBConnection.getUser() \n   n$9=*&this:com.stn.helpers.NewsHelper* [line 49]\n  _=*n$9:com.stn.helpers.NewsHelper*(root com.stn.helpers.NewsHelper) [line 49]\n  n$11=_fun_String DBConnection.getUser()(n$9:com.stn.helpers.NewsHelper*) virtual [line 49]\n  *&$irvar2:java.lang.String*=n$11 [line 49]\n  EXIT_SCOPE(_,n$9,n$11); [line 49]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_11" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_12" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_11" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_12" [label="12:  Call String DBConnection.getPassword() \n   n$12=*&this:com.stn.helpers.NewsHelper* [line 49]\n  _=*n$12:com.stn.helpers.NewsHelper*(root com.stn.helpers.NewsHelper) [line 49]\n  n$14=_fun_String DBConnection.getPassword()(n$12:com.stn.helpers.NewsHelper*) virtual [line 49]\n  *&$irvar3:java.lang.String*=n$14 [line 49]\n  EXIT_SCOPE(_,n$12,n$14); [line 49]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_12" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_13" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_12" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_13" [label="13:  Call Connection DriverManager.getConnection(String,String,String) \n   n$15=*&$irvar1:java.lang.String* [line 49]\n  n$16=*&$irvar2:java.lang.String* [line 49]\n  n$17=*&$irvar3:java.lang.String* [line 49]\n  n$18=_fun_Connection DriverManager.getConnection(String,String,String)(n$15:java.lang.String*,n$16:java.lang.String*,n$17:java.lang.String*) [line 49]\n  *&$irvar4:java.sql.Connection*=n$18 [line 49]\n  NULLIFY(&$irvar3); [line 49]\n  NULLIFY(&$irvar1); [line 49]\n  NULLIFY(&$irvar2); [line 49]\n  EXIT_SCOPE(n$15,n$16,n$17,n$18,$irvar3,$irvar1,$irvar2); [line 49]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_13" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_14" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_13" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_14" [label="14:  method_body \n   n$19=*&this:com.stn.helpers.NewsHelper* [line 49]\n  n$20=*&$irvar4:java.sql.Connection* [line 49]\n  *n$19.connection:com.stn.helpers.NewsHelper(root com.stn.helpers.NewsHelper)=n$20 [line 49]\n  NULLIFY(&$irvar4); [line 49]\n  EXIT_SCOPE(n$19,n$20,$irvar4); [line 49]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_14" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_15" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_14" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_15" [label="15:  Call PreparedStatement Connection.prepareStatement(String) \n   n$21=*&this:com.stn.helpers.NewsHelper* [line 50]\n  n$22=*n$21.connection:java.sql.Connection*(root com.stn.helpers.NewsHelper) [line 50]\n  _=*n$22:java.sql.Connection*(root java.sql.Connection) [line 50]\n  n$24=*&this:com.stn.helpers.NewsHelper* [line 50]\n  n$25=*n$24.query:java.lang.String*(root com.stn.helpers.NewsHelper) [line 50]\n  n$26=_fun_PreparedStatement Connection.prepareStatement(String)(n$22:java.sql.Connection*,n$25:java.lang.String*) interface virtual [line 50]\n  *&$irvar5:java.sql.PreparedStatement*=n$26 [line 50]\n  EXIT_SCOPE(_,n$21,n$22,n$24,n$25,n$26); [line 50]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_15" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_16" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_15" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_16" [label="16:  method_body \n   n$27=*&this:com.stn.helpers.NewsHelper* [line 50]\n  n$28=*&$irvar5:java.sql.PreparedStatement* [line 50]\n  *n$27.preparedStatement:com.stn.helpers.NewsHelper(root com.stn.helpers.NewsHelper)=n$28 [line 50]\n  NULLIFY(&$irvar5); [line 50]\n  EXIT_SCOPE(n$27,n$28,$irvar5); [line 50]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_16" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_17" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_16" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_17" [label="17:  Call void PreparedStatement.setInt(int,int) \n   n$29=*&this:com.stn.helpers.NewsHelper* [line 51]\n  n$30=*n$29.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.NewsHelper) [line 51]\n  _=*n$30:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 51]\n  n$32=*&idSerie:int [line 51]\n  n$33=_fun_void PreparedStatement.setInt(int,int)(n$30:java.sql.PreparedStatement*,1:int,n$32:int) interface virtual [line 51]\n  NULLIFY(&idSerie); [line 51]\n  EXIT_SCOPE(_,n$29,n$30,n$32,n$33,idSerie); [line 51]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_17" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_18" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_17" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_19" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_17" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_18" [label="18: Prune (true branch, if) \n   n$34=*&limit:int [line 52]\n  PRUNE(!(n$34 == -1), true); [line 52]\n  EXIT_SCOPE(n$34); [line 52]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_18" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_20" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_18" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_19" [label="19: Prune (false branch, if) \n   n$34=*&limit:int [line 52]\n  PRUNE((n$34 == -1), false); [line 52]\n  NULLIFY(&limit); [line 52]\n  EXIT_SCOPE(n$34,limit); [line 52]\n  APPLY_ABSTRACTION; [line 52]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_19" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_21" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_19" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_20" [label="20:  Call void PreparedStatement.setInt(int,int) \n   n$35=*&this:com.stn.helpers.NewsHelper* [line 53]\n  n$36=*n$35.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.NewsHelper) [line 53]\n  _=*n$36:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 53]\n  n$38=*&limit:int [line 53]\n  n$39=_fun_void PreparedStatement.setInt(int,int)(n$36:java.sql.PreparedStatement*,2:int,n$38:int) interface virtual [line 53]\n  NULLIFY(&limit); [line 53]\n  EXIT_SCOPE(_,n$35,n$36,n$38,n$39,limit); [line 53]\n  APPLY_ABSTRACTION; [line 53]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_20" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_21" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_20" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_21" [label="21:  Call ResultSet PreparedStatement.executeQuery() \n   n$40=*&this:com.stn.helpers.NewsHelper* [line 55]\n  n$41=*n$40.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.NewsHelper) [line 55]\n  _=*n$41:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 55]\n  n$43=_fun_ResultSet PreparedStatement.executeQuery()(n$41:java.sql.PreparedStatement*) interface virtual [line 55]\n  *&$irvar6:java.sql.ResultSet*=n$43 [line 55]\n  EXIT_SCOPE(_,n$40,n$41,n$43); [line 55]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_21" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_22" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_21" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_22" [label="22:  method_body \n   n$44=*&this:com.stn.helpers.NewsHelper* [line 55]\n  n$45=*&$irvar6:java.sql.ResultSet* [line 55]\n  *n$44.resultSet:com.stn.helpers.NewsHelper(root com.stn.helpers.NewsHelper)=n$45 [line 55]\n  NULLIFY(&$irvar6); [line 55]\n  EXIT_SCOPE(n$44,n$45,$irvar6); [line 55]\n  APPLY_ABSTRACTION; [line 55]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_22" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_23" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_22" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_23" [label="23:  Call boolean ResultSet.next() \n   n$46=*&this:com.stn.helpers.NewsHelper* [line 56]\n  n$47=*n$46.resultSet:java.sql.ResultSet*(root com.stn.helpers.NewsHelper) [line 56]\n  _=*n$47:java.sql.ResultSet*(root java.sql.ResultSet) [line 56]\n  n$49=_fun_boolean ResultSet.next()(n$47:java.sql.ResultSet*) interface virtual [line 56]\n  *&$irvar7:_Bool=n$49 [line 56]\n  EXIT_SCOPE(_,n$46,n$47,n$49); [line 56]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_23" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_26" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_23" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_24" [label="24: Prune (true branch, if) \n   n$50=*&$irvar7:_Bool [line 56]\n  PRUNE(!(n$50 == 0), true); [line 56]\n  NULLIFY(&$irvar7); [line 56]\n  EXIT_SCOPE(n$50,$irvar7); [line 56]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_24" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_27" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_24" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_25" [label="25: Prune (false branch, if) \n   n$50=*&$irvar7:_Bool [line 56]\n  PRUNE((n$50 == 0), false); [line 56]\n  NULLIFY(&$irvar7); [line 56]\n  EXIT_SCOPE(n$50,$irvar7); [line 56]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_25" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_47" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_25" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_48" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_25" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_26" [label="26: + \n  " ]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_26" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_24" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_26" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_25" ;
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_27" [label="27:  Call News.<init>() \n   n$51=_fun___new(sizeof(t=com.stn.pojo.News):com.stn.pojo.News*) [line 57]\n  n$52=_fun_News.<init>()(n$51:com.stn.pojo.News*) [line 57]\n  *&newstemp:com.stn.pojo.News*=n$51 [line 57]\n  EXIT_SCOPE(n$51,n$52); [line 57]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_27" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_28" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_27" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_28" [label="28:  Call int ResultSet.getInt(int) \n   n$53=*&this:com.stn.helpers.NewsHelper* [line 58]\n  n$54=*n$53.resultSet:java.sql.ResultSet*(root com.stn.helpers.NewsHelper) [line 58]\n  _=*n$54:java.sql.ResultSet*(root java.sql.ResultSet) [line 58]\n  n$56=_fun_int ResultSet.getInt(int)(n$54:java.sql.ResultSet*,1:int) interface virtual [line 58]\n  *&$irvar8:int=n$56 [line 58]\n  EXIT_SCOPE(_,n$53,n$54,n$56); [line 58]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_28" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_29" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_28" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_29" [label="29:  Call void News.setIdNews(int) \n   n$57=*&newstemp:com.stn.pojo.News* [line 58]\n  _=*n$57:com.stn.pojo.News*(root com.stn.pojo.News) [line 58]\n  n$59=*&$irvar8:int [line 58]\n  n$60=_fun_void News.setIdNews(int)(n$57:com.stn.pojo.News*,n$59:int) virtual [line 58]\n  NULLIFY(&$irvar8); [line 58]\n  EXIT_SCOPE(_,n$57,n$59,n$60,$irvar8); [line 58]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_29" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_30" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_29" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_30" [label="30:  Call String ResultSet.getString(int) \n   n$61=*&this:com.stn.helpers.NewsHelper* [line 59]\n  n$62=*n$61.resultSet:java.sql.ResultSet*(root com.stn.helpers.NewsHelper) [line 59]\n  _=*n$62:java.sql.ResultSet*(root java.sql.ResultSet) [line 59]\n  n$64=_fun_String ResultSet.getString(int)(n$62:java.sql.ResultSet*,2:int) interface virtual [line 59]\n  *&$irvar9:java.lang.String*=n$64 [line 59]\n  EXIT_SCOPE(_,n$61,n$62,n$64); [line 59]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_30" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_31" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_30" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_31" [label="31:  Call void News.setTitle(String) \n   n$65=*&newstemp:com.stn.pojo.News* [line 59]\n  _=*n$65:com.stn.pojo.News*(root com.stn.pojo.News) [line 59]\n  n$67=*&$irvar9:java.lang.String* [line 59]\n  n$68=_fun_void News.setTitle(String)(n$65:com.stn.pojo.News*,n$67:java.lang.String*) virtual [line 59]\n  NULLIFY(&$irvar9); [line 59]\n  EXIT_SCOPE(_,n$65,n$67,n$68,$irvar9); [line 59]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_31" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_32" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_31" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_32" [label="32:  Call String ResultSet.getString(int) \n   n$69=*&this:com.stn.helpers.NewsHelper* [line 60]\n  n$70=*n$69.resultSet:java.sql.ResultSet*(root com.stn.helpers.NewsHelper) [line 60]\n  _=*n$70:java.sql.ResultSet*(root java.sql.ResultSet) [line 60]\n  n$72=_fun_String ResultSet.getString(int)(n$70:java.sql.ResultSet*,3:int) interface virtual [line 60]\n  *&$irvar10:java.lang.String*=n$72 [line 60]\n  EXIT_SCOPE(_,n$69,n$70,n$72); [line 60]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_32" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_33" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_32" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_33" [label="33:  Call void News.setBody(String) \n   n$73=*&newstemp:com.stn.pojo.News* [line 60]\n  _=*n$73:com.stn.pojo.News*(root com.stn.pojo.News) [line 60]\n  n$75=*&$irvar10:java.lang.String* [line 60]\n  n$76=_fun_void News.setBody(String)(n$73:com.stn.pojo.News*,n$75:java.lang.String*) virtual [line 60]\n  NULLIFY(&$irvar10); [line 60]\n  EXIT_SCOPE(_,n$73,n$75,n$76,$irvar10); [line 60]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_33" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_34" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_33" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_34" [label="34:  Call Timestamp ResultSet.getTimestamp(int) \n   n$77=*&this:com.stn.helpers.NewsHelper* [line 61]\n  n$78=*n$77.resultSet:java.sql.ResultSet*(root com.stn.helpers.NewsHelper) [line 61]\n  _=*n$78:java.sql.ResultSet*(root java.sql.ResultSet) [line 61]\n  n$80=_fun_Timestamp ResultSet.getTimestamp(int)(n$78:java.sql.ResultSet*,4:int) interface virtual [line 61]\n  *&$irvar11:java.sql.Timestamp*=n$80 [line 61]\n  EXIT_SCOPE(_,n$77,n$78,n$80); [line 61]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_34" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_35" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_34" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_35" [label="35:  Call void News.setDate(Timestamp) \n   n$81=*&newstemp:com.stn.pojo.News* [line 61]\n  _=*n$81:com.stn.pojo.News*(root com.stn.pojo.News) [line 61]\n  n$83=*&$irvar11:java.sql.Timestamp* [line 61]\n  n$84=_fun_void News.setDate(Timestamp)(n$81:com.stn.pojo.News*,n$83:java.sql.Timestamp*) virtual [line 61]\n  NULLIFY(&$irvar11); [line 61]\n  EXIT_SCOPE(_,n$81,n$83,n$84,$irvar11); [line 61]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_35" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_36" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_35" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_36" [label="36:  Call int ResultSet.getInt(int) \n   n$85=*&this:com.stn.helpers.NewsHelper* [line 62]\n  n$86=*n$85.resultSet:java.sql.ResultSet*(root com.stn.helpers.NewsHelper) [line 62]\n  _=*n$86:java.sql.ResultSet*(root java.sql.ResultSet) [line 62]\n  n$88=_fun_int ResultSet.getInt(int)(n$86:java.sql.ResultSet*,5:int) interface virtual [line 62]\n  *&$irvar12:int=n$88 [line 62]\n  EXIT_SCOPE(_,n$85,n$86,n$88); [line 62]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_36" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_37" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_36" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_37" [label="37:  Call void News.setIdUser(int) \n   n$89=*&newstemp:com.stn.pojo.News* [line 62]\n  _=*n$89:com.stn.pojo.News*(root com.stn.pojo.News) [line 62]\n  n$91=*&$irvar12:int [line 62]\n  n$92=_fun_void News.setIdUser(int)(n$89:com.stn.pojo.News*,n$91:int) virtual [line 62]\n  NULLIFY(&$irvar12); [line 62]\n  EXIT_SCOPE(_,n$89,n$91,n$92,$irvar12); [line 62]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_37" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_38" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_37" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_38" [label="38:  Call int ResultSet.getInt(int) \n   n$93=*&this:com.stn.helpers.NewsHelper* [line 63]\n  n$94=*n$93.resultSet:java.sql.ResultSet*(root com.stn.helpers.NewsHelper) [line 63]\n  _=*n$94:java.sql.ResultSet*(root java.sql.ResultSet) [line 63]\n  n$96=_fun_int ResultSet.getInt(int)(n$94:java.sql.ResultSet*,6:int) interface virtual [line 63]\n  *&$irvar13:int=n$96 [line 63]\n  EXIT_SCOPE(_,n$93,n$94,n$96); [line 63]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_38" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_39" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_38" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_39" [label="39:  Call void News.setIdSerie(int) \n   n$97=*&newstemp:com.stn.pojo.News* [line 63]\n  _=*n$97:com.stn.pojo.News*(root com.stn.pojo.News) [line 63]\n  n$99=*&$irvar13:int [line 63]\n  n$100=_fun_void News.setIdSerie(int)(n$97:com.stn.pojo.News*,n$99:int) virtual [line 63]\n  NULLIFY(&$irvar13); [line 63]\n  EXIT_SCOPE(_,n$97,n$99,n$100,$irvar13); [line 63]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_39" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_40" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_39" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_40" [label="40:  Call String ResultSet.getString(int) \n   n$101=*&this:com.stn.helpers.NewsHelper* [line 64]\n  n$102=*n$101.resultSet:java.sql.ResultSet*(root com.stn.helpers.NewsHelper) [line 64]\n  _=*n$102:java.sql.ResultSet*(root java.sql.ResultSet) [line 64]\n  n$104=_fun_String ResultSet.getString(int)(n$102:java.sql.ResultSet*,7:int) interface virtual [line 64]\n  *&$irvar14:java.lang.String*=n$104 [line 64]\n  EXIT_SCOPE(_,n$101,n$102,n$104); [line 64]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_40" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_41" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_40" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_41" [label="41:  Call void News.setUsername(String) \n   n$105=*&newstemp:com.stn.pojo.News* [line 64]\n  _=*n$105:com.stn.pojo.News*(root com.stn.pojo.News) [line 64]\n  n$107=*&$irvar14:java.lang.String* [line 64]\n  n$108=_fun_void News.setUsername(String)(n$105:com.stn.pojo.News*,n$107:java.lang.String*) virtual [line 64]\n  NULLIFY(&$irvar14); [line 64]\n  EXIT_SCOPE(_,n$105,n$107,n$108,$irvar14); [line 64]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_41" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_42" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_41" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_42" [label="42:  Call int ResultSet.getInt(int) \n   n$109=*&this:com.stn.helpers.NewsHelper* [line 65]\n  n$110=*n$109.resultSet:java.sql.ResultSet*(root com.stn.helpers.NewsHelper) [line 65]\n  _=*n$110:java.sql.ResultSet*(root java.sql.ResultSet) [line 65]\n  n$112=_fun_int ResultSet.getInt(int)(n$110:java.sql.ResultSet*,8:int) interface virtual [line 65]\n  *&$irvar15:int=n$112 [line 65]\n  EXIT_SCOPE(_,n$109,n$110,n$112); [line 65]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_42" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_43" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_42" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_43" [label="43:  Call void News.setUserClass(int) \n   n$113=*&newstemp:com.stn.pojo.News* [line 65]\n  _=*n$113:com.stn.pojo.News*(root com.stn.pojo.News) [line 65]\n  n$115=*&$irvar15:int [line 65]\n  n$116=_fun_void News.setUserClass(int)(n$113:com.stn.pojo.News*,n$115:int) virtual [line 65]\n  NULLIFY(&$irvar15); [line 65]\n  EXIT_SCOPE(_,n$113,n$115,n$116,$irvar15); [line 65]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_43" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_44" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_43" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_44" [label="44:  Call Timestamp ResultSet.getTimestamp(int) \n   n$117=*&this:com.stn.helpers.NewsHelper* [line 66]\n  n$118=*n$117.resultSet:java.sql.ResultSet*(root com.stn.helpers.NewsHelper) [line 66]\n  _=*n$118:java.sql.ResultSet*(root java.sql.ResultSet) [line 66]\n  n$120=_fun_Timestamp ResultSet.getTimestamp(int)(n$118:java.sql.ResultSet*,9:int) interface virtual [line 66]\n  *&$irvar16:java.sql.Timestamp*=n$120 [line 66]\n  EXIT_SCOPE(_,n$117,n$118,n$120); [line 66]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_44" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_45" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_44" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_45" [label="45:  Call void News.setLastEdit(Timestamp) \n   n$121=*&newstemp:com.stn.pojo.News* [line 66]\n  _=*n$121:com.stn.pojo.News*(root com.stn.pojo.News) [line 66]\n  n$123=*&$irvar16:java.sql.Timestamp* [line 66]\n  n$124=_fun_void News.setLastEdit(Timestamp)(n$121:com.stn.pojo.News*,n$123:java.sql.Timestamp*) virtual [line 66]\n  NULLIFY(&$irvar16); [line 66]\n  EXIT_SCOPE(_,n$121,n$123,n$124,$irvar16); [line 66]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_45" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_46" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_45" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_46" [label="46:  Call boolean ArrayList.add(Object) \n   n$125=*&news:java.util.ArrayList* [line 67]\n  _=*n$125:java.util.ArrayList*(root java.util.ArrayList) [line 67]\n  n$127=*&newstemp:com.stn.pojo.News* [line 67]\n  n$128=_fun_boolean ArrayList.add(Object)(n$125:java.util.ArrayList*,n$127:com.stn.pojo.News*) interface virtual [line 67]\n  *&$irvar17:_Bool=n$128 [line 67]\n  NULLIFY(&$irvar17); [line 67]\n  NULLIFY(&newstemp); [line 67]\n  EXIT_SCOPE(_,n$125,n$127,n$128,$irvar17,newstemp); [line 67]\n  APPLY_ABSTRACTION; [line 67]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_46" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_23" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_46" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_47" [label="47: Prune (true branch, if) \n   n$129=*&this:com.stn.helpers.NewsHelper* [line 70]\n  n$130=*n$129.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.NewsHelper) [line 70]\n  PRUNE(!(n$130 == null), true); [line 70]\n  EXIT_SCOPE(n$129,n$130); [line 70]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_47" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_49" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_47" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_48" [label="48: Prune (false branch, if) \n   n$129=*&this:com.stn.helpers.NewsHelper* [line 70]\n  n$130=*n$129.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.NewsHelper) [line 70]\n  PRUNE((n$130 == null), false); [line 70]\n  EXIT_SCOPE(n$129,n$130); [line 70]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_48" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_50" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_48" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_51" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_48" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_49" [label="49:  Call void PreparedStatement.close() \n   n$131=*&this:com.stn.helpers.NewsHelper* [line 71]\n  n$132=*n$131.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.NewsHelper) [line 71]\n  n$135=_fun___set_mem_attribute(n$132:java.sql.PreparedStatement*) [line 71]\n  _=*n$132:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 71]\n  n$134=_fun_void PreparedStatement.close()(n$132:java.sql.PreparedStatement*) interface virtual [line 71]\n  EXIT_SCOPE(_,n$131,n$132,n$134,n$135); [line 71]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_49" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_50" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_49" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_51" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_49" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_50" [label="50: Prune (true branch, if) \n   n$136=*&this:com.stn.helpers.NewsHelper* [line 72]\n  n$137=*n$136.connection:java.sql.Connection*(root com.stn.helpers.NewsHelper) [line 72]\n  PRUNE(!(n$137 == null), true); [line 72]\n  EXIT_SCOPE(n$136,n$137); [line 72]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_50" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_52" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_50" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_51" [label="51: Prune (false branch, if) \n   n$136=*&this:com.stn.helpers.NewsHelper* [line 72]\n  n$137=*n$136.connection:java.sql.Connection*(root com.stn.helpers.NewsHelper) [line 72]\n  PRUNE((n$137 == null), false); [line 72]\n  NULLIFY(&this); [line 72]\n  EXIT_SCOPE(n$136,n$137,this); [line 72]\n  APPLY_ABSTRACTION; [line 72]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_51" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_61" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_51" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_52" [label="52:  Call void Connection.close() \n   n$138=*&this:com.stn.helpers.NewsHelper* [line 73]\n  n$139=*n$138.connection:java.sql.Connection*(root com.stn.helpers.NewsHelper) [line 73]\n  n$142=_fun___set_mem_attribute(n$139:java.sql.Connection*) [line 73]\n  _=*n$139:java.sql.Connection*(root java.sql.Connection) [line 73]\n  n$141=_fun_void Connection.close()(n$139:java.sql.Connection*) interface virtual [line 73]\n  NULLIFY(&this); [line 73]\n  EXIT_SCOPE(_,n$138,n$139,n$141,n$142,this); [line 73]\n  APPLY_ABSTRACTION; [line 73]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_52" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_61" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_52" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_53" [label="53:  method_body \n   n$143=*&CatchVar317:java.lang.Object* [line 70]\n  *&$bcvar5:java.lang.Object*=n$143 [line 70]\n  EXIT_SCOPE(n$143); [line 70]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_53" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_54" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_53" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_55" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_53" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_65" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_54" [label="54: Prune (true branch, if) \n   n$144=*&this:com.stn.helpers.NewsHelper* [line 70]\n  n$145=*n$144.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.NewsHelper) [line 70]\n  PRUNE(!(n$145 == null), true); [line 70]\n  EXIT_SCOPE(n$144,n$145); [line 70]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_54" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_56" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_54" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_55" [label="55: Prune (false branch, if) \n   n$144=*&this:com.stn.helpers.NewsHelper* [line 70]\n  n$145=*n$144.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.NewsHelper) [line 70]\n  PRUNE((n$145 == null), false); [line 70]\n  EXIT_SCOPE(n$144,n$145); [line 70]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_55" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_57" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_55" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_58" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_55" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_56" [label="56:  Call void PreparedStatement.close() \n   n$146=*&this:com.stn.helpers.NewsHelper* [line 71]\n  n$147=*n$146.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.NewsHelper) [line 71]\n  n$150=_fun___set_mem_attribute(n$147:java.sql.PreparedStatement*) [line 71]\n  _=*n$147:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 71]\n  n$149=_fun_void PreparedStatement.close()(n$147:java.sql.PreparedStatement*) interface virtual [line 71]\n  EXIT_SCOPE(_,n$146,n$147,n$149,n$150); [line 71]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_56" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_57" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_56" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_58" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_56" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_57" [label="57: Prune (true branch, if) \n   n$151=*&this:com.stn.helpers.NewsHelper* [line 72]\n  n$152=*n$151.connection:java.sql.Connection*(root com.stn.helpers.NewsHelper) [line 72]\n  PRUNE(!(n$152 == null), true); [line 72]\n  EXIT_SCOPE(n$151,n$152); [line 72]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_57" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_59" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_57" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_58" [label="58: Prune (false branch, if) \n   n$151=*&this:com.stn.helpers.NewsHelper* [line 72]\n  n$152=*n$151.connection:java.sql.Connection*(root com.stn.helpers.NewsHelper) [line 72]\n  PRUNE((n$152 == null), false); [line 72]\n  NULLIFY(&this); [line 72]\n  EXIT_SCOPE(n$151,n$152,this); [line 72]\n  APPLY_ABSTRACTION; [line 72]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_58" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_60" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_58" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_59" [label="59:  Call void Connection.close() \n   n$153=*&this:com.stn.helpers.NewsHelper* [line 73]\n  n$154=*n$153.connection:java.sql.Connection*(root com.stn.helpers.NewsHelper) [line 73]\n  n$157=_fun___set_mem_attribute(n$154:java.sql.Connection*) [line 73]\n  _=*n$154:java.sql.Connection*(root java.sql.Connection) [line 73]\n  n$156=_fun_void Connection.close()(n$154:java.sql.Connection*) interface virtual [line 73]\n  NULLIFY(&this); [line 73]\n  EXIT_SCOPE(_,n$153,n$154,n$156,n$157,this); [line 73]\n  APPLY_ABSTRACTION; [line 73]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_59" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_60" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_59" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_60" [label="60:  throw \n   n$158=*&$bcvar5:java.lang.Object* [line 74]\n  *&return:java.util.List*=EXN n$158 [line 74]\n  NULLIFY(&$bcvar5); [line 74]\n  EXIT_SCOPE(n$158,$bcvar5); [line 74]\n  APPLY_ABSTRACTION; [line 74]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_60" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_2" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_60" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_61" [label="61:  method_body \n   n$159=*&news:java.util.ArrayList* [line 76]\n  *&return:java.util.List*=n$159 [line 76]\n  NULLIFY(&news); [line 76]\n  EXIT_SCOPE(n$159,news); [line 76]\n  APPLY_ABSTRACTION; [line 76]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_61" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_2" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_61" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_62" [label="62:  Finally branch \n   APPLY_ABSTRACTION; [line 70]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_62" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_53" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_62" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" [label="63:  exception handler \n   n$160=*&return:java.util.List* [line 70]\n  *&return:java.util.List*=null [line 70]\n  n$161=_fun___unwrap_exception(n$160:java.util.List*) [line 70]\n  NULLIFY(&$irvar3); [line 70]\n  NULLIFY(&$irvar9); [line 70]\n  NULLIFY(&$irvar5); [line 70]\n  NULLIFY(&$irvar16); [line 70]\n  NULLIFY(&$irvar4); [line 70]\n  NULLIFY(&$irvar7); [line 70]\n  NULLIFY(&news); [line 70]\n  NULLIFY(&$irvar12); [line 70]\n  NULLIFY(&$irvar6); [line 70]\n  NULLIFY(&$irvar13); [line 70]\n  NULLIFY(&$irvar11); [line 70]\n  NULLIFY(&$irvar10); [line 70]\n  NULLIFY(&$irvar8); [line 70]\n  NULLIFY(&$irvar1); [line 70]\n  NULLIFY(&$irvar2); [line 70]\n  NULLIFY(&$irvar15); [line 70]\n  NULLIFY(&newstemp); [line 70]\n  NULLIFY(&$irvar14); [line 70]\n  EXIT_SCOPE(n$160,n$161,$irvar3,$irvar9,$irvar5,$irvar16,$irvar4,$irvar7,news,$irvar12,$irvar6,$irvar13,$irvar11,$irvar10,$irvar8,$irvar1,$irvar2,$irvar15,newstemp,$irvar14); [line 70]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_62" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_63" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_64" [label="64:  Finally branch \n   APPLY_ABSTRACTION; [line 70]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_64" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_53" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_64" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+"com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_65" [label="65:  exception handler \n   n$160=*&return:java.util.List* [line 70]\n  *&return:java.util.List*=null [line 70]\n  n$161=_fun___unwrap_exception(n$160:java.util.List*) [line 70]\n  NULLIFY(&$bcvar5); [line 70]\n  EXIT_SCOPE(n$160,n$161,$bcvar5); [line 70]\n " shape="box"]
+	
+
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_65" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_64" ;
+	 "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_65" -> "com.stn.helpers.NewsHelper.getNews(int,int):java.util.List.8b5c34f546d5bacee451b9cadb6de6cc_3" [color="red" ];
+}

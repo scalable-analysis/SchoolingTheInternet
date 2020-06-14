@@ -1,0 +1,195 @@
+/* @generated */
+digraph cfg {
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_1" [label="1: Start String FacultateHelper.getTokenGrupa(int)\nFormals:  this:com.stn.helpers.FacultateHelper* id:int\nLocals:  $bcvar3:void CatchVar136:void $irvar7:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void token:java.lang.String* \n  " color=yellow style=filled]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_1" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_4" ;
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_2" [label="2: Exit String FacultateHelper.getTokenGrupa(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" [label="3:  exceptions sink \n   NULLIFY(&$bcvar3); [line 222]\n  NULLIFY(&token); [line 222]\n  EXIT_SCOPE($bcvar3,token); [line 222]\n  APPLY_ABSTRACTION; [line 222]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_2" ;
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_4" [label="4:  method_body \n   *&token:java.lang.Object*=\"\" [line 201]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_4" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_5" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_4" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_5" [label="5:  method_body \n   n$0=*&this:com.stn.helpers.FacultateHelper* [line 203]\n  *n$0.query:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)=\"SELECT token FROM grupe WHERE IdGrupa = ?\" [line 203]\n  EXIT_SCOPE(n$0); [line 203]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_5" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_6" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_5" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_6" [label="6:  Call Class Class.forName(String) \n   n$1=_fun_Class Class.forName(String)(\"com.mysql.jdbc.Driver\":java.lang.Object*) [line 207]\n  *&$irvar0:java.lang.Class*=n$1 [line 207]\n  NULLIFY(&$irvar0); [line 207]\n  EXIT_SCOPE(n$1,$irvar0); [line 207]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_6" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_7" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_6" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_38" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_7" [label="7:  Call String DBConnection.getHost() \n   n$2=*&this:com.stn.helpers.FacultateHelper* [line 208]\n  _=*n$2:com.stn.helpers.FacultateHelper*(root com.stn.helpers.FacultateHelper) [line 208]\n  n$4=_fun_String DBConnection.getHost()(n$2:com.stn.helpers.FacultateHelper*) virtual [line 208]\n  *&$irvar1:java.lang.String*=n$4 [line 208]\n  EXIT_SCOPE(_,n$2,n$4); [line 208]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_7" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_8" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_7" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_38" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_8" [label="8:  Call String DBConnection.getUser() \n   n$5=*&this:com.stn.helpers.FacultateHelper* [line 208]\n  _=*n$5:com.stn.helpers.FacultateHelper*(root com.stn.helpers.FacultateHelper) [line 208]\n  n$7=_fun_String DBConnection.getUser()(n$5:com.stn.helpers.FacultateHelper*) virtual [line 208]\n  *&$irvar2:java.lang.String*=n$7 [line 208]\n  EXIT_SCOPE(_,n$5,n$7); [line 208]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_8" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_9" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_8" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_38" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_9" [label="9:  Call String DBConnection.getPassword() \n   n$8=*&this:com.stn.helpers.FacultateHelper* [line 208]\n  _=*n$8:com.stn.helpers.FacultateHelper*(root com.stn.helpers.FacultateHelper) [line 208]\n  n$10=_fun_String DBConnection.getPassword()(n$8:com.stn.helpers.FacultateHelper*) virtual [line 208]\n  *&$irvar3:java.lang.String*=n$10 [line 208]\n  EXIT_SCOPE(_,n$8,n$10); [line 208]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_9" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_10" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_9" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_38" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_10" [label="10:  Call Connection DriverManager.getConnection(String,String,String) \n   n$11=*&$irvar1:java.lang.String* [line 208]\n  n$12=*&$irvar2:java.lang.String* [line 208]\n  n$13=*&$irvar3:java.lang.String* [line 208]\n  n$14=_fun_Connection DriverManager.getConnection(String,String,String)(n$11:java.lang.String*,n$12:java.lang.String*,n$13:java.lang.String*) [line 208]\n  *&$irvar4:java.sql.Connection*=n$14 [line 208]\n  NULLIFY(&$irvar3); [line 208]\n  NULLIFY(&$irvar1); [line 208]\n  NULLIFY(&$irvar2); [line 208]\n  EXIT_SCOPE(n$11,n$12,n$13,n$14,$irvar3,$irvar1,$irvar2); [line 208]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_10" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_11" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_10" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_38" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_11" [label="11:  method_body \n   n$15=*&this:com.stn.helpers.FacultateHelper* [line 208]\n  n$16=*&$irvar4:java.sql.Connection* [line 208]\n  *n$15.connection:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)=n$16 [line 208]\n  NULLIFY(&$irvar4); [line 208]\n  EXIT_SCOPE(n$15,n$16,$irvar4); [line 208]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_11" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_12" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_11" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_38" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_12" [label="12:  Call PreparedStatement Connection.prepareStatement(String) \n   n$17=*&this:com.stn.helpers.FacultateHelper* [line 209]\n  n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 209]\n  _=*n$18:java.sql.Connection*(root java.sql.Connection) [line 209]\n  n$20=*&this:com.stn.helpers.FacultateHelper* [line 209]\n  n$21=*n$20.query:java.lang.String*(root com.stn.helpers.FacultateHelper) [line 209]\n  n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 209]\n  *&$irvar5:java.sql.PreparedStatement*=n$22 [line 209]\n  EXIT_SCOPE(_,n$17,n$18,n$20,n$21,n$22); [line 209]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_12" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_13" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_12" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_38" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_13" [label="13:  method_body \n   n$23=*&this:com.stn.helpers.FacultateHelper* [line 209]\n  n$24=*&$irvar5:java.sql.PreparedStatement* [line 209]\n  *n$23.preparedStatement:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)=n$24 [line 209]\n  NULLIFY(&$irvar5); [line 209]\n  EXIT_SCOPE(n$23,n$24,$irvar5); [line 209]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_13" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_14" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_13" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_38" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_14" [label="14:  Call void PreparedStatement.setInt(int,int) \n   n$25=*&this:com.stn.helpers.FacultateHelper* [line 210]\n  n$26=*n$25.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 210]\n  _=*n$26:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 210]\n  n$28=*&id:int [line 210]\n  n$29=_fun_void PreparedStatement.setInt(int,int)(n$26:java.sql.PreparedStatement*,1:int,n$28:int) interface virtual [line 210]\n  NULLIFY(&id); [line 210]\n  EXIT_SCOPE(_,n$25,n$26,n$28,n$29,id); [line 210]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_14" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_15" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_14" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_38" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_15" [label="15:  Call ResultSet PreparedStatement.executeQuery() \n   n$30=*&this:com.stn.helpers.FacultateHelper* [line 211]\n  n$31=*n$30.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 211]\n  _=*n$31:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 211]\n  n$33=_fun_ResultSet PreparedStatement.executeQuery()(n$31:java.sql.PreparedStatement*) interface virtual [line 211]\n  *&$irvar6:java.sql.ResultSet*=n$33 [line 211]\n  EXIT_SCOPE(_,n$30,n$31,n$33); [line 211]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_15" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_16" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_15" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_38" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_16" [label="16:  method_body \n   n$34=*&this:com.stn.helpers.FacultateHelper* [line 211]\n  n$35=*&$irvar6:java.sql.ResultSet* [line 211]\n  *n$34.resultSet:com.stn.helpers.FacultateHelper(root com.stn.helpers.FacultateHelper)=n$35 [line 211]\n  NULLIFY(&$irvar6); [line 211]\n  EXIT_SCOPE(n$34,n$35,$irvar6); [line 211]\n  APPLY_ABSTRACTION; [line 211]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_16" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_17" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_16" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_38" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_17" [label="17:  Call boolean ResultSet.next() \n   n$36=*&this:com.stn.helpers.FacultateHelper* [line 212]\n  n$37=*n$36.resultSet:java.sql.ResultSet*(root com.stn.helpers.FacultateHelper) [line 212]\n  _=*n$37:java.sql.ResultSet*(root java.sql.ResultSet) [line 212]\n  n$39=_fun_boolean ResultSet.next()(n$37:java.sql.ResultSet*) interface virtual [line 212]\n  *&$irvar7:_Bool=n$39 [line 212]\n  EXIT_SCOPE(_,n$36,n$37,n$39); [line 212]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_17" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_20" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_17" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_38" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_18" [label="18: Prune (true branch, if) \n   n$40=*&$irvar7:_Bool [line 212]\n  PRUNE(!(n$40 == 0), true); [line 212]\n  NULLIFY(&token); [line 212]\n  NULLIFY(&$irvar7); [line 212]\n  EXIT_SCOPE(n$40,token,$irvar7); [line 212]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_18" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_21" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_18" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_38" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_19" [label="19: Prune (false branch, if) \n   n$40=*&$irvar7:_Bool [line 212]\n  PRUNE((n$40 == 0), false); [line 212]\n  NULLIFY(&$irvar7); [line 212]\n  EXIT_SCOPE(n$40,$irvar7); [line 212]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_19" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_22" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_19" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_23" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_19" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_38" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_20" [label="20: + \n  " ]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_20" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_18" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_20" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_19" ;
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_21" [label="21:  Call String ResultSet.getString(int) \n   n$41=*&this:com.stn.helpers.FacultateHelper* [line 213]\n  n$42=*n$41.resultSet:java.sql.ResultSet*(root com.stn.helpers.FacultateHelper) [line 213]\n  _=*n$42:java.sql.ResultSet*(root java.sql.ResultSet) [line 213]\n  n$44=_fun_String ResultSet.getString(int)(n$42:java.sql.ResultSet*,1:int) interface virtual [line 213]\n  *&token:java.lang.String*=n$44 [line 213]\n  EXIT_SCOPE(_,n$41,n$42,n$44); [line 213]\n  APPLY_ABSTRACTION; [line 213]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_21" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_17" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_21" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_38" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_22" [label="22: Prune (true branch, if) \n   n$45=*&this:com.stn.helpers.FacultateHelper* [line 216]\n  n$46=*n$45.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 216]\n  PRUNE(!(n$46 == null), true); [line 216]\n  EXIT_SCOPE(n$45,n$46); [line 216]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_22" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_24" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_22" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_23" [label="23: Prune (false branch, if) \n   n$45=*&this:com.stn.helpers.FacultateHelper* [line 216]\n  n$46=*n$45.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 216]\n  PRUNE((n$46 == null), false); [line 216]\n  EXIT_SCOPE(n$45,n$46); [line 216]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_23" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_25" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_23" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_26" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_23" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_24" [label="24:  Call void PreparedStatement.close() \n   n$47=*&this:com.stn.helpers.FacultateHelper* [line 217]\n  n$48=*n$47.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 217]\n  n$51=_fun___set_mem_attribute(n$48:java.sql.PreparedStatement*) [line 217]\n  _=*n$48:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 217]\n  n$50=_fun_void PreparedStatement.close()(n$48:java.sql.PreparedStatement*) interface virtual [line 217]\n  EXIT_SCOPE(_,n$47,n$48,n$50,n$51); [line 217]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_24" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_25" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_24" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_26" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_24" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_25" [label="25: Prune (true branch, if) \n   n$52=*&this:com.stn.helpers.FacultateHelper* [line 218]\n  n$53=*n$52.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 218]\n  PRUNE(!(n$53 == null), true); [line 218]\n  EXIT_SCOPE(n$52,n$53); [line 218]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_25" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_27" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_25" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_26" [label="26: Prune (false branch, if) \n   n$52=*&this:com.stn.helpers.FacultateHelper* [line 218]\n  n$53=*n$52.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 218]\n  PRUNE((n$53 == null), false); [line 218]\n  NULLIFY(&this); [line 218]\n  EXIT_SCOPE(n$52,n$53,this); [line 218]\n  APPLY_ABSTRACTION; [line 218]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_26" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_36" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_26" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_27" [label="27:  Call void Connection.close() \n   n$54=*&this:com.stn.helpers.FacultateHelper* [line 219]\n  n$55=*n$54.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 219]\n  n$58=_fun___set_mem_attribute(n$55:java.sql.Connection*) [line 219]\n  _=*n$55:java.sql.Connection*(root java.sql.Connection) [line 219]\n  n$57=_fun_void Connection.close()(n$55:java.sql.Connection*) interface virtual [line 219]\n  NULLIFY(&this); [line 219]\n  EXIT_SCOPE(_,n$54,n$55,n$57,n$58,this); [line 219]\n  APPLY_ABSTRACTION; [line 219]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_27" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_36" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_27" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_28" [label="28:  method_body \n   n$59=*&CatchVar136:java.lang.Object* [line 216]\n  *&$bcvar3:java.lang.Object*=n$59 [line 216]\n  NULLIFY(&CatchVar136); [line 216]\n  EXIT_SCOPE(n$59,CatchVar136); [line 216]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_28" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_29" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_28" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_30" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_28" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_29" [label="29: Prune (true branch, if) \n   n$60=*&this:com.stn.helpers.FacultateHelper* [line 216]\n  n$61=*n$60.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 216]\n  PRUNE(!(n$61 == null), true); [line 216]\n  EXIT_SCOPE(n$60,n$61); [line 216]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_29" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_31" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_29" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_30" [label="30: Prune (false branch, if) \n   n$60=*&this:com.stn.helpers.FacultateHelper* [line 216]\n  n$61=*n$60.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 216]\n  PRUNE((n$61 == null), false); [line 216]\n  EXIT_SCOPE(n$60,n$61); [line 216]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_30" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_32" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_30" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_33" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_30" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_31" [label="31:  Call void PreparedStatement.close() \n   n$62=*&this:com.stn.helpers.FacultateHelper* [line 217]\n  n$63=*n$62.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.FacultateHelper) [line 217]\n  n$66=_fun___set_mem_attribute(n$63:java.sql.PreparedStatement*) [line 217]\n  _=*n$63:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 217]\n  n$65=_fun_void PreparedStatement.close()(n$63:java.sql.PreparedStatement*) interface virtual [line 217]\n  EXIT_SCOPE(_,n$62,n$63,n$65,n$66); [line 217]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_31" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_32" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_31" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_33" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_31" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_32" [label="32: Prune (true branch, if) \n   n$67=*&this:com.stn.helpers.FacultateHelper* [line 218]\n  n$68=*n$67.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 218]\n  PRUNE(!(n$68 == null), true); [line 218]\n  EXIT_SCOPE(n$67,n$68); [line 218]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_32" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_34" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_32" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_33" [label="33: Prune (false branch, if) \n   n$67=*&this:com.stn.helpers.FacultateHelper* [line 218]\n  n$68=*n$67.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 218]\n  PRUNE((n$68 == null), false); [line 218]\n  NULLIFY(&this); [line 218]\n  EXIT_SCOPE(n$67,n$68,this); [line 218]\n  APPLY_ABSTRACTION; [line 218]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_33" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_35" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_33" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_34" [label="34:  Call void Connection.close() \n   n$69=*&this:com.stn.helpers.FacultateHelper* [line 219]\n  n$70=*n$69.connection:java.sql.Connection*(root com.stn.helpers.FacultateHelper) [line 219]\n  n$73=_fun___set_mem_attribute(n$70:java.sql.Connection*) [line 219]\n  _=*n$70:java.sql.Connection*(root java.sql.Connection) [line 219]\n  n$72=_fun_void Connection.close()(n$70:java.sql.Connection*) interface virtual [line 219]\n  NULLIFY(&this); [line 219]\n  EXIT_SCOPE(_,n$69,n$70,n$72,n$73,this); [line 219]\n  APPLY_ABSTRACTION; [line 219]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_34" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_35" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_34" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_35" [label="35:  throw \n   n$74=*&$bcvar3:java.lang.Object* [line 220]\n  *&return:java.lang.String*=EXN n$74 [line 220]\n  NULLIFY(&$bcvar3); [line 220]\n  EXIT_SCOPE(n$74,$bcvar3); [line 220]\n  APPLY_ABSTRACTION; [line 220]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_35" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_2" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_35" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_36" [label="36:  method_body \n   n$75=*&token:java.lang.String* [line 222]\n  *&return:java.lang.String*=n$75 [line 222]\n  NULLIFY(&token); [line 222]\n  EXIT_SCOPE(n$75,token); [line 222]\n  APPLY_ABSTRACTION; [line 222]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_36" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_2" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_36" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_37" [label="37:  Finally branch \n  " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_37" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_28" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_37" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_38" [label="38:  exception handler \n   n$76=*&return:java.lang.String* [line 216]\n  *&return:java.lang.String*=null [line 216]\n  n$77=_fun___unwrap_exception(n$76:java.lang.String*) [line 216]\n  NULLIFY(&$irvar3); [line 216]\n  NULLIFY(&token); [line 216]\n  NULLIFY(&$irvar5); [line 216]\n  NULLIFY(&$irvar4); [line 216]\n  NULLIFY(&$irvar7); [line 216]\n  NULLIFY(&$irvar6); [line 216]\n  NULLIFY(&$irvar1); [line 216]\n  NULLIFY(&$irvar2); [line 216]\n  EXIT_SCOPE(n$76,n$77,$irvar3,token,$irvar5,$irvar4,$irvar7,$irvar6,$irvar1,$irvar2); [line 216]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_38" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_37" ;
+	 "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_38" -> "com.stn.helpers.FacultateHelper.getTokenGrupa(int):java.lang.String.e566215e60be93a8bf8e6577344be5bf_3" [color="red" ];
+}

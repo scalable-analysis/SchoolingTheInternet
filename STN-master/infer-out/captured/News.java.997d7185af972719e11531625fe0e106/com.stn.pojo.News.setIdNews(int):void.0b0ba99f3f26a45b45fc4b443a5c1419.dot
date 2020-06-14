@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.News.setIdNews(int):void.0b0ba99f3f26a45b45fc4b443a5c1419_1" [label="1: Start void News.setIdNews(int)\nFormals:  this:com.stn.pojo.News* idNews:int\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.News.setIdNews(int):void.0b0ba99f3f26a45b45fc4b443a5c1419_1" -> "com.stn.pojo.News.setIdNews(int):void.0b0ba99f3f26a45b45fc4b443a5c1419_4" ;
+"com.stn.pojo.News.setIdNews(int):void.0b0ba99f3f26a45b45fc4b443a5c1419_2" [label="2: Exit void News.setIdNews(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.News.setIdNews(int):void.0b0ba99f3f26a45b45fc4b443a5c1419_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 20]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setIdNews(int):void.0b0ba99f3f26a45b45fc4b443a5c1419_3" -> "com.stn.pojo.News.setIdNews(int):void.0b0ba99f3f26a45b45fc4b443a5c1419_2" ;
+"com.stn.pojo.News.setIdNews(int):void.0b0ba99f3f26a45b45fc4b443a5c1419_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.News* [line 19]\n  n$1=*&idNews:int [line 19]\n  *n$0.idNews:com.stn.pojo.News(root com.stn.pojo.News)=n$1 [line 19]\n  NULLIFY(&this); [line 19]\n  NULLIFY(&idNews); [line 19]\n  EXIT_SCOPE(n$0,n$1,this,idNews); [line 19]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setIdNews(int):void.0b0ba99f3f26a45b45fc4b443a5c1419_4" -> "com.stn.pojo.News.setIdNews(int):void.0b0ba99f3f26a45b45fc4b443a5c1419_5" ;
+	 "com.stn.pojo.News.setIdNews(int):void.0b0ba99f3f26a45b45fc4b443a5c1419_4" -> "com.stn.pojo.News.setIdNews(int):void.0b0ba99f3f26a45b45fc4b443a5c1419_3" [color="red" ];
+"com.stn.pojo.News.setIdNews(int):void.0b0ba99f3f26a45b45fc4b443a5c1419_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 20]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.setIdNews(int):void.0b0ba99f3f26a45b45fc4b443a5c1419_5" -> "com.stn.pojo.News.setIdNews(int):void.0b0ba99f3f26a45b45fc4b443a5c1419_2" ;
+	 "com.stn.pojo.News.setIdNews(int):void.0b0ba99f3f26a45b45fc4b443a5c1419_5" -> "com.stn.pojo.News.setIdNews(int):void.0b0ba99f3f26a45b45fc4b443a5c1419_3" [color="red" ];
+}

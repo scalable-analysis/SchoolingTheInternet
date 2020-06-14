@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Comments.getIdUser():java.lang.Integer.81094a044df0e17b1fe3c93f3e23d9a5_1" [label="1: Start Integer Comments.getIdUser()\nFormals:  this:com.stn.pojo.Comments*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Comments.getIdUser():java.lang.Integer.81094a044df0e17b1fe3c93f3e23d9a5_1" -> "com.stn.pojo.Comments.getIdUser():java.lang.Integer.81094a044df0e17b1fe3c93f3e23d9a5_4" ;
+"com.stn.pojo.Comments.getIdUser():java.lang.Integer.81094a044df0e17b1fe3c93f3e23d9a5_2" [label="2: Exit Integer Comments.getIdUser() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Comments.getIdUser():java.lang.Integer.81094a044df0e17b1fe3c93f3e23d9a5_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 57]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Comments.getIdUser():java.lang.Integer.81094a044df0e17b1fe3c93f3e23d9a5_3" -> "com.stn.pojo.Comments.getIdUser():java.lang.Integer.81094a044df0e17b1fe3c93f3e23d9a5_2" ;
+"com.stn.pojo.Comments.getIdUser():java.lang.Integer.81094a044df0e17b1fe3c93f3e23d9a5_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Comments* [line 57]\n  n$1=*n$0.idUser:java.lang.Integer*(root com.stn.pojo.Comments) [line 57]\n  *&return:java.lang.Integer*=n$1 [line 57]\n  NULLIFY(&this); [line 57]\n  EXIT_SCOPE(n$0,n$1,this); [line 57]\n  APPLY_ABSTRACTION; [line 57]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Comments.getIdUser():java.lang.Integer.81094a044df0e17b1fe3c93f3e23d9a5_4" -> "com.stn.pojo.Comments.getIdUser():java.lang.Integer.81094a044df0e17b1fe3c93f3e23d9a5_2" ;
+	 "com.stn.pojo.Comments.getIdUser():java.lang.Integer.81094a044df0e17b1fe3c93f3e23d9a5_4" -> "com.stn.pojo.Comments.getIdUser():java.lang.Integer.81094a044df0e17b1fe3c93f3e23d9a5_3" [color="red" ];
+}

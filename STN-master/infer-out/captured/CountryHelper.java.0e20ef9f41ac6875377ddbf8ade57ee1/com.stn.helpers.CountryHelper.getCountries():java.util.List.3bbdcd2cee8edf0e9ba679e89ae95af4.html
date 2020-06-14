@@ -1,0 +1,371 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.CountryHelper.getCountries():java.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../CountryHelper.java.0e20ef9f41ac6875377ddbf8ade57ee1.html#LINE14">List CountryHelper.getCountries()</a></h1></center>
+<a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:42 41 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$bcvar3); [line 38];
+NULLIFY(&amp;countries); [line 38];
+EXIT_SCOPE($bcvar3,countries); [line 38];
+APPLY_ABSTRACTION; [line 38];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 15];
+n$1=_fun_ArrayList.&lt;init&gt;()(n$0:java.util.ArrayList*) [line 15];
+*&amp;countries:java.util.ArrayList*=n$0 [line 15];
+EXIT_SCOPE(n$0,n$1); [line 15];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$2=*&amp;this:com.stn.helpers.CountryHelper* [line 17];
+*n$2.query:com.stn.helpers.CountryHelper(root com.stn.helpers.CountryHelper)="SELECT * FROM countries ORDER BY 2 ASC" [line 17];
+EXIT_SCOPE(n$2); [line 17];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:44 Instructions
+n$3=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 20];
+*&amp;$irvar0:java.lang.Class*=n$3 [line 20];
+NULLIFY(&amp;$irvar0); [line 20];
+EXIT_SCOPE(n$3,$irvar0); [line 20];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:44 Instructions
+n$4=*&amp;this:com.stn.helpers.CountryHelper* [line 21];
+_=*n$4:com.stn.helpers.CountryHelper*(root com.stn.helpers.CountryHelper) [line 21];
+n$6=_fun_String DBConnection.getHost()(n$4:com.stn.helpers.CountryHelper*) virtual [line 21];
+*&amp;$irvar1:java.lang.String*=n$6 [line 21];
+EXIT_SCOPE(_,n$4,n$6); [line 21];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:44 Instructions
+n$7=*&amp;this:com.stn.helpers.CountryHelper* [line 21];
+_=*n$7:com.stn.helpers.CountryHelper*(root com.stn.helpers.CountryHelper) [line 21];
+n$9=_fun_String DBConnection.getUser()(n$7:com.stn.helpers.CountryHelper*) virtual [line 21];
+*&amp;$irvar2:java.lang.String*=n$9 [line 21];
+EXIT_SCOPE(_,n$7,n$9); [line 21];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:44 Instructions
+n$10=*&amp;this:com.stn.helpers.CountryHelper* [line 21];
+_=*n$10:com.stn.helpers.CountryHelper*(root com.stn.helpers.CountryHelper) [line 21];
+n$12=_fun_String DBConnection.getPassword()(n$10:com.stn.helpers.CountryHelper*) virtual [line 21];
+*&amp;$irvar3:java.lang.String*=n$12 [line 21];
+EXIT_SCOPE(_,n$10,n$12); [line 21];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:44 Instructions
+n$13=*&amp;$irvar1:java.lang.String* [line 21];
+n$14=*&amp;$irvar2:java.lang.String* [line 21];
+n$15=*&amp;$irvar3:java.lang.String* [line 21];
+n$16=_fun_Connection DriverManager.getConnection(String,String,String)(n$13:java.lang.String*,n$14:java.lang.String*,n$15:java.lang.String*) [line 21];
+*&amp;$irvar4:java.sql.Connection*=n$16 [line 21];
+NULLIFY(&amp;$irvar3); [line 21];
+NULLIFY(&amp;$irvar1); [line 21];
+NULLIFY(&amp;$irvar2); [line 21];
+EXIT_SCOPE(n$13,n$14,n$15,n$16,$irvar3,$irvar1,$irvar2); [line 21];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:44 Instructions
+n$17=*&amp;this:com.stn.helpers.CountryHelper* [line 21];
+n$18=*&amp;$irvar4:java.sql.Connection* [line 21];
+*n$17.connection:com.stn.helpers.CountryHelper(root com.stn.helpers.CountryHelper)=n$18 [line 21];
+NULLIFY(&amp;$irvar4); [line 21];
+EXIT_SCOPE(n$17,n$18,$irvar4); [line 21];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:44 Instructions
+n$19=*&amp;this:com.stn.helpers.CountryHelper* [line 22];
+n$20=*n$19.connection:java.sql.Connection*(root com.stn.helpers.CountryHelper) [line 22];
+_=*n$20:java.sql.Connection*(root java.sql.Connection) [line 22];
+n$22=*&amp;this:com.stn.helpers.CountryHelper* [line 22];
+n$23=*n$22.query:java.lang.String*(root com.stn.helpers.CountryHelper) [line 22];
+n$24=_fun_PreparedStatement Connection.prepareStatement(String)(n$20:java.sql.Connection*,n$23:java.lang.String*) interface virtual [line 22];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$24 [line 22];
+EXIT_SCOPE(_,n$19,n$20,n$22,n$23,n$24); [line 22];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:44 Instructions
+n$25=*&amp;this:com.stn.helpers.CountryHelper* [line 22];
+n$26=*&amp;$irvar5:java.sql.PreparedStatement* [line 22];
+*n$25.preparedStatement:com.stn.helpers.CountryHelper(root com.stn.helpers.CountryHelper)=n$26 [line 22];
+NULLIFY(&amp;$irvar5); [line 22];
+EXIT_SCOPE(n$25,n$26,$irvar5); [line 22];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:44 Instructions
+n$27=*&amp;this:com.stn.helpers.CountryHelper* [line 23];
+n$28=*n$27.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CountryHelper) [line 23];
+_=*n$28:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 23];
+n$30=_fun_ResultSet PreparedStatement.executeQuery()(n$28:java.sql.PreparedStatement*) interface virtual [line 23];
+*&amp;$irvar6:java.sql.ResultSet*=n$30 [line 23];
+EXIT_SCOPE(_,n$27,n$28,n$30); [line 23];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:44 Instructions
+n$31=*&amp;this:com.stn.helpers.CountryHelper* [line 23];
+n$32=*&amp;$irvar6:java.sql.ResultSet* [line 23];
+*n$31.resultSet:com.stn.helpers.CountryHelper(root com.stn.helpers.CountryHelper)=n$32 [line 23];
+NULLIFY(&amp;$irvar6); [line 23];
+EXIT_SCOPE(n$31,n$32,$irvar6); [line 23];
+APPLY_ABSTRACTION; [line 23];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:27 15 succs:19 exn:44 Instructions
+n$33=*&amp;this:com.stn.helpers.CountryHelper* [line 24];
+n$34=*n$33.resultSet:java.sql.ResultSet*(root com.stn.helpers.CountryHelper) [line 24];
+_=*n$34:java.sql.ResultSet*(root java.sql.ResultSet) [line 24];
+n$36=_fun_boolean ResultSet.next()(n$34:java.sql.ResultSet*) interface virtual [line 24];
+*&amp;$irvar7:_Bool=n$36 [line 24];
+EXIT_SCOPE(_,n$33,n$34,n$36); [line 24];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node17.html"><span class='visited with_tooltip'>C_17<span class='tooltip'>node17 preds:19 succs:20 exn:44 Conditional method_body
+n$37=*&amp;$irvar7:_Bool [line 24];
+PRUNE(!(n$37 == 0), true); [line 24];
+NULLIFY(&amp;$irvar7); [line 24];
+EXIT_SCOPE(n$37,$irvar7); [line 24];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:19 succs:28 29 exn:44 Conditional method_body
+n$37=*&amp;$irvar7:_Bool [line 24];
+PRUNE((n$37 == 0), false); [line 24];
+NULLIFY(&amp;$irvar7); [line 24];
+EXIT_SCOPE(n$37,$irvar7); [line 24];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node19.html"><span class='visited with_tooltip'>J_19<span class='tooltip'>node19 preds:16 succs:17 18 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:17 succs:21 exn:44 Instructions
+n$38=_fun___new(sizeof(t=com.stn.pojo.Country):com.stn.pojo.Country*) [line 25];
+n$39=_fun_Country.&lt;init&gt;()(n$38:com.stn.pojo.Country*) [line 25];
+*&amp;country:com.stn.pojo.Country*=n$38 [line 25];
+EXIT_SCOPE(n$38,n$39); [line 25];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:44 Instructions
+n$40=*&amp;this:com.stn.helpers.CountryHelper* [line 26];
+n$41=*n$40.resultSet:java.sql.ResultSet*(root com.stn.helpers.CountryHelper) [line 26];
+_=*n$41:java.sql.ResultSet*(root java.sql.ResultSet) [line 26];
+n$43=_fun_int ResultSet.getInt(int)(n$41:java.sql.ResultSet*,1:int) interface virtual [line 26];
+*&amp;$irvar8:int=n$43 [line 26];
+EXIT_SCOPE(_,n$40,n$41,n$43); [line 26];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:44 Instructions
+n$44=*&amp;country:com.stn.pojo.Country* [line 26];
+_=*n$44:com.stn.pojo.Country*(root com.stn.pojo.Country) [line 26];
+n$46=*&amp;$irvar8:int [line 26];
+n$47=_fun_void Country.setCountryId(int)(n$44:com.stn.pojo.Country*,n$46:int) virtual [line 26];
+NULLIFY(&amp;$irvar8); [line 26];
+EXIT_SCOPE(_,n$44,n$46,n$47,$irvar8); [line 26];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:44 Instructions
+n$48=*&amp;this:com.stn.helpers.CountryHelper* [line 27];
+n$49=*n$48.resultSet:java.sql.ResultSet*(root com.stn.helpers.CountryHelper) [line 27];
+_=*n$49:java.sql.ResultSet*(root java.sql.ResultSet) [line 27];
+n$51=_fun_String ResultSet.getString(int)(n$49:java.sql.ResultSet*,2:int) interface virtual [line 27];
+*&amp;$irvar9:java.lang.String*=n$51 [line 27];
+EXIT_SCOPE(_,n$48,n$49,n$51); [line 27];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:44 Instructions
+n$52=*&amp;country:com.stn.pojo.Country* [line 27];
+_=*n$52:com.stn.pojo.Country*(root com.stn.pojo.Country) [line 27];
+n$54=*&amp;$irvar9:java.lang.String* [line 27];
+n$55=_fun_void Country.setCountryName(String)(n$52:com.stn.pojo.Country*,n$54:java.lang.String*) virtual [line 27];
+NULLIFY(&amp;$irvar9); [line 27];
+EXIT_SCOPE(_,n$52,n$54,n$55,$irvar9); [line 27];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:44 Instructions
+n$56=*&amp;this:com.stn.helpers.CountryHelper* [line 28];
+n$57=*n$56.resultSet:java.sql.ResultSet*(root com.stn.helpers.CountryHelper) [line 28];
+_=*n$57:java.sql.ResultSet*(root java.sql.ResultSet) [line 28];
+n$59=_fun_String ResultSet.getString(int)(n$57:java.sql.ResultSet*,3:int) interface virtual [line 28];
+*&amp;$irvar10:java.lang.String*=n$59 [line 28];
+EXIT_SCOPE(_,n$56,n$57,n$59); [line 28];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:44 Instructions
+n$60=*&amp;country:com.stn.pojo.Country* [line 28];
+_=*n$60:com.stn.pojo.Country*(root com.stn.pojo.Country) [line 28];
+n$62=*&amp;$irvar10:java.lang.String* [line 28];
+n$63=_fun_void Country.setCountryImage(String)(n$60:com.stn.pojo.Country*,n$62:java.lang.String*) virtual [line 28];
+NULLIFY(&amp;$irvar10); [line 28];
+EXIT_SCOPE(_,n$60,n$62,n$63,$irvar10); [line 28];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:16 exn:44 Instructions
+n$64=*&amp;countries:java.util.ArrayList* [line 29];
+_=*n$64:java.util.ArrayList*(root java.util.ArrayList) [line 29];
+n$66=*&amp;country:com.stn.pojo.Country* [line 29];
+n$67=_fun_boolean ArrayList.add(Object)(n$64:java.util.ArrayList*,n$66:com.stn.pojo.Country*) interface virtual [line 29];
+*&amp;$irvar11:_Bool=n$67 [line 29];
+NULLIFY(&amp;country); [line 29];
+NULLIFY(&amp;$irvar11); [line 29];
+EXIT_SCOPE(_,n$64,n$66,n$67,country,$irvar11); [line 29];
+APPLY_ABSTRACTION; [line 29];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node28.html"><span class='visited with_tooltip'>C_28<span class='tooltip'>node28 preds:18 succs:30 exn:3 Conditional method_body
+n$68=*&amp;this:com.stn.helpers.CountryHelper* [line 32];
+n$69=*n$68.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CountryHelper) [line 32];
+PRUNE(!(n$69 == null), true); [line 32];
+EXIT_SCOPE(n$68,n$69); [line 32];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node29.html"><span class='visited with_tooltip'>C_29<span class='tooltip'>node29 preds:18 succs:31 32 exn:3 Conditional method_body
+n$68=*&amp;this:com.stn.helpers.CountryHelper* [line 32];
+n$69=*n$68.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CountryHelper) [line 32];
+PRUNE((n$69 == null), false); [line 32];
+EXIT_SCOPE(n$68,n$69); [line 32];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:28 succs:31 32 exn:3 Instructions
+n$70=*&amp;this:com.stn.helpers.CountryHelper* [line 33];
+n$71=*n$70.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CountryHelper) [line 33];
+n$74=_fun___set_mem_attribute(n$71:java.sql.PreparedStatement*) [line 33];
+_=*n$71:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 33];
+n$73=_fun_void PreparedStatement.close()(n$71:java.sql.PreparedStatement*) interface virtual [line 33];
+EXIT_SCOPE(_,n$70,n$71,n$73,n$74); [line 33];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node31.html"><span class='visited with_tooltip'>C_31<span class='tooltip'>node31 preds:30 29 succs:33 exn:3 Conditional method_body
+n$75=*&amp;this:com.stn.helpers.CountryHelper* [line 34];
+n$76=*n$75.connection:java.sql.Connection*(root com.stn.helpers.CountryHelper) [line 34];
+PRUNE(!(n$76 == null), true); [line 34];
+EXIT_SCOPE(n$75,n$76); [line 34];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:30 29 succs:42 exn:3 Conditional method_body
+n$75=*&amp;this:com.stn.helpers.CountryHelper* [line 34];
+n$76=*n$75.connection:java.sql.Connection*(root com.stn.helpers.CountryHelper) [line 34];
+PRUNE((n$76 == null), false); [line 34];
+NULLIFY(&amp;this); [line 34];
+EXIT_SCOPE(n$75,n$76,this); [line 34];
+APPLY_ABSTRACTION; [line 34];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:31 succs:42 exn:3 Instructions
+n$77=*&amp;this:com.stn.helpers.CountryHelper* [line 35];
+n$78=*n$77.connection:java.sql.Connection*(root com.stn.helpers.CountryHelper) [line 35];
+n$81=_fun___set_mem_attribute(n$78:java.sql.Connection*) [line 35];
+_=*n$78:java.sql.Connection*(root java.sql.Connection) [line 35];
+n$80=_fun_void Connection.close()(n$78:java.sql.Connection*) interface virtual [line 35];
+NULLIFY(&amp;this); [line 35];
+EXIT_SCOPE(_,n$77,n$78,n$80,n$81,this); [line 35];
+APPLY_ABSTRACTION; [line 35];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:43 succs:35 36 exn:3 Instructions
+n$82=*&amp;CatchVar177:java.lang.Object* [line 32];
+*&amp;$bcvar3:java.lang.Object*=n$82 [line 32];
+NULLIFY(&amp;CatchVar177); [line 32];
+EXIT_SCOPE(n$82,CatchVar177); [line 32];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node35.html"><span class='visited with_tooltip'>C_35<span class='tooltip'>node35 preds:34 succs:37 exn:3 Conditional method_body
+n$83=*&amp;this:com.stn.helpers.CountryHelper* [line 32];
+n$84=*n$83.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CountryHelper) [line 32];
+PRUNE(!(n$84 == null), true); [line 32];
+EXIT_SCOPE(n$83,n$84); [line 32];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node36.html"><span class='visited with_tooltip'>C_36<span class='tooltip'>node36 preds:34 succs:38 39 exn:3 Conditional method_body
+n$83=*&amp;this:com.stn.helpers.CountryHelper* [line 32];
+n$84=*n$83.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CountryHelper) [line 32];
+PRUNE((n$84 == null), false); [line 32];
+EXIT_SCOPE(n$83,n$84); [line 32];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:35 succs:38 39 exn:3 Instructions
+n$85=*&amp;this:com.stn.helpers.CountryHelper* [line 33];
+n$86=*n$85.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CountryHelper) [line 33];
+n$89=_fun___set_mem_attribute(n$86:java.sql.PreparedStatement*) [line 33];
+_=*n$86:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 33];
+n$88=_fun_void PreparedStatement.close()(n$86:java.sql.PreparedStatement*) interface virtual [line 33];
+EXIT_SCOPE(_,n$85,n$86,n$88,n$89); [line 33];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node38.html"><span class='visited with_tooltip'>C_38<span class='tooltip'>node38 preds:37 36 succs:40 exn:3 Conditional method_body
+n$90=*&amp;this:com.stn.helpers.CountryHelper* [line 34];
+n$91=*n$90.connection:java.sql.Connection*(root com.stn.helpers.CountryHelper) [line 34];
+PRUNE(!(n$91 == null), true); [line 34];
+EXIT_SCOPE(n$90,n$91); [line 34];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node39.html"><span class='visited with_tooltip'>C_39<span class='tooltip'>node39 preds:37 36 succs:41 exn:3 Conditional method_body
+n$90=*&amp;this:com.stn.helpers.CountryHelper* [line 34];
+n$91=*n$90.connection:java.sql.Connection*(root com.stn.helpers.CountryHelper) [line 34];
+PRUNE((n$91 == null), false); [line 34];
+NULLIFY(&amp;this); [line 34];
+EXIT_SCOPE(n$90,n$91,this); [line 34];
+APPLY_ABSTRACTION; [line 34];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:38 succs:41 exn:3 Instructions
+n$92=*&amp;this:com.stn.helpers.CountryHelper* [line 35];
+n$93=*n$92.connection:java.sql.Connection*(root com.stn.helpers.CountryHelper) [line 35];
+n$96=_fun___set_mem_attribute(n$93:java.sql.Connection*) [line 35];
+_=*n$93:java.sql.Connection*(root java.sql.Connection) [line 35];
+n$95=_fun_void Connection.close()(n$93:java.sql.Connection*) interface virtual [line 35];
+NULLIFY(&amp;this); [line 35];
+EXIT_SCOPE(_,n$92,n$93,n$95,n$96,this); [line 35];
+APPLY_ABSTRACTION; [line 35];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:40 39 succs:2 exn:3 Instructions
+n$97=*&amp;$bcvar3:java.lang.Object* [line 36];
+*&amp;return:java.util.List*=EXN n$97 [line 36];
+NULLIFY(&amp;$bcvar3); [line 36];
+EXIT_SCOPE(n$97,$bcvar3); [line 36];
+APPLY_ABSTRACTION; [line 36];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:33 32 succs:2 exn:3 Instructions
+n$98=*&amp;countries:java.util.ArrayList* [line 38];
+*&amp;return:java.util.List*=n$98 [line 38];
+NULLIFY(&amp;countries); [line 38];
+EXIT_SCOPE(n$98,countries); [line 38];
+APPLY_ABSTRACTION; [line 38];
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:44 succs:34 exn:3 Instructions
+</span></span></a> <a href="./nodes/com.stn.helpers.CountryHelper.getCountries%28%29%3Ajava.util.List.3bbdcd2cee8edf0e9ba679e89ae95af4_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds: succs:43 exn:3 Instructions
+n$99=*&amp;return:java.util.List* [line 32];
+*&amp;return:java.util.List*=null [line 32];
+n$100=_fun___unwrap_exception(n$99:java.util.List*) [line 32];
+NULLIFY(&amp;$irvar3); [line 32];
+NULLIFY(&amp;$irvar9); [line 32];
+NULLIFY(&amp;country); [line 32];
+NULLIFY(&amp;$irvar5); [line 32];
+NULLIFY(&amp;$irvar4); [line 32];
+NULLIFY(&amp;$irvar7); [line 32];
+NULLIFY(&amp;$irvar6); [line 32];
+NULLIFY(&amp;$irvar10); [line 32];
+NULLIFY(&amp;$irvar8); [line 32];
+NULLIFY(&amp;$irvar1); [line 32];
+NULLIFY(&amp;$irvar2); [line 32];
+NULLIFY(&amp;countries); [line 32];
+EXIT_SCOPE(n$99,n$100,$irvar3,$irvar9,country,$irvar5,$irvar4,$irvar7,$irvar6,$irvar10,$irvar8,$irvar1,$irvar2,countries); [line 32];
+</span></span></a><br />@
+
+<span class='color_black'>java.util.List* List CountryHelper.getCountries()(com.stn.helpers.CountryHelper* this)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { @val$0 -> { connection -> (Footprint({ @val$0.dbUser,
+                                                   @val$0.dbPort*,
+                                                   @val$0.dbPassword,
+                                                   @val$0.dbName*,
+                                                   @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        preparedStatement -> (Footprint({ @val$0.dbUser,
+                                                          @val$0.dbPort*,
+                                                          @val$0.dbPassword,
+                                                          @val$0.dbName*,
+                                                          @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        query -> { },
+                        resultSet -> ({ Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *) },
+            return -> ({ Other(ResultSet PreparedStatement.executeQuery() at line 23) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *) }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= List CountryHelper.getCountries()
+; translation_unit= src/main/java/com/stn/helpers/CountryHelper.java
+; access= Public
+; exceptions= [java.lang.ClassNotFoundException;  java.sql.SQLException]
+; formals= [(this,com.stn.helpers.CountryHelper*)]
+; is_defined= true
+; loc= src/main/java/com/stn/helpers/CountryHelper.java:14
+; locals= [{ name= $bcvar3; typ= void; modify_in_block= false }; 
+           { name= CatchVar177; typ= void; modify_in_block= false }; 
+           { name= $irvar11; typ= void; modify_in_block= false }; 
+           { name= $irvar10; typ= void; modify_in_block= false }; 
+           { name= $irvar9; typ= void; modify_in_block= false }; 
+           { name= $irvar8; typ= void; modify_in_block= false }; 
+           { name= $irvar7; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= countries; typ= java.util.List*; modify_in_block= false }; 
+           { name= country; typ= com.stn.pojo.Country*; modify_in_block= false }]
+; ret_type= java.util.List* 
+; proc_id= com.stn.helpers.CountryHelper.getCountries():java.util.List }</pre>
+</body>
+</html>

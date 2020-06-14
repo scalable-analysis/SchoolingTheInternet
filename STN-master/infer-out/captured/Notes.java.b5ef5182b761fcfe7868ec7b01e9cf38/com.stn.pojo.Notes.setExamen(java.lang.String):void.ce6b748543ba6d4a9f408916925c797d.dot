@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Notes.setExamen(java.lang.String):void.ce6b748543ba6d4a9f408916925c797d_1" [label="1: Start void Notes.setExamen(String)\nFormals:  this:com.stn.pojo.Notes* examen:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Notes.setExamen(java.lang.String):void.ce6b748543ba6d4a9f408916925c797d_1" -> "com.stn.pojo.Notes.setExamen(java.lang.String):void.ce6b748543ba6d4a9f408916925c797d_4" ;
+"com.stn.pojo.Notes.setExamen(java.lang.String):void.ce6b748543ba6d4a9f408916925c797d_2" [label="2: Exit void Notes.setExamen(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Notes.setExamen(java.lang.String):void.ce6b748543ba6d4a9f408916925c797d_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 60]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Notes.setExamen(java.lang.String):void.ce6b748543ba6d4a9f408916925c797d_3" -> "com.stn.pojo.Notes.setExamen(java.lang.String):void.ce6b748543ba6d4a9f408916925c797d_2" ;
+"com.stn.pojo.Notes.setExamen(java.lang.String):void.ce6b748543ba6d4a9f408916925c797d_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Notes* [line 59]\n  n$1=*&examen:java.lang.String* [line 59]\n  *n$0.examen:com.stn.pojo.Notes(root com.stn.pojo.Notes)=n$1 [line 59]\n  NULLIFY(&this); [line 59]\n  NULLIFY(&examen); [line 59]\n  EXIT_SCOPE(n$0,n$1,this,examen); [line 59]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Notes.setExamen(java.lang.String):void.ce6b748543ba6d4a9f408916925c797d_4" -> "com.stn.pojo.Notes.setExamen(java.lang.String):void.ce6b748543ba6d4a9f408916925c797d_5" ;
+	 "com.stn.pojo.Notes.setExamen(java.lang.String):void.ce6b748543ba6d4a9f408916925c797d_4" -> "com.stn.pojo.Notes.setExamen(java.lang.String):void.ce6b748543ba6d4a9f408916925c797d_3" [color="red" ];
+"com.stn.pojo.Notes.setExamen(java.lang.String):void.ce6b748543ba6d4a9f408916925c797d_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 60]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Notes.setExamen(java.lang.String):void.ce6b748543ba6d4a9f408916925c797d_5" -> "com.stn.pojo.Notes.setExamen(java.lang.String):void.ce6b748543ba6d4a9f408916925c797d_2" ;
+	 "com.stn.pojo.Notes.setExamen(java.lang.String):void.ce6b748543ba6d4a9f408916925c797d_5" -> "com.stn.pojo.Notes.setExamen(java.lang.String):void.ce6b748543ba6d4a9f408916925c797d_3" [color="red" ];
+}

@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.News.getDate():java.sql.Timestamp.2300bc3cc0c023e964d44ae988b83ff5_1" [label="1: Start Timestamp News.getDate()\nFormals:  this:com.stn.pojo.News*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.News.getDate():java.sql.Timestamp.2300bc3cc0c023e964d44ae988b83ff5_1" -> "com.stn.pojo.News.getDate():java.sql.Timestamp.2300bc3cc0c023e964d44ae988b83ff5_4" ;
+"com.stn.pojo.News.getDate():java.sql.Timestamp.2300bc3cc0c023e964d44ae988b83ff5_2" [label="2: Exit Timestamp News.getDate() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.News.getDate():java.sql.Timestamp.2300bc3cc0c023e964d44ae988b83ff5_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 67]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.getDate():java.sql.Timestamp.2300bc3cc0c023e964d44ae988b83ff5_3" -> "com.stn.pojo.News.getDate():java.sql.Timestamp.2300bc3cc0c023e964d44ae988b83ff5_2" ;
+"com.stn.pojo.News.getDate():java.sql.Timestamp.2300bc3cc0c023e964d44ae988b83ff5_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.News* [line 67]\n  n$1=*n$0.date:java.sql.Timestamp*(root com.stn.pojo.News) [line 67]\n  *&return:java.sql.Timestamp*=n$1 [line 67]\n  NULLIFY(&this); [line 67]\n  EXIT_SCOPE(n$0,n$1,this); [line 67]\n  APPLY_ABSTRACTION; [line 67]\n " shape="box"]
+	
+
+	 "com.stn.pojo.News.getDate():java.sql.Timestamp.2300bc3cc0c023e964d44ae988b83ff5_4" -> "com.stn.pojo.News.getDate():java.sql.Timestamp.2300bc3cc0c023e964d44ae988b83ff5_2" ;
+	 "com.stn.pojo.News.getDate():java.sql.Timestamp.2300bc3cc0c023e964d44ae988b83ff5_4" -> "com.stn.pojo.News.getDate():java.sql.Timestamp.2300bc3cc0c023e964d44ae988b83ff5_3" [color="red" ];
+}

@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Stats.getSeriiCount():int.3d47a0f69ea72d62a68f7caf68200e01_1" [label="1: Start int Stats.getSeriiCount()\nFormals:  this:com.stn.pojo.Stats*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Stats.getSeriiCount():int.3d47a0f69ea72d62a68f7caf68200e01_1" -> "com.stn.pojo.Stats.getSeriiCount():int.3d47a0f69ea72d62a68f7caf68200e01_4" ;
+"com.stn.pojo.Stats.getSeriiCount():int.3d47a0f69ea72d62a68f7caf68200e01_2" [label="2: Exit int Stats.getSeriiCount() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Stats.getSeriiCount():int.3d47a0f69ea72d62a68f7caf68200e01_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 67]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Stats.getSeriiCount():int.3d47a0f69ea72d62a68f7caf68200e01_3" -> "com.stn.pojo.Stats.getSeriiCount():int.3d47a0f69ea72d62a68f7caf68200e01_2" ;
+"com.stn.pojo.Stats.getSeriiCount():int.3d47a0f69ea72d62a68f7caf68200e01_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Stats* [line 67]\n  n$1=*n$0.seriiCount:int(root com.stn.pojo.Stats) [line 67]\n  *&return:int=n$1 [line 67]\n  NULLIFY(&this); [line 67]\n  EXIT_SCOPE(n$0,n$1,this); [line 67]\n  APPLY_ABSTRACTION; [line 67]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Stats.getSeriiCount():int.3d47a0f69ea72d62a68f7caf68200e01_4" -> "com.stn.pojo.Stats.getSeriiCount():int.3d47a0f69ea72d62a68f7caf68200e01_2" ;
+	 "com.stn.pojo.Stats.getSeriiCount():int.3d47a0f69ea72d62a68f7caf68200e01_4" -> "com.stn.pojo.Stats.getSeriiCount():int.3d47a0f69ea72d62a68f7caf68200e01_3" [color="red" ];
+}

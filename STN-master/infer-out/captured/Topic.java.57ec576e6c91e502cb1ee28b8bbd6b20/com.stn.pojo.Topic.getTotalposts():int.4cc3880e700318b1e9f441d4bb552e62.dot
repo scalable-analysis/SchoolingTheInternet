@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Topic.getTotalposts():int.4cc3880e700318b1e9f441d4bb552e62_1" [label="1: Start int Topic.getTotalposts()\nFormals:  this:com.stn.pojo.Topic*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Topic.getTotalposts():int.4cc3880e700318b1e9f441d4bb552e62_1" -> "com.stn.pojo.Topic.getTotalposts():int.4cc3880e700318b1e9f441d4bb552e62_4" ;
+"com.stn.pojo.Topic.getTotalposts():int.4cc3880e700318b1e9f441d4bb552e62_2" [label="2: Exit int Topic.getTotalposts() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Topic.getTotalposts():int.4cc3880e700318b1e9f441d4bb552e62_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 66]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Topic.getTotalposts():int.4cc3880e700318b1e9f441d4bb552e62_3" -> "com.stn.pojo.Topic.getTotalposts():int.4cc3880e700318b1e9f441d4bb552e62_2" ;
+"com.stn.pojo.Topic.getTotalposts():int.4cc3880e700318b1e9f441d4bb552e62_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Topic* [line 66]\n  n$1=*n$0.totalposts:int(root com.stn.pojo.Topic) [line 66]\n  *&return:int=n$1 [line 66]\n  NULLIFY(&this); [line 66]\n  EXIT_SCOPE(n$0,n$1,this); [line 66]\n  APPLY_ABSTRACTION; [line 66]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Topic.getTotalposts():int.4cc3880e700318b1e9f441d4bb552e62_4" -> "com.stn.pojo.Topic.getTotalposts():int.4cc3880e700318b1e9f441d4bb552e62_2" ;
+	 "com.stn.pojo.Topic.getTotalposts():int.4cc3880e700318b1e9f441d4bb552e62_4" -> "com.stn.pojo.Topic.getTotalposts():int.4cc3880e700318b1e9f441d4bb552e62_3" [color="red" ];
+}

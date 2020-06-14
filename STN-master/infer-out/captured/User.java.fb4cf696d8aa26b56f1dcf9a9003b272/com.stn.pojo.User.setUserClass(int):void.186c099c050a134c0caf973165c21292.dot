@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.User.setUserClass(int):void.186c099c050a134c0caf973165c21292_1" [label="1: Start void User.setUserClass(int)\nFormals:  this:com.stn.pojo.User* userClass:int\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.User.setUserClass(int):void.186c099c050a134c0caf973165c21292_1" -> "com.stn.pojo.User.setUserClass(int):void.186c099c050a134c0caf973165c21292_4" ;
+"com.stn.pojo.User.setUserClass(int):void.186c099c050a134c0caf973165c21292_2" [label="2: Exit void User.setUserClass(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.User.setUserClass(int):void.186c099c050a134c0caf973165c21292_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 38]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.setUserClass(int):void.186c099c050a134c0caf973165c21292_3" -> "com.stn.pojo.User.setUserClass(int):void.186c099c050a134c0caf973165c21292_2" ;
+"com.stn.pojo.User.setUserClass(int):void.186c099c050a134c0caf973165c21292_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.User* [line 37]\n  n$1=*&userClass:int [line 37]\n  *n$0.userClass:com.stn.pojo.User(root com.stn.pojo.User)=n$1 [line 37]\n  NULLIFY(&userClass); [line 37]\n  NULLIFY(&this); [line 37]\n  EXIT_SCOPE(n$0,n$1,userClass,this); [line 37]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.setUserClass(int):void.186c099c050a134c0caf973165c21292_4" -> "com.stn.pojo.User.setUserClass(int):void.186c099c050a134c0caf973165c21292_5" ;
+	 "com.stn.pojo.User.setUserClass(int):void.186c099c050a134c0caf973165c21292_4" -> "com.stn.pojo.User.setUserClass(int):void.186c099c050a134c0caf973165c21292_3" [color="red" ];
+"com.stn.pojo.User.setUserClass(int):void.186c099c050a134c0caf973165c21292_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 38]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.setUserClass(int):void.186c099c050a134c0caf973165c21292_5" -> "com.stn.pojo.User.setUserClass(int):void.186c099c050a134c0caf973165c21292_2" ;
+	 "com.stn.pojo.User.setUserClass(int):void.186c099c050a134c0caf973165c21292_5" -> "com.stn.pojo.User.setUserClass(int):void.186c099c050a134c0caf973165c21292_3" [color="red" ];
+}

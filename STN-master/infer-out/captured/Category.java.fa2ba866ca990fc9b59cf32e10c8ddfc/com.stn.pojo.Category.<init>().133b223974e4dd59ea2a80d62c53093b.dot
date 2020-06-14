@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Category.<init>().133b223974e4dd59ea2a80d62c53093b_1" [label="1: Start Category.<init>()\nFormals:  this:com.stn.pojo.Category*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Category.<init>().133b223974e4dd59ea2a80d62c53093b_1" -> "com.stn.pojo.Category.<init>().133b223974e4dd59ea2a80d62c53093b_4" ;
+"com.stn.pojo.Category.<init>().133b223974e4dd59ea2a80d62c53093b_2" [label="2: Exit Category.<init>() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Category.<init>().133b223974e4dd59ea2a80d62c53093b_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 27]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.<init>().133b223974e4dd59ea2a80d62c53093b_3" -> "com.stn.pojo.Category.<init>().133b223974e4dd59ea2a80d62c53093b_2" ;
+"com.stn.pojo.Category.<init>().133b223974e4dd59ea2a80d62c53093b_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.stn.pojo.Category* [line 25]\n  n$1=_fun_Object.<init>()(n$0:com.stn.pojo.Category*) [line 25]\n  NULLIFY(&this); [line 25]\n  EXIT_SCOPE(n$0,n$1,this); [line 25]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.<init>().133b223974e4dd59ea2a80d62c53093b_4" -> "com.stn.pojo.Category.<init>().133b223974e4dd59ea2a80d62c53093b_5" ;
+	 "com.stn.pojo.Category.<init>().133b223974e4dd59ea2a80d62c53093b_4" -> "com.stn.pojo.Category.<init>().133b223974e4dd59ea2a80d62c53093b_3" [color="red" ];
+"com.stn.pojo.Category.<init>().133b223974e4dd59ea2a80d62c53093b_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 27]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.<init>().133b223974e4dd59ea2a80d62c53093b_5" -> "com.stn.pojo.Category.<init>().133b223974e4dd59ea2a80d62c53093b_2" ;
+	 "com.stn.pojo.Category.<init>().133b223974e4dd59ea2a80d62c53093b_5" -> "com.stn.pojo.Category.<init>().133b223974e4dd59ea2a80d62c53093b_3" [color="red" ];
+}

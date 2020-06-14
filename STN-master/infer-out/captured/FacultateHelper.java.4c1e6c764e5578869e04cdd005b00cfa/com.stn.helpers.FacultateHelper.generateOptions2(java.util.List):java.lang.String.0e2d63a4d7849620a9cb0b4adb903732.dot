@@ -1,0 +1,165 @@
+/* @generated */
+digraph cfg {
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_1" [label="1: Start String FacultateHelper.generateOptions2(List)\nFormals:  facultate:java.util.List*\nLocals:  $irvar17:void $irvar16:void $irvar15:void $irvar14:void $irvar13:void $irvar12:void $irvar11:void $irvar10:void $irvar9:void $irvar8:void $irvar7:void $irvar6:void $irvar5:void $irvar4:void $bcvar2:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void result:java.lang.String* fac:com.stn.pojo.Facultate* \n  " color=yellow style=filled]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_1" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_4" ;
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_2" [label="2: Exit String FacultateHelper.generateOptions2(List) \n  " color=yellow style=filled]
+	
+
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [label="3:  exceptions sink \n   NULLIFY(&result); [line 197]\n  NULLIFY(&$irvar3); [line 197]\n  NULLIFY(&$irvar9); [line 197]\n  NULLIFY(&$irvar17); [line 197]\n  NULLIFY(&$bcvar2); [line 197]\n  NULLIFY(&$irvar5); [line 197]\n  NULLIFY(&$irvar16); [line 197]\n  NULLIFY(&$irvar4); [line 197]\n  NULLIFY(&$irvar7); [line 197]\n  NULLIFY(&$irvar12); [line 197]\n  NULLIFY(&fac); [line 197]\n  NULLIFY(&$irvar6); [line 197]\n  NULLIFY(&$irvar0); [line 197]\n  NULLIFY(&$irvar13); [line 197]\n  NULLIFY(&$irvar11); [line 197]\n  NULLIFY(&$irvar10); [line 197]\n  NULLIFY(&$irvar8); [line 197]\n  NULLIFY(&$irvar1); [line 197]\n  NULLIFY(&$irvar2); [line 197]\n  NULLIFY(&$irvar15); [line 197]\n  NULLIFY(&$irvar14); [line 197]\n  EXIT_SCOPE(result,$irvar3,$irvar9,$irvar17,$bcvar2,$irvar5,$irvar16,$irvar4,$irvar7,$irvar12,fac,$irvar6,$irvar0,$irvar13,$irvar11,$irvar10,$irvar8,$irvar1,$irvar2,$irvar15,$irvar14); [line 197]\n  APPLY_ABSTRACTION; [line 197]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_2" ;
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_4" [label="4:  method_body \n   *&result:java.lang.Object*=\"<select name='facultate' onchange='addSelectSerie(this)'>\" [line 187]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_4" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_5" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_4" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_5" [label="5:  Call StringBuilder.<init>() \n   n$0=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 188]\n  n$1=_fun_StringBuilder.<init>()(n$0:java.lang.StringBuilder*) [line 188]\n  *&$irvar0:java.lang.StringBuilder*=n$0 [line 188]\n  EXIT_SCOPE(n$0,n$1); [line 188]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_5" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_6" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_5" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_6" [label="6:  Call StringBuilder StringBuilder.append(String) \n   n$2=*&$irvar0:java.lang.StringBuilder* [line 188]\n  _=*n$2:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 188]\n  n$4=*&result:java.lang.Object* [line 188]\n  n$5=_fun_StringBuilder StringBuilder.append(String)(n$2:java.lang.StringBuilder*,n$4:java.lang.Object*) virtual [line 188]\n  *&$irvar1:java.lang.StringBuilder*=n$5 [line 188]\n  NULLIFY(&result); [line 188]\n  NULLIFY(&$irvar0); [line 188]\n  EXIT_SCOPE(_,n$2,n$4,n$5,result,$irvar0); [line 188]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_6" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_7" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_6" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_7" [label="7:  Call StringBuilder StringBuilder.append(String) \n   n$6=*&$irvar1:java.lang.StringBuilder* [line 188]\n  _=*n$6:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 188]\n  n$8=_fun_StringBuilder StringBuilder.append(String)(n$6:java.lang.StringBuilder*,\"<option disabled selected value>--</option>\":java.lang.Object*) virtual [line 188]\n  *&$irvar2:java.lang.StringBuilder*=n$8 [line 188]\n  NULLIFY(&$irvar1); [line 188]\n  EXIT_SCOPE(_,n$6,n$8,$irvar1); [line 188]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_7" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_8" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_7" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_8" [label="8:  Call String StringBuilder.toString() \n   n$9=*&$irvar2:java.lang.StringBuilder* [line 188]\n  _=*n$9:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 188]\n  n$11=_fun_String StringBuilder.toString()(n$9:java.lang.StringBuilder*) virtual [line 188]\n  *&result:java.lang.String*=n$11 [line 188]\n  NULLIFY(&$irvar2); [line 188]\n  EXIT_SCOPE(_,n$9,n$11,$irvar2); [line 188]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_8" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_9" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_8" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_9" [label="9:  Call int List.size() \n   n$12=*&facultate:java.util.List* [line 190]\n  _=*n$12:java.util.List*(root java.util.List) [line 190]\n  n$14=_fun_int List.size()(n$12:java.util.List*) interface virtual [line 190]\n  *&$irvar3:int=n$14 [line 190]\n  EXIT_SCOPE(_,n$12,n$14); [line 190]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_9" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_10" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_9" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_11" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_9" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_10" [label="10: Prune (true branch, if) \n   n$15=*&$irvar3:int [line 190]\n  PRUNE(!(n$15 <= 0), true); [line 190]\n  NULLIFY(&$irvar3); [line 190]\n  EXIT_SCOPE(n$15,$irvar3); [line 190]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_10" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_12" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_10" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_11" [label="11: Prune (false branch, if) \n   n$15=*&$irvar3:int [line 190]\n  PRUNE((n$15 <= 0), false); [line 190]\n  NULLIFY(&$irvar3); [line 190]\n  EXIT_SCOPE(n$15,$irvar3); [line 190]\n  APPLY_ABSTRACTION; [line 190]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_11" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_29" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_11" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_12" [label="12:  Call Iterator List.iterator() \n   n$16=*&facultate:java.util.List* [line 191]\n  _=*n$16:java.util.List*(root java.util.List) [line 191]\n  n$18=_fun_Iterator List.iterator()(n$16:java.util.List*) interface virtual [line 191]\n  *&$bcvar2:java.util.Iterator*=n$18 [line 191]\n  NULLIFY(&facultate); [line 191]\n  EXIT_SCOPE(_,n$16,n$18,facultate); [line 191]\n  APPLY_ABSTRACTION; [line 191]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_12" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_13" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_12" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_13" [label="13:  Call boolean Iterator.hasNext() \n   n$19=*&$bcvar2:java.util.Iterator* [line 191]\n  _=*n$19:java.util.Iterator*(root java.util.Iterator) [line 191]\n  n$21=_fun_boolean Iterator.hasNext()(n$19:java.util.Iterator*) interface virtual [line 191]\n  *&$irvar4:_Bool=n$21 [line 191]\n  EXIT_SCOPE(_,n$19,n$21); [line 191]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_13" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_16" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_13" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_14" [label="14: Prune (true branch, if) \n   n$22=*&$irvar4:_Bool [line 191]\n  PRUNE(!(n$22 == 0), true); [line 191]\n  NULLIFY(&$irvar4); [line 191]\n  EXIT_SCOPE(n$22,$irvar4); [line 191]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_14" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_17" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_14" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_15" [label="15: Prune (false branch, if) \n   n$22=*&$irvar4:_Bool [line 191]\n  PRUNE((n$22 == 0), false); [line 191]\n  NULLIFY(&$bcvar2); [line 191]\n  NULLIFY(&$irvar4); [line 191]\n  EXIT_SCOPE(n$22,$bcvar2,$irvar4); [line 191]\n  APPLY_ABSTRACTION; [line 191]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_15" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_29" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_15" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_16" [label="16: + \n  " ]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_16" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_14" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_16" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_15" ;
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_17" [label="17:  Call Object Iterator.next() \n   n$23=*&$bcvar2:java.util.Iterator* [line 191]\n  _=*n$23:java.util.Iterator*(root java.util.Iterator) [line 191]\n  n$25=_fun_Object Iterator.next()(n$23:java.util.Iterator*) interface virtual [line 191]\n  *&$irvar5:java.lang.Object*=n$25 [line 191]\n  EXIT_SCOPE(_,n$23,n$25); [line 191]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_17" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_18" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_17" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_18" [label="18:  method_body \n   n$26=*&$irvar5:java.lang.Object* [line 191]\n  n$27=_fun___cast(n$26:java.lang.Object*,sizeof(t=com.stn.pojo.Facultate;sub_t=( sub )(cast)):void) [line 191]\n  *&fac:com.stn.pojo.Facultate*=n$27 [line 191]\n  NULLIFY(&$irvar5); [line 191]\n  EXIT_SCOPE(n$26,n$27,$irvar5); [line 191]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_18" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_19" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_18" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_19" [label="19:  Call StringBuilder.<init>() \n   n$28=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 192]\n  n$29=_fun_StringBuilder.<init>()(n$28:java.lang.StringBuilder*) [line 192]\n  *&$irvar6:java.lang.StringBuilder*=n$28 [line 192]\n  EXIT_SCOPE(n$28,n$29); [line 192]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_19" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_20" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_19" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_20" [label="20:  Call StringBuilder StringBuilder.append(String) \n   n$30=*&$irvar6:java.lang.StringBuilder* [line 192]\n  _=*n$30:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 192]\n  n$32=*&result:java.lang.String* [line 192]\n  n$33=_fun_StringBuilder StringBuilder.append(String)(n$30:java.lang.StringBuilder*,n$32:java.lang.String*) virtual [line 192]\n  *&$irvar7:java.lang.StringBuilder*=n$33 [line 192]\n  NULLIFY(&result); [line 192]\n  NULLIFY(&$irvar6); [line 192]\n  EXIT_SCOPE(_,n$30,n$32,n$33,result,$irvar6); [line 192]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_20" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_21" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_20" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_21" [label="21:  Call StringBuilder StringBuilder.append(String) \n   n$34=*&$irvar7:java.lang.StringBuilder* [line 192]\n  _=*n$34:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 192]\n  n$36=_fun_StringBuilder StringBuilder.append(String)(n$34:java.lang.StringBuilder*,\"<option value='\":java.lang.Object*) virtual [line 192]\n  *&$irvar8:java.lang.StringBuilder*=n$36 [line 192]\n  NULLIFY(&$irvar7); [line 192]\n  EXIT_SCOPE(_,n$34,n$36,$irvar7); [line 192]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_21" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_22" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_21" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_22" [label="22:  Call int Facultate.getIdFacultate() \n   n$37=*&fac:com.stn.pojo.Facultate* [line 192]\n  _=*n$37:com.stn.pojo.Facultate*(root com.stn.pojo.Facultate) [line 192]\n  n$39=_fun_int Facultate.getIdFacultate()(n$37:com.stn.pojo.Facultate*) virtual [line 192]\n  *&$irvar9:int=n$39 [line 192]\n  EXIT_SCOPE(_,n$37,n$39); [line 192]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_22" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_23" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_22" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_23" [label="23:  Call StringBuilder StringBuilder.append(int) \n   n$40=*&$irvar8:java.lang.StringBuilder* [line 192]\n  _=*n$40:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 192]\n  n$42=*&$irvar9:int [line 192]\n  n$43=_fun_StringBuilder StringBuilder.append(int)(n$40:java.lang.StringBuilder*,n$42:int) virtual [line 192]\n  *&$irvar10:java.lang.StringBuilder*=n$43 [line 192]\n  NULLIFY(&$irvar9); [line 192]\n  NULLIFY(&$irvar8); [line 192]\n  EXIT_SCOPE(_,n$40,n$42,n$43,$irvar9,$irvar8); [line 192]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_23" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_24" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_23" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_24" [label="24:  Call StringBuilder StringBuilder.append(String) \n   n$44=*&$irvar10:java.lang.StringBuilder* [line 192]\n  _=*n$44:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 192]\n  n$46=_fun_StringBuilder StringBuilder.append(String)(n$44:java.lang.StringBuilder*,\"'>\":java.lang.Object*) virtual [line 192]\n  *&$irvar11:java.lang.StringBuilder*=n$46 [line 192]\n  NULLIFY(&$irvar10); [line 192]\n  EXIT_SCOPE(_,n$44,n$46,$irvar10); [line 192]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_24" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_25" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_24" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_25" [label="25:  Call String Facultate.getNume() \n   n$47=*&fac:com.stn.pojo.Facultate* [line 192]\n  _=*n$47:com.stn.pojo.Facultate*(root com.stn.pojo.Facultate) [line 192]\n  n$49=_fun_String Facultate.getNume()(n$47:com.stn.pojo.Facultate*) virtual [line 192]\n  *&$irvar12:java.lang.String*=n$49 [line 192]\n  NULLIFY(&fac); [line 192]\n  EXIT_SCOPE(_,n$47,n$49,fac); [line 192]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_25" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_26" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_25" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_26" [label="26:  Call StringBuilder StringBuilder.append(String) \n   n$50=*&$irvar11:java.lang.StringBuilder* [line 192]\n  _=*n$50:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 192]\n  n$52=*&$irvar12:java.lang.String* [line 192]\n  n$53=_fun_StringBuilder StringBuilder.append(String)(n$50:java.lang.StringBuilder*,n$52:java.lang.String*) virtual [line 192]\n  *&$irvar13:java.lang.StringBuilder*=n$53 [line 192]\n  NULLIFY(&$irvar12); [line 192]\n  NULLIFY(&$irvar11); [line 192]\n  EXIT_SCOPE(_,n$50,n$52,n$53,$irvar12,$irvar11); [line 192]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_26" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_27" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_26" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_27" [label="27:  Call StringBuilder StringBuilder.append(String) \n   n$54=*&$irvar13:java.lang.StringBuilder* [line 192]\n  _=*n$54:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 192]\n  n$56=_fun_StringBuilder StringBuilder.append(String)(n$54:java.lang.StringBuilder*,\"</option>\":java.lang.Object*) virtual [line 192]\n  *&$irvar14:java.lang.StringBuilder*=n$56 [line 192]\n  NULLIFY(&$irvar13); [line 192]\n  EXIT_SCOPE(_,n$54,n$56,$irvar13); [line 192]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_27" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_28" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_27" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_28" [label="28:  Call String StringBuilder.toString() \n   n$57=*&$irvar14:java.lang.StringBuilder* [line 192]\n  _=*n$57:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 192]\n  n$59=_fun_String StringBuilder.toString()(n$57:java.lang.StringBuilder*) virtual [line 192]\n  *&result:java.lang.String*=n$59 [line 192]\n  NULLIFY(&$irvar14); [line 192]\n  EXIT_SCOPE(_,n$57,n$59,$irvar14); [line 192]\n  APPLY_ABSTRACTION; [line 192]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_28" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_13" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_28" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_29" [label="29:  Call StringBuilder.<init>() \n   n$60=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 196]\n  n$61=_fun_StringBuilder.<init>()(n$60:java.lang.StringBuilder*) [line 196]\n  *&$irvar15:java.lang.StringBuilder*=n$60 [line 196]\n  EXIT_SCOPE(n$60,n$61); [line 196]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_29" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_30" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_29" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_30" [label="30:  Call StringBuilder StringBuilder.append(String) \n   n$62=*&$irvar15:java.lang.StringBuilder* [line 196]\n  _=*n$62:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 196]\n  n$64=*&result:java.lang.String* [line 196]\n  n$65=_fun_StringBuilder StringBuilder.append(String)(n$62:java.lang.StringBuilder*,n$64:java.lang.String*) virtual [line 196]\n  *&$irvar16:java.lang.StringBuilder*=n$65 [line 196]\n  NULLIFY(&result); [line 196]\n  NULLIFY(&$irvar15); [line 196]\n  EXIT_SCOPE(_,n$62,n$64,n$65,result,$irvar15); [line 196]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_30" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_31" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_30" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_31" [label="31:  Call StringBuilder StringBuilder.append(String) \n   n$66=*&$irvar16:java.lang.StringBuilder* [line 196]\n  _=*n$66:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 196]\n  n$68=_fun_StringBuilder StringBuilder.append(String)(n$66:java.lang.StringBuilder*,\"</select>\":java.lang.Object*) virtual [line 196]\n  *&$irvar17:java.lang.StringBuilder*=n$68 [line 196]\n  NULLIFY(&$irvar16); [line 196]\n  EXIT_SCOPE(_,n$66,n$68,$irvar16); [line 196]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_31" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_32" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_31" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_32" [label="32:  Call String StringBuilder.toString() \n   n$69=*&$irvar17:java.lang.StringBuilder* [line 196]\n  _=*n$69:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 196]\n  n$71=_fun_String StringBuilder.toString()(n$69:java.lang.StringBuilder*) virtual [line 196]\n  *&result:java.lang.String*=n$71 [line 196]\n  NULLIFY(&$irvar17); [line 196]\n  EXIT_SCOPE(_,n$69,n$71,$irvar17); [line 196]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_32" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_33" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_32" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+"com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_33" [label="33:  method_body \n   n$72=*&result:java.lang.String* [line 197]\n  *&return:java.lang.String*=n$72 [line 197]\n  NULLIFY(&result); [line 197]\n  EXIT_SCOPE(n$72,result); [line 197]\n  APPLY_ABSTRACTION; [line 197]\n " shape="box"]
+	
+
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_33" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_2" ;
+	 "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_33" -> "com.stn.helpers.FacultateHelper.generateOptions2(java.util.List):java.lang.String.0e2d63a4d7849620a9cb0b4adb903732_3" [color="red" ];
+}

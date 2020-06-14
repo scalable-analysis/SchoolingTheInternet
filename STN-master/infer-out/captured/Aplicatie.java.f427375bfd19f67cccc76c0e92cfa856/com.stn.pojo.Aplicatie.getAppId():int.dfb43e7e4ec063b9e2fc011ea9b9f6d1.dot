@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Aplicatie.getAppId():int.dfb43e7e4ec063b9e2fc011ea9b9f6d1_1" [label="1: Start int Aplicatie.getAppId()\nFormals:  this:com.stn.pojo.Aplicatie*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Aplicatie.getAppId():int.dfb43e7e4ec063b9e2fc011ea9b9f6d1_1" -> "com.stn.pojo.Aplicatie.getAppId():int.dfb43e7e4ec063b9e2fc011ea9b9f6d1_4" ;
+"com.stn.pojo.Aplicatie.getAppId():int.dfb43e7e4ec063b9e2fc011ea9b9f6d1_2" [label="2: Exit int Aplicatie.getAppId() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Aplicatie.getAppId():int.dfb43e7e4ec063b9e2fc011ea9b9f6d1_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 72]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.getAppId():int.dfb43e7e4ec063b9e2fc011ea9b9f6d1_3" -> "com.stn.pojo.Aplicatie.getAppId():int.dfb43e7e4ec063b9e2fc011ea9b9f6d1_2" ;
+"com.stn.pojo.Aplicatie.getAppId():int.dfb43e7e4ec063b9e2fc011ea9b9f6d1_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Aplicatie* [line 72]\n  n$1=*n$0.appId:int(root com.stn.pojo.Aplicatie) [line 72]\n  *&return:int=n$1 [line 72]\n  NULLIFY(&this); [line 72]\n  EXIT_SCOPE(n$0,n$1,this); [line 72]\n  APPLY_ABSTRACTION; [line 72]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Aplicatie.getAppId():int.dfb43e7e4ec063b9e2fc011ea9b9f6d1_4" -> "com.stn.pojo.Aplicatie.getAppId():int.dfb43e7e4ec063b9e2fc011ea9b9f6d1_2" ;
+	 "com.stn.pojo.Aplicatie.getAppId():int.dfb43e7e4ec063b9e2fc011ea9b9f6d1_4" -> "com.stn.pojo.Aplicatie.getAppId():int.dfb43e7e4ec063b9e2fc011ea9b9f6d1_3" [color="red" ];
+}

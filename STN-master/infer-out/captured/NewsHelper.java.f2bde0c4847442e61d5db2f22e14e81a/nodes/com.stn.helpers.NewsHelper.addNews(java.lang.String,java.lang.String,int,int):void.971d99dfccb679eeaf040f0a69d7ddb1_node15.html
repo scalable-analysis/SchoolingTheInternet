@@ -1,0 +1,275 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.NewsHelper.addNews(java.lang.String,java.lang.String,int,int):void.971d99dfccb679eeaf040f0a69d7ddb1_node15</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../NewsHelper.java.f2bde0c4847442e61d5db2f22e14e81a.html#LINE23">15</a></h1></center>PROC: <a href="./../com.stn.helpers.NewsHelper.addNews%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.971d99dfccb679eeaf040f0a69d7ddb1.html">void NewsHelper.addNews(String,String,int,int)</a> LINE: <a href="./../../NewsHelper.java.f2bde0c4847442e61d5db2f22e14e81a.html#LINE23">23</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.helpers.NewsHelper.addNews%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.971d99dfccb679eeaf040f0a69d7ddb1_node14.html"><span class='visited with_tooltip'>N_14<span class='tooltip'>node14 preds:13 succs:15 exn:34 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.helpers.NewsHelper.addNews%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.971d99dfccb679eeaf040f0a69d7ddb1_node16.html"><span class='visited with_tooltip'>N_16<span class='tooltip'>node16 preds:15 succs:17 exn:34 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.helpers.NewsHelper.addNews%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.971d99dfccb679eeaf040f0a69d7ddb1_node34.html"><span class='visited with_tooltip'>N_34<span class='tooltip'>node34 preds: succs:33 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$35=*&amp;this:com.stn.helpers.NewsHelper* [line 23];
+n$36=*n$35.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.NewsHelper) [line 23];
+_=*n$36:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 23];
+n$38=*&amp;idUser:int [line 23];
+n$39=_fun_void PreparedStatement.setInt(int,int)(n$36:java.sql.PreparedStatement*,3:int,n$38:int) interface virtual [line 23];
+</LISTING>
+<hr width="100%">
+<a name="session42" href="./../nodes/com.stn.helpers.NewsHelper.addNews%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.971d99dfccb679eeaf040f0a69d7ddb1_node15.html#session42">node15#session42</a>(<a href="./../../NewsHelper.java.f2bde0c4847442e61d5db2f22e14e81a.html#LINE23">23</a>) [compute pre] liveness 15
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session43" href="./../nodes/com.stn.helpers.NewsHelper.addNews%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.971d99dfccb679eeaf040f0a69d7ddb1_node15.html#session43">node15#session43</a>(<a href="./../../NewsHelper.java.f2bde0c4847442e61d5db2f22e14e81a.html#LINE23">23</a>) [exec] liveness 15
+<LISTING class='color_black'>PRE STATE:
+{ idSerie, this }
+
+INSTR=  n$39=_fun_void PreparedStatement.setInt(int,int)(n$36:java.sql.PreparedStatement*,3:int,n$38:int) interface virtual [line 23]; 
+
+STATE:
+{ n$36, n$38, idSerie, this }
+
+INSTR=  n$38=*&amp;idUser:int [line 23]; 
+
+STATE:
+{ n$36, idSerie, idUser, this }
+
+INSTR=  _=*n$36:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 23]; 
+
+STATE UNCHANGED
+
+INSTR=  n$36=*n$35.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.NewsHelper) [line 23]; 
+
+STATE:
+{ n$35, idSerie, idUser, this }
+
+INSTR=  n$35=*&amp;this:com.stn.helpers.NewsHelper* [line 23]; 
+
+STATE:
+{ idSerie, idUser, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session120" href="./../nodes/com.stn.helpers.NewsHelper.addNews%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.971d99dfccb679eeaf040f0a69d7ddb1_node15.html#session120">node15#session120</a>(<a href="./../../NewsHelper.java.f2bde0c4847442e61d5db2f22e14e81a.html#LINE23">23</a>) [compute pre] liveness 15
+<LISTING class='color_black'>JOIN
+
+LEFT:   { idSerie, this }
+RIGHT:  { CatchVar138, return, this }
+RESULT: { idSerie, CatchVar138, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session121" href="./../nodes/com.stn.helpers.NewsHelper.addNews%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.971d99dfccb679eeaf040f0a69d7ddb1_node15.html#session121">node15#session121</a>(<a href="./../../NewsHelper.java.f2bde0c4847442e61d5db2f22e14e81a.html#LINE23">23</a>) [exec] liveness 15
+<LISTING class='color_black'>PRE STATE:
+{ idSerie, CatchVar138, return, this }
+
+INSTR=  n$39=_fun_void PreparedStatement.setInt(int,int)(n$36:java.sql.PreparedStatement*,3:int,n$38:int) interface virtual [line 23]; 
+
+STATE:
+{ n$36, n$38, idSerie, CatchVar138, return, this }
+
+INSTR=  n$38=*&amp;idUser:int [line 23]; 
+
+STATE:
+{ n$36, idSerie, CatchVar138, return, idUser, this }
+
+INSTR=  _=*n$36:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 23]; 
+
+STATE UNCHANGED
+
+INSTR=  n$36=*n$35.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.NewsHelper) [line 23]; 
+
+STATE:
+{ n$35, idSerie, CatchVar138, return, idUser, this }
+
+INSTR=  n$35=*&amp;this:com.stn.helpers.NewsHelper* [line 23]; 
+
+STATE:
+{ idSerie, CatchVar138, return, idUser, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session126" href="./../nodes/com.stn.helpers.NewsHelper.addNews%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.971d99dfccb679eeaf040f0a69d7ddb1_node15.html#session126">node15#session126</a>(<a href="./../../NewsHelper.java.f2bde0c4847442e61d5db2f22e14e81a.html#LINE23">23</a>) [compute pre] liveness 15
+<LISTING class='color_black'>JOIN
+
+LEFT:   { idSerie, CatchVar138, return, this }
+RIGHT:  { CatchVar138, return, this }
+RESULT: { idSerie, CatchVar138, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session127" href="./../nodes/com.stn.helpers.NewsHelper.addNews%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.971d99dfccb679eeaf040f0a69d7ddb1_node15.html#session127">node15#session127</a>(<a href="./../../NewsHelper.java.f2bde0c4847442e61d5db2f22e14e81a.html#LINE23">23</a>) [exec] liveness 15
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session158" href="./../nodes/com.stn.helpers.NewsHelper.addNews%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.971d99dfccb679eeaf040f0a69d7ddb1_node15.html#session158">node15#session158</a>(<a href="./../../NewsHelper.java.f2bde0c4847442e61d5db2f22e14e81a.html#LINE23">23</a>) [compute pre] liveness 15
+<LISTING class='color_black'>JOIN
+
+LEFT:   { idSerie, CatchVar138, return, this }
+RIGHT:  { CatchVar138, return, this }
+RESULT: { idSerie, CatchVar138, return, this }
+
+</LISTING>
+<hr width="100%">
+<a name="session159" href="./../nodes/com.stn.helpers.NewsHelper.addNews%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.971d99dfccb679eeaf040f0a69d7ddb1_node15.html#session159">node15#session159</a>(<a href="./../../NewsHelper.java.f2bde0c4847442e61d5db2f22e14e81a.html#LINE23">23</a>) [exec] liveness 15
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session193" href="./../nodes/com.stn.helpers.NewsHelper.addNews%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.971d99dfccb679eeaf040f0a69d7ddb1_node15.html#session193">node15#session193</a>(<a href="./../../NewsHelper.java.f2bde0c4847442e61d5db2f22e14e81a.html#LINE23">23</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session194" href="./../nodes/com.stn.helpers.NewsHelper.addNews%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.971d99dfccb679eeaf040f0a69d7ddb1_node15.html#session194">node15#session194</a>(<a href="./../../NewsHelper.java.f2bde0c4847442e61d5db2f22e14e81a.html#LINE23">23</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ },{ _, n$30, n$31, n$33, n$34, body })
+
+INSTR=  n$35=*&amp;this:com.stn.helpers.NewsHelper* [line 23]; 
+
+STATE:
+({ n$35 },{ _, n$30, n$31, n$33, n$34, body })
+
+INSTR=  n$36=*n$35.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.NewsHelper) [line 23]; 
+
+STATE:
+({ n$35, n$36 },{ _, n$30, n$31, n$33, n$34, body })
+
+INSTR=  _=*n$36:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 23]; 
+
+STATE:
+({ _, n$35, n$36 },{ _, n$30, n$31, n$33, n$34, body })
+
+INSTR=  n$38=*&amp;idUser:int [line 23]; 
+
+STATE:
+({ _, n$35, n$36, n$38 },{ _, n$30, n$31, n$33, n$34, body })
+
+INSTR=  n$39=_fun_void PreparedStatement.setInt(int,int)(n$36:java.sql.PreparedStatement*,3:int,n$38:int) interface virtual [line 23]; 
+
+STATE:
+({ },{ _, n$35, n$36, n$38, n$39, idUser })
+
+</LISTING>
+<hr width="100%">
+<a name="session24" href="./../nodes/com.stn.helpers.NewsHelper.addNews%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.971d99dfccb679eeaf040f0a69d7ddb1_node15.html#session24">node15#session24</a>(<a href="./../../NewsHelper.java.f2bde0c4847442e61d5db2f22e14e81a.html#LINE23">23</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session25" href="./../nodes/com.stn.helpers.NewsHelper.addNews%28java.lang.String%2Cjava.lang.String%2Cint%2Cint%29%3Avoid.971d99dfccb679eeaf040f0a69d7ddb1_node15.html#session25">node15#session25</a>(<a href="./../../NewsHelper.java.f2bde0c4847442e61d5db2f22e14e81a.html#LINE23">23</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$2*,
+                                              @val$1*,
+                                              @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+
+
+
+
+TAINTED_CALL1: (callee="void PreparedStatement.setInt(int,int)", caller="void NewsHelper.addNews(String,String,int,int)")
+INSTR=  n$39 := void PreparedStatement.setInt(int,int)({ this-&gt;preparedStatement,
+                                                         3,
+                                                         idUser }) [line 23]; 
+
+STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$2*,
+                                              @val$1*,
+                                              @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+INSTR=  NULLIFY(&amp;idUser); [line 23]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(n$39,idUser); [line 23]; 
+
+STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$2*,
+                                              @val$1*,
+                                              @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { } } }
+
+</LISTING>

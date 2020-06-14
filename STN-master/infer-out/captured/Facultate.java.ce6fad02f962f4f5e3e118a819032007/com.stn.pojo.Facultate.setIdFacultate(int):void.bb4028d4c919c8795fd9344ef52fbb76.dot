@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Facultate.setIdFacultate(int):void.bb4028d4c919c8795fd9344ef52fbb76_1" [label="1: Start void Facultate.setIdFacultate(int)\nFormals:  this:com.stn.pojo.Facultate* idFacultate:int\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Facultate.setIdFacultate(int):void.bb4028d4c919c8795fd9344ef52fbb76_1" -> "com.stn.pojo.Facultate.setIdFacultate(int):void.bb4028d4c919c8795fd9344ef52fbb76_4" ;
+"com.stn.pojo.Facultate.setIdFacultate(int):void.bb4028d4c919c8795fd9344ef52fbb76_2" [label="2: Exit void Facultate.setIdFacultate(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Facultate.setIdFacultate(int):void.bb4028d4c919c8795fd9344ef52fbb76_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 15]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Facultate.setIdFacultate(int):void.bb4028d4c919c8795fd9344ef52fbb76_3" -> "com.stn.pojo.Facultate.setIdFacultate(int):void.bb4028d4c919c8795fd9344ef52fbb76_2" ;
+"com.stn.pojo.Facultate.setIdFacultate(int):void.bb4028d4c919c8795fd9344ef52fbb76_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Facultate* [line 14]\n  n$1=*&idFacultate:int [line 14]\n  *n$0.idFacultate:com.stn.pojo.Facultate(root com.stn.pojo.Facultate)=n$1 [line 14]\n  NULLIFY(&idFacultate); [line 14]\n  NULLIFY(&this); [line 14]\n  EXIT_SCOPE(n$0,n$1,idFacultate,this); [line 14]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Facultate.setIdFacultate(int):void.bb4028d4c919c8795fd9344ef52fbb76_4" -> "com.stn.pojo.Facultate.setIdFacultate(int):void.bb4028d4c919c8795fd9344ef52fbb76_5" ;
+	 "com.stn.pojo.Facultate.setIdFacultate(int):void.bb4028d4c919c8795fd9344ef52fbb76_4" -> "com.stn.pojo.Facultate.setIdFacultate(int):void.bb4028d4c919c8795fd9344ef52fbb76_3" [color="red" ];
+"com.stn.pojo.Facultate.setIdFacultate(int):void.bb4028d4c919c8795fd9344ef52fbb76_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 15]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Facultate.setIdFacultate(int):void.bb4028d4c919c8795fd9344ef52fbb76_5" -> "com.stn.pojo.Facultate.setIdFacultate(int):void.bb4028d4c919c8795fd9344ef52fbb76_2" ;
+	 "com.stn.pojo.Facultate.setIdFacultate(int):void.bb4028d4c919c8795fd9344ef52fbb76_5" -> "com.stn.pojo.Facultate.setIdFacultate(int):void.bb4028d4c919c8795fd9344ef52fbb76_3" [color="red" ];
+}

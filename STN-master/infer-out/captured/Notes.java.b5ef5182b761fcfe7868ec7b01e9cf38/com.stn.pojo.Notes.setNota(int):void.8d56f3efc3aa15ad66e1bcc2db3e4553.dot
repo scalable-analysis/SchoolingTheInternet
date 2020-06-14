@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Notes.setNota(int):void.8d56f3efc3aa15ad66e1bcc2db3e4553_1" [label="1: Start void Notes.setNota(int)\nFormals:  this:com.stn.pojo.Notes* nota:int\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Notes.setNota(int):void.8d56f3efc3aa15ad66e1bcc2db3e4553_1" -> "com.stn.pojo.Notes.setNota(int):void.8d56f3efc3aa15ad66e1bcc2db3e4553_4" ;
+"com.stn.pojo.Notes.setNota(int):void.8d56f3efc3aa15ad66e1bcc2db3e4553_2" [label="2: Exit void Notes.setNota(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Notes.setNota(int):void.8d56f3efc3aa15ad66e1bcc2db3e4553_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 68]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Notes.setNota(int):void.8d56f3efc3aa15ad66e1bcc2db3e4553_3" -> "com.stn.pojo.Notes.setNota(int):void.8d56f3efc3aa15ad66e1bcc2db3e4553_2" ;
+"com.stn.pojo.Notes.setNota(int):void.8d56f3efc3aa15ad66e1bcc2db3e4553_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Notes* [line 67]\n  n$1=*&nota:int [line 67]\n  *n$0.nota:com.stn.pojo.Notes(root com.stn.pojo.Notes)=n$1 [line 67]\n  NULLIFY(&nota); [line 67]\n  NULLIFY(&this); [line 67]\n  EXIT_SCOPE(n$0,n$1,nota,this); [line 67]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Notes.setNota(int):void.8d56f3efc3aa15ad66e1bcc2db3e4553_4" -> "com.stn.pojo.Notes.setNota(int):void.8d56f3efc3aa15ad66e1bcc2db3e4553_5" ;
+	 "com.stn.pojo.Notes.setNota(int):void.8d56f3efc3aa15ad66e1bcc2db3e4553_4" -> "com.stn.pojo.Notes.setNota(int):void.8d56f3efc3aa15ad66e1bcc2db3e4553_3" [color="red" ];
+"com.stn.pojo.Notes.setNota(int):void.8d56f3efc3aa15ad66e1bcc2db3e4553_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 68]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Notes.setNota(int):void.8d56f3efc3aa15ad66e1bcc2db3e4553_5" -> "com.stn.pojo.Notes.setNota(int):void.8d56f3efc3aa15ad66e1bcc2db3e4553_2" ;
+	 "com.stn.pojo.Notes.setNota(int):void.8d56f3efc3aa15ad66e1bcc2db3e4553_5" -> "com.stn.pojo.Notes.setNota(int):void.8d56f3efc3aa15ad66e1bcc2db3e4553_3" [color="red" ];
+}

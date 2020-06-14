@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.servlets.ApplicationProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.St.58a3178abd1b8f571cff71257f7d4a07</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../ApplicationProcess.java.a161ccf080fd4ec7be6d91cb34709839.html#LINE19">void ApplicationProcess.setTempFields(HttpServletRequest,String,String,String,String,String,String,String)</a></h1></center>
+<a href="./nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:12 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;session); [line 28];
+EXIT_SCOPE(session); [line 28];
+APPLY_ABSTRACTION; [line 28];
+</span></span></a> <a href="./nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;request:javax.servlet.http.HttpServletRequest* [line 20];
+_=*n$0:javax.servlet.http.HttpServletRequest*(root javax.servlet.http.HttpServletRequest) [line 20];
+n$2=_fun_HttpSession HttpServletRequest.getSession()(n$0:javax.servlet.http.HttpServletRequest*) interface virtual [line 20];
+*&amp;session:javax.servlet.http.HttpSession*=n$2 [line 20];
+NULLIFY(&amp;request); [line 20];
+EXIT_SCOPE(_,n$0,n$2,request); [line 20];
+</span></span></a> <a href="./nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$3=*&amp;session:javax.servlet.http.HttpSession* [line 21];
+_=*n$3:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 21];
+n$5=*&amp;firstName:java.lang.String* [line 21];
+n$6=_fun_void HttpSession.setAttribute(String,Object)(n$3:javax.servlet.http.HttpSession*,"firstname":java.lang.Object*,n$5:java.lang.String*) interface virtual [line 21];
+NULLIFY(&amp;firstName); [line 21];
+EXIT_SCOPE(_,n$3,n$5,n$6,firstName); [line 21];
+</span></span></a> <a href="./nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$7=*&amp;session:javax.servlet.http.HttpSession* [line 22];
+_=*n$7:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 22];
+n$9=*&amp;lastName:java.lang.String* [line 22];
+n$10=_fun_void HttpSession.setAttribute(String,Object)(n$7:javax.servlet.http.HttpSession*,"lastname":java.lang.Object*,n$9:java.lang.String*) interface virtual [line 22];
+NULLIFY(&amp;lastName); [line 22];
+EXIT_SCOPE(_,n$7,n$9,n$10,lastName); [line 22];
+</span></span></a> <a href="./nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$11=*&amp;session:javax.servlet.http.HttpSession* [line 23];
+_=*n$11:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 23];
+n$13=*&amp;email:java.lang.String* [line 23];
+n$14=_fun_void HttpSession.setAttribute(String,Object)(n$11:javax.servlet.http.HttpSession*,"email":java.lang.Object*,n$13:java.lang.String*) interface virtual [line 23];
+NULLIFY(&amp;email); [line 23];
+EXIT_SCOPE(_,n$11,n$13,n$14,email); [line 23];
+</span></span></a> <a href="./nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$15=*&amp;session:javax.servlet.http.HttpSession* [line 24];
+_=*n$15:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 24];
+n$17=*&amp;facultate:java.lang.String* [line 24];
+n$18=_fun_void HttpSession.setAttribute(String,Object)(n$15:javax.servlet.http.HttpSession*,"faculty":java.lang.Object*,n$17:java.lang.String*) interface virtual [line 24];
+NULLIFY(&amp;facultate); [line 24];
+EXIT_SCOPE(_,n$15,n$17,n$18,facultate); [line 24];
+</span></span></a> <a href="./nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$19=*&amp;session:javax.servlet.http.HttpSession* [line 25];
+_=*n$19:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 25];
+n$21=*&amp;serie:java.lang.String* [line 25];
+n$22=_fun_void HttpSession.setAttribute(String,Object)(n$19:javax.servlet.http.HttpSession*,"serie":java.lang.Object*,n$21:java.lang.String*) interface virtual [line 25];
+NULLIFY(&amp;serie); [line 25];
+EXIT_SCOPE(_,n$19,n$21,n$22,serie); [line 25];
+</span></span></a> <a href="./nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$23=*&amp;session:javax.servlet.http.HttpSession* [line 26];
+_=*n$23:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 26];
+n$25=*&amp;grupa:java.lang.String* [line 26];
+n$26=_fun_void HttpSession.setAttribute(String,Object)(n$23:javax.servlet.http.HttpSession*,"grupa":java.lang.Object*,n$25:java.lang.String*) interface virtual [line 26];
+NULLIFY(&amp;grupa); [line 26];
+EXIT_SCOPE(_,n$23,n$25,n$26,grupa); [line 26];
+</span></span></a> <a href="./nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$27=*&amp;session:javax.servlet.http.HttpSession* [line 27];
+_=*n$27:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 27];
+n$29=*&amp;document:java.lang.String* [line 27];
+n$30=_fun_void HttpSession.setAttribute(String,Object)(n$27:javax.servlet.http.HttpSession*,"document":java.lang.Object*,n$29:java.lang.String*) interface virtual [line 27];
+NULLIFY(&amp;document); [line 27];
+NULLIFY(&amp;session); [line 27];
+EXIT_SCOPE(_,n$27,n$29,n$30,document,session); [line 27];
+</span></span></a> <a href="./nodes/com.stn.servlets.ApplicationProcess.setTempFields%28javax.servlet.http.HttpServletRequest%2Cjava.lang.St.58a3178abd1b8f571cff71257f7d4a07_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 28];
+</span></span></a><br />@
+
+<span class='color_black'>void void ApplicationProcess.setTempFields(HttpServletRequest,String,String,String,String,String,String,String)(com.stn.servlets.ApplicationProcess* this, javax.servlet.http.HttpServletRequest* request, java.lang.String* firstName, java.lang.String* lastName, java.lang.String* email, java.lang.String* facultate, java.lang.String* serie, java.lang.String* grupa, java.lang.String* document)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { @val$2 -> (Footprint({ @val$8*,
+                                   @val$7*,
+                                   @val$6*,
+                                   @val$5*,
+                                   @val$4*,
+                                   @val$3*,
+                                   @val$2* }) ~> { Other(void HttpSession.setAttribute(String,Object) at line 21),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 22),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 23),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 24),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 25),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 26),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 27) }, *),
+            @val$3 -> (Footprint({ @val$8*,
+                                   @val$7*,
+                                   @val$6*,
+                                   @val$5*,
+                                   @val$4*,
+                                   @val$3*,
+                                   @val$2* }) ~> { Other(void HttpSession.setAttribute(String,Object) at line 21),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 22),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 23),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 24),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 25),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 26),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 27) }, *),
+            @val$4 -> (Footprint({ @val$8*,
+                                   @val$7*,
+                                   @val$6*,
+                                   @val$5*,
+                                   @val$4*,
+                                   @val$3*,
+                                   @val$2* }) ~> { Other(void HttpSession.setAttribute(String,Object) at line 21),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 22),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 23),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 24),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 25),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 26),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 27) }, *),
+            @val$5 -> (Footprint({ @val$8*,
+                                   @val$7*,
+                                   @val$6*,
+                                   @val$5*,
+                                   @val$4*,
+                                   @val$3*,
+                                   @val$2* }) ~> { Other(void HttpSession.setAttribute(String,Object) at line 21),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 22),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 23),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 24),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 25),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 26),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 27) }, *),
+            @val$6 -> (Footprint({ @val$8*,
+                                   @val$7*,
+                                   @val$6*,
+                                   @val$5*,
+                                   @val$4*,
+                                   @val$3*,
+                                   @val$2* }) ~> { Other(void HttpSession.setAttribute(String,Object) at line 21),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 22),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 23),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 24),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 25),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 26),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 27) }, *),
+            @val$7 -> (Footprint({ @val$8*,
+                                   @val$7*,
+                                   @val$6*,
+                                   @val$5*,
+                                   @val$4*,
+                                   @val$3*,
+                                   @val$2* }) ~> { Other(void HttpSession.setAttribute(String,Object) at line 21),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 22),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 23),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 24),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 25),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 26),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 27) }, *),
+            @val$8 -> (Footprint({ @val$8*,
+                                   @val$7*,
+                                   @val$6*,
+                                   @val$5*,
+                                   @val$4*,
+                                   @val$3*,
+                                   @val$2* }) ~> { Other(void HttpSession.setAttribute(String,Object) at line 21),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 22),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 23),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 24),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 25),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 26),
+                                                   Other(void HttpSession.setAttribute(String,Object) at line 27) }, *) }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= void ApplicationProcess.setTempFields(HttpServletRequest,String,String,String,String,String,String,String)
+; translation_unit= src/main/java/com/stn/servlets/ApplicationProcess.java
+; access= Private
+; formals= [(this,com.stn.servlets.ApplicationProcess*);  (request,
+            javax.servlet.http.HttpServletRequest*);  (firstName,
+            java.lang.String*);  (lastName,java.lang.String*);  (email,
+            java.lang.String*);  (facultate,java.lang.String*);  (serie,
+            java.lang.String*);  (grupa,java.lang.String*);  (document,
+            java.lang.String*)]
+; is_defined= true
+; loc= src/main/java/com/stn/servlets/ApplicationProcess.java:19
+; locals= [{ name= session; typ= javax.servlet.http.HttpSession*; modify_in_block= false }]
+; ret_type= void 
+; proc_id= com.stn.servlets.ApplicationProcess.setTempFields(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String):void }</pre>
+</body>
+</html>

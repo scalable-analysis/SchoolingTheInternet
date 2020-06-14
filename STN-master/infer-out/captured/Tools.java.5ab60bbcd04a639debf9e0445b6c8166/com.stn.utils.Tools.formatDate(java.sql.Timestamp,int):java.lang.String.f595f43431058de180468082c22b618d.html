@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.utils.Tools.formatDate(java.sql.Timestamp,int):java.lang.String.f595f43431058de180468082c22b618d</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../Tools.java.5ab60bbcd04a639debf9e0445b6c8166.html#LINE26">String Tools.formatDate(Timestamp,int)</a></h1></center>
+<a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:21 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$irvar3); [line 36];
+NULLIFY(&amp;$irvar0); [line 36];
+NULLIFY(&amp;s); [line 36];
+NULLIFY(&amp;$irvar1); [line 36];
+NULLIFY(&amp;$irvar2); [line 36];
+EXIT_SCOPE($irvar3,$irvar0,s,$irvar1,$irvar2); [line 36];
+APPLY_ABSTRACTION; [line 36];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 6 exn:3 Instructions
+*&amp;s:java.lang.Object*="" [line 27];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node5.html"><span class='visited with_tooltip'>C_5<span class='tooltip'>node5 preds:4 succs:7 exn:3 Conditional method_body
+n$0=*&amp;type:int [line 28];
+PRUNE(!(n$0 != 1), true); [line 28];
+NULLIFY(&amp;type); [line 28];
+NULLIFY(&amp;s); [line 28];
+EXIT_SCOPE(n$0,type,s); [line 28];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node6.html"><span class='visited with_tooltip'>C_6<span class='tooltip'>node6 preds:4 succs:9 10 exn:3 Conditional method_body
+n$0=*&amp;type:int [line 28];
+PRUNE((n$0 != 1), false); [line 28];
+EXIT_SCOPE(n$0); [line 28];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:5 succs:8 exn:3 Instructions
+n$1=_fun___new(sizeof(t=java.text.SimpleDateFormat):java.text.SimpleDateFormat*) [line 29];
+n$2=_fun_SimpleDateFormat.&lt;init&gt;(String)(n$1:java.text.SimpleDateFormat*,"HH:mm":java.lang.Object*) [line 29];
+*&amp;$irvar0:java.text.SimpleDateFormat*=n$1 [line 29];
+EXIT_SCOPE(n$1,n$2); [line 29];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:21 exn:3 Instructions
+n$3=*&amp;$irvar0:java.text.SimpleDateFormat* [line 29];
+_=*n$3:java.text.SimpleDateFormat*(root java.text.SimpleDateFormat) [line 29];
+n$5=*&amp;date:java.sql.Timestamp* [line 29];
+n$6=_fun_String DateFormat.format(Date)(n$3:java.text.SimpleDateFormat*,n$5:java.sql.Timestamp*) virtual [line 29];
+*&amp;s:java.lang.String*=n$6 [line 29];
+NULLIFY(&amp;$irvar0); [line 29];
+NULLIFY(&amp;date); [line 29];
+EXIT_SCOPE(_,n$3,n$5,n$6,$irvar0,date); [line 29];
+APPLY_ABSTRACTION; [line 29];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node9.html"><span class='visited with_tooltip'>C_9<span class='tooltip'>node9 preds:6 succs:11 exn:3 Conditional method_body
+n$7=*&amp;type:int [line 30];
+PRUNE(!(n$7 != 2), true); [line 30];
+NULLIFY(&amp;type); [line 30];
+NULLIFY(&amp;s); [line 30];
+EXIT_SCOPE(n$7,type,s); [line 30];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node10.html"><span class='visited with_tooltip'>C_10<span class='tooltip'>node10 preds:6 succs:13 14 exn:3 Conditional method_body
+n$7=*&amp;type:int [line 30];
+PRUNE((n$7 != 2), false); [line 30];
+EXIT_SCOPE(n$7); [line 30];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:9 succs:12 exn:3 Instructions
+n$8=_fun___new(sizeof(t=java.text.SimpleDateFormat):java.text.SimpleDateFormat*) [line 31];
+n$9=_fun_SimpleDateFormat.&lt;init&gt;(String)(n$8:java.text.SimpleDateFormat*,"dd-MM-yyyy HH:mm:ss":java.lang.Object*) [line 31];
+*&amp;$irvar1:java.text.SimpleDateFormat*=n$8 [line 31];
+EXIT_SCOPE(n$8,n$9); [line 31];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:21 exn:3 Instructions
+n$10=*&amp;$irvar1:java.text.SimpleDateFormat* [line 31];
+_=*n$10:java.text.SimpleDateFormat*(root java.text.SimpleDateFormat) [line 31];
+n$12=*&amp;date:java.sql.Timestamp* [line 31];
+n$13=_fun_String DateFormat.format(Date)(n$10:java.text.SimpleDateFormat*,n$12:java.sql.Timestamp*) virtual [line 31];
+*&amp;s:java.lang.String*=n$13 [line 31];
+NULLIFY(&amp;$irvar1); [line 31];
+NULLIFY(&amp;date); [line 31];
+EXIT_SCOPE(_,n$10,n$12,n$13,$irvar1,date); [line 31];
+APPLY_ABSTRACTION; [line 31];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node13.html"><span class='visited with_tooltip'>C_13<span class='tooltip'>node13 preds:10 succs:15 exn:3 Conditional method_body
+n$14=*&amp;type:int [line 32];
+PRUNE(!(n$14 != 3), true); [line 32];
+NULLIFY(&amp;type); [line 32];
+NULLIFY(&amp;s); [line 32];
+EXIT_SCOPE(n$14,type,s); [line 32];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node14.html"><span class='visited with_tooltip'>C_14<span class='tooltip'>node14 preds:10 succs:17 18 exn:3 Conditional method_body
+n$14=*&amp;type:int [line 32];
+PRUNE((n$14 != 3), false); [line 32];
+EXIT_SCOPE(n$14); [line 32];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:13 succs:16 exn:3 Instructions
+n$15=_fun___new(sizeof(t=java.text.SimpleDateFormat):java.text.SimpleDateFormat*) [line 33];
+n$16=_fun_SimpleDateFormat.&lt;init&gt;(String)(n$15:java.text.SimpleDateFormat*,"dd-MM-yyyy HH:mm":java.lang.Object*) [line 33];
+*&amp;$irvar2:java.text.SimpleDateFormat*=n$15 [line 33];
+EXIT_SCOPE(n$15,n$16); [line 33];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:21 exn:3 Instructions
+n$17=*&amp;$irvar2:java.text.SimpleDateFormat* [line 33];
+_=*n$17:java.text.SimpleDateFormat*(root java.text.SimpleDateFormat) [line 33];
+n$19=*&amp;date:java.sql.Timestamp* [line 33];
+n$20=_fun_String DateFormat.format(Date)(n$17:java.text.SimpleDateFormat*,n$19:java.sql.Timestamp*) virtual [line 33];
+*&amp;s:java.lang.String*=n$20 [line 33];
+NULLIFY(&amp;$irvar2); [line 33];
+NULLIFY(&amp;date); [line 33];
+EXIT_SCOPE(_,n$17,n$19,n$20,$irvar2,date); [line 33];
+APPLY_ABSTRACTION; [line 33];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node17.html"><span class='visited with_tooltip'>C_17<span class='tooltip'>node17 preds:14 succs:19 exn:3 Conditional method_body
+n$21=*&amp;type:int [line 34];
+PRUNE(!(n$21 != 4), true); [line 34];
+NULLIFY(&amp;type); [line 34];
+NULLIFY(&amp;s); [line 34];
+EXIT_SCOPE(n$21,type,s); [line 34];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:14 succs:21 exn:3 Conditional method_body
+n$21=*&amp;type:int [line 34];
+PRUNE((n$21 != 4), false); [line 34];
+NULLIFY(&amp;type); [line 34];
+EXIT_SCOPE(n$21,type); [line 34];
+APPLY_ABSTRACTION; [line 34];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:17 succs:20 exn:3 Instructions
+n$22=_fun___new(sizeof(t=java.text.SimpleDateFormat):java.text.SimpleDateFormat*) [line 35];
+n$23=_fun_SimpleDateFormat.&lt;init&gt;(String)(n$22:java.text.SimpleDateFormat*,"dd-MM-yyyy":java.lang.Object*) [line 35];
+*&amp;$irvar3:java.text.SimpleDateFormat*=n$22 [line 35];
+EXIT_SCOPE(n$22,n$23); [line 35];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$24=*&amp;$irvar3:java.text.SimpleDateFormat* [line 35];
+_=*n$24:java.text.SimpleDateFormat*(root java.text.SimpleDateFormat) [line 35];
+n$26=*&amp;date:java.sql.Timestamp* [line 35];
+n$27=_fun_String DateFormat.format(Date)(n$24:java.text.SimpleDateFormat*,n$26:java.sql.Timestamp*) virtual [line 35];
+*&amp;s:java.lang.String*=n$27 [line 35];
+NULLIFY(&amp;$irvar3); [line 35];
+NULLIFY(&amp;date); [line 35];
+EXIT_SCOPE(_,n$24,n$26,n$27,$irvar3,date); [line 35];
+APPLY_ABSTRACTION; [line 35];
+</span></span></a> <a href="./nodes/com.stn.utils.Tools.formatDate%28java.sql.Timestamp%2Cint%29%3Ajava.lang.String.f595f43431058de180468082c22b618d_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 18 16 12 8 succs:2 exn:3 Instructions
+n$28=*&amp;s:java.lang.String* [line 36];
+*&amp;return:java.lang.String*=n$28 [line 36];
+NULLIFY(&amp;s); [line 36];
+EXIT_SCOPE(n$28,s); [line 36];
+APPLY_ABSTRACTION; [line 36];
+</span></span></a><br />@
+
+<span class='color_black'>java.lang.String* String Tools.formatDate(Timestamp,int)(java.sql.Timestamp* date, int type)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { return -> { } }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= String Tools.formatDate(Timestamp,int)
+; translation_unit= src/main/java/com/stn/utils/Tools.java
+; access= Public
+; formals= [(date,java.sql.Timestamp*);  (type,int)]
+; is_defined= true
+; loc= src/main/java/com/stn/utils/Tools.java:26
+; locals= [{ name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= s; typ= java.lang.String*; modify_in_block= false }]
+; ret_type= java.lang.String* 
+; proc_id= com.stn.utils.Tools.formatDate(java.sql.Timestamp,int):java.lang.String }</pre>
+</body>
+</html>

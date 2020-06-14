@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.servlets.SerieProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.5d408944d89972ed6afd58a6b18b80b8_1" [label="1: Start void SerieProcess.doGet(HttpServletRequest,HttpServletResponse)\nFormals:  this:com.stn.servlets.SerieProcess* request:javax.servlet.http.HttpServletRequest* response:javax.servlet.http.HttpServletResponse*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.servlets.SerieProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.5d408944d89972ed6afd58a6b18b80b8_1" -> "com.stn.servlets.SerieProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.5d408944d89972ed6afd58a6b18b80b8_4" ;
+"com.stn.servlets.SerieProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.5d408944d89972ed6afd58a6b18b80b8_2" [label="2: Exit void SerieProcess.doGet(HttpServletRequest,HttpServletResponse) \n  " color=yellow style=filled]
+	
+
+"com.stn.servlets.SerieProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.5d408944d89972ed6afd58a6b18b80b8_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 21]\n " shape="box"]
+	
+
+	 "com.stn.servlets.SerieProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.5d408944d89972ed6afd58a6b18b80b8_3" -> "com.stn.servlets.SerieProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.5d408944d89972ed6afd58a6b18b80b8_2" ;
+"com.stn.servlets.SerieProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.5d408944d89972ed6afd58a6b18b80b8_4" [label="4:  Call void HttpServletResponse.sendRedirect(String) \n   n$0=*&response:javax.servlet.http.HttpServletResponse* [line 20]\n  _=*n$0:javax.servlet.http.HttpServletResponse*(root javax.servlet.http.HttpServletResponse) [line 20]\n  n$2=_fun_void HttpServletResponse.sendRedirect(String)(n$0:javax.servlet.http.HttpServletResponse*,\"/panel/editfacultati.jsp\":java.lang.Object*) interface virtual [line 20]\n  NULLIFY(&response); [line 20]\n  EXIT_SCOPE(_,n$0,n$2,response); [line 20]\n " shape="box"]
+	
+
+	 "com.stn.servlets.SerieProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.5d408944d89972ed6afd58a6b18b80b8_4" -> "com.stn.servlets.SerieProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.5d408944d89972ed6afd58a6b18b80b8_5" ;
+	 "com.stn.servlets.SerieProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.5d408944d89972ed6afd58a6b18b80b8_4" -> "com.stn.servlets.SerieProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.5d408944d89972ed6afd58a6b18b80b8_3" [color="red" ];
+"com.stn.servlets.SerieProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.5d408944d89972ed6afd58a6b18b80b8_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 21]\n " shape="box"]
+	
+
+	 "com.stn.servlets.SerieProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.5d408944d89972ed6afd58a6b18b80b8_5" -> "com.stn.servlets.SerieProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.5d408944d89972ed6afd58a6b18b80b8_2" ;
+	 "com.stn.servlets.SerieProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.5d408944d89972ed6afd58a6b18b80b8_5" -> "com.stn.servlets.SerieProcess.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSer.5d408944d89972ed6afd58a6b18b80b8_3" [color="red" ];
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.servlets.AddTopic.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServle.93042d8765dc6ab88ac9da31ef87e3b0_node17</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../AddTopic.java.abae21e45c684a4323909c60c7116403.html#LINE31">17</a></h1></center>PROC: <a href="./../com.stn.servlets.AddTopic.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.93042d8765dc6ab88ac9da31ef87e3b0.html">void AddTopic.doPost(HttpServletRequest,HttpServletResponse)</a> LINE: <a href="./../../AddTopic.java.abae21e45c684a4323909c60c7116403.html#LINE31">31</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.servlets.AddTopic.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.93042d8765dc6ab88ac9da31ef87e3b0_node16.html"><span class='visited with_tooltip'>N_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.servlets.AddTopic.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.93042d8765dc6ab88ac9da31ef87e3b0_node18.html"><span class='visited with_tooltip'>N_18<span class='tooltip'>node18 preds:17 succs:19 exn:3 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.servlets.AddTopic.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.93042d8765dc6ab88ac9da31ef87e3b0_node3.html"><span class='visited with_tooltip'>N_3<span class='tooltip'>node3 preds:34 succs:2 exn:2 </span></span></a><br>
+<LISTING class='color_green'>n$35=*&amp;session:javax.servlet.http.HttpSession* [line 31];
+_=*n$35:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 31];
+n$37=_fun_Object HttpSession.getAttribute(String)(n$35:javax.servlet.http.HttpSession*,"userId":java.lang.Object*) interface virtual [line 31];
+*&amp;$irvar5:java.lang.Object*=n$37 [line 31];
+</LISTING>
+<hr width="100%">
+<a name="session44" href="./../nodes/com.stn.servlets.AddTopic.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.93042d8765dc6ab88ac9da31ef87e3b0_node17.html#session44">node17#session44</a>(<a href="./../../AddTopic.java.abae21e45c684a4323909c60c7116403.html#LINE31">31</a>) [compute pre] liveness 17
+<LISTING class='color_black'>JOIN
+
+LEFT:   { body,
+          title,
+          error,
+          url,
+          out,
+          $irvar5,
+          return,
+          group_id,
+          session,
+          response }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session45" href="./../nodes/com.stn.servlets.AddTopic.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.93042d8765dc6ab88ac9da31ef87e3b0_node17.html#session45">node17#session45</a>(<a href="./../../AddTopic.java.abae21e45c684a4323909c60c7116403.html#LINE31">31</a>) [exec] liveness 17
+<LISTING class='color_black'>PRE STATE:
+{ body,
+  title,
+  error,
+  url,
+  out,
+  $irvar5,
+  return,
+  group_id,
+  session,
+  response }
+
+INSTR=  *&amp;$irvar5:java.lang.Object*=n$37 [line 31]; 
+
+STATE:
+{ n$37, body, title, error, url, out, return, group_id, session, response }
+
+INSTR=  n$37=_fun_Object HttpSession.getAttribute(String)(n$35:javax.servlet.http.HttpSession*,&quot;userId&quot;:java.lang.Object*) interface virtual [line 31]; 
+
+STATE:
+{ n$35, body, title, error, url, out, return, group_id, session, response }
+
+INSTR=  _=*n$35:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 31]; 
+
+STATE UNCHANGED
+
+INSTR=  n$35=*&amp;session:javax.servlet.http.HttpSession* [line 31]; 
+
+STATE:
+{ body, title, error, url, out, return, group_id, session, response }
+
+</LISTING>
+<hr width="100%">
+<a name="session101" href="./../nodes/com.stn.servlets.AddTopic.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.93042d8765dc6ab88ac9da31ef87e3b0_node17.html#session101">node17#session101</a>(<a href="./../../AddTopic.java.abae21e45c684a4323909c60c7116403.html#LINE31">31</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session102" href="./../nodes/com.stn.servlets.AddTopic.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.93042d8765dc6ab88ac9da31ef87e3b0_node17.html#session102">node17#session102</a>(<a href="./../../AddTopic.java.abae21e45c684a4323909c60c7116403.html#LINE31">31</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ body, title, error, url, out, group_id, session },{ n$33, n$34, $irvar4 })
+
+INSTR=  n$35=*&amp;session:javax.servlet.http.HttpSession* [line 31]; 
+
+STATE:
+({ n$35, body, title, error, url, out, group_id, session },
+{ n$33, n$34, $irvar4 })
+
+INSTR=  _=*n$35:javax.servlet.http.HttpSession*(root javax.servlet.http.HttpSession) [line 31]; 
+
+STATE:
+({ _, n$35, body, title, error, url, out, group_id, session },
+{ n$33, n$34, $irvar4 })
+
+INSTR=  n$37=_fun_Object HttpSession.getAttribute(String)(n$35:javax.servlet.http.HttpSession*,&quot;userId&quot;:java.lang.Object*) interface virtual [line 31]; 
+
+STATE:
+({ _, n$35, n$37, body, title, error, url, out, group_id, session },
+{ n$33, n$34, $irvar4 })
+
+INSTR=  *&amp;$irvar5:java.lang.Object*=n$37 [line 31]; 
+
+STATE:
+({ body, title, error, url, out, $irvar5, group_id, session },
+{ _, n$35, n$37 })
+
+</LISTING>
+<hr width="100%">
+<a name="session28" href="./../nodes/com.stn.servlets.AddTopic.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.93042d8765dc6ab88ac9da31ef87e3b0_node17.html#session28">node17#session28</a>(<a href="./../../AddTopic.java.abae21e45c684a4323909c60c7116403.html#LINE31">31</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session29" href="./../nodes/com.stn.servlets.AddTopic.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.HttpServle.93042d8765dc6ab88ac9da31ef87e3b0_node17.html#session29">node17#session29</a>(<a href="./../../AddTopic.java.abae21e45c684a4323909c60c7116403.html#LINE31">31</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$7 -&gt; { },
+  n$14 -&gt; { },
+  body -&gt; { },
+  title -&gt; { },
+  error -&gt; { },
+  url -&gt; { },
+  out -&gt; { },
+  group_id -&gt; { },
+  session -&gt; { } }
+
+
+
+INSTR=  n$37 := Object HttpSession.getAttribute(String)({ session, &quot;userId&quot; }) [line 31]; 
+
+STATE UNCHANGED
+
+
+
+</LISTING>

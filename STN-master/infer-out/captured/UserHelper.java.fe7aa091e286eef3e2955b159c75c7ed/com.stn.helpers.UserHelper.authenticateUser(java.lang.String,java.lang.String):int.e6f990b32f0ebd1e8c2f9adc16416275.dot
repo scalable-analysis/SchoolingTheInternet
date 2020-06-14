@@ -1,0 +1,310 @@
+/* @generated */
+digraph cfg {
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_1" [label="1: Start int UserHelper.authenticateUser(String,String)\nFormals:  this:com.stn.helpers.UserHelper* username:java.lang.String* password:java.lang.String*\nLocals:  $bcvar8:void CatchVar232:void $irvar9:void $irvar8:void $irvar7:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void id:int hashedPassword:java.lang.String* dbPassword:java.lang.String* securityHelper:com.stn.helpers.SecurityHelper* dbSalt:signed char[_*_](*) \n  " color=yellow style=filled]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_1" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_4" ;
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_2" [label="2: Exit int UserHelper.authenticateUser(String,String) \n  " color=yellow style=filled]
+	
+
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [label="3:  exceptions sink \n   NULLIFY(&securityHelper); [line 125]\n  NULLIFY(&id); [line 125]\n  NULLIFY(&$bcvar8); [line 125]\n  EXIT_SCOPE(securityHelper,id,$bcvar8); [line 125]\n  APPLY_ABSTRACTION; [line 125]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_2" ;
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_4" [label="4:  Call SecurityHelper.<init>() \n   n$0=_fun___new(sizeof(t=com.stn.helpers.SecurityHelper):com.stn.helpers.SecurityHelper*) [line 91]\n  n$1=_fun_SecurityHelper.<init>()(n$0:com.stn.helpers.SecurityHelper*) [line 91]\n  *&securityHelper:com.stn.helpers.SecurityHelper*=n$0 [line 91]\n  EXIT_SCOPE(n$0,n$1); [line 91]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_4" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_5" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_4" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_5" [label="5:  method_body \n   *&dbPassword:java.lang.Object*=\"\" [line 92]\n  NULLIFY(&dbPassword); [line 92]\n  EXIT_SCOPE(dbPassword); [line 92]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_5" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_6" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_5" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_6" [label="6:  method_body \n   *&hashedPassword:java.lang.Object*=\"\" [line 94]\n  NULLIFY(&hashedPassword); [line 94]\n  EXIT_SCOPE(hashedPassword); [line 94]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_6" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_7" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_6" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_7" [label="7:  method_body \n   *&id:int=-1 [line 95]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_7" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_8" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_7" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_8" [label="8:  method_body \n   n$2=*&this:com.stn.helpers.UserHelper* [line 97]\n  *n$2.query:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=\"SELECT Id, Password, Salt, Class FROM users WHERE Username = ?\" [line 97]\n  EXIT_SCOPE(n$2); [line 97]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_8" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_9" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_8" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_9" [label="9:  Call Class Class.forName(String) \n   n$3=_fun_Class Class.forName(String)(\"com.mysql.jdbc.Driver\":java.lang.Object*) [line 100]\n  *&$irvar0:java.lang.Class*=n$3 [line 100]\n  NULLIFY(&$irvar0); [line 100]\n  EXIT_SCOPE(n$3,$irvar0); [line 100]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_9" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_10" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_9" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_10" [label="10:  Call String DBConnection.getHost() \n   n$4=*&this:com.stn.helpers.UserHelper* [line 101]\n  _=*n$4:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 101]\n  n$6=_fun_String DBConnection.getHost()(n$4:com.stn.helpers.UserHelper*) virtual [line 101]\n  *&$irvar1:java.lang.String*=n$6 [line 101]\n  EXIT_SCOPE(_,n$4,n$6); [line 101]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_10" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_11" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_10" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_11" [label="11:  Call String DBConnection.getUser() \n   n$7=*&this:com.stn.helpers.UserHelper* [line 101]\n  _=*n$7:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 101]\n  n$9=_fun_String DBConnection.getUser()(n$7:com.stn.helpers.UserHelper*) virtual [line 101]\n  *&$irvar2:java.lang.String*=n$9 [line 101]\n  EXIT_SCOPE(_,n$7,n$9); [line 101]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_11" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_12" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_11" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_12" [label="12:  Call String DBConnection.getPassword() \n   n$10=*&this:com.stn.helpers.UserHelper* [line 101]\n  _=*n$10:com.stn.helpers.UserHelper*(root com.stn.helpers.UserHelper) [line 101]\n  n$12=_fun_String DBConnection.getPassword()(n$10:com.stn.helpers.UserHelper*) virtual [line 101]\n  *&$irvar3:java.lang.String*=n$12 [line 101]\n  EXIT_SCOPE(_,n$10,n$12); [line 101]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_12" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_13" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_12" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_13" [label="13:  Call Connection DriverManager.getConnection(String,String,String) \n   n$13=*&$irvar1:java.lang.String* [line 101]\n  n$14=*&$irvar2:java.lang.String* [line 101]\n  n$15=*&$irvar3:java.lang.String* [line 101]\n  n$16=_fun_Connection DriverManager.getConnection(String,String,String)(n$13:java.lang.String*,n$14:java.lang.String*,n$15:java.lang.String*) [line 101]\n  *&$irvar4:java.sql.Connection*=n$16 [line 101]\n  NULLIFY(&$irvar3); [line 101]\n  NULLIFY(&$irvar1); [line 101]\n  NULLIFY(&$irvar2); [line 101]\n  EXIT_SCOPE(n$13,n$14,n$15,n$16,$irvar3,$irvar1,$irvar2); [line 101]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_13" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_14" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_13" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_14" [label="14:  method_body \n   n$17=*&this:com.stn.helpers.UserHelper* [line 101]\n  n$18=*&$irvar4:java.sql.Connection* [line 101]\n  *n$17.connection:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$18 [line 101]\n  NULLIFY(&$irvar4); [line 101]\n  EXIT_SCOPE(n$17,n$18,$irvar4); [line 101]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_14" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_15" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_14" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_15" [label="15:  Call PreparedStatement Connection.prepareStatement(String) \n   n$19=*&this:com.stn.helpers.UserHelper* [line 102]\n  n$20=*n$19.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 102]\n  _=*n$20:java.sql.Connection*(root java.sql.Connection) [line 102]\n  n$22=*&this:com.stn.helpers.UserHelper* [line 102]\n  n$23=*n$22.query:java.lang.String*(root com.stn.helpers.UserHelper) [line 102]\n  n$24=_fun_PreparedStatement Connection.prepareStatement(String)(n$20:java.sql.Connection*,n$23:java.lang.String*) interface virtual [line 102]\n  *&$irvar5:java.sql.PreparedStatement*=n$24 [line 102]\n  EXIT_SCOPE(_,n$19,n$20,n$22,n$23,n$24); [line 102]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_15" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_16" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_15" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_16" [label="16:  method_body \n   n$25=*&this:com.stn.helpers.UserHelper* [line 102]\n  n$26=*&$irvar5:java.sql.PreparedStatement* [line 102]\n  *n$25.preparedStatement:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$26 [line 102]\n  NULLIFY(&$irvar5); [line 102]\n  EXIT_SCOPE(n$25,n$26,$irvar5); [line 102]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_16" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_17" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_16" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_17" [label="17:  Call void PreparedStatement.setString(int,String) \n   n$27=*&this:com.stn.helpers.UserHelper* [line 103]\n  n$28=*n$27.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 103]\n  _=*n$28:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 103]\n  n$30=*&username:java.lang.String* [line 103]\n  n$31=_fun_void PreparedStatement.setString(int,String)(n$28:java.sql.PreparedStatement*,1:int,n$30:java.lang.String*) interface virtual [line 103]\n  NULLIFY(&username); [line 103]\n  EXIT_SCOPE(_,n$27,n$28,n$30,n$31,username); [line 103]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_17" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_18" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_17" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_18" [label="18:  Call ResultSet PreparedStatement.executeQuery() \n   n$32=*&this:com.stn.helpers.UserHelper* [line 104]\n  n$33=*n$32.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 104]\n  _=*n$33:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 104]\n  n$35=_fun_ResultSet PreparedStatement.executeQuery()(n$33:java.sql.PreparedStatement*) interface virtual [line 104]\n  *&$irvar6:java.sql.ResultSet*=n$35 [line 104]\n  EXIT_SCOPE(_,n$32,n$33,n$35); [line 104]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_18" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_19" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_18" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_19" [label="19:  method_body \n   n$36=*&this:com.stn.helpers.UserHelper* [line 104]\n  n$37=*&$irvar6:java.sql.ResultSet* [line 104]\n  *n$36.resultSet:com.stn.helpers.UserHelper(root com.stn.helpers.UserHelper)=n$37 [line 104]\n  NULLIFY(&$irvar6); [line 104]\n  EXIT_SCOPE(n$36,n$37,$irvar6); [line 104]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_19" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_20" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_19" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_20" [label="20:  Call boolean ResultSet.next() \n   n$38=*&this:com.stn.helpers.UserHelper* [line 105]\n  n$39=*n$38.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 105]\n  _=*n$39:java.sql.ResultSet*(root java.sql.ResultSet) [line 105]\n  n$41=_fun_boolean ResultSet.next()(n$39:java.sql.ResultSet*) interface virtual [line 105]\n  *&$irvar7:_Bool=n$41 [line 105]\n  EXIT_SCOPE(_,n$38,n$39,n$41); [line 105]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_20" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_21" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_20" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_22" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_20" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_21" [label="21: Prune (true branch, if) \n   n$42=*&$irvar7:_Bool [line 105]\n  PRUNE(!(n$42 == 0), true); [line 105]\n  NULLIFY(&$irvar7); [line 105]\n  EXIT_SCOPE(n$42,$irvar7); [line 105]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_21" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_23" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_21" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_22" [label="22: Prune (false branch, if) \n   n$42=*&$irvar7:_Bool [line 105]\n  PRUNE((n$42 == 0), false); [line 105]\n  NULLIFY(&$irvar7); [line 105]\n  NULLIFY(&securityHelper); [line 105]\n  EXIT_SCOPE(n$42,$irvar7,securityHelper); [line 105]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_22" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_35" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_22" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_36" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_22" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_23" [label="23:  Call String ResultSet.getString(int) \n   n$43=*&this:com.stn.helpers.UserHelper* [line 106]\n  n$44=*n$43.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 106]\n  _=*n$44:java.sql.ResultSet*(root java.sql.ResultSet) [line 106]\n  n$46=_fun_String ResultSet.getString(int)(n$44:java.sql.ResultSet*,2:int) interface virtual [line 106]\n  *&dbPassword:java.lang.String*=n$46 [line 106]\n  EXIT_SCOPE(_,n$43,n$44,n$46); [line 106]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_23" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_24" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_23" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_24" [label="24:  Call byte[] ResultSet.getBytes(int) \n   n$47=*&this:com.stn.helpers.UserHelper* [line 107]\n  n$48=*n$47.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 107]\n  _=*n$48:java.sql.ResultSet*(root java.sql.ResultSet) [line 107]\n  n$50=_fun_byte[] ResultSet.getBytes(int)(n$48:java.sql.ResultSet*,3:int) interface virtual [line 107]\n  *&dbSalt:signed char[_*_](*)=n$50 [line 107]\n  EXIT_SCOPE(_,n$47,n$48,n$50); [line 107]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_24" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_25" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_24" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_25" [label="25:  Call void SecurityHelper.setSalt(byte[]) \n   n$51=*&securityHelper:com.stn.helpers.SecurityHelper* [line 108]\n  _=*n$51:com.stn.helpers.SecurityHelper*(root com.stn.helpers.SecurityHelper) [line 108]\n  n$53=*&dbSalt:signed char[_*_](*) [line 108]\n  n$54=_fun_void SecurityHelper.setSalt(byte[])(n$51:com.stn.helpers.SecurityHelper*,n$53:signed char[_*_](*)) virtual [line 108]\n  NULLIFY(&dbSalt); [line 108]\n  EXIT_SCOPE(_,n$51,n$53,n$54,dbSalt); [line 108]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_25" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_26" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_25" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_26" [label="26:  Call String SecurityHelper.getHash(String) \n   n$55=*&securityHelper:com.stn.helpers.SecurityHelper* [line 109]\n  _=*n$55:com.stn.helpers.SecurityHelper*(root com.stn.helpers.SecurityHelper) [line 109]\n  n$57=*&password:java.lang.String* [line 109]\n  n$58=_fun_String SecurityHelper.getHash(String)(n$55:com.stn.helpers.SecurityHelper*,n$57:java.lang.String*) virtual [line 109]\n  *&hashedPassword:java.lang.String*=n$58 [line 109]\n  NULLIFY(&password); [line 109]\n  NULLIFY(&securityHelper); [line 109]\n  EXIT_SCOPE(_,n$55,n$57,n$58,password,securityHelper); [line 109]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_26" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_27" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_26" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_27" [label="27:  Call int ResultSet.getInt(int) \n   n$59=*&this:com.stn.helpers.UserHelper* [line 110]\n  n$60=*n$59.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 110]\n  _=*n$60:java.sql.ResultSet*(root java.sql.ResultSet) [line 110]\n  n$62=_fun_int ResultSet.getInt(int)(n$60:java.sql.ResultSet*,4:int) interface virtual [line 110]\n  *&$irvar8:int=n$62 [line 110]\n  EXIT_SCOPE(_,n$59,n$60,n$62); [line 110]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_27" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_28" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_27" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_29" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_27" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_28" [label="28: Prune (true branch, if) \n   n$63=*&$irvar8:int [line 110]\n  PRUNE(!(n$63 != 0), true); [line 110]\n  NULLIFY(&dbPassword); [line 110]\n  NULLIFY(&$irvar8); [line 110]\n  NULLIFY(&hashedPassword); [line 110]\n  NULLIFY(&id); [line 110]\n  EXIT_SCOPE(n$63,dbPassword,$irvar8,hashedPassword,id); [line 110]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_28" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_30" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_28" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_29" [label="29: Prune (false branch, if) \n   n$63=*&$irvar8:int [line 110]\n  PRUNE((n$63 != 0), false); [line 110]\n  NULLIFY(&$irvar8); [line 110]\n  EXIT_SCOPE(n$63,$irvar8); [line 110]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_29" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_31" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_29" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_30" [label="30:  method_body \n   *&id:int=0 [line 111]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_30" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_35" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_30" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_36" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_30" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_31" [label="31:  Call boolean String.equals(Object) \n   n$64=*&hashedPassword:java.lang.String* [line 112]\n  _=*n$64:java.lang.String*(root java.lang.String) [line 112]\n  n$66=*&dbPassword:java.lang.String* [line 112]\n  n$67=_fun_boolean String.equals(Object)(n$64:java.lang.String*,n$66:java.lang.String*) virtual [line 112]\n  *&$irvar9:_Bool=n$67 [line 112]\n  NULLIFY(&dbPassword); [line 112]\n  NULLIFY(&hashedPassword); [line 112]\n  EXIT_SCOPE(_,n$64,n$66,n$67,dbPassword,hashedPassword); [line 112]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_31" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_32" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_31" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_33" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_31" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_32" [label="32: Prune (true branch, if) \n   n$68=*&$irvar9:_Bool [line 112]\n  PRUNE(!(n$68 == 0), true); [line 112]\n  NULLIFY(&$irvar9); [line 112]\n  NULLIFY(&id); [line 112]\n  EXIT_SCOPE(n$68,$irvar9,id); [line 112]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_32" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_34" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_32" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_33" [label="33: Prune (false branch, if) \n   n$68=*&$irvar9:_Bool [line 112]\n  PRUNE((n$68 == 0), false); [line 112]\n  NULLIFY(&$irvar9); [line 112]\n  EXIT_SCOPE(n$68,$irvar9); [line 112]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_33" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_35" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_33" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_36" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_33" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_34" [label="34:  Call int ResultSet.getInt(int) \n   n$69=*&this:com.stn.helpers.UserHelper* [line 113]\n  n$70=*n$69.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 113]\n  _=*n$70:java.sql.ResultSet*(root java.sql.ResultSet) [line 113]\n  n$72=_fun_int ResultSet.getInt(int)(n$70:java.sql.ResultSet*,1:int) interface virtual [line 113]\n  *&id:int=n$72 [line 113]\n  EXIT_SCOPE(_,n$69,n$70,n$72); [line 113]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_34" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_35" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_34" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_36" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_34" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_35" [label="35: Prune (true branch, if) \n   n$73=*&this:com.stn.helpers.UserHelper* [line 117]\n  n$74=*n$73.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 117]\n  PRUNE(!(n$74 == null), true); [line 117]\n  EXIT_SCOPE(n$73,n$74); [line 117]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_35" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_37" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_35" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_36" [label="36: Prune (false branch, if) \n   n$73=*&this:com.stn.helpers.UserHelper* [line 117]\n  n$74=*n$73.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 117]\n  PRUNE((n$74 == null), false); [line 117]\n  EXIT_SCOPE(n$73,n$74); [line 117]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_36" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_38" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_36" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_39" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_36" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_37" [label="37:  Call void PreparedStatement.close() \n   n$75=*&this:com.stn.helpers.UserHelper* [line 118]\n  n$76=*n$75.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 118]\n  n$79=_fun___set_mem_attribute(n$76:java.sql.PreparedStatement*) [line 118]\n  _=*n$76:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 118]\n  n$78=_fun_void PreparedStatement.close()(n$76:java.sql.PreparedStatement*) interface virtual [line 118]\n  EXIT_SCOPE(_,n$75,n$76,n$78,n$79); [line 118]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_37" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_38" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_37" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_39" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_37" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_38" [label="38: Prune (true branch, if) \n   n$80=*&this:com.stn.helpers.UserHelper* [line 119]\n  n$81=*n$80.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 119]\n  PRUNE(!(n$81 == null), true); [line 119]\n  EXIT_SCOPE(n$80,n$81); [line 119]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_38" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_40" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_38" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_39" [label="39: Prune (false branch, if) \n   n$80=*&this:com.stn.helpers.UserHelper* [line 119]\n  n$81=*n$80.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 119]\n  PRUNE((n$81 == null), false); [line 119]\n  EXIT_SCOPE(n$80,n$81); [line 119]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_39" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_41" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_39" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_42" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_39" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_40" [label="40:  Call void Connection.close() \n   n$82=*&this:com.stn.helpers.UserHelper* [line 120]\n  n$83=*n$82.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 120]\n  n$86=_fun___set_mem_attribute(n$83:java.sql.Connection*) [line 120]\n  _=*n$83:java.sql.Connection*(root java.sql.Connection) [line 120]\n  n$85=_fun_void Connection.close()(n$83:java.sql.Connection*) interface virtual [line 120]\n  EXIT_SCOPE(_,n$82,n$83,n$85,n$86); [line 120]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_40" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_41" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_40" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_42" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_40" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_41" [label="41: Prune (true branch, if) \n   n$87=*&this:com.stn.helpers.UserHelper* [line 121]\n  n$88=*n$87.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 121]\n  PRUNE(!(n$88 == null), true); [line 121]\n  EXIT_SCOPE(n$87,n$88); [line 121]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_41" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_43" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_41" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_42" [label="42: Prune (false branch, if) \n   n$87=*&this:com.stn.helpers.UserHelper* [line 121]\n  n$88=*n$87.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 121]\n  PRUNE((n$88 == null), false); [line 121]\n  NULLIFY(&this); [line 121]\n  EXIT_SCOPE(n$87,n$88,this); [line 121]\n  APPLY_ABSTRACTION; [line 121]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_42" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_55" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_42" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_43" [label="43:  Call void ResultSet.close() \n   n$89=*&this:com.stn.helpers.UserHelper* [line 122]\n  n$90=*n$89.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 122]\n  n$93=_fun___set_mem_attribute(n$90:java.sql.ResultSet*) [line 122]\n  _=*n$90:java.sql.ResultSet*(root java.sql.ResultSet) [line 122]\n  n$92=_fun_void ResultSet.close()(n$90:java.sql.ResultSet*) interface virtual [line 122]\n  NULLIFY(&this); [line 122]\n  EXIT_SCOPE(_,n$89,n$90,n$92,n$93,this); [line 122]\n  APPLY_ABSTRACTION; [line 122]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_43" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_55" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_43" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_44" [label="44:  method_body \n   n$94=*&CatchVar232:java.lang.Object* [line 117]\n  *&$bcvar8:java.lang.Object*=n$94 [line 117]\n  EXIT_SCOPE(n$94); [line 117]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_44" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_45" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_44" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_46" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_44" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_59" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_45" [label="45: Prune (true branch, if) \n   n$95=*&this:com.stn.helpers.UserHelper* [line 117]\n  n$96=*n$95.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 117]\n  PRUNE(!(n$96 == null), true); [line 117]\n  EXIT_SCOPE(n$95,n$96); [line 117]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_45" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_47" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_45" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_46" [label="46: Prune (false branch, if) \n   n$95=*&this:com.stn.helpers.UserHelper* [line 117]\n  n$96=*n$95.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 117]\n  PRUNE((n$96 == null), false); [line 117]\n  EXIT_SCOPE(n$95,n$96); [line 117]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_46" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_48" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_46" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_49" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_46" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_47" [label="47:  Call void PreparedStatement.close() \n   n$97=*&this:com.stn.helpers.UserHelper* [line 118]\n  n$98=*n$97.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.UserHelper) [line 118]\n  n$101=_fun___set_mem_attribute(n$98:java.sql.PreparedStatement*) [line 118]\n  _=*n$98:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 118]\n  n$100=_fun_void PreparedStatement.close()(n$98:java.sql.PreparedStatement*) interface virtual [line 118]\n  EXIT_SCOPE(_,n$97,n$98,n$100,n$101); [line 118]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_47" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_48" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_47" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_49" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_47" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_48" [label="48: Prune (true branch, if) \n   n$102=*&this:com.stn.helpers.UserHelper* [line 119]\n  n$103=*n$102.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 119]\n  PRUNE(!(n$103 == null), true); [line 119]\n  EXIT_SCOPE(n$102,n$103); [line 119]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_48" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_50" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_48" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_49" [label="49: Prune (false branch, if) \n   n$102=*&this:com.stn.helpers.UserHelper* [line 119]\n  n$103=*n$102.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 119]\n  PRUNE((n$103 == null), false); [line 119]\n  EXIT_SCOPE(n$102,n$103); [line 119]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_49" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_51" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_49" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_52" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_49" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_50" [label="50:  Call void Connection.close() \n   n$104=*&this:com.stn.helpers.UserHelper* [line 120]\n  n$105=*n$104.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 120]\n  n$108=_fun___set_mem_attribute(n$105:java.sql.Connection*) [line 120]\n  _=*n$105:java.sql.Connection*(root java.sql.Connection) [line 120]\n  n$107=_fun_void Connection.close()(n$105:java.sql.Connection*) interface virtual [line 120]\n  EXIT_SCOPE(_,n$104,n$105,n$107,n$108); [line 120]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_50" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_51" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_50" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_52" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_50" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_51" [label="51: Prune (true branch, if) \n   n$109=*&this:com.stn.helpers.UserHelper* [line 121]\n  n$110=*n$109.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 121]\n  PRUNE(!(n$110 == null), true); [line 121]\n  EXIT_SCOPE(n$109,n$110); [line 121]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_51" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_53" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_51" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_52" [label="52: Prune (false branch, if) \n   n$109=*&this:com.stn.helpers.UserHelper* [line 121]\n  n$110=*n$109.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 121]\n  PRUNE((n$110 == null), false); [line 121]\n  NULLIFY(&this); [line 121]\n  EXIT_SCOPE(n$109,n$110,this); [line 121]\n  APPLY_ABSTRACTION; [line 121]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_52" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_54" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_52" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_53" [label="53:  Call void ResultSet.close() \n   n$111=*&this:com.stn.helpers.UserHelper* [line 122]\n  n$112=*n$111.resultSet:java.sql.ResultSet*(root com.stn.helpers.UserHelper) [line 122]\n  n$115=_fun___set_mem_attribute(n$112:java.sql.ResultSet*) [line 122]\n  _=*n$112:java.sql.ResultSet*(root java.sql.ResultSet) [line 122]\n  n$114=_fun_void ResultSet.close()(n$112:java.sql.ResultSet*) interface virtual [line 122]\n  NULLIFY(&this); [line 122]\n  EXIT_SCOPE(_,n$111,n$112,n$114,n$115,this); [line 122]\n  APPLY_ABSTRACTION; [line 122]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_53" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_54" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_53" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_54" [label="54:  throw \n   n$116=*&$bcvar8:java.lang.Object* [line 123]\n  *&return:int=EXN n$116 [line 123]\n  NULLIFY(&$bcvar8); [line 123]\n  EXIT_SCOPE(n$116,$bcvar8); [line 123]\n  APPLY_ABSTRACTION; [line 123]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_54" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_2" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_54" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_55" [label="55:  method_body \n   n$117=*&id:int [line 125]\n  *&return:int=n$117 [line 125]\n  NULLIFY(&id); [line 125]\n  EXIT_SCOPE(n$117,id); [line 125]\n  APPLY_ABSTRACTION; [line 125]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_55" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_2" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_55" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_56" [label="56:  Finally branch \n   APPLY_ABSTRACTION; [line 117]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_56" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_44" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_56" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" [label="57:  exception handler \n   n$118=*&return:int [line 117]\n  *&return:int=null [line 117]\n  n$119=_fun___unwrap_exception(n$118:int) [line 117]\n  NULLIFY(&$irvar3); [line 117]\n  NULLIFY(&$irvar9); [line 117]\n  NULLIFY(&$irvar5); [line 117]\n  NULLIFY(&$irvar4); [line 117]\n  NULLIFY(&$irvar7); [line 117]\n  NULLIFY(&dbSalt); [line 117]\n  NULLIFY(&dbPassword); [line 117]\n  NULLIFY(&$irvar6); [line 117]\n  NULLIFY(&$irvar8); [line 117]\n  NULLIFY(&hashedPassword); [line 117]\n  NULLIFY(&$irvar1); [line 117]\n  NULLIFY(&securityHelper); [line 117]\n  NULLIFY(&$irvar2); [line 117]\n  NULLIFY(&id); [line 117]\n  EXIT_SCOPE(n$118,n$119,$irvar3,$irvar9,$irvar5,$irvar4,$irvar7,dbSalt,dbPassword,$irvar6,$irvar8,hashedPassword,$irvar1,securityHelper,$irvar2,id); [line 117]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_56" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_57" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_58" [label="58:  Finally branch \n   APPLY_ABSTRACTION; [line 117]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_58" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_44" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_58" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+"com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_59" [label="59:  exception handler \n   n$118=*&return:int [line 117]\n  *&return:int=null [line 117]\n  n$119=_fun___unwrap_exception(n$118:int) [line 117]\n  NULLIFY(&$bcvar8); [line 117]\n  EXIT_SCOPE(n$118,n$119,$bcvar8); [line 117]\n " shape="box"]
+	
+
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_59" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_58" ;
+	 "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_59" -> "com.stn.helpers.UserHelper.authenticateUser(java.lang.String,java.lang.String):int.e6f990b32f0ebd1e8c2f9adc16416275_3" [color="red" ];
+}

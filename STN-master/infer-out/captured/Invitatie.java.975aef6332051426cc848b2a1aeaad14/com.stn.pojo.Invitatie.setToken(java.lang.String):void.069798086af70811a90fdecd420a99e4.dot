@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Invitatie.setToken(java.lang.String):void.069798086af70811a90fdecd420a99e4_1" [label="1: Start void Invitatie.setToken(String)\nFormals:  this:com.stn.pojo.Invitatie* token:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Invitatie.setToken(java.lang.String):void.069798086af70811a90fdecd420a99e4_1" -> "com.stn.pojo.Invitatie.setToken(java.lang.String):void.069798086af70811a90fdecd420a99e4_4" ;
+"com.stn.pojo.Invitatie.setToken(java.lang.String):void.069798086af70811a90fdecd420a99e4_2" [label="2: Exit void Invitatie.setToken(String) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Invitatie.setToken(java.lang.String):void.069798086af70811a90fdecd420a99e4_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 33]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.setToken(java.lang.String):void.069798086af70811a90fdecd420a99e4_3" -> "com.stn.pojo.Invitatie.setToken(java.lang.String):void.069798086af70811a90fdecd420a99e4_2" ;
+"com.stn.pojo.Invitatie.setToken(java.lang.String):void.069798086af70811a90fdecd420a99e4_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Invitatie* [line 32]\n  n$1=*&token:java.lang.String* [line 32]\n  *n$0.token:com.stn.pojo.Invitatie(root com.stn.pojo.Invitatie)=n$1 [line 32]\n  NULLIFY(&token); [line 32]\n  NULLIFY(&this); [line 32]\n  EXIT_SCOPE(n$0,n$1,token,this); [line 32]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.setToken(java.lang.String):void.069798086af70811a90fdecd420a99e4_4" -> "com.stn.pojo.Invitatie.setToken(java.lang.String):void.069798086af70811a90fdecd420a99e4_5" ;
+	 "com.stn.pojo.Invitatie.setToken(java.lang.String):void.069798086af70811a90fdecd420a99e4_4" -> "com.stn.pojo.Invitatie.setToken(java.lang.String):void.069798086af70811a90fdecd420a99e4_3" [color="red" ];
+"com.stn.pojo.Invitatie.setToken(java.lang.String):void.069798086af70811a90fdecd420a99e4_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 33]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Invitatie.setToken(java.lang.String):void.069798086af70811a90fdecd420a99e4_5" -> "com.stn.pojo.Invitatie.setToken(java.lang.String):void.069798086af70811a90fdecd420a99e4_2" ;
+	 "com.stn.pojo.Invitatie.setToken(java.lang.String):void.069798086af70811a90fdecd420a99e4_5" -> "com.stn.pojo.Invitatie.setToken(java.lang.String):void.069798086af70811a90fdecd420a99e4_3" [color="red" ];
+}

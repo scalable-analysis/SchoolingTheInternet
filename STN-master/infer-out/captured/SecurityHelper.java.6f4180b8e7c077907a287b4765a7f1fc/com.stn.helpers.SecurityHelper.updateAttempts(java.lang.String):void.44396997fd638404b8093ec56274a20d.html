@@ -1,0 +1,365 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.SecurityHelper.updateAttempts(java.lang.String):void.44396997fd638404b8093ec56274a20d</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE118">void SecurityHelper.updateAttempts(String)</a></h1></center>
+<a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:42 41 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$bcvar6); [line 146];
+EXIT_SCOPE($bcvar6); [line 146];
+APPLY_ABSTRACTION; [line 146];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.stn.helpers.SecurityHelper* [line 121];
+*n$0.query:com.stn.helpers.SecurityHelper(root com.stn.helpers.SecurityHelper)="UPDATE failed_logins SET Attempts = Attempts + 1 WHERE Ip=?;" [line 121];
+EXIT_SCOPE(n$0); [line 121];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:44 Instructions
+n$1=_fun_Class Class.forName(String)("com.mysql.jdbc.Driver":java.lang.Object*) [line 124];
+*&amp;$irvar0:java.lang.Class*=n$1 [line 124];
+NULLIFY(&amp;$irvar0); [line 124];
+EXIT_SCOPE(n$1,$irvar0); [line 124];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:44 Instructions
+n$2=*&amp;this:com.stn.helpers.SecurityHelper* [line 125];
+_=*n$2:com.stn.helpers.SecurityHelper*(root com.stn.helpers.SecurityHelper) [line 125];
+n$4=_fun_String DBConnection.getHost()(n$2:com.stn.helpers.SecurityHelper*) virtual [line 125];
+*&amp;$irvar1:java.lang.String*=n$4 [line 125];
+EXIT_SCOPE(_,n$2,n$4); [line 125];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:44 Instructions
+n$5=*&amp;this:com.stn.helpers.SecurityHelper* [line 125];
+_=*n$5:com.stn.helpers.SecurityHelper*(root com.stn.helpers.SecurityHelper) [line 125];
+n$7=_fun_String DBConnection.getUser()(n$5:com.stn.helpers.SecurityHelper*) virtual [line 125];
+*&amp;$irvar2:java.lang.String*=n$7 [line 125];
+EXIT_SCOPE(_,n$5,n$7); [line 125];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:44 Instructions
+n$8=*&amp;this:com.stn.helpers.SecurityHelper* [line 125];
+_=*n$8:com.stn.helpers.SecurityHelper*(root com.stn.helpers.SecurityHelper) [line 125];
+n$10=_fun_String DBConnection.getPassword()(n$8:com.stn.helpers.SecurityHelper*) virtual [line 125];
+*&amp;$irvar3:java.lang.String*=n$10 [line 125];
+EXIT_SCOPE(_,n$8,n$10); [line 125];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:44 Instructions
+n$11=*&amp;$irvar1:java.lang.String* [line 125];
+n$12=*&amp;$irvar2:java.lang.String* [line 125];
+n$13=*&amp;$irvar3:java.lang.String* [line 125];
+n$14=_fun_Connection DriverManager.getConnection(String,String,String)(n$11:java.lang.String*,n$12:java.lang.String*,n$13:java.lang.String*) [line 125];
+*&amp;$irvar4:java.sql.Connection*=n$14 [line 125];
+NULLIFY(&amp;$irvar3); [line 125];
+NULLIFY(&amp;$irvar1); [line 125];
+NULLIFY(&amp;$irvar2); [line 125];
+EXIT_SCOPE(n$11,n$12,n$13,n$14,$irvar3,$irvar1,$irvar2); [line 125];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:44 Instructions
+n$15=*&amp;this:com.stn.helpers.SecurityHelper* [line 125];
+n$16=*&amp;$irvar4:java.sql.Connection* [line 125];
+*n$15.connection:com.stn.helpers.SecurityHelper(root com.stn.helpers.SecurityHelper)=n$16 [line 125];
+NULLIFY(&amp;$irvar4); [line 125];
+EXIT_SCOPE(n$15,n$16,$irvar4); [line 125];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:44 Instructions
+n$17=*&amp;this:com.stn.helpers.SecurityHelper* [line 126];
+n$18=*n$17.connection:java.sql.Connection*(root com.stn.helpers.SecurityHelper) [line 126];
+_=*n$18:java.sql.Connection*(root java.sql.Connection) [line 126];
+n$20=*&amp;this:com.stn.helpers.SecurityHelper* [line 126];
+n$21=*n$20.query:java.lang.String*(root com.stn.helpers.SecurityHelper) [line 126];
+n$22=_fun_PreparedStatement Connection.prepareStatement(String)(n$18:java.sql.Connection*,n$21:java.lang.String*) interface virtual [line 126];
+*&amp;$irvar5:java.sql.PreparedStatement*=n$22 [line 126];
+EXIT_SCOPE(_,n$17,n$18,n$20,n$21,n$22); [line 126];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:44 Instructions
+n$23=*&amp;this:com.stn.helpers.SecurityHelper* [line 126];
+n$24=*&amp;$irvar5:java.sql.PreparedStatement* [line 126];
+*n$23.preparedStatement:com.stn.helpers.SecurityHelper(root com.stn.helpers.SecurityHelper)=n$24 [line 126];
+NULLIFY(&amp;$irvar5); [line 126];
+EXIT_SCOPE(n$23,n$24,$irvar5); [line 126];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:44 Instructions
+n$25=*&amp;this:com.stn.helpers.SecurityHelper* [line 127];
+n$26=*n$25.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.SecurityHelper) [line 127];
+_=*n$26:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 127];
+n$28=*&amp;ip:java.lang.String* [line 127];
+n$29=_fun_void PreparedStatement.setString(int,String)(n$26:java.sql.PreparedStatement*,1:int,n$28:java.lang.String*) interface virtual [line 127];
+EXIT_SCOPE(_,n$25,n$26,n$28,n$29); [line 127];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 16 exn:44 Instructions
+n$30=*&amp;this:com.stn.helpers.SecurityHelper* [line 128];
+n$31=*n$30.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.SecurityHelper) [line 128];
+_=*n$31:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 128];
+n$33=_fun_int PreparedStatement.executeUpdate()(n$31:java.sql.PreparedStatement*) interface virtual [line 128];
+*&amp;affected:int=n$33 [line 128];
+EXIT_SCOPE(_,n$30,n$31,n$33); [line 128];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node15.html"><span class='visited with_tooltip'>C_15<span class='tooltip'>node15 preds:14 succs:17 exn:44 Conditional method_body
+n$34=*&amp;affected:int [line 129];
+PRUNE(!(n$34 != 0), true); [line 129];
+NULLIFY(&amp;affected); [line 129];
+EXIT_SCOPE(n$34,affected); [line 129];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node16.html"><span class='visited with_tooltip'>C_16<span class='tooltip'>node16 preds:14 succs:28 29 exn:44 Conditional method_body
+n$34=*&amp;affected:int [line 129];
+PRUNE((n$34 != 0), false); [line 129];
+NULLIFY(&amp;affected); [line 129];
+EXIT_SCOPE(n$34,affected); [line 129];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:15 succs:18 exn:44 Instructions
+*&amp;day:long=86400000 [line 131];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:44 Instructions
+n$35=_fun___new(sizeof(t=java.util.Date):java.util.Date*) [line 132];
+n$36=_fun_Date.&lt;init&gt;()(n$35:java.util.Date*) [line 132];
+*&amp;$irvar6:java.util.Date*=n$35 [line 132];
+EXIT_SCOPE(n$35,n$36); [line 132];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:44 Instructions
+n$37=*&amp;$irvar6:java.util.Date* [line 132];
+_=*n$37:java.util.Date*(root java.util.Date) [line 132];
+n$39=_fun_long Date.getTime()(n$37:java.util.Date*) virtual [line 132];
+*&amp;$irvar7:long=n$39 [line 132];
+NULLIFY(&amp;$irvar6); [line 132];
+EXIT_SCOPE(_,n$37,n$39,$irvar6); [line 132];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:44 Instructions
+n$40=_fun___new(sizeof(t=java.sql.Timestamp):java.sql.Timestamp*) [line 132];
+n$41=*&amp;$irvar7:long [line 132];
+n$42=*&amp;day:long [line 132];
+n$43=_fun_Timestamp.&lt;init&gt;(long)(n$40:java.sql.Timestamp*,(n$41 + n$42):long) [line 132];
+*&amp;date:java.sql.Timestamp*=n$40 [line 132];
+NULLIFY(&amp;$irvar7); [line 132];
+NULLIFY(&amp;day); [line 132];
+EXIT_SCOPE(n$40,n$41,n$42,n$43,$irvar7,day); [line 132];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:44 Instructions
+n$44=*&amp;this:com.stn.helpers.SecurityHelper* [line 133];
+*n$44.query:com.stn.helpers.SecurityHelper(root com.stn.helpers.SecurityHelper)="INSERT INTO failed_logins (Ip,Attempts,ExpireDate) VALUES (?,?,?)" [line 133];
+EXIT_SCOPE(n$44); [line 133];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:44 Instructions
+n$45=*&amp;this:com.stn.helpers.SecurityHelper* [line 134];
+n$46=*n$45.connection:java.sql.Connection*(root com.stn.helpers.SecurityHelper) [line 134];
+_=*n$46:java.sql.Connection*(root java.sql.Connection) [line 134];
+n$48=*&amp;this:com.stn.helpers.SecurityHelper* [line 134];
+n$49=*n$48.query:java.lang.String*(root com.stn.helpers.SecurityHelper) [line 134];
+n$50=_fun_PreparedStatement Connection.prepareStatement(String)(n$46:java.sql.Connection*,n$49:java.lang.String*) interface virtual [line 134];
+*&amp;$irvar8:java.sql.PreparedStatement*=n$50 [line 134];
+EXIT_SCOPE(_,n$45,n$46,n$48,n$49,n$50); [line 134];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:44 Instructions
+n$51=*&amp;this:com.stn.helpers.SecurityHelper* [line 134];
+n$52=*&amp;$irvar8:java.sql.PreparedStatement* [line 134];
+*n$51.preparedStatement:com.stn.helpers.SecurityHelper(root com.stn.helpers.SecurityHelper)=n$52 [line 134];
+NULLIFY(&amp;$irvar8); [line 134];
+EXIT_SCOPE(n$51,n$52,$irvar8); [line 134];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:44 Instructions
+n$53=*&amp;this:com.stn.helpers.SecurityHelper* [line 135];
+n$54=*n$53.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.SecurityHelper) [line 135];
+_=*n$54:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 135];
+n$56=*&amp;ip:java.lang.String* [line 135];
+n$57=_fun_void PreparedStatement.setString(int,String)(n$54:java.sql.PreparedStatement*,1:int,n$56:java.lang.String*) interface virtual [line 135];
+NULLIFY(&amp;ip); [line 135];
+EXIT_SCOPE(_,n$53,n$54,n$56,n$57,ip); [line 135];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:44 Instructions
+n$58=*&amp;this:com.stn.helpers.SecurityHelper* [line 136];
+n$59=*n$58.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.SecurityHelper) [line 136];
+_=*n$59:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 136];
+n$61=_fun_void PreparedStatement.setInt(int,int)(n$59:java.sql.PreparedStatement*,2:int,1:int) interface virtual [line 136];
+EXIT_SCOPE(_,n$58,n$59,n$61); [line 136];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:44 Instructions
+n$62=*&amp;this:com.stn.helpers.SecurityHelper* [line 137];
+n$63=*n$62.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.SecurityHelper) [line 137];
+_=*n$63:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 137];
+n$65=*&amp;date:java.sql.Timestamp* [line 137];
+n$66=_fun_void PreparedStatement.setTimestamp(int,Timestamp)(n$63:java.sql.PreparedStatement*,3:int,n$65:java.sql.Timestamp*) interface virtual [line 137];
+NULLIFY(&amp;date); [line 137];
+EXIT_SCOPE(_,n$62,n$63,n$65,n$66,date); [line 137];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 29 exn:44 Instructions
+n$67=*&amp;this:com.stn.helpers.SecurityHelper* [line 138];
+n$68=*n$67.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.SecurityHelper) [line 138];
+_=*n$68:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 138];
+n$70=_fun_int PreparedStatement.executeUpdate()(n$68:java.sql.PreparedStatement*) interface virtual [line 138];
+*&amp;$irvar9:int=n$70 [line 138];
+NULLIFY(&amp;$irvar9); [line 138];
+EXIT_SCOPE(_,n$67,n$68,n$70,$irvar9); [line 138];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node28.html"><span class='visited with_tooltip'>C_28<span class='tooltip'>node28 preds:27 16 succs:30 exn:3 Conditional method_body
+n$71=*&amp;this:com.stn.helpers.SecurityHelper* [line 141];
+n$72=*n$71.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.SecurityHelper) [line 141];
+PRUNE(!(n$72 == null), true); [line 141];
+EXIT_SCOPE(n$71,n$72); [line 141];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node29.html"><span class='visited with_tooltip'>C_29<span class='tooltip'>node29 preds:27 16 succs:31 32 exn:3 Conditional method_body
+n$71=*&amp;this:com.stn.helpers.SecurityHelper* [line 141];
+n$72=*n$71.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.SecurityHelper) [line 141];
+PRUNE((n$72 == null), false); [line 141];
+EXIT_SCOPE(n$71,n$72); [line 141];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:28 succs:31 32 exn:3 Instructions
+n$73=*&amp;this:com.stn.helpers.SecurityHelper* [line 142];
+n$74=*n$73.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.SecurityHelper) [line 142];
+n$77=_fun___set_mem_attribute(n$74:java.sql.PreparedStatement*) [line 142];
+_=*n$74:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 142];
+n$76=_fun_void PreparedStatement.close()(n$74:java.sql.PreparedStatement*) interface virtual [line 142];
+EXIT_SCOPE(_,n$73,n$74,n$76,n$77); [line 142];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node31.html"><span class='visited with_tooltip'>C_31<span class='tooltip'>node31 preds:30 29 succs:33 exn:3 Conditional method_body
+n$78=*&amp;this:com.stn.helpers.SecurityHelper* [line 143];
+n$79=*n$78.connection:java.sql.Connection*(root com.stn.helpers.SecurityHelper) [line 143];
+PRUNE(!(n$79 == null), true); [line 143];
+EXIT_SCOPE(n$78,n$79); [line 143];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:30 29 succs:42 exn:3 Conditional method_body
+n$78=*&amp;this:com.stn.helpers.SecurityHelper* [line 143];
+n$79=*n$78.connection:java.sql.Connection*(root com.stn.helpers.SecurityHelper) [line 143];
+PRUNE((n$79 == null), false); [line 143];
+NULLIFY(&amp;this); [line 143];
+EXIT_SCOPE(n$78,n$79,this); [line 143];
+APPLY_ABSTRACTION; [line 143];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:31 succs:42 exn:3 Instructions
+n$80=*&amp;this:com.stn.helpers.SecurityHelper* [line 144];
+n$81=*n$80.connection:java.sql.Connection*(root com.stn.helpers.SecurityHelper) [line 144];
+n$84=_fun___set_mem_attribute(n$81:java.sql.Connection*) [line 144];
+_=*n$81:java.sql.Connection*(root java.sql.Connection) [line 144];
+n$83=_fun_void Connection.close()(n$81:java.sql.Connection*) interface virtual [line 144];
+NULLIFY(&amp;this); [line 144];
+EXIT_SCOPE(_,n$80,n$81,n$83,n$84,this); [line 144];
+APPLY_ABSTRACTION; [line 144];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:45 43 succs:35 36 exn:46 Instructions
+n$85=*&amp;CatchVar200:java.lang.Object* [line 141];
+*&amp;$bcvar6:java.lang.Object*=n$85 [line 141];
+EXIT_SCOPE(n$85); [line 141];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node35.html"><span class='visited with_tooltip'>C_35<span class='tooltip'>node35 preds:34 succs:37 exn:3 Conditional method_body
+n$86=*&amp;this:com.stn.helpers.SecurityHelper* [line 141];
+n$87=*n$86.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.SecurityHelper) [line 141];
+PRUNE(!(n$87 == null), true); [line 141];
+EXIT_SCOPE(n$86,n$87); [line 141];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node36.html"><span class='visited with_tooltip'>C_36<span class='tooltip'>node36 preds:34 succs:38 39 exn:3 Conditional method_body
+n$86=*&amp;this:com.stn.helpers.SecurityHelper* [line 141];
+n$87=*n$86.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.SecurityHelper) [line 141];
+PRUNE((n$87 == null), false); [line 141];
+EXIT_SCOPE(n$86,n$87); [line 141];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:35 succs:38 39 exn:3 Instructions
+n$88=*&amp;this:com.stn.helpers.SecurityHelper* [line 142];
+n$89=*n$88.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.SecurityHelper) [line 142];
+n$92=_fun___set_mem_attribute(n$89:java.sql.PreparedStatement*) [line 142];
+_=*n$89:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 142];
+n$91=_fun_void PreparedStatement.close()(n$89:java.sql.PreparedStatement*) interface virtual [line 142];
+EXIT_SCOPE(_,n$88,n$89,n$91,n$92); [line 142];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node38.html"><span class='visited with_tooltip'>C_38<span class='tooltip'>node38 preds:37 36 succs:40 exn:3 Conditional method_body
+n$93=*&amp;this:com.stn.helpers.SecurityHelper* [line 143];
+n$94=*n$93.connection:java.sql.Connection*(root com.stn.helpers.SecurityHelper) [line 143];
+PRUNE(!(n$94 == null), true); [line 143];
+EXIT_SCOPE(n$93,n$94); [line 143];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node39.html"><span class='visited with_tooltip'>C_39<span class='tooltip'>node39 preds:37 36 succs:41 exn:3 Conditional method_body
+n$93=*&amp;this:com.stn.helpers.SecurityHelper* [line 143];
+n$94=*n$93.connection:java.sql.Connection*(root com.stn.helpers.SecurityHelper) [line 143];
+PRUNE((n$94 == null), false); [line 143];
+NULLIFY(&amp;this); [line 143];
+EXIT_SCOPE(n$93,n$94,this); [line 143];
+APPLY_ABSTRACTION; [line 143];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:38 succs:41 exn:3 Instructions
+n$95=*&amp;this:com.stn.helpers.SecurityHelper* [line 144];
+n$96=*n$95.connection:java.sql.Connection*(root com.stn.helpers.SecurityHelper) [line 144];
+n$99=_fun___set_mem_attribute(n$96:java.sql.Connection*) [line 144];
+_=*n$96:java.sql.Connection*(root java.sql.Connection) [line 144];
+n$98=_fun_void Connection.close()(n$96:java.sql.Connection*) interface virtual [line 144];
+NULLIFY(&amp;this); [line 144];
+EXIT_SCOPE(_,n$95,n$96,n$98,n$99,this); [line 144];
+APPLY_ABSTRACTION; [line 144];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:40 39 succs:2 exn:3 Instructions
+n$100=*&amp;$bcvar6:java.lang.Object* [line 145];
+*&amp;return:void=EXN n$100 [line 145];
+NULLIFY(&amp;$bcvar6); [line 145];
+EXIT_SCOPE(n$100,$bcvar6); [line 145];
+APPLY_ABSTRACTION; [line 145];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:33 32 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 146];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:44 succs:34 exn:3 Instructions
+APPLY_ABSTRACTION; [line 141];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds: succs:43 exn:3 Instructions
+n$101=*&amp;return:void [line 141];
+*&amp;return:void=null [line 141];
+n$102=_fun___unwrap_exception(n$101:void) [line 141];
+NULLIFY(&amp;$irvar3); [line 141];
+NULLIFY(&amp;$irvar5); [line 141];
+NULLIFY(&amp;$irvar4); [line 141];
+NULLIFY(&amp;$irvar7); [line 141];
+NULLIFY(&amp;affected); [line 141];
+NULLIFY(&amp;$irvar6); [line 141];
+NULLIFY(&amp;day); [line 141];
+NULLIFY(&amp;$irvar8); [line 141];
+NULLIFY(&amp;$irvar1); [line 141];
+NULLIFY(&amp;$irvar2); [line 141];
+NULLIFY(&amp;date); [line 141];
+EXIT_SCOPE(n$101,n$102,$irvar3,$irvar5,$irvar4,$irvar7,affected,$irvar6,day,$irvar8,$irvar1,$irvar2,date); [line 141];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node45.html"><span class='visited with_tooltip'>I_45<span class='tooltip'>node45 preds:46 succs:34 exn:3 Instructions
+APPLY_ABSTRACTION; [line 141];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.updateAttempts%28java.lang.String%29%3Avoid.44396997fd638404b8093ec56274a20d_node46.html"><span class='visited with_tooltip'>I_46<span class='tooltip'>node46 preds: succs:45 exn:3 Instructions
+n$101=*&amp;return:void [line 141];
+*&amp;return:void=null [line 141];
+n$102=_fun___unwrap_exception(n$101:void) [line 141];
+NULLIFY(&amp;$bcvar6); [line 141];
+EXIT_SCOPE(n$101,n$102,$bcvar6); [line 141];
+</span></span></a><br />@
+
+<span class='color_black'>void void SecurityHelper.updateAttempts(String)(com.stn.helpers.SecurityHelper* this, java.lang.String* ip)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { @val$0 -> { connection -> (Footprint({ @val$0.dbUser,
+                                                   @val$0.dbPort*,
+                                                   @val$0.dbPassword,
+                                                   @val$0.dbName*,
+                                                   @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        preparedStatement -> (Footprint({ @val$1*,
+                                                          @val$0.dbUser,
+                                                          @val$0.dbPort*,
+                                                          @val$0.dbPassword,
+                                                          @val$0.dbName*,
+                                                          @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~> ?, *),
+                        query -> { } } }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= void SecurityHelper.updateAttempts(String)
+; translation_unit= src/main/java/com/stn/helpers/SecurityHelper.java
+; access= Public
+; exceptions= [java.sql.SQLException;  java.lang.ClassNotFoundException]
+; formals= [(this,com.stn.helpers.SecurityHelper*);  (ip,java.lang.String*)]
+; is_defined= true
+; loc= src/main/java/com/stn/helpers/SecurityHelper.java:118
+; locals= [{ name= $bcvar6; typ= void; modify_in_block= false }; 
+           { name= CatchVar200; typ= void; modify_in_block= false }; 
+           { name= $irvar9; typ= void; modify_in_block= false }; 
+           { name= $irvar8; typ= void; modify_in_block= false }; 
+           { name= $irvar7; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= affected; typ= int; modify_in_block= false }; 
+           { name= date; typ= java.sql.Timestamp*; modify_in_block= false }; 
+           { name= day; typ= long; modify_in_block= false }]
+; ret_type= void 
+; proc_id= com.stn.helpers.SecurityHelper.updateAttempts(java.lang.String):void }</pre>
+</body>
+</html>

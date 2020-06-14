@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.utils.Tools.sendEmail(java.lang.String,java.lang.String,java.lang.String):void.0ebf2f033557629f9d37b4fa011948fd_node19</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../Tools.java.5ab60bbcd04a639debf9e0445b6c8166.html#LINE68">19</a></h1></center>PROC: <a href="./../com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd.html">void Tools.sendEmail(String,String,String)</a> LINE: <a href="./../../Tools.java.5ab60bbcd04a639debf9e0445b6c8166.html#LINE68">68</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node18.html"><span class='visited with_tooltip'>N_18<span class='tooltip'>node18 preds:17 succs:19 exn:3 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node20.html"><span class='visited with_tooltip'>N_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node3.html"><span class='visited with_tooltip'>N_3<span class='tooltip'>node3 preds: succs:2 exn:2 </span></span></a><br>
+<LISTING class='color_green'>n$44=*&amp;message:javax.mail.internet.MimeMessage* [line 68];
+_=*n$44:javax.mail.internet.MimeMessage*(root javax.mail.internet.MimeMessage) [line 68];
+n$46=*&amp;body:java.lang.String* [line 68];
+n$47=_fun_void MimeMessage.setContent(Object,String)(n$44:javax.mail.internet.MimeMessage*,n$46:java.lang.String*,"text/html; charset=utf-8":java.lang.Object*) virtual [line 68];
+</LISTING>
+<hr width="100%">
+<a name="session8" href="./../nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node19.html#session8">node19#session8</a>(<a href="./../../Tools.java.5ab60bbcd04a639debf9e0445b6c8166.html#LINE68">68</a>) [compute pre] liveness 19
+<LISTING class='color_black'>JOIN
+
+LEFT:   { message }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session9" href="./../nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node19.html#session9">node19#session9</a>(<a href="./../../Tools.java.5ab60bbcd04a639debf9e0445b6c8166.html#LINE68">68</a>) [exec] liveness 19
+<LISTING class='color_black'>PRE STATE:
+{ message }
+
+INSTR=  n$47=_fun_void MimeMessage.setContent(Object,String)(n$44:javax.mail.internet.MimeMessage*,n$46:java.lang.String*,&quot;text/html; charset=utf-8&quot;:java.lang.Object*) virtual [line 68]; 
+
+STATE:
+{ n$44, n$46, message }
+
+INSTR=  n$46=*&amp;body:java.lang.String* [line 68]; 
+
+STATE:
+{ n$44, body, message }
+
+INSTR=  _=*n$44:javax.mail.internet.MimeMessage*(root javax.mail.internet.MimeMessage) [line 68]; 
+
+STATE UNCHANGED
+
+INSTR=  n$44=*&amp;message:javax.mail.internet.MimeMessage* [line 68]; 
+
+STATE:
+{ body, message }
+
+</LISTING>
+<hr width="100%">
+<a name="session73" href="./../nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node19.html#session73">node19#session73</a>(<a href="./../../Tools.java.5ab60bbcd04a639debf9e0445b6c8166.html#LINE68">68</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session74" href="./../nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node19.html#session74">node19#session74</a>(<a href="./../../Tools.java.5ab60bbcd04a639debf9e0445b6c8166.html#LINE68">68</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ message },{ _, n$40, n$42, n$43, subject })
+
+INSTR=  n$44=*&amp;message:javax.mail.internet.MimeMessage* [line 68]; 
+
+STATE:
+({ n$44, message },{ _, n$40, n$42, n$43, subject })
+
+INSTR=  _=*n$44:javax.mail.internet.MimeMessage*(root javax.mail.internet.MimeMessage) [line 68]; 
+
+STATE:
+({ _, n$44, message },{ _, n$40, n$42, n$43, subject })
+
+INSTR=  n$46=*&amp;body:java.lang.String* [line 68]; 
+
+STATE:
+({ _, n$44, n$46, message },{ _, n$40, n$42, n$43, subject })
+
+INSTR=  n$47=_fun_void MimeMessage.setContent(Object,String)(n$44:javax.mail.internet.MimeMessage*,n$46:java.lang.String*,&quot;text/html; charset=utf-8&quot;:java.lang.Object*) virtual [line 68]; 
+
+STATE:
+({ message },{ _, n$44, n$46, n$47, body })
+
+</LISTING>
+<hr width="100%">
+<a name="session32" href="./../nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node19.html#session32">node19#session32</a>(<a href="./../../Tools.java.5ab60bbcd04a639debf9e0445b6c8166.html#LINE68">68</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session33" href="./../nodes/com.stn.utils.Tools.sendEmail%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Avoid.0ebf2f033557629f9d37b4fa011948fd_node19.html#session33">node19#session33</a>(<a href="./../../Tools.java.5ab60bbcd04a639debf9e0445b6c8166.html#LINE68">68</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$17 -&gt; { this$0 -&gt; Footprint({ @val$0 }) ~&gt; ? },
+  n$34 -&gt; (Footprint({ @val$1* }) ~&gt; ?, *),
+  message -&gt; (Footprint({ @val$2*, @val$1* }) ~&gt; ?, *),
+  props -&gt; { },
+  session -&gt; { } }
+
+
+
+
+TAINTED_CALL1: (callee="void MimeMessage.setContent(Object,String)", caller="void Tools.sendEmail(String,String,String)")
+INSTR=  n$47 := void MimeMessage.setContent(Object,String)({ message,
+                                                             body,
+                                                             &quot;text/html; charset=utf-8&quot; }) [line 68]; 
+
+STATE:
+{ n$17 -&gt; { this$0 -&gt; Footprint({ @val$0 }) ~&gt; ? },
+  n$34 -&gt; (Footprint({ @val$1* }) ~&gt; ?, *),
+  message -&gt; (Footprint({ @val$3*, @val$2*, @val$1* }) ~&gt; ?, *),
+  props -&gt; { },
+  session -&gt; { } }
+
+INSTR=  NULLIFY(&amp;body); [line 68]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(n$47,body); [line 68]; 
+
+STATE:
+{ n$17 -&gt; { this$0 -&gt; Footprint({ @val$0 }) ~&gt; ? },
+  n$34 -&gt; (Footprint({ @val$1* }) ~&gt; ?, *),
+  message -&gt; (Footprint({ @val$3*, @val$2*, @val$1* }) ~&gt; ?, *),
+  props -&gt; { },
+  session -&gt; { } }
+
+</LISTING>

@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Category.setTotalTopics(int):void.b6b38530394b0d17e9b50ae2fe14ddc0_1" [label="1: Start void Category.setTotalTopics(int)\nFormals:  this:com.stn.pojo.Category* totalTopics:int\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Category.setTotalTopics(int):void.b6b38530394b0d17e9b50ae2fe14ddc0_1" -> "com.stn.pojo.Category.setTotalTopics(int):void.b6b38530394b0d17e9b50ae2fe14ddc0_4" ;
+"com.stn.pojo.Category.setTotalTopics(int):void.b6b38530394b0d17e9b50ae2fe14ddc0_2" [label="2: Exit void Category.setTotalTopics(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Category.setTotalTopics(int):void.b6b38530394b0d17e9b50ae2fe14ddc0_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 87]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.setTotalTopics(int):void.b6b38530394b0d17e9b50ae2fe14ddc0_3" -> "com.stn.pojo.Category.setTotalTopics(int):void.b6b38530394b0d17e9b50ae2fe14ddc0_2" ;
+"com.stn.pojo.Category.setTotalTopics(int):void.b6b38530394b0d17e9b50ae2fe14ddc0_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Category* [line 86]\n  n$1=*&totalTopics:int [line 86]\n  *n$0.totalTopics:com.stn.pojo.Category(root com.stn.pojo.Category)=n$1 [line 86]\n  NULLIFY(&totalTopics); [line 86]\n  NULLIFY(&this); [line 86]\n  EXIT_SCOPE(n$0,n$1,totalTopics,this); [line 86]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.setTotalTopics(int):void.b6b38530394b0d17e9b50ae2fe14ddc0_4" -> "com.stn.pojo.Category.setTotalTopics(int):void.b6b38530394b0d17e9b50ae2fe14ddc0_5" ;
+	 "com.stn.pojo.Category.setTotalTopics(int):void.b6b38530394b0d17e9b50ae2fe14ddc0_4" -> "com.stn.pojo.Category.setTotalTopics(int):void.b6b38530394b0d17e9b50ae2fe14ddc0_3" [color="red" ];
+"com.stn.pojo.Category.setTotalTopics(int):void.b6b38530394b0d17e9b50ae2fe14ddc0_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 87]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.setTotalTopics(int):void.b6b38530394b0d17e9b50ae2fe14ddc0_5" -> "com.stn.pojo.Category.setTotalTopics(int):void.b6b38530394b0d17e9b50ae2fe14ddc0_2" ;
+	 "com.stn.pojo.Category.setTotalTopics(int):void.b6b38530394b0d17e9b50ae2fe14ddc0_5" -> "com.stn.pojo.Category.setTotalTopics(int):void.b6b38530394b0d17e9b50ae2fe14ddc0_3" [color="red" ];
+}

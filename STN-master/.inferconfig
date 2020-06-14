@@ -1,0 +1,20 @@
+{
+  "quandary-sources": [
+    {
+      "procedure": "java.sql.PreparedStatement.executeQuery",
+      "kind": "Other"
+    }
+  ],
+  "quandary-sanitizers": [
+    {
+      "procedure": "org.owasp.encoder.Encode.forHtml"
+    }
+  ],
+  "quandary-sinks": [
+    {
+      "procedure": "javax.servlet.http.HttpSession.setAttribute",
+      "kind": "Other"
+    }
+  ]
+}
+

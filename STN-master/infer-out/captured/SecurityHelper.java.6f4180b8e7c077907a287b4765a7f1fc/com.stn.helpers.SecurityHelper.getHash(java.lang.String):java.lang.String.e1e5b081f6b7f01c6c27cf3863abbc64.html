@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.SecurityHelper.getHash(java.lang.String):java.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../SecurityHelper.java.6f4180b8e7c077907a287b4765a7f1fc.html#LINE30">String SecurityHelper.getHash(String)</a></h1></center>
+<a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:24 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:26 succs:2 exn:2 Instructions
+NULLIFY(&amp;CatchVar101); [line 46];
+NULLIFY(&amp;generatedHash); [line 46];
+NULLIFY(&amp;e); [line 46];
+EXIT_SCOPE(n$44,CatchVar101,generatedHash,e); [line 46];
+APPLY_ABSTRACTION; [line 46];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;generatedHash:java.lang.Object*=null [line 31];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:27 Instructions
+n$0=_fun_MessageDigest MessageDigest.getInstance(String)("SHA-1":java.lang.Object*) [line 33];
+*&amp;md:java.security.MessageDigest*=n$0 [line 33];
+EXIT_SCOPE(n$0); [line 33];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:27 Instructions
+n$1=*&amp;md:java.security.MessageDigest* [line 34];
+_=*n$1:java.security.MessageDigest*(root java.security.MessageDigest) [line 34];
+n$3=*&amp;this:com.stn.helpers.SecurityHelper* [line 34];
+n$4=*n$3.salt:signed char[_*_](*)(root com.stn.helpers.SecurityHelper) [line 34];
+n$5=_fun_void MessageDigest.update(byte[])(n$1:java.security.MessageDigest*,n$4:signed char[_*_](*)) virtual [line 34];
+NULLIFY(&amp;this); [line 34];
+EXIT_SCOPE(_,n$1,n$3,n$4,n$5,this); [line 34];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:27 Instructions
+n$6=*&amp;passwordToHash:java.lang.String* [line 35];
+_=*n$6:java.lang.String*(root java.lang.String) [line 35];
+n$8=_fun_byte[] String.getBytes()(n$6:java.lang.String*) virtual [line 35];
+*&amp;$irvar0:signed char[_*_](*)=n$8 [line 35];
+NULLIFY(&amp;passwordToHash); [line 35];
+EXIT_SCOPE(_,n$6,n$8,passwordToHash); [line 35];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:27 Instructions
+n$9=*&amp;md:java.security.MessageDigest* [line 35];
+_=*n$9:java.security.MessageDigest*(root java.security.MessageDigest) [line 35];
+n$11=*&amp;$irvar0:signed char[_*_](*) [line 35];
+n$12=_fun_byte[] MessageDigest.digest(byte[])(n$9:java.security.MessageDigest*,n$11:signed char[_*_](*)) virtual [line 35];
+*&amp;bytes:signed char[_*_](*)=n$12 [line 35];
+NULLIFY(&amp;md); [line 35];
+NULLIFY(&amp;$irvar0); [line 35];
+EXIT_SCOPE(_,n$9,n$11,n$12,md,$irvar0); [line 35];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:27 Instructions
+n$13=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 36];
+n$14=_fun_StringBuilder.&lt;init&gt;()(n$13:java.lang.StringBuilder*) [line 36];
+*&amp;sb:java.lang.StringBuilder*=n$13 [line 36];
+EXIT_SCOPE(n$13,n$14); [line 36];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:27 Instructions
+n$15=*&amp;bytes:signed char[_*_](*) [line 37];
+*&amp;$bcvar6:signed char[_*_](*)=n$15 [line 37];
+NULLIFY(&amp;bytes); [line 37];
+EXIT_SCOPE(n$15,bytes); [line 37];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:27 Instructions
+n$16=*&amp;$bcvar6:signed char[_*_](*) [line 37];
+_=*n$16:int(root signed char[_*_]) [line 37];
+n$18=_fun___get_array_length(n$16:signed char[_*_](*)) [line 37];
+*&amp;$bcvar7:int=n$18 [line 37];
+EXIT_SCOPE(_,n$16,n$18); [line 37];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:15 exn:27 Instructions
+*&amp;$bcvar8:int=0 [line 37];
+APPLY_ABSTRACTION; [line 37];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node13.html"><span class='visited with_tooltip'>C_13<span class='tooltip'>node13 preds:15 succs:16 exn:27 Conditional method_body
+n$19=*&amp;$bcvar8:int [line 37];
+n$20=*&amp;$bcvar7:int [line 37];
+PRUNE(!(n$19  &gt;=  n$20), true); [line 37];
+EXIT_SCOPE(n$19,n$20); [line 37];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node14.html"><span class='visited with_tooltip'>C_14<span class='tooltip'>node14 preds:15 succs:21 exn:27 Conditional method_body
+n$19=*&amp;$bcvar8:int [line 37];
+n$20=*&amp;$bcvar7:int [line 37];
+PRUNE((n$19  &gt;=  n$20), false); [line 37];
+NULLIFY(&amp;$bcvar6); [line 37];
+NULLIFY(&amp;$bcvar7); [line 37];
+NULLIFY(&amp;$bcvar8); [line 37];
+EXIT_SCOPE(n$19,n$20,$bcvar6,$bcvar7,$bcvar8); [line 37];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node15.html"><span class='visited with_tooltip'>J_15<span class='tooltip'>node15 preds:20 12 succs:13 14 exn: Join
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:13 succs:17 exn:27 Instructions
+n$21=*&amp;$bcvar6:signed char[_*_](*) [line 37];
+_=*n$21:signed char(root signed char[_*_]) [line 37];
+n$22=*&amp;$bcvar8:int [line 37];
+n$24=*n$21[n$22]:signed char [line 37];
+*&amp;aByte:signed char=n$24 [line 37];
+EXIT_SCOPE(_,n$21,n$22,n$24); [line 37];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:27 Instructions
+n$25=*&amp;aByte:signed char [line 38];
+n$26=_fun_String Integer.toString(int,int)(((n$25 & 255) + 256):int,16:int) [line 38];
+*&amp;$irvar1:java.lang.String*=n$26 [line 38];
+NULLIFY(&amp;aByte); [line 38];
+EXIT_SCOPE(n$25,n$26,aByte); [line 38];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:27 Instructions
+n$27=*&amp;$irvar1:java.lang.String* [line 38];
+_=*n$27:java.lang.String*(root java.lang.String) [line 38];
+n$29=_fun_String String.substring(int)(n$27:java.lang.String*,1:int) virtual [line 38];
+*&amp;$irvar2:java.lang.String*=n$29 [line 38];
+NULLIFY(&amp;$irvar1); [line 38];
+EXIT_SCOPE(_,n$27,n$29,$irvar1); [line 38];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:27 Instructions
+n$30=*&amp;sb:java.lang.StringBuilder* [line 38];
+_=*n$30:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 38];
+n$32=*&amp;$irvar2:java.lang.String* [line 38];
+n$33=_fun_StringBuilder StringBuilder.append(String)(n$30:java.lang.StringBuilder*,n$32:java.lang.String*) virtual [line 38];
+*&amp;$irvar3:java.lang.StringBuilder*=n$33 [line 38];
+NULLIFY(&amp;$irvar3); [line 38];
+NULLIFY(&amp;$irvar2); [line 38];
+EXIT_SCOPE(_,n$30,n$32,n$33,$irvar3,$irvar2); [line 38];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:15 exn:27 Instructions
+n$34=*&amp;$bcvar8:int [line 37];
+*&amp;$bcvar8:int=(n$34 + 1) [line 37];
+EXIT_SCOPE(n$34); [line 37];
+APPLY_ABSTRACTION; [line 37];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:14 succs:24 exn:27 Instructions
+n$35=*&amp;sb:java.lang.StringBuilder* [line 40];
+_=*n$35:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 40];
+n$37=_fun_String StringBuilder.toString()(n$35:java.lang.StringBuilder*) virtual [line 40];
+*&amp;generatedHash:java.lang.String*=n$37 [line 40];
+NULLIFY(&amp;sb); [line 40];
+EXIT_SCOPE(_,n$35,n$37,sb); [line 40];
+APPLY_ABSTRACTION; [line 40];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:25 succs:23 exn:3 Instructions
+n$38=*&amp;CatchVar101:java.lang.Object* [line 42];
+*&amp;e:java.lang.Object*=n$38 [line 42];
+NULLIFY(&amp;CatchVar101); [line 42];
+EXIT_SCOPE(n$38,CatchVar101); [line 42];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:3 Instructions
+n$39=*&amp;e:java.lang.Object* [line 44];
+_=*n$39:java.lang.Object*(root java.lang.Object) [line 44];
+n$41=_fun_void Throwable.printStackTrace()(n$39:java.lang.Object*) virtual [line 44];
+NULLIFY(&amp;e); [line 44];
+EXIT_SCOPE(_,n$39,n$41,e); [line 44];
+APPLY_ABSTRACTION; [line 44];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 21 succs:2 exn:3 Instructions
+n$42=*&amp;generatedHash:java.lang.String* [line 46];
+*&amp;return:java.lang.String*=n$42 [line 46];
+NULLIFY(&amp;generatedHash); [line 46];
+EXIT_SCOPE(n$42,generatedHash); [line 46];
+APPLY_ABSTRACTION; [line 46];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node25.html"><span class='visited with_tooltip'>C_25<span class='tooltip'>node25 preds:27 succs:22 exn:3 Conditional exception handler
+n$45=_fun___instanceof(n$44:java.security.NoSuchAlgorithmException*,sizeof(t=java.security.NoSuchAlgorithmException):void) [line 42];
+PRUNE(n$45, true); [line 42];
+*&amp;CatchVar101:java.lang.String*=n$44 [line 42];
+EXIT_SCOPE(n$44,n$45); [line 42];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node26.html"><span class='visited with_tooltip'>C_26<span class='tooltip'>node26 preds:27 succs:3 exn:3 Conditional exception handler
+n$45=_fun___instanceof(n$44:java.security.NoSuchAlgorithmException*,sizeof(t=java.security.NoSuchAlgorithmException):void) [line 42];
+PRUNE(!n$45, false); [line 42];
+*&amp;return:java.lang.String*=EXN n$44 [line 42];
+NULLIFY(&amp;generatedHash); [line 42];
+EXIT_SCOPE(n$44,n$45,generatedHash); [line 42];
+</span></span></a> <a href="./nodes/com.stn.helpers.SecurityHelper.getHash%28java.lang.String%29%3Ajava.lang.String.e1e5b081f6b7f01c6c27cf3863abbc64_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds: succs:25 26 exn:3 Instructions
+n$43=*&amp;return:java.lang.String* [line 42];
+*&amp;return:java.lang.String*=null [line 42];
+n$44=_fun___unwrap_exception(n$43:java.lang.String*) [line 42];
+NULLIFY(&amp;$bcvar6); [line 42];
+NULLIFY(&amp;sb); [line 42];
+NULLIFY(&amp;aByte); [line 42];
+NULLIFY(&amp;$bcvar7); [line 42];
+NULLIFY(&amp;md); [line 42];
+NULLIFY(&amp;bytes); [line 42];
+NULLIFY(&amp;$irvar0); [line 42];
+NULLIFY(&amp;$irvar1); [line 42];
+NULLIFY(&amp;$irvar2); [line 42];
+NULLIFY(&amp;$bcvar8); [line 42];
+EXIT_SCOPE(n$43,$bcvar6,sb,aByte,$bcvar7,md,bytes,$irvar0,$irvar1,$irvar2,$bcvar8); [line 42];
+</span></span></a><br />@
+
+<span class='color_black'>java.lang.String* String SecurityHelper.getHash(String)(com.stn.helpers.SecurityHelper* this, java.lang.String* passwordToHash)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { return -> (Footprint({ @val$1* }) ~> ?, *) }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= String SecurityHelper.getHash(String)
+; translation_unit= src/main/java/com/stn/helpers/SecurityHelper.java
+; access= Public
+; formals= [(this,com.stn.helpers.SecurityHelper*);  (passwordToHash,
+            java.lang.String*)]
+; is_defined= true
+; loc= src/main/java/com/stn/helpers/SecurityHelper.java:30
+; locals= [{ name= CatchVar101; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $bcvar8; typ= void; modify_in_block= false }; 
+           { name= $bcvar7; typ= void; modify_in_block= false }; 
+           { name= $bcvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= generatedHash; typ= java.lang.String*; modify_in_block= false }; 
+           { name= e; typ= java.security.NoSuchAlgorithmException*; modify_in_block= false }; 
+           { name= sb; typ= java.lang.StringBuilder*; modify_in_block= false }; 
+           { name= bytes; typ= signed char[_*_](*); modify_in_block= false }; 
+           { name= md; typ= java.security.MessageDigest*; modify_in_block= false }; 
+           { name= aByte; typ= signed char; modify_in_block= false }]
+; ret_type= java.lang.String* 
+; proc_id= com.stn.helpers.SecurityHelper.getHash(java.lang.String):java.lang.String }</pre>
+</body>
+</html>

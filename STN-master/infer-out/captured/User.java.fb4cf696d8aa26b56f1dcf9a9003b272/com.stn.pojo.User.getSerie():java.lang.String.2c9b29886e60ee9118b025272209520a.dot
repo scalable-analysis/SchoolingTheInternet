@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.User.getSerie():java.lang.String.2c9b29886e60ee9118b025272209520a_1" [label="1: Start String User.getSerie()\nFormals:  this:com.stn.pojo.User*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.User.getSerie():java.lang.String.2c9b29886e60ee9118b025272209520a_1" -> "com.stn.pojo.User.getSerie():java.lang.String.2c9b29886e60ee9118b025272209520a_4" ;
+"com.stn.pojo.User.getSerie():java.lang.String.2c9b29886e60ee9118b025272209520a_2" [label="2: Exit String User.getSerie() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.User.getSerie():java.lang.String.2c9b29886e60ee9118b025272209520a_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 173]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.getSerie():java.lang.String.2c9b29886e60ee9118b025272209520a_3" -> "com.stn.pojo.User.getSerie():java.lang.String.2c9b29886e60ee9118b025272209520a_2" ;
+"com.stn.pojo.User.getSerie():java.lang.String.2c9b29886e60ee9118b025272209520a_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.User* [line 173]\n  n$1=*n$0.serie:java.lang.String*(root com.stn.pojo.User) [line 173]\n  *&return:java.lang.String*=n$1 [line 173]\n  NULLIFY(&this); [line 173]\n  EXIT_SCOPE(n$0,n$1,this); [line 173]\n  APPLY_ABSTRACTION; [line 173]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.getSerie():java.lang.String.2c9b29886e60ee9118b025272209520a_4" -> "com.stn.pojo.User.getSerie():java.lang.String.2c9b29886e60ee9118b025272209520a_2" ;
+	 "com.stn.pojo.User.getSerie():java.lang.String.2c9b29886e60ee9118b025272209520a_4" -> "com.stn.pojo.User.getSerie():java.lang.String.2c9b29886e60ee9118b025272209520a_3" [color="red" ];
+}

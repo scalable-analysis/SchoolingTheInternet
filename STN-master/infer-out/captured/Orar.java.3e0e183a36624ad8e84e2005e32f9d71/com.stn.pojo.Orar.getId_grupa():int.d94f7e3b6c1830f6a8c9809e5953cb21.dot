@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Orar.getId_grupa():int.d94f7e3b6c1830f6a8c9809e5953cb21_1" [label="1: Start int Orar.getId_grupa()\nFormals:  this:com.stn.pojo.Orar*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Orar.getId_grupa():int.d94f7e3b6c1830f6a8c9809e5953cb21_1" -> "com.stn.pojo.Orar.getId_grupa():int.d94f7e3b6c1830f6a8c9809e5953cb21_4" ;
+"com.stn.pojo.Orar.getId_grupa():int.d94f7e3b6c1830f6a8c9809e5953cb21_2" [label="2: Exit int Orar.getId_grupa() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Orar.getId_grupa():int.d94f7e3b6c1830f6a8c9809e5953cb21_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 49]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Orar.getId_grupa():int.d94f7e3b6c1830f6a8c9809e5953cb21_3" -> "com.stn.pojo.Orar.getId_grupa():int.d94f7e3b6c1830f6a8c9809e5953cb21_2" ;
+"com.stn.pojo.Orar.getId_grupa():int.d94f7e3b6c1830f6a8c9809e5953cb21_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Orar* [line 49]\n  n$1=*n$0.id_grupa:int(root com.stn.pojo.Orar) [line 49]\n  *&return:int=n$1 [line 49]\n  NULLIFY(&this); [line 49]\n  EXIT_SCOPE(n$0,n$1,this); [line 49]\n  APPLY_ABSTRACTION; [line 49]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Orar.getId_grupa():int.d94f7e3b6c1830f6a8c9809e5953cb21_4" -> "com.stn.pojo.Orar.getId_grupa():int.d94f7e3b6c1830f6a8c9809e5953cb21_2" ;
+	 "com.stn.pojo.Orar.getId_grupa():int.d94f7e3b6c1830f6a8c9809e5953cb21_4" -> "com.stn.pojo.Orar.getId_grupa():int.d94f7e3b6c1830f6a8c9809e5953cb21_3" [color="red" ];
+}

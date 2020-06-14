@@ -1,0 +1,421 @@
+/* @generated */
+digraph cfg {
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_1" [label="1: Start List CategoryHelper.getCategories(int)\nFormals:  this:com.stn.helpers.CategoryHelper* idFacultate:int\nLocals:  $bcvar4:void CatchVar339:void CatchVar283:void $irvar16:void $irvar15:void $irvar14:void $irvar13:void $irvar12:void $irvar11:void $irvar10:void $irvar9:void $irvar8:void $irvar7:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void category1:java.util.List* e:java.lang.Exception* category:com.stn.pojo.Category* \n  " color=yellow style=filled]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_1" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_4" ;
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_2" [label="2: Exit List CategoryHelper.getCategories(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [label="3:  exceptions sink \n   NULLIFY(&$bcvar4); [line 73]\n  NULLIFY(&CatchVar283); [line 73]\n  NULLIFY(&category1); [line 73]\n  EXIT_SCOPE(n$188,$bcvar4,CatchVar283,category1); [line 73]\n  APPLY_ABSTRACTION; [line 73]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_2" ;
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_4" [label="4:  Call ArrayList.<init>() \n   n$0=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 37]\n  n$1=_fun_ArrayList.<init>()(n$0:java.util.ArrayList*) [line 37]\n  *&category1:java.util.ArrayList*=n$0 [line 37]\n  EXIT_SCOPE(n$0,n$1); [line 37]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_4" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_5" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_4" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_5" [label="5:  method_body \n   n$2=*&this:com.stn.helpers.CategoryHelper* [line 39]\n  *n$2.query:com.stn.helpers.CategoryHelper(root com.stn.helpers.CategoryHelper)=\"SELECT IdCat, categorie, pinned, descriere, idFacultate, idSerie, idGrupa, (SELECT COUNT(*) FROM topics WHERE GroupId = IdCat),(SELECT COUNT(*) FROM comments WHERE IdPost IN (SELECT TopicId FROM topics WHERE GroupId = IdCat)) FROM categories WHERE idFacultate = ?\" [line 39]\n  EXIT_SCOPE(n$2); [line 39]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_5" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_6" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_5" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_6" [label="6:  Call Class Class.forName(String) \n   n$3=_fun_Class Class.forName(String)(\"com.mysql.jdbc.Driver\":java.lang.Object*) [line 45]\n  *&$irvar0:java.lang.Class*=n$3 [line 45]\n  NULLIFY(&$irvar0); [line 45]\n  EXIT_SCOPE(n$3,$irvar0); [line 45]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_6" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_7" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_6" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_7" [label="7:  Call String DBConnection.getHost() \n   n$4=*&this:com.stn.helpers.CategoryHelper* [line 46]\n  _=*n$4:com.stn.helpers.CategoryHelper*(root com.stn.helpers.CategoryHelper) [line 46]\n  n$6=_fun_String DBConnection.getHost()(n$4:com.stn.helpers.CategoryHelper*) virtual [line 46]\n  *&$irvar1:java.lang.String*=n$6 [line 46]\n  EXIT_SCOPE(_,n$4,n$6); [line 46]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_7" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_8" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_7" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_8" [label="8:  Call String DBConnection.getUser() \n   n$7=*&this:com.stn.helpers.CategoryHelper* [line 46]\n  _=*n$7:com.stn.helpers.CategoryHelper*(root com.stn.helpers.CategoryHelper) [line 46]\n  n$9=_fun_String DBConnection.getUser()(n$7:com.stn.helpers.CategoryHelper*) virtual [line 46]\n  *&$irvar2:java.lang.String*=n$9 [line 46]\n  EXIT_SCOPE(_,n$7,n$9); [line 46]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_8" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_9" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_8" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_9" [label="9:  Call String DBConnection.getPassword() \n   n$10=*&this:com.stn.helpers.CategoryHelper* [line 46]\n  _=*n$10:com.stn.helpers.CategoryHelper*(root com.stn.helpers.CategoryHelper) [line 46]\n  n$12=_fun_String DBConnection.getPassword()(n$10:com.stn.helpers.CategoryHelper*) virtual [line 46]\n  *&$irvar3:java.lang.String*=n$12 [line 46]\n  EXIT_SCOPE(_,n$10,n$12); [line 46]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_9" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_10" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_9" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_10" [label="10:  Call Connection DriverManager.getConnection(String,String,String) \n   n$13=*&$irvar1:java.lang.String* [line 46]\n  n$14=*&$irvar2:java.lang.String* [line 46]\n  n$15=*&$irvar3:java.lang.String* [line 46]\n  n$16=_fun_Connection DriverManager.getConnection(String,String,String)(n$13:java.lang.String*,n$14:java.lang.String*,n$15:java.lang.String*) [line 46]\n  *&$irvar4:java.sql.Connection*=n$16 [line 46]\n  NULLIFY(&$irvar3); [line 46]\n  NULLIFY(&$irvar1); [line 46]\n  NULLIFY(&$irvar2); [line 46]\n  EXIT_SCOPE(n$13,n$14,n$15,n$16,$irvar3,$irvar1,$irvar2); [line 46]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_10" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_11" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_10" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_11" [label="11:  method_body \n   n$17=*&this:com.stn.helpers.CategoryHelper* [line 46]\n  n$18=*&$irvar4:java.sql.Connection* [line 46]\n  *n$17.connection:com.stn.helpers.CategoryHelper(root com.stn.helpers.CategoryHelper)=n$18 [line 46]\n  NULLIFY(&$irvar4); [line 46]\n  EXIT_SCOPE(n$17,n$18,$irvar4); [line 46]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_11" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_12" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_11" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_12" [label="12:  Call PreparedStatement Connection.prepareStatement(String) \n   n$19=*&this:com.stn.helpers.CategoryHelper* [line 47]\n  n$20=*n$19.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 47]\n  _=*n$20:java.sql.Connection*(root java.sql.Connection) [line 47]\n  n$22=*&this:com.stn.helpers.CategoryHelper* [line 47]\n  n$23=*n$22.query:java.lang.String*(root com.stn.helpers.CategoryHelper) [line 47]\n  n$24=_fun_PreparedStatement Connection.prepareStatement(String)(n$20:java.sql.Connection*,n$23:java.lang.String*) interface virtual [line 47]\n  *&$irvar5:java.sql.PreparedStatement*=n$24 [line 47]\n  EXIT_SCOPE(_,n$19,n$20,n$22,n$23,n$24); [line 47]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_12" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_13" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_12" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_13" [label="13:  method_body \n   n$25=*&this:com.stn.helpers.CategoryHelper* [line 47]\n  n$26=*&$irvar5:java.sql.PreparedStatement* [line 47]\n  *n$25.preparedStatement:com.stn.helpers.CategoryHelper(root com.stn.helpers.CategoryHelper)=n$26 [line 47]\n  NULLIFY(&$irvar5); [line 47]\n  EXIT_SCOPE(n$25,n$26,$irvar5); [line 47]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_13" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_14" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_13" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_14" [label="14:  Call void PreparedStatement.setInt(int,int) \n   n$27=*&this:com.stn.helpers.CategoryHelper* [line 48]\n  n$28=*n$27.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 48]\n  _=*n$28:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 48]\n  n$30=*&idFacultate:int [line 48]\n  n$31=_fun_void PreparedStatement.setInt(int,int)(n$28:java.sql.PreparedStatement*,1:int,n$30:int) interface virtual [line 48]\n  EXIT_SCOPE(_,n$27,n$28,n$30,n$31); [line 48]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_14" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_15" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_14" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_15" [label="15:  Call ResultSet PreparedStatement.executeQuery() \n   n$32=*&this:com.stn.helpers.CategoryHelper* [line 49]\n  n$33=*n$32.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 49]\n  _=*n$33:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 49]\n  n$35=_fun_ResultSet PreparedStatement.executeQuery()(n$33:java.sql.PreparedStatement*) interface virtual [line 49]\n  *&$irvar6:java.sql.ResultSet*=n$35 [line 49]\n  EXIT_SCOPE(_,n$32,n$33,n$35); [line 49]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_15" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_16" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_15" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_16" [label="16:  method_body \n   n$36=*&this:com.stn.helpers.CategoryHelper* [line 49]\n  n$37=*&$irvar6:java.sql.ResultSet* [line 49]\n  *n$36.resultSet:com.stn.helpers.CategoryHelper(root com.stn.helpers.CategoryHelper)=n$37 [line 49]\n  NULLIFY(&$irvar6); [line 49]\n  EXIT_SCOPE(n$36,n$37,$irvar6); [line 49]\n  APPLY_ABSTRACTION; [line 49]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_16" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_17" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_16" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_17" [label="17:  Call boolean ResultSet.next() \n   n$38=*&this:com.stn.helpers.CategoryHelper* [line 50]\n  n$39=*n$38.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 50]\n  _=*n$39:java.sql.ResultSet*(root java.sql.ResultSet) [line 50]\n  n$41=_fun_boolean ResultSet.next()(n$39:java.sql.ResultSet*) interface virtual [line 50]\n  *&$irvar7:_Bool=n$41 [line 50]\n  EXIT_SCOPE(_,n$38,n$39,n$41); [line 50]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_17" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_20" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_17" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_18" [label="18: Prune (true branch, if) \n   n$42=*&$irvar7:_Bool [line 50]\n  PRUNE(!(n$42 == 0), true); [line 50]\n  NULLIFY(&$irvar7); [line 50]\n  EXIT_SCOPE(n$42,$irvar7); [line 50]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_18" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_21" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_18" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_19" [label="19: Prune (false branch, if) \n   n$42=*&$irvar7:_Bool [line 50]\n  PRUNE((n$42 == 0), false); [line 50]\n  NULLIFY(&$irvar7); [line 50]\n  EXIT_SCOPE(n$42,$irvar7); [line 50]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_19" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_40" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_19" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_41" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_19" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_20" [label="20: + \n  " ]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_20" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_18" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_20" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_19" ;
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_21" [label="21:  Call Category.<init>() \n   n$43=_fun___new(sizeof(t=com.stn.pojo.Category):com.stn.pojo.Category*) [line 51]\n  n$44=_fun_Category.<init>()(n$43:com.stn.pojo.Category*) [line 51]\n  *&category:com.stn.pojo.Category*=n$43 [line 51]\n  EXIT_SCOPE(n$43,n$44); [line 51]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_21" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_22" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_21" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_22" [label="22:  Call int ResultSet.getInt(int) \n   n$45=*&this:com.stn.helpers.CategoryHelper* [line 52]\n  n$46=*n$45.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 52]\n  _=*n$46:java.sql.ResultSet*(root java.sql.ResultSet) [line 52]\n  n$48=_fun_int ResultSet.getInt(int)(n$46:java.sql.ResultSet*,1:int) interface virtual [line 52]\n  *&$irvar8:int=n$48 [line 52]\n  EXIT_SCOPE(_,n$45,n$46,n$48); [line 52]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_22" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_23" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_22" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_23" [label="23:  Call void Category.setId(int) \n   n$49=*&category:com.stn.pojo.Category* [line 52]\n  _=*n$49:com.stn.pojo.Category*(root com.stn.pojo.Category) [line 52]\n  n$51=*&$irvar8:int [line 52]\n  n$52=_fun_void Category.setId(int)(n$49:com.stn.pojo.Category*,n$51:int) virtual [line 52]\n  NULLIFY(&$irvar8); [line 52]\n  EXIT_SCOPE(_,n$49,n$51,n$52,$irvar8); [line 52]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_23" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_24" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_23" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_24" [label="24:  Call String ResultSet.getString(int) \n   n$53=*&this:com.stn.helpers.CategoryHelper* [line 53]\n  n$54=*n$53.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 53]\n  _=*n$54:java.sql.ResultSet*(root java.sql.ResultSet) [line 53]\n  n$56=_fun_String ResultSet.getString(int)(n$54:java.sql.ResultSet*,2:int) interface virtual [line 53]\n  *&$irvar9:java.lang.String*=n$56 [line 53]\n  EXIT_SCOPE(_,n$53,n$54,n$56); [line 53]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_24" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_25" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_24" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_25" [label="25:  Call void Category.setCategorie(String) \n   n$57=*&category:com.stn.pojo.Category* [line 53]\n  _=*n$57:com.stn.pojo.Category*(root com.stn.pojo.Category) [line 53]\n  n$59=*&$irvar9:java.lang.String* [line 53]\n  n$60=_fun_void Category.setCategorie(String)(n$57:com.stn.pojo.Category*,n$59:java.lang.String*) virtual [line 53]\n  NULLIFY(&$irvar9); [line 53]\n  EXIT_SCOPE(_,n$57,n$59,n$60,$irvar9); [line 53]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_25" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_26" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_25" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_26" [label="26:  Call int ResultSet.getInt(int) \n   n$61=*&this:com.stn.helpers.CategoryHelper* [line 54]\n  n$62=*n$61.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 54]\n  _=*n$62:java.sql.ResultSet*(root java.sql.ResultSet) [line 54]\n  n$64=_fun_int ResultSet.getInt(int)(n$62:java.sql.ResultSet*,3:int) interface virtual [line 54]\n  *&$irvar10:int=n$64 [line 54]\n  EXIT_SCOPE(_,n$61,n$62,n$64); [line 54]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_26" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_27" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_26" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_27" [label="27:  Call void Category.setPinned(int) \n   n$65=*&category:com.stn.pojo.Category* [line 54]\n  _=*n$65:com.stn.pojo.Category*(root com.stn.pojo.Category) [line 54]\n  n$67=*&$irvar10:int [line 54]\n  n$68=_fun_void Category.setPinned(int)(n$65:com.stn.pojo.Category*,n$67:int) virtual [line 54]\n  NULLIFY(&$irvar10); [line 54]\n  EXIT_SCOPE(_,n$65,n$67,n$68,$irvar10); [line 54]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_27" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_28" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_27" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_28" [label="28:  Call String ResultSet.getString(int) \n   n$69=*&this:com.stn.helpers.CategoryHelper* [line 55]\n  n$70=*n$69.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 55]\n  _=*n$70:java.sql.ResultSet*(root java.sql.ResultSet) [line 55]\n  n$72=_fun_String ResultSet.getString(int)(n$70:java.sql.ResultSet*,4:int) interface virtual [line 55]\n  *&$irvar11:java.lang.String*=n$72 [line 55]\n  EXIT_SCOPE(_,n$69,n$70,n$72); [line 55]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_28" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_29" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_28" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_29" [label="29:  Call void Category.setDescriere(String) \n   n$73=*&category:com.stn.pojo.Category* [line 55]\n  _=*n$73:com.stn.pojo.Category*(root com.stn.pojo.Category) [line 55]\n  n$75=*&$irvar11:java.lang.String* [line 55]\n  n$76=_fun_void Category.setDescriere(String)(n$73:com.stn.pojo.Category*,n$75:java.lang.String*) virtual [line 55]\n  NULLIFY(&$irvar11); [line 55]\n  EXIT_SCOPE(_,n$73,n$75,n$76,$irvar11); [line 55]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_29" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_30" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_29" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_30" [label="30:  Call void Category.setIdFacultate(int) \n   n$77=*&category:com.stn.pojo.Category* [line 56]\n  _=*n$77:com.stn.pojo.Category*(root com.stn.pojo.Category) [line 56]\n  n$79=*&idFacultate:int [line 56]\n  n$80=_fun_void Category.setIdFacultate(int)(n$77:com.stn.pojo.Category*,n$79:int) virtual [line 56]\n  EXIT_SCOPE(_,n$77,n$79,n$80); [line 56]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_30" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_31" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_30" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_31" [label="31:  Call int ResultSet.getInt(int) \n   n$81=*&this:com.stn.helpers.CategoryHelper* [line 57]\n  n$82=*n$81.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 57]\n  _=*n$82:java.sql.ResultSet*(root java.sql.ResultSet) [line 57]\n  n$84=_fun_int ResultSet.getInt(int)(n$82:java.sql.ResultSet*,6:int) interface virtual [line 57]\n  *&$irvar12:int=n$84 [line 57]\n  EXIT_SCOPE(_,n$81,n$82,n$84); [line 57]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_31" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_32" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_31" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_32" [label="32:  Call void Category.setIdSerie(int) \n   n$85=*&category:com.stn.pojo.Category* [line 57]\n  _=*n$85:com.stn.pojo.Category*(root com.stn.pojo.Category) [line 57]\n  n$87=*&$irvar12:int [line 57]\n  n$88=_fun_void Category.setIdSerie(int)(n$85:com.stn.pojo.Category*,n$87:int) virtual [line 57]\n  NULLIFY(&$irvar12); [line 57]\n  EXIT_SCOPE(_,n$85,n$87,n$88,$irvar12); [line 57]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_32" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_33" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_32" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_33" [label="33:  Call int ResultSet.getInt(int) \n   n$89=*&this:com.stn.helpers.CategoryHelper* [line 58]\n  n$90=*n$89.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 58]\n  _=*n$90:java.sql.ResultSet*(root java.sql.ResultSet) [line 58]\n  n$92=_fun_int ResultSet.getInt(int)(n$90:java.sql.ResultSet*,7:int) interface virtual [line 58]\n  *&$irvar13:int=n$92 [line 58]\n  EXIT_SCOPE(_,n$89,n$90,n$92); [line 58]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_33" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_34" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_33" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_34" [label="34:  Call void Category.setIdGrupa(int) \n   n$93=*&category:com.stn.pojo.Category* [line 58]\n  _=*n$93:com.stn.pojo.Category*(root com.stn.pojo.Category) [line 58]\n  n$95=*&$irvar13:int [line 58]\n  n$96=_fun_void Category.setIdGrupa(int)(n$93:com.stn.pojo.Category*,n$95:int) virtual [line 58]\n  NULLIFY(&$irvar13); [line 58]\n  EXIT_SCOPE(_,n$93,n$95,n$96,$irvar13); [line 58]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_34" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_35" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_34" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_35" [label="35:  Call int ResultSet.getInt(int) \n   n$97=*&this:com.stn.helpers.CategoryHelper* [line 59]\n  n$98=*n$97.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 59]\n  _=*n$98:java.sql.ResultSet*(root java.sql.ResultSet) [line 59]\n  n$100=_fun_int ResultSet.getInt(int)(n$98:java.sql.ResultSet*,8:int) interface virtual [line 59]\n  *&$irvar14:int=n$100 [line 59]\n  EXIT_SCOPE(_,n$97,n$98,n$100); [line 59]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_35" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_36" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_35" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_36" [label="36:  Call void Category.setTotalTopics(int) \n   n$101=*&category:com.stn.pojo.Category* [line 59]\n  _=*n$101:com.stn.pojo.Category*(root com.stn.pojo.Category) [line 59]\n  n$103=*&$irvar14:int [line 59]\n  n$104=_fun_void Category.setTotalTopics(int)(n$101:com.stn.pojo.Category*,n$103:int) virtual [line 59]\n  NULLIFY(&$irvar14); [line 59]\n  EXIT_SCOPE(_,n$101,n$103,n$104,$irvar14); [line 59]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_36" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_37" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_36" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_37" [label="37:  Call int ResultSet.getInt(int) \n   n$105=*&this:com.stn.helpers.CategoryHelper* [line 60]\n  n$106=*n$105.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 60]\n  _=*n$106:java.sql.ResultSet*(root java.sql.ResultSet) [line 60]\n  n$108=_fun_int ResultSet.getInt(int)(n$106:java.sql.ResultSet*,9:int) interface virtual [line 60]\n  *&$irvar15:int=n$108 [line 60]\n  EXIT_SCOPE(_,n$105,n$106,n$108); [line 60]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_37" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_38" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_37" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_38" [label="38:  Call void Category.setTotalPosts(int) \n   n$109=*&category:com.stn.pojo.Category* [line 60]\n  _=*n$109:com.stn.pojo.Category*(root com.stn.pojo.Category) [line 60]\n  n$111=*&$irvar15:int [line 60]\n  n$112=_fun_void Category.setTotalPosts(int)(n$109:com.stn.pojo.Category*,n$111:int) virtual [line 60]\n  NULLIFY(&$irvar15); [line 60]\n  EXIT_SCOPE(_,n$109,n$111,n$112,$irvar15); [line 60]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_38" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_39" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_38" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_39" [label="39:  Call boolean ArrayList.add(Object) \n   n$113=*&category1:java.util.ArrayList* [line 61]\n  _=*n$113:java.util.ArrayList*(root java.util.ArrayList) [line 61]\n  n$115=*&category:com.stn.pojo.Category* [line 61]\n  n$116=_fun_boolean ArrayList.add(Object)(n$113:java.util.ArrayList*,n$115:com.stn.pojo.Category*) interface virtual [line 61]\n  *&$irvar16:_Bool=n$116 [line 61]\n  NULLIFY(&$irvar16); [line 61]\n  NULLIFY(&category); [line 61]\n  EXIT_SCOPE(_,n$113,n$115,n$116,$irvar16,category); [line 61]\n  APPLY_ABSTRACTION; [line 61]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_39" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_17" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_39" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_40" [label="40: Prune (true branch, if) \n   n$117=*&this:com.stn.helpers.CategoryHelper* [line 66]\n  n$118=*n$117.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 66]\n  PRUNE(!(n$118 == null), true); [line 66]\n  EXIT_SCOPE(n$117,n$118); [line 66]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_40" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_42" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_40" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_41" [label="41: Prune (false branch, if) \n   n$117=*&this:com.stn.helpers.CategoryHelper* [line 66]\n  n$118=*n$117.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 66]\n  PRUNE((n$118 == null), false); [line 66]\n  EXIT_SCOPE(n$117,n$118); [line 66]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_41" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_43" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_41" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_44" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_41" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_42" [label="42:  Call void PreparedStatement.close() \n   n$119=*&this:com.stn.helpers.CategoryHelper* [line 67]\n  n$120=*n$119.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 67]\n  n$123=_fun___set_mem_attribute(n$120:java.sql.PreparedStatement*) [line 67]\n  _=*n$120:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 67]\n  n$122=_fun_void PreparedStatement.close()(n$120:java.sql.PreparedStatement*) interface virtual [line 67]\n  EXIT_SCOPE(_,n$119,n$120,n$122,n$123); [line 67]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_42" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_43" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_42" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_44" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_42" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_43" [label="43: Prune (true branch, if) \n   n$124=*&this:com.stn.helpers.CategoryHelper* [line 68]\n  n$125=*n$124.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 68]\n  PRUNE(!(n$125 == null), true); [line 68]\n  EXIT_SCOPE(n$124,n$125); [line 68]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_43" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_45" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_43" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_44" [label="44: Prune (false branch, if) \n   n$124=*&this:com.stn.helpers.CategoryHelper* [line 68]\n  n$125=*n$124.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 68]\n  PRUNE((n$125 == null), false); [line 68]\n  EXIT_SCOPE(n$124,n$125); [line 68]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_44" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_46" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_44" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_47" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_44" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_45" [label="45:  Call void Connection.close() \n   n$126=*&this:com.stn.helpers.CategoryHelper* [line 69]\n  n$127=*n$126.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 69]\n  n$130=_fun___set_mem_attribute(n$127:java.sql.Connection*) [line 69]\n  _=*n$127:java.sql.Connection*(root java.sql.Connection) [line 69]\n  n$129=_fun_void Connection.close()(n$127:java.sql.Connection*) interface virtual [line 69]\n  EXIT_SCOPE(_,n$126,n$127,n$129,n$130); [line 69]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_45" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_46" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_45" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_47" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_45" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_46" [label="46: Prune (true branch, if) \n   n$131=*&this:com.stn.helpers.CategoryHelper* [line 70]\n  n$132=*n$131.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 70]\n  PRUNE(!(n$132 == null), true); [line 70]\n  EXIT_SCOPE(n$131,n$132); [line 70]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_46" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_48" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_46" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_47" [label="47: Prune (false branch, if) \n   n$131=*&this:com.stn.helpers.CategoryHelper* [line 70]\n  n$132=*n$131.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 70]\n  PRUNE((n$132 == null), false); [line 70]\n  NULLIFY(&this); [line 70]\n  EXIT_SCOPE(n$131,n$132,this); [line 70]\n  APPLY_ABSTRACTION; [line 70]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_47" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_71" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_47" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_48" [label="48:  Call void ResultSet.close() \n   n$133=*&this:com.stn.helpers.CategoryHelper* [line 71]\n  n$134=*n$133.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 71]\n  n$137=_fun___set_mem_attribute(n$134:java.sql.ResultSet*) [line 71]\n  _=*n$134:java.sql.ResultSet*(root java.sql.ResultSet) [line 71]\n  n$136=_fun_void ResultSet.close()(n$134:java.sql.ResultSet*) interface virtual [line 71]\n  NULLIFY(&this); [line 71]\n  EXIT_SCOPE(_,n$133,n$134,n$136,n$137,this); [line 71]\n  APPLY_ABSTRACTION; [line 71]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_48" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_71" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_48" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_49" [label="49:  method_body \n   n$138=*&CatchVar283:java.lang.Object* [line 63]\n  *&e:java.lang.Object*=n$138 [line 63]\n  NULLIFY(&CatchVar283); [line 63]\n  EXIT_SCOPE(n$138,CatchVar283); [line 63]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_49" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_50" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_49" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_79" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_50" [label="50:  Call void Throwable.printStackTrace() \n   n$139=*&e:java.lang.Object* [line 64]\n  _=*n$139:java.lang.Object*(root java.lang.Object) [line 64]\n  n$141=_fun_void Throwable.printStackTrace()(n$139:java.lang.Object*) virtual [line 64]\n  NULLIFY(&e); [line 64]\n  EXIT_SCOPE(_,n$139,n$141,e); [line 64]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_50" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_51" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_50" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_52" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_50" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_79" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_51" [label="51: Prune (true branch, if) \n   n$142=*&this:com.stn.helpers.CategoryHelper* [line 66]\n  n$143=*n$142.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 66]\n  PRUNE(!(n$143 == null), true); [line 66]\n  EXIT_SCOPE(n$142,n$143); [line 66]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_51" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_53" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_51" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_52" [label="52: Prune (false branch, if) \n   n$142=*&this:com.stn.helpers.CategoryHelper* [line 66]\n  n$143=*n$142.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 66]\n  PRUNE((n$143 == null), false); [line 66]\n  EXIT_SCOPE(n$142,n$143); [line 66]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_52" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_54" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_52" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_55" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_52" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_53" [label="53:  Call void PreparedStatement.close() \n   n$144=*&this:com.stn.helpers.CategoryHelper* [line 67]\n  n$145=*n$144.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 67]\n  n$148=_fun___set_mem_attribute(n$145:java.sql.PreparedStatement*) [line 67]\n  _=*n$145:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 67]\n  n$147=_fun_void PreparedStatement.close()(n$145:java.sql.PreparedStatement*) interface virtual [line 67]\n  EXIT_SCOPE(_,n$144,n$145,n$147,n$148); [line 67]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_53" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_54" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_53" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_55" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_53" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_54" [label="54: Prune (true branch, if) \n   n$149=*&this:com.stn.helpers.CategoryHelper* [line 68]\n  n$150=*n$149.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 68]\n  PRUNE(!(n$150 == null), true); [line 68]\n  EXIT_SCOPE(n$149,n$150); [line 68]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_54" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_56" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_54" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_55" [label="55: Prune (false branch, if) \n   n$149=*&this:com.stn.helpers.CategoryHelper* [line 68]\n  n$150=*n$149.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 68]\n  PRUNE((n$150 == null), false); [line 68]\n  EXIT_SCOPE(n$149,n$150); [line 68]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_55" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_57" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_55" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_58" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_55" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_56" [label="56:  Call void Connection.close() \n   n$151=*&this:com.stn.helpers.CategoryHelper* [line 69]\n  n$152=*n$151.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 69]\n  n$155=_fun___set_mem_attribute(n$152:java.sql.Connection*) [line 69]\n  _=*n$152:java.sql.Connection*(root java.sql.Connection) [line 69]\n  n$154=_fun_void Connection.close()(n$152:java.sql.Connection*) interface virtual [line 69]\n  EXIT_SCOPE(_,n$151,n$152,n$154,n$155); [line 69]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_56" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_57" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_56" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_58" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_56" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_57" [label="57: Prune (true branch, if) \n   n$156=*&this:com.stn.helpers.CategoryHelper* [line 70]\n  n$157=*n$156.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 70]\n  PRUNE(!(n$157 == null), true); [line 70]\n  EXIT_SCOPE(n$156,n$157); [line 70]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_57" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_59" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_57" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_58" [label="58: Prune (false branch, if) \n   n$156=*&this:com.stn.helpers.CategoryHelper* [line 70]\n  n$157=*n$156.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 70]\n  PRUNE((n$157 == null), false); [line 70]\n  NULLIFY(&this); [line 70]\n  EXIT_SCOPE(n$156,n$157,this); [line 70]\n  APPLY_ABSTRACTION; [line 70]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_58" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_71" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_58" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_59" [label="59:  Call void ResultSet.close() \n   n$158=*&this:com.stn.helpers.CategoryHelper* [line 71]\n  n$159=*n$158.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 71]\n  n$162=_fun___set_mem_attribute(n$159:java.sql.ResultSet*) [line 71]\n  _=*n$159:java.sql.ResultSet*(root java.sql.ResultSet) [line 71]\n  n$161=_fun_void ResultSet.close()(n$159:java.sql.ResultSet*) interface virtual [line 71]\n  NULLIFY(&this); [line 71]\n  EXIT_SCOPE(_,n$158,n$159,n$161,n$162,this); [line 71]\n  APPLY_ABSTRACTION; [line 71]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_59" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_71" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_59" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_60" [label="60:  method_body \n   n$163=*&CatchVar339:java.lang.Object* [line 66]\n  *&$bcvar4:java.lang.Object*=n$163 [line 66]\n  EXIT_SCOPE(n$163); [line 66]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_60" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_61" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_60" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_62" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_60" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_81" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_61" [label="61: Prune (true branch, if) \n   n$164=*&this:com.stn.helpers.CategoryHelper* [line 66]\n  n$165=*n$164.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 66]\n  PRUNE(!(n$165 == null), true); [line 66]\n  EXIT_SCOPE(n$164,n$165); [line 66]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_61" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_63" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_61" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_62" [label="62: Prune (false branch, if) \n   n$164=*&this:com.stn.helpers.CategoryHelper* [line 66]\n  n$165=*n$164.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 66]\n  PRUNE((n$165 == null), false); [line 66]\n  EXIT_SCOPE(n$164,n$165); [line 66]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_62" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_64" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_62" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_65" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_62" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_63" [label="63:  Call void PreparedStatement.close() \n   n$166=*&this:com.stn.helpers.CategoryHelper* [line 67]\n  n$167=*n$166.preparedStatement:java.sql.PreparedStatement*(root com.stn.helpers.CategoryHelper) [line 67]\n  n$170=_fun___set_mem_attribute(n$167:java.sql.PreparedStatement*) [line 67]\n  _=*n$167:java.sql.PreparedStatement*(root java.sql.PreparedStatement) [line 67]\n  n$169=_fun_void PreparedStatement.close()(n$167:java.sql.PreparedStatement*) interface virtual [line 67]\n  EXIT_SCOPE(_,n$166,n$167,n$169,n$170); [line 67]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_63" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_64" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_63" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_65" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_63" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_64" [label="64: Prune (true branch, if) \n   n$171=*&this:com.stn.helpers.CategoryHelper* [line 68]\n  n$172=*n$171.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 68]\n  PRUNE(!(n$172 == null), true); [line 68]\n  EXIT_SCOPE(n$171,n$172); [line 68]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_64" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_66" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_64" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_65" [label="65: Prune (false branch, if) \n   n$171=*&this:com.stn.helpers.CategoryHelper* [line 68]\n  n$172=*n$171.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 68]\n  PRUNE((n$172 == null), false); [line 68]\n  EXIT_SCOPE(n$171,n$172); [line 68]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_65" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_67" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_65" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_68" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_65" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_66" [label="66:  Call void Connection.close() \n   n$173=*&this:com.stn.helpers.CategoryHelper* [line 69]\n  n$174=*n$173.connection:java.sql.Connection*(root com.stn.helpers.CategoryHelper) [line 69]\n  n$177=_fun___set_mem_attribute(n$174:java.sql.Connection*) [line 69]\n  _=*n$174:java.sql.Connection*(root java.sql.Connection) [line 69]\n  n$176=_fun_void Connection.close()(n$174:java.sql.Connection*) interface virtual [line 69]\n  EXIT_SCOPE(_,n$173,n$174,n$176,n$177); [line 69]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_66" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_67" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_66" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_68" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_66" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_67" [label="67: Prune (true branch, if) \n   n$178=*&this:com.stn.helpers.CategoryHelper* [line 70]\n  n$179=*n$178.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 70]\n  PRUNE(!(n$179 == null), true); [line 70]\n  EXIT_SCOPE(n$178,n$179); [line 70]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_67" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_69" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_67" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_68" [label="68: Prune (false branch, if) \n   n$178=*&this:com.stn.helpers.CategoryHelper* [line 70]\n  n$179=*n$178.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 70]\n  PRUNE((n$179 == null), false); [line 70]\n  NULLIFY(&this); [line 70]\n  EXIT_SCOPE(n$178,n$179,this); [line 70]\n  APPLY_ABSTRACTION; [line 70]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_68" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_70" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_68" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_69" [label="69:  Call void ResultSet.close() \n   n$180=*&this:com.stn.helpers.CategoryHelper* [line 71]\n  n$181=*n$180.resultSet:java.sql.ResultSet*(root com.stn.helpers.CategoryHelper) [line 71]\n  n$184=_fun___set_mem_attribute(n$181:java.sql.ResultSet*) [line 71]\n  _=*n$181:java.sql.ResultSet*(root java.sql.ResultSet) [line 71]\n  n$183=_fun_void ResultSet.close()(n$181:java.sql.ResultSet*) interface virtual [line 71]\n  NULLIFY(&this); [line 71]\n  EXIT_SCOPE(_,n$180,n$181,n$183,n$184,this); [line 71]\n  APPLY_ABSTRACTION; [line 71]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_69" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_70" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_69" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_70" [label="70:  throw \n   n$185=*&$bcvar4:java.lang.Object* [line 72]\n  *&return:java.util.List*=EXN n$185 [line 72]\n  NULLIFY(&$bcvar4); [line 72]\n  EXIT_SCOPE(n$185,$bcvar4); [line 72]\n  APPLY_ABSTRACTION; [line 72]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_70" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_2" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_70" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_71" [label="71:  method_body \n   n$186=*&category1:java.util.ArrayList* [line 73]\n  *&return:java.util.List*=n$186 [line 73]\n  NULLIFY(&category1); [line 73]\n  EXIT_SCOPE(n$186,category1); [line 73]\n  APPLY_ABSTRACTION; [line 73]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_71" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_2" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_71" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_72" [label="72:  Finally branch \n   APPLY_ABSTRACTION; [line 66]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_72" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_60" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_72" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_73" [label="73: Prune (true branch, switch) \n   n$189=_fun___instanceof(n$188:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 63]\n  PRUNE(n$189, true); [line 63]\n  *&CatchVar283:java.util.List*=n$188 [line 63]\n  EXIT_SCOPE(n$188,n$189); [line 63]\n  APPLY_ABSTRACTION; [line 63]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_73" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_49" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_73" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_74" [label="74: Prune (false branch, switch) \n   n$189=_fun___instanceof(n$188:java.sql.SQLException*,sizeof(t=java.sql.SQLException):void) [line 63]\n  PRUNE(!n$189, false); [line 63]\n  NULLIFY(&category1); [line 63]\n  EXIT_SCOPE(n$188,n$189,category1); [line 63]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_74" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_72" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_74" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_75" [label="75: Prune (true branch, switch) \n   n$190=_fun___instanceof(n$188:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 63]\n  PRUNE(n$190, true); [line 63]\n  *&CatchVar283:java.util.List*=n$188 [line 63]\n  EXIT_SCOPE(n$188,n$190); [line 63]\n  APPLY_ABSTRACTION; [line 63]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_75" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_49" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_75" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_76" [label="76: Prune (false branch, switch) \n   n$190=_fun___instanceof(n$188:java.lang.ClassNotFoundException*,sizeof(t=java.lang.ClassNotFoundException):void) [line 63]\n  PRUNE(!n$190, false); [line 63]\n  EXIT_SCOPE(n$190); [line 63]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_76" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_73" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_76" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_74" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_76" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" [label="77:  exception handler \n   n$187=*&return:java.util.List* [line 63]\n  *&return:java.util.List*=null [line 63]\n  n$188=_fun___unwrap_exception(n$187:java.util.List*) [line 63]\n  NULLIFY(&$irvar3); [line 63]\n  NULLIFY(&$irvar9); [line 63]\n  NULLIFY(&$irvar5); [line 63]\n  NULLIFY(&$irvar4); [line 63]\n  NULLIFY(&$irvar7); [line 63]\n  NULLIFY(&$irvar12); [line 63]\n  NULLIFY(&$irvar6); [line 63]\n  NULLIFY(&category); [line 63]\n  NULLIFY(&$irvar13); [line 63]\n  NULLIFY(&$irvar11); [line 63]\n  NULLIFY(&$irvar10); [line 63]\n  NULLIFY(&$irvar8); [line 63]\n  NULLIFY(&$irvar1); [line 63]\n  NULLIFY(&$irvar2); [line 63]\n  NULLIFY(&$irvar15); [line 63]\n  NULLIFY(&$irvar14); [line 63]\n  EXIT_SCOPE(n$187,$irvar3,$irvar9,$irvar5,$irvar4,$irvar7,$irvar12,$irvar6,category,$irvar13,$irvar11,$irvar10,$irvar8,$irvar1,$irvar2,$irvar15,$irvar14); [line 63]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_75" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_76" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_77" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_78" [label="78:  Finally branch \n   APPLY_ABSTRACTION; [line 66]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_78" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_60" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_78" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_79" [label="79:  exception handler \n   n$187=*&return:java.util.List* [line 66]\n  *&return:java.util.List*=null [line 66]\n  n$188=_fun___unwrap_exception(n$187:java.util.List*) [line 66]\n  NULLIFY(&category1); [line 66]\n  NULLIFY(&e); [line 66]\n  EXIT_SCOPE(n$187,n$188,category1,e); [line 66]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_79" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_78" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_79" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_80" [label="80:  Finally branch \n   APPLY_ABSTRACTION; [line 66]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_80" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_60" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_80" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+"com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_81" [label="81:  exception handler \n   n$187=*&return:java.util.List* [line 66]\n  *&return:java.util.List*=null [line 66]\n  n$188=_fun___unwrap_exception(n$187:java.util.List*) [line 66]\n  NULLIFY(&$bcvar4); [line 66]\n  EXIT_SCOPE(n$187,n$188,$bcvar4); [line 66]\n " shape="box"]
+	
+
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_81" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_80" ;
+	 "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_81" -> "com.stn.helpers.CategoryHelper.getCategories(int):java.util.List.f2f738ca231f8bc3c8deeb1baaa5bd68_3" [color="red" ];
+}

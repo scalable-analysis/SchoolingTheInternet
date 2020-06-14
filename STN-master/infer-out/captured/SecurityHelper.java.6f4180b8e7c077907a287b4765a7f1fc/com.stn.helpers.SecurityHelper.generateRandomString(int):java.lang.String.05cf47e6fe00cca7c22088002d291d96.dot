@@ -1,0 +1,84 @@
+/* @generated */
+digraph cfg {
+"com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_1" [label="1: Start String SecurityHelper.generateRandomString(int)\nFormals:  this:com.stn.helpers.SecurityHelper* len:int\nLocals:  $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void sb:java.lang.StringBuilder* i:int \n  " color=yellow style=filled]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_1" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_4" ;
+"com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_2" [label="2: Exit String SecurityHelper.generateRandomString(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_3" [label="3:  exceptions sink \n   NULLIFY(&sb); [line 53]\n  NULLIFY(&$irvar3); [line 53]\n  NULLIFY(&$irvar4); [line 53]\n  NULLIFY(&i); [line 53]\n  NULLIFY(&$irvar6); [line 53]\n  NULLIFY(&$irvar0); [line 53]\n  NULLIFY(&$irvar1); [line 53]\n  NULLIFY(&$irvar2); [line 53]\n  EXIT_SCOPE(sb,$irvar3,$irvar4,i,$irvar6,$irvar0,$irvar1,$irvar2); [line 53]\n  APPLY_ABSTRACTION; [line 53]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_3" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_2" ;
+"com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_4" [label="4:  Call StringBuilder.<init>(int) \n   n$0=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 50]\n  n$1=*&len:int [line 50]\n  n$2=_fun_StringBuilder.<init>(int)(n$0:java.lang.StringBuilder*,n$1:int) [line 50]\n  *&sb:java.lang.StringBuilder*=n$0 [line 50]\n  EXIT_SCOPE(n$0,n$1,n$2); [line 50]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_4" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_5" ;
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_4" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_5" [label="5:  method_body \n   *&i:int=0 [line 51]\n  APPLY_ABSTRACTION; [line 51]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_5" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_8" ;
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_5" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_6" [label="6: Prune (true branch, if) \n   n$3=*&i:int [line 51]\n  n$4=*&len:int [line 51]\n  PRUNE(!(n$3 >= n$4), true); [line 51]\n  EXIT_SCOPE(n$3,n$4); [line 51]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_6" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_9" ;
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_6" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_7" [label="7: Prune (false branch, if) \n   n$3=*&i:int [line 51]\n  n$4=*&len:int [line 51]\n  PRUNE((n$3 >= n$4), false); [line 51]\n  NULLIFY(&len); [line 51]\n  NULLIFY(&i); [line 51]\n  EXIT_SCOPE(n$3,n$4,len,i); [line 51]\n " shape="invhouse"]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_7" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_16" ;
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_7" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_8" [label="8: + \n  " ]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_8" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_6" ;
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_8" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_7" ;
+"com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_9" [label="9:  method_body \n   n$5=*&this:com.stn.helpers.SecurityHelper* [line 52]\n  n$6=*n$5.rnd:java.security.SecureRandom*(root com.stn.helpers.SecurityHelper) [line 52]\n  *&$irvar2:java.security.SecureRandom*=n$6 [line 52]\n  EXIT_SCOPE(n$5,n$6); [line 52]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_9" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_10" ;
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_9" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_10" [label="10:  method_body \n   n$7=*&this:com.stn.helpers.SecurityHelper* [line 52]\n  n$8=*n$7.AB:java.lang.String*(root com.stn.helpers.SecurityHelper) [line 52]\n  *&$irvar1:java.lang.String*=n$8 [line 52]\n  EXIT_SCOPE(n$7,n$8); [line 52]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_10" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_11" ;
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_10" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_11" [label="11:  Call int String.length() \n   n$9=*&this:com.stn.helpers.SecurityHelper* [line 52]\n  n$10=*n$9.AB:java.lang.String*(root com.stn.helpers.SecurityHelper) [line 52]\n  _=*n$10:java.lang.String*(root java.lang.String) [line 52]\n  n$12=_fun_int String.length()(n$10:java.lang.String*) virtual [line 52]\n  *&$irvar0:int=n$12 [line 52]\n  EXIT_SCOPE(_,n$9,n$10,n$12); [line 52]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_11" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_12" ;
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_11" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_12" [label="12:  Call int Random.nextInt(int) \n   n$13=*&$irvar2:java.security.SecureRandom* [line 52]\n  _=*n$13:java.security.SecureRandom*(root java.security.SecureRandom) [line 52]\n  n$15=*&$irvar0:int [line 52]\n  n$16=_fun_int Random.nextInt(int)(n$13:java.security.SecureRandom*,n$15:int) virtual [line 52]\n  *&$irvar3:int=n$16 [line 52]\n  NULLIFY(&$irvar0); [line 52]\n  NULLIFY(&$irvar2); [line 52]\n  EXIT_SCOPE(_,n$13,n$15,n$16,$irvar0,$irvar2); [line 52]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_12" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_13" ;
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_12" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_13" [label="13:  Call char String.charAt(int) \n   n$17=*&$irvar1:java.lang.String* [line 52]\n  _=*n$17:java.lang.String*(root java.lang.String) [line 52]\n  n$19=*&$irvar3:int [line 52]\n  n$20=_fun_char String.charAt(int)(n$17:java.lang.String*,n$19:int) virtual [line 52]\n  *&$irvar4:unsigned short=n$20 [line 52]\n  NULLIFY(&$irvar3); [line 52]\n  NULLIFY(&$irvar1); [line 52]\n  EXIT_SCOPE(_,n$17,n$19,n$20,$irvar3,$irvar1); [line 52]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_13" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_14" ;
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_13" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_14" [label="14:  Call StringBuilder StringBuilder.append(char) \n   n$21=*&sb:java.lang.StringBuilder* [line 52]\n  _=*n$21:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 52]\n  n$23=*&$irvar4:unsigned short [line 52]\n  n$24=_fun_StringBuilder StringBuilder.append(char)(n$21:java.lang.StringBuilder*,n$23:unsigned short) virtual [line 52]\n  *&$irvar5:java.lang.StringBuilder*=n$24 [line 52]\n  NULLIFY(&$irvar5); [line 52]\n  NULLIFY(&$irvar4); [line 52]\n  EXIT_SCOPE(_,n$21,n$23,n$24,$irvar5,$irvar4); [line 52]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_14" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_15" ;
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_14" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_15" [label="15:  method_body \n   n$25=*&i:int [line 51]\n  *&i:int=(n$25 + 1) [line 51]\n  EXIT_SCOPE(n$25); [line 51]\n  APPLY_ABSTRACTION; [line 51]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_15" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_8" ;
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_15" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_16" [label="16:  Call String StringBuilder.toString() \n   n$26=*&sb:java.lang.StringBuilder* [line 53]\n  _=*n$26:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 53]\n  n$28=_fun_String StringBuilder.toString()(n$26:java.lang.StringBuilder*) virtual [line 53]\n  *&$irvar6:java.lang.String*=n$28 [line 53]\n  NULLIFY(&sb); [line 53]\n  EXIT_SCOPE(_,n$26,n$28,sb); [line 53]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_16" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_17" ;
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_16" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_3" [color="red" ];
+"com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_17" [label="17:  method_body \n   n$29=*&$irvar6:java.lang.String* [line 53]\n  *&return:java.lang.String*=n$29 [line 53]\n  NULLIFY(&$irvar6); [line 53]\n  EXIT_SCOPE(n$29,$irvar6); [line 53]\n  APPLY_ABSTRACTION; [line 53]\n " shape="box"]
+	
+
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_17" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_2" ;
+	 "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_17" -> "com.stn.helpers.SecurityHelper.generateRandomString(int):java.lang.String.05cf47e6fe00cca7c22088002d291d96_3" [color="red" ];
+}

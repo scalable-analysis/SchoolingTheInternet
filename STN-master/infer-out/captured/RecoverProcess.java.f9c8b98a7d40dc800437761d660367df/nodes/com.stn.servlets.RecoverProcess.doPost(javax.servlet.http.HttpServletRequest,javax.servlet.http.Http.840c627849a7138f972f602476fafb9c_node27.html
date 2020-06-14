@@ -1,0 +1,472 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.servlets.RecoverProcess.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.Http.840c627849a7138f972f602476fafb9c_node27</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../RecoverProcess.java.f9c8b98a7d40dc800437761d660367df.html#LINE56">27</a></h1></center>PROC: <a href="./../com.stn.servlets.RecoverProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.840c627849a7138f972f602476fafb9c.html">void RecoverProcess.doPost(HttpServletRequest,HttpServletResponse)</a> LINE: <a href="./../../RecoverProcess.java.f9c8b98a7d40dc800437761d660367df.html#LINE56">56</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.servlets.RecoverProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.840c627849a7138f972f602476fafb9c_node25.html"><span class='dangling with_tooltip'>N_25<span class='tooltip'>node25 preds:24 succs:27 exn:82 
+NOT VISITED</span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.servlets.RecoverProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.840c627849a7138f972f602476fafb9c_node28.html"><span class='visited with_tooltip'>N_28<span class='tooltip'>node28 preds:27 succs:29 exn:82 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.servlets.RecoverProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.840c627849a7138f972f602476fafb9c_node82.html"><span class='visited with_tooltip'>N_82<span class='tooltip'>node82 preds: succs:80 81 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$34=*&amp;securityHelper:com.stn.helpers.SecurityHelper* [line 56];
+_=*n$34:com.stn.helpers.SecurityHelper*(root com.stn.helpers.SecurityHelper) [line 56];
+n$36=_fun_String SecurityHelper.generateRandomString(int)(n$34:com.stn.helpers.SecurityHelper*,7:int) virtual [line 56];
+*&amp;token:java.lang.String*=n$36 [line 56];
+</LISTING>
+<hr width="100%">
+<a name="session124" href="./../nodes/com.stn.servlets.RecoverProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.840c627849a7138f972f602476fafb9c_node27.html#session124">node27#session124</a>(<a href="./../../RecoverProcess.java.f9c8b98a7d40dc800437761d660367df.html#LINE56">56</a>) [compute pre] liveness 27
+<LISTING class='color_black'>JOIN
+
+LEFT:   { url,
+          out,
+          token,
+          request,
+          email,
+          recoverHelper,
+          tools,
+          return,
+          securityHelper,
+          session,
+          response }
+RIGHT:  { out, return }
+RESULT: { url,
+          out,
+          token,
+          request,
+          email,
+          recoverHelper,
+          tools,
+          return,
+          securityHelper,
+          session,
+          response }
+
+</LISTING>
+<hr width="100%">
+<a name="session125" href="./../nodes/com.stn.servlets.RecoverProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.840c627849a7138f972f602476fafb9c_node27.html#session125">node27#session125</a>(<a href="./../../RecoverProcess.java.f9c8b98a7d40dc800437761d660367df.html#LINE56">56</a>) [exec] liveness 27
+<LISTING class='color_black'>PRE STATE:
+{ url,
+  out,
+  token,
+  request,
+  email,
+  recoverHelper,
+  tools,
+  return,
+  securityHelper,
+  session,
+  response }
+
+INSTR=  *&amp;token:java.lang.String*=n$36 [line 56]; 
+
+STATE:
+{ n$36,
+  url,
+  out,
+  request,
+  email,
+  recoverHelper,
+  tools,
+  return,
+  securityHelper,
+  session,
+  response }
+
+INSTR=  n$36=_fun_String SecurityHelper.generateRandomString(int)(n$34:com.stn.helpers.SecurityHelper*,7:int) virtual [line 56]; 
+
+STATE:
+{ n$34,
+  url,
+  out,
+  request,
+  email,
+  recoverHelper,
+  tools,
+  return,
+  securityHelper,
+  session,
+  response }
+
+INSTR=  _=*n$34:com.stn.helpers.SecurityHelper*(root com.stn.helpers.SecurityHelper) [line 56]; 
+
+STATE UNCHANGED
+
+INSTR=  n$34=*&amp;securityHelper:com.stn.helpers.SecurityHelper* [line 56]; 
+
+STATE:
+{ url,
+  out,
+  request,
+  email,
+  recoverHelper,
+  tools,
+  return,
+  securityHelper,
+  session,
+  response }
+
+</LISTING>
+<hr width="100%">
+<a name="session211" href="./../nodes/com.stn.servlets.RecoverProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.840c627849a7138f972f602476fafb9c_node27.html#session211">node27#session211</a>(<a href="./../../RecoverProcess.java.f9c8b98a7d40dc800437761d660367df.html#LINE56">56</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session212" href="./../nodes/com.stn.servlets.RecoverProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.840c627849a7138f972f602476fafb9c_node27.html#session212">node27#session212</a>(<a href="./../../RecoverProcess.java.f9c8b98a7d40dc800437761d660367df.html#LINE56">56</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ url, out, email, recoverHelper, tools, securityHelper, session },
+{ n$33, $irvar3 })
+
+INSTR=  n$34=*&amp;securityHelper:com.stn.helpers.SecurityHelper* [line 56]; 
+
+STATE:
+({ n$34, url, out, email, recoverHelper, tools, securityHelper, session },
+{ n$33, $irvar3 })
+
+INSTR=  _=*n$34:com.stn.helpers.SecurityHelper*(root com.stn.helpers.SecurityHelper) [line 56]; 
+
+STATE:
+({ _, n$34, url, out, email, recoverHelper, tools, securityHelper, session },
+{ n$33, $irvar3 })
+
+INSTR=  n$36=_fun_String SecurityHelper.generateRandomString(int)(n$34:com.stn.helpers.SecurityHelper*,7:int) virtual [line 56]; 
+
+STATE:
+({ _,
+   n$34,
+   n$36,
+   url,
+   out,
+   email,
+   recoverHelper,
+   tools,
+   securityHelper,
+   session },
+{ n$33, $irvar3 })
+
+INSTR=  *&amp;token:java.lang.String*=n$36 [line 56]; 
+
+STATE:
+({ url, out, token, email, recoverHelper, tools, securityHelper, session },
+{ _, n$34, n$36 })
+
+</LISTING>
+<hr width="100%">
+<a name="session48" href="./../nodes/com.stn.servlets.RecoverProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.840c627849a7138f972f602476fafb9c_node27.html#session48">node27#session48</a>(<a href="./../../RecoverProcess.java.f9c8b98a7d40dc800437761d660367df.html#LINE56">56</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session49" href="./../nodes/com.stn.servlets.RecoverProcess.doPost%28javax.servlet.http.HttpServletRequest%2Cjavax.servlet.http.Http.840c627849a7138f972f602476fafb9c_node27.html#session49">node27#session49</a>(<a href="./../../RecoverProcess.java.f9c8b98a7d40dc800437761d660367df.html#LINE56">56</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$12 -&gt; { [_] -&gt; { } },
+  n$16 -&gt; { },
+  n$19 -&gt; { },
+  n$21 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  n$25 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { },
+            AB -&gt; { },
+            rnd -&gt; { } },
+  n$27 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  n$32 -&gt; { },
+  error -&gt; { },
+  url -&gt; { },
+  out -&gt; { },
+  email -&gt; { },
+  recoverHelper -&gt; { connection -&gt; { },
+                     dbHost -&gt; { },
+                     dbName -&gt; { },
+                     dbPassword -&gt; { },
+                     dbPort -&gt; { },
+                     dbUser -&gt; { },
+                     preparedStatement -&gt; { },
+                     query -&gt; { },
+                     resultSet -&gt; { } },
+  tools -&gt; { },
+  securityHelper -&gt; { connection -&gt; { },
+                      dbHost -&gt; { },
+                      dbName -&gt; { },
+                      dbPassword -&gt; { },
+                      dbPort -&gt; { },
+                      dbUser -&gt; { },
+                      preparedStatement -&gt; { },
+                      query -&gt; { },
+                      resultSet -&gt; { },
+                      AB -&gt; { },
+                      rnd -&gt; { } },
+  userHelper -&gt; { connection -&gt; *,
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; *,
+                  query -&gt; { },
+                  resultSet -&gt; ({ Other(boolean UserHelper.checkEmail(String) at line 55) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  session -&gt; { } }
+
+
+
+INSTR=  n$36 := String SecurityHelper.generateRandomString(int)({ securityHelper,
+                                                                  7 }) [line 56]; 
+
+STATE:
+{ n$12 -&gt; { [_] -&gt; { } },
+  n$16 -&gt; { },
+  n$19 -&gt; { },
+  n$21 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  n$25 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { },
+            AB -&gt; { },
+            rnd -&gt; { } },
+  n$27 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  n$32 -&gt; { },
+  n$36 -&gt; { },
+  error -&gt; { },
+  url -&gt; { },
+  out -&gt; { },
+  email -&gt; { },
+  recoverHelper -&gt; { connection -&gt; { },
+                     dbHost -&gt; { },
+                     dbName -&gt; { },
+                     dbPassword -&gt; { },
+                     dbPort -&gt; { },
+                     dbUser -&gt; { },
+                     preparedStatement -&gt; { },
+                     query -&gt; { },
+                     resultSet -&gt; { } },
+  tools -&gt; { },
+  securityHelper -&gt; { connection -&gt; { },
+                      dbHost -&gt; { },
+                      dbName -&gt; { },
+                      dbPassword -&gt; { },
+                      dbPort -&gt; { },
+                      dbUser -&gt; { },
+                      preparedStatement -&gt; { },
+                      query -&gt; { },
+                      resultSet -&gt; { },
+                      AB -&gt; *,
+                      rnd -&gt; { } },
+  userHelper -&gt; { connection -&gt; *,
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; *,
+                  query -&gt; { },
+                  resultSet -&gt; ({ Other(boolean UserHelper.checkEmail(String) at line 55) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  session -&gt; { } }
+
+INSTR=  token := n$36 [line 56]; 
+
+STATE:
+{ n$12 -&gt; { [_] -&gt; { } },
+  n$16 -&gt; { },
+  n$19 -&gt; { },
+  n$21 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  n$25 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { },
+            AB -&gt; { },
+            rnd -&gt; { } },
+  n$27 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  n$32 -&gt; { },
+  n$36 -&gt; { },
+  error -&gt; { },
+  url -&gt; { },
+  out -&gt; { },
+  token -&gt; { },
+  email -&gt; { },
+  recoverHelper -&gt; { connection -&gt; { },
+                     dbHost -&gt; { },
+                     dbName -&gt; { },
+                     dbPassword -&gt; { },
+                     dbPort -&gt; { },
+                     dbUser -&gt; { },
+                     preparedStatement -&gt; { },
+                     query -&gt; { },
+                     resultSet -&gt; { } },
+  tools -&gt; { },
+  securityHelper -&gt; { connection -&gt; { },
+                      dbHost -&gt; { },
+                      dbName -&gt; { },
+                      dbPassword -&gt; { },
+                      dbPort -&gt; { },
+                      dbUser -&gt; { },
+                      preparedStatement -&gt; { },
+                      query -&gt; { },
+                      resultSet -&gt; { },
+                      AB -&gt; *,
+                      rnd -&gt; { } },
+  userHelper -&gt; { connection -&gt; *,
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; *,
+                  query -&gt; { },
+                  resultSet -&gt; ({ Other(boolean UserHelper.checkEmail(String) at line 55) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  session -&gt; { } }
+
+INSTR=  EXIT_SCOPE(n$36); [line 56]; 
+
+STATE:
+{ n$12 -&gt; { [_] -&gt; { } },
+  n$16 -&gt; { },
+  n$19 -&gt; { },
+  n$21 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  n$25 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { },
+            AB -&gt; { },
+            rnd -&gt; { } },
+  n$27 -&gt; { connection -&gt; { },
+            dbHost -&gt; { },
+            dbName -&gt; { },
+            dbPassword -&gt; { },
+            dbPort -&gt; { },
+            dbUser -&gt; { },
+            preparedStatement -&gt; { },
+            query -&gt; { },
+            resultSet -&gt; { } },
+  n$32 -&gt; { },
+  n$36 -&gt; { },
+  error -&gt; { },
+  url -&gt; { },
+  out -&gt; { },
+  token -&gt; { },
+  email -&gt; { },
+  recoverHelper -&gt; { connection -&gt; { },
+                     dbHost -&gt; { },
+                     dbName -&gt; { },
+                     dbPassword -&gt; { },
+                     dbPort -&gt; { },
+                     dbUser -&gt; { },
+                     preparedStatement -&gt; { },
+                     query -&gt; { },
+                     resultSet -&gt; { } },
+  tools -&gt; { },
+  securityHelper -&gt; { connection -&gt; { },
+                      dbHost -&gt; { },
+                      dbName -&gt; { },
+                      dbPassword -&gt; { },
+                      dbPort -&gt; { },
+                      dbUser -&gt; { },
+                      preparedStatement -&gt; { },
+                      query -&gt; { },
+                      resultSet -&gt; { },
+                      AB -&gt; *,
+                      rnd -&gt; { } },
+  userHelper -&gt; { connection -&gt; *,
+                  dbHost -&gt; { },
+                  dbName -&gt; { },
+                  dbPassword -&gt; { },
+                  dbPort -&gt; { },
+                  dbUser -&gt; { },
+                  preparedStatement -&gt; *,
+                  query -&gt; { },
+                  resultSet -&gt; ({ Other(boolean UserHelper.checkEmail(String) at line 55) } + Footprint({ }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) },
+  session -&gt; { } }
+
+</LISTING>

@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.User.getEmail():java.lang.String.6581412b957ee39c1622c96d748c6a74_1" [label="1: Start String User.getEmail()\nFormals:  this:com.stn.pojo.User*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.User.getEmail():java.lang.String.6581412b957ee39c1622c96d748c6a74_1" -> "com.stn.pojo.User.getEmail():java.lang.String.6581412b957ee39c1622c96d748c6a74_4" ;
+"com.stn.pojo.User.getEmail():java.lang.String.6581412b957ee39c1622c96d748c6a74_2" [label="2: Exit String User.getEmail() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.User.getEmail():java.lang.String.6581412b957ee39c1622c96d748c6a74_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 141]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.getEmail():java.lang.String.6581412b957ee39c1622c96d748c6a74_3" -> "com.stn.pojo.User.getEmail():java.lang.String.6581412b957ee39c1622c96d748c6a74_2" ;
+"com.stn.pojo.User.getEmail():java.lang.String.6581412b957ee39c1622c96d748c6a74_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.User* [line 141]\n  n$1=*n$0.email:java.lang.String*(root com.stn.pojo.User) [line 141]\n  *&return:java.lang.String*=n$1 [line 141]\n  NULLIFY(&this); [line 141]\n  EXIT_SCOPE(n$0,n$1,this); [line 141]\n  APPLY_ABSTRACTION; [line 141]\n " shape="box"]
+	
+
+	 "com.stn.pojo.User.getEmail():java.lang.String.6581412b957ee39c1622c96d748c6a74_4" -> "com.stn.pojo.User.getEmail():java.lang.String.6581412b957ee39c1622c96d748c6a74_2" ;
+	 "com.stn.pojo.User.getEmail():java.lang.String.6581412b957ee39c1622c96d748c6a74_4" -> "com.stn.pojo.User.getEmail():java.lang.String.6581412b957ee39c1622c96d748c6a74_3" [color="red" ];
+}

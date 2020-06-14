@@ -1,0 +1,20 @@
+#0
+src/main/java/com/stn/servlets/FacultateProcess.java:89: error: QUANDARY_TAINT_ERROR
+  Other(PreparedStatement.executeQuery()) in procedure FacultateHelper.findFacultate(...) at line 84 ~> Other(HttpSession.setAttribute(...)) at line 89.
+  87.   
+  88.               if(result.equals("Nu ai selectat o facultate!")) {
+  89. >                 session.setAttribute("result","<b style='color: red; display: inline'>"+result+"</b>");
+  90.               }
+  91.               else {
+
+#1
+src/main/java/com/stn/servlets/FacultateProcess.java:92: error: QUANDARY_TAINT_ERROR
+  Other(PreparedStatement.executeQuery()) in procedure FacultateHelper.findFacultate(...) at line 84 ~> Other(HttpSession.setAttribute(...)) at line 92.
+  90.               }
+  91.               else {
+  92. >                 session.setAttribute("result",result);
+  93.               }
+  94.   
+
+Found 2 issues
+  QUANDARY_TAINT_ERROR: 2

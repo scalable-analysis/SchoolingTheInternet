@@ -1,0 +1,19 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Category.getTotalTopics():int.2e4e6aede70e15e19d7d3eec53a04a35_1" [label="1: Start int Category.getTotalTopics()\nFormals:  this:com.stn.pojo.Category*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Category.getTotalTopics():int.2e4e6aede70e15e19d7d3eec53a04a35_1" -> "com.stn.pojo.Category.getTotalTopics():int.2e4e6aede70e15e19d7d3eec53a04a35_4" ;
+"com.stn.pojo.Category.getTotalTopics():int.2e4e6aede70e15e19d7d3eec53a04a35_2" [label="2: Exit int Category.getTotalTopics() \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Category.getTotalTopics():int.2e4e6aede70e15e19d7d3eec53a04a35_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 90]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.getTotalTopics():int.2e4e6aede70e15e19d7d3eec53a04a35_3" -> "com.stn.pojo.Category.getTotalTopics():int.2e4e6aede70e15e19d7d3eec53a04a35_2" ;
+"com.stn.pojo.Category.getTotalTopics():int.2e4e6aede70e15e19d7d3eec53a04a35_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Category* [line 90]\n  n$1=*n$0.totalTopics:int(root com.stn.pojo.Category) [line 90]\n  *&return:int=n$1 [line 90]\n  NULLIFY(&this); [line 90]\n  EXIT_SCOPE(n$0,n$1,this); [line 90]\n  APPLY_ABSTRACTION; [line 90]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.getTotalTopics():int.2e4e6aede70e15e19d7d3eec53a04a35_4" -> "com.stn.pojo.Category.getTotalTopics():int.2e4e6aede70e15e19d7d3eec53a04a35_2" ;
+	 "com.stn.pojo.Category.getTotalTopics():int.2e4e6aede70e15e19d7d3eec53a04a35_4" -> "com.stn.pojo.Category.getTotalTopics():int.2e4e6aede70e15e19d7d3eec53a04a35_3" [color="red" ];
+}

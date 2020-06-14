@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.stn.pojo.Category.setPinned(int):void.2d49c7f3df03cd61d09fe86e95627630_1" [label="1: Start void Category.setPinned(int)\nFormals:  this:com.stn.pojo.Category* pinned:int\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.stn.pojo.Category.setPinned(int):void.2d49c7f3df03cd61d09fe86e95627630_1" -> "com.stn.pojo.Category.setPinned(int):void.2d49c7f3df03cd61d09fe86e95627630_4" ;
+"com.stn.pojo.Category.setPinned(int):void.2d49c7f3df03cd61d09fe86e95627630_2" [label="2: Exit void Category.setPinned(int) \n  " color=yellow style=filled]
+	
+
+"com.stn.pojo.Category.setPinned(int):void.2d49c7f3df03cd61d09fe86e95627630_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 43]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.setPinned(int):void.2d49c7f3df03cd61d09fe86e95627630_3" -> "com.stn.pojo.Category.setPinned(int):void.2d49c7f3df03cd61d09fe86e95627630_2" ;
+"com.stn.pojo.Category.setPinned(int):void.2d49c7f3df03cd61d09fe86e95627630_4" [label="4:  method_body \n   n$0=*&this:com.stn.pojo.Category* [line 42]\n  n$1=*&pinned:int [line 42]\n  *n$0.pinned:com.stn.pojo.Category(root com.stn.pojo.Category)=n$1 [line 42]\n  NULLIFY(&pinned); [line 42]\n  NULLIFY(&this); [line 42]\n  EXIT_SCOPE(n$0,n$1,pinned,this); [line 42]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.setPinned(int):void.2d49c7f3df03cd61d09fe86e95627630_4" -> "com.stn.pojo.Category.setPinned(int):void.2d49c7f3df03cd61d09fe86e95627630_5" ;
+	 "com.stn.pojo.Category.setPinned(int):void.2d49c7f3df03cd61d09fe86e95627630_4" -> "com.stn.pojo.Category.setPinned(int):void.2d49c7f3df03cd61d09fe86e95627630_3" [color="red" ];
+"com.stn.pojo.Category.setPinned(int):void.2d49c7f3df03cd61d09fe86e95627630_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 43]\n " shape="box"]
+	
+
+	 "com.stn.pojo.Category.setPinned(int):void.2d49c7f3df03cd61d09fe86e95627630_5" -> "com.stn.pojo.Category.setPinned(int):void.2d49c7f3df03cd61d09fe86e95627630_2" ;
+	 "com.stn.pojo.Category.setPinned(int):void.2d49c7f3df03cd61d09fe86e95627630_5" -> "com.stn.pojo.Category.setPinned(int):void.2d49c7f3df03cd61d09fe86e95627630_3" [color="red" ];
+}

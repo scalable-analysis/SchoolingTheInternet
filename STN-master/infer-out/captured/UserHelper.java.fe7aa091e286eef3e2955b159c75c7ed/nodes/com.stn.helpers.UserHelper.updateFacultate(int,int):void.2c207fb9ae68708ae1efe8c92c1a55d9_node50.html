@@ -1,0 +1,370 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.stn.helpers.UserHelper.updateFacultate(int,int):void.2c207fb9ae68708ae1efe8c92c1a55d9_node50</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE637">50</a></h1></center>PROC: <a href="./../com.stn.helpers.UserHelper.updateFacultate%28int%2Cint%29%3Avoid.2c207fb9ae68708ae1efe8c92c1a55d9.html">void UserHelper.updateFacultate(int,int)</a> LINE: <a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE637">637</a>
+<br>PREDS:
+<a href="./../nodes/com.stn.helpers.UserHelper.updateFacultate%28int%2Cint%29%3Avoid.2c207fb9ae68708ae1efe8c92c1a55d9_node49.html"><span class='visited with_tooltip'>N_49<span class='tooltip'>node49 preds:48 succs:50 exn:81 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.stn.helpers.UserHelper.updateFacultate%28int%2Cint%29%3Avoid.2c207fb9ae68708ae1efe8c92c1a55d9_node51.html"><span class='visited with_tooltip'>N_51<span class='tooltip'>node51 preds:50 succs:52 exn:81 </span></span></a><br>EXN:
+<a href="./../nodes/com.stn.helpers.UserHelper.updateFacultate%28int%2Cint%29%3Avoid.2c207fb9ae68708ae1efe8c92c1a55d9_node81.html"><span class='visited with_tooltip'>N_81<span class='tooltip'>node81 preds: succs:80 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$110=*&amp;this:com.stn.helpers.UserHelper* [line 637];
+n$111=*n$110.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 637];
+_=*n$111:java.sql.Connection*(root java.sql.Connection) [line 637];
+n$113=*&amp;this:com.stn.helpers.UserHelper* [line 637];
+n$114=*n$113.query:java.lang.String*(root com.stn.helpers.UserHelper) [line 637];
+n$115=_fun_PreparedStatement Connection.prepareStatement(String)(n$111:java.sql.Connection*,n$114:java.lang.String*) interface virtual [line 637];
+*&amp;$irvar13:java.sql.PreparedStatement*=n$115 [line 637];
+</LISTING>
+<hr width="100%">
+<a name="session246" href="./../nodes/com.stn.helpers.UserHelper.updateFacultate%28int%2Cint%29%3Avoid.2c207fb9ae68708ae1efe8c92c1a55d9_node50.html#session246">node50#session246</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE637">637</a>) [compute pre] liveness 50
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session247" href="./../nodes/com.stn.helpers.UserHelper.updateFacultate%28int%2Cint%29%3Avoid.2c207fb9ae68708ae1efe8c92c1a55d9_node50.html#session247">node50#session247</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE637">637</a>) [exec] liveness 50
+<LISTING class='color_black'>PRE STATE:
+{ idSerie, idFacultate, $irvar13, idGrupa, this, id }
+
+INSTR=  *&amp;$irvar13:java.sql.PreparedStatement*=n$115 [line 637]; 
+
+STATE:
+{ n$115, idSerie, idFacultate, idGrupa, this, id }
+
+INSTR=  n$115=_fun_PreparedStatement Connection.prepareStatement(String)(n$111:java.sql.Connection*,n$114:java.lang.String*) interface virtual [line 637]; 
+
+STATE:
+{ n$111, n$114, idSerie, idFacultate, idGrupa, this, id }
+
+INSTR=  n$114=*n$113.query:java.lang.String*(root com.stn.helpers.UserHelper) [line 637]; 
+
+STATE:
+{ n$111, n$113, idSerie, idFacultate, idGrupa, this, id }
+
+INSTR=  n$113=*&amp;this:com.stn.helpers.UserHelper* [line 637]; 
+
+STATE:
+{ n$111, idSerie, idFacultate, idGrupa, this, id }
+
+INSTR=  _=*n$111:java.sql.Connection*(root java.sql.Connection) [line 637]; 
+
+STATE UNCHANGED
+
+INSTR=  n$111=*n$110.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 637]; 
+
+STATE:
+{ n$110, idSerie, idFacultate, idGrupa, this, id }
+
+INSTR=  n$110=*&amp;this:com.stn.helpers.UserHelper* [line 637]; 
+
+STATE:
+{ idSerie, idFacultate, idGrupa, this, id }
+
+</LISTING>
+<hr width="100%">
+<a name="session412" href="./../nodes/com.stn.helpers.UserHelper.updateFacultate%28int%2Cint%29%3Avoid.2c207fb9ae68708ae1efe8c92c1a55d9_node50.html#session412">node50#session412</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE637">637</a>) [compute pre] liveness 50
+<LISTING class='color_black'>JOIN
+
+LEFT:   { idSerie, idFacultate, $irvar13, idGrupa, this, id }
+RIGHT:  { return, CatchVar370, this }
+RESULT: { idSerie,
+          idFacultate,
+          $irvar13,
+          return,
+          idGrupa,
+          CatchVar370,
+          this,
+          id }
+
+</LISTING>
+<hr width="100%">
+<a name="session413" href="./../nodes/com.stn.helpers.UserHelper.updateFacultate%28int%2Cint%29%3Avoid.2c207fb9ae68708ae1efe8c92c1a55d9_node50.html#session413">node50#session413</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE637">637</a>) [exec] liveness 50
+<LISTING class='color_black'>PRE STATE:
+{ idSerie, idFacultate, $irvar13, return, idGrupa, CatchVar370, this, id }
+
+INSTR=  *&amp;$irvar13:java.sql.PreparedStatement*=n$115 [line 637]; 
+
+STATE:
+{ n$115, idSerie, idFacultate, return, idGrupa, CatchVar370, this, id }
+
+INSTR=  n$115=_fun_PreparedStatement Connection.prepareStatement(String)(n$111:java.sql.Connection*,n$114:java.lang.String*) interface virtual [line 637]; 
+
+STATE:
+{ n$111,
+  n$114,
+  idSerie,
+  idFacultate,
+  return,
+  idGrupa,
+  CatchVar370,
+  this,
+  id }
+
+INSTR=  n$114=*n$113.query:java.lang.String*(root com.stn.helpers.UserHelper) [line 637]; 
+
+STATE:
+{ n$111,
+  n$113,
+  idSerie,
+  idFacultate,
+  return,
+  idGrupa,
+  CatchVar370,
+  this,
+  id }
+
+INSTR=  n$113=*&amp;this:com.stn.helpers.UserHelper* [line 637]; 
+
+STATE:
+{ n$111, idSerie, idFacultate, return, idGrupa, CatchVar370, this, id }
+
+INSTR=  _=*n$111:java.sql.Connection*(root java.sql.Connection) [line 637]; 
+
+STATE UNCHANGED
+
+INSTR=  n$111=*n$110.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 637]; 
+
+STATE:
+{ n$110, idSerie, idFacultate, return, idGrupa, CatchVar370, this, id }
+
+INSTR=  n$110=*&amp;this:com.stn.helpers.UserHelper* [line 637]; 
+
+STATE:
+{ idSerie, idFacultate, return, idGrupa, CatchVar370, this, id }
+
+</LISTING>
+<hr width="100%">
+<a name="session418" href="./../nodes/com.stn.helpers.UserHelper.updateFacultate%28int%2Cint%29%3Avoid.2c207fb9ae68708ae1efe8c92c1a55d9_node50.html#session418">node50#session418</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE637">637</a>) [compute pre] liveness 50
+<LISTING class='color_black'>JOIN
+
+LEFT:   { idSerie,
+          idFacultate,
+          $irvar13,
+          return,
+          idGrupa,
+          CatchVar370,
+          this,
+          id }
+RIGHT:  { return, CatchVar370, this }
+RESULT: { idSerie,
+          idFacultate,
+          $irvar13,
+          return,
+          idGrupa,
+          CatchVar370,
+          this,
+          id }
+
+</LISTING>
+<hr width="100%">
+<a name="session419" href="./../nodes/com.stn.helpers.UserHelper.updateFacultate%28int%2Cint%29%3Avoid.2c207fb9ae68708ae1efe8c92c1a55d9_node50.html#session419">node50#session419</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE637">637</a>) [exec] liveness 50
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session502" href="./../nodes/com.stn.helpers.UserHelper.updateFacultate%28int%2Cint%29%3Avoid.2c207fb9ae68708ae1efe8c92c1a55d9_node50.html#session502">node50#session502</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE637">637</a>) [compute pre] liveness 50
+<LISTING class='color_black'>JOIN
+
+LEFT:   { idSerie,
+          idFacultate,
+          $irvar13,
+          return,
+          idGrupa,
+          CatchVar370,
+          this,
+          id }
+RIGHT:  { return, CatchVar370, this }
+RESULT: { idSerie,
+          idFacultate,
+          $irvar13,
+          return,
+          idGrupa,
+          CatchVar370,
+          this,
+          id }
+
+</LISTING>
+<hr width="100%">
+<a name="session503" href="./../nodes/com.stn.helpers.UserHelper.updateFacultate%28int%2Cint%29%3Avoid.2c207fb9ae68708ae1efe8c92c1a55d9_node50.html#session503">node50#session503</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE637">637</a>) [exec] liveness 50
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session593" href="./../nodes/com.stn.helpers.UserHelper.updateFacultate%28int%2Cint%29%3Avoid.2c207fb9ae68708ae1efe8c92c1a55d9_node50.html#session593">node50#session593</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE637">637</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session594" href="./../nodes/com.stn.helpers.UserHelper.updateFacultate%28int%2Cint%29%3Avoid.2c207fb9ae68708ae1efe8c92c1a55d9_node50.html#session594">node50#session594</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE637">637</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ idSerie, idFacultate },{ n$108, n$109, $irvar12 })
+
+INSTR=  n$110=*&amp;this:com.stn.helpers.UserHelper* [line 637]; 
+
+STATE:
+({ n$110, idSerie, idFacultate },{ n$108, n$109, $irvar12 })
+
+INSTR=  n$111=*n$110.connection:java.sql.Connection*(root com.stn.helpers.UserHelper) [line 637]; 
+
+STATE:
+({ n$110, n$111, idSerie, idFacultate },{ n$108, n$109, $irvar12 })
+
+INSTR=  _=*n$111:java.sql.Connection*(root java.sql.Connection) [line 637]; 
+
+STATE:
+({ _, n$110, n$111, idSerie, idFacultate },{ n$108, n$109, $irvar12 })
+
+INSTR=  n$113=*&amp;this:com.stn.helpers.UserHelper* [line 637]; 
+
+STATE:
+({ _, n$110, n$111, n$113, idSerie, idFacultate },{ n$108, n$109, $irvar12 })
+
+INSTR=  n$114=*n$113.query:java.lang.String*(root com.stn.helpers.UserHelper) [line 637]; 
+
+STATE:
+({ _, n$110, n$111, n$113, n$114, idSerie, idFacultate },
+{ n$108, n$109, $irvar12 })
+
+INSTR=  n$115=_fun_PreparedStatement Connection.prepareStatement(String)(n$111:java.sql.Connection*,n$114:java.lang.String*) interface virtual [line 637]; 
+
+STATE:
+({ _, n$110, n$111, n$113, n$114, n$115, idSerie, idFacultate },
+{ n$108, n$109, $irvar12 })
+
+INSTR=  *&amp;$irvar13:java.sql.PreparedStatement*=n$115 [line 637]; 
+
+STATE:
+({ idSerie, idFacultate, $irvar13 },{ _, n$110, n$111, n$113, n$114, n$115 })
+
+</LISTING>
+<hr width="100%">
+<a name="session72" href="./../nodes/com.stn.helpers.UserHelper.updateFacultate%28int%2Cint%29%3Avoid.2c207fb9ae68708ae1efe8c92c1a55d9_node50.html#session72">node50#session72</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE637">637</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session73" href="./../nodes/com.stn.helpers.UserHelper.updateFacultate%28int%2Cint%29%3Avoid.2c207fb9ae68708ae1efe8c92c1a55d9_node50.html#session73">node50#session73</a>(<a href="./../../UserHelper.java.fe7aa091e286eef3e2955b159c75c7ed.html#LINE637">637</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$33 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 618) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$97 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$100 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$103 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$107 -&gt; (Footprint({ @val$0.dbUser,
+                        @val$0.dbPort*,
+                        @val$0.dbPassword,
+                        @val$0.dbName*,
+                        @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  idSerie -&gt; { },
+  idFacultate -&gt; { },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { },
+            resultSet -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 618) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) } }
+
+
+
+
+
+
+TAINTED_CALL1: (callee="PreparedStatement Connection.prepareStatement(String)", caller="void UserHelper.updateFacultate(int,int)")
+TAINTED_CALL1: (callee="PreparedStatement Connection.prepareStatement(String)", caller="void UserHelper.updateFacultate(int,int)")
+INSTR=  n$115 := PreparedStatement Connection.prepareStatement(String)({ this-&gt;connection,
+                                                                    this-&gt;query }) [line 637]; 
+
+STATE:
+{ n$4 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$7 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$10 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$14 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$22 -&gt; (Footprint({ @val$0.dbUser,
+                       @val$0.dbPort*,
+                       @val$0.dbPassword,
+                       @val$0.dbName*,
+                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$33 -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 618) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$97 -&gt; (Footprint({ @val$0.dbPort*, @val$0.dbName*, @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$100 -&gt; Footprint({ @val$0.dbUser }) ~&gt; ?,
+  n$103 -&gt; Footprint({ @val$0.dbPassword }) ~&gt; ?,
+  n$107 -&gt; (Footprint({ @val$0.dbUser,
+                        @val$0.dbPort*,
+                        @val$0.dbPassword,
+                        @val$0.dbName*,
+                        @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$115 -&gt; (Footprint({ @val$0.dbUser,
+                        @val$0.dbPort*,
+                        @val$0.dbPassword,
+                        @val$0.dbName*,
+                        @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  idSerie -&gt; { },
+  idFacultate -&gt; { },
+  this -&gt; { connection -&gt; (Footprint({ @val$0.dbUser,
+                                       @val$0.dbPort*,
+                                       @val$0.dbPassword,
+                                       @val$0.dbName*,
+                                       @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            preparedStatement -&gt; (Footprint({ @val$0.dbUser,
+                                              @val$0.dbPort*,
+                                              @val$0.dbPassword,
+                                              @val$0.dbName*,
+                                              @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+            query -&gt; { },
+            resultSet -&gt; ({ Other(ResultSet PreparedStatement.executeQuery() at line 618) } + Footprint({ @val$0.dbUser,
+                                                                    @val$0.dbPort*,
+                                                                    @val$0.dbPassword,
+                                                                    @val$0.dbName*,
+                                                                    @val$0.dbHost* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *) } }
+
+
+
+</LISTING>
